@@ -222,6 +222,9 @@ a:not([href]):not([tabindex]) {
     text-decoration: none;
   }
 
+  &:focus {
+    outline: 0;
+  }
 }
 
 
