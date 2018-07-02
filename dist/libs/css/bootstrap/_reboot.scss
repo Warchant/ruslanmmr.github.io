@@ -70,9 +70,6 @@ body {
 // might still respond to pointer events.
 //
 // Credit: https://github.com/suitcss/base
-[tabindex="-1"]:focus {
-  outline: 0 !important;
-}
 
 
 // Content grouping
@@ -222,9 +219,6 @@ a:not([href]):not([tabindex]) {
     text-decoration: none;
   }
 
-  &:focus {
-    outline: 0;
-  }
 }
 
 
