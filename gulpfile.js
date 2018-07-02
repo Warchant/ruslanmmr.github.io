@@ -57,7 +57,12 @@ gulp.task('watch', ['browser-sync', 'scripts'], function() {
 });
 
 gulp.task('clean', function() {
-    return del.sync('dist'); // Удаляем папку dist перед сборкой
+    return del.sync('css');
+    return del.sync('fonts');
+    return del.sync('img');
+    return del.sync('js');
+    return del.sync('libs');
+    return del.sync('index.html');
 });
 
 gulp.task('img', function() {
@@ -68,30 +73,30 @@ gulp.task('img', function() {
             svgoPlugins: [{ removeViewBox: false }],
             use: [pngquant()]
         })))
-        .pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
+        .pipe(gulp.dest('img')); // Выгружаем на продакшен
 });
 
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
     var buildCss = gulp.src('app/css/*.css')
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('css'))
 
     var buildCss = gulp.src('app/libs/**/*')
-        .pipe(gulp.dest('dist/libs'))
+        .pipe(gulp.dest('libs'))
 
     var buildCommoncss = gulp.src('app/scss/*.scss')
         .pipe(sass())
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('css'))
 
     var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
-        .pipe(gulp.dest('dist/fonts'))
+        .pipe(gulp.dest('fonts'))
 
     var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
-        .pipe(gulp.dest('dist/js'))
+        .pipe(gulp.dest('js'))
 
     var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('.'));
 
 });
 
