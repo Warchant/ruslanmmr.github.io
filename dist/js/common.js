@@ -1,6 +1,9 @@
 $(document).ready(function() {
-    $('.btn').live('touchstart touchend', function(e){
-    $(this).toggleClass('touch');
-    //alert('alert');
+    $('.btn').on('touchstart', function(e){
+    $(this).addClass('touch');
+});
+
+$('.btn').on('touchend', function(e){
+    $('this').removeClass('touch');
 });
 });
