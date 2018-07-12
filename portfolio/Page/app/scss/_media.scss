@@ -16,6 +16,13 @@
     #home .container .content .advants .ad .logo {
         margin: 0px !important;
     }
+    #home .container .content .title {
+        width: 80%;
+    }
+    #home .container .content .title .cards .card2 h3 {
+        font: 2.5em "AssistantSemiBold";
+        padding-top: 173px;
+    }
     #home .container {
         height: auto;
     }
@@ -57,20 +64,19 @@
     #home #advants .ad2 {
         width: 35%;
     }
+    #home {
+    	background-size: auto;
+     }
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
-    #home .container .content .title {
-        width: auto;
-    }
-    #home .container .content .title .cards .card2 h3 {
-        font: 2.5em "AssistantSemiBold";
-        padding-top: 173px;
-    }
      #home .form form .input {
      	padding-right: 10px;
       }
+      #home .container .content .title {
+        width: auto;
+    }
 }
 
 // ≥768px

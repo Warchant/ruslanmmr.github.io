@@ -98,13 +98,9 @@
                 <div class="form">
                     <h4>השאירו פרטים ונחזור אליכם בהקדם!</h4>
                     <div class="container">
-                        <form id="myForm_float" action="#" class="form-bot" method="POST">
-                            <!-- Hidden Required Fields -->
-                            <input type="hidden" name="project_name" value="Site Name">
-                            <input type="hidden" name="admin_email" value="admin@mail.com">
-                            <input type="hidden" name="form_subject" value="Form Subject">
+                        <form id="myForm_float" action="send.php" method="post">
                             <input name="submit" class="submit" type="submit" value="שלח" />
-                            <input name="first_name" class="input" placeholder="שם מלא" type="text" required/>
+                            <input name="fio" class="input" placeholder="שם מלא" type="text" required/>
                             <input name="phone" class="input" placeholder="טלפון" type="number" required/>
                             <input name="email" class="input" placeholder="אימייל" type="email" required/>
                             <select name="date" class="select" required>
