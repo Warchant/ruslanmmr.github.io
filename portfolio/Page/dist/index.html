@@ -52,9 +52,9 @@
                 </div>
             </div>
             <div id="advants">
-            	<div class="container">
-                    	<div class="content row">
-                    		<div class="ad ad1">
+                <div class="container">
+                    <div class="content row">
+                        <div class="ad ad1">
                             <div class="logo logo1">
                                 <div class="bg"></div>
                             </div>
@@ -90,8 +90,8 @@
                             <p>תנאי מימון ותשלום
                                 <br>נוחים 20-80</p>
                         </div>
-                    	</div>     
-            	</div>
+                    </div>
+                </div>
             </div>
             <div class="form_bottom">
                 <a href="#"><span></span>לפרטים ושריון פגישה</a>
@@ -99,8 +99,12 @@
                     <h4>השאירו פרטים ונחזור אליכם בהקדם!</h4>
                     <div class="container">
                         <form id="myForm_float" action="#" class="form-bot" method="POST">
+                            <!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="Site Name">
+                            <input type="hidden" name="admin_email" value="admin@mail.com">
+                            <input type="hidden" name="form_subject" value="Form Subject">
                             <input name="submit" class="submit" type="submit" value="שלח" />
-                            <input name="first_name" class="input" placeholder="שם מלא" type="text"  required/>
+                            <input name="first_name" class="input" placeholder="שם מלא" type="text" required/>
                             <input name="phone" class="input" placeholder="טלפון" type="number" required/>
                             <input name="email" class="input" placeholder="אימייל" type="email" required/>
                             <select name="date" class="select" required>

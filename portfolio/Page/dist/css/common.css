@@ -1397,11 +1397,15 @@ body {
         #home header .container-fluid .links .link2 {
           background: url(../img/logo2.png) no-repeat center center;
           height: 66px;
-          width: 90px; }
+          width: 90px;
+          -webkit-background-size: cover;
+                  background-size: cover; }
         #home header .container-fluid .links .link3 {
           background: url(../img/logo3.png) no-repeat center center;
           height: 66px;
-          width: 78px; }
+          width: 78px;
+          -webkit-background-size: cover;
+                  background-size: cover; }
   #home .container .content {
     padding-top: 56px; }
     #home .container .content .title {
