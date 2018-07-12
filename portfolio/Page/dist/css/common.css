@@ -1307,28 +1307,28 @@ template {
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/Assistant/AssistantRegular.eot");
-  src: url("../fonts/Assistant/AssistantRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Assistant/AssistantRegular.woff") format("woff"), url("../fonts/Assistant/AssistantRegular.ttf") format("truetype"); }
+  src: url("../fonts/Assistant/AssistantRegular.ttf") format("truetype"); }
 
 @font-face {
   font-family: "AssistantBold";
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/Assistant/AssistantBold.eot");
-  src: url("../fonts/Assistant/AssistantBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Assistant/AssistantBold.woff") format("woff"), url("../fonts/Assistant/AssistantBold.ttf") format("truetype"); }
+  src: url("../fonts/Assistant/AssistantBold.ttf") format("truetype"); }
 
 @font-face {
   font-family: "AmaticBold";
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/AmaticSC/AmaticBold.eot");
-  src: url("../fonts/AmaticSC/AmaticBold.eot?#iefix") format("embedded-opentype"), url("../fonts/AmaticSC/AmaticBold.woff") format("woff"), url("../fonts/AmaticSC/AmaticBold.ttf") format("truetype"); }
+  src: url("../fonts/AmaticSC/AmaticBold.ttf") format("truetype"); }
 
 @font-face {
   font-family: "AssistantSemiBold";
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/Assistant/AssistantSemiBold.eot");
-  src: url("../fonts/Assistant/AssistantSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Assistant/AssistantSemiBold.woff") format("woff"), url("../fonts/Assistant/AssistantSemiBold.ttf") format("truetype"); }
+  src: url("../fonts/Assistant/AssistantSemiBold.ttf") format("truetype"); }
 
 body {
   font-size: 10px; }
@@ -1379,7 +1379,7 @@ body {
       #home header .container-fluid .links {
         position: absolute;
         top: 0px;
-        right: 0px;
+        right: 40px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;

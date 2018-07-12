@@ -1379,7 +1379,7 @@ body {
       #home header .container-fluid .links {
         position: absolute;
         top: 0px;
-        right: 0px;
+        right: 40px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
