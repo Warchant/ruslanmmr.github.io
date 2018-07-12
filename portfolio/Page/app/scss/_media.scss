@@ -30,17 +30,32 @@
     #home .home_overlay {
         display: none;
     }
-    #home #advants .ad4,
-    #home #advants .ad5 {
-        width: 35%;
-    }
-    #home #advants .ad1,
-    #home #advants .ad2,
-    #home #advants .ad3 {
-        width: 33%;
-    }
     #home #advants .content {
         justify-content: center;
+    }
+    #home #advants .ad5 {
+        order: 3;
+    }
+    #home #advants .ad4 {
+        order: 2;
+    }
+    #home #advants .ad3 {
+        order: 1;
+    }
+    #home #advants .ad2 {
+        order: 5;
+    }
+    #home #advants .ad1 {
+        order: 4;
+    }
+    #home #advants .ad3,
+    #home #advants .ad4,
+    #home #advants .ad5 {
+        width: 33%;
+    }
+    #home #advants .ad1,
+    #home #advants .ad2 {
+        width: 35%;
     }
 }
 
@@ -71,15 +86,6 @@
     #home .container .content .title .cards .card1 p {
         font: 6em "AmaticBold";
     }
-    #home #advants .ad4,
-    #home #advants .ad5 {
-        width: 50%;
-    }
-    #home #advants .ad1,
-    #home #advants .ad2,
-    #home #advants .ad3 {
-        width: 50%;
-    }
     #home #advants .ad p {
         font: 1.6em "AssistantBold";
         padding-top: 18px;
@@ -104,6 +110,41 @@
         #home .form form {
         	justify-content: center;
         }
+        #home header .container-fluid .header_title a {
+          height: 60px;
+          width: 130px;
+          font: 1.3em "AssistantRegular"; }
+          #home header .container-fluid .links a {
+          margin: 5px; 
+        }
+         #home header .container-fluid .links {
+          right: 10px;
+          top: 5px; 
+        }
+         #home #advants .ad5 {
+        order: 2;
+    }
+    #home #advants .ad4 {
+        order: 1;
+    }
+    #home #advants .ad3 {
+        order: 4;
+    }
+    #home #advants .ad2 {
+        order: 3;
+    }
+    #home #advants .ad1 {
+        order: 5;
+    }
+    #home #advants .ad3,
+    #home #advants .ad4,
+    #home #advants .ad5 {
+        width: 50%;
+    }
+    #home #advants .ad1,
+    #home #advants .ad2 {
+        width: 50%;
+    }
 }
 
 // ≥576px
@@ -122,9 +163,6 @@
     }
     #home .container .content .title .cards .card1 p {
         font: 5em "AmaticBold";
-    }
-    #home header .container-fluid .links {
-        display: none;
     }
     #home .form_bottom a {
         font: 3em "AssistantSemiBold";
@@ -175,18 +213,28 @@
         font: 2em "AssistantBold";
     }
     #home #advants .ad p {
-        font: 1.4em "AssistantBold";
+        font: 1.2em "AssistantBold";
     }
-    #home #advants .ad4 {
-        order: 5;
-    }
-    #home #advants .ad .logo {
+    #home #advants .ad .logo  {
     	height: 135px;
     	width: 135px;
     }
     #home .form h4 {
       font: 1.6em "AssistantBold";
     }
+    #home header .container-fluid .links .link1 {
+          height: 44px;
+          width: 37px;
+ }
+        #home header .container-fluid .links .link2 {
+          height: 44px;
+          width: 60px; }
+        #home header .container-fluid .links .link3 {
+          height: 44px;
+          width: 52px; }
+          #home header .container-fluid .links {
+          top: 10px; 
+        }
 }
 
 @media (max-width: 383px) {
@@ -200,7 +248,7 @@
      #home #advants .content {
         justify-content: space-between;
     }
-    #home #advants .ad4 {
+    #home #advants .ad1 {
         width: 100%;
     }
 }

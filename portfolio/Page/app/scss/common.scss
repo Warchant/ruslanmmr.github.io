@@ -5,6 +5,7 @@
 
 body {
     font-size: 10px;
+    min-width: 320px;
 }
 
 .container {
@@ -68,6 +69,7 @@ body {
                     background: url(../img/logo1.png) no-repeat center center;
                     height: 66px;
                     width: 56px;
+                    background-size: cover;
                 }
                 .link2 {
                     background: url(../img/logo2.png) no-repeat center center;
@@ -347,5 +349,19 @@ body {
     }
 }
 
+
+
+//thanks page
+
+#thanksblock {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		font: 6em "AssistantSemiBold";
+	}
+}
 
 @import "media"; //at the end

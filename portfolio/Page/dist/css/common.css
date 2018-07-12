@@ -1331,7 +1331,8 @@ template {
   src: url("../fonts/Assistant/AssistantSemiBold.ttf") format("truetype"); }
 
 body {
-  font-size: 10px; }
+  font-size: 10px;
+  min-width: 320px; }
 
 .container {
   min-width: 320px; }
@@ -1390,7 +1391,9 @@ body {
         #home header .container-fluid .links .link1 {
           background: url(../img/logo1.png) no-repeat center center;
           height: 66px;
-          width: 56px; }
+          width: 56px;
+          -webkit-background-size: cover;
+                  background-size: cover; }
         #home header .container-fluid .links .link2 {
           background: url(../img/logo2.png) no-repeat center center;
           height: 66px;
@@ -1685,6 +1688,24 @@ body {
     height: 219px;
     padding: 35px 0px; }
 
+#thanksblock {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #thanksblock h1 {
+    font: 6em "AssistantSemiBold"; }
+
 /*==========  Desktop First  ==========*/
 @media screen and (max-width: 1400px) {
   #home #advants .ad p {
@@ -1704,18 +1725,43 @@ body {
     margin: 0 auto !important; }
   #home .home_overlay {
     display: none; }
-  #home #advants .ad4,
-  #home #advants .ad5 {
-    width: 35%; }
-  #home #advants .ad1,
-  #home #advants .ad2,
-  #home #advants .ad3 {
-    width: 33%; }
   #home #advants .content {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  #home #advants .ad5 {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
+  #home #advants .ad4 {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  #home #advants .ad3 {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+  #home #advants .ad2 {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+        -ms-flex-order: 5;
+            order: 5; }
+  #home #advants .ad1 {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4; }
+  #home #advants .ad3,
+  #home #advants .ad4,
+  #home #advants .ad5 {
+    width: 33%; }
+  #home #advants .ad1,
+  #home #advants .ad2 {
+    width: 35%; } }
 
 @media (max-width: 991.98px) {
   #home .container .content .title {
@@ -1735,13 +1781,6 @@ body {
     padding-top: 55px; }
   #home .container .content .title .cards .card1 p {
     font: 6em "AmaticBold"; }
-  #home #advants .ad4,
-  #home #advants .ad5 {
-    width: 50%; }
-  #home #advants .ad1,
-  #home #advants .ad2,
-  #home #advants .ad3 {
-    width: 50%; }
   #home #advants .ad p {
     font: 1.6em "AssistantBold";
     padding-top: 18px; }
@@ -1764,7 +1803,48 @@ body {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  #home header .container-fluid .header_title a {
+    height: 60px;
+    width: 130px;
+    font: 1.3em "AssistantRegular"; }
+  #home header .container-fluid .links a {
+    margin: 5px; }
+  #home header .container-fluid .links {
+    right: 10px;
+    top: 5px; }
+  #home #advants .ad5 {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  #home #advants .ad4 {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+  #home #advants .ad3 {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4; }
+  #home #advants .ad2 {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
+  #home #advants .ad1 {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+        -ms-flex-order: 5;
+            order: 5; }
+  #home #advants .ad3,
+  #home #advants .ad4,
+  #home #advants .ad5 {
+    width: 50%; }
+  #home #advants .ad1,
+  #home #advants .ad2 {
+    width: 50%; } }
 
 @media (max-width: 575.98px) {
   #home .container .content .title .cards .card2 h3 {
@@ -1778,8 +1858,6 @@ body {
     padding-top: 90px; }
   #home .container .content .title .cards .card1 p {
     font: 5em "AmaticBold"; }
-  #home header .container-fluid .links {
-    display: none; }
   #home .form_bottom a {
     font: 3em "AssistantSemiBold"; }
   #home .form_bottom a span {
@@ -1814,17 +1892,23 @@ body {
   #home .container .content .title .sun h1 {
     font: 2em "AssistantBold"; }
   #home #advants .ad p {
-    font: 1.4em "AssistantBold"; }
-  #home #advants .ad4 {
-    -webkit-box-ordinal-group: 6;
-    -webkit-order: 5;
-        -ms-flex-order: 5;
-            order: 5; }
+    font: 1.2em "AssistantBold"; }
   #home #advants .ad .logo {
     height: 135px;
     width: 135px; }
   #home .form h4 {
-    font: 1.6em "AssistantBold"; } }
+    font: 1.6em "AssistantBold"; }
+  #home header .container-fluid .links .link1 {
+    height: 44px;
+    width: 37px; }
+  #home header .container-fluid .links .link2 {
+    height: 44px;
+    width: 60px; }
+  #home header .container-fluid .links .link3 {
+    height: 44px;
+    width: 52px; }
+  #home header .container-fluid .links {
+    top: 10px; } }
 
 @media (max-width: 383px) {
   #home .container .content .title .cards .card2 h3 {
@@ -1837,7 +1921,7 @@ body {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  #home #advants .ad4 {
+  #home #advants .ad1 {
     width: 100%; } }
 
 /*==========  Mobile First  ==========*/
