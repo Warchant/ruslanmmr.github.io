@@ -1,47 +1,222 @@
 @import "vars";
 
 
+
 /*==========  Desktop First  ==========*/
+
+@media screen and (max-width: 1400px) {
+    #home #advants .ad p {
+        font: 1.9em "AssistantBold";
+        padding-top: 21px;
+    }
+}
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
+    #home .container .content .advants .ad .logo {
+        margin: 0px !important;
+    }
+    #home .container {
+        height: auto;
+    }
+    #home #advants {
+        margin-top: 500px;
+        padding-top: 40px;
+        background: rgba(255, 255, 255, 0.85);
+    }
+    #home #advants .ad .logo {
+        margin: 0 auto !important;
+    }
+    #home .home_overlay {
+        display: none;
+    }
+    #home #advants .ad4,
+    #home #advants .ad5 {
+        width: 35%;
+    }
+    #home #advants .ad1,
+    #home #advants .ad2,
+    #home #advants .ad3 {
+        width: 33%;
+    }
+    #home #advants .content {
+        justify-content: center;
+    }
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
-
+    #home .container .content .title {
+        width: auto;
+    }
+    #home .container .content .title .cards .card2 h3 {
+        font: 2.5em "AssistantSemiBold";
+        padding-top: 173px;
+    }
+     #home .form form .input {
+     	padding-right: 10px;
+      }
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+    #home .container .content .title .cards .card2 h3 {
+        font: 2em "AssistantSemiBold";
+        padding-top: 177px;
+    }
+    #home .container .content .title .cards .card1 h2 {
+        font: 4em "AssistantBold";
+        padding-top: 55px;
+    }
+    #home .container .content .title .cards .card1 p {
+        font: 6em "AmaticBold";
+    }
+    #home #advants .ad4,
+    #home #advants .ad5 {
+        width: 50%;
+    }
+    #home #advants .ad1,
+    #home #advants .ad2,
+    #home #advants .ad3 {
+        width: 50%;
+    }
+    #home #advants .ad p {
+        font: 1.6em "AssistantBold";
+        padding-top: 18px;
+    }
+    #home .form form .input, #home .form form .submit  {
+     	width: 80%;
+     	margin-bottom: 10px;
 
+      }
+       #home .active {
+       	height: 440px;
+       }
+       #home .form form .select {
+       	width: 80%;
+       	margin-bottom: 10px;
+       	padding: 0px 15px;
+       }
+       #home .form form .submit {
+       	order: 5;
+       	margin-top: 5px;
+       }
+        #home .form form {
+        	justify-content: center;
+        }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
+    #home .container .content .title .cards .card2 h3 {
+        font: 1.7em "AssistantSemiBold";
+        padding-top: 177px;
+    }
+    #home .container .content .title .cards .card1 h2 {
+        font: 3.5em "AssistantBold";
+        padding-top: 65px;
+        line-height: 140%;
+    }
+    #home .container .content {
+        padding-top: 90px;
+    }
+    #home .container .content .title .cards .card1 p {
+        font: 5em "AmaticBold";
+    }
+    #home header .container-fluid .links {
+        display: none;
+    }
+    #home .form_bottom a {
+        font: 3em "AssistantSemiBold";
+    }
+    #home .form_bottom a span {
+        margin-right: 10px;
+    }
+    #home #advants .content {
+        padding: 0 15px;
+    }
+    #home #advants {
+        margin-top: 200px;
+    }
+    #home .form form .select, #home .form form .input, #home .form form .submit {
+       	width: 90%;
+       }
+       #home .form h4 {
+      font: 2.5em "AssistantBold";
+    }
 }
+
+@media (max-width: 450px) {
+    #home .container .content .title .cards .card2 h3 {
+        font: 1.5em "AssistantSemiBold";
+        padding-top: 100px;
+    }
+    #home .container .content .title .cards .card1 h2 {
+        font: 2.7em "AssistantBold";
+        padding-top: 30px;
+        line-height: 140%;
+    }
+    #home .container .content .title .cards .card1 {
+        height: 150px;
+    }
+    #home .container .content .title .cards .card2 {
+        height: 150px;
+    }
+    #home .container .content .title .cards {
+        height: 230px;
+    }
+    #home .container .content .title .cards .card1 p {
+        font: 3.9em "AmaticBold";
+    }
+    #home .container .content .title .sun {
+        width: 280px;
+    }
+    #home .container .content .title .sun h1 {
+        font: 2em "AssistantBold";
+    }
+    #home #advants .ad p {
+        font: 1.4em "AssistantBold";
+    }
+    #home #advants .ad4 {
+        order: 5;
+    }
+    #home #advants .ad .logo {
+    	height: 135px;
+    	width: 135px;
+    }
+    #home .form h4 {
+      font: 1.6em "AssistantBold";
+    }
+}
+
+@media (max-width: 383px) {
+    #home .container .content .title .cards .card2 h3 {
+        padding-top: 90px;
+    }
+    #home #advants .ad .logo {
+    	height: 125px;
+    	width: 125px;
+    }
+     #home #advants .content {
+        justify-content: space-between;
+    }
+    #home #advants .ad4 {
+        width: 100%;
+    }
+}
+
 
 
 /*==========  Mobile First  ==========*/
 
 // ≤576px
-@include media-breakpoint-up(sm) {
-
-}
+@include media-breakpoint-up(sm) {}
 
 // ≤768px
-@include media-breakpoint-up(md) {
-
-}
+@include media-breakpoint-up(md) {}
 
 // ≤992px
-@include media-breakpoint-up(lg) {
-
-}
+@include media-breakpoint-up(lg) {}
 
 // ≤1200px
-@include media-breakpoint-up(xl) {
-	
-}
+@include media-breakpoint-up(xl) {}

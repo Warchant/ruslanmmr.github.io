@@ -7,15 +7,21 @@ body {
     font-size: 10px;
 }
 
+.container {
+    min-width: 320px;
+}
+
 #home {
-    background: #64a4df url(../img/bg_home.png) no-repeat center bottom;
+    background: #64a4df url(../img/bg_home.png) no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
+    background-position: 50% 50px;
     .home_overlay {
         height: 480px;
         width: 100%;
         position: absolute;
-        bottom: 0;
+        bottom: 0px;
         background: url(../img/bg_overlay.png) no-repeat center center;
         background-size: cover;
     }
@@ -77,7 +83,6 @@ body {
         }
     }
     .container {
-        height: 1656px;
         .content {
             padding-top: 56px;
             .title {
@@ -89,6 +94,7 @@ body {
                     width: 356px;
                     margin: 0 auto;
                     background: url(../img/sun.png) no-repeat center bottom;
+                    background-size: contain;
                     display: flex;
                     justify-content: center;
                     align-items: flex-end;
@@ -180,20 +186,31 @@ body {
                     }
                 }
             }
-            .advants {
-                margin-top: 660px;
+        }
+    }
+    #advants {
+                margin-top: 680px;
                 width: 100%;
-                display: flex;
-                justify-content: space-between;
+                padding-bottom: 110px;
                 position: relative;
-                ;
+
                 z-index: 3;
+                .content {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    padding: 0;
+                }
                 .ad {
+                    width: 20%;
+                    min-width: 140px;
+                    margin: 0;
                     .logo {
                         border-radius: 90px;
                         height: 180px;
                         width: 180px;
                         background: #fff;
+                        margin: 0 auto;
                         .bg {
                             height: 100%;
                             width: 100%;
@@ -229,13 +246,11 @@ body {
                     }
                     p {
                         text-align: center;
-                        font: 1.5em "AssistantBold";
+                        font: 2.3em "AssistantBold";
                         padding-top: 21px;
                     }
                 }
             }
-        }
-    }
     .form_bottom {
         position: fixed;
         z-index: 5;
@@ -280,9 +295,11 @@ body {
             text-align: center;
             color: #434343;
             letter-spacing: 1px;
+            padding-bottom: 30px;
         }
         form {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             width: 100%;
             .submit {
@@ -311,6 +328,7 @@ body {
                 border-radius: 5px;
                 width: 18%;
                 font: 1.4em "AssistantSemiBold";
+
             }
             .select {
                 width: 18%;
@@ -318,12 +336,14 @@ body {
                 border-radius: 5px;
                 font: 1.4em "AssistantSemiBold";
                 color: #6f7070;
+                 height: 50px;
+                 text-align: right;
             }
         }
     }
     .active {
         height: 219px;
-        padding: 35px 15px;
+        padding: 35px 0px;
     }
 }
 

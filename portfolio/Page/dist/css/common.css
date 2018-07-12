@@ -281,7 +281,7 @@ template {
       max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1440px; } }
 
 .container-fluid {
   width: 100%;
@@ -1333,16 +1333,21 @@ template {
 body {
   font-size: 10px; }
 
+.container {
+  min-width: 320px; }
+
 #home {
-  background: #64a4df url(../img/bg_home.png) no-repeat center bottom;
+  background: #64a4df url(../img/bg_home.png) no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50px; }
   #home .home_overlay {
     height: 480px;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     background: url(../img/bg_overlay.png) no-repeat center center;
     -webkit-background-size: cover;
             background-size: cover; }
@@ -1394,98 +1399,98 @@ body {
           background: url(../img/logo3.png) no-repeat center center;
           height: 66px;
           width: 78px; }
-  #home .container {
-    height: 1656px; }
-    #home .container .content {
-      padding-top: 56px; }
-      #home .container .content .title {
-        height: 502px;
-        width: 820px;
-        margin: 0 auto; }
-        #home .container .content .title .sun {
-          height: 197px;
-          width: 356px;
-          margin: 0 auto;
-          background: url(../img/sun.png) no-repeat center bottom;
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-          -webkit-justify-content: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-align: end;
-          -webkit-align-items: flex-end;
-              -ms-flex-align: end;
-                  align-items: flex-end; }
-          #home .container .content .title .sun h1 {
-            font: 3em "AssistantBold";
-            background: #fcd305;
-            display: inline-block;
-            line-height: 100%;
-            padding: 10px 13px;
-            padding-top: 7px;
-            -webkit-border-radius: 10px;
-                    border-radius: 10px;
+  #home .container .content {
+    padding-top: 56px; }
+    #home .container .content .title {
+      height: 502px;
+      width: 820px;
+      margin: 0 auto; }
+      #home .container .content .title .sun {
+        height: 197px;
+        width: 356px;
+        margin: 0 auto;
+        background: url(../img/sun.png) no-repeat center bottom;
+        -webkit-background-size: contain;
+                background-size: contain;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+                align-items: flex-end; }
+        #home .container .content .title .sun h1 {
+          font: 3em "AssistantBold";
+          background: #fcd305;
+          display: inline-block;
+          line-height: 100%;
+          padding: 10px 13px;
+          padding-top: 7px;
+          -webkit-border-radius: 10px;
+                  border-radius: 10px;
+          text-align: center;
+          margin-bottom: 4px; }
+      #home .container .content .title .cards {
+        height: 311px;
+        position: relative; }
+        #home .container .content .title .cards .card1 {
+          position: absolute;
+          top: 0px;
+          width: 100%;
+          height: 231px;
+          background: #e8c204 url(../img/bg_yellow.png) no-repeat center center;
+          -webkit-background-size: cover;
+                  background-size: cover;
+          -webkit-border-radius: 10px;
+                  border-radius: 10px;
+          z-index: 2; }
+          #home .container .content .title .cards .card1 h2 {
+            font: 5.5em "AssistantBold";
             text-align: center;
-            margin-bottom: 4px; }
-        #home .container .content .title .cards {
-          height: 311px;
-          position: relative; }
-          #home .container .content .title .cards .card1 {
-            position: absolute;
-            top: 0px;
-            width: 100%;
-            height: 231px;
-            background: #e8c204 url(../img/bg_yellow.png) no-repeat center center;
-            -webkit-background-size: cover;
-                    background-size: cover;
-            -webkit-border-radius: 10px;
-                    border-radius: 10px;
-            z-index: 2; }
-            #home .container .content .title .cards .card1 h2 {
-              font: 5.5em "AssistantBold";
-              text-align: center;
-              padding-top: 30px;
-              margin: 0; }
-            #home .container .content .title .cards .card1 p {
-              font: 8em "AmaticBold";
-              text-align: center; }
-          #home .container .content .title .cards .card2 {
-            position: absolute;
-            bottom: 0px;
-            width: 100%;
-            height: 231px;
-            background: #5e8935;
-            -webkit-border-radius: 10px;
-                    border-radius: 10px;
-            z-index: 1; }
-            #home .container .content .title .cards .card2 h3 {
-              font: 3em "AssistantSemiBold";
-              padding-top: 168px;
-              text-align: center;
-              color: #fff; }
-              #home .container .content .title .cards .card2 h3 span {
-                display: inline-block;
-                opacity: 0;
-                -webkit-animation-name: bounceIn;
-                        animation-name: bounceIn;
-                -webkit-animation-duration: 450ms;
-                        animation-duration: 450ms;
-                -webkit-animation-timing-function: linear;
-                        animation-timing-function: linear;
-                -webkit-animation-fill-mode: forwards;
-                        animation-fill-mode: forwards; }
-              #home .container .content .title .cards .card2 h3 span:nth-child(1) {
-                -webkit-animation-delay: 0.5s;
-                        animation-delay: 0.5s; }
-              #home .container .content .title .cards .card2 h3 span:nth-child(2) {
-                -webkit-animation-delay: 0.75s;
-                        animation-delay: 0.75s; }
-              #home .container .content .title .cards .card2 h3 span:nth-child(3) {
-                -webkit-animation-delay: 1s;
-                        animation-delay: 1s; }
+            padding-top: 30px;
+            margin: 0; }
+          #home .container .content .title .cards .card1 p {
+            font: 8em "AmaticBold";
+            text-align: center; }
+        #home .container .content .title .cards .card2 {
+          position: absolute;
+          bottom: 0px;
+          width: 100%;
+          height: 231px;
+          background: #5e8935;
+          -webkit-border-radius: 10px;
+                  border-radius: 10px;
+          z-index: 1; }
+          #home .container .content .title .cards .card2 h3 {
+            font: 3em "AssistantSemiBold";
+            padding-top: 168px;
+            text-align: center;
+            color: #fff; }
+            #home .container .content .title .cards .card2 h3 span {
+              display: inline-block;
+              opacity: 0;
+              -webkit-animation-name: bounceIn;
+                      animation-name: bounceIn;
+              -webkit-animation-duration: 450ms;
+                      animation-duration: 450ms;
+              -webkit-animation-timing-function: linear;
+                      animation-timing-function: linear;
+              -webkit-animation-fill-mode: forwards;
+                      animation-fill-mode: forwards; }
+            #home .container .content .title .cards .card2 h3 span:nth-child(1) {
+              -webkit-animation-delay: 0.5s;
+                      animation-delay: 0.5s; }
+            #home .container .content .title .cards .card2 h3 span:nth-child(2) {
+              -webkit-animation-delay: 0.75s;
+                      animation-delay: 0.75s; }
+            #home .container .content .title .cards .card2 h3 span:nth-child(3) {
+              -webkit-animation-delay: 1s;
+                      animation-delay: 1s; }
 
 @-webkit-keyframes bounceIn {
   0% {
@@ -1522,48 +1527,61 @@ body {
     opacity: 1;
     -webkit-transform: scale(1) translate3d(0, 0, 0);
             transform: scale(1) translate3d(0, 0, 0); } }
-      #home .container .content .advants {
-        margin-top: 660px;
-        width: 100%;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        position: relative;
-        z-index: 3; }
-        #home .container .content .advants .ad .logo {
-          -webkit-border-radius: 90px;
-                  border-radius: 90px;
-          height: 180px;
-          width: 180px;
-          background: #fff; }
-          #home .container .content .advants .ad .logo .bg {
-            height: 100%;
-            width: 100%; }
-        #home .container .content .advants .ad .logo1 .bg {
-          background: url(../img/logo1_ad.png) no-repeat center center; }
-        #home .container .content .advants .ad .logo2 {
-          margin-top: 35px; }
-          #home .container .content .advants .ad .logo2 .bg {
-            background: url(../img/logo2_ad.png) no-repeat center center; }
-        #home .container .content .advants .ad .logo3 {
-          margin-top: 55px; }
-          #home .container .content .advants .ad .logo3 .bg {
-            background: url(../img/logo3_ad.png) no-repeat center center; }
-        #home .container .content .advants .ad .logo4 {
-          margin-top: 35px; }
-          #home .container .content .advants .ad .logo4 .bg {
-            background: url(../img/logo4_ad.png) no-repeat center center; }
-        #home .container .content .advants .ad .logo5 .bg {
-          background: url(../img/logo5_ad.png) no-repeat center center; }
-        #home .container .content .advants .ad p {
-          text-align: center;
-          font: 1.5em "AssistantBold";
-          padding-top: 21px; }
+  #home #advants {
+    margin-top: 680px;
+    width: 100%;
+    padding-bottom: 110px;
+    position: relative;
+    z-index: 3; }
+    #home #advants .content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 0; }
+    #home #advants .ad {
+      width: 20%;
+      min-width: 140px;
+      margin: 0; }
+      #home #advants .ad .logo {
+        -webkit-border-radius: 90px;
+                border-radius: 90px;
+        height: 180px;
+        width: 180px;
+        background: #fff;
+        margin: 0 auto; }
+        #home #advants .ad .logo .bg {
+          height: 100%;
+          width: 100%; }
+      #home #advants .ad .logo1 .bg {
+        background: url(../img/logo1_ad.png) no-repeat center center; }
+      #home #advants .ad .logo2 {
+        margin-top: 35px; }
+        #home #advants .ad .logo2 .bg {
+          background: url(../img/logo2_ad.png) no-repeat center center; }
+      #home #advants .ad .logo3 {
+        margin-top: 55px; }
+        #home #advants .ad .logo3 .bg {
+          background: url(../img/logo3_ad.png) no-repeat center center; }
+      #home #advants .ad .logo4 {
+        margin-top: 35px; }
+        #home #advants .ad .logo4 .bg {
+          background: url(../img/logo4_ad.png) no-repeat center center; }
+      #home #advants .ad .logo5 .bg {
+        background: url(../img/logo5_ad.png) no-repeat center center; }
+      #home #advants .ad p {
+        text-align: center;
+        font: 2.3em "AssistantBold";
+        padding-top: 21px; }
   #home .form_bottom {
     position: fixed;
     z-index: 5;
@@ -1616,12 +1634,16 @@ body {
       font: 3.6em "AssistantBold";
       text-align: center;
       color: #434343;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      padding-bottom: 30px; }
     #home .form form {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
       -webkit-box-pack: justify;
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
@@ -1656,10 +1678,166 @@ body {
         -webkit-border-radius: 5px;
                 border-radius: 5px;
         font: 1.4em "AssistantSemiBold";
-        color: #6f7070; }
+        color: #6f7070;
+        height: 50px;
+        text-align: right; }
   #home .active {
     height: 219px;
-    padding: 35px 15px; }
+    padding: 35px 0px; }
 
 /*==========  Desktop First  ==========*/
+@media screen and (max-width: 1400px) {
+  #home #advants .ad p {
+    font: 1.9em "AssistantBold";
+    padding-top: 21px; } }
+
+@media (max-width: 1199.98px) {
+  #home .container .content .advants .ad .logo {
+    margin: 0px !important; }
+  #home .container {
+    height: auto; }
+  #home #advants {
+    margin-top: 500px;
+    padding-top: 40px;
+    background: rgba(255, 255, 255, 0.85); }
+  #home #advants .ad .logo {
+    margin: 0 auto !important; }
+  #home .home_overlay {
+    display: none; }
+  #home #advants .ad4,
+  #home #advants .ad5 {
+    width: 35%; }
+  #home #advants .ad1,
+  #home #advants .ad2,
+  #home #advants .ad3 {
+    width: 33%; }
+  #home #advants .content {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+@media (max-width: 991.98px) {
+  #home .container .content .title {
+    width: auto; }
+  #home .container .content .title .cards .card2 h3 {
+    font: 2.5em "AssistantSemiBold";
+    padding-top: 173px; }
+  #home .form form .input {
+    padding-right: 10px; } }
+
+@media (max-width: 767.98px) {
+  #home .container .content .title .cards .card2 h3 {
+    font: 2em "AssistantSemiBold";
+    padding-top: 177px; }
+  #home .container .content .title .cards .card1 h2 {
+    font: 4em "AssistantBold";
+    padding-top: 55px; }
+  #home .container .content .title .cards .card1 p {
+    font: 6em "AmaticBold"; }
+  #home #advants .ad4,
+  #home #advants .ad5 {
+    width: 50%; }
+  #home #advants .ad1,
+  #home #advants .ad2,
+  #home #advants .ad3 {
+    width: 50%; }
+  #home #advants .ad p {
+    font: 1.6em "AssistantBold";
+    padding-top: 18px; }
+  #home .form form .input, #home .form form .submit {
+    width: 80%;
+    margin-bottom: 10px; }
+  #home .active {
+    height: 440px; }
+  #home .form form .select {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 0px 15px; }
+  #home .form form .submit {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+        -ms-flex-order: 5;
+            order: 5;
+    margin-top: 5px; }
+  #home .form form {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+@media (max-width: 575.98px) {
+  #home .container .content .title .cards .card2 h3 {
+    font: 1.7em "AssistantSemiBold";
+    padding-top: 177px; }
+  #home .container .content .title .cards .card1 h2 {
+    font: 3.5em "AssistantBold";
+    padding-top: 65px;
+    line-height: 140%; }
+  #home .container .content {
+    padding-top: 90px; }
+  #home .container .content .title .cards .card1 p {
+    font: 5em "AmaticBold"; }
+  #home header .container-fluid .links {
+    display: none; }
+  #home .form_bottom a {
+    font: 3em "AssistantSemiBold"; }
+  #home .form_bottom a span {
+    margin-right: 10px; }
+  #home #advants .content {
+    padding: 0 15px; }
+  #home #advants {
+    margin-top: 200px; }
+  #home .form form .select, #home .form form .input, #home .form form .submit {
+    width: 90%; }
+  #home .form h4 {
+    font: 2.5em "AssistantBold"; } }
+
+@media (max-width: 450px) {
+  #home .container .content .title .cards .card2 h3 {
+    font: 1.5em "AssistantSemiBold";
+    padding-top: 100px; }
+  #home .container .content .title .cards .card1 h2 {
+    font: 2.7em "AssistantBold";
+    padding-top: 30px;
+    line-height: 140%; }
+  #home .container .content .title .cards .card1 {
+    height: 150px; }
+  #home .container .content .title .cards .card2 {
+    height: 150px; }
+  #home .container .content .title .cards {
+    height: 230px; }
+  #home .container .content .title .cards .card1 p {
+    font: 3.9em "AmaticBold"; }
+  #home .container .content .title .sun {
+    width: 280px; }
+  #home .container .content .title .sun h1 {
+    font: 2em "AssistantBold"; }
+  #home #advants .ad p {
+    font: 1.4em "AssistantBold"; }
+  #home #advants .ad4 {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+        -ms-flex-order: 5;
+            order: 5; }
+  #home #advants .ad .logo {
+    height: 135px;
+    width: 135px; }
+  #home .form h4 {
+    font: 1.6em "AssistantBold"; } }
+
+@media (max-width: 383px) {
+  #home .container .content .title .cards .card2 h3 {
+    padding-top: 90px; }
+  #home #advants .ad .logo {
+    height: 125px;
+    width: 125px; }
+  #home #advants .content {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  #home #advants .ad4 {
+    width: 100%; } }
+
 /*==========  Mobile First  ==========*/
