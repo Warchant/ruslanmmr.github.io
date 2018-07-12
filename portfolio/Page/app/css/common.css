@@ -1343,7 +1343,7 @@ body {
           background-size: cover;
   position: relative;
   overflow: hidden;
-  background-position: 50% 50px; }
+  background-position: 50% 0px; }
   #home .home_overlay {
     height: 480px;
     width: 100%;
@@ -1535,7 +1535,7 @@ body {
     -webkit-transform: scale(1) translate3d(0, 0, 0);
             transform: scale(1) translate3d(0, 0, 0); } }
   #home #advants {
-    margin-top: 680px;
+    margin-top: 250px;
     width: 100%;
     padding-bottom: 110px;
     position: relative;
@@ -1848,7 +1848,9 @@ body {
     width: 50%; }
   #home #advants .ad1,
   #home #advants .ad2 {
-    width: 50%; } }
+    width: 50%; }
+  #home {
+    background-position: 50% -50px; } }
 
 @media (max-width: 575.98px) {
   #home .container .content .title .cards .card2 h3 {
