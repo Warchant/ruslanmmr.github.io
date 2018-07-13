@@ -21,13 +21,11 @@
     }
     #home .container .content .title .cards .card2 h3 {
         font: 2.5em "AssistantSemiBold";
-        padding-top: 173px;
     }
     #home .container {
         height: auto;
     }
     #home #advants {
-        margin-top: 500px;
         padding-top: 40px;
         background: rgba(255, 255, 255, 0.85);
     }
@@ -65,7 +63,7 @@
         width: 35%;
     }
     #home {
-    	background-size: auto;
+    	background-size: contain;
      }
 }
 
@@ -77,21 +75,13 @@
       #home .container .content .title {
         width: auto;
     }
+    #home {
+        background-size: cover;
+     }
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-    #home .container .content .title .cards .card2 h3 {
-        font: 2em "AssistantSemiBold";
-        padding-top: 177px;
-    }
-    #home .container .content .title .cards .card1 h2 {
-        font: 4em "AssistantBold";
-        padding-top: 55px;
-    }
-    #home .container .content .title .cards .card1 p {
-        font: 6em "AmaticBold";
-    }
     #home #advants .ad p {
         font: 1.6em "AssistantBold";
         padding-top: 18px;
@@ -160,12 +150,10 @@
 @include media-breakpoint-down(xs) {
     #home .container .content .title .cards .card2 h3 {
         font: 1.7em "AssistantSemiBold";
-        padding-top: 177px;
     }
     #home .container .content .title .cards .card1 h2 {
         font: 3.5em "AssistantBold";
-        padding-top: 65px;
-        line-height: 140%;
+        line-height: 90%;
     }
     #home .container .content {
         padding-top: 90px;
@@ -196,22 +184,14 @@
 @media (max-width: 450px) {
     #home .container .content .title .cards .card2 h3 {
         font: 1.5em "AssistantSemiBold";
-        padding-top: 100px;
+        padding-bottom: 3px;
     }
     #home .container .content .title .cards .card1 h2 {
         font: 2.7em "AssistantBold";
-        padding-top: 30px;
+        padding-top: 13px;
         line-height: 140%;
     }
-    #home .container .content .title .cards .card1 {
-        height: 150px;
-    }
-    #home .container .content .title .cards .card2 {
-        height: 150px;
-    }
-    #home .container .content .title .cards {
-        height: 230px;
-    }
+
     #home .container .content .title .cards .card1 p {
         font: 3.9em "AmaticBold";
     }
@@ -248,7 +228,8 @@
 
 @media (max-width: 383px) {
     #home .container .content .title .cards .card2 h3 {
-        padding-top: 90px;
+padding-bottom: 2px;
+margin: 0px;
     }
     #home #advants .ad .logo {
     	height: 125px;
