@@ -1,3 +1,5 @@
+@import url(../libs/OwlCarousel2-2.3.4/owl.theme.default.css);
+@import url(../libs/OwlCarousel2-2.3.4/owl.carousel.css);
 *,
 *::before,
 *::after {
@@ -2188,8 +2190,28 @@ html {
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl500/MuseoSansCyrl-500.eot");
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl500/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl500/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl500/MuseoSansCyrl-500.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "Aempirial";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aempirial/aempirial.eot");
+  src: url("../fonts/Aempirial/aempirial.eot?#iefix") format("embedded-opentype"), url("../fonts/Aempirial/aempirial.woff") format("woff"), url("../fonts/Aempirial/aempirial.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "ParkAvenue";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ParkAvenue/Park.eot");
+  src: url("../fonts/ParkAvenue/Park.eot?#iefix") format("embedded-opentype"), url("../fonts/ParkAvenue/Park.woff") format("woff"), url("../fonts/ParkAvenue/Park.ttf") format("truetype"); }
+
 body {
   font-size: 10px; }
+
+h3 {
+  font: 10em "Aempirial";
+  text-align: center;
+  padding-top: 122px;
+  letter-spacing: 4px; }
 
 #wrap {
   position: relative; }
@@ -2200,27 +2222,33 @@ body {
     top: 0px;
     right: 0px;
     background: url(../img/bg.jpg) no-repeat top center;
-    opacity: 0.3; }
+    opacity: 0;
+    display: none; }
 
 #home {
   position: relative;
   z-index: 2;
-  height: 819px;
   background: #25394e url(../img/bg_home.jpg) no-repeat center center; }
-  #home header .content {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 125px; }
+  #home .container {
+    position: relative; }
+  #home header {
+    position: absolute;
+    width: 100%; }
+    #home header .content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      height: 125px;
+      max-width: 1140px; }
   #home .logo a {
     display: block;
     width: 160px;
@@ -2248,11 +2276,9 @@ body {
         -webkit-transition: .3s;
         -o-transition: .3s;
         transition: .3s;
-        z-index: 1;
-        background: url(../img/icon_nav_hover.png) no-repeat;
-        opacity: 0; }
+        z-index: 1; }
       #home .nav li .activebg {
-        opacity: 1; }
+        background: url(../img/icon_nav_hover.png) no-repeat; }
     #home .nav a {
       position: relative;
       display: block;
@@ -2261,9 +2287,9 @@ body {
       color: #fff;
       text-transform: uppercase;
       font: 1.4em "MuseoSansCyrl500";
-      -webkit-transition: .3s;
-      -o-transition: .3s;
-      transition: .3s; }
+      -webkit-transition: .1s ease;
+      -o-transition: .1s ease;
+      transition: .1s ease; }
     #home .nav .active {
       color: #fe1119; }
   #home .btn {
@@ -2306,6 +2332,601 @@ body {
         margin-left: 31px; }
       #home .btn a .txt {
         padding-top: 14px; }
+  #home .content h1 {
+    font: 12em "Aempirial";
+    color: #cdcdcd;
+    text-align: center;
+    padding-top: 245px;
+    letter-spacing: 5px; }
+  #home .content h2 {
+    font: 12em "Aempirial";
+    text-align: center;
+    color: #cdcdcd;
+    letter-spacing: 5px; }
+  #home .content p {
+    font: 4.7em "ParkAvenue";
+    color: #cdcdcd;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 104px; }
+  #home .content .a_bottom {
+    position: relative;
+    padding-bottom: 46px;
+    width: 95px;
+    margin: 0 auto; }
+    #home .content .a_bottom a {
+      position: relative;
+      z-index: 2;
+      display: block;
+      height: 55px;
+      width: 45px;
+      background: url(../img/icon_back.png);
+      margin: 0 auto; }
+    #home .content .a_bottom .bg {
+      position: absolute;
+      background: url(../img/bg_arrow.png);
+      width: 95px;
+      height: 74px;
+      top: 28px;
+      z-index: 1; }
+
+#about {
+  position: relative;
+  z-index: 2;
+  background: url(../img/bg_about.png) no-repeat center top; }
+  #about h3 {
+    font: 10em "Aempirial";
+    text-align: center;
+    padding-top: 122px;
+    letter-spacing: 4px; }
+  #about p {
+    text-align: center;
+    font: 1.4em "MuseoSansCyrl500";
+    padding-top: 28px;
+    letter-spacing: 1px;
+    line-height: 210%;
+    padding-bottom: 41px; }
+
+#collections {
+  position: relative; }
+  #collections h4 {
+    font: 1.2em "MuseoSansCyrl500";
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 2px; }
+  #collections .a_bottom {
+    position: relative;
+    padding-bottom: 46px;
+    width: 95px;
+    margin: 0 auto; }
+    #collections .a_bottom a {
+      position: relative;
+      z-index: 2;
+      display: block;
+      height: 55px;
+      width: 45px;
+      background: url(../img/btn_collect.png);
+      margin: 0 auto;
+      margin-bottom: 77px; }
+    #collections .a_bottom .bg {
+      position: absolute;
+      background: url(../img/bg_btn_collect.png);
+      width: 95px;
+      height: 74px;
+      top: 37px;
+      z-index: 1; }
+  #collections .collection .capt {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 62px; }
+    #collections .collection .capt .img {
+      height: 396px;
+      position: relative;
+      max-width: 605px;
+      background: #d1d1d1;
+      -webkit-border-radius: 9px;
+              border-radius: 9px;
+      -webkit-box-shadow: 11px 11px 11px -1px #d1d1d1;
+      box-shadow: 11px 11px 11px -1px #d1d1d1; }
+      #collections .collection .capt .img img {
+        width: 100%;
+        height: 100%;
+        -webkit-border-radius: 9px;
+                border-radius: 9px; }
+      #collections .collection .capt .img .bg {
+        position: absolute;
+        z-index: 3;
+        height: 218px;
+        width: 252px;
+        right: -115px;
+        top: 24px;
+        background: url(../img/bgformodel.png) no-repeat; }
+    #collections .collection .capt .txt {
+      position: relative;
+      z-index: 3;
+      margin-right: 15px; }
+      #collections .collection .capt .txt .num {
+        font: 1.2em "MuseoSansCyrl500";
+        color: #000;
+        padding-top: 56px; }
+      #collections .collection .capt .txt .season {
+        font: 3.6em "MuseoSansCyrl500";
+        padding-top: 20px;
+        line-height: 64%; }
+      #collections .collection .capt .txt h5 {
+        font: 3.6em "MuseoSansCyrl500";
+        line-height: 64%;
+        padding-bottom: 120px; }
+      #collections .collection .capt .txt .btn {
+        position: relative;
+        margin-left: 138px;
+        width: 245px; }
+        #collections .collection .capt .txt .btn .bg {
+          position: absolute;
+          top: -10px;
+          right: -15px;
+          width: 245px;
+          height: 100%;
+          background: url(../img/btn_bg_title.png) no-repeat;
+          z-index: 1; }
+        #collections .collection .capt .txt .btn a {
+          position: relative;
+          z-index: 2;
+          font: 1.4em "MuseoSansCyrl500";
+          color: #000;
+          display: block;
+          height: 45px;
+          width: 245px;
+          border: 1px solid #000;
+          text-decoration: none;
+          -webkit-transition: .3s ease;
+          -o-transition: .3s ease;
+          transition: .3s ease;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          padding-left: 24px; }
+          #collections .collection .capt .txt .btn a:hover {
+            background: #bb1c27;
+            border: 1px solid #bb1c27; }
+          #collections .collection .capt .txt .btn a .icon {
+            display: block;
+            height: 13px;
+            width: 16px;
+            background: url(../img/slide_arrow.png) no-repeat center top;
+            margin-right: 15px;
+            margin-top: 15px;
+            margin-left: 13px; }
+          #collections .collection .capt .txt .btn a .txt {
+            padding-top: 13px; }
+  #collections .collection .slide_models {
+    position: relative; }
+    #collections .collection .slide_models .arrow_l,
+    #collections .collection .slide_models .arrow_r {
+      background: url(../img/slider_arrow.png);
+      height: 26px;
+      width: 32px;
+      position: absolute;
+      cursor: pointer;
+      margin-top: 174px; }
+    #collections .collection .slide_models .arrow_l {
+      left: -60px; }
+      #collections .collection .slide_models .arrow_l .bg {
+        position: absolute;
+        height: 48px;
+        width: 47px;
+        top: -10px;
+        left: 12px; }
+      #collections .collection .slide_models .arrow_l:hover {
+        background: url(../img/slider_arrow_hover.png);
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg); }
+      #collections .collection .slide_models .arrow_l:hover .bg {
+        background: url(../img/slider_arrow_bg.png); }
+    #collections .collection .slide_models .arrow_r {
+      right: -60px;
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+      #collections .collection .slide_models .arrow_r .bg {
+        position: absolute;
+        height: 48px;
+        width: 47px;
+        top: -10px;
+        left: 12px; }
+      #collections .collection .slide_models .arrow_r:hover {
+        background: url(../img/slider_arrow_hover.png);
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg); }
+      #collections .collection .slide_models .arrow_r:hover .bg {
+        background: url(../img/slider_arrow_bg.png); }
+    #collections .collection .slide_models .carousel .slide_content {
+      height: 435px;
+      padding: 0px 15px;
+      position: relative; }
+      #collections .collection .slide_models .carousel .slide_content:hover .title p {
+        color: #bb1c27; }
+      #collections .collection .slide_models .carousel .slide_content:hover .title .arrow {
+        background: url(../img/slide_arrow_hover.png); }
+      #collections .collection .slide_models .carousel .slide_content a {
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin: 0 -15px;
+        height: 100%; }
+      #collections .collection .slide_models .carousel .slide_content img {
+        height: 374px;
+        width: 100%;
+        -webkit-border-radius: 9px;
+                border-radius: 9px;
+        -webkit-box-shadow: 11px 11px 15px -1px #d1d1d1;
+        box-shadow: 11px 11px 15px -1px #d1d1d1; }
+      #collections .collection .slide_models .carousel .slide_content .title {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        #collections .collection .slide_models .carousel .slide_content .title p {
+          font: 1.4em "MuseoSansCyrl500";
+          text-transform: uppercase;
+          padding-top: 28px;
+          padding-left: 10px;
+          -webkit-transition: .3s ease;
+          -o-transition: .3s ease;
+          transition: .3s ease; }
+        #collections .collection .slide_models .carousel .slide_content .title .arrow {
+          background: url(../img/slide_arrow.png);
+          height: 13px;
+          width: 16px;
+          margin-top: 30px;
+          margin-right: 23px;
+          -webkit-transition: .3s ease;
+          -o-transition: .3s ease;
+          transition: .3s ease; }
+
+#reviews {
+  position: relative; }
+  #reviews .title {
+    position: relative;
+    width: 192px;
+    margin: 0 auto;
+    margin-top: 145px;
+    padding-bottom: 27px; }
+  #reviews h3 {
+    padding-top: 0px;
+    position: relative; }
+  #reviews .bg {
+    height: 66px;
+    width: 192px;
+    background: url(../img/bg_h3_rev.png) no-repeat;
+    position: absolute;
+    top: -25px; }
+  #reviews .block {
+    padding: 33px 15px; }
+  #reviews .scontent {
+    position: relative; }
+    #reviews .scontent .quot {
+      position: absolute;
+      background: url(../img/quotations.png) no-repeat center center;
+      height: 62px;
+      width: 55px;
+      top: 10px;
+      right: 80px; }
+    #reviews .scontent .bg {
+      top: 27px;
+      left: -34px;
+      width: 157px; }
+    #reviews .scontent .rev {
+      font: 1.2em "MuseoSansCyrl500";
+      color: #9a9a9a; }
+    #reviews .scontent .name {
+      font: 2em "MuseoSansCyrl500";
+      padding-top: 5px;
+      text-decoration: underline;
+      position: relative;
+      z-index: 2; }
+    #reviews .scontent .txt {
+      font: 1.4em "MuseoSansCyrl500";
+      padding-top: 9px;
+      line-height: 160%;
+      padding-bottom: 2px;
+      position: relative;
+      z-index: 2; }
+    #reviews .scontent .btn a {
+      font: 1.2em "MuseoSansCyrl500";
+      color: #767676;
+      text-transform: uppercase;
+      text-decoration: none; }
+      #reviews .scontent .btn a span {
+        display: inline-block;
+        background: url(../img/slide_arrow.png) no-repeat bottom;
+        -webkit-background-size: 100% 100%;
+                background-size: 100% 100%;
+        height: 11px;
+        width: 13px;
+        margin-left: 15px; }
+    #reviews .scontent .btn a:hover {
+      color: #bb1c27; }
+    #reviews .scontent .btn a:hover span {
+      background: url(../img/slide_arrow_hover.png) no-repeat bottom;
+      -webkit-background-size: 100% 100%;
+              background-size: 100% 100%; }
+  #reviews .more {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 85px;
+    padding-bottom: 71px; }
+    #reviews .more .line {
+      height: 1px;
+      background: #d4d4d4;
+      -webkit-flex-basis: 50%;
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%; }
+    #reviews .more .btn {
+      position: relative;
+      width: 245px;
+      margin: 0px 23px; }
+      #reviews .more .btn .bg {
+        position: absolute;
+        top: -10px;
+        right: -15px;
+        width: 245px;
+        height: 100%;
+        background: url(../img/btn_bg_title.png) no-repeat;
+        z-index: 1; }
+      #reviews .more .btn a {
+        position: relative;
+        z-index: 2;
+        font: 1.4em "MuseoSansCyrl500";
+        color: #000;
+        display: block;
+        height: 45px;
+        width: 245px;
+        border: 1px solid #000;
+        text-decoration: none;
+        -webkit-transition: .3s ease;
+        -o-transition: .3s ease;
+        transition: .3s ease;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding-left: 24px; }
+        #reviews .more .btn a:hover {
+          background: #bb1c27;
+          border: 1px solid #bb1c27; }
+        #reviews .more .btn a .icon {
+          display: block;
+          height: 13px;
+          width: 16px;
+          background: url(../img/slide_arrow.png) no-repeat center top;
+          margin-right: 15px;
+          margin-top: 15px;
+          margin-left: 33px;
+          -webkit-transform: rotate(90deg);
+              -ms-transform: rotate(90deg);
+                  transform: rotate(90deg); }
+        #reviews .more .btn a .txt {
+          padding-top: 13px; }
+
+#questions {
+  background: #000000;
+  position: relative;
+  z-index: 2; }
+  #questions .content {
+    background: url(../img/quest.png) no-repeat top right; }
+  #questions h6 {
+    font: 2.8em "MuseoSansCyrl500";
+    color: #ffffff;
+    padding-top: 64px; }
+  #questions p {
+    font: 1.4em "MuseoSansCyrl500";
+    color: #ffffff;
+    padding-top: 17px;
+    padding-bottom: 38px; }
+  #questions form {
+    padding-bottom: 105px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  #questions .input {
+    background: transparent;
+    border: 1px solid #fff;
+    height: 50px;
+    width: 23%;
+    margin-right: 19px;
+    -webkit-box-sizing: padding-box;
+            box-sizing: padding-box;
+    display: block;
+    padding-left: 19px;
+    font: 1.4em "MuseoSansCyrl500";
+    color: #fff;
+    outline: none; }
+  #questions .text {
+    background: transparent;
+    border: 1px solid #fff;
+    height: 50px;
+    width: 29.5%;
+    margin-right: 19px;
+    padding-left: 19px;
+    font: 1.4em "MuseoSansCyrl500";
+    padding-top: 16px;
+    color: #fff;
+    outline: none; }
+  #questions .submit {
+    width: 19%;
+    font: 1.4em "MuseoSansCyrl500";
+    text-transform: uppercase;
+    background: #bb1c27;
+    border: none;
+    color: #fff;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    cursor: pointer;
+    outline: none; }
+    #questions .submit:hover {
+      background: #d52430; }
+
+#contacts {
+  position: relative;
+  z-index: 3; }
+  #contacts .content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  #contacts .map {
+    height: 398px;
+    width: 602px;
+    background: url(../img/map.jpg) no-repeat center center;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    z-index: 3;
+    -webkit-border-radius: 10px;
+            border-radius: 10px; }
+    #contacts .map .map_content {
+      width: 100%;
+      height: 100%;
+      background: url(../img/map.jpg) no-repeat center center;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      -webkit-box-shadow: 6px 17px 46px 0px #8f8d8f;
+      box-shadow: 6px 17px 46px 0px #8f8d8f; }
+    #contacts .map .bg {
+      height: 211px;
+      width: 300px;
+      background: url(../img/bg_map.png) no-repeat center right;
+      position: absolute;
+      text-outline: 10px;
+      right: -121px;
+      z-index: 1;
+      top: 58px; }
+  #contacts .contacts {
+    width: 42%; }
+    #contacts .contacts h6 {
+      font: 3.6em "MuseoSansCyrl500";
+      padding-top: 61px;
+      padding-left: 4px; }
+    #contacts .contacts .numbers {
+      font: 2.4em "MuseoSansCyrl500";
+      padding-left: 5px;
+      padding-top: 19px;
+      text-decoration: underline; }
+      #contacts .contacts .numbers span {
+        padding-right: 48px; }
+    #contacts .contacts .adress {
+      font: 1.4em "MuseoSansCyrl500";
+      padding-top: 28px;
+      padding-left: 9px; }
+    #contacts .contacts .mail {
+      font: 1.8em "MuseoSansCyrl500";
+      padding-top: 14px;
+      padding-left: 9px; }
+      #contacts .contacts .mail span {
+        display: inline-block;
+        background: url(../img/envelope.png);
+        width: 19px;
+        height: 15px;
+        margin-bottom: -2px;
+        margin-right: 11px; }
+    #contacts .contacts .socials {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding-left: 9px;
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      #contacts .contacts .socials a {
+        display: block;
+        width: 19px;
+        height: 19px;
+        margin-right: 20px; }
+      #contacts .contacts .socials .insta {
+        background: url(../img/instagram.png) no-repeat center center; }
+      #contacts .contacts .socials .vk {
+        background: url(../img/vk.png) no-repeat center center; }
+      #contacts .contacts .socials .facebook {
+        background: url(../img/facebook.png) no-repeat center center; }
+
+#nav {
+  padding-top: 95px; }
+  #nav .nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px; }
+    #nav .nav li {
+      position: relative;
+      padding-right: 62px;
+      padding-top: 7px; }
+      #nav .nav li:last-child {
+        padding-right: 0px; }
+    #nav .nav a {
+      position: relative;
+      display: block;
+      z-index: 2;
+      text-decoration: none;
+      color: #000;
+      text-transform: uppercase;
+      font: 1.4em "MuseoSansCyrl500";
+      -webkit-transition: .1s ease;
+      -o-transition: .1s ease;
+      transition: .1s ease; }
+    #nav .nav .active {
+      color: #fe1119; }
+
+#footer .copy {
+  text-align: center;
+  font: 1.4em "MuseoSansCyrl500";
+  color: #cdcdcd;
+  padding-top: 37px;
+  text-transform: uppercase;
+  padding-bottom: 50px; }
 
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
