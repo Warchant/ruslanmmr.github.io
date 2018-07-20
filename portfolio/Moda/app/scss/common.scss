@@ -32,6 +32,7 @@ h3 {
     position: relative;
     z-index: 2;
     background: #25394e url(../img/bg_home.jpg) no-repeat center center;
+    background-size: cover;
     .container {
         position: relative;
     }
@@ -134,12 +135,16 @@ h3 {
             }
         }
     }
-    .content {
+    .content_home {
+    	position: relative;
+    	display: flex;
+    	flex-flow: column;
+    	justify-content: center;
+    	    height: 100vh;
         h1 {
             font: 12em "Aempirial";
             color: #cdcdcd;
             text-align: center;
-            padding-top: 245px;
             letter-spacing: 5px;
         }
         h2 {
@@ -153,13 +158,14 @@ h3 {
             color: #cdcdcd;
             text-align: center;
             padding-top: 32px;
-            padding-bottom: 104px;
         }
         .a_bottom {
-            position: relative;
-            padding-bottom: 46px;
+            position: absolute;
             width: 95px;
             margin: 0 auto;
+            bottom: 47px;
+            left: 50%;
+            margin-left: -47px;
             a {
                 position: relative;
                 z-index: 2;

@@ -2228,7 +2228,9 @@ h3 {
 #home {
   position: relative;
   z-index: 2;
-  background: #25394e url(../img/bg_home.jpg) no-repeat center center; }
+  background: #25394e url(../img/bg_home.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
   #home .container {
     position: relative; }
   #home header {
@@ -2332,43 +2334,59 @@ h3 {
         margin-left: 31px; }
       #home .btn a .txt {
         padding-top: 14px; }
-  #home .content h1 {
-    font: 12em "Aempirial";
-    color: #cdcdcd;
-    text-align: center;
-    padding-top: 245px;
-    letter-spacing: 5px; }
-  #home .content h2 {
-    font: 12em "Aempirial";
-    text-align: center;
-    color: #cdcdcd;
-    letter-spacing: 5px; }
-  #home .content p {
-    font: 4.7em "ParkAvenue";
-    color: #cdcdcd;
-    text-align: center;
-    padding-top: 32px;
-    padding-bottom: 104px; }
-  #home .content .a_bottom {
+  #home .content_home {
     position: relative;
-    padding-bottom: 46px;
-    width: 95px;
-    margin: 0 auto; }
-    #home .content .a_bottom a {
-      position: relative;
-      z-index: 2;
-      display: block;
-      height: 55px;
-      width: 45px;
-      background: url(../img/icon_back.png);
-      margin: 0 auto; }
-    #home .content .a_bottom .bg {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh; }
+    #home .content_home h1 {
+      font: 12em "Aempirial";
+      color: #cdcdcd;
+      text-align: center;
+      letter-spacing: 5px; }
+    #home .content_home h2 {
+      font: 12em "Aempirial";
+      text-align: center;
+      color: #cdcdcd;
+      letter-spacing: 5px; }
+    #home .content_home p {
+      font: 4.7em "ParkAvenue";
+      color: #cdcdcd;
+      text-align: center;
+      padding-top: 32px; }
+    #home .content_home .a_bottom {
       position: absolute;
-      background: url(../img/bg_arrow.png);
       width: 95px;
-      height: 74px;
-      top: 28px;
-      z-index: 1; }
+      margin: 0 auto;
+      bottom: 47px;
+      left: 50%;
+      margin-left: -47px; }
+      #home .content_home .a_bottom a {
+        position: relative;
+        z-index: 2;
+        display: block;
+        height: 55px;
+        width: 45px;
+        background: url(../img/icon_back.png);
+        margin: 0 auto; }
+      #home .content_home .a_bottom .bg {
+        position: absolute;
+        background: url(../img/bg_arrow.png);
+        width: 95px;
+        height: 74px;
+        top: 28px;
+        z-index: 1; }
 
 #about {
   position: relative;
