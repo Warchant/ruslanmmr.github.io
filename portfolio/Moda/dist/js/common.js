@@ -6,6 +6,13 @@ $(document).ready(function() {
             });
 
 $(document).ready(function() {
+    $('.nav-btn a').click(function(event) {
+        event.preventDefault();
+        $(this).toggleClass("a_active");
+    });
+});
+
+$(document).ready(function() {
     var owl = $('.owl-carousel');
     owl.owlCarousel({
         items: 4,
@@ -34,7 +41,24 @@ $(document).ready(function() {
         fluidSpeed: false,
         dragEndSpeed: false,
 
-        responsive: {},
+        responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        480:{
+            items:2,
+            nav:false
+        },
+        768:{
+            items:3,
+            nav:false
+        },
+        1170:{
+            items:4,
+            nav:false,
+        }
+    },
         responsiveRefreshRate: 200,
         responsiveBaseElement: window,
 
