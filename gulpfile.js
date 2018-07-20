@@ -57,44 +57,39 @@ gulp.task('watch', ['browser-sync', 'scripts'], function() {
 });
 
 gulp.task('clean', function() {
-    return del.sync('dist');
+    return del.sync('css');
+    return del.sync('libs');
+    return del.sync('fonts');
+    return del.sync('js');
+    return del.sync('img');
 });
 
 gulp.task('img', function() {
     return gulp.src('app/img/**/*') 
-        .pipe(cache(imagemin({ 
-            interlaced: true,
-            progressive: true,
-            svgoPlugins: [{ removeViewBox: false }],
-            use: [pngquant()]
-        })))
-        .pipe(gulp.dest('dist/img')); 
+        .pipe(gulp.dest('img')); 
 });
 
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
     var buildCss = gulp.src('app/css/*.css')
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('css'))
 
     var buildMinCss = gulp.src('app/css/*.css')
         .pipe(cssnano())
         .pipe(rename('common.min.css'))
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('css'))
 
     var buildCss = gulp.src('app/libs/**/*')
-        .pipe(gulp.dest('dist/libs'))
+        .pipe(gulp.dest('libs'))
     
-    var buildphp = gulp.src('app/php/**/*')
-        .pipe(gulp.dest('dist/php'))
-
     var buildFonts = gulp.src('app/fonts/**/*') 
-        .pipe(gulp.dest('dist/fonts'))
+        .pipe(gulp.dest('fonts'))
 
     var buildJs = gulp.src('app/js/**/*') 
-        .pipe(gulp.dest('dist/js'))
+        .pipe(gulp.dest('js'))
 
     var buildHtml = gulp.src('app/*.html') 
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('.'));
 
 });
 
