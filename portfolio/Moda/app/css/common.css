@@ -2236,7 +2236,9 @@ h3 {
 #home {
   background: #25394e url(../img/bg_home.jpg) no-repeat center center;
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  position: relative;
+  z-index: 2; }
   #home .content {
     position: relative;
     height: 100vh;
@@ -2540,7 +2542,7 @@ h3 {
 
 #about {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   background: url(../img/bg_about.png) no-repeat center top; }
   #about h3 {
     font: 10em "Aempirial";
@@ -2556,7 +2558,8 @@ h3 {
     padding-bottom: 41px; }
 
 #collections {
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   #collections h4 {
     font: 1.2em "MuseoSansCyrl500";
     text-transform: uppercase;
@@ -2778,7 +2781,8 @@ h3 {
           transition: .3s ease; }
 
 #reviews {
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   #reviews .title {
     position: relative;
     width: 192px;
@@ -2915,7 +2919,7 @@ h3 {
 #questions {
   background: #000000;
   position: relative;
-  z-index: 2; }
+  z-index: 1; }
   #questions .content {
     background: url(../img/quest.png) no-repeat top right; }
   #questions h6 {
@@ -2978,7 +2982,7 @@ h3 {
 
 #contacts {
   position: relative;
-  z-index: 5; }
+  z-index: 1; }
   #contacts .content {
     position: relative;
     display: -webkit-box;
@@ -3076,6 +3080,8 @@ h3 {
         background: url("../img/socials_sprite.png") -10px -49px; }
 
 #nav {
+  position: relative;
+  z-index: 1;
   padding-top: 95px; }
   #nav .nav {
     display: -webkit-box;

@@ -11,10 +11,6 @@ body {
     overflow: hidden;
 }
 
-.container {
-    //overflow: hidden;
-}
-
 .sub {
     position: fixed;
     height: 100vh;
@@ -43,6 +39,8 @@ h3 {
 #home {
     background: #25394e url(../img/bg_home.jpg) no-repeat center center;
     background-size: cover;
+    position: relative;
+    z-index: 2;
     .content {
         position: relative;
         height: 100vh;
@@ -328,8 +326,8 @@ h3 {
 }
 
 #about {
-    position: relative;
-    z-index: 2;
+	position: relative;
+	z-index: 1;
     background: url(../img/bg_about.png) no-repeat center top;
     h3 {
         font: 10em "Aempirial";
@@ -348,7 +346,8 @@ h3 {
 }
 
 #collections {
-    position: relative;
+	position: relative;
+	z-index: 1;
     h4 {
         font: 1.2em "MuseoSansCyrl500";
         text-transform: uppercase;
@@ -580,6 +579,7 @@ h3 {
 
 #reviews {
     position: relative;
+    z-index: 1;
     .title {
         position: relative;
         width: 192px;
@@ -721,7 +721,7 @@ h3 {
 #questions {
     background: #000000;
     position: relative;
-    z-index: 2;
+    z-index: 1;
     .content {
         background: url(../img/quest.png) no-repeat top right;
     }
@@ -784,7 +784,7 @@ h3 {
 
 #contacts {
     position: relative;
-    z-index: 5;
+    z-index: 1;
     .content {
         position: relative;
         display: flex;
@@ -886,6 +886,8 @@ h3 {
 }
 
 #nav {
+	position: relative;
+	z-index: 1;
     padding-top: 95px;
     .nav {
         display: flex;
