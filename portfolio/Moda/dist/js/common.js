@@ -6,9 +6,12 @@ $(document).ready(function() {
             });
 
 $(document).ready(function() {
-    $('.nav-btn a').click(function(event) {
+    $('.nav-btn a, .sub').click(function(event) {
         event.preventDefault();
-        $(this).toggleClass("a_active");
+        $(".nav-btn a").toggleClass("a_active");
+        $(".mobile_nav").toggleClass("nav_active");
+        $("body").toggleClass("body_active");
+        $(".sub").toggleClass("sub_active");
     });
 });
 
