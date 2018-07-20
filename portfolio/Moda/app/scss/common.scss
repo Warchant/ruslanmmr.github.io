@@ -44,6 +44,7 @@ h3 {
     .content {
         position: relative;
         height: 100vh;
+        min-height: 460px;
         display: flex;
         flex-direction: column;
         justify-content: center;

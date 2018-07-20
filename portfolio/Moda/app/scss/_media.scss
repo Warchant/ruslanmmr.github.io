@@ -7,6 +7,16 @@
 
 
 /*==========  Desktop First  ==========*/
+@media screen and (max-height: 460px) {
+	 #home .mobile_nav .nav_m a {
+	 	padding: 5px 0;
+	 	padding-left: 34px;
+	 }
+	 #home .mobile_nav .nav_m {
+	 	padding-top: 20px;
+	 }
+}
+
 
 @media screen and (max-width: 1290px) {
     #collections .collection .slide_models {
