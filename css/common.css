@@ -5905,9 +5905,21 @@ header {
     -webkit-transition: .4s ease;
     -o-transition: .4s ease;
     transition: .4s ease;
-    height: 120%;
-    width: 120%;
+    height: 100%;
+    width: 100%;
     bottom: 0px; }
+  #home .bg_mobile {
+    background: url(../img/grass-1209945_1920.jpg) no-repeat center top;
+    position: absolute;
+    -webkit-background-size: cover;
+            background-size: cover;
+    -webkit-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+    height: 100%;
+    width: 100%;
+    bottom: 0px;
+    display: none; }
   #home .bg_active {
     opacity: 0;
     -webkit-transition: .8s ease;
@@ -6179,7 +6191,11 @@ body, .container {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; } }
+            flex-direction: column; }
+  #home .bg {
+    display: none; }
+  #home .bg_mobile {
+    display: block; } }
 
 @media (max-width: 575.98px) {
   #home .content h1 {
