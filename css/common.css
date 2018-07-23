@@ -6195,7 +6195,9 @@ body, .container {
   #home .bg {
     display: none; }
   #home .bg_mobile {
-    display: block; } }
+    display: block; }
+  #home .content .hidden {
+    opacity: 1; } }
 
 @media (max-width: 575.98px) {
   #home .content h1 {
