@@ -327,8 +327,8 @@ h3 {
 }
 
 #about {
-	position: relative;
-	z-index: 1;
+    position: relative;
+    z-index: 1;
     background: url(../img/bg_about.png) no-repeat center top;
     h3 {
         font: 10em "Aempirial";
@@ -347,8 +347,8 @@ h3 {
 }
 
 #collections {
-	position: relative;
-	z-index: 1;
+    position: relative;
+    z-index: 1;
     h4 {
         font: 1.2em "MuseoSansCyrl500";
         text-transform: uppercase;
@@ -887,8 +887,8 @@ h3 {
 }
 
 #nav {
-	position: relative;
-	z-index: 1;
+    position: relative;
+    z-index: 1;
     padding-top: 95px;
     .nav {
         display: flex;
@@ -932,43 +932,4 @@ h3 {
 
 
 
-
-
-
-
-// Стили для страницы Contacts.html
-
-
-
-
-
 @import 'media';
-
-#home {
-    background: #000000;
-    z-index: 2;
-    .content {
-        height: 135px;
-        min-height: 0;
-        header {
-        height: 100%;
-    }
-    }
-}
-
-#contacts {
-    .container {
-        background: url(../img/bg_about.png) no-repeat center top;
-        background-position: 50% -50px;
-    }
-    h3 {
-        padding-top: 70px;
-        padding-bottom: 100px;
-    }
-}
-
-#footer {
-    .copy {
-        padding-bottom: 20px;
-    }
-}

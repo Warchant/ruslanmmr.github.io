@@ -3315,23 +3315,3 @@ h3 {
   #nav .nav li {
     padding: 0px;
     padding-bottom: 14px; } }
-
-#home {
-  background: #000000;
-  z-index: 2; }
-  #home .content {
-    height: 135px;
-    min-height: 0; }
-    #home .content header {
-      height: 100%; }
-
-#contacts .container {
-  background: url(../img/bg_about.png) no-repeat center top;
-  background-position: 50% -50px; }
-
-#contacts h3 {
-  padding-top: 70px;
-  padding-bottom: 100px; }
-
-#footer .copy {
-  padding-bottom: 20px; }
