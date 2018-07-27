@@ -18,7 +18,9 @@ gulp.task('sass', function() { // Создаем таск Sass
             message: "<%= error.message %>",
             title: "Sass Error!"
         }))) // Преобразуем Sass в CSS посредством gulp-sass
-        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
+        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(cssnano())
+        .pipe(rename('common.min.css')) 
         .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
         .pipe(browserSync.reload({ stream: true })) // Обновляем CSS на странице при изменении
 });
@@ -72,11 +74,6 @@ gulp.task('img', function() {
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
     var buildCss = gulp.src('app/css/*.css')
-        .pipe(gulp.dest('css'))
-
-    var buildMinCss = gulp.src('app/css/*.css')
-        .pipe(cssnano())
-        .pipe(rename('common.min.css'))
         .pipe(gulp.dest('css'))
 
     var buildCss = gulp.src('app/libs/**/*')
