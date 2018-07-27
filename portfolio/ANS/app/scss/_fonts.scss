@@ -1,0 +1,12 @@
+@import "_mixins/font-face";
+
+@include font-face("OswaldRegular", "../fonts/Oswald/OswaldRegular");
+@include font-face("OswaldMedium", "../fonts/Oswald/OswaldMedium");
+@include font-face("OswaldBold", "../fonts/Oswald/OswaldBold");
+@include font-face("OswaldLight", "../fonts/Oswald/OswaldLight");
+@include font-face("OswaldMedium", "../fonts/Oswald/OswaldMedium");
+@include font-face("ProximaNovaSemiBold", "../fonts/ProximaNova/ProximaNova-Semibold");
+@include font-face("ProximaNovaRegular", "../fonts/ProximaNova/ProximaNova-Regular");
+@include font-face("ProximaNovaBlack", "../fonts/ProximaNova/ProximaNova-Black");
+@include font-face("ProximaNovaThin", "../fonts/ProximaNova/ProximaNovaT-Thin");
+@include font-face("ProximaNovaBold", "../fonts/ProximaNova/ProximaNova-Bold");
