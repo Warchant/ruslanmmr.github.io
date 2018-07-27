@@ -87,6 +87,14 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
     var buildJs = gulp.src('app/js/**/*') 
         .pipe(gulp.dest('dist/js'))
 
+    var minJs = gulp.src('app/js/**/*') 
+        .pipe(concat('scripts.min.js'))
+        .pipe(uglify().on('error', notify.onError({
+            message: "<%= error.message %>",
+            title: "js error!"
+        }))) 
+        .pipe(gulp.dest('dist/js'))
+
     var buildHtml = gulp.src('app/*.html') 
         .pipe(gulp.dest('dist'));
 

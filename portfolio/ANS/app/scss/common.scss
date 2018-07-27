@@ -2,17 +2,6 @@
 @import 'libs';
 @import 'fonts';
 
-#bg {
-    position: absolute;
-    width: 100%;
-    height: 10000px;
-    top: 0px;
-    opacity: 0.3;
-    z-index: 2;
-    background: url(../img/bg_maket.jpg) no-repeat top center; 
-    display: none;
-}
-
 .slider2 *,
 .slider1 * {
     outline: none !important;

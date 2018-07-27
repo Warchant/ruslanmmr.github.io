@@ -6002,16 +6002,6 @@ readers do not read off random characters that represent icons */
   src: url("../fonts/ProximaNova/ProximaNova-Bold.eot");
   src: url("../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype"); }
 
-#bg {
-  position: absolute;
-  width: 100%;
-  height: 10000px;
-  top: 0px;
-  opacity: 0.3;
-  z-index: 2;
-  background: url(../img/bg_maket.jpg) no-repeat top center;
-  display: none; }
-
 .slider2 *,
 .slider1 * {
   outline: none !important; }
