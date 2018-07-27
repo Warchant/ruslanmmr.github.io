@@ -2,6 +2,7 @@
 $(document).ready(function() {
     $(".portf").click(function(event) {
         event.preventDefault();
+        $("#wrapper").addClass("wrapper_a");
         $("#portfolio").addClass("p_active");
         $("#home").removeClass("home_active_left");
         $("#home").addClass("home_active_right");
@@ -33,6 +34,7 @@ $(document).ready(function() {
             $(".hm").removeClass("active");
             $(".cntcts").addClass("active");
             $(".portf").removeClass("active");
+            $("#wrapper").removeClass("wrapper_a");
             $('body,html').animate({
                 scrollTop: 0
             }, 400);
@@ -60,6 +62,7 @@ $(document).ready(function() {
             $(".hm").addClass("active");
             $(".cntcts").removeClass("active");
             $(".portf").removeClass("active");
+            $("#wrapper").removeClass("wrapper_a");
             $('body,html').animate({
                 scrollTop: 0
             }, 400);
