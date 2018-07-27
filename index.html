@@ -4,42 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>Ruslan Belozertsev</title>
-    <link rel="stylesheet" href="css/common.css">
 </head>
 
 <body>
     <div id="wrapper">
-        <header>
-            <div class="container-fluid">
-                <div class="content">
-                    <div class="logo">
-                        <a href="#home">R</a>
-                    </div>                    
+        
+        <!--preload-->
+
+        <div id="cube-loader">
+            <div class="caption">
+                <div class="cube-loader">
+                    <div class="cube loader-1"></div>
+                    <div class="cube loader-2"></div>
+                    <div class="cube loader-4"></div>
+                    <div class="cube loader-3"></div>
                 </div>
+            </div>
+        </div>
+        <style type="text/css">
+        #cube-loader{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:100vh;width:100vw;position:fixed;z-index:1001;background:#4c4c4c;opacity:1;visibility:visible;-webkit-transition:.6s ease;-o-transition:.6s ease;transition:.6s ease}#cube-loader .caption{margin:0 auto}#cube-loader .cube-loader{width:73px;height:73px;margin:49px auto 0;position:relative;-webkit-transform:rotateZ(45deg);-ms-transform:rotate(45deg);transform:rotateZ(45deg)}#cube-loader .cube-loader .cube{position:relative;-webkit-transform:rotateZ(45deg);-ms-transform:rotate(45deg);transform:rotateZ(45deg);width:50%;height:50%;float:left;-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}#cube-loader .cube-loader .cube:before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background-color:#fff;-webkit-animation:cube-loader 2.76s infinite linear both;animation:cube-loader 2.76s infinite linear both;-webkit-transform-origin:100% 100%;-ms-transform-origin:100% 100%;transform-origin:100% 100%}#cube-loader .cube-loader .loader-2{-webkit-transform:scale(1.1) rotateZ(90deg);-ms-transform:scale(1.1) rotate(90deg);transform:scale(1.1) rotateZ(90deg)}#cube-loader .cube-loader .loader-3{-webkit-transform:scale(1.1) rotateZ(180deg);-ms-transform:scale(1.1) rotate(180deg);transform:scale(1.1) rotateZ(180deg)}#cube-loader .cube-loader .loader-4{-webkit-transform:scale(1.1) rotateZ(270deg);-ms-transform:scale(1.1) rotate(270deg);transform:scale(1.1) rotateZ(270deg)}#cube-loader .cube-loader .loader-2:before{-webkit-animation-delay:.35s;animation-delay:.35s}#cube-loader .cube-loader .loader-3:before{-webkit-animation-delay:.69s;animation-delay:.69s}#cube-loader .cube-loader .loader-4:before{-webkit-animation-delay:1.04s;animation-delay:1.04s}.done{opacity:0!important;visibility:hidden!important}@-webkit-keyframes cube-loader{0%,10%{-webkit-transform:perspective(136px) rotateX(-180deg);transform:perspective(136px) rotateX(-180deg);opacity:0}25%,75%{-webkit-transform:perspective(136px) rotateX(0);transform:perspective(136px) rotateX(0);opacity:1}100%,90%{-webkit-transform:perspective(136px) rotateY(180deg);transform:perspective(136px) rotateY(180deg);opacity:0}}@keyframes cube-loader{0%,10%{-webkit-transform:perspective(136px) rotateX(-180deg);transform:perspective(136px) rotateX(-180deg);opacity:0}25%,75%{-webkit-transform:perspective(136px) rotateX(0);transform:perspective(136px) rotateX(0);opacity:1}100%,90%{-webkit-transform:perspective(136px) rotateY(180deg);transform:perspective(136px) rotateY(180deg);opacity:0}}
+    </style>
+        <script async type="text/javascript">
+    document.body.onload = function() {
+        setTimeout(function() {
+            var preloader = document.getElementById("cube-loader")
+            if (!preloader.classList.contains("done")) {
+                preloader.classList.add("done");
+            }
+        }, 1450);
+    }
+    </script>
+
+
+        <div id="particles-js" class="bg"></div>
+        <header>
+            <div class="content">
+                <a class="btn portf" href="">portfolio</a>
+                <a class="btn hm active" href="">home</a>
+                <a class="btn cntcts" href="">contacts</a>
             </div>
         </header>
         <div id="home">
-            <div class="bg"></div>
-             <div class="bg_mobile"></div>
-            <div class="container">
+            <div class="container_fluid">
                 <div class="content">
-                    <div class="about">
-                        <h1>I'm Ruslan.</h1>
-                        <p>a web developer.</p>
-                    </div>
-                    <div class="arrow">
-                        <a class="arrow_a" href="#portfolio"><i class="fas fa-arrow-down"></i></a>
-                    </div>
+                    <p class="hi">Hi!</p>
+                    <h1>I'm Ruslan</h1>
+                    <p>- a web developer.</p>
                 </div>
             </div>
         </div>
         <div id="portfolio">
-            <div class="container">
+            <div class="container_fluid">
                 <div class="content">
-                    <h2>Portfolio</h2>
                     <div class="blocks row">
-                        <div class="block col-lg-4 col-md-6 col-xs-12">
+                        <div class="block col-xl-3 col-lg-4 col-md-6 col-xs-12">
                             <div class="content">
                                 <div class="photo">
                                     <img src="img/waxom.jpg" alt="waxom">
@@ -51,13 +87,14 @@
                                     </div>
                                 </div>
                                 <div class="title">
-                                    <h4>Waxom</h4>
-                                    <p>Templates</p>
+                                    <div>
+                                        <h4>Waxom</h4>
+                                        <p>Templates</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="block col-lg-4 col-md-6 col-xs-12">
+                        <div class="block col-xl-3 col-lg-4 col-md-6 col-xs-12">
                             <div class="content">
                                 <div class="photo">
                                     <img src="img/hockey_school.jpg" alt="hockey">
@@ -69,12 +106,14 @@
                                     </div>
                                 </div>
                                 <div class="title">
-                                    <h4>Hockey school</h4>
-                                    <p>School</p>
+                                    <div>
+                                        <h4>Hockey school</h4>
+                                        <p>School</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="block col-lg-4 col-md-6 col-xs-12">
+                        <div class="block col-xl-3 col-lg-4 col-md-6 col-xs-12">
                             <div class="content">
                                 <div class="photo">
                                     <img src="img/site2.jpg" alt="נווה-זמר | רעננה<">
@@ -86,12 +125,14 @@
                                     </div>
                                 </div>
                                 <div class="title">
-                                    <h4>נווה-זמר | רעננה</h4>
-                                    <p>לגור בעיר , להרגיש בכפר</p>
+                                    <div>
+                                        <h4>נווה-זמר | רעננה</h4>
+                                        <p>לגור בעיר , להרגיש בכפר</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="block col-lg-4 col-md-6 col-xs-12">
+                        <div class="block col-xl-3 col-lg-4 col-md-6 col-xs-12">
                             <div class="content">
                                 <div class="photo">
                                     <img src="img/almadigital.jpg" alt="almadigital">
@@ -103,12 +144,14 @@
                                     </div>
                                 </div>
                                 <div class="title">
-                                    <h4>Almadigital</h4>
-                                    <p>Web design & development</p>
+                                    <div>
+                                        <h4>Almadigital</h4>
+                                        <p>Web design & development</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="block col-lg-4 col-md-6 col-xs-12">
+                        <div class="block col-xl-3 col-lg-4 col-md-6 col-xs-12">
                             <div class="content">
                                 <div class="photo">
                                     <img src="img/Veiks.jpg" alt="modaveiks">
@@ -120,36 +163,69 @@
                                     </div>
                                 </div>
                                 <div class="title">
-                                    <h4>Moda by Veiks</h4>
-                                    <p>Сlothes</p>
+                                    <div>
+                                        <h4>Moda by Veiks</h4>
+                                        <p>Сlothes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block col-xl-3 col-lg-4 col-md-6 col-xs-12">
+                            <div class="content">
+                                <div class="photo">
+                                    <img src="img/ans.jpg" alt="ans">
+                                    <div class="overlay">
+                                        <div class="links">
+                                            <a target="_blank" href="https://ruslanmmr.github.io/portfolio/ANS/dist/"><i class="fas fa-external-link-alt"></i></a>
+                                            <a target="_blank" href="https://github.com/ruslanmmr/ruslanmmr.github.io/tree/master/portfolio/ANS/dist"><i class="fas fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <div>
+                                        <h4>ANS</h4>
+                                        <p>Showroom</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="footer">
+                    <p>© Belozertsev Ruslan 2016-2018 | All rights reserved.</p>
+                    <div class="madeby">
+                        <p>Made with</p>
+                        <div class="heart"><span><i class="fas fa-heart"></i></span></div>
+                        <p>by me.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="socials">
-            <div class="container">
+        <div id="contacts">
+            <div class="container_fluid">
                 <div class="content">
-                    <h2>Contact me!</h2>
-                    <div class="socials">
-                        <a class="kwork" href="https://kwork.ru/user/ruslan_nikolaev">Kwork</a>
-                        <a href="https://github.com/ruslanmmr/ruslanmmr.github.io"><i class="fab fa-github"></i> Github</a>
-                        <a href="https://www.facebook.com/ruslanbelozertsev1"><i class="fab fa-facebook"></i> Facebook</a>
+                    <p>I’m currently working as a Freelance and Front-End Developer at
+                        <a target="_blank" href="https://kwork.ru/user/ruslan_nikolaev">Kwork</a>.</p>
+                    <div class="links">
+                        <a target="_blank" href="https://github.com/ruslanmmr/ruslanmmr.github.io"><i class="fab fa-github-square"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/ruslanbelozertsev1"><i class="fab fa-facebook-square"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/belozertcev_ruslan"><i class="fab fa-instagram"></i></i></a>
                     </div>
                 </div>
             </div>
         </div>
         <div id="footer">
-            <div class="container">
-                <div class="content">
-                    <p>2016-2018 © Belozertsev Ruslan | Images: <a href="https://pixabay.com/">Pixabay</a></p>
-                    <p class="madeby">Made with <span><i class="fas fa-heart"></i></span> by me.</p>
-                </div>
+            <p>© Belozertsev Ruslan 2016-2018 | All rights reserved.</p>
+            <div class="madeby">
+                <p>Made with</p>
+                <div class="heart"> <span><i class="fas fa-heart"></i></span></div>
+                <p>by me.</p>
             </div>
         </div>
     </div>
+    <!--styles-->
+    <link rel="stylesheet" href="css/common.css">
+    <!--scripts-->
     <script src="js/scripts.min.js"></script>
 </body>
 
