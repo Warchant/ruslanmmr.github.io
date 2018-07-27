@@ -1,8 +1,9 @@
-
+document.ontouchstart = function(e){ 
+    e.preventDefault(); 
+}
 
 $(document).ready(function() {
     $(".portf").click(function(event) {
-        $(document).bind('touchmove', false);
         event.preventDefault();
         $("#portfolio").addClass("p_active");
         $("#home").removeClass("home_active_left");
