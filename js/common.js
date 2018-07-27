@@ -1,6 +1,3 @@
-document.ontouchstart = function(e){ 
-    e.preventDefault(); 
-}
 
 $(document).ready(function() {
     $(".portf").click(function(event) {
