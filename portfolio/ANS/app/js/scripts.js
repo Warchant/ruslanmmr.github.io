@@ -69,14 +69,14 @@ $(document).ready(function(){
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 987,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 768,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -105,14 +105,14 @@ $(document).ready(function(){
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 987,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 768,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1

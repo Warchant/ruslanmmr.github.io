@@ -24,6 +24,7 @@ h2 {
     text-align: center;
     padding-top: 76px;
     letter-spacing: 4px;
+    color: #222222;
 }
 
 body {
@@ -48,6 +49,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        height: 91px;
         .logo {
             a {
                 display: block;
@@ -143,12 +145,13 @@ body {
 
 #help {
     .row {
-        padding-top: 75px;
+        padding-top: 60px;
         .block {
             .content {
                 background: #f35472;
                 height: 213px;
                 padding: 20px;
+                margin: 20px 0;
                 position: relative;
                 border-radius: 10px;
                 p {
@@ -173,7 +176,7 @@ body {
     p.bottom {
         font: 1.6em "ProximaNovaRegular";
         padding: 0 51px;
-        padding-top: 71px;
+        padding-top: 56px;
         line-height: 148%;
         padding-bottom: 93px;
         letter-spacing: 0.25px;
@@ -197,6 +200,7 @@ body {
         z-index: 1;
         height: 100%;
         width: 100%;
+        object-fit: cover;
     }
     .slider_content {
         margin: 0;
@@ -362,7 +366,6 @@ body {
 	background: url(../img/bg_form.png) no-repeat;
 	background-position: 70% 100%;
     .content {
-        height: 830px;
         h2 {
             padding-top: 108px;
             padding-bottom: 15px;
@@ -435,6 +438,7 @@ body {
                 letter-spacing: 2px;
                 transition: .3s ease;
                 cursor: pointer;
+                margin-bottom: 100px;
                 &:hover {
                     background: #d61b3f;
                 }
@@ -519,7 +523,8 @@ body {
                     font: 1.8em "OswaldMedium";
                     text-transform: uppercase;
                     text-align: center;
-                    padding-top: 10px;
+                    padding-top: 20px;
+                    color: #222222;
                 }
             }
             .active_t {
@@ -592,6 +597,7 @@ body {
                         transition: .3s ease;
                         margin: 0;
                         letter-spacing: 2px;
+                        color: #222222;
                     }
                 }
             }
@@ -636,6 +642,7 @@ body {
 				letter-spacing: 1px;
 				color: #929292;
 				padding-bottom: 15px;
+                text-align: center;
 			}
 		}
 		.item_right {
