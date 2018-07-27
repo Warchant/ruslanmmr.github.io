@@ -1,0 +1,292 @@
+@import "vars";
+
+
+
+
+
+
+
+/*==========  Desktop First  ==========*/
+
+// <1200px
+@include media-breakpoint-down(lg) {
+    #projects .slider_content .slide .slide_content {
+        height: 200px;
+    }
+    #projects .slider_content .overlay h3 {
+        font-size: 1.5em;
+        padding-top: 0px;
+        padding-bottom: 5px;
+    }
+    #projects .slider_content .overlay p {
+        line-height: 100%;
+    }
+    #reviews .slider_content .txt p {
+        line-height: 110%;
+        margin: 0;
+        padding-top: 0;
+    }
+    #reviews .slider_content .head {
+        padding-top: 0;
+    }
+    #services .tabs .tab_item .content_tab p {
+        font-size: 1.4em;
+    }
+    #services .tabs_content .block_content .responsive_block .tab_content_b p {
+        font-size: 1.4em;
+        padding-top: 5px;
+        line-height: 130%;
+    }
+    #services .tabs_content .block_content {
+        max-height: 163.59px;
+    }
+}
+
+// <992px
+@include media-breakpoint-down(md) {
+    #header .content .nav ul li {
+        margin-right: 15px;
+    }
+    #services .tabs_content {
+    padding: 5px;
+}
+#services .tabs_content .block_content {
+    box-shadow: none;
+}
+    #header .content .numbers a {
+        font-size: 1.5em;
+    }
+    #reviews .slider_content .txt p {
+        line-height: 130%;
+        padding-top: 10px;
+    }
+    #help p.bottom {
+        text-align: center;
+        padding: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #projects h2 {
+        padding-top: 40px;
+    }
+    #projects {
+        padding-bottom: 55px;
+    }
+    #reviews h2 {
+        padding-top: 40px;
+    }
+    #services h2 {
+        padding-top: 40px;
+    }
+    #reviews {
+        padding-bottom: 25px;
+    }
+    #info .content h2 {
+        padding-top: 40px;
+    }
+    #info .content p {
+        padding-bottom: 25px;
+    }
+    #info .content form .submit {
+        margin-bottom: 50px;
+    }
+    #services .tabs_content .block_content .responsive_block .tab_content_b p {
+        font-size: 1em;
+        padding-top: 5px;
+        line-height: 130%;
+    }
+    #services .tabs_content .block_content {
+        max-height: 115.59px;
+    }
+    #services .content {
+        padding-bottom: 60px;
+    }
+     #footer .top .item_center {
+        order: 3;
+        width: 100%;
+        padding-top: 30px;
+     }
+     #footer .top {
+        flex-wrap: wrap;
+        justify-content: space-around;
+     }
+      #footer .line {
+display: none;
+      }
+#footer .nav {
+    display: none;
+}
+}
+
+// <768px
+@include media-breakpoint-down(sm) {
+    #header .content .nav {
+        display: none;
+    }
+    #header .content .numbers {
+        display: none;
+    }
+    #reviews .slider_content .txt p {
+        line-height: 130%;
+        padding-top: 0;
+    }
+    #home h1 {
+        padding-top: 110px;
+        font-size: 4em;
+    }
+    #home p {
+        font-size: 1.6em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+    #help .row .block .content p {
+        font-size: 1.4em;
+    }
+    #help p.bottom {
+        font-size: 1.4em;
+    }
+    #projects .slider_content .slide .slide_content {
+        height: 260px;
+    }
+    #projects .slider_content .overlay p {
+        line-height: 150%;
+        padding-top: 10px;
+    }
+    #services .active {
+        border: none;
+        background: none;
+    }
+    #services .tabs .tab_item .active_t {
+        border: 1px solid #e8375a;
+        background: #f7f7f7;
+    }
+    #services .tabs .block {
+        width: 31%;
+    }
+    #services .tabs .tab_items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #services .tabs_content .tab_content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+#services .tabs_content .block_content {
+     width: 30%;
+}
+#services .tabs_content .block_content {
+    max-height: none;
+}
+#services .tabs_content .block_content .responsive_block .tab_content_b p {
+    font-size: 1.4em;
+    line-height: 100%;
+}
+#footer .top {
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer .top .item_left a {
+       display: block;
+       margin: 0 auto;
+    }
+    #footer .top .item_left p {
+        text-align: center;
+    }
+    #footer .top .item_center {
+        padding-top: 15px;
+    }
+    #footer .top .item_right p {
+        text-align: center;
+        padding-top: 10px;
+        margin: 0;
+        padding-bottom: 15px;
+    }
+    #footer .top .item_right a {
+        text-align: center;
+
+    }
+    #footer .top .item_right {
+        padding-top: 10px;
+    }
+    #footer .top {
+        padding-bottom: 20px;
+    }
+}
+
+// <576px
+@include media-breakpoint-down(xs) {
+    #home h1 {
+        text-align: center;
+    }
+    #home p {
+        text-align: center;
+    }
+    #home a {
+        margin: 10px auto;
+    }
+    #info {
+        background-position: 90% 120%;
+    }
+    #help .row .block .content p {
+        font-size: 1.6em;
+    }
+    #services .tabs .block {
+        width: 45%;
+    }
+    #services .tabs_content .block_content {
+     width: 45%;
+}
+#services .tabs_content .block_content .responsive_block .tab_content_b p {
+    font-size: 1.2em;
+    line-height: 100%;
+}
+h2 {
+    font-size: 2.5em;
+}
+}
+
+
+@media screen and (max-width: 378px) {
+    #projects .slider_content .overlay p {
+        padding-top: 0px;
+    }
+    #reviews .slider_content .info {
+        padding-left: 10px;
+    }
+    #reviews .slider_content .txt p {
+        padding-top: 15px;
+        line-height: 140%;
+    }
+    #reviews .slider_content .slide .slide_content {
+        padding: 10px;
+    }
+    #home h1 {
+        padding-top: 45px;
+    }
+    #home p {
+        line-height: 150%;
+    }
+    #home {
+        padding-bottom: 45px;
+    }
+}
+
+
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {}
+
+// ≤768px
+@include media-breakpoint-up(md) {}
+
+// ≤992px
+@include media-breakpoint-up(lg) {}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {}

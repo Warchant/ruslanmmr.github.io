@@ -9,7 +9,7 @@
 /*==========  Desktop First  ==========*/
 
 // <1200px
-@include media-breakpoint-down(lg) {
+@media screen and (max-width: 1230px) {
     #projects .slider_content .slide .slide_content {
         height: 200px;
     }
@@ -43,7 +43,7 @@
 }
 
 // <992px
-@include media-breakpoint-down(md) {
+@media screen and (max-width: 992px) {
     #header .content .nav ul li {
         margin-right: 15px;
     }
@@ -119,7 +119,7 @@ display: none;
 }
 
 // <768px
-@include media-breakpoint-down(sm) {
+@media screen and (max-width: 768px) {
     #header .content .nav {
         display: none;
     }
@@ -215,7 +215,7 @@ display: none;
 }
 
 // <576px
-@include media-breakpoint-down(xs) {
+@media screen and (max-width: 576px) {
     #home h1 {
         text-align: center;
     }
@@ -271,22 +271,3 @@ h2 {
         padding-bottom: 45px;
     }
 }
-
-
-
-
-
-
-/*==========  Mobile First  ==========*/
-
-// ≤576px
-@include media-breakpoint-up(sm) {}
-
-// ≤768px
-@include media-breakpoint-up(md) {}
-
-// ≤992px
-@include media-breakpoint-up(lg) {}
-
-// ≤1200px
-@include media-breakpoint-up(xl) {}
