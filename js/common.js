@@ -9,7 +9,8 @@ $(document).ready(function() {
         $("#contacts").removeClass("c_active");
         $("#footer").addClass("f_active");
         $(".bg").addClass("bg_active");
-        $("#contacts .content").addClass("c_hide");       
+        $("#contacts .content").addClass("c_hide");  
+        $("#portfolio .content").removeClass("c_hide");      
         setTimeout(function() {
             $(".hm").removeClass("active");
             $(".cntcts").removeClass("active");
@@ -30,6 +31,7 @@ $(document).ready(function() {
         $("body").removeClass("body_active");
         $('header').removeClass("active_header_bg");
         $("#contacts .content").removeClass("c_hide"); 
+        $("#portfolio .content").addClass("c_hide");
         setTimeout(function() {
             $(".hm").removeClass("active");
             $(".cntcts").addClass("active");
@@ -55,6 +57,7 @@ $(document).ready(function() {
         $(".bg").removeClass("bg_active");
         $('header').removeClass("active_header_bg");
         $("#contacts .content").addClass("c_hide"); 
+        $("#portfolio .content").addClass("c_hide"); 
         setTimeout(function() {
             $("#footer").removeClass("f_active");
         }, 200);
