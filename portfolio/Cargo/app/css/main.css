@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "AssistantBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Assistant/AssistantBold.eot");
+  src: url("../fonts/Assistant/AssistantBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Assistant/AssistantBold.woff") format("woff"), url("../fonts/Assistant/AssistantBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RobotoLight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Roboto/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/Roboto/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/Roboto/RobotoLight/RobotoLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "SegoeUILight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SegoeUI/SegoeUILight/SegoeUILight.eot");
+  src: url("../fonts/SegoeUI/SegoeUILight/SegoeUILight.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI/SegoeUILight/SegoeUILight.woff") format("woff"), url("../fonts/SegoeUI/SegoeUILight/SegoeUILight.ttf") format("truetype"); }
+
+body {
+  font-size: 10px; }
+
+#wrapper {
+  position: relative; }
+  #wrapper .bg {
+    width: 1750px;
+    height: 10000px;
+    top: 0px;
+    background: url(../img/bg_example.jpg) no-repeat top center;
+    z-index: 10; }
+
+header {
+  position: relative;
+  z-index: 2; }
+  header .container {
+    padding: 31px 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    header .container a {
+      font-size: 3.5em;
+      color: #fff;
+      display: block; }
+    header .container .logo {
+      background: url(../img/logo.png) no-repeat center center;
+      display: block;
+      height: 48px;
+      width: 168px; }
+    header .container .nav {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      padding-left: 127px;
+      list-style: none; }
+      header .container .nav li {
+        padding-right: 70px; }
+      header .container .nav a {
+        font-family: "RobotoLight"; }
+    header .container .btn {
+      font-family: "SegoeUILight";
+      padding: 15px 30px;
+      background-color: #ff6633;
+      position: relative; }

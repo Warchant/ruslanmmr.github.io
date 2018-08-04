@@ -1,0 +1,58 @@
+@import "fonts";
+
+body {
+	font-size: 10px;
+}
+#wrapper {
+	position: relative;
+	.bg {
+		width: 1750px;
+		height: 10000px;
+		top: 0px;
+		background: url(../img/bg_example.jpg)no-repeat top center;
+		z-index: 10;
+	}
+}
+
+
+header {
+	position: relative;
+	z-index: 2;
+	.container {
+    padding: 31px 15px;
+		display: flex;
+		align-items: center;
+		a {
+			font-size: 3.5em;
+			color: #fff;	
+			display: block;
+		}
+		.logo {
+			background: url(../img/logo.png) no-repeat center center;
+			display: block;
+			height: 48px;
+			width: 168px;
+		}
+		.nav {
+			display: flex;
+			margin: 0;
+			padding: 0;
+			padding-left: 127px;
+			list-style: none;
+			li {
+				padding-right: 70px;
+			}
+			a {
+				font-family: "RobotoLight";			
+			}
+		}
+		.btn {
+			font-family: "SegoeUILight";
+			padding: 15px 30px;
+			background-color: #ff6633;
+			position: relative;
+		}
+	}
+}
+
+@import "media";
