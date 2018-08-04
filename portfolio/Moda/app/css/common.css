@@ -2238,11 +2238,29 @@ h3 {
   -webkit-background-size: cover;
           background-size: cover;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  max-height: 800px;
+  margin: 0 auto; }
+  #home .bg_video {
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #fff; }
+    #home .bg_video #video_background {
+      width: 100% !important;
+      height: 100% !important;
+      top: 0 !important;
+      left: 0 !important;
+      -o-object-fit: none !important;
+         object-fit: none !important; }
   #home .content {
     position: relative;
+    z-index: 2;
     height: 100vh;
-    min-height: 460px;
+    min-height: 670px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2255,7 +2273,8 @@ h3 {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    max-height: 800px; }
   #home header {
     position: absolute;
     width: 100%;
@@ -2349,7 +2368,7 @@ h3 {
           display: block;
           height: 14px;
           width: 19px;
-          background: url(../img/speech-bubbles-comment-option.png) no-repeat center top;
+          background: url(../img/speech-bubbles-comment-option_white.png) no-repeat center top;
           margin-right: 15px;
           margin-top: 14px;
           margin-left: 31px; }
@@ -2386,7 +2405,7 @@ h3 {
       display: block;
       z-index: 2;
       text-decoration: none;
-      color: #fff;
+      color: #000;
       text-transform: uppercase;
       font: 1.4em "MuseoSansCyrl500";
       -webkit-transition: .1s ease;
@@ -2408,11 +2427,11 @@ h3 {
       position: relative;
       z-index: 2;
       font: 1.4em "MuseoSansCyrl500";
-      color: #cdcdcd;
+      color: #000;
       display: block;
       height: 45px;
       width: 195px;
-      border: 1px solid #fff;
+      border: 1px solid #000;
       text-decoration: none;
       -webkit-transition: .3s ease;
       -o-transition: .3s ease;
@@ -2509,12 +2528,12 @@ h3 {
     position: relative; }
   #home h1 {
     font: 12em "Aempirial";
-    color: #cdcdcd;
+    color: #000;
     text-align: center;
     letter-spacing: 5px; }
   #home p {
     font: 4.7em "ParkAvenue";
-    color: #cdcdcd;
+    color: #000;
     text-align: center;
     padding-top: 32px; }
   #home .a_bottom {
@@ -2531,7 +2550,7 @@ h3 {
       display: block;
       height: 55px;
       width: 45px;
-      background: url(../img/icon_back.png);
+      background: url(../img/btn_collect.png);
       margin: 0 auto; }
     #home .a_bottom .bg {
       position: absolute;
@@ -3131,6 +3150,15 @@ h3 {
   #home .mobile_nav .nav_m {
     padding-top: 20px; } }
 
+@media screen and (max-width: 1400px) {
+  #home .bg_video #video_background {
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
+    height: 140% !important;
+    top: -20% !important; }
+  #home .content {
+    height: 720px; } }
+
 @media screen and (max-width: 1290px) {
   #collections .collection .slide_models {
     padding-top: 50px; }
@@ -3163,7 +3191,20 @@ h3 {
     font: 3em "MuseoSansCyrl500";
     padding-top: 35px; }
   #contacts .contacts .numbers {
-    font: 1.6em "MuseoSansCyrl500"; } }
+    font: 1.6em "MuseoSansCyrl500"; }
+  #home .bg_video #video_background {
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
+    height: 140% !important;
+    top: -20% !important; }
+  #home .content {
+    height: 500px !important;
+    min-height: 500px; }
+  #home h1 {
+    font: 8em "Aempirial"; }
+  #home p {
+    font-size: 3.5em;
+    padding-top: 5px; } }
 
 @media (max-width: 991.98px) {
   #home .nav {
@@ -3188,7 +3229,15 @@ h3 {
         -ms-flex-direction: column;
             flex-direction: column; }
   #contacts .contacts h6 {
-    padding-top: 25px; } }
+    padding-top: 25px; }
+  #home .bg_video {
+    display: none; }
+  #home h1 {
+    color: #cdcdcd; }
+  #home p {
+    color: #cdcdcd; }
+  #home .a_bottom a {
+    background: url(../img/icon_back.png); } }
 
 @media (max-width: 767.98px) {
   #home h1 {

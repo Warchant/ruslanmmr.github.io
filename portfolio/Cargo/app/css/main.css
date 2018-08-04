@@ -19,23 +19,32 @@
   src: url("../fonts/SegoeUI/SegoeUILight/SegoeUILight.eot");
   src: url("../fonts/SegoeUI/SegoeUILight/SegoeUILight.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI/SegoeUILight/SegoeUILight.woff") format("woff"), url("../fonts/SegoeUI/SegoeUILight/SegoeUILight.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "SegoeUIRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.eot");
+  src: url("../fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "NexaRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Nexa/NexaRegular.eot");
+  src: url("../fonts/Nexa/NexaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Nexa/NexaRegular.woff") format("woff"), url("../fonts/Nexa/NexaRegular.ttf") format("truetype"); }
+
 body {
   font-size: 10px; }
 
 #wrapper {
   position: relative; }
-  #wrapper .bg {
-    width: 1750px;
-    height: 10000px;
-    top: 0px;
-    background: url(../img/bg_example.jpg) no-repeat top center;
-    z-index: 10; }
 
 header {
-  position: relative;
+  position: fixed;
+  width: 100%;
   z-index: 2; }
   header .container {
-    padding: 31px 15px;
+    padding: 30px 15px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -43,11 +52,16 @@ header {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    position: relative; }
     header .container a {
-      font-size: 3.5em;
+      font-size: 2.4em;
       color: #fff;
-      display: block; }
+      display: block;
+      text-decoration: none;
+      -webkit-transition: .3s ease;
+      -o-transition: .3s ease;
+      transition: .3s ease; }
     header .container .logo {
       background: url(../img/logo.png) no-repeat center center;
       display: block;
@@ -60,14 +74,93 @@ header {
       display: flex;
       margin: 0;
       padding: 0;
-      padding-left: 127px;
+      padding-left: 100px;
       list-style: none; }
       header .container .nav li {
-        padding-right: 70px; }
+        padding-right: 50px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
       header .container .nav a {
         font-family: "RobotoLight"; }
+        header .container .nav a:hover {
+          -webkit-transform: scale(1.05);
+              -ms-transform: scale(1.05);
+                  transform: scale(1.05);
+          color: #ff6633; }
     header .container .btn {
       font-family: "SegoeUILight";
-      padding: 15px 30px;
+      padding: 5px 20px;
       background-color: #ff6633;
-      position: relative; }
+      position: absolute;
+      right: 15px;
+      padding-bottom: 6px;
+      -webkit-border-radius: 8px;
+              border-radius: 8px; }
+      header .container .btn:hover {
+        -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+                transform: scale(1.05); }
+
+#home {
+  background: url(../img/bg_home.jpg) no-repeat center top;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  #home .container {
+    position: relative;
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #home .container h1 {
+      font: 6.8em "NexaRegular";
+      color: #fff;
+      text-align: center; }
+    #home .container p {
+      text-align: center;
+      font: 2.72em "SegoeUIRegular";
+      color: #fff;
+      padding-bottom: 25px; }
+    #home .container .btn {
+      display: block;
+      font: 1.7em "SegoeUIRegular";
+      color: #fff;
+      padding: 6px 0;
+      padding-bottom: 9px;
+      text-align: center;
+      text-decoration: none;
+      width: 238px;
+      margin: 0 auto;
+      border: 2px solid #ff6633;
+      -webkit-border-radius: 8px;
+              border-radius: 8px;
+      -webkit-transition: .3s ease;
+      -o-transition: .3s ease;
+      transition: .3s ease; }
+      #home .container .btn:hover {
+        -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+                transform: scale(1.05); }
+    #home .container .home_bottom {
+      position: absolute;
+      width: 100%;
+      padding: 0 15px;
+      bottom: 0; }

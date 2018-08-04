@@ -5,27 +5,24 @@ body {
 }
 #wrapper {
 	position: relative;
-	.bg {
-		width: 1750px;
-		height: 10000px;
-		top: 0px;
-		background: url(../img/bg_example.jpg)no-repeat top center;
-		z-index: 10;
-	}
 }
 
 
 header {
-	position: relative;
+	position: fixed;
+	width: 100%;
 	z-index: 2;
 	.container {
-    padding: 31px 15px;
+    padding: 30px 15px;
 		display: flex;
 		align-items: center;
+		position: relative;
 		a {
-			font-size: 3.5em;
+			font-size: 2.4em;
 			color: #fff;	
 			display: block;
+			text-decoration: none;
+			transition: .3s ease;
 		}
 		.logo {
 			background: url(../img/logo.png) no-repeat center center;
@@ -37,20 +34,80 @@ header {
 			display: flex;
 			margin: 0;
 			padding: 0;
-			padding-left: 127px;
+			padding-left: 100px;
 			list-style: none;
 			li {
-				padding-right: 70px;
+				padding-right: 50px;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 			a {
-				font-family: "RobotoLight";			
+				font-family: "RobotoLight";
+				&:hover {
+					transform: scale(1.05);
+					color: #ff6633;
+				}			
 			}
 		}
 		.btn {
 			font-family: "SegoeUILight";
-			padding: 15px 30px;
+			padding: 5px 20px;
 			background-color: #ff6633;
-			position: relative;
+			position: absolute;
+			right: 15px;
+			padding-bottom: 6px;
+			border-radius: 8px;
+			&:hover {
+					transform: scale(1.05);
+				}			
+		}
+	}
+}
+
+#home {
+	background: url(../img/bg_home.jpg) no-repeat center top;
+	background-size: cover;
+	.container {
+		position: relative;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		h1 {
+			font: 6.8em "NexaRegular";
+			color: #fff;
+			text-align: center;
+		}
+		p {
+			text-align: center;
+			font: 2.72em "SegoeUIRegular";
+			color: #fff;
+			padding-bottom: 25px;
+		}
+		.btn {
+			display: block;
+			font: 1.7em "SegoeUIRegular";
+			color: #fff;
+			padding: 6px 0;
+			padding-bottom: 9px;
+			text-align: center;
+			text-decoration: none;
+			width: 238px;
+			margin: 0 auto;
+			border: 2px solid #ff6633;
+			border-radius: 8px;
+			transition: .3s ease;
+			&:hover {
+					transform: scale(1.05);
+				}		
+		}
+		.home_bottom {
+       position: absolute;
+       width: 100%;
+       padding: 0 15px;
+       bottom: 0;
 		}
 	}
 }

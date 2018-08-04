@@ -41,13 +41,35 @@ h3 {
     background-size: cover;
     position: relative;
     z-index: 2;
+    max-height: 800px;
+    margin: 0 auto;
+    // bacground
+    .bg_video {
+        position: absolute;
+        overflow: hidden;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: #fff;
+        #video_background {
+            width: 100% !important;
+            height: 100% !important;
+            top: 0 !important;
+            left: 0 !important;
+            object-fit: none !important;
+        }
+        //
+    }
     .content {
         position: relative;
+        z-index: 2;
         height: 100vh;
-        min-height: 460px;
+        min-height: 670px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        max-height: 800px;
     }
     header {
         position: absolute;
@@ -120,7 +142,7 @@ h3 {
                     display: block;
                     height: 14px;
                     width: 19px;
-                    background: url(../img/speech-bubbles-comment-option.png) no-repeat center top;
+                    background: url(../img/speech-bubbles-comment-option_white.png) no-repeat center top;
                     margin-right: 15px;
                     margin-top: 14px;
                     margin-left: 31px;
@@ -163,7 +185,7 @@ h3 {
             display: block;
             z-index: 2;
             text-decoration: none;
-            color: #fff;
+            color: #000;
             text-transform: uppercase;
             font: 1.4em "MuseoSansCyrl500";
             transition: .1s ease;
@@ -187,11 +209,11 @@ h3 {
             position: relative;
             z-index: 2;
             font: 1.4em "MuseoSansCyrl500";
-            color: #cdcdcd;
+            color: #000;
             display: block;
             height: 45px;
             width: 195px;
-            border: 1px solid #fff;
+            border: 1px solid #000;
             text-decoration: none;
             transition: .3s ease;
             display: flex;
@@ -288,13 +310,13 @@ h3 {
     }
     h1 {
         font: 12em "Aempirial";
-        color: #cdcdcd;
+        color: #000;
         text-align: center;
         letter-spacing: 5px;
     }
     p {
         font: 4.7em "ParkAvenue";
-        color: #cdcdcd;
+        color: #000;
         text-align: center;
         padding-top: 32px;
     }
@@ -312,7 +334,7 @@ h3 {
             display: block;
             height: 55px;
             width: 45px;
-            background: url(../img/icon_back.png);
+            background: url(../img/btn_collect.png);
             margin: 0 auto;
         }
         .bg {
