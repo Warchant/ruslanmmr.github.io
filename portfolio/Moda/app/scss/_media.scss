@@ -25,9 +25,6 @@
         height: 140% !important;
         top: -20% !important;
     }
-    #home .content {
-        height: 720px;
-    }
 }
 
 
@@ -79,10 +76,9 @@
     #contacts .contacts .numbers {
         font: 1.6em "MuseoSansCyrl500";
     }
-    #home .bg_video #video_background {
+    .my-background-video {
         object-fit: cover !important;
         height: 140% !important;
-        top: -20% !important;
     }
     #home .content {
         height: 500px !important;
@@ -99,6 +95,9 @@
 
 // <992px
 @include media-breakpoint-down(md) {
+    #home {
+        background: #25394e url(../img/bg_home.jpg) no-repeat center center;
+    }
     #home .nav {
         display: none;
     }
@@ -127,7 +126,7 @@
     #contacts .contacts h6 {
         padding-top: 25px;
     }
-    #home .bg_video {
+    .element-with-video-bg {
         display: none;
     }
     #home h1 {

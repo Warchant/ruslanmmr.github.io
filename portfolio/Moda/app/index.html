@@ -12,8 +12,13 @@
     <div id="wrap">
         <div id="home">
             <!--Видео фон-->
-            <div class="bg_video"></div>
-
+            <div class="element-with-video-bg jquery-background-video-wrapper">
+                <video class="my-background-video jquery-background-video" loop autoplay muted poster="path/to/your/poster.jpg">
+                    <source src="video/bg_video.mp4" type="video/mp4">
+                    <source src="video/bg_video.webm" type="video/webm">
+                    <source src="video/bg_video.ogg" type="video/ogg">
+                </video>
+            </div>
             <div class="container">
                 <div class="content">
                     <header>
@@ -46,34 +51,34 @@
                             <div class="bg"></div>
                         </div>
                         <div class="nav-btn">
-                        <a href="#"><span></span></a>
-                    </div>
-                    <div class="mobile_nav">
-                        <ul class="nav_m">
-                            <li>
-                                <a href="#">главная</a>
-                            </li>
-                            <li>
-                                <a href="#">о магазине</a>                                
-                            </li>
-                            <li>
-                                <a href="#">коллекция</a>
-                            </li>
-                            <li>
-                                <a href="#">отзывы</a>                               
-                            </li>
-                            <li>
-                                <a href="#">контакты</a>                                
-                            </li>
-                        </ul>
-                        <div class="btn_mobile">
-                            <a href="#"><span class="icon"></span><span class="txt">Напишите нам</span></a>
+                            <a href="#"><span></span></a>
                         </div>
+                        <div class="mobile_nav">
+                            <ul class="nav_m">
+                                <li>
+                                    <a href="#">главная</a>
+                                </li>
+                                <li>
+                                    <a href="#">о магазине</a>
+                                </li>
+                                <li>
+                                    <a href="#">коллекция</a>
+                                </li>
+                                <li>
+                                    <a href="#">отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">контакты</a>
+                                </li>
+                            </ul>
+                            <div class="btn_mobile">
+                                <a href="#"><span class="icon"></span><span class="txt">Напишите нам</span></a>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="title">
+                        <h1>Стильная одежда класса статус-маркет</h1>
                     </div>
-                </header>
-                <div class="title">
-                    <h1>Стильная одежда класса статус-маркет</h1> 
-                </div>
                     <p>по очень доступным ценам</p>
                     <div class="a_bottom">
                         <a href="#" class="arrow"></a>
@@ -134,13 +139,12 @@
                                             <div class="title">
                                                 <p>Платье осеннее</p>
                                                 <div class="arrow">
-                                                    
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="slide">
-                                    <div class="slide_content">
+                                        <div class="slide_content">
                                             <a href="#"></a>
                                             <div class="img">
                                                 <img src="img/model2.jpg" alt="model">
@@ -148,7 +152,6 @@
                                             <div class="title">
                                                 <p>Платье осеннее</p>
                                                 <div class="arrow">
-                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -162,7 +165,6 @@
                                             <div class="title">
                                                 <p>Платье осеннее</p>
                                                 <div class="arrow">
-                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -183,9 +185,9 @@
                                 </div>
                             </div>
                             <div class="btn">
-                                    <a href="#"><span class="txt">Смотреть полностью</span><span class="icon"></span></a>
-                                    <div class="bg"></div>
-                                </div>
+                                <a href="#"><span class="txt">Смотреть полностью</span><span class="icon"></span></a>
+                                <div class="bg"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -203,10 +205,7 @@
                             <div class="scontent">
                                 <p class="rev">ОТЗЫВ №1</p>
                                 <p class="name">Екатерина Золотая</p>
-                                <p class="txt">У нас вы сможете удовлетворить свою самую изысканную потребность и
-                                приобрести значительно больше стильной, статусной и яркой одежды, нежели в
-                                любом другом магазине Города, больше стильной, статусной и яркой одежды, 
-                                нежели в любом другом магазине Города ...</p>
+                                <p class="txt">У нас вы сможете удовлетворить свою самую изысканную потребность и приобрести значительно больше стильной, статусной и яркой одежды, нежели в любом другом магазине Города, больше стильной, статусной и яркой одежды, нежели в любом другом магазине Города ...</p>
                                 <div class="btn">
                                     <a href="#">показать полностью<span></span></a>
                                 </div>
@@ -218,10 +217,7 @@
                             <div class="scontent">
                                 <p class="rev">ОТЗЫВ №2</p>
                                 <p class="name">Григорий Фиников</p>
-                                <p class="txt">У нас вы сможете удовлетворить свою самую изысканную потребность и
-                                приобрести значительно больше стильной, статусной и яркой одежды, нежели в
-                                любом другом магазине Города, больше стильной, статусной и яркой одежды, 
-                                нежели в любом другом магазине Города ...</p>
+                                <p class="txt">У нас вы сможете удовлетворить свою самую изысканную потребность и приобрести значительно больше стильной, статусной и яркой одежды, нежели в любом другом магазине Города, больше стильной, статусной и яркой одежды, нежели в любом другом магазине Города ...</p>
                                 <div class="btn">
                                     <a href="#">показать полностью<span></span></a>
                                 </div>
@@ -233,10 +229,7 @@
                             <div class="scontent">
                                 <p class="rev">ОТЗЫВ №3</p>
                                 <p class="name">Енакентий Фильченко</p>
-                                <p class="txt">У нас вы сможете удовлетворить свою самую изысканную потребность и
-                                приобрести значительно больше стильной, статусной и яркой одежды, нежели в
-                                любом другом магазине Города, больше стильной, статусной и яркой одежды, 
-                                нежели в любом другом магазине Города ...</p>
+                                <p class="txt">У нас вы сможете удовлетворить свою самую изысканную потребность и приобрести значительно больше стильной, статусной и яркой одежды, нежели в любом другом магазине Города, больше стильной, статусной и яркой одежды, нежели в любом другом магазине Города ...</p>
                                 <div class="btn">
                                     <a href="#">показать полностью<span></span></a>
                                 </div>
@@ -248,10 +241,7 @@
                             <div class="scontent">
                                 <p class="rev">ОТЗЫВ №4</p>
                                 <p class="name">Григорий Фиников</p>
-                                <p class="txt">У нас вы сможете удовлетворить свою самую изысканную потребность и
-                                приобрести значительно больше стильной, статусной и яркой одежды, нежели в
-                                любом другом магазине Города, больше стильной, статусной и яркой одежды, 
-                                нежели в любом другом магазине Города ...</p>
+                                <p class="txt">У нас вы сможете удовлетворить свою самую изысканную потребность и приобрести значительно больше стильной, статусной и яркой одежды, нежели в любом другом магазине Города, больше стильной, статусной и яркой одежды, нежели в любом другом магазине Города ...</p>
                                 <div class="btn">
                                     <a href="#">показать полностью<span></span></a>
                                 </div>
@@ -263,8 +253,8 @@
                     <div class="more">
                         <div class="line"></div>
                         <div class="btn">
-                                    <a href="#"><span class="txt">Показать все отзывы</span><span class="icon"></span></a>
-                                    <div class="bg"></div>
+                            <a href="#"><span class="txt">Показать все отзывы</span><span class="icon"></span></a>
+                            <div class="bg"></div>
                         </div>
                         <div class="line"></div>
                     </div>
@@ -275,20 +265,20 @@
             <div class="container">
                 <div class="content">
                     <h6>Появились вопросы?</h6>
-                    <p>Напишите его в форме ниже. И оставьте свои контактные данные. Мы вам перезвоним и ответим на любой вопрос.</p>  
+                    <p>Напишите его в форме ниже. И оставьте свои контактные данные. Мы вам перезвоним и ответим на любой вопрос.</p>
                     <form action="#" method="post">
-                        <input name="first_name" class="input" placeholder="Ваше имя*" type="text"  required/>
+                        <input name="first_name" class="input" placeholder="Ваше имя*" type="text" required/>
                         <input name="phone" class="input" placeholder="Телефон*" type="text" required/>
                         <textarea name="question" class="text" placeholder="Напишите Ваш вопрос..." required></textarea>
                         <input type="submit" class="submit" name="submit" value="отправить">
-                    </form> 
+                    </form>
                 </div>
             </div>
         </div>
         <div id="contacts">
             <div class="container">
                 <div class="content">
-                    <div class="map">  
+                    <div class="map">
                         <div class="map_content"></div>
                         <div class="bg"></div>
                     </div>
@@ -313,22 +303,22 @@
             <div class="container">
                 <div class="content">
                     <ul class="nav">
-                            <li>
-                                <a href="#">главная</a>
-                            </li>
-                            <li>
-                                <a href="#">о магазине</a>
-                            </li>
-                            <li>
-                                <a href="#">коллекиця</a>
-                            </li>
-                            <li>
-                                <a href="#">отзывы</a>
-                            </li>
-                            <li>
-                                <a href="#">контакты</a>
-                            </li>
-                        </ul>
+                        <li>
+                            <a href="#">главная</a>
+                        </li>
+                        <li>
+                            <a href="#">о магазине</a>
+                        </li>
+                        <li>
+                            <a href="#">коллекиця</a>
+                        </li>
+                        <li>
+                            <a href="#">отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#">контакты</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

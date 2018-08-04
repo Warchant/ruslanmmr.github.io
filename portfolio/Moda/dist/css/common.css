@@ -2234,33 +2234,33 @@ h3 {
   letter-spacing: 4px; }
 
 #home {
-  background: #25394e url(../img/bg_home.jpg) no-repeat center center;
+  background: #fff;
   -webkit-background-size: cover;
           background-size: cover;
   position: relative;
   z-index: 2;
   max-height: 800px;
   margin: 0 auto; }
-  #home .bg_video {
-    position: absolute;
-    overflow: hidden;
+  #home .element-with-video-bg {
+    position: absolute !important;
     top: 0px;
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: #fff; }
-    #home .bg_video #video_background {
-      width: 100% !important;
-      height: 100% !important;
-      top: 0 !important;
-      left: 0 !important;
-      -o-object-fit: none !important;
-         object-fit: none !important; }
+    background: #fff;
+    opacity: 0;
+    -webkit-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s; }
+    #home .element-with-video-bg .my-background-video {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: none;
+         object-fit: none; }
   #home .content {
     position: relative;
     z-index: 2;
     height: 100vh;
-    min-height: 670px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2274,7 +2274,8 @@ h3 {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    max-height: 800px; }
+    max-height: 800px;
+    min-height: 600px; }
   #home header {
     position: absolute;
     width: 100%;
@@ -3155,9 +3156,7 @@ h3 {
     -o-object-fit: cover !important;
        object-fit: cover !important;
     height: 140% !important;
-    top: -20% !important; }
-  #home .content {
-    height: 720px; } }
+    top: -20% !important; } }
 
 @media screen and (max-width: 1290px) {
   #collections .collection .slide_models {
@@ -3192,11 +3191,10 @@ h3 {
     padding-top: 35px; }
   #contacts .contacts .numbers {
     font: 1.6em "MuseoSansCyrl500"; }
-  #home .bg_video #video_background {
+  .my-background-video {
     -o-object-fit: cover !important;
        object-fit: cover !important;
-    height: 140% !important;
-    top: -20% !important; }
+    height: 140% !important; }
   #home .content {
     height: 500px !important;
     min-height: 500px; }
@@ -3207,6 +3205,8 @@ h3 {
     padding-top: 5px; } }
 
 @media (max-width: 991.98px) {
+  #home {
+    background: #25394e url(../img/bg_home.jpg) no-repeat center center; }
   #home .nav {
     display: none; }
   #home .btn {
@@ -3230,7 +3230,7 @@ h3 {
             flex-direction: column; }
   #contacts .contacts h6 {
     padding-top: 25px; }
-  #home .bg_video {
+  .element-with-video-bg {
     display: none; }
   #home h1 {
     color: #cdcdcd; }

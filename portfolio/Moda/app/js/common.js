@@ -1,17 +1,11 @@
  //bacground
- $(document).ready(function() {
-    var videobackground = new $.backgroundVideo($('.bg_video'), {
-      "align": "centerXY",
-      "width": 1280,
-      "height": 720,
-      "path": "video/",
-      "filename": "bg_video",
-      "types": ["mp4","ogg","webm"],
-      "preload": true,
-      "autoplay": true,
-      "loop": true
+ $(document).ready(function(){
+    $('.my-background-video').bgVideo({
+        showPausePlay: false,
+        fullScreen: true,
     });
-  });
+    $('.element-with-video-bg').css('opacity', '1');
+});
 //
 
 $(document).ready(function() {
