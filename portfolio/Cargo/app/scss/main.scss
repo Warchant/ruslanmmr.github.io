@@ -2,7 +2,11 @@
 
 body {
     font-size: 10px;
-    min-width: 1200px;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 #wrapper {
@@ -10,20 +14,183 @@ body {
 }
 
 .container {
-	min-width: 1200px;
+    min-width: 320px;
+}
+
+.sub {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    display: none;
+}
+
+.sub_active {
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    .icon {
+        height: 16px;
+        width: 16px;
+        background: url(../img/icon_tel.png) no-repeat center center;
+        background-size: cover;
+        margin-right: 10px;
+        animation: 1200ms ease 0s normal none 1 running shake;
+        animation-iteration-count: infinite;
+    }
+    .num {
+        font: 2.1em "SegoeUIRegular";
+        color: #fff;
+        text-decoration: none;
+        padding-bottom: 2px;
+    }
 }
 
 header {
     position: absolute;
     width: 100%;
-    z-index: 2;
+    z-index: 10;
     background-color: transparent;
     transition: .5s ease;
-    .container {
-        padding: 30px 15px;
+    .container-fluid {
+        padding: 30px 30px;
         display: flex;
         align-items: center;
         position: relative;
+        .nav-btn a {
+        height: 50px;
+        width: 50px;
+        box-sizing: border-box;
+        transition: .3s ease;
+    }
+.nav-btn {
+        display: none;
+        position: relative;
+        z-index: 1000;
+        a {
+            display: block;
+            position: relative;
+            height: 32px;
+            width: 35px;
+            span {
+                display: block;
+                height: 3px;
+                width: 100%;
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+                margin-top: -1px;
+                transition: .3s ease;
+            }
+            &::before {
+                display: block;
+                content: "";
+                height: 3px;
+                width: 100%;
+                background-color: #fff;
+                position: absolute;
+                transition: .3s ease;
+                top: 0;
+            }
+            &::after {
+                display: block;
+                content: "";
+                height: 3px;
+                width: 100%;
+                background-color: #fff;
+                position: absolute;
+                bottom: 0;
+                transition: .3s ease;
+            }
+        }
+        a:hover::before,
+        a:hover::after,
+        a:hover span {
+            background-color: #ff6633;
+        }
+        .a_active {
+            &::before {
+                transform: rotate(45deg);
+                top: 14px;
+                width: 35px;
+            }
+            &::after {
+                transform: rotate(-45deg);
+                bottom: 15px;
+                width: 35px;
+            }
+            span {
+                background-color: transparent !important;
+            }
+        }
+    }
+        .mobile_nav {
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        height: 100vh;
+        width: 243px;
+        transition: .5s;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: #fff;
+        .nav_m {
+            flex-direction: column;
+            padding-top: 25px;
+            padding-left: 0px;
+            li {
+                padding: 5px 0;
+            }
+            a {
+                color: #000;
+                font: 1.8em "SegoeUISemiBold";
+                padding: 20px 0;
+                text-transform: uppercase;
+                text-decoration: none;
+                display: block;
+                padding-left: 34px;
+                &:hover {
+                    color: #ff6633;
+                }
+            }
+        }
+        .btn_mobile {
+            margin-bottom: 45px;
+            a {
+                margin: 0 auto;
+                position: relative;
+                display: flex;
+                text-decoration: none;
+                justify-content: center;
+                color: #fff;
+                width: 197px;
+                height: 45px;
+                border-radius: 10px;
+                background: #ff6633;
+                font: 1.4em "SegoeUISemiBold";
+                transition: .3s ease;
+                &:hover {
+                    transform: scale(1.05);
+                }
+                .txt {
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+    .nav_active {
+        left: 0%;
+    }
         a {
             font-size: 2.4em;
             color: #fff;
@@ -63,7 +230,7 @@ header {
             padding: 5px 20px;
             background-color: #ff6633;
             position: absolute;
-            right: 15px;
+            right: 30px;
             padding-bottom: 8px;
             border-radius: 8px;
             &:hover {
@@ -72,9 +239,10 @@ header {
         }
     }
 }
+
 .fixed {
-	position: fixed;
-	background-color: rgba(52, 8, 30, 0.85);
+    position: fixed;
+    background-color: rgba(52, 8, 30, 0.85);
 }
 
 #home {
@@ -84,6 +252,7 @@ header {
         position: relative;
         height: 100vh;
         max-height: 900px;
+        min-height: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -122,25 +291,6 @@ header {
             bottom: 25px;
             display: flex;
             justify-content: space-between;
-            .number {
-                display: flex;
-                align-items: center;
-                .icon {
-                    height: 16px;
-                    width: 16px;
-                    background: url(../img/icon_tel.png) no-repeat center center;
-                    background-size: cover;
-                    margin-right: 10px;
-                    animation: 1200ms ease 0s normal none 1 running shake;
-                    animation-iteration-count: infinite;
-                }
-                .num {
-                    font: 2.1em "SegoeUIRegular";
-                    color: #fff;
-                    text-decoration: none;
-                    padding-bottom: 2px;
-                }
-            }
             .how {
                 text-decoration: none;
                 font: 2.4em "SegoeUILight";
@@ -166,6 +316,7 @@ header {
                 .vk {
                     background: url(../img/icon_vk.png) no-repeat center center;
                     background-size: cover;
+                    margin-left: 0px;
                 }
                 .instagram {
                     background: url(../img/icon_instagram.png) no-repeat center center;
@@ -265,10 +416,12 @@ header {
             }
         }
         .slide2 {
+            min-height: 846px;
             .title {
                 display: flex;
                 padding-top: 65px;
-                padding-bottom: 100px;
+                padding-bottom: 10px;
+
                 .icon {
                     padding-top: 0.8em;
                     padding-bottom: 0.8em;
@@ -292,6 +445,7 @@ header {
             }
             .row {
                 padding-bottom: 220px;
+                padding-top: 85px;
                 justify-content: space-between;
             }
             .block {
@@ -300,7 +454,7 @@ header {
                 p {
                     font: 2.7em "RobotoRegular";
                     text-align: center;
-                    padding-top: 150px;
+                    padding-top: 15px;
                     line-height: 120%;
                 }
                 a {
@@ -323,18 +477,6 @@ header {
                         transform: scale(1.05);
                     }
                 }
-            }
-            .block1 {
-                background: url(../img/slide2_logo1.png) no-repeat top center;
-                background-size: contain;
-            }
-            .block2 {
-                background: url(../img/slide2_logo2.png) no-repeat top center;
-                background-size: contain;
-            }
-            .block3 {
-                background: url(../img/slide2_logo3.png) no-repeat top center;
-                background-size: contain;
             }
         }
         .slide3 {
@@ -421,6 +563,7 @@ header {
     background-size: cover;
     .container {
         min-height: 685px;
+        padding-bottom: 50px;
     }
     h4 {
         font: 5.4em "SegoeUISemiBold";
@@ -476,7 +619,7 @@ header {
 }
 
 #reviews {
-	background: url(../img/bg_slider.jpg) no-repeat center top;
+    background: url(../img/bg_slider.jpg) no-repeat center top;
     h4 {
         font: 5.4em "SegoeUISemiBold";
         text-align: center;
@@ -488,20 +631,15 @@ header {
     }
     .slide {
         min-height: 330px;
-        display: flex;
         padding: 0 15px;
-        .photo {
-            img {
-                height: 100%;
-                width: 330px;
-            }
+        img {
+            height: 330px;
+            width: auto;
+            display: inline;
+            float: left;
+            padding-right: 30px;
         }
-        .txt_block {
-            padding-left: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+
         .name {
             font: 2.7em "RobotoRegular";
             color: #cc0000;
@@ -511,7 +649,12 @@ header {
         }
     }
     .owl3 {
-        padding-bottom: 50px;
+        margin-bottom: 50px;
+        .slide img {
+            float: right;
+            padding: 0;
+            padding-left: 30px;
+        }
         .txt_block {
             padding: 0;
             padding-right: 30px;
@@ -563,8 +706,10 @@ header {
 #services_bottom {
     background: url(../img/bg_services.jpg) no-repeat center bottom;
     background-size: cover;
+    transition: .3s ease;
     .content {
         min-height: 570px;
+        transition: .3s ease;
         h4 {
             font: 5.4em "SegoeUISemiBold";
             padding-top: 35px;
@@ -829,58 +974,78 @@ header {
                     resize: none;
                 }
             }
-            .form__select {
-                width: 100%;
-                height: 43px;
-                position: relative;
-                padding-right: 15px;
-                display: block;
-            }
+            .box {
+            	.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+                .inputfile-6+label {
+                    color: #d3394c;
+                    cursor: pointer;
+                }
 
-            .form__select:before {
-                content: "Выбрать";
-                display: block;
-                font: 2em "RobotoLight";
-                padding-top: 6px;
-                color: #fff;
-                text-align: center;
-                width: 100px;
-                height: 43px;
-                background-color: #ff6633;
-                border-radius: 10px;
-                pointer-events: none;
-                position: absolute;
-                top: 0px;
-                right: 15px;
-                z-index: 1;
-            }
+                .inputfile-6+label {
+                    background-color: #fff;
+                    padding: 0;
+                    border-radius: 10px;
+                    height: 43px;
+                    width: 100%;
+                    position: relative;
+                }
 
+                .inputfile-6:focus+label,
+                .inputfile-6.has-focus+label,
+                .inputfile-6+label:hover {
+                    border-color: #722040;
+                }
 
-            .form__select select {
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                width: 100%;
-                height: 100%;
-                background: fff;
-                border-radius: 10px;
-                border: none;
-                outline: none;
-                padding: 8px 8px 9px 12px;
-                font: 2em "RobotoLight";
-                color: #000;
-            }
-            /* Убираем стандартные стрелочки в IE */
-            .form__select select::-ms-expand {
-                display: none;
-            }
+                .inputfile-6+label span,
+                .inputfile-6+label strong {
+                	padding: 6px 8px 9px 12px;
+                    /* 10px 20px */
+                    cursor: pointer;
+                }
 
-            .form__select select:focus {
-                outline: 0;
-                border-color: #2cb0d8;
-            }
+                .inputfile-6+label span {
+                    width: 100%;
+                    min-height: 2em;
+                    display: inline-block;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    vertical-align: top;
+                    font: 2em "SegoeUIRegular";
+                    color: #7a7a7a;
+                }
 
-            .form__select select:hover {
-                cursor: pointer;
+                .inputfile-6+label strong {
+                    height: 100%;
+                    color: #f1e5e6;
+                    background-color: #ff6633;
+                    display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    border-radius: 10px;
+                    width: 109px;
+                    text-align: center;
+                    font: 2em "SegoeUIRegular";
+                }
+
+                .inputfile-6:focus+label strong,
+                .inputfile-6.has-focus+label strong,
+                .inputfile-6+label:hover strong {
+                }
+
+                @media screen and (max-width: 50em) {
+                    .inputfile-6+label strong {
+                        display: block;
+                    }
+                }
             }
         }
     }
@@ -888,92 +1053,92 @@ header {
 
 
 #footer {
-	background: #434343;
-	footer {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		min-height: 108px;
-	}
-	.block_left {
-     .num {
-     	display: block;
-     	font: 1.7em "RobotoRegular";
-     	color: #fff;
-     	text-decoration: none;
-     	margin-bottom: 5px;
-     	letter-spacing: 1px;
-     }
-     .btn {
-     	display: block;
-     	width: 100%;
-     	text-align: center;
-     	font: 1.7em "RobotoRegular";
-     	background: #ff6633;
-     	border-radius: 10px;
-     	text-decoration: none;
-     	padding: 4px;
-     	padding-bottom: 5px;
-     	color: #fff;
-     	transition: .3s ease;
-     	&:hover {
+    background: #434343;
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 108px;
+    }
+    .block_left {
+        .num {
+            display: block;
+            font: 1.7em "RobotoRegular";
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font: 1.7em "RobotoRegular";
+            background: #ff6633;
+            border-radius: 10px;
+            text-decoration: none;
+            padding: 4px;
+            padding-bottom: 5px;
+            color: #fff;
+            transition: .3s ease;
+            &:hover {
                 transform: scale(1.05);
             }
-     }
-	}
-	.block_center {
-		p {
-				text-align: center;
-				font: 1.6em "RobotoRegular";
-				margin: 0;
-				padding-top: 10px;
-				a {
-					color: #cc0000;
-				}
-			}
-		.btns {
-			display: flex;
-			justify-content: center;
-			a {
-				display: block;
-				height: 30px;
-				width: 72px;
-				background: #fff;
-				margin: 0;
-				text-align: center;
-				text-decoration: none;
-				font: 2em "RobotoRegular";
-				color: #ff6633;
-				padding-top: 1px;
-			}
-			.left {
-				border-radius: 8px 0 0 8px;
-			}
-			.right {
-				border-radius: 0 8px 8px 0;
-			}
-			.active {
-				background: #ff6633;
-				color: #fff;
-			}
-		}
-	}
-	.block_right {
-		p {
-			margin: 0;
-		}
-		.copy {
-			font: 2em "RobotoRegular";
-			color: #fff;
-			span {
-				color: #cc0000;
-			}
-		}
-		.rights {
-			font: 1.7em "RobotoRegular";
-			color: #fff;
-		}
-	}
+        }
+    }
+    .block_center {
+        p {
+            text-align: center;
+            font: 1.6em "RobotoRegular";
+            margin: 0;
+            padding-top: 10px;
+            a {
+                color: #cc0000;
+            }
+        }
+        .btns {
+            display: flex;
+            justify-content: center;
+            a {
+                display: block;
+                height: 30px;
+                width: 72px;
+                background: #fff;
+                margin: 0;
+                text-align: center;
+                text-decoration: none;
+                font: 2em "RobotoRegular";
+                color: #ff6633;
+                padding-top: 1px;
+            }
+            .left {
+                border-radius: 8px 0 0 8px;
+            }
+            .right {
+                border-radius: 0 8px 8px 0;
+            }
+            .active {
+                background: #ff6633;
+                color: #fff;
+            }
+        }
+    }
+    .block_right {
+        p {
+            margin: 0;
+        }
+        .copy {
+            font: 2em "RobotoRegular";
+            color: #fff;
+            span {
+                color: #cc0000;
+            }
+        }
+        .rights {
+            font: 1.7em "RobotoRegular";
+            color: #fff;
+        }
+    }
 }
 
 

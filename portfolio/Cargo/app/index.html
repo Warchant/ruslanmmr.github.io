@@ -14,14 +14,38 @@
 <body>
     <div id="wrapper">
         <header>
-            <div class="container">
+            <div class="container-fluid">
                 <a class="logo" href="#"></a>
                 <ul class="nav">
                     <li><a href="#">Оплата</a></li>
                     <li><a href="#">Помощь</a></li>
                     <li><a href="#">Сделать заказ</a></li>
                 </ul>
+                <div class="number">
+                    <div class="icon"></div>
+                    <a class="num" href="tel:+88005052785">8 800 505 27-85</a>
+                </div>
+                <div class="sub"></div>
                 <a class="btn" href="#">Личный кабинет</a>
+                <div class="nav-btn">
+                            <a href="#"><span></span></a>
+                        </div>
+                <div class="mobile_nav">
+                            <ul class="nav_m">
+                                <li>
+                                    <a href="#">оплата</a>
+                                </li>
+                                <li>
+                                    <a href="#">помощь</a>
+                                </li>
+                                <li>
+                                    <a href="#">сдлать заказ</a>
+                                </li>
+                            </ul>
+                            <div class="btn_mobile">
+                                <a href="#"><span class="icon"></span><span class="txt">Личный кабинет</span></a>
+                            </div>
+                        </div>
             </div>
         </header>
         <div id="home">
@@ -71,21 +95,24 @@
                                         с минимальной комиссией</h4>
                                     </div>
                                     <div class="row">
-                                        <div class="col-3">
+                                        <div class="row_content col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
                                             <div class="block block1">
+                                                <img src="img/slide2_logo1.png" alt="logo1">
                                                 <p>Оптовые закупки</p>
                                                 <a href="#">Заказать</a>
                                             </div>
                                         </div>
-                                        <div class="col-3">
+                                        <div class="row_content col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
                                             <div class="block block2">
+                                                <img src="img/slide2_logo2.png" alt="logo1">
                                                 <p>Только фирменный и качественный товар
                                                 </p>
                                                 <a href="#">Заказать</a>
                                             </div>
                                         </div>
-                                        <div class="col-3">
+                                        <div class="row_content col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
                                             <div class="block block3">
+                                                <img src="img/slide2_logo3.png" alt="logo1">
                                                 <p>Розница и опт</p>
                                                 <a href="#">Заказать</a>
                                             </div>
@@ -94,14 +121,14 @@
                                 </div>
                                 <div class="slide slide3">
                                     <div class="row">
-                                        <div class="title col-6">
+                                        <div class="title col-lg-6">
                                             <h4>Доставим ваши<br>
                                         товары из <span>Китая</span></h4>
                                             <div class="icon">
                                                 <div class="icon_item"></div>
                                             </div>
                                         </div>
-                                        <div class="block block1 col-6">
+                                        <div class="block block1 col-lg-6">
                                             <div class="icon">
                                                 <div class="icon_item"></div>
                                             </div>
@@ -111,7 +138,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="block block2 col-6">
+                                        <div class="block block2 col-lg-6">
                                             <div class="icon">
                                                 <div class="icon_item"></div>
                                             </div>
@@ -122,7 +149,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="block block3 col-6">
+                                        <div class="block block3 col-lg-6">
                                             <div class="icon">
                                                 <div class="icon_item"></div>
                                             </div>
@@ -132,7 +159,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="block block4 col-7">
+                                        <div class="block block4 col-lg-7">
                                             <div class="icon">
                                                 <div class="icon_item"></div>
                                             </div>
@@ -154,28 +181,28 @@
             <div class="container">
                 <h4>Наши преимущества</h4>
                 <div class="content row">
-                    <div class="block col-6">
+                    <div class="block col-xl-6 col-lg-6 col-md-12">
                         <div class="content_block">
                             <div class="bg bg1"></div>
                             <h5>Отправка товара каждый день</h5>
                             <p>Мы отправим ваш груз в день сборки, не заставляя вас ждать лишнее время.</p>
                         </div>
                     </div>
-                    <div class="block col-6">
+                    <div class="block col-xl-6 col-lg-6 col-md-12">
                         <div class="content_block">
                             <div class="bg bg2"></div>
                             <h5>Находимся в Китае и в России</h5>
                             <p>Это позволяет компании контролировать весь процесс оказываемых нами услуг..</p>
                         </div>
                     </div>
-                    <div class="block col-6">
+                    <div class="block col-xl-6 col-lg-6 col-md-12">
                         <div class="content_block">
                             <div class="bg bg3"></div>
                             <h5>Вы застрахованы</h5>
                             <p>Мы следим за вашим товаром и если с ним что-то случиться награнице, то мы гарантированно вернем вам деньги или купим такой же товар.</p>
                         </div>
                     </div>
-                    <div class="block col-6">
+                    <div class="block col-xl-6 col-lg-6 col-md-12">
                         <div class="content_block">
                             <div class="bg bg4"></div>
                             <h5>С нами выгодно</h5>
@@ -193,31 +220,19 @@
                     <div class="carousel row">
                         <div class="owl-carousel owl2">
                             <div class="slide">
-                                <div class="photo">
-                                    <img src="img/photo1.jpg" alt="photo">
-                                </div>
-                                <div class="txt_block">
-                                    <p class="name">Имя Фамилия</p>
-                                    <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
-                                </div>
+                                <img src="img/photo1.jpg" alt="photo">
+                                <p class="name">Имя Фамилия</p>
+                                <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
                             </div>
                             <div class="slide">
-                                <div class="photo">
-                                    <img src="img/photo2.jpg" alt="photo">
-                                </div>
-                                <div class="txt_block">
-                                    <p class="name">Имя Фамилия</p>
-                                    <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
-                                </div>
+                                <img src="img/photo2.jpg" alt="photo">
+                                <p class="name">Имя Фамилия</p>
+                                <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
                             </div>
                             <div class="slide">
-                                <div class="photo">
-                                    <img src="img/photo1.jpg" alt="photo">
-                                </div>
-                                <div class="txt_block">
-                                    <p class="name">Имя Фамилия</p>
-                                    <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
-                                </div>
+                                <img src="img/photo1.jpg" alt="photo">
+                                <p class="name">Имя Фамилия</p>
+                                <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
                             </div>
                         </div>
                         <div class="arrow_right">
@@ -232,31 +247,19 @@
                         </div>
                         <div class="owl-carousel owl3">
                             <div class="slide">
-                                <div class="txt_block">
-                                    <p class="name">Имя Фамилия</p>
-                                    <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
-                                </div>
-                                <div class="photo">
-                                    <img src="img/photo2.jpg" alt="photo">
-                                </div>
+                                <img src="img/photo2.jpg" alt="photo">
+                                <p class="name">Имя Фамилия</p>
+                                <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
                             </div>
                             <div class="slide">
-                                <div class="txt_block">
-                                    <p class="name">Имя Фамилия</p>
-                                    <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
-                                </div>
-                                <div class="photo">
-                                    <img src="img/photo2.jpg" alt="photo">
-                                </div>
+                                <img src="img/photo2.jpg" alt="photo">
+                                <p class="name">Имя Фамилия</p>
+                                <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
                             </div>
                             <div class="slide">
-                                <div class="txt_block">
-                                    <p class="name">Имя Фамилия</p>
-                                    <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
-                                </div>
-                                <div class="photo">
-                                    <img src="img/photo1.jpg" alt="photo">
-                                </div>
+                                <img src="img/photo1.jpg" alt="photo">
+                                <p class="name">Имя Фамилия</p>
+                                <p class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu </p>
                             </div>
                         </div>
                     </div>
@@ -288,16 +291,16 @@
                         </div>
                         <div class="tab_item tab_item2">
                             <form class="row justify-content-center" action="#">
-                                <div class="input col-6">
+                                <div class="input col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                     <input type="text" placeholder="Откуда" name="#" required/>
                                 </div>
-                                <div class="input col-6">
+                                <div class="input col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                     <input type="text" placeholder="Куда" name="#" required/>
                                 </div>
-                                <div class="input col-6">
+                                <div class="input col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                     <input type="text" placeholder="Вес" name="#" required/>
                                 </div>
-                                <div class="input col-6">
+                                <div class="input col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                     <input type="text" placeholder="Email или телефон" name="#" required/>
                                 </div>
                                 <div class="text col-12">
@@ -321,22 +324,21 @@
                             </form>
                         </div>
                         <div class="tab_item tab_item3">
-                            <p>Если вы не знаете, где купить интересущий вас товар,<br> расскажите как можно подробнее о нем, а мы его найдем</p>
+                            <p>Если вы не знаете, где купить интересущий вас товар,
+                                <br> расскажите как можно подробнее о нем, а мы его найдем</p>
                             <form class="row justify-content-center" action="#">
                                 <div class="text col-12">
                                     <textarea name="text" placeholder="Описание товара" required/></textarea>
                                 </div>
-                                <div class="input col-4">
+                                <div class="input col-lg-4 col-md-12">
                                     <input type="text" placeholder="Email или телефон" name="#" required/>
                                 </div>
-                                <div class="input col-4">
+                                <div class="input col-lg-4 col-md-12">
                                     <input type="text" placeholder="Email или телефон" name="#" required/>
                                 </div>
-                                <div class="form__select col-4">
-                                    <select name="select">
-                                        <option value="1"></option>
-                                        <option value="2">Option 2</option>
-                                    </select>
+                                <div class="box col-lg-4 col-md-12">
+                                    <input type="file" name="file-7[]" id="file-7" class="inputfile inputfile-6" data-multiple-caption="{count} files selected" multiple />
+					<label for="file-7"><span>Загрузите фото товара</span> <strong>Загрузить</strong></label>
                                 </div>
                                 <div class="submit col-12">
                                     <input class="btn" type="submit" value="Отправить заявку" />
@@ -348,25 +350,25 @@
             </div>
         </div>
         <div id="footer">
-        	  <div class="container">
-        	  	<footer>
-        	  		  <div class="block_left">
-        	  		  	<a class="num" href="tel:+88005052785">8 800 505 27-85</a>
-        	  		  	<a class="btn" href="#">Сделать заказ</a>
-        	  		  </div>
-        	  		  <div class="block_center">
-        	  		  	<div class="btns">
-        	  		  		<a class="left" href="#">1 ¥</a>
-        	  		  		<a class="right active" href="#">10 Р</a>
-        	  		  	</div>
-        	  		  	<p>dizign by <a href="#">Mashinistor</a></p>
-        	  		  </div>
-        	  		  <div class="block_right">
-        	  		  	<p class="copy">©<span>2018</span>Cargo-Boom</p>
-        	  		  	<p class="rights">Все права защищены</p>
-        	  		  </div>
-        	  	</footer>
-        	  </div>
+            <div class="container">
+                <footer>
+                    <div class="block_left">
+                        <a class="num" href="tel:+88005052785">8 800 505 27-85</a>
+                        <a class="btn" href="#">Сделать заказ</a>
+                    </div>
+                    <div class="block_center">
+                        <div class="btns">
+                            <a class="left" href="#">1 ¥</a>
+                            <a class="right active" href="#">10 Р</a>
+                        </div>
+                        <p>dizign by <a href="#">Mashinistor</a></p>
+                    </div>
+                    <div class="block_right">
+                        <p class="copy">©<span>2018</span>Cargo-Boom</p>
+                        <p class="rights">Все права защищены</p>
+                    </div>
+                </footer>
+            </div>
         </div>
         <!--Sripts-->
         <script src="libs/jquery/dist/jquery.min.js"></script>

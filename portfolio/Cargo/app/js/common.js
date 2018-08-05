@@ -1,3 +1,45 @@
+//input
+$(document).ready(function() {
+    var inputs = document.querySelectorAll('.inputfile');
+    Array.prototype.forEach.call(inputs, function(input) {
+        var label = input.nextElementSibling,
+            labelVal = label.innerHTML;
+
+        input.addEventListener('change', function(e) {
+            var fileName = '';
+            if (this.files && this.files.length > 1)
+                fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+            else
+                fileName = e.target.value.split('\\').pop();
+
+            if (fileName)
+                label.querySelector('span').innerHTML = fileName;
+            else
+                label.innerHTML = labelVal;
+        });
+    });
+});
+
+
+//nav
+
+$(document).ready(function() {
+    $('.nav a').hover(function() {
+        $(this).toggleClass("active");
+        $(this).next(".bg").toggleClass("activebg");
+    });
+});
+
+$(document).ready(function() {
+    $('.nav-btn a, .sub').click(function(event) {
+        event.preventDefault();
+        $(".nav-btn a").toggleClass("a_active");
+        $(".mobile_nav").toggleClass("nav_active");
+        $("body").toggleClass("body_active");
+        $(".sub").toggleClass("sub_active");
+    });
+});
+
 $(document).ready(function() {
     var owl = $('.owl1');
     owl.owlCarousel({
@@ -7,8 +49,8 @@ $(document).ready(function() {
         rewind: false,
         checkVisibility: true,
         dots: true,
-        autoplay: true,
-        autoplayTimeout: 5000,
+        //autoplay: true,
+        //autoplayTimeout: 5000,
 
         mouseDrag: true,
         touchDrag: true,
@@ -62,64 +104,64 @@ $(document).ready(function() {
 var owl = $('.owl-carousel');
 // Случаешь события карусели:
 owl.on('changed.owl.carousel', function(event) {
-  var item = event.page.index;
-  if (item === 1 - 1) {
-       $('.number_slide').text(item + 1);
-  } else if (item === 2 - 1) {
-  	   $('.number_slide').text(item + 1);
-  	   $('.hint').addClass("hint_hidden");
-  } else if (item === 3 - 1) {
-  	   $('.number_slide').text(item + 1);
-  }
+    var item = event.page.index;
+    if (item === 1 - 1) {
+        $('.number_slide').text(item + 1);
+    } else if (item === 2 - 1) {
+        $('.number_slide').text(item + 1);
+        $('.hint').addClass("hint_hidden");
+    } else if (item === 3 - 1) {
+        $('.number_slide').text(item + 1);
+    }
 })
 
-$(function(){
-  $('.owl2').each(function(){
-    $(this).owlCarousel({
-    	items: 1,
-        loop: true,
-dots: false,
+$(function() {
+    $('.owl2').each(function() {
+        $(this).owlCarousel({
+            items: 1,
+            loop: true,
+            dots: false,
+        });
+        $('.arrow_right').click(function() {
+            $('.owl2').trigger('next.owl.carousel');
+        })
     });
-    $('.arrow_right').click(function() {
-        $('.owl2').trigger('next.owl.carousel');
-    })
-  });
 });
 
-$(function(){
-  $('.owl3').each(function(){
-    $(this).owlCarousel({
-    	items: 1,
-        loop: true,
-dots: false,
+$(function() {
+    $('.owl3').each(function() {
+        $(this).owlCarousel({
+            items: 1,
+            loop: true,
+            dots: false,
+        });
+        $('.arrow_left').click(function() {
+            $('.owl3').trigger('prev.owl.carousel');
+        })
     });
-    $('.arrow_left').click(function() {
-        $('.owl3').trigger('prev.owl.carousel');
-    })
-  });
 });
 
 
 //табы
 
 $(".tab_item").not(":first").hide();
-        $(".tab_name").click(function() {
-            $(".tab_name").removeClass("active").eq($(this).index()).addClass("active");
-            $(".tab_item").hide().eq($(this).index()).fadeIn(300)
-        }).eq(0).addClass("active");
-        $(".btns a").click(function(e) {
-        	  e.preventDefault();
-            $(".btns a").removeClass("active").eq($(this).index()).addClass("active");
-        }).eq(1).addClass("active");
+$(".tab_name").click(function() {
+    $(".tab_name").removeClass("active").eq($(this).index()).addClass("active");
+    $(".tab_item").hide().eq($(this).index()).fadeIn(300)
+}).eq(0).addClass("active");
+$(".btns a").click(function(e) {
+    e.preventDefault();
+    $(".btns a").removeClass("active").eq($(this).index()).addClass("active");
+}).eq(1).addClass("active");
 
-$(document).ready(function(){
-        var $menu = $("header");
+$(document).ready(function() {
+    var $menu = $("header");
 
-        $(window).scroll(function(){
-            if ( $(this).scrollTop() > 5){
-                $menu.addClass("fixed");
-            } else if($(this).scrollTop() <= 5) {
-                $menu.removeClass("fixed");
-            }
-        });
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 5) {
+            $menu.addClass("fixed");
+        } else if ($(this).scrollTop() <= 5) {
+            $menu.removeClass("fixed");
+        }
     });
+});
