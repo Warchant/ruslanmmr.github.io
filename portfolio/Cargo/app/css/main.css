@@ -488,7 +488,8 @@ header {
     padding: 0 15px;
     width: 100%; }
   #services .slider .slide1 {
-    min-height: 846px;
+    height: 100vh;
+    min-height: 640px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -860,7 +861,8 @@ header {
     -webkit-transition: .3s ease;
     -o-transition: .3s ease;
     transition: .3s ease;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #fff; }
     #services_bottom .tab_content .tab_item1 .btn:hover {
       -webkit-transform: scale(1.05);
           -ms-transform: scale(1.05);
@@ -1288,6 +1290,28 @@ header {
     -ms-transform: rotateZ(0deg);
     -webkit-transform: rotateZ(0deg); } }
 
+@media screen and (max-width: 1400px) {
+  #services .slider .slide1 h4 {
+    font-size: 5em;
+    padding-bottom: 10px; }
+  #services .slider .slide1 p {
+    font-size: 4em;
+    padding-bottom: 30px; }
+  #reviews .slide img {
+    height: 210px; }
+  #reviews .carousel {
+    padding-bottom: 50px; }
+  #reviews .arrow_right .arrow, #reviews .arrow_left .arrow {
+    height: 130px;
+    width: 64px; }
+  #reviews .owl3 {
+    margin-bottom: 0; }
+  #reviews .owl2, #reviews .owl3 {
+    width: 85%;
+    min-height: 0px; }
+  #reviews .slide {
+    min-height: 0px; } }
+
 @media screen and (max-width: 1200px) {
   header .container-fluid .nav {
     padding-left: 50px; }
@@ -1308,16 +1332,12 @@ header {
     margin-top: 150px; }
   #services .slider .slide2 .title h4 {
     font-size: 3.5em; }
-  #reviews .slide img {
-    height: 280px; }
   #services .slider .slide2 .title .icon_item {
     width: 120px; }
   #services .slider .slide2 .block {
     min-height: 250px; }
   #services .slider .slide1 h4 {
     font-size: 6em; }
-  #services .slider .slide1 p {
-    font-size: 5em; }
   #services .slider .slide2 {
     min-height: 0px; }
   #advant .block .content_block {
@@ -1345,16 +1365,8 @@ header {
     width: 60%; }
   #reviews .carousel {
     padding-bottom: 50px; }
-  #reviews .arrow_right .arrow, #reviews .arrow_left .arrow {
-    height: 130px;
-    width: 64px; }
-  #reviews .owl2, #reviews .owl3 {
-    width: 85%;
-    min-height: 0px; }
   #reviews .slide {
     min-height: 0px; }
-  #reviews .slide img {
-    height: 100px; }
   #services .slider .slide3 .block1 {
     margin-top: 60px;
     margin-bottom: 60px; }
@@ -1366,11 +1378,11 @@ header {
     margin-bottom: 60px; }
   #services .slider .slide3 .block3 {
     margin-bottom: 60px; }
+  #reviews .slide .txt {
+    font-size: 1.8em; }
   #services .slider .slide3 .block4 {
     margin-top: 0;
     margin-bottom: 100px; }
-  #services .slider .slide1 {
-    min-height: 750px; }
   #services .slider .slide3 .block2 .icon {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
@@ -1390,7 +1402,13 @@ header {
   #services .slider .slide3 .block4 .txt {
     text-align: right; }
   #services .slider .slide3 .block4 {
-    margin-bottom: 200px; } }
+    margin-bottom: 200px; }
+  #reviews .slide img {
+    padding-right: 15px; }
+  #reviews .owl3 .slide img {
+    padding-left: 15px; }
+  #reviews .slide img {
+    height: 160px; } }
 
 @media screen and (max-width: 768px) {
   #home .container h1 {
@@ -1444,8 +1462,6 @@ header {
     width: 18px; }
   #home .container {
     min-height: 400px; }
-  #reviews .slide .txt {
-    font-size: 2em; }
   #services .slider .slide2 .row {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -1472,14 +1488,10 @@ header {
     font-size: 4.5em; }
   #services .slider .slide1 p {
     font-size: 3.8em; }
-  #services .slider .slide1 {
-    min-height: 750px; }
   #services .slider .slide2 .row {
     padding-top: 50px; }
   #services .slider .slide2 .block p {
-    font-size: 2.3em; }
-  #reviews h4, #advant h4 {
-    font-size: 4.5em; } }
+    font-size: 2.3em; } }
 
 @media screen and (max-width: 576px) {
   #home .container .home_bottom {

@@ -1,4 +1,4 @@
- //bacground
+ //видео фон
  $(document).ready(function(){
     $('.my-background-video').bgVideo({
         showPausePlay: false,
