@@ -1,63 +1,74 @@
-$(document).ready(function() {
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        items: 1,
-        loop: true,
-        center: false,
-        rewind: false,
-        checkVisibility: true,
-        dots: false,
-
-        mouseDrag: true,
-        touchDrag: true,
-        pullDrag: true,
-        freeDrag: false,
-
-        margin: 0,
-        stagePadding: 0,
-
-        merge: false,
-        mergeFit: true,
-        autoWidth: false,
-
-        startPosition: 0,
-        rtl: false,
-
-        smartSpeed: 800,
-        fluidSpeed: false,
-        dragEndSpeed: false,
-
-        responsive: {},
-        responsiveRefreshRate: 200,
-        responsiveBaseElement: window,
-
-        fallbackEasing: 'swing',
-        slideTransition: '',
-
-        info: false,
-
-        nestedItemSelector: false,
-        itemElement: 'div',
-        stageElement: 'div',
-
-        refreshClass: 'owl-refresh',
-        loadedClass: 'owl-loaded',
-        loadingClass: 'owl-loading',
-        rtlClass: 'owl-rtl',
-        responsiveClass: 'owl-responsive',
-        dragClass: 'owl-drag',
-        itemClass: 'owl-item',
-        stageClass: 'owl-stage',
-        stageOuterClass: 'owl-stage-outer',
-        grabClass: 'owl-grab'
+$(function() {
+    $('.owl1').each(function() {
+        $(this).owlCarousel({
+            items: 1,
+            loop: true,
+            dots: false,
+        });
+        $('.arrow_right').click(function() {
+            $('.owl1').trigger('next.owl.carousel');
+        })
+        $('.arrow_left').click(function() {
+            $('.owl1').trigger('prev.owl.carousel');
+        })
     });
-    $('.arrow_right').click(function() {
-        owl.trigger('next.owl.carousel');
-    })
-    // Go to the previous item
-    $('.arrow_left').click(function() {
-        // With optional speed parameter
-        // Parameters has to be in square bracket '[]'
-        owl.trigger('prev.owl.carousel');
-    })
 });
+$(function() {
+    $('.owl2').each(function() {
+        $(this).owlCarousel({
+            items: 3,
+            loop: true,
+            dots: false,
+        });
+        $('.arrow_right_owl2').click(function() {
+            $('.owl2').trigger('next.owl.carousel');
+        })
+        $('.arrow_left_owl2').click(function() {
+            $('.owl2').trigger('prev.owl.carousel');
+        })
+    });
+});
+$(function() {
+    $('.owl3').each(function() {
+        $(this).owlCarousel({
+            items: 3,
+            loop: true,
+            dots: false,
+        });
+        $('.arrow_right_owl2').click(function() {
+            $('.owl3').trigger('next.owl.carousel');
+        })
+        $('.arrow_left_owl2').click(function() {
+            $('.owl3').trigger('prev.owl.carousel');
+        })
+    });
+});
+
+$(function() {
+    $('.owl4').each(function() {
+        $(this).owlCarousel({
+            items: 7,
+            loop: true,
+            dots: false,
+        });
+        $('.arrow_right_owl4').click(function() {
+            $('.owl4').trigger('next.owl.carousel');
+        })
+        $('.arrow_left_owl4').click(function() {
+            $('.owl4').trigger('prev.owl.carousel');
+        })
+    });
+});
+
+$(".carousel_block").not(":first").hide();
+        $(".shares .item").click(function() {
+            $(".shares .item").removeClass("active_p").eq($(this).index()).addClass("active_p");
+            $(".carousel_block").hide().eq($(this).index()).fadeIn(500)
+        }).eq(0).addClass("active");
+
+$(".about .tab_content").not(":first").hide();
+        $(".about .item").click(function() {
+            $(".about .item").removeClass("active_p").eq($(this).index()).addClass("active_p");
+            $(".about .tab_content").hide().eq($(this).index()).fadeIn(500)
+        }).eq(0).addClass("active");
+      

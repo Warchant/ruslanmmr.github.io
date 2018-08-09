@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>shop - catalog</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="bg"></div>
+        <div id="header">
+            <div class="line"></div>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+                </div>
+                <div class="content">
+                    <div class="contacts">
+                        <div class="contact_block">
+                            <div class="block_container">
+                                <div class="icon1"></div>
+                                <p>119606, г. Москва, М. Юго-Западная,
+                                    <br>пр-т Вернадского, 84к2, оф.71801</p>
+                            </div>
+                            <div class="block_container">
+                                <div class="icon2"></div>
+                                <p>Пн-Вс 09:00―22:00</p>
+                            </div>
+                        </div>
+                        <div class="contact_block">
+                            <div class="block_container">
+                                <div class="icon3"></div>
+                                <p>genmagaz</p>
+                            </div>
+                            <div class="block_container">
+                                <div class="icon4"></div>
+                                <p>info@generator-magazin.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="numbers">
+                        <div class="numbers_content">
+                            <div class="icon5"></div>
+                            <div class="txt">
+                                <p>+7 (495) 266-65-36</p>
+                                <p class="p2">8 (800) 555-32-11</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn"><span></span>Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="nav">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li class="home_btn"><a class="home" href="index.html"><span></span></a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a class="active_nav" href="#">Каталог</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Информация</a></li>
+                        <li><a href="#">Диллерам</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <form action="search.php">
+                        <div class="search">
+                            <input type="search" placeholder="Поиск по каталогу" name="" required>
+                            <input type="submit" value="">
+                        </div>
+                    </form>
+                </nav>
+            </div>
+        </div>
+        <div id="hierarchy">
+            <div class="container">
+                <a href="#" class="active">Главная</a>
+                <p>></p>
+                <a href="#">Каталог электростанций</a>
+            </div>
+        </div>
+        <div id="page_content">
+            <div class="container">
+                <div class="content row">
+                    <div class="sidebar col-3">
+                        <div class="sidebar_content">
+                            <div class="tab tab1">
+                                <div class="tab_name">
+                                    <div class="icon icon1"></div>
+                                    <p>Каталог электростанций</p>
+                                    <div class="icon_arrow"></div>
+                                </div>
+                                <div class="tab_content">
+                                    <ul>
+                                        <li><a href="#">Дизельные генераторы</a></li>
+                                        <li><a href="#">Бензиновые генераторы</a></li>
+                                        <li><a href="#">Газовые генераторы</a></li>
+                                        <li><a href="#">Сварочные генераторы</a></li>
+                                        <li><a href="#">БУ генераторы</a></li>
+                                        <li><a href="#">Акции и распродажи</a></li>
+                                    </ul>
+                                    <a class="btn" href="#"><span class="icon"></span>Расчитать<br><span class="txt">мощность генератора</span></a>
+                                </div>
+                            </div>
+                            <div class="tab tab2">
+                                <div class="tab_name">
+                                    <div class="icon icon2"></div>
+                                    <p>Услуги</p>
+                                    <div class="icon_arrow"></div>
+                                </div>
+                                <div class="tab_content">
+                                    <ul>
+                                        <li><a href="#">Выезд специалиста</a></li>
+                                        <li><a href="#">Тестирование и диагностика</a></li>
+                                        <li><a href="#">Доставка оборудования</a></li>
+                                        <li><a href="#">Монтаж</a></li>
+                                        <li><a href="#">Пуск и наладка</a></li>
+                                        <li><a href="#">Техническое обслуживание</a></li>
+                                        <li><a href="#">Ремонт генераторов</a></li>
+                                        <li><a href="#">Автоматизация станций</a></li>
+                                        <li><a href="#">Поставка запчастей</a></li>
+                                        <li><a href="#">Аренда генераторов</a></li>
+                                        <li><a href="#">Скупка БУ генераторов</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab tab3">
+                                <div class="tab_name">
+                                    <div class="icon icon3"></div>
+                                    <p>Прочее оборудование</p>
+                                    <div class="icon_arrow"></div>
+                                </div>
+                                <div class="tab_content">
+                                    <ul>
+                                        <li><a href="#">Блоки автоматического ввода резерва (АВР)</a></li>
+                                        <li><a href="#">Источники бесперебойного питания (ИБП)</a></li>
+                                        <li><a href="#">Контейнеры для генератора</a></li>
+                                        <li><a href="#">Стабилизаторы напряжения</a></li>
+                                        <li><a href="#">Мотопомпы</a></li>
+                                        <li><a href="#">Нагреватели воздуха</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab tab4">
+                                <div class="tab_name">
+                                    <div class="icon icon4"></div>
+                                    <p>Награды и сертификаты</p>
+                                    <div class="icon_arrow"></div>
+                                </div>
+                                <div class="tab_content">
+                                    <div class="images">
+                                        <img src="img/sert.jpg" alt="sert">
+                                        <img src="img/sert.jpg" alt="sert">
+                                    </div>
+                                    <a href="#">Все награды и сертификаты ></a>
+                                </div>
+                            </div>
+                            <div class="tab tab5">
+                                <div class="tab_name">
+                                    <div class="icon icon5"></div>
+                                    <p>Наши отзывы</p>
+                                    <div class="icon_arrow"></div>
+                                </div>
+                                <div class="tab_content">
+                                    <div class="rev">
+                                        <div class="head">
+                                            <p class="name"><span>a</span>leksey-engalychev</p>
+                                            <span class="rating"></span>
+                                        </div>
+                                        <div class="txt">
+                                            <p>Отличный интернет магазин. Очень легко и быстро подобрал необходимый мне товар. К сожалению этого товара не оказалось на складе, но менеджер помог мне подобрать другой вариант. После оплаты через Сбербанк, товар был успешно отправлен по месту назначения. Заказ № 5829.</p>
+                                        </div>
+                                    </div>
+                                    <div class="rev">
+                                        <div class="head">
+                                            <p class="name"><span>D</span>enver037</p>
+                                            <div class="rating">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="txt">
+                                            <p>Номер заказа K000723008. Все четко с товаром и доставкой</p>
+                                        </div>
+                                    </div>
+                                    <div class="rev">
+                                        <div class="head">
+                                            <p class="name"><span>D</span>enver037</p>
+                                            <div class="rating">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="txt">
+                                            <p>Номер заказа K000723008. Все четко с товаром и доставкой</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab tab6">
+                                <a href="#"></a>
+                                <div class="tab_name">
+                                    <div class="icon icon6"></div>
+                                    <p>Рейтинг производителей</p>
+                                    <div class="icon_arrow_out"></div>
+                                </div>
+                            </div>
+                            <div class="tab tab7">
+                                <div class="tab_name">
+                                    <div class="icon icon7"></div>
+                                    <p>Нам доверяют</p>
+                                    <div class="icon_arrow"></div>
+                                </div>
+                                <div class="tab_content">
+                                    <div class="clients">
+                                        <div class="img"><img src="img/client1.png" alt="client1"></div>
+                                        <div class="img"><img src="img/client2.png" alt="client2"></div>
+                                        <div class="img"><img src="img/client3.png" alt="client3"></div>
+                                        <div class="img"><img src="img/client4.png" alt="client4"></div>
+                                        <div class="img"><img src="img/client5.png" alt="client5"></div>
+                                        <div class="img img6"><img src="img/client6.png" alt="client6"></div>
+                                    </div>
+                                    <a href="#">Все клиенты ></a>
+                                </div>
+                            </div>
+                            <div class="tab tab8">
+                                <div class="tab_name">
+                                    <div class="icon icon8"></div>
+                                    <p>Статьи</p>
+                                    <div class="tab_arrows">
+                                        <div class="arrow_left"></div>
+                                        <div class="line"></div>
+                                        <div class="arrow_right"></div>
+                                    </div>
+                                    <div class="icon_arrow"></div>
+                                </div>
+                                <div class="tab_content">
+                                    <div class="carousel">
+                                        <div class="owl-carousel owl1">
+                                            <div class="slide">
+                                                <div class="title">
+                                                    <div class="img"><a href="#"><img src="img/Article_img.jpg" alt="article"></a></div>
+                                                    <a class="title_txt" href="#">ИБП: применение, классификация<br> и специфика</a>
+                                                </div>
+                                                <div class="slide_txt">
+                                                    <p>Статья содержит практические советы по подбору генераторной установки с автоматом ввода резерва, а также приводит доводы в пользу использования данного типа техники.</p>
+                                                </div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="title">
+                                                    <div class="img"><a href="#"><img src="img/Article_img.jpg" alt="article"></a></div>
+                                                    <a class="title_txt" href="#">ИБП: применение, классификация<br> и специфика</a>
+                                                </div>
+                                                <div class="slide_txt">
+                                                    <p>Статья содержит практические советы по подбору генераторной установки с автоматом ввода резерва, а также приводит доводы в пользу использования данного типа техники.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog col-9">
+                        <div class="catalog_content">
+                            <h3>Каталог электростанций</h3>
+                            <div class="catalog_list">
+                                <div class="blocks">
+                                    <div class="block">
+                                        <div class="title">
+                                            <div class="img"><a href="#"><img src="img/img_tovar.jpg" alt="article"></a></div>
+                                            <p class="availability">есть в наличии</p>
+                                            <a href="#" class="name">Бензиновый генератор Pramac ES5000</a>
+                                        </div>
+                                        <div class="options">
+                                            <div class="option option1">
+                                                <p class="left">Мощность</p>
+                                                <p class="right">3.9 кВт</p>
+                                            </div>
+                                            <div class="option option2">
+                                                <p class="left">Топливо</p>
+                                                <p class="right">бензин</p>
+                                            </div>
+                                            <div class="option option3">
+                                                <p class="left">Напряжение</p>
+                                                <p class="right">230 В</p>
+                                            </div>
+                                            <div class="option option4">
+                                                <p class="left">Наличие АВР</p>
+                                                <p class="right">нет</p>
+                                            </div>
+                                            <div class="option option5">
+                                                <p class="left">Исполнение</p>
+                                                <p class="right">открытое</p>
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <p>72 284 руб. <span>71 284 руб.</span></p>
+                                            <div class="rating"></div>
+                                        </div>
+                                        <a class="more" href="#"><span></span>Подробнее</a>
+                                        <div class="links">
+                                            <a class="icon1" href="#"></a>
+                                            <a class="icon2" href="#"></a>
+                                            <a class="icon3" href="#"></a>
+                                            <a class="icon4" href="#"></a>
+                                            <a class="icon5" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="title">
+                                            <div class="img"><a href="#"><img src="img/img_tovar.jpg" alt="article"></a></div>
+                                            <p class="availability">есть в наличии</p>
+                                            <a href="#" class="name">Бензиновый генератор Pramac ES5000</a>
+                                        </div>
+                                        <div class="options">
+                                            <div class="option option1">
+                                                <p class="left">Мощность</p>
+                                                <p class="right">3.9 кВт</p>
+                                            </div>
+                                            <div class="option option2">
+                                                <p class="left">Топливо</p>
+                                                <p class="right">бензин</p>
+                                            </div>
+                                            <div class="option option3">
+                                                <p class="left">Напряжение</p>
+                                                <p class="right">230 В</p>
+                                            </div>
+                                            <div class="option option4">
+                                                <p class="left">Наличие АВР</p>
+                                                <p class="right">нет</p>
+                                            </div>
+                                            <div class="option option5">
+                                                <p class="left">Исполнение</p>
+                                                <p class="right">открытое</p>
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <p>72 284 руб. <span>71 284 руб.</span></p>
+                                            <div class="rating"></div>
+                                        </div>
+                                        <a class="more" href="#"><span></span>Подробнее</a>
+                                        <div class="links">
+                                            <a class="icon1" href="#"></a>
+                                            <a class="icon2" href="#"></a>
+                                            <a class="icon3" href="#"></a>
+                                            <a class="icon4" href="#"></a>
+                                            <a class="icon5" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="title">
+                                            <div class="img"><a href="#"><img src="img/img_tovar.jpg" alt="article"></a></div>
+                                            <p class="availability">есть в наличии</p>
+                                            <a href="#" class="name">Бензиновый генератор Pramac ES5000</a>
+                                        </div>
+                                        <div class="options">
+                                            <div class="option option1">
+                                                <p class="left">Мощность</p>
+                                                <p class="right">3.9 кВт</p>
+                                            </div>
+                                            <div class="option option2">
+                                                <p class="left">Топливо</p>
+                                                <p class="right">бензин</p>
+                                            </div>
+                                            <div class="option option3">
+                                                <p class="left">Напряжение</p>
+                                                <p class="right">230 В</p>
+                                            </div>
+                                            <div class="option option4">
+                                                <p class="left">Наличие АВР</p>
+                                                <p class="right">нет</p>
+                                            </div>
+                                            <div class="option option5">
+                                                <p class="left">Исполнение</p>
+                                                <p class="right">открытое</p>
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <p>72 284 руб. <span>71 284 руб.</span></p>
+                                            <div class="rating"></div>
+                                        </div>
+                                        <a class="more" href="#"><span></span>Подробнее</a>
+                                        <div class="links">
+                                            <a class="icon1" href="#"></a>
+                                            <a class="icon2" href="#"></a>
+                                            <a class="icon3" href="#"></a>
+                                            <a class="icon4" href="#"></a>
+                                            <a class="icon5" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="title">
+                                            <div class="img"><a href="#"><img src="img/img_tovar.jpg" alt="article"></a></div>
+                                            <p class="availability">есть в наличии</p>
+                                            <a href="#" class="name">Бензиновый генератор Pramac ES5000</a>
+                                        </div>
+                                        <div class="options">
+                                            <div class="option option1">
+                                                <p class="left">Мощность</p>
+                                                <p class="right">3.9 кВт</p>
+                                            </div>
+                                            <div class="option option2">
+                                                <p class="left">Топливо</p>
+                                                <p class="right">бензин</p>
+                                            </div>
+                                            <div class="option option3">
+                                                <p class="left">Напряжение</p>
+                                                <p class="right">230 В</p>
+                                            </div>
+                                            <div class="option option4">
+                                                <p class="left">Наличие АВР</p>
+                                                <p class="right">нет</p>
+                                            </div>
+                                            <div class="option option5">
+                                                <p class="left">Исполнение</p>
+                                                <p class="right">открытое</p>
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <p>72 284 руб. <span>71 284 руб.</span></p>
+                                            <div class="rating"></div>
+                                        </div>
+                                        <a class="more" href="#"><span></span>Подробнее</a>
+                                        <div class="links">
+                                            <a class="icon1" href="#"></a>
+                                            <a class="icon2" href="#"></a>
+                                            <a class="icon3" href="#"></a>
+                                            <a class="icon4" href="#"></a>
+                                            <a class="icon5" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="title">
+                                            <div class="img"><a href="#"><img src="img/img_tovar.jpg" alt="article"></a></div>
+                                            <p class="availability">есть в наличии</p>
+                                            <a href="#" class="name">Бензиновый генератор Pramac ES5000</a>
+                                        </div>
+                                        <div class="options">
+                                            <div class="option option1">
+                                                <p class="left">Мощность</p>
+                                                <p class="right">3.9 кВт</p>
+                                            </div>
+                                            <div class="option option2">
+                                                <p class="left">Топливо</p>
+                                                <p class="right">бензин</p>
+                                            </div>
+                                            <div class="option option3">
+                                                <p class="left">Напряжение</p>
+                                                <p class="right">230 В</p>
+                                            </div>
+                                            <div class="option option4">
+                                                <p class="left">Наличие АВР</p>
+                                                <p class="right">нет</p>
+                                            </div>
+                                            <div class="option option5">
+                                                <p class="left">Исполнение</p>
+                                                <p class="right">открытое</p>
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <p>72 284 руб. <span>71 284 руб.</span></p>
+                                            <div class="rating"></div>
+                                        </div>
+                                        <a class="more" href="#"><span></span>Подробнее</a>
+                                        <div class="links">
+                                            <a class="icon1" href="#"></a>
+                                            <a class="icon2" href="#"></a>
+                                            <a class="icon3" href="#"></a>
+                                            <a class="icon4" href="#"></a>
+                                            <a class="icon5" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="title">
+                                            <div class="img"><a href="#"><img src="img/img_tovar.jpg" alt="article"></a></div>
+                                            <p class="availability">есть в наличии</p>
+                                            <a href="#" class="name">Бензиновый генератор Pramac ES5000</a>
+                                        </div>
+                                        <div class="options">
+                                            <div class="option option1">
+                                                <p class="left">Мощность</p>
+                                                <p class="right">3.9 кВт</p>
+                                            </div>
+                                            <div class="option option2">
+                                                <p class="left">Топливо</p>
+                                                <p class="right">бензин</p>
+                                            </div>
+                                            <div class="option option3">
+                                                <p class="left">Напряжение</p>
+                                                <p class="right">230 В</p>
+                                            </div>
+                                            <div class="option option4">
+                                                <p class="left">Наличие АВР</p>
+                                                <p class="right">нет</p>
+                                            </div>
+                                            <div class="option option5">
+                                                <p class="left">Исполнение</p>
+                                                <p class="right">открытое</p>
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <p>72 284 руб. <span>71 284 руб.</span></p>
+                                            <div class="rating"></div>
+                                        </div>
+                                        <a class="more" href="#"><span></span>Подробнее</a>
+                                        <div class="links">
+                                            <a class="icon1" href="#"></a>
+                                            <a class="icon2" href="#"></a>
+                                            <a class="icon3" href="#"></a>
+                                            <a class="icon4" href="#"></a>
+                                            <a class="icon5" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="title">
+                                            <div class="img"><a href="#"><img src="img/img_tovar.jpg" alt="article"></a></div>
+                                            <p class="availability">есть в наличии</p>
+                                            <a href="#" class="name">Бензиновый генератор Pramac ES5000</a>
+                                        </div>
+                                        <div class="options">
+                                            <div class="option option1">
+                                                <p class="left">Мощность</p>
+                                                <p class="right">3.9 кВт</p>
+                                            </div>
+                                            <div class="option option2">
+                                                <p class="left">Топливо</p>
+                                                <p class="right">бензин</p>
+                                            </div>
+                                            <div class="option option3">
+                                                <p class="left">Напряжение</p>
+                                                <p class="right">230 В</p>
+                                            </div>
+                                            <div class="option option4">
+                                                <p class="left">Наличие АВР</p>
+                                                <p class="right">нет</p>
+                                            </div>
+                                            <div class="option option5">
+                                                <p class="left">Исполнение</p>
+                                                <p class="right">открытое</p>
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <p>72 284 руб. <span>71 284 руб.</span></p>
+                                            <div class="rating"></div>
+                                        </div>
+                                        <a class="more" href="#"><span></span>Подробнее</a>
+                                        <div class="links">
+                                            <a class="icon1" href="#"></a>
+                                            <a class="icon2" href="#"></a>
+                                            <a class="icon3" href="#"></a>
+                                            <a class="icon4" href="#"></a>
+                                            <a class="icon5" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="title">
+                                            <div class="img"><a href="#"><img src="img/img_tovar.jpg" alt="article"></a></div>
+                                            <p class="availability">есть в наличии</p>
+                                            <a href="#" class="name">Бензиновый генератор Pramac ES5000</a>
+                                        </div>
+                                        <div class="options">
+                                            <div class="option option1">
+                                                <p class="left">Мощность</p>
+                                                <p class="right">3.9 кВт</p>
+                                            </div>
+                                            <div class="option option2">
+                                                <p class="left">Топливо</p>
+                                                <p class="right">бензин</p>
+                                            </div>
+                                            <div class="option option3">
+                                                <p class="left">Напряжение</p>
+                                                <p class="right">230 В</p>
+                                            </div>
+                                            <div class="option option4">
+                                                <p class="left">Наличие АВР</p>
+                                                <p class="right">нет</p>
+                                            </div>
+                                            <div class="option option5">
+                                                <p class="left">Исполнение</p>
+                                                <p class="right">открытое</p>
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <p>72 284 руб. <span>71 284 руб.</span></p>
+                                            <div class="rating"></div>
+                                        </div>
+                                        <a class="more" href="#"><span></span>Подробнее</a>
+                                        <div class="links">
+                                            <a class="icon1" href="#"></a>
+                                            <a class="icon2" href="#"></a>
+                                            <a class="icon3" href="#"></a>
+                                            <a class="icon4" href="#"></a>
+                                            <a class="icon5" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="title">
+                                            <div class="img"><a href="#"><img src="img/img_tovar.jpg" alt="article"></a></div>
+                                            <p class="availability">есть в наличии</p>
+                                            <a href="#" class="name">Бензиновый генератор Pramac ES5000</a>
+                                        </div>
+                                        <div class="options">
+                                            <div class="option option1">
+                                                <p class="left">Мощность</p>
+                                                <p class="right">3.9 кВт</p>
+                                            </div>
+                                            <div class="option option2">
+                                                <p class="left">Топливо</p>
+                                                <p class="right">бензин</p>
+                                            </div>
+                                            <div class="option option3">
+                                                <p class="left">Напряжение</p>
+                                                <p class="right">230 В</p>
+                                            </div>
+                                            <div class="option option4">
+                                                <p class="left">Наличие АВР</p>
+                                                <p class="right">нет</p>
+                                            </div>
+                                            <div class="option option5">
+                                                <p class="left">Исполнение</p>
+                                                <p class="right">открытое</p>
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <p>72 284 руб. <span>71 284 руб.</span></p>
+                                            <div class="rating"></div>
+                                        </div>
+                                        <a class="more" href="#"><span></span>Подробнее</a>
+                                        <div class="links">
+                                            <a class="icon1" href="#"></a>
+                                            <a class="icon2" href="#"></a>
+                                            <a class="icon3" href="#"></a>
+                                            <a class="icon4" href="#"></a>
+                                            <a class="icon5" href="#"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="number_pages">
+                                <a href="#" class="arrow_left"></a>
+                                <ul>
+                                    <li><a class="active" href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                </ul>
+                                <a href="#" class="arrow_right"></a>
+                            </div>
+                            <div class="tags">
+                                <div class="carousel">
+                                    <div class="owl-carousel owl4">
+                                        <div class="slide"><a href="#">для дачи</a></div>
+                                        <div class="slide"><a href="#">для похода</a></div>
+                                        <div class="slide"><a href="#">для рыбалки</a></div>
+                                        <div class="slide"><a href="#">надёжные</a></div>
+                                        <div class="slide"><a href="#">надёжные</a></div>
+                                        <div class="slide"><a href="#">для похода</a></div>
+                                        <div class="slide"><a href="#">для дачи</a></div>
+                                    </div>
+                                </div>
+                                <div class="tab_arrows">
+                                    <div class="arrow_left_owl4"></div>
+                                    <div class="line"></div>
+                                    <div class="arrow_right_owl4"></div>
+                                </div>
+                            </div>
+                            <div class="search">
+                                <div class="search_content">
+                                    <div class="block1">
+                                        <div class="title">
+                                            <p>Быстрый подбор по типу</p>
+                                        </div>
+                                        <ul>
+                                            <li><a href="#">Инверторные</a></li>
+                                            <li><a href="#">Стационарные</a></li>
+                                            <li><a href="#">Компактные</a></li>
+                                            <li><a href="#">Бытовые</a></li>
+                                            <li><a href="#">Автономные</a></li>
+                                            <li><a href="#">Переносные</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="block1">
+                                        <div class="title">
+                                            <p>Быстрый подбор по типу</p>
+                                        </div>
+                                        <ul>
+                                            <li><a href="#">Россия</a></li>
+                                            <li><a href="#">Германия</a></li>
+                                            <li><a href="#">Япония</a></li>
+                                            <li><a href="#">Италия</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="block1">
+                                        <div class="title">
+                                            <p>Быстрый подбор по типу</p>
+                                        </div>
+                                        <ul>
+                                            <li><a href="#">Кожух</a></li>
+                                            <li><a href="#">Контейнер</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="advant">
+                                <div class="advant_content">
+                                    <div class="title">
+                                        <p>Наши преимущества</p>
+                                    </div>
+                                    <div class="blocks">
+                                        <div class="block_advant">
+                                            <div class="img img1"></div>
+                                            <p class="top">
+                                                <span class="black">Бесплатная доставка</span>
+                                                <br>по Москве и ближайшему
+                                                <br> подмосковью <span class="red">*</span>
+                                            </p>
+                                            <p class="bottom">
+                                                <span class="red">*</span> В будни 8:00―19:00
+                                            </p>
+                                        </div>
+                                        <div class="block_advant">
+                                            <div class="img img2"></div>
+                                            <p class="top">
+                                                <span class="black">Консультации профессионалов</span>
+                                                <br> индивидуальный подход
+                                                <br> при подборе оборудования
+                                            </p>
+                                            <p class="bottom">
+                                                Опыт продавцов от 5 лет
+                                            </p>
+                                        </div>
+                                        <div class="block_advant">
+                                            <div class="img img3"></div>
+                                            <p class="top">
+                                                <span class="black">Конкурентные цены. <br>
+                                                    Оборудование есть<br>
+                                                  в наличии </span>
+                                            </p>
+                                            <p class="bottom">
+                                                Есть собственный склад
+                                            </p>
+                                        </div>
+                                        <div class="block_advant">
+                                            <div class="img img4"></div>
+                                            <p class="top">
+                                                <span class="black">Инженеры с высокой<br> квалификацией</span>
+                                            </p>
+                                            <p class="bottom">
+                                                Собственный инженерный
+                                                <br> отдел и обучение
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <div class="question_content">
+                                    <div class="title">
+                                        <p>Часто задаваемые вопросы</p>
+                                        <a href="#">Все вопросы ></a>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Что включает в себя установка дизельного генератора?</a></li>
+                                        <li><a href="#">Что такое параллельное подключение ДГУ, и в каких случаях оно необходимо?</a></li>
+                                        <li><a href="#">Какой генератор выгоднее, бензиновый или дизельный?</a></li>
+                                        <li><a href="#">Как проводится ТО дизельных установок?</a></li>
+                                        <li><a href="#">Что такое «перегрузка генератора»?</a></li>
+                                        <li><a href="#">Что такое «пусковой ток» и «запас мощности» электрогенератора?</a></li>
+                                        <li><a href="#">Как правильно измерять мощность генератора: в кВт или кВА? И в чем разница?</a></li>
+                                        <li><a href="#">Какой продолжительности допускается непрерывный режим работы установки?</a></li>
+                                        <li><a href="#">Что такое сварочная электростанция?</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="seo">
+                                <div class="seo_content">
+                                    <img src="img/seo_img.jpg" alt="seo">
+                                    <p>Изельгенераторные установки (ДГУ) — это агрегаты с большим запасом прочности, долговечные и надежные. Несмотря на достаточно высокую стоимость в сравнении с бензиновыми аналогами, дизельгенераторы более востребованы, поскольку намного экономичнее в эксплуатации и имеют высокий КПД. В нашем магазине вы найдете модели от недорогих 
+                                       до сверхмощных промышленных. Они различаются по назначению, конструктивному исполнению, виду вырабатываемого электротока.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="line"></div>
+            <div class="container">
+                <div class="content row">
+                    <div class="block1 col-3">
+                        <div class="numbers">
+                            <div class="numbers_content">
+                                <div class="txt">
+                                    <p>+7 (495) 266-65-36</p>
+                                    <p class="p2">8 (800) 555-32-11</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn"><span></span>Заказать звонок</a>
+                        </div>
+                        <div class="info info1">
+                            <div class="icon4"></div>
+                            <p>info@generator-magazin.ru</p>
+                        </div>
+                        <div class="info info2">
+                            <div class="icon2"></div>
+                            <p>Пн-Вс 09:00―22:00</p>
+                        </div>
+                    </div>
+                    <div class="block2 col-3">
+                        <p>Generator-magazin.ru</p>
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Сертификаты</a></li>
+                            <li><a href="#">Наши клиенты</a></li>
+                            <li><a href="#">Диллерам</a></li>
+                        </ul>
+                    </div>
+                    <div class="block3 col-3">
+                        <p>Мы предлагаем</p>
+                        <ul>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Покупка в кредит</a></li>
+                            <li><a href="#">Карта сайта</a></li>
+                        </ul>
+                    </div>
+                    <div class="block4 col-3">
+                        <p>Покупателям</p>
+                        <ul>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">Информация</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Конфедициальность</a></li>
+                        </ul>
+                    </div>
+                    <div class="copy col-3">
+                        <p>© 2017 generator-magazin.ru</p>
+                    </div>
+                    <div class="info col-9">
+                        <p><span>Юридический адрес:</span> ООО «Вершина», 119530, город Москва, Очаковское шоссе, дом 28 стр 2, эт 3 пом III комната 8 офис 15</p>
+                        <p><span>Департамент по работе с клиентами:</span> 119606, г. Москва, проспект Вернадского, 84к2, офис 1801</p>
+                        <p><span>ИНН / КПП:</span> 9729145787 / 772901001, ОГРН: 117 774 698 1961</p>
+                    </div>
+                    <div class="line_footer"></div>
+                    <div class="socials col-3">
+                        <p>Мы в соцсетях</p>
+                        <div class="social_links">
+                            <a class="link1" href="#"></a>
+                            <a class="link2" href="#"></a>
+                            <a class="link3" href="#"></a>
+                            <a class="link4" href="#"></a>
+                            <a class="link5" href="#"></a>
+                            <a class="link6" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="pay col-9">
+                        <div class="top">
+                            <p>Принимаем к оплате</p>
+                            <div class="links">
+                                <a class="link1" href="#"></a>
+                                <a class="link2" href="#"></a>
+                                <a class="link3" href="#"></a>
+                                <a class="link4" href="#"></a>
+                                <a class="link5" href="#"></a>
+                                <a class="link6" href="#"></a>
+                                <a class="link7" href="#"></a>
+                                <a class="link8" href="#"></a>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p>Способы доставки</p>
+                            <div class="links">
+                                <a class="link1" href="#"></a>
+                                <a class="link2" href="#"></a>
+                                <a class="link3" href="#"></a>
+                                <a class="link4" href="#"></a>
+                                <a class="link5" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sripts-->
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
