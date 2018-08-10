@@ -1,0 +1,75 @@
+@media all and (max-width: 1150px) {
+    .tabs {
+        flex-flow: row wrap;
+        height: auto;
+    }
+    .active {
+        height: 60px;
+        margin-top: 0px;
+    }
+    .tab {
+        margin: 2px;
+        flex: 1 1 300px;
+    }
+    .tab_item {
+        margin: 2px;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .tab {
+        flex: 1 1 200px;
+    }
+}
+
+@media all and (max-width: 888px) {
+    .select-wrapper {
+        width: 360px;
+        margin: 20px 0;
+    }
+    button {
+        width: 360px;
+        margin: 20px 0;
+    }
+    .btn2 {
+        width: 360px;
+    }
+}
+
+@media all and (max-width: 796px) {
+    .select-wrapper {
+        width: 70%;
+        margin: 20px;
+    }
+    button {
+        width: 70%;
+        margin: 20px;
+    }
+    .btn2 {
+        width: 70%;
+    }
+    .button2 {
+        margin: 20px 0;
+        width: 100%;
+    }
+    form {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 490px) {
+    .select-wrapper {
+        width: 100%;
+        margin: 20px 0;
+    }
+    button {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .btn2 {
+        width: 100%;
+    }
+    .button2 {
+        width: 100%;
+    }
+}
