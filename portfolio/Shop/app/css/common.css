@@ -508,7 +508,8 @@ form {
         font: 1.4em "RobotoBold";
         padding-left: 4%;
         margin-bottom: 2px;
-        cursor: default; }
+        cursor: default;
+        white-space: nowrap; }
     #page_content .sidebar_content .tab .tab_content {
       padding-bottom: 39px; }
   #page_content .sidebar_content .tab1 ul,
