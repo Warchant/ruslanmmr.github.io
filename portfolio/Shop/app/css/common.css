@@ -177,7 +177,7 @@ form {
     padding-bottom: 5px;
     margin-top: 0px; }
 
-.numbers a {
+.numbers .btn {
   display: block;
   width: 160px;
   height: 24px;
@@ -190,7 +190,7 @@ form {
   padding-top: 2px;
   position: relative;
   text-decoration: none; }
-  .numbers a span {
+  .numbers .btn span {
     display: block;
     position: absolute;
     left: 9px;
@@ -956,6 +956,8 @@ form {
   #header {
     border-bottom: 1px solid #dae2ee; }
   #nav {
+    display: none; }
+  .numbers .btn {
     display: none; }
   #header .container {
     height: 58px; }
