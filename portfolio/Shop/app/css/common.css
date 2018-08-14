@@ -17,6 +17,12 @@
   src: url("../fonts/Roboto/RobotoBold/RobotoBold.ttf") format("truetype"); }
 
 @font-face {
+  font-family: "Robotolight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Roboto/RobotoLight/RobotoLight.ttf") format("truetype"); }
+
+@font-face {
   font-family: "ArialBold";
   font-weight: normal;
   font-style: normal;
@@ -27,6 +33,12 @@
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/Arial/ArialRegular/ArialRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSansRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans/OpenSansRegular/OpenSansRegular.ttf") format("truetype"); }
 
 p {
   color: #333333;
