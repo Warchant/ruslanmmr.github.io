@@ -170,12 +170,4 @@ $(".tab_name_reviews").click(function() {
     $(".reviews .tab_item").hide().eq($(this).index()).fadeIn(300)
 }).eq(0).addClass("active");
 
-//скролл по табам
 
-$(window).resize(function() {
-    if (document.documentElement.clientWidth < 569) {
-        $('#card .tab_item').on('click', function() {
-            $('html,body').animate({ scrollTop: $('#card .tab_content').offset().top + "px" }, { duration: 100});
-        });
-    }
-});
