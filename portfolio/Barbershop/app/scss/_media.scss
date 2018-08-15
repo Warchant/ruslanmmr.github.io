@@ -1,0 +1,142 @@
+@media screen and (max-width: 3500px) {
+	  .container {
+	  	max-width: 1920px;
+	  }
+	  body {
+	  	font-size: 6px;
+	  }
+}
+
+
+@media screen and (max-width: 2260px) {
+   .container {
+	  	max-width: 1420px;
+	  }
+	   body {
+	  	font-size: 4.5px;
+	  }
+}
+
+@media screen and (max-width: 1680px) {
+   .container {
+	  	max-width: 1200px;
+	  }
+	   body {
+	  	font-size: 3px;
+	  }
+	  #navigation ul {
+	  	margin-top: 37em;
+	  }
+	  #navigation a {
+	  	font-size: 6em;
+	  }
+}
+
+
+
+
+// ≥1200px
+@media screen and (max-width: 1365px) {
+	 .container {
+	  	max-width: 1024px;
+	  }
+	  #lang_block {
+   	top: auto;
+   	bottom: 3em !important;
+   }
+   #lang_block a {
+   	  font-size: 8em;
+   }
+}
+
+// ≥992px
+@media screen and (max-width: 1023px) {
+   .container {
+	  	max-width: 768px;
+	  }
+	  body {
+	  	font-size: 2.4px;
+	  }
+	  #navigation a {
+	  	font-size: 7em;
+	  }
+	  #navigation ul {
+	  	margin-top: 42em;
+	  }
+}
+
+// ≥768px
+@media screen and (max-width: 767px) {
+   .container {
+	  	max-width: 568px;
+	  }
+	  body {
+	  	font-size: 1.8px;
+	  }
+	  #header .container .navigation {
+        margin: 0 -10px;
+	  }
+	  #header .container .navigation nav {
+        width: 100%;
+	  }
+	  #header .container .navigation ul {
+	  	width: 100%;
+	  	justify-content: space-between;
+	  	flex-flow: row wrap;
+	  }
+	  #header .container .navigation li {
+	  	margin: 0 10px;
+	  }
+}
+
+// ≥576px
+@media screen and (max-width: 567px) {
+    #header .container .header_top .right {
+    	display: none;
+    }
+    .nav-btn {
+    	display: block;
+    }  
+    #navigation {
+       min-height: 100vh;
+       z-index: 100;
+       background: #101011;
+       left: -100%;
+    }
+    #navigation ul {
+    	flex-direction: column;
+    	align-items: center;
+    	justify-content: space-between;
+    	margin-top: 0;
+    	height: 100%;
+    	padding: 100px 0;
+    }
+    #navigation a {
+    font-size: 15em;
+    }
+    #header .container .header_top .left p {
+    	font-size: 9em;
+    }
+    #header .container .header_top .left {
+		display: none;
+	}
+	#lang_block {
+		right: auto;
+		bottom: auto !important;
+		left: 15px;
+		top: 25px;
+	}
+	#wrapper {
+		min-height: 300px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-height: 480px) {
+	#navigation ul {
+		padding: 50px 0;
+	}
+}
+

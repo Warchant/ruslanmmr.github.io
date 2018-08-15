@@ -1,0 +1,7 @@
+@import "_mixins/font-face";
+
+@include font-face("AssistantBold", "../fonts/Assistant/AssistantBold");
+@include font-face("BebasNeueBook", "../fonts/Bebas/BebasBook/BebasBook");
+@include font-face("BebasNeueLight", "../fonts/Bebas/BebasLight/BebasLight");
+@include font-face("BebasNeueRegular", "../fonts/Bebas/BebasRegular/BebasRegular");
+@include font-face("BebasNeueBold", "../fonts/Bebas/BebasBold/BebasBold");
