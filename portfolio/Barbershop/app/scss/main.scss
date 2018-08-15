@@ -1,8 +1,9 @@
 #home {
     position: relative;
     z-index: 2;
+    height: 100%;
     .container {
-        height: 100vh;
+        height: 100%;
     }
 }
 
@@ -304,9 +305,6 @@
                     font: 5.3em "BebasNeueRegular";
                     color: #fff;
                     cursor: pointer;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
                     position: relative;
                     span {
                         display: block;
@@ -316,6 +314,8 @@
                         height: 0.7em;
                         width: 0.7em;
                         bottom: -1em;
+                        left: 50%;
+                        margin-left: -0.35em;
                         display: none;
                     }
                 }
@@ -340,25 +340,25 @@
 
 
 @media screen and (max-width: 9999px) {
-	#home .container {
+	#home .container, html {
 		min-height: 2092px;
 	}
 }
 
 @media screen and (max-width: 3500px) {
-	#home .container {
+	#home .container, html{
 		min-height: 1260px;
 	}
 }
 
 @media screen and (max-width: 2260px) {
-	#home .container {
+	#home .container, html {
 		min-height: 996px;
 	}
 }
 
 @media screen and (max-width: 1680px) {
-	#home .container {
+	#home .container, html {
 		min-height: 620px;
 	}
     #home .container .tab_content .home_page .tab_content_block .number {
@@ -376,7 +376,7 @@
 }
 
 @media screen and (max-width: 1365px) {
-  #home .container {
+  #home .container, html {
 		min-height: 640px;
 	}
 	#home .container .tab_content .home_page .bg_tab {
@@ -396,19 +396,19 @@
     #home .container .tab_name .tab_names p {
         font-size: 7em;
     }
-    #home .container {
+    #home .container, html {
         min-height: 576px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    #home .container {
+    #home .container, html {
         min-height: 400px;
     }
 }
 
 @media screen and (max-width: 567px) {
-    #home .container {
+    #home .container, html {
         min-height: 568px;
     }
     #home .container .tab_content .moscow_page .tab_content_block .number,

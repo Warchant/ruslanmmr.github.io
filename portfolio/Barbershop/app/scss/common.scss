@@ -3,11 +3,17 @@
 #wrapper {
     position: relative;
     background: #101011;
+    height: 100%;
+}
+
+html {
+	height: 100%;
 }
 
 
 body {
     font-size: 10px;
+    height: 100%;
 }
 .body_active {
 	overflow: hidden;
