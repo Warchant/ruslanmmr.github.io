@@ -99,10 +99,10 @@
     }  
     #navigation {
        min-height: 100vh;
-       z-index: 100;
        background: #101011;
        left: -100%;
        margin-top: 0;
+       position: fixed;
     }
     #navigation ul {
     	flex-direction: column;
