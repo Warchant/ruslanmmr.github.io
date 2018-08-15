@@ -175,15 +175,15 @@ p {
   width: 100%;
   -webkit-transition: .5s ease;
   -o-transition: .5s ease;
-  transition: .5s ease; }
+  transition: .5s ease;
+  margin-top: 43.6em; }
   #navigation ul {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     padding: 0;
-    margin: 0;
-    margin-top: 43.6em; }
+    margin: 0; }
   #navigation li {
     margin: 0 6em; }
   #navigation a {
@@ -220,7 +220,7 @@ p {
     max-width: 1200px; }
   body {
     font-size: 3px; }
-  #navigation ul {
+  #navigation {
     margin-top: 37em; }
   #navigation a {
     font-size: 6em; } }
@@ -241,7 +241,7 @@ p {
     font-size: 2.4px; }
   #navigation a {
     font-size: 7em; }
-  #navigation ul {
+  #navigation {
     margin-top: 42em; } }
 
 @media screen and (max-width: 767px) {
@@ -276,7 +276,8 @@ p {
     min-height: 100vh;
     z-index: 100;
     background: #101011;
-    left: -100%; }
+    left: -100%;
+    margin-top: 0; }
   #navigation ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
