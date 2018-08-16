@@ -18,7 +18,7 @@ $(document).ready(function() {
 	  $(".bg_page_other").hide();
     $('#home .tab_names .msc, #navigation .cena').click(function() {
         $("#home .tab_names p").removeClass("active");
-    	  $(this).addClass("active");
+    	  $("#home .tab_names .msc").addClass("active");
     	  $(".home_page, .spb_page, .reg_page").hide();
     	  $(".moscow_page").fadeIn(1000);
     	  $(".bg_page_home").hide();
