@@ -454,6 +454,8 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+  #home .container .tab_content .moscow_page .tab_content_block .number .top, #home .container .tab_content .spb_page .tab_content_block .number .top, #home .container .tab_content .reg_page .tab_content_block .number .top {
+    padding-bottom: 0.25em; }
   #home .container .tab_content .moscow_page .tab_content_block .number .left p .left_item, #home .container .tab_content .moscow_page .tab_content_block .number .right p .left_item, #home .container .tab_content .spb_page .tab_content_block .number .left p .left_item, #home .container .tab_content .spb_page .tab_content_block .number .right p .left_item, #home .container .tab_content .reg_page .tab_content_block .number .left p .left_item, #home .container .tab_content .reg_page .tab_content_block .number .right p .left_item {
     font-size: 8em; }
   #home .container .tab_content .home_page .tab_content_block .number {
@@ -483,7 +485,9 @@
         -ms-flex-order: 2;
             order: 2; }
   #home .container .tab_content .home_page .tab_content_block h2 {
-    line-height: 170%; }
+    line-height: 170%;
+    font-size: 13em;
+    padding-top: 0; }
   #home .container .tab_content .moscow_page .tab_content_block h2,
   #home .container .tab_content .spb_page .tab_content_block h2,
   #home .container .tab_content .reg_page .tab_content_block h2 {
@@ -544,4 +548,7 @@
   #home .container .tab_name .tab_names .line {
     width: 10em; }
   body {
-    overflow: hidden; } }
+    overflow: hidden; }
+  #wrapper {
+    position: fixed;
+    width: 100%; } }
