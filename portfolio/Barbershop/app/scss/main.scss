@@ -518,7 +518,7 @@
             overflow: hidden;
           }
           #wrapper {
-             position: fixed;
+             //position: fixed;
              width: 100%;
           }
           #home .container .tab_name {
@@ -535,3 +535,13 @@
              padding-top: 1em;
         }
 }
+
+@media screen and (max-height: 568px) {
+    #wrapper {
+             position: relative;
+          }
+          body {
+            overflow: visible;
+          }
+    }
+

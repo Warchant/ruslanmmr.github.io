@@ -550,7 +550,6 @@
   body {
     overflow: hidden; }
   #wrapper {
-    position: fixed;
     width: 100%; }
   #home .container .tab_name {
     bottom: 25em; }
@@ -560,3 +559,9 @@
     margin-bottom: 0.8em; }
   #home .container .tab_content .moscow_page .tab_content_block .number .right .more, #home .container .tab_content .spb_page .tab_content_block .number .right .more {
     padding-top: 1em; } }
+
+@media screen and (max-height: 568px) {
+  #wrapper {
+    position: relative; }
+  body {
+    overflow: visible; } }
