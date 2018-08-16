@@ -1,0 +1,317 @@
+#home {
+  position: relative;
+  z-index: 2;
+  height: 100%; }
+  #home .container {
+    height: 100%; }
+
+.bg_page_home {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+#home .container {
+  position: relative;
+  height: 100%; }
+  #home .container .home_page {
+    height: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #home .container .home_page .bg {
+      position: absolute;
+      z-index: 1;
+      width: 105%;
+      left: -2.5%;
+      height: 100%;
+      overflow: hidden; }
+      #home .container .home_page .bg .bg_image {
+        background: url(../img/bg_invest_2.png) no-repeat center top;
+        -webkit-background-size: contain;
+                background-size: contain;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 30%;
+        z-index: 2; }
+      #home .container .home_page .bg .bg_invest {
+        position: absolute;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 100%;
+        top: 30%;
+        margin-top: -50em;
+        z-index: 1; }
+        #home .container .home_page .bg .bg_invest p {
+          font: 103em "BebasNeueBold";
+          color: #fff;
+          opacity: 0.1;
+          letter-spacing: -0.05em; }
+  #home .container .content {
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 73em; }
+    #home .container .content .left_section {
+      padding-top: 3.6em;
+      padding-left: 25em; }
+      #home .container .content .left_section .top_item p {
+        font: 10.3em "BebasNeueBook";
+        color: #fff;
+        text-align: right;
+        line-height: 100%; }
+        #home .container .content .left_section .top_item p .first {
+          font-family: "BebasNeueBold"; }
+        #home .container .content .left_section .top_item p .last {
+          font-family: "BebasNeueRegular"; }
+        #home .container .content .left_section .top_item p .second {
+          display: inline-block;
+          background: url(../img/rub.png) no-repeat center center;
+          -webkit-background-size: contain;
+                  background-size: contain;
+          width: 0.5em;
+          height: 0.5em; }
+      #home .container .content .left_section .bottom_item p {
+        font: 5.5em "BebasNeueBold";
+        color: #fff;
+        letter-spacing: 0.2em;
+        padding-top: 1.5em;
+        padding-left: 0.3em; }
+        #home .container .content .left_section .bottom_item p span {
+          font-family: "BebasNeueBook"; }
+    #home .container .content .center_section {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      margin-left: 8em; }
+      #home .container .content .center_section .bg_monet {
+        position: absolute;
+        background: url(../img/monet.png) no-repeat;
+        width: 58.5em;
+        height: 59.5em;
+        -webkit-background-size: contain;
+                background-size: contain;
+        left: -30%;
+        bottom: 10%; }
+      #home .container .content .center_section .top_item p {
+        font: 16.3em "BebasNeueRegular";
+        color: #fff;
+        letter-spacing: 0.03em;
+        padding-left: 0.2em; }
+      #home .container .content .center_section .center_item p {
+        color: #fff;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        #home .container .content .center_section .center_item p .last {
+          font: 94.5em "BebasNeueBold";
+          line-height: 80%; }
+        #home .container .content .center_section .center_item p .first {
+          font: 11.5em "BebasNeueRegular";
+          line-height: 100%; }
+        #home .container .content .center_section .center_item p .second {
+          font: 18.1em "BebasNeueBold";
+          line-height: 100%; }
+      #home .container .content .center_section .bottom_item {
+        margin-top: -6.5em; }
+        #home .container .content .center_section .bottom_item .first {
+          font: 8.4em "BebasNeueRegular";
+          color: #fff;
+          letter-spacing: 0.21em;
+          padding-left: 0.8em; }
+        #home .container .content .center_section .bottom_item .second {
+          font: 7em "BebasNeueBook";
+          color: #fff;
+          letter-spacing: 1.07em;
+          padding-left: 1.8em; }
+    #home .container .content .right_section {
+      padding-top: 25em; }
+      #home .container .content .right_section .top_item {
+        padding-right: 23em; }
+        #home .container .content .right_section .top_item p {
+          font: 5.6em "BebasNeueBold";
+          color: #fff;
+          letter-spacing: 0.18em; }
+          #home .container .content .right_section .top_item p .first {
+            font-family: "BebasNeueBook"; }
+          #home .container .content .right_section .top_item p .second {
+            font-family: "BebasNeueRegular"; }
+      #home .container .content .right_section .bottom_item {
+        padding-right: 12em; }
+        #home .container .content .right_section .bottom_item .more {
+          font: 4.5em "BebasNeueBook";
+          letter-spacing: 0.1em;
+          text-align: right;
+          padding-top: 7em;
+          padding-bottom: 0.2em;
+          color: #fff; }
+        #home .container .content .right_section .bottom_item .number {
+          font: 8em "BebasNeueRegular";
+          letter-spacing: 0.05em;
+          color: #464646;
+          text-align: right;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: end;
+          -webkit-justify-content: flex-end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end; }
+
+@media screen and (max-width: 9999px) {
+  #home .container,
+  html {
+    min-height: 2092px; } }
+
+@media screen and (max-width: 3500px) {
+  #home .container,
+  html {
+    min-height: 1260px; } }
+
+@media screen and (max-width: 2260px) {
+  #home .container,
+  html {
+    min-height: 996px; }
+  #home .container .content .left_section {
+    padding-left: 15em; }
+  #home .container .content .center_section {
+    margin-left: 16em; } }
+
+@media screen and (max-width: 1680px) {
+  #home .container,
+  html {
+    min-height: 630px; }
+  #home .container .content .center_section .bg_monet {
+    display: none; } }
+
+@media screen and (max-width: 1365px) {
+  #home .container,
+  html {
+    min-height: 657px; }
+  #home .container .home_page .bg {
+    width: 95%;
+    left: 2.5%; } }
+
+@media screen and (max-width: 1023px) {
+  #home .container,
+  html {
+    min-height: 400px; } }
+
+@media screen and (max-width: 767px) {
+  body {
+    height: auto; }
+  #home .container .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 40em;
+    font-size: 1.5em; }
+  #home .container .content .center_section {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 0;
+    margin-right: 5em; }
+  #home .container .content .right_section .top_item {
+    padding-right: 0;
+    text-align: center; }
+  #home .container .content .left_section .top_item {
+    margin-left: -5em; }
+  #home .container .content .left_section {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    width: 100%;
+    padding-top: 10em; }
+  #home .container .content .left_section .bottom_item p {
+    padding-top: 0.5em; }
+  #home .container .content .right_section {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+    padding-left: 0;
+    padding-top: 10em;
+    padding-bottom: 4em; }
+  #home .container .content .right_section .bottom_item .more {
+    padding-top: 2em; }
+  #home .container .content .right_section .bottom_item {
+    padding-right: 0; }
+    #home .container .content .right_section .bottom_item .more {
+      text-align: center; }
+    #home .container .content .right_section .bottom_item .number {
+      text-align: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+@media screen and (max-width: 567px) {
+  #home .container,
+  html {
+    min-height: 568px; }
+  body {
+    height: 100%; } }
+
+@media screen and (max-width: 567px) and (max-height: 700px) {
+  body {
+    height: auto; } }
+
+@media screen and (max-width: 400px) {
+  #home .container .content .left_section .top_item {
+    margin-left: 0; }
+  #home .container .content {
+    font-size: 1.4em; } }

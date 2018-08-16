@@ -1,0 +1,337 @@
+#home {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    .container {
+        height: 100%;
+    }
+}
+
+.bg_page_home {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+}
+
+#home {
+    .container {
+        position: relative;
+        height: 100%;
+        .home_page {
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            .bg {
+                position: absolute;
+                z-index: 1;
+                width: 105%;
+                left: -2.5%;
+                height: 100%;
+                overflow: hidden;
+                .bg_image {
+                    background: url(../img/bg_invest_2.png) no-repeat center top;
+                    background-size: contain;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 30%;
+                    z-index: 2;
+                }
+                .bg_invest {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    top: 30%;
+                    margin-top: -50em;
+                    z-index: 1;
+                    p {
+                        font: 103em "BebasNeueBold";
+                        color: #fff;
+                        opacity: 0.1;
+                        letter-spacing: -0.05em;
+                    }
+                }
+            }
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding-top: 73em;
+            .left_section {
+                padding-top: 3.6em;
+                padding-left: 25em;
+                .top_item {
+                    p {
+                        font: 10.3em "BebasNeueBook";
+                        color: #fff;
+                        text-align: right;
+                        line-height: 100%;
+                        .first {
+                            font-family: "BebasNeueBold";
+                        }
+                        .last {
+                            font-family: "BebasNeueRegular";
+                        }
+                        .second {
+                            display: inline-block;
+                            background: url(../img/rub.png) no-repeat center center;
+                            background-size: contain;
+                            width: 0.5em;
+                            height: 0.5em;
+                        }
+                    }
+                }
+                .bottom_item {
+                    p {
+                        font: 5.5em "BebasNeueBold";
+                        color: #fff;
+                        letter-spacing: 0.2em;
+                        padding-top: 1.5em;
+                        padding-left: 0.3em;
+                        span {
+                            font-family: "BebasNeueBook";
+                        }
+                    }
+                }
+            }
+            .center_section {
+                text-align: center;
+                position: relative;
+                z-index: 1;
+                margin-left: 8em;
+                .bg_monet {
+                    position: absolute;
+                    background: url(../img/monet.png) no-repeat;
+                    width: 58.5em;
+                    height: 59.5em;
+                    background-size: contain;
+                    left: -30%;
+                    bottom: 10%;
+                }
+                .top_item {
+                    p {
+                        font: 16.3em "BebasNeueRegular";
+                        color: #fff;
+                        letter-spacing: 0.03em;
+                        padding-left: 0.2em;
+                    }
+                }
+                .center_item {
+                    p {
+                        color: #fff;
+                        display: flex;
+                        .last {
+                            font: 94.5em "BebasNeueBold";
+                            line-height: 80%;
+                        }
+                        .first {
+                            font: 11.5em "BebasNeueRegular";
+                            line-height: 100%;
+                        }
+                        .second {
+                            font: 18.1em "BebasNeueBold";
+                            line-height: 100%;
+                        }
+                    }
+                }
+                .bottom_item {
+                    margin-top: -6.5em;
+                    .first {
+                        font: 8.4em "BebasNeueRegular";
+                        color: #fff;
+                        letter-spacing: 0.21em;
+                        padding-left: 0.8em;
+                    }
+                    .second {
+                        font: 7em "BebasNeueBook";
+                        color: #fff;
+                        letter-spacing: 1.07em;
+                        padding-left: 1.8em;
+                    }
+                }
+            }
+            .right_section {
+                padding-top: 25em;
+                .top_item {
+
+                    padding-right: 23em;
+                    p {
+                        font: 5.6em "BebasNeueBold";
+                        color: #fff;
+                        letter-spacing: 0.18em;
+                        .first {
+                            font-family: "BebasNeueBook";
+                        }
+                        .second {
+                            font-family: "BebasNeueRegular";
+                        }
+                    }
+                }
+                .bottom_item {
+                    padding-right: 12em;
+                    .more {
+                        font: 4.5em "BebasNeueBook";
+                        letter-spacing: 0.1em;
+                        text-align: right;
+                        padding-top: 7em;
+                        padding-bottom: 0.2em;
+                        color: #fff;
+                    }
+                    .number {
+                        font: 8em "BebasNeueRegular";
+                        letter-spacing: 0.05em;
+                        color: #464646;
+                        text-align: right;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 9999px) {
+    #home .container,
+    html {
+        min-height: 2092px;
+    }
+}
+
+@media screen and (max-width: 3500px) {
+    #home .container,
+    html {
+        min-height: 1260px;
+    }
+}
+
+@media screen and (max-width: 2260px) {
+    #home .container,
+    html {
+        min-height: 996px;
+    }
+    #home .container .content .left_section {
+        padding-left: 15em;
+    }
+    #home .container .content .center_section {
+        margin-left: 16em;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    #home .container,
+    html {
+        min-height: 630px;
+    }
+    #home .container .content .center_section .bg_monet {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    #home .container,
+    html {
+        min-height: 657px;
+    }
+    #home .container .home_page .bg {
+        width: 95%;
+        left: 2.5%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #home .container,
+    html {
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        height: auto;
+    }
+    #home .container .content {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40em;
+        font-size: 1.5em;
+    }
+    #home .container .content .center_section {
+        order: 1;
+        margin-left: 0;
+        margin-right: 5em;
+    }
+    #home .container .content .right_section .top_item {
+        padding-right: 0;
+        text-align: center;
+    }
+    #home .container .content .left_section .top_item {
+       margin-left: -5em;
+    }
+    #home .container .content .left_section {
+        order: 2;
+        padding-left: 0;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding-top: 10em;
+    }
+    #home .container .content .left_section .bottom_item p {
+        padding-top: 0.5em;
+    }
+    #home .container .content .right_section {
+        order: 3;
+        padding-left: 0;
+        padding-top: 10em;
+        padding-bottom: 4em;
+    }
+    #home .container .content .right_section .bottom_item .more {
+        padding-top: 2em;
+    }
+    #home .container .content .right_section .bottom_item {
+        padding-right: 0;
+        .more {
+            text-align: center;
+        }
+        .number {
+            text-align: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 567px) {
+    #home .container,
+    html {
+        min-height: 568px;
+    }
+    body {
+        height: 100%;
+    }
+    @media screen and (max-height: 700px) {
+           body {
+        height: auto;
+    }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #home .container .content .left_section .top_item {
+        margin-left: 0;
+    }
+    #home .container .content {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-height: 568px) {}
