@@ -5,13 +5,18 @@ $(document).ready(function() {
         $("#navigation").toggleClass("nav_active");
         $("body").toggleClass("wrapper_active");
     });
+    $('#navigation .cena').click(function(event) {
+        event.preventDefault();
+        $(".nav-btn a").toggleClass("a_active");
+        $("#navigation").toggleClass("nav_active");
+        $("body").removeClass("wrapper_active");
+    });
 });
-
 
 $(document).ready(function() {
 	  $(".moscow_page, .spb_page, .reg_page").hide();
 	  $(".bg_page_other").hide();
-    $('#home .tab_names .msc').click(function() {
+    $('#home .tab_names .msc, #navigation .cena').click(function() {
         $("#home .tab_names p").removeClass("active");
     	  $(this).addClass("active");
     	  $(".home_page, .spb_page, .reg_page").hide();
