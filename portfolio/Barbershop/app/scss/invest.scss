@@ -318,6 +318,9 @@
     body {
         height: 100%;
     }
+    #home .container .content .center_section .center_item p .last {
+        padding-top: 0.05em;
+    }
     @media screen and (max-height: 700px) {
            body {
         height: auto;
