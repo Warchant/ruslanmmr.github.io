@@ -3,7 +3,7 @@ $(document).ready(function() {
         event.preventDefault();
         $(".nav-btn a").toggleClass("a_active");
         $("#navigation").toggleClass("nav_active");
-        $("body").toggleClass("body_active");
+        $("body").toggleClass("wrapper_active");
     });
 });
 

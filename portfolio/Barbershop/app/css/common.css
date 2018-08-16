@@ -40,8 +40,9 @@ body {
   font-size: 10px;
   height: 100%; }
 
-.body_active {
-  overflow: hidden !important; }
+.wrapper_active {
+  position: fixed !important;
+  width: 100%; }
 
 p {
   margin: 0; }
