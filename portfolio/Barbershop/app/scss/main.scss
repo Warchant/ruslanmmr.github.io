@@ -521,4 +521,17 @@
              position: fixed;
              width: 100%;
           }
+          #home .container .tab_name {
+            bottom: 25em;
+          }
+          #home .container .tab_name .tab_names p span {
+            bottom: -0.8em;
+          }
+
+        #home .container .tab_content .moscow_page .tab_content_block h2, #home .container .tab_content .spb_page .tab_content_block h2 {
+            margin-bottom: 0.8em;
+        }
+        #home .container .tab_content .moscow_page .tab_content_block .number .right .more, #home .container .tab_content .spb_page .tab_content_block .number .right .more {
+             padding-top: 1em;
+        }
 }
