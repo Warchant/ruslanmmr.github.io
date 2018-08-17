@@ -214,9 +214,120 @@ p {
 .nav_active {
   left: 0 !important; }
 
-#contacts_block {
-  background: #000;
-  height: 100%; }
+#contacts_tab {
+  height: 100%;
+  position: relative;
+  z-index: 2; }
+  #contacts_tab .bg_all {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg_moscov.jpg) center center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  #contacts_tab .bg_tab {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%; }
+    #contacts_tab .bg_tab .container {
+      position: relative; }
+      #contacts_tab .bg_tab .container .bg {
+        position: absolute;
+        width: 105%;
+        left: -2.5%;
+        height: 100%;
+        background: url(../img/bg_logo.png) no-repeat center center;
+        -webkit-background-size: contain;
+                background-size: contain; }
+  #contacts_tab .bg_portret {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    bottom: 0;
+    background: url(../img/portret.png);
+    -webkit-background-size: cover;
+            background-size: cover;
+    width: 176em;
+    height: 176em; }
+  #contacts_tab .container {
+    position: relative;
+    height: 100%;
+    z-index: 3;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100vh; }
+    #contacts_tab .container .top {
+      display: block;
+      width: 100%;
+      font: 8em "BebasNeueBook";
+      color: #fff;
+      text-align: center;
+      letter-spacing: 0.35em;
+      padding-left: 0.35em;
+      padding-top: 3em; }
+    #contacts_tab .container .bottom {
+      display: block;
+      font: 8em "BebasNeueBook";
+      color: #fff;
+      text-align: center;
+      letter-spacing: 0.21em;
+      padding-left: 0.21em; }
+    #contacts_tab .container h2 {
+      font: 10.7em "BebasNeueRegular";
+      color: #fff;
+      text-align: center;
+      letter-spacing: 0.1em; }
+    #contacts_tab .container .number {
+      font: 10.7em "BebasNeueRegular";
+      text-align: center;
+      color: #fff;
+      letter-spacing: 0.175em;
+      padding-right: 0.45em;
+      padding-top: 0.1em; }
+    #contacts_tab .container .bottom_block {
+      padding-top: 15em; }
+      #contacts_tab .container .bottom_block .first {
+        font: 5.4em "RobotoRegular";
+        color: #fff;
+        text-align: center; }
+      #contacts_tab .container .bottom_block .second {
+        font: 8.4em "BebasNeueBook";
+        color: #fff;
+        text-align: center;
+        letter-spacing: 0.095em;
+        padding-left: 0.095em; }
+        #contacts_tab .container .bottom_block .second span {
+          font-family: "BebasNeueRegular"; }
+    #contacts_tab .container .footer {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      position: absolute;
+      bottom: 5em;
+      width: 100%; }
+      #contacts_tab .container .footer p {
+        font: 3.7em "RobotoRegular";
+        color: #c6c6c6;
+        padding: 0 1em;
+        text-align: center; }
 
 @media screen and (max-width: 3500px) {
   .container {
@@ -247,7 +358,18 @@ p {
     top: auto;
     bottom: 3em !important; }
   #lang_block a {
-    font-size: 8em; } }
+    font-size: 8em; }
+  #contacts_tab .container .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 95%;
+    left: 2.5%; }
+  #contacts_tab .bg_tab .container .bg {
+    width: 95%;
+    left: 2.5%; } }
 
 @media screen and (max-width: 1023px) {
   .container {
@@ -285,6 +407,8 @@ p {
 @media screen and (max-width: 567px) {
   #header .container .header_top .right {
     display: none; }
+  #contacts_tab .container {
+    font-size: 2.4px; }
   .nav-btn {
     display: block; }
   #navigation {
@@ -323,3 +447,10 @@ p {
     top: 25px; }
   #wrapper {
     min-height: 300px; } }
+
+@media screen and (max-width: 480px) {
+  #contacts_tab .bg_portret {
+    width: 130em;
+    height: 130em; }
+  #contacts_tab .container .bottom_block .second {
+    padding-bottom: 5em; } }

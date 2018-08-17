@@ -47,6 +47,16 @@
    #lang_block a {
    	  font-size: 8em;
    }
+    #contacts_tab .container .footer {
+         flex-direction: column;
+         width: 95%;
+        left: 2.5%;
+	  }
+	  #contacts_tab .bg_tab .container .bg {
+         width: 95%;
+        left: 2.5%;
+	  }
+
 }
 
 // ≥992px
@@ -94,6 +104,9 @@
     #header .container .header_top .right {
     	display: none;
     }
+    #contacts_tab .container {
+    	font-size: 2.4px;
+    }
     .nav-btn {
     	display: block;
     }  
@@ -133,6 +146,13 @@
 }
 
 @media screen and (max-width: 480px) {
+	#contacts_tab .bg_portret {
+		width: 130em;
+		height: 130em;
+	}
+	#contacts_tab .container .bottom_block .second {
+		padding-bottom: 5em;
+	}
 }
 
 @media screen and (max-height: 480px) {
