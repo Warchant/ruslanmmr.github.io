@@ -38,7 +38,7 @@
             .top_section {
                 width: 100%;
                 position: relative;
-                padding-top: 45em;
+                padding-top: 60em;
                 z-index: 2;
                 display: flex;
                 justify-content: center;
@@ -53,7 +53,7 @@
                         color: #fff;
                         letter-spacing: 0.5em;
                         text-align: center;
-                        padding-bottom: 0.8em;
+                        padding-bottom: 0.4em;
                         padding-left: 0.5em;
                        }
                        .item_content {
@@ -117,7 +117,7 @@
                     color: #fff;
                     letter-spacing: 0.5em;
                     padding-top: 0.4em;
-                    padding-bottom: 0.3em;
+                    padding-bottom: 0.1em;
                     text-align: center;
                 }
                 .content_center {
@@ -177,6 +177,7 @@
                 position: relative;
                 z-index: 2;
                 align-self: flex-end;
+                padding-bottom: 5em;
                 .top {
                     font: 4.95em "BebasNeueLight";
                     color: #fff;
@@ -222,7 +223,7 @@
         min-height: 630px;
     }
     #home .container {
-        padding-bottom: 3em;
+        font-size: 2.5px;
     }
     #home .container .home_page .top_section .left_item .item_content .block p, #home .container .home_page .top_section .right_item .item_content .block p {
     font-size: 6em;
@@ -279,7 +280,7 @@
 
 @media screen and (max-width: 1023px) {
     #home .container, html {
-        min-height: 1000px;
+        min-height: 1100px;
     }
     #home .container .home_page .top_section .left_item .item_content .block, #home .container .home_page .top_section .right_item .item_content .block {
         text-align: center;
@@ -304,6 +305,9 @@
 @media screen and (max-width: 767px) {
     #home .container, html {
         min-height: 760px;
+    }
+    #home .container .home_page .top_section .left_item .item_content .block, #home .container .home_page .top_section .right_item .item_content .block {
+        margin: 0 3em;
     }
 }
 
@@ -340,6 +344,9 @@
     #home .container .home_page .bottom_section {
         font-size: 2em;
     }
+    #home .container .home_page .bg {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -349,6 +356,12 @@
     #home .container .home_page .center_section .content_center .block .top {
         width: 84.6em;
         height: 47.6em;
+    }
+    #home .container {
+        font-size: 2.2px;
+    }
+    #home .container .home_page .top_section {
+        padding-top: 30em;
     }
     }
 

@@ -301,9 +301,10 @@
       padding-top: 0.3em;
       padding-bottom: 2em; }
     #home .container .tab_content .reg_page .tab_content_block .number {
-      -webkit-justify-content: space-around !important;
-          -ms-flex-pack: distribute !important;
-              justify-content: space-around !important; }
+      -webkit-box-pack: justify !important;
+      -webkit-justify-content: space-between !important;
+          -ms-flex-pack: justify !important;
+              justify-content: space-between !important; }
     #home .container .tab_content .reg_page .left {
       -webkit-align-self: flex-start !important;
           -ms-flex-item-align: start !important;
@@ -314,11 +315,11 @@
           -ms-flex-item-align: end !important;
               align-self: flex-end !important; }
       #home .container .tab_content .reg_page .right .right_top {
-        padding-right: 40em; }
+        padding-right: 50em; }
       #home .container .tab_content .reg_page .right .left_item {
         margin-left: 0; }
       #home .container .tab_content .reg_page .right .more {
-        padding-top: 4em !important; }
+        padding-top: 3.9em !important; }
       #home .container .tab_content .reg_page .right .number {
         -webkit-box-pack: end !important;
         -webkit-justify-content: flex-end !important;
@@ -415,7 +416,9 @@
   #home .container .tab_content .moscow_page .tab_content_block h2, #home .container .tab_content .spb_page .tab_content_block h2 {
     padding-top: 4.5em; }
   #home .container .tab_content .reg_page .tab_content_block h2 {
-    padding-top: 2em; } }
+    padding-top: 2em; }
+  #home .container .tab_content .reg_page .tab_content_block .number .right .more {
+    padding-top: 0.6em !important; } }
 
 @media screen and (max-width: 1365px) {
   #home .container, html {
@@ -534,6 +537,8 @@
     letter-spacing: 0.13em; }
   #home .container .tab_content .reg_page .tab_content_block .number .right p {
     padding: 0; }
+  #home .container .tab_content .reg_page .tab_content_block .number .right .more {
+    padding-top: 10.2em !important; }
   #home .container .tab_content .reg_page .tab_content_block .number .right {
     margin: 0;
     -webkit-align-self: center !important;

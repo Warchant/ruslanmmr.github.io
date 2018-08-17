@@ -233,7 +233,7 @@
             .reg_page {
             	
             	.tab_content_block .number {
-            		justify-content: space-around !important;
+            		justify-content: space-between !important;
             	}
             	.left {
                     	align-self: flex-start !important;
@@ -243,13 +243,13 @@
               .right {
               	align-self: flex-end !important;
                 .right_top {
-                	padding-right: 40em;
+                	padding-right: 50em;
                 }
               	.left_item {
               		margin-left: 0;
               	} 
                   .more {
-                  	padding-top: 4em !important;
+                  	padding-top: 3.9em !important;
                   }
               	  .number {
                     justify-content: flex-end !important;
@@ -372,6 +372,9 @@
     }
     #home .container .tab_content .reg_page .tab_content_block h2 {
     padding-top: 2em;
+}
+#home .container .tab_content .reg_page .tab_content_block .number .right .more {
+    padding-top: 0.6em !important;
 }
 }
 
@@ -499,6 +502,9 @@
           }
           #home .container .tab_content .reg_page .tab_content_block .number .right p {
             padding: 0;
+          }
+          #home .container .tab_content .reg_page .tab_content_block .number .right .more {
+            padding-top: 10.2em !important;
           }
           #home .container .tab_content .reg_page .tab_content_block .number .right {
             margin: 0;
