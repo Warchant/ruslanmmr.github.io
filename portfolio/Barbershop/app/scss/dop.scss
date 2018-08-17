@@ -182,7 +182,6 @@
                     font: 4.95em "BebasNeueLight";
                     color: #fff;
                     letter-spacing: 0.125em;
-                    padding-left: 1em;
                     .span2 {
                       font-family: "BebasNeueBook";
                     }
@@ -309,14 +308,17 @@
     #home .container .home_page .top_section .left_item .item_content .block, #home .container .home_page .top_section .right_item .item_content .block {
         margin: 0 3em;
     }
+    body {
+        height: auto;
+    }
+    #home .container .home_page .center_section h5 {
+        padding-top: 2em;
+    }
 }
 
 @media screen and (max-width: 567px) {
     #home .container, html {
         min-height: 568px;
-    }
-    body {
-        height: auto;
     }
     #home .container .home_page .top_section {
         flex-direction: column;
@@ -342,7 +344,7 @@
         padding-bottom: 1em;
     }
     #home .container .home_page .bottom_section {
-        font-size: 2em;
+        font-size: 1em;
     }
     #home .container .home_page .bg {
         display: none;

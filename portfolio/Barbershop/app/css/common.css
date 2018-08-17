@@ -28,18 +28,32 @@
   font-style: normal;
   src: url("../fonts/Roboto/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "RobotoCondensed";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Roboto/RobotoCondensed/RobotoCondensedRegular.ttf") format("truetype"); }
+
 #wrapper {
   position: relative;
   background: #101011;
-  height: 100%; }
+  height: 100%;
+  min-width: 320px; }
 
 html {
   height: 100%;
-  background: #101011; }
+  background: #101011;
+  min-width: 320px; }
+
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 15px; }
 
 body {
   font-size: 10px;
   height: 100%;
+  min-width: 320px;
   min-height: 100vh; }
 
 .wrapper_active {
@@ -53,7 +67,7 @@ p {
   display: none;
   position: absolute;
   right: 15px;
-  top: 23px;
+  top: 20px;
   z-index: 1000; }
   .nav-btn a {
     display: block;
@@ -217,6 +231,7 @@ p {
 
 #contacts_tab {
   height: 100%;
+  min-height: 100vh;
   position: relative;
   z-index: 2; }
   #contacts_tab .bg_all {
@@ -284,19 +299,20 @@ p {
       font: 8em "BebasNeueBook";
       color: #fff;
       text-align: center;
-      letter-spacing: 0.21em;
+      letter-spacing: 0.2em;
       padding-left: 0.21em; }
     #contacts_tab .container h2 {
       font: 10.7em "BebasNeueRegular";
       color: #fff;
       text-align: center;
-      letter-spacing: 0.1em; }
+      letter-spacing: 0.09em;
+      padding-left: 0.1em; }
     #contacts_tab .container .number {
       font: 10.7em "BebasNeueRegular";
       text-align: center;
       color: #fff;
-      letter-spacing: 0.175em;
-      padding-right: 0.45em;
+      letter-spacing: 0.165em;
+      padding-left: 0.165em;
       padding-top: 0.1em; }
     #contacts_tab .container .bottom_block {
       padding-top: 15em; }
@@ -329,6 +345,10 @@ p {
         color: #c6c6c6;
         padding: 0 1em;
         text-align: center; }
+
+@media screen and (min-width: 3501px) {
+  .container {
+    max-width: 3200px; } }
 
 @media screen and (max-width: 3500px) {
   .container {

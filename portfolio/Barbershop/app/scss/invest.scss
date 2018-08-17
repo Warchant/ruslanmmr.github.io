@@ -7,6 +7,18 @@
     }
 }
 
+.logo {
+    position: relative;
+    .left_b {
+        position: absolute;
+        background: url(../img/logo_Invest.png) no-repeat;
+        width: 33.4em;
+        height: 24.4em;
+        right: -37em;
+        background-size: contain;
+    }
+}
+
 .bg_page_home {
     width: 100%;
     height: 100%;
