@@ -34,18 +34,40 @@
                     .img {
                         position: relative;
                         margin: 0 auto;
-                        .img_box {
+                         .img_box {
+                         	position: relative;
+                         	width: 65em;
+                         	height: 65em;
+                         	display: flex;
+                         	align-items: center;
+                         	.shadow {
+                         		position: absolute;
+                         		height: 0em;
+                         		width: 0em;
+                         		z-index: 1;
+                         		top: 50%;
+                         		left: 50%;
+                         		box-shadow: 0px 0px 80em 20em rgba(235, 230, 235, 0.7);
+                         	}
+                        	   img {
+                                position: relative;
+                                z-index: 2;
+                                 width: 100%;
+                                 height: auto;
+                        	   }
+                        }
+                        .first_logo {
                             overflow: hidden;
                             position: relative;
                             width: 65em;
                             height: 65em;
                             border-radius: 50%;
                             box-shadow: 0px 0px 80em -20px rgba(235, 230, 235, 0.7);
-                        }
-                        img {
-                            position: absolute;
-                            width: 100%;
-                            top: -8.5em;
+                            img {
+                                position: absolute;
+                                width: 100%;
+                                top: -8.5em;
+                            }
                         }
                         .txt {
                             position: absolute;
@@ -57,7 +79,7 @@
                                 line-height: 180%;
                             }
                             .second {
-                            	letter-spacing: 0.078em;
+                                letter-spacing: 0.078em;
                             }
                         }
                     }
@@ -78,6 +100,7 @@
                                 height: 12em;
                                 width: auto;
                                 opacity: 0.6;
+                                cursor: pointer;
                             }
                             p {
                                 font: 3em "BebasNeueBook";
@@ -85,78 +108,84 @@
                                 padding-top: 0.7em;
                                 text-align: center;
                                 word-spacing: 0.2em;
+                                cursor: pointer;
                             }
                         }
                         .active {
-                        	img {
-                        		opacity: 1;
-                        	}
-                        	p {
-                        		color: #fff;
-                        	}
+                            img {
+                                opacity: 1;
+                            }
+                            p {
+                                color: #fff;
+                            }
                         }
                     }
                 }
                 .footer {
-                        display: flex;
-                        justify-content: center;
-                        position: absolute;
-                        bottom: 5em;
-                        padding-top: 5em;
-                        width: 100%;
-                        p {
-                            font: 3.7em "RobotoRegular";
-                            color: #c6c6c6;
-                            padding: 0 1em;
-                            text-align: center;
-                        }
+                    display: flex;
+                    justify-content: center;
+                    position: absolute;
+                    bottom: 5em;
+                    padding-top: 5em;
+                    width: 100%;
+                    p {
+                        font: 3.7em "RobotoRegular";
+                        color: #c6c6c6;
+                        padding: 0 1em;
+                        text-align: center;
                     }
+                }
             }
         }
     }
 }
 
 @media screen and (max-width: 9999px) {
-    #home .container, html {
+    #home .container,
+    html {
         min-height: 2092px;
     }
 }
 
 @media screen and (max-width: 3500px) {
-    #home .container, html{
+    #home .container,
+    html {
         min-height: 1260px;
     }
     #home .container .home_page .page_content .bottom_projects .projects_content .block {
-    	margin: 2em 4.8em;
+        margin: 2em 4.8em;
     }
 }
 
 @media screen and (max-width: 2260px) {
-    #home .container, html {
+    #home .container,
+    html {
         min-height: 996px;
     }
     #home .container .home_page .page_content .bottom_projects .projects_content .block img {
-    	height: 11em;
+        height: 11em;
     }
 }
 
 @media screen and (max-width: 1680px) {
-    #home .container, html {
+    #home .container,
+    html {
         min-height: 630px;
     }
     #home .container .home_page .page_content .bottom_projects .projects_content .block p {
-    	font-size: 4em;
+        font-size: 4em;
     }
     #home .container .home_page .page_content .center_block .img .txt p {
-       font-size: 4.5em;
+        font-size: 4.5em;
     }
     #home .container .home_page .page_content .center_block .img .txt {
-    	right: -140em;
+        right: -140em;
     }
 }
 
 @media screen and (max-width: 1365px) {
-  #home .container, html {
+    #home .container,
+    html {
         min-height: 786px;
     }
     #home .container .home_page .bg {
@@ -164,104 +193,103 @@
         left: 2.5%;
     }
     #home .container .home_page .page_content .bottom_projects .projects_content {
-    	font-size: 4px;
-    	justify-content: space-between;
+        font-size: 4px;
+        justify-content: space-between;
     }
     #home .container .home_page .page_content {
-    	align-items: flex-start;
+        align-items: flex-start;
     }
     #home .container .home_page .page_content .bottom_projects {
-    	position: relative;
+        position: relative;
     }
     #home .container .home_page .page_content {
-    	flex-direction: column;
-    	justify-content: center;
+        flex-direction: column;
+        justify-content: center;
     }
     #home .container .home_page .page_content .center_block .img .txt {
-    	position: relative;
-    	top: 0;
-    	right: 0;
+        position: relative;
+        top: 0;
+        right: 0;
     }
     #home .container .home_page .page_content .center_block .img .img_box {
-    	margin: 0 auto;
+        margin: 0 auto;
     }
-   #home .container .home_page .page_content .center_block .img .txt {
-   	padding-top: 2em;
-   }
-   #home .container .home_page .page_content .center_block {
-   	margin-bottom: 20em;
-   	margin-top: 40em;
-   }
+    #home .container .home_page .page_content .center_block .img .txt {
+        padding-top: 2em;
+    }
+    #home .container .home_page .page_content .center_block {
+        margin-bottom: 20em;
+        margin-top: 40em;
+    }
 }
 
 @media screen and (max-width: 1023px) {
-    #home .container, html {
+    #home .container,
+    html {
         min-height: 1006px;
     }
     #home .container .home_page .bg {
-    	display: none;
+        display: none;
     }
     #home .container .home_page .page_content .bottom_projects .projects_content .block {
-    	margin: 2em 4.5em;
+        margin: 2em 4.5em;
     }
-    #home .container .home_page .page_content .bottom_projects .projects_content .block{
-    	width: 25%;
+    #home .container .home_page .page_content .bottom_projects .projects_content .block {
+        width: 25%;
     }
     #home .container .home_page .page_content .bottom_projects .projects_content {
-    	justify-content: center;
+        justify-content: center;
     }
     #home .container .home_page .page_content .bottom_projects .projects_content .block img {
-    	max-width: 100%;
+        max-width: 100%;
     }
     #home .container .home_page .page_content .center_block {
-    	margin-bottom: 40em;
-    	margin-top: 70em;
+        margin-bottom: 40em;
+        margin-top: 70em;
     }
 }
 
 @media screen and (max-width: 567px) {
-    #home .container, html {
+    #home .container,
+    html {
         min-height: 568px;
     }
     body {
         height: auto;
     }
     #home .container .home_page .page_content .center_block .img .txt {
-    	font-size: 3px;
-    	text-align: center;
+        font-size: 3px;
+        text-align: center;
     }
     #home .container .home_page .page_content .center_block {
-    	margin-top: 70em;
-    	margin-bottom: 50em;
+        margin-top: 70em;
+        margin-bottom: 50em;
     }
     #home .container .home_page .page_content .bottom_projects {
-    	margin-bottom: 30em;
+        margin-bottom: 30em;
     }
     #home .container .home_page .page_content .bottom_projects .projects_content .block {
-    	width: 40%;
+        width: 40%;
     }
     #home .container .home_page .page_content .footer {
-    	flex-direction: column;
+        flex-direction: column;
     }
     #home .container .home_page .page_content .footer p {
-    	font-size: 4em;
+        font-size: 4em;
     }
 }
 
 @media screen and (max-width: 480px) {
-        #contacts_tab .bg_portret {
-		width: 130em;
-		height: 130em;
-	}
-	#contacts_tab .container .bottom_block .second {
-		padding-bottom: 5em;
-	}
-	#home .container .home_page .page_content .bottom_projects .projects_content .block {
-    	width: 35%;
+    #contacts_tab .bg_portret {
+        width: 130em;
+        height: 130em;
     }
+    #contacts_tab .container .bottom_block .second {
+        padding-bottom: 5em;
     }
+    #home .container .home_page .page_content .bottom_projects .projects_content .block {
+        width: 35%;
+    }
+}
 
-@media screen and (max-height: 568px) {
-    
-    }
-
+@media screen and (max-height: 568px) {}

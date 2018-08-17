@@ -74,3 +74,12 @@ $(document).ready(function() {
         $("body").removeClass("wrapper_active");
     });
 });
+
+
+//табы проектов
+
+$("#home .img .img_box").not(":first").hide();
+        $("#home .projects_content .block").click(function() {
+            $("#home .projects_content .block").removeClass("active").eq($(this).index()).addClass("active");
+            $("#home .img .img_box").hide().eq($(this).index()).fadeIn(300)
+}).eq(0).addClass("active");
