@@ -52,22 +52,6 @@
                     top: 30%;
                     z-index: 2;
                 }
-                .bg_invest {
-                    position: absolute;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    top: 30%;
-                    margin-top: -50em;
-                    z-index: 1;
-                    p {
-                        font: 103em "BebasNeueBold";
-                        color: #fff;
-                        opacity: 0.1;
-                        letter-spacing: -0.05em;
-                    }
-                }
             }
         }
         .content {
@@ -200,7 +184,7 @@
                     }
                     .number {
                         font: 8em "BebasNeueRegular";
-                        letter-spacing: 0.05em;
+                        letter-spacing: 0.11em;
                         color: #464646;
                         text-align: right;
                         display: flex;
@@ -287,6 +271,9 @@
     body {
         height: 100%;
     }
+    .bg_page_other .txt_bg .invest .bg {
+        display: none;
+    }
     #invest .container .content .center_section .center_item p .last {
         padding-top: 0.05em;
     }
@@ -303,6 +290,9 @@
     }
     #invest .container .content {
         font-size: 1.4em;
+    }
+    .bg_page_other .txt_bg .invest p {
+        font-size: 80em;
     }
 }
 

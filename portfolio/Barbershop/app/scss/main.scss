@@ -23,6 +23,81 @@
     position: absolute;
     background: url(../img/bg_moscov.jpg) no-repeat center center;
     background-size: cover;
+    .txt_bg {
+        height: 100%;
+        .msk {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            p {
+                font: 60em "BebasNeueBold";
+                        color: #fff;
+                        opacity: 0.1;
+                        padding-bottom: 1.7em;
+            }
+        }
+        .spb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            p {
+                font: 46.3em "BebasNeueBold";
+                        color: #fff;
+                        opacity: 0.1;
+                        padding-bottom: 2em;
+            }
+        }
+        .reg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            p {
+                font: 56em "BebasNeueBold";
+                        color: #fff;
+                        opacity: 0.1;
+                        padding-top: 0.3em;
+                        padding-bottom: 1.9em;
+            }
+        }
+        .invest {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            position: relative;
+            p {
+                font: 103em "BebasNeueBold";
+                position: relative;
+                z-index: 2;
+                        color: #fff;
+                        opacity: 0.1;
+                        letter-spacing: -0.05em;
+                        padding-bottom: 0.7em;
+            }
+            .bg {
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                .bg_content {
+                     background: url(../img/invest_bg.png) no-repeat center center;
+                     background-size: contain;
+                     height: 100%;
+                     width: 100%;
+                     margin: 0 auto;
+                     position: absolute;
+                     top: 60em;
+                }
+            }
+        }
+    }
 }
 
 
@@ -34,14 +109,6 @@
             .home_page {
                 height: 100%;
                 position: relative;
-                .bg_tab {
-                    position: absolute;
-                    z-index: 1;
-                    width: 100%;
-                    height: 100%;
-                    background: url(../img/bg_logo.png) no-repeat center center;
-                    background-size: contain;
-                }
                 .tab_content_block {
                     position: relative;
                     z-index: 2;
@@ -86,29 +153,6 @@
             .reg_page {
                 height: 100%;
                 position: relative;
-                .bg_city {
-                    position: absolute;
-                    z-index: 1;
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    p {
-                        font: 75em "BebasNeueBold";
-                        color: #fff;
-                        opacity: 0.1;
-                        padding-bottom: 1.3em;
-                    }
-                }
-                .bg_tab {
-                    position: absolute;
-                    z-index: 2;
-                    width: 100%;
-                    height: 100%;
-                    background: url(../img/bg_logo.png) no-repeat center center;
-                    background-size: contain;
-                }
                 .tab_content_block {
                     position: relative;
                     z-index: 2;
@@ -220,15 +264,6 @@
                 }
             }
             .spb_page {
-                .bg_city {
-                    p {
-                        font: 46.3em "BebasNeueBold";
-                        color: #fff;
-                        opacity: 0.1;
-                        padding-top: 0.3em;
-                        padding-bottom: 2em;
-                    }
-                }
             }
             .reg_page {
 
@@ -252,15 +287,6 @@
                     }
                     .number {
                         justify-content: flex-end !important;
-                    }
-                }
-                .bg_city {
-                    p {
-                        font: 56em "BebasNeueBold";
-                        color: #fff;
-                        opacity: 0.1;
-                        padding-top: 0.3em;
-                        padding-bottom: 1.9em;
                     }
                 }
                 .tab_content_block {
@@ -365,6 +391,10 @@
 
     #home .container {
         min-height: 568px;
+    }
+    .bg_page_other .txt_bg .spb p {
+        font-size: 27em;
+        padding-bottom: 3em;
     }
     #home .container .tab_content .moscow_page .tab_content_block .number,
     #home .container .tab_content .spb_page .tab_content_block .number,

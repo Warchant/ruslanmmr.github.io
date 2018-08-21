@@ -8,19 +8,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="css/libs.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/invest.css">
-    <link rel="stylesheet" href="css/dop.css">
-    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/libs.css?ver=123">
+    <link rel="stylesheet" href="css/common.css?ver=123">
+    <link rel="stylesheet" href="css/main.css?ver=123">
+    <link rel="stylesheet" href="css/invest.css?ver=123">
+    <link rel="stylesheet" href="css/dop.css?ver=123">
+    <link rel="stylesheet" href="css/projects.css?ver=123">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
     <div id="wrapper">
         <div class="bg_page_home">
         </div>
+        <div class="bg_page_dop">
+        </div>
         <div class="bg_page_other">
+            <div class="txt_bg">
+                <div class="msk"><p>москва</p></div>
+                <div class="spb"><p>санкт-петербург</p></div>
+                <div class="reg"><p>регионы</p></div>
+                <div class="invest">
+                    <p>invest</p>
+                    <div class="bg">
+                        <div class="bg_content">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg_topgun">
+            <div class="bg"></div>
         </div>
         <div id="lang_block">
             <a class="active_lang" href="#">RU</a>
@@ -46,22 +65,20 @@
         <div id="navigation">
             <nav>
                 <ul>
-                    <li class="link"><a class="cena" href="#">цена успеха</a></li>
-                    <li class="link"><a href="#">topgun invest</a></li>
-                    <li class="link"><a href="#">допматериалы</a></li>
-                    <li class="link lts"><a href="#">проекты</a></li>
-                    <li class="link lts"><a href="#">контакты</a></li>
+                    <li class="link"><a class="cena" href="">цена успеха</a></li>
+                    <li class="link other inv"><a href="">topgun invest</a></li>
+                    <li class="link dop hidden_txt"><a href="">допматериалы</a></li>
+                    <li class="link lts other hidden_txt"><a href="">проекты</a></li>
+                    <li class="link lts other hidden_txt"><a href="">контакты</a></li>
                 </ul>
             </nav>
         </div>
         <!--Содержимое страницы-->
         <div class="content_site">
-            <div id="home" class="tab_page">
+            <div id="home" class="tab_page slideInLeft">
                 <div class="container">
                     <div class="tab_content">
                         <div class="home_page">
-                            <div class="bg_tab">
-                            </div>
                             <div class="tab_content_block">
                                 <h2>самая крупная <span>и</span> успешная сеть <span>в</span> россии</h2>
                                 <p class="number">250</p>
@@ -72,10 +89,6 @@
                             </div>
                         </div>
                         <div class="moscow_page">
-                            <div class="bg_city">
-                                <p>москва</p>
-                            </div>
-                            <div class="bg_tab"></div>
                             <div class="tab_content_block">
                                 <h2><span>до </span>остановки продаж</h2>
                                 <div class="number">
@@ -95,10 +108,6 @@
                             </div>
                         </div>
                         <div class="spb_page">
-                            <div class="bg_city">
-                                <p>санкт-петербург</p>
-                            </div>
-                            <div class="bg_tab"></div>
                             <div class="tab_content_block">
                                 <h2><span>до </span>остановки продаж</h2>
                                 <div class="number">
@@ -118,10 +127,6 @@
                             </div>
                         </div>
                         <div class="reg_page">
-                            <div class="bg_city">
-                                <p>регионы</p>
-                            </div>
-                            <div class="bg_tab"></div>
                             <div class="tab_content_block">
                                 <h2><span>цена</span>успеха</h2>
                                 <div class="number">
@@ -149,14 +154,10 @@
                     </div>
                 </div>
             </div>
-            <div id="invest" class="tab_page">
+            <div id="invest" class="tab_page zoomIn">
                 <div class="container">
                     <div class="invest_page">
                         <div class="bg">
-                            <div class="bg_image"></div>
-                            <div class="bg_invest">
-                                <p>invest</p>
-                            </div>
                         </div>
                         <div class="content">
                             <div class="left_section">
@@ -198,14 +199,14 @@
                                 </div>
                                 <div class="bottom_item">
                                     <p class="more">*подробности по телефону</p>
-                                    <p class="number">88005507242</p>
+                                    <p class="number">8(800)5507242</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="dop" class="tab_page">
+            <div id="dop" class="tab_page slideInRight">
                 <div class="container">
                     <div class="dop_page">
                         <div class="bg">
@@ -287,7 +288,7 @@
                     </div>
                 </div>
             </div>
-            <div id="projects" class="tab_page">
+            <div id="projects" class="tab_page slideInDown">
                 <div class="container">
                     <div class="home_page_projects">
                         <div class="bg">
@@ -451,14 +452,8 @@
                     </div>
                 </div>
             </div>
-            <div id="contacts_tab" class="tab_page">
+            <div id="contacts_tab" class="tab_page zoomIn">
                 <div class="bg_portret"></div>
-                <div class="bg_all"></div>
-                <div class="bg_tab">
-                    <div class="container">
-                        <div class="bg"></div>
-                    </div>
-                </div>
                 <div class="container">
                     <p class="top">уточнить детали</p>
                     <p class="bottom">у основателя бренда</p>
