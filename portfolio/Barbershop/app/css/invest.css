@@ -151,7 +151,8 @@
         display: flex; }
         #invest .container .content .center_section .center_item p .last {
           font: 94.5em "BebasNeueBold";
-          line-height: 80%; }
+          line-height: 80%;
+          text-shadow: 0.05em 0px 0px #707070; }
         #invest .container .content .center_section .center_item p .first {
           font: 11.5em "BebasNeueRegular";
           line-height: 100%; }
