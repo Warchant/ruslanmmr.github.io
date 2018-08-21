@@ -1,9 +1,10 @@
-#home {
+#dop {
   position: relative;
   z-index: 2;
   height: 100%; }
-  #home .container {
-    height: 100%; }
+  #dop .container {
+    height: 100vh;
+    min-height: 624px; }
 
 .bg_page_home {
   width: 100%;
@@ -13,10 +14,9 @@
   -webkit-background-size: cover;
           background-size: cover; }
 
-#home .container {
-  position: relative;
-  height: 100%; }
-  #home .container .home_page {
+#dop .container {
+  position: relative; }
+  #dop .container .dop_page {
     height: 100%;
     position: relative;
     display: -webkit-box;
@@ -36,19 +36,18 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    #home .container .home_page .bg {
+    #dop .container .dop_page .bg {
       position: absolute;
       z-index: 1;
-      width: 105%;
-      left: -2.5%;
+      width: 100%;
       height: 100%;
       background: url(../img/bg_logo.png) no-repeat center center;
       -webkit-background-size: contain;
               background-size: contain; }
-    #home .container .home_page .top_section {
+    #dop .container .dop_page .top_section {
       width: 100%;
       position: relative;
-      padding-top: 60em;
+      padding-top: 55em;
       z-index: 2;
       display: -webkit-box;
       display: -webkit-flex;
@@ -59,7 +58,7 @@
           -ms-flex-pack: center;
               justify-content: center;
       width: 100%; }
-      #home .container .home_page .top_section .left_item, #home .container .home_page .top_section .right_item {
+      #dop .container .dop_page .top_section .left_item, #dop .container .dop_page .top_section .right_item {
         margin: 0 20em;
         display: -webkit-box;
         display: -webkit-flex;
@@ -74,19 +73,19 @@
         -webkit-justify-content: space-between;
             -ms-flex-pack: justify;
                 justify-content: space-between; }
-        #home .container .home_page .top_section .left_item h5, #home .container .home_page .top_section .right_item h5 {
+        #dop .container .dop_page .top_section .left_item h5, #dop .container .dop_page .top_section .right_item h5 {
           font: 8em "BebasNeueBold";
           color: #fff;
           letter-spacing: 0.5em;
           text-align: center;
           padding-bottom: 0.4em;
           padding-left: 0.5em; }
-        #home .container .home_page .top_section .left_item .item_content, #home .container .home_page .top_section .right_item .item_content {
+        #dop .container .dop_page .top_section .left_item .item_content, #dop .container .dop_page .top_section .right_item .item_content {
           display: -webkit-box;
           display: -webkit-flex;
           display: -ms-flexbox;
           display: flex; }
-          #home .container .home_page .top_section .left_item .item_content .block, #home .container .home_page .top_section .right_item .item_content .block {
+          #dop .container .dop_page .top_section .left_item .item_content .block, #dop .container .dop_page .top_section .right_item .item_content .block {
             display: -webkit-box;
             display: -webkit-flex;
             display: -ms-flexbox;
@@ -105,54 +104,55 @@
                 -ms-flex-pack: justify;
                     justify-content: space-between;
             margin: 0 6em; }
-            #home .container .home_page .top_section .left_item .item_content .block .top, #home .container .home_page .top_section .right_item .item_content .block .top {
+            #dop .container .dop_page .top_section .left_item .item_content .block .top, #dop .container .dop_page .top_section .right_item .item_content .block .top {
               display: block; }
-            #home .container .home_page .top_section .left_item .item_content .block .top1, #home .container .home_page .top_section .right_item .item_content .block .top1 {
+            #dop .container .dop_page .top_section .left_item .item_content .block .top1, #dop .container .dop_page .top_section .right_item .item_content .block .top1 {
               background: url(../img/left_item_1.jpg) no-repeat center center;
               -webkit-background-size: contain;
                       background-size: contain;
               width: 29.6em;
               height: 29.6em; }
-            #home .container .home_page .top_section .left_item .item_content .block .top2, #home .container .home_page .top_section .right_item .item_content .block .top2 {
+            #dop .container .dop_page .top_section .left_item .item_content .block .top2, #dop .container .dop_page .top_section .right_item .item_content .block .top2 {
               background: url(../img/left_item_2.jpg) no-repeat center center;
               -webkit-background-size: contain;
                       background-size: contain;
               width: 22.5em;
               height: 30.1em; }
-            #home .container .home_page .top_section .left_item .item_content .block .top3, #home .container .home_page .top_section .right_item .item_content .block .top3 {
+            #dop .container .dop_page .top_section .left_item .item_content .block .top3, #dop .container .dop_page .top_section .right_item .item_content .block .top3 {
               background: url(../img/right_item_1.jpg) no-repeat center center;
               -webkit-background-size: contain;
                       background-size: contain;
               width: 33.8em;
               height: 22.9em; }
-            #home .container .home_page .top_section .left_item .item_content .block .top4, #home .container .home_page .top_section .right_item .item_content .block .top4 {
+            #dop .container .dop_page .top_section .left_item .item_content .block .top4, #dop .container .dop_page .top_section .right_item .item_content .block .top4 {
               background: url(../img/right_item_2.jpg) no-repeat center center;
               -webkit-background-size: contain;
                       background-size: contain;
               width: 41.3em;
               height: 24.3em; }
-            #home .container .home_page .top_section .left_item .item_content .block p, #home .container .home_page .top_section .right_item .item_content .block p {
+            #dop .container .dop_page .top_section .left_item .item_content .block p, #dop .container .dop_page .top_section .right_item .item_content .block p {
               font: 4.25em "BebasNeueBook";
               color: #fff;
               padding-top: 1em;
               padding-bottom: 0.1em; }
-            #home .container .home_page .top_section .left_item .item_content .block .bottom, #home .container .home_page .top_section .right_item .item_content .block .bottom {
+            #dop .container .dop_page .top_section .left_item .item_content .block .bottom, #dop .container .dop_page .top_section .right_item .item_content .block .bottom {
               font: 2.8em "RobotoRegular";
               color: #999999;
               text-decoration: underline; }
-      #home .container .home_page .top_section .right_item .item_content .block p {
+      #dop .container .dop_page .top_section .right_item .item_content .block p {
         padding-top: 1.8em; }
-    #home .container .home_page .center_section {
+    #dop .container .dop_page .center_section {
       position: relative;
-      z-index: 2; }
-      #home .container .home_page .center_section h5 {
+      z-index: 2;
+      width: 100%; }
+      #dop .container .dop_page .center_section h5 {
         font: 8em "BebasNeueBold";
         color: #fff;
         letter-spacing: 0.5em;
         padding-top: 0.4em;
         padding-bottom: 0.1em;
         text-align: center; }
-      #home .container .home_page .center_section .content_center {
+      #dop .container .dop_page .center_section .content_center {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -161,7 +161,7 @@
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center; }
-        #home .container .home_page .center_section .content_center .block {
+        #dop .container .dop_page .center_section .content_center .block {
           max-width: 42.3em;
           margin: 0 1.4em;
           display: -webkit-box;
@@ -173,119 +173,76 @@
           -webkit-flex-direction: column;
               -ms-flex-direction: column;
                   flex-direction: column; }
-          #home .container .home_page .center_section .content_center .block .top {
+          #dop .container .dop_page .center_section .content_center .block .top {
             display: block;
             width: 42.3em;
             height: 23.8em; }
-          #home .container .home_page .center_section .content_center .block .top1 {
+          #dop .container .dop_page .center_section .content_center .block .top1 {
             background: url(../img/center1.jpg) no-repeat;
             -webkit-background-size: cover;
                     background-size: cover; }
-          #home .container .home_page .center_section .content_center .block .top2 {
+          #dop .container .dop_page .center_section .content_center .block .top2 {
             background: url(../img/center2.jpg) no-repeat;
             -webkit-background-size: cover;
                     background-size: cover; }
-          #home .container .home_page .center_section .content_center .block .top3 {
+          #dop .container .dop_page .center_section .content_center .block .top3 {
             background: url(../img/center3.jpg) no-repeat;
             -webkit-background-size: cover;
                     background-size: cover; }
-          #home .container .home_page .center_section .content_center .block .top4 {
+          #dop .container .dop_page .center_section .content_center .block .top4 {
             background: url(../img/center4.jpg) no-repeat;
             -webkit-background-size: cover;
                     background-size: cover; }
-          #home .container .home_page .center_section .content_center .block .top5 {
+          #dop .container .dop_page .center_section .content_center .block .top5 {
             background: url(../img/center5.jpg) no-repeat;
             -webkit-background-size: cover;
                     background-size: cover; }
-          #home .container .home_page .center_section .content_center .block .top6 {
+          #dop .container .dop_page .center_section .content_center .block .top6 {
             background: url(../img/center6.jpg) no-repeat;
             -webkit-background-size: cover;
                     background-size: cover; }
-          #home .container .home_page .center_section .content_center .block p {
+          #dop .container .dop_page .center_section .content_center .block p {
             font: 4.25em "BebasNeueBook";
             color: #fff;
             padding-top: 1em; }
-            #home .container .home_page .center_section .content_center .block p span {
+            #dop .container .dop_page .center_section .content_center .block p span {
               font-family: "BebasNeueRegular"; }
-          #home .container .home_page .center_section .content_center .block .bottom {
+          #dop .container .dop_page .center_section .content_center .block .bottom {
             font: 2.8em "RobotoRegular";
             color: #999999;
             text-decoration: underline; }
-    #home .container .home_page .bottom_section {
+    #dop .container .dop_page .bottom_section {
       position: relative;
       z-index: 2;
       -webkit-align-self: flex-end;
           -ms-flex-item-align: end;
               align-self: flex-end;
       padding-bottom: 5em; }
-      #home .container .home_page .bottom_section .top {
+      #dop .container .dop_page .bottom_section .top {
         font: 4.95em "BebasNeueLight";
         color: #fff;
         letter-spacing: 0.125em; }
-        #home .container .home_page .bottom_section .top .span2 {
+        #dop .container .dop_page .bottom_section .top .span2 {
           font-family: "BebasNeueBook"; }
-        #home .container .home_page .bottom_section .top .span3 {
+        #dop .container .dop_page .bottom_section .top .span3 {
           font-family: "BebasNeueRegular"; }
-      #home .container .home_page .bottom_section .bottom {
+      #dop .container .dop_page .bottom_section .bottom {
         font: 9.5em "BebasNeueBook";
         color: #fff;
         letter-spacing: 0.15em; }
 
-@media screen and (max-width: 9999px) {
-  #home .container, html {
-    min-height: 2092px; } }
-
-@media screen and (max-width: 3500px) {
-  #home .container, html {
-    min-height: 1260px; } }
-
-@media screen and (max-width: 2260px) {
-  #home .container, html {
-    min-height: 996px; } }
-
-@media screen and (max-width: 1680px) {
-  #home .container, html {
-    min-height: 630px; }
-  #home .container {
-    font-size: 2.5px; }
-  #home .container .home_page .top_section .left_item .item_content .block p, #home .container .home_page .top_section .right_item .item_content .block p {
-    font-size: 6em;
-    padding-top: 0.4em;
-    padding-bottom: 0.1em; }
-  #home .container .home_page .top_section .left_item .item_content .block .bottom, #home .container .home_page .top_section .right_item .item_content .block .bottom {
-    font-size: 3.5em; }
-  #home .container .home_page .top_section .left_item h5, #home .container .home_page .top_section .right_item h5 {
-    padding-bottom: 0.4em; }
-  #home .container .home_page .center_section .content_center .block p {
-    font-size: 6em; }
-  #home .container .home_page .center_section .content_center .block {
-    max-width: 15%; }
-  #home .container .home_page .center_section .content_center .block {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  #home .container .home_page .center_section .content_center .block p {
-    text-align: center;
-    padding-top: 0.5em; }
-  #home .container .home_page .center_section .content_center .block .bottom {
-    font-size: 3.5em; } }
-
-@media screen and (max-width: 1365px) {
-  #home .container, html {
-    min-height: 657px; }
-  #home .container .home_page .bg {
-    width: 95%;
-    left: 2.5%; }
-  #home .container .home_page .top_section .left_item h5, #home .container .home_page .top_section .right_item h5 {
+@media screen and (max-width: 1200px) {
+  #dop .container {
+    min-height: 624px; }
+  #dop .container .dop_page .top_section .left_item h5, #dop .container .dop_page .top_section .right_item h5 {
     font-size: 6em;
     padding-bottom: 0em; }
-  #home .container .home_page .center_section h5 {
+  #dop .container .dop_page .center_section h5 {
     font-size: 6em;
     padding-bottom: 0em; }
-  #home .container .home_page .center_section .content_center .block {
+  #dop .container .dop_page .center_section .content_center .block {
     width: 30%; }
-  #home .container .home_page .center_section .content_center {
+  #dop .container .dop_page .center_section .content_center {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-flow: row wrap;
@@ -293,69 +250,77 @@
             flex-flow: row wrap; } }
 
 @media screen and (max-width: 1023px) {
-  #home .container, html {
+  #dop .container {
     min-height: 1100px; }
-  #home .container .home_page .top_section .left_item .item_content .block, #home .container .home_page .top_section .right_item .item_content .block {
+  #dop .container .dop_page .top_section .left_item .item_content .block, #dop .container .dop_page .top_section .right_item .item_content .block {
     text-align: center; }
-  #home .container .home_page .top_section .left_item, #home .container .home_page .top_section .right_item {
+  #dop .container .dop_page .top_section .left_item, #dop .container .dop_page .top_section .right_item {
     margin: 0; }
-  #home .container .home_page .top_section {
+  #dop .container .dop_page .top_section {
     font-size: 1.5em;
     padding-top: 40em; }
-  #home .container .home_page .center_section {
+  #dop .container .dop_page .center_section {
     font-size: 1.5em; }
-  #home .container .home_page .center_section .content_center .block {
+  #dop .container .dop_page .center_section .content_center .block {
     max-width: 1000px !important;
-    margin-bottom: 5em; } }
+    margin-bottom: 5em; }
+  #dop .container .dop_page .center_section .content_center .block .top {
+    margin: 0 auto; }
+  #dop .container .dop_page .center_section .content_center .block p {
+    text-align: center; }
+  #dop .container .dop_page .center_section .content_center .block .bottom {
+    margin: 0 auto; } }
 
 @media screen and (max-width: 767px) {
-  #home .container, html {
+  #dop .container {
     min-height: 760px; }
-  #home .container .home_page .top_section .left_item .item_content .block, #home .container .home_page .top_section .right_item .item_content .block {
+  #dop .container .dop_page .top_section .left_item .item_content .block, #dop .container .dop_page .top_section .right_item .item_content .block {
     margin: 0 3em; }
   body {
     height: auto; }
-  #home .container .home_page .center_section h5 {
+  #dop .container .dop_page .center_section h5 {
     padding-top: 2em; } }
 
 @media screen and (max-width: 567px) {
-  #home .container, html {
+  #dop .container {
     min-height: 568px; }
-  #home .container .home_page .top_section {
+  #dop .container .dop_page .top_section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-  #home .container .home_page .top_section .left_item .item_content .block, #home .container .home_page .top_section .right_item .item_content .block {
+  #dop .container .dop_page .top_section .left_item .item_content .block, #dop .container .dop_page .top_section .right_item .item_content .block {
     width: 40%;
     max-width: 1000px; }
-  #home .container .home_page .top_section .left_item .item_content, #home .container .home_page .top_section .right_item .item_content {
+  #dop .container .dop_page .top_section .left_item .item_content, #dop .container .dop_page .top_section .right_item .item_content {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     padding-bottom: 5em; }
-  #home .container .home_page .top_section .left_item h5, #home .container .home_page .top_section .right_item h5 {
+  #dop .container .dop_page .top_section .left_item h5, #dop .container .dop_page .top_section .right_item h5 {
     padding-bottom: 1em; }
-  #home .container .home_page .center_section .content_center .block {
+  #dop .container .dop_page .center_section .content_center .block {
     width: 40%; }
-  #home .container .home_page .bottom_section {
+  #dop .container .dop_page .bottom_section {
     padding-top: 10em; }
-  #home .container .home_page .center_section h5 {
+  #dop .container .dop_page .center_section h5 {
     padding-bottom: 1em; }
-  #home .container .home_page .bottom_section {
+  #dop .container .dop_page .bottom_section {
     font-size: 1em; }
-  #home .container .home_page .bg {
+  #dop .container .dop_page .bg {
     display: none; } }
 
 @media screen and (max-width: 400px) {
-  #home .container .home_page .center_section .content_center .block {
+  #dop .container .dop_page .center_section .content_center .block {
     width: 80%; }
-  #home .container .home_page .center_section .content_center .block .top {
+  #dop .container .dop_page .center_section .content_center .block .top {
     width: 84.6em;
     height: 47.6em; }
-  #home .container {
+  #dop .container {
     font-size: 2.2px; }
-  #home .container .home_page .top_section {
-    padding-top: 30em; } }
+  #dop .container .dop_page .top_section {
+    padding-top: 30em; }
+  #dop .container .dop_page .center_section .content_center .block {
+    width: 100%; } }

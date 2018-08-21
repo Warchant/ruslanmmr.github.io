@@ -1,0 +1,5 @@
+@import "_mixins/font-face";
+
+@include font-face("AssistantBold", "../fonts/Assistant/AssistantBold");
+@include font-face("HelveticaNeueCyrRoman", "../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman");
+@include font-face("HelveticaNeueCyrBold", "../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold");

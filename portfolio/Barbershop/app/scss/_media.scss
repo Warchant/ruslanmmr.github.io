@@ -1,47 +1,6 @@
-@media screen and (min-width: 3501px) {
-   .container {
-	  	max-width: 3200px;
-	  }
-}
-@media screen and (max-width: 3500px) {
-	  .container {
-	  	max-width: 1920px;
-	  }
-	  body {
-	  	font-size: 6px;
-	  }
-}
-
-
-@media screen and (max-width: 2260px) {
-   .container {
-	  	max-width: 1420px;
-	  }
-	   body {
-	  	font-size: 4.5px;
-	  }
-}
-
-@media screen and (max-width: 1680px) {
-   .container {
-	  	max-width: 1200px;
-	  }
-	   body {
-	  	font-size: 3px;
-	  }
-	  #navigation {
-	  	margin-top: 37em;
-	  }
-	  #navigation a {
-	  	font-size: 6em;
-	  }
-}
-
-
-
 
 // ≥1200px
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1200px) {
 	 .container {
 	  	max-width: 1024px;
 	  }

@@ -37,24 +37,24 @@
 #wrapper {
   position: relative;
   background: #101011;
-  height: 100%;
   min-width: 320px; }
 
 html {
-  height: 100%;
   background: #101011;
   min-width: 320px; }
 
+.content_site {
+  height: 100%; }
+
 .container {
   min-width: 320px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px; }
 
 body {
-  font-size: 10px;
-  height: 100%;
-  min-width: 320px;
-  min-height: 100vh; }
+  font-size: 3px;
+  min-width: 320px; }
 
 .wrapper_active {
   position: fixed !important;
@@ -319,7 +319,9 @@ p {
       #contacts_tab .container .bottom_block .first {
         font: 5.4em "RobotoRegular";
         color: #fff;
-        text-align: center; }
+        text-align: center;
+        letter-spacing: 0.16em;
+        padding-left: 0.16em; }
       #contacts_tab .container .bottom_block .second {
         font: 8.4em "BebasNeueBook";
         color: #fff;
@@ -346,33 +348,7 @@ p {
         padding: 0 1em;
         text-align: center; }
 
-@media screen and (min-width: 3501px) {
-  .container {
-    max-width: 3200px; } }
-
-@media screen and (max-width: 3500px) {
-  .container {
-    max-width: 1920px; }
-  body {
-    font-size: 6px; } }
-
-@media screen and (max-width: 2260px) {
-  .container {
-    max-width: 1420px; }
-  body {
-    font-size: 4.5px; } }
-
-@media screen and (max-width: 1680px) {
-  .container {
-    max-width: 1200px; }
-  body {
-    font-size: 3px; }
-  #navigation {
-    margin-top: 37em; }
-  #navigation a {
-    font-size: 6em; } }
-
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1200px) {
   .container {
     max-width: 1024px; }
   #lang_block {

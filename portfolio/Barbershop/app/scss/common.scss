@@ -3,28 +3,29 @@
 #wrapper {
     position: relative;
     background: #101011;
-    height: 100%;
     min-width: 320px;
 }
 
 html {
-    height: 100%;
     background: #101011;
     min-width: 320px;
 }
 
+.content_site {
+    height: 100%;
+}
 
 .container {
     min-width: 320px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
+
 body {
-    font-size: 10px;
-    height: 100%;
+    font-size: 3px;
     min-width: 320px;
-    min-height: 100vh;
 }
 
 .wrapper_active {
@@ -283,6 +284,8 @@ p {
         		font: 5.4em "RobotoRegular";
         		color: #fff;
         		text-align: center;
+                letter-spacing: 0.16em;
+                padding-left: 0.16em;
         	}
         	.second {
         			font: 8.4em "BebasNeueBook";
