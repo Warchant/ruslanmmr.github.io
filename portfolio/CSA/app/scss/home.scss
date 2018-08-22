@@ -1,14 +1,39 @@
 #home_page {
-	display: none;
-	background: url(../img/bg_home.jpg) no-repeat center center;
-	background-size: cover;
-	.container {
-		height: 100vh;
-	}
+    background: url(../img/bg_home.jpg) no-repeat center center;
+    background-size: cover;
+    .container {
+    	.content {
+    		height: 100vh;
+    		display: flex;
+    		align-items: center;
+    		.slider1 {
+    			width: 100%;
+    			.slide {
+    				outline: none;
+    				p {
+    					font-size: 50px;
+    					color: #fff;
+    					text-align: center;
+    				}
+    			}
+    			.slide_logo {
+    				 .img {
+    				 	  display: block;
+    				 	  margin: 0 auto;
+    				 	  height: 400px;
+    				 	  width: 400px;
+    				 	  background: url(../img/logo_img.svg);
+    				 	  background-size: contain;
+    				 }
+    			}
+    		}
+    	}
+    }
 }
 
 @media screen and (max-width: 1022px) {
-	#home_page, #start_page {
-		display: block !important;
-	} 
+    #home_page,
+    #start_page {
+        display: block !important;
+    }
 }

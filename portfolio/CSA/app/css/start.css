@@ -17,8 +17,8 @@
             justify-content: center;
     overflow-x: hidden; }
   #start_page .block_logo {
-    width: 100%;
-    height: 50%; }
+    width: 400px;
+    height: 400px; }
     #start_page .block_logo .logo_content {
       position: relative;
       height: 100%;
