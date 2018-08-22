@@ -1,65 +1,36 @@
-@import "fonts";
-body {
-    font-size: 10px;
-}
-
 #home_page {
     background: #f4ea48;
+    position: relative;
     .container {
         height: 100vh;
-        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .header_top {
-        position: absolute;
-        box-sizing: content-box;
-        width: calc(100% - 30px);
-        top: 5%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .logo {
-            a {
-                display: block;
-            }
-            img {
-                width: 61px;
-                height: 61px;
-            }
-        }
-        .lang {
-            display: flex;
-            justify-content: center;
-            p {
-                font: 1.8em "HelveticaNeueCyrRoman";
-                padding: 0 7px;
-            }
-            a {
-                font: 1.8em "HelveticaNeueCyrRoman";
-                text-transform: uppercase;
-                color: #000;
-                text-decoration: none;
-            }
-            .active_lang {
-                font: 1.8em "HelveticaNeueCyrBold";
-                text-transform: uppercase;
-                color: #000;
-            }
-        }
+        overflow-x: hidden;
     }
     .block_logo {
         width: 100%;
         height: 50%;
-        position: relative;
+        .logo_content {
+               position: relative;
+               height: 100%;
+               margin: 0 auto;
+               max-width: 100%;
+        }
         .logo_center {
-        	background: url(../img/center_logo.png) no-repeat center center;
-        	background-size: cover;
+            background: url(../img/center_logo.png) no-repeat center center;
+            background-size: contain;
+            height: 100%;
+            width: 100%;
+            position: absolute;
         }
         .logo_txt {
-            animation: 10s linear 0s normal none infinite running rot;
+            background: url(../img/txt_logo.png) no-repeat center center;
+            background-size: contain;
+            animation: 15s linear 0s normal none infinite running rot;
             height: 100%;
+            width: 100%;
+            position: absolute;
         }
         @keyframes rot {
             0% {
@@ -71,6 +42,3 @@ body {
         }
     }
 }
-
-
-@import "media";

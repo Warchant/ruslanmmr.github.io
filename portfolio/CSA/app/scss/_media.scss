@@ -1,17 +1,48 @@
 
 // ≥1200px
 @media screen and (max-width: 1200px) {
-	
+	  .container {
+	  	max-width: 992px;
+	  }
+	  #header_nav .container .header_nav .left_section {
+	  	width: 300px;
+	  }
+	  #header_nav .container .header_nav .right_section {
+	  	width: 550px;
+	  }
 }
 
 // ≥992px
-@media screen and (max-width: 992px) {
-
+@media screen and (max-width: 1022px) {
+     .container {
+	  	max-width: 768px;
+	  }
+	  #header_top {
+	  	top: 25px;
+	  }
+	  #header_nav {
+	  	display: none;
+	  }
+	  #header_top .container {
+	  	max-width: 100%;
+	  }
+    .nav-btn {
+	  	display: block;
+	  }
+	  #header_top .container .header_top .lang {
+	  	position: absolute;
+	  	left: 10px;
+	  }
+	  #header_top .container .header_top {
+	  	justify-content: center;
+	  }
 }
 
 // ≥768px
 @media screen and (max-width: 768px) {
-
+    .container {
+	  	max-width: 568px;
+	  }
 }
 
 // ≥576px
