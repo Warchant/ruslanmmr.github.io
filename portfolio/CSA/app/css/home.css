@@ -1,0 +1,11 @@
+#home_page {
+  display: none;
+  background: url(../img/bg_home.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  #home_page .container {
+    height: 100vh; }
+
+@media screen and (max-width: 1022px) {
+  #home_page, #start_page {
+    display: block !important; } }

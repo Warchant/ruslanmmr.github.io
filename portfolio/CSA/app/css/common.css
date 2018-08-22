@@ -39,12 +39,9 @@
     -o-transition: .3s ease;
     transition: .3s ease; }
 
-.active_link .bg {
-  opacity: 1; }
-
 .link_trigger_fr {
   position: relative; }
-  .link_trigger_fr .bg {
+  .link_trigger_fr .bg_static {
     position: absolute;
     bottom: 14px;
     left: 50%;
@@ -59,7 +56,8 @@
     transition: .3s ease; }
 
 body {
-  font-size: 10px; }
+  font-size: 10px;
+  background: #040306; }
 
 .body_active {
   position: fixed;
@@ -247,10 +245,12 @@ body {
             align-items: center;
     position: relative; }
     #header_top .container .header_top .logo a {
-      display: block; }
-    #header_top .container .header_top .logo img {
+      display: block;
       width: 61px;
-      height: 61px; }
+      height: 61px;
+      background: url(../img/logo_header.svg);
+      -webkit-background-size: cover;
+              background-size: cover; }
     #header_top .container .header_top .lang {
       display: -webkit-box;
       display: -webkit-flex;
@@ -274,8 +274,7 @@ body {
         text-decoration: none; }
       #header_top .container .header_top .lang .active_lang {
         font: 1.8em "HelveticaNeueCyrBold";
-        text-transform: uppercase;
-        color: #000; }
+        text-transform: uppercase; }
 
 #header_nav {
   position: absolute;
@@ -340,7 +339,8 @@ body {
               display: block;
               width: 63px;
               height: 16px;
-              background: url(../img/icon_first.png) -10px -10px; }
+              background: url(../img/icon_first.png);
+              background-position: -10px -10px !important; }
         #header_nav .container .header_nav .left_section .icons_block {
           display: -webkit-box;
           display: -webkit-flex;
@@ -359,17 +359,20 @@ body {
             display: block;
             width: 14px;
             height: 14px;
-            background: url(../img/icon_first.png) -93px -10px; }
+            background: url(../img/icon_first.png);
+            background-position: -93px -10px !important; }
           #header_nav .container .header_nav .left_section .icons_block .link2 a {
             display: block;
             width: 16px;
             height: 14px;
-            background: url(../img/icon_first.png) -47px -46px; }
+            background: url(../img/icon_first.png);
+            background-position: -47px -46px !important; }
           #header_nav .container .header_nav .left_section .icons_block .link3 a {
             display: block;
             width: 17px;
             height: 14px;
-            background: url(../img/icon_first.png) -10px -46px; }
+            background: url(../img/icon_first.png);
+            background-position: -10px -46px !important; }
         #header_nav .container .header_nav .left_section .fr_link {
           height: 100%; }
           #header_nav .container .header_nav .left_section .fr_link a {
@@ -401,6 +404,38 @@ body {
             color: #000;
             line-height: 0.9em; }
 
+#header_top .container .header_top_transformed .logo a {
+  background: url(../img/logo_header_second.svg);
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+#header_top .container .header_top_transformed .lang a, #header_top .container .header_top_transformed .lang p {
+  color: #f4ea48; }
+
+#header_nav .container .header_nav_transformed .right_section ul li a, #header_nav .container .header_nav_transformed .left_section .fr_link a {
+  color: #f4ea48; }
+
+#header_nav .container .header_nav_transformed .left_section .first_link .link a {
+  background: url(../img/icon_second.png); }
+
+#header_nav .container .header_nav_transformed .left_section .icons_block .link1 a {
+  background: url(../img/icon_second.png); }
+
+#header_nav .container .header_nav_transformed .left_section .icons_block .link2 a {
+  background: url(../img/icon_second.png); }
+
+#header_nav .container .header_nav_transformed .left_section .icons_block .link3 a {
+  background: url(../img/icon_second.png); }
+
+.active_link a {
+  color: #fff !important; }
+
+.active_link .bg {
+  opacity: 1; }
+
+#header_nav .container .header_nav .left_section .icons_block .icon .active_icon, #header_nav .container .header_nav .left_section .first_link .icon .active_icon {
+  background: url(../img/icon_active.png); }
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 992px; }
@@ -427,7 +462,14 @@ body {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  #header_top .container .header_top_transformed .logo a {
+    background: url(../img/logo_header.svg);
+    -webkit-background-size: cover;
+            background-size: cover; }
+  #header_top .container .header_top_transformed .lang a,
+  #header_top .container .header_top_transformed .lang p {
+    color: #000; } }
 
 @media screen and (max-width: 768px) {
   .container {

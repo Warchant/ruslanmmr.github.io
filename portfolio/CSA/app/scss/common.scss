@@ -14,15 +14,10 @@
     }
 }
 
-.active_link {
-    .bg {
-        opacity: 1;
-    }
-}
 
 .link_trigger_fr {
     position: relative;
-    .bg {
+    .bg_static {
         position: absolute;
         bottom: 14px;
         left: 50%;
@@ -36,6 +31,7 @@
 
 body {
     font-size: 10px;
+    background: #040306;
 }
 
 .body_active {
@@ -197,10 +193,10 @@ body {
             .logo {
                 a {
                     display: block;
-                }
-                img {
                     width: 61px;
                     height: 61px;
+                    background: url(../img/logo_header.svg);
+                    background-size: cover;
                 }
             }
             .lang {
@@ -220,7 +216,6 @@ body {
                 .active_lang {
                     font: 1.8em "HelveticaNeueCyrBold";
                     text-transform: uppercase;
-                    color: #000;
                 }
             }
         }
@@ -275,7 +270,8 @@ body {
                             display: block;
                             width: 63px;
                             height: 16px;
-                            background: url(../img/icon_first.png) -10px -10px;
+                            background: url(../img/icon_first.png);
+                            background-position: -10px -10px !important;
                         }
                     }
                 }
@@ -292,19 +288,22 @@ body {
                         display: block;
                         width: 14px;
                         height: 14px;
-                        background: url(../img/icon_first.png) -93px -10px;
+                        background: url(../img/icon_first.png);
+                         background-position: -93px -10px !important;
                     }
                     .link2 a {
                         display: block;
                         width: 16px;
                         height: 14px;
-                        background: url(../img/icon_first.png) -47px -46px;
+                        background: url(../img/icon_first.png);
+                        background-position: -47px -46px !important;
                     }
                     .link3 a {
                         display: block;
                         width: 17px;
                         height: 14px;
-                        background: url(../img/icon_first.png) -10px -46px;
+                        background: url(../img/icon_first.png);
+                         background-position: -10px -46px !important;
                     }
                 }
                 .fr_link {
@@ -343,5 +342,47 @@ body {
     }
 }
 
+
+// новые классы
+#header_top .container .header_top_transformed {
+    .logo a {
+        background: url(../img/logo_header_second.svg);
+        background-size: cover;
+    }
+    .lang a, .lang p {
+        color: #f4ea48;
+    } 
+}
+
+#header_nav .container .header_nav_transformed {
+            .right_section ul li a, .left_section .fr_link a {
+                color: #f4ea48;
+            }
+            .left_section .first_link .link a {
+                background: url(../img/icon_second.png);
+            }
+            .left_section .icons_block .link1 a {
+                background: url(../img/icon_second.png);
+            }
+            .left_section .icons_block .link2 a {
+                background: url(../img/icon_second.png);
+            }
+            .left_section .icons_block .link3 a {
+                background: url(../img/icon_second.png);
+            }
+        }
+
+.active_link {
+    a {
+        color: #fff !important;
+    }
+    .bg {
+        opacity: 1;
+    }
+}
+
+#header_nav .container .header_nav .left_section .icons_block .icon .active_icon, #header_nav .container .header_nav .left_section .first_link .icon .active_icon  {
+     background: url(../img/icon_active.png);
+}
 
 @import "media";

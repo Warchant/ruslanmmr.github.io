@@ -1,4 +1,4 @@
-#home_page {
+#start_page {
     background: #f4ea48;
     position: relative;
     .container {
@@ -40,5 +40,12 @@
                 transform: rotate(360deg);
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 1022px) {
+    #start_page .container {
+        min-height: 568px;
     }
 }

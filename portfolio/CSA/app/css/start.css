@@ -1,7 +1,7 @@
-#home_page {
+#start_page {
   background: #f4ea48;
   position: relative; }
-  #home_page .container {
+  #start_page .container {
     height: 100vh;
     display: -webkit-box;
     display: -webkit-flex;
@@ -16,22 +16,22 @@
         -ms-flex-pack: center;
             justify-content: center;
     overflow-x: hidden; }
-  #home_page .block_logo {
+  #start_page .block_logo {
     width: 100%;
     height: 50%; }
-    #home_page .block_logo .logo_content {
+    #start_page .block_logo .logo_content {
       position: relative;
       height: 100%;
       margin: 0 auto;
       max-width: 100%; }
-    #home_page .block_logo .logo_center {
+    #start_page .block_logo .logo_center {
       background: url(../img/center_logo.png) no-repeat center center;
       -webkit-background-size: contain;
               background-size: contain;
       height: 100%;
       width: 100%;
       position: absolute; }
-    #home_page .block_logo .logo_txt {
+    #start_page .block_logo .logo_txt {
       background: url(../img/txt_logo.png) no-repeat center center;
       -webkit-background-size: contain;
               background-size: contain;
@@ -56,3 +56,7 @@
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
+
+@media screen and (max-width: 1022px) {
+  #start_page .container {
+    min-height: 568px; } }
