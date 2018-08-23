@@ -2,32 +2,372 @@
     background: url(../img/bg_home.jpg) no-repeat center center;
     background-size: cover;
     .container {
-    	.content {
-    		height: 100vh;
-    		display: flex;
-    		align-items: center;
-    		.slider1 {
-    			width: 100%;
-    			.slide {
-    				outline: none;
-    				p {
-    					font-size: 50px;
-    					color: #fff;
-    					text-align: center;
-    				}
-    			}
-    			.slide_logo {
-    				 .img {
-    				 	  display: block;
-    				 	  margin: 0 auto;
-    				 	  height: 400px;
-    				 	  width: 400px;
-    				 	  background: url(../img/logo_img.svg);
-    				 	  background-size: contain;
-    				 }
-    			}
-    		}
-    	}
+        .content {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            .arrow_left1, .arrow_right1 {
+            	position: absolute;
+            	display: block;
+            	cursor: pointer;
+            	z-index: 2;
+            	width: 23px;
+            	height: 42px;
+            }
+            .arrow_left1 {
+            	background: url(../img/arrow_left.png) no-repeat center center;
+            	left: -2em;
+            	span {
+            		position: absolute;
+            		right: -9em;
+            		top: 0.6em;
+            		font: 1.8em "HelveticaNeueCyrRoman";
+            		color: #fff;
+            		opacity: 0.5;
+            		white-space: nowrap;
+            	}
+            }
+            .arrow_right1 {
+            	background: url(../img/arrow_right.png) no-repeat center center;
+            	right: -2em;
+            	span {
+            		position: absolute;
+            		left: -10.5em;
+            		top: 0.7em;
+            		font: 1.8em "HelveticaNeueCyrRoman";
+            		color: #fff;
+            		opacity: 0.5;
+            		white-space: nowrap;
+            	}
+            }
+            .slider1 {
+                width: 100%;
+                position: relative;
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .slick-track {
+                     display: flex;
+                     align-items: center;
+                }
+                .slide {
+                          outline: none;
+                    h1 {
+                        font: 4em "HelveticaNeueCyrBold";
+                        color: #fff;
+                        text-align: center;
+                        margin-bottom: 0.2em;
+                        margin-top: 0;
+                    }
+                    h2 {
+                        font: 1.4em "HelveticaNeueCyrMedium";
+                        color: #f4ea48;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+                .slide_logo {
+                    .img {
+                        display: block;
+                        margin: 0 auto;
+                        height: 400px;
+                        width: 400px;
+                        background: url(../img/logo_img.svg);
+                        background-size: contain;
+                    }
+                }
+                .slide1 {
+                    .desc {
+                        font: 2.4em "HelveticaNeueCyrRoman";
+                        color: #fff;
+                        text-align: center;
+                        margin: 0;
+                    }
+                    .block_container_first {
+                        display: flex;
+                        justify-content: center;
+                        .block {
+                            width: 20%;
+                            margin: 0 50px;
+                            h3 {
+                                font: 1.4em "HelveticaNeueCyrMedium";
+                                color: #f4ea48;
+                                text-align: center;
+                                text-transform: uppercase;
+                            }
+                            p {
+                                font: 1.4em "HelveticaNeueCyrMedium";
+                                color: #fff;
+                                text-align: center;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                    .contacts {
+                        text-align: center;
+                        font: 1.4em "HelveticaNeueCyrMedium";
+                        color: #f4ea48;
+                        text-transform: uppercase;
+                    }
+                    .adress {
+                        font: 2.4em "HelveticaNeueCyrRoman";
+                        color: #f4ea48;
+                        text-align: center;
+                        margin-top: 0.5em;
+                        margin-bottom: 0.5em;
+                    }
+                    .block_container_second {
+                        display: flex;
+                        justify-content: center;
+                        .block {
+                            width: 13%;
+                            margin: 0 25px;
+                            .number_block {
+                                font: 3.6em "HelveticaNeueCyrBold";
+                                text-align: center;
+                                color: #f4ea48;
+                                margin: 0;
+                            }
+                            .txt {
+                                text-align: center;
+                                font: 1.4em "HelveticaNeueCyrMedium";
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .line {
+                        display: block;
+                        margin: 0 auto;
+                        width: 125px;
+                        height: 3px;
+                        background-color: #f4ea48;
+                    }
+                    h4 {
+                        font: 2.6em "HelveticaNeueCyrBold";
+                        text-align: center;
+                        color: #f4ea48;
+                        margin-top: 0.5em;
+                    }
+                }
+                .slide2 {
+                    .desc {
+                        font: 3em "HelveticaNeueCyrRoman";
+                        color: #fff;
+                        text-align: center;
+                        margin: 0;
+                        display: block;
+                        max-width: 860px;
+                        margin: 0 auto;
+                    }
+                    .block_container {
+                        display: flex;
+                        justify-content: center;
+                        .block {
+                            width: 20%;
+                        }
+                        .top {
+                            font: 3.6em "HelveticaNeueCyrBold";
+                            color: #fff;
+                            text-align: center;
+                            margin: 0;
+                            padding-top: 1em;
+                            letter-spacing: 0.05em;
+                        }
+                        .bottom {
+                            font: 1.2em "HelveticaNeueCyrMedium";
+                            color: #f4ea48;
+                            text-align: center;
+                            margin: 0;
+                            padding-top: 1em;
+                            text-transform: uppercase;
+                            padding-bottom: 2.2em;
+                        }
+                    }
+                    .line {
+                        display: block;
+                        margin: 0 auto;
+                        height: 3px;
+                        width: 30%;
+                        background-color: #f4ea48;
+                    }
+                    h4 {
+                        font: 3.6em "HelveticaNeueCyrBold";
+                        color: #f4ea48;
+                        text-align: center;
+                        margin-top: 0.5em;
+                        margin-bottom: 0;
+                    }
+                }
+                .slide3 {
+                    .block_container {
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 3em;
+                        .block {
+                            margin: 0 30px;
+                            img {
+                                width: 88px;
+                                height: 88px;
+                            }
+                            p {
+                                font: 1.5em "HelveticaNeueCyrBold";
+                                color: #fff;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .desc {
+                        font: 2.4em "HelveticaNeueCyrRoman";
+                        color: #fff;
+                        text-align: center;
+                    }
+                    .line {
+                        display: block;
+                        height: 3px;
+                        width: 120px;
+                        background-color: #f4ea48;
+                        margin: 0 auto;
+                    }
+                    h4 {
+                        font: 2.4em "HelveticaNeueCyrBold";
+                        color: #f4ea48;
+                        text-align: center;
+                        margin-top: 0.5em;
+                        margin-bottom: 0;
+                        line-height: 130%;
+                    }
+                }
+                .slide4 {
+                    .container_block {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 50px;
+                        .block_left,
+                        .block_right {
+                            width: 25%;
+                            .title {
+                                font: 1.2em "HelveticaNeueCyrMedium";
+                                color: #f4ea48;
+                                text-align: center;
+                                text-transform: uppercase;
+                                margin: 0;
+                                padding-bottom: 0.5em;
+                            }
+                            .txt {
+                                font: 1.8em "HelveticaNeueCyrMedium";
+                                color: #fff;
+                                text-align: center;
+                                margin: 0;
+                                padding-bottom: 1em;
+                            }
+                        }
+                    }
+                    .block_center {
+                        width: 35%;
+                        img {
+                            width: 100%;
+                            height: auto;
+                            display: block;
+                            transform: translateX(-22px);
+                        }
+                    }
+                    .line {
+                        display: block;
+                        height: 3px;
+                        width: 120px;
+                        background-color: #f4ea48;
+                        margin: 0 auto;
+                        margin-top: 30px;
+                    }
+                    h4 {
+                        font: 2.4em "HelveticaNeueCyrBold";
+                        color: #f4ea48;
+                        text-align: center;
+                        margin-top: 0.5em;
+                        margin-bottom: 0;
+                        line-height: 130%;
+                    }
+                }
+                .slide5 {
+                    .block_container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 40px;
+                        .block {
+                            margin: 0 50px;
+                        }
+                    }
+                    .desc {
+                        font: 2.4em "HelveticaNeueCyrRoman";
+                        color: #fff;
+                        text-align: center;
+                    }
+                    .line {
+                        display: block;
+                        height: 3px;
+                        width: 120px;
+                        background-color: #f4ea48;
+                        margin: 0 auto;
+                        margin-top: 30px;
+                    }
+                    h4 {
+                        font: 2.4em "HelveticaNeueCyrBold";
+                        color: #f4ea48;
+                        text-align: center;
+                        margin-top: 0.5em;
+                        margin-bottom: 0;
+                        line-height: 130%;
+                    }
+                }
+                .slide6 {
+                    .desc {
+                        font: 2.4em "HelveticaNeueCyrRoman";
+                        color: #fff;
+                        text-align: center;
+                    }
+                    .block_container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .block {
+                            width: 20%;
+                            margin: 0 40px;
+                            .title {
+                                font: 3.6em "HelveticaNeueCyrBold";
+                                color: #f4ea48;
+                                text-align: center;
+                                margin: 0;
+                                padding-top: 20px;
+                            }
+                            .txt {
+                                font: 1.4em "HelveticaNeueCyrMedium";
+                                color: #fff;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .line {
+                        display: block;
+                        height: 3px;
+                        width: 120px;
+                        background-color: #f4ea48;
+                        margin: 0 auto;
+                        margin-top: 40px;
+                    }
+                    h4 {
+                        font: 2.4em "HelveticaNeueCyrBold";
+                        color: #f4ea48;
+                        text-align: center;
+                        margin-top: 0.5em;
+                        margin-bottom: 0;
+                        line-height: 130%;
+                    }
+                }
+            }
+        }
     }
 }
 
