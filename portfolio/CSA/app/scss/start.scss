@@ -9,8 +9,8 @@
         overflow-x: hidden;
     }
     .block_logo {
-        width: 400px;
-        height: 400px;
+        width: 40em;
+        height: 40em;
         .logo_content {
                position: relative;
                height: 100%;
@@ -43,9 +43,24 @@
     }
 }
 
+@media screen and (max-width: 1480px) {
+    #start_page .block_logo {
+        font-size: 8px;
+    }
+    #start_page .container {
+        min-height: 500px;
+    }
+}
 
-@media screen and (max-width: 1022px) {
+@media screen and (max-width: 1025px) {
     #start_page .container {
         min-height: 568px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #start_page .block_logo {
+        width: 28em;
+        height: 28em;
     }
 }
