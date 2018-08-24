@@ -1,6 +1,8 @@
 #home_page {
     background: url(../img/bg_home.jpg) no-repeat center center;
     background-size: cover;
+    position: relative;
+    z-index: 1;
     .container {
         .content {
             height: 100vh;

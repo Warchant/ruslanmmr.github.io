@@ -1,7 +1,9 @@
 #home_page {
   background: url(../img/bg_home.jpg) no-repeat center center;
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  position: relative;
+  z-index: 1; }
   #home_page .container .content {
     height: 100vh;
     min-height: 644px;
