@@ -79,6 +79,12 @@ body {
     #start_page .container {
         min-height: 568px;
     }
+    #start_page {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0, 0);
+    }
 }
 
 @media screen and (max-width: 480px) {

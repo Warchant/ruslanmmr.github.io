@@ -88,7 +88,14 @@ body {
 
 @media screen and (max-width: 1025px) {
   #start_page .container {
-    min-height: 568px; } }
+    min-height: 568px; }
+  #start_page {
+    position: relative;
+    left: 0;
+    top: 0;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0); } }
 
 @media screen and (max-width: 480px) {
   #start_page .block_logo {
