@@ -1,21 +1,16 @@
+.active {
+}
 body {
     overflow: hidden;
 }
-.active {
-    height: 0% !important;
-    width: 0% !important;
-    border-radius: 100% !important;
-}
 #start_page {
     background: #f4ea48;
-    overflow: hidden;
-    transition: 0.3s linear;
     margin-top: -1px;
     display: flex;
     position: absolute;
     z-index: 2;
     width: 100%;
-    border-radius: 0;
+    height: 100%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
