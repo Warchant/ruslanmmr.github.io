@@ -91,9 +91,11 @@ $(document).ready(function() {
         $(".header_nav").addClass("header_nav_transformed");
         $(".header_top").addClass("header_top_transformed");
         $("#start_page").addClass("active");
-        $("#start_page").delay(200).fadeOut();
         $("#home_page").fadeIn(250);
         $(".slider1").slick('reinit');
+        //new
+        $("#start_page").css( "width", "0%" );
+          totalWheel = 700;
     });
 
     $('#header_top .header_top .logo a').click(function(event) {
@@ -107,17 +109,17 @@ $(document).ready(function() {
         $("#header_nav .left_section .icons_block a, #header_nav .first_link .link a").removeClass("active_icon");
         $("#header_nav .link_trigger a").parent().removeClass("active_link");
         $(".slider1").slick('reinit');
+        //new
+         $("#start_page").css( "width", "100%" );
+          totalWheel = 0;
     });
 
 
-
-    $(window).resize(function() {
-        if (document.documentElement.clientWidth > 1025) {
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 100) {
-                   $("#start_page").addClass("active");
-                }
-            });
+    $(window).bind('mousewheel', function(e) {
+        if (e.originalEvent.wheelDelta / 120 > 0) {
+            console.log('scrolling up !');
+        } else {
+            console.log('scrolling down !');
         }
     });
 
@@ -147,3 +149,39 @@ $(document).ready(function() {
         }
     }); */
 });
+
+var totalWheel = 0
+
+window.onwheel = function(e) {
+    var delta = e.deltaY;
+    totalWheel += delta;
+    if (totalWheel < 0) {
+        totalWheel = 0;
+    } else if ((document.documentElement.clientWidth > 1025) && totalWheel > 0 && totalWheel < 700) {
+                $("#home_page").fadeIn(250);
+                $(".slider1").slick('reinit');
+            if (totalWheel >= 100 && totalWheel < 200) {
+                $("#start_page").removeClass("active");
+            } else if (totalWheel >= 200 && totalWheel < 300) {
+                $("#start_page").addClass("active");
+                $("#start_page").css( "width", "100%" );
+                $(".header_nav").removeClass("header_nav_transformed");
+               $(".header_top").removeClass("header_top_transformed");
+               $("#header_nav .first_link .link a").parent().removeClass("active_link");
+               $("#header_nav .first_link .link a").removeClass("active_icon");
+               $("#header_nav .link_trigger a").parent().removeClass("active_link");
+            } else if (totalWheel >= 300 && totalWheel < 400) {
+               $("#start_page").css( "width", "75%" );
+               $(".header_nav").addClass("header_nav_transformed");
+               $(".header_top").addClass("header_top_transformed");
+               $("#header_nav .first_link .link a").parent().addClass("active_link");
+               $("#header_nav .first_link .link a").addClass("active_icon");
+            } else if (totalWheel >= 400 && totalWheel < 500) {
+                $("#start_page").css( "width", "50%" );
+            } else if (totalWheel >= 500 && totalWheel < 600) {
+                $("#start_page").css( "width", "25%" );
+            } else if (totalWheel >= 600 && totalWheel < 700) {
+                $("#start_page").css( "width", "0%" );
+            }
+    } 
+}
