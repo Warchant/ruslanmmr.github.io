@@ -13,9 +13,6 @@
 
 // ≥992px
 @media screen and (max-width: 1025px) {
-	body {
-		overflow: auto !important;
-	}
     .container {
         max-width: 768px;
     }
