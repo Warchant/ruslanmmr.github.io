@@ -31,7 +31,7 @@
 
 body {
     font-size: 10px;
-    background: #040306;
+    background: #0f0f0f;
 }
 
 .body_active {
@@ -185,6 +185,7 @@ body {
     top: 5%;
     width: 100%;
     z-index: 1000;
+    transition: .3s ease;
     .container {
         .header_top {
             display: flex;
@@ -223,12 +224,17 @@ body {
     }
 }
 
+.header_top_last {
+    top: -100% !important;
+}
+
 #header_nav {
     position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
     z-index: 1000;
+    transition: .3s ease;
     .line_bottom {
         position: absolute;
         bottom: 0;
@@ -343,6 +349,9 @@ body {
     }
 }
 
+.header_nav_last {
+    bottom: calc(100% - 55px) !important;
+}
 
 // новые классы
 #header_top .container .header_top_transformed {

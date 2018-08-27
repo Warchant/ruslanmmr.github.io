@@ -1,0 +1,117 @@
+#last_page {
+	position: relative;
+	.active_bg {
+      position: absolute;
+      height: 100%;
+      width: 600%;
+      top: 0;
+      left: 0;
+      background: url(../img/animate_bg_last.jpg) no-repeat center center;
+      background-size: cover;
+      transition: .3s;
+	}
+	.custom_dots {
+		position: absolute;
+		bottom: 20px;
+		width: 100%;
+		span {
+			position: absolute;
+			font: 1.8em "HelveticaNeueCyrRoman";
+			color: #f4ea48;
+		}
+		.span_left {
+			left: -425%;
+		}
+		.span_right {
+			right: -425%;
+		}
+		ul {
+			display: flex;
+			list-style: none;
+			justify-content: center;
+			margin: 0 auto;
+			width: 270px;
+			padding: 0;
+			position: relative;
+			li {
+				width: 31px;
+				height: 19px;
+				background: url(../img/bg_dots.png) no-repeat;
+				background-position: 0px 0;
+				background-size: cover;
+				display: flex;
+				align-items: center;
+				margin: 0 6px;
+				cursor: pointer;
+				span {
+					display: block;
+					border-radius: 50%;
+					width: 13px;
+					height: 13px;
+					margin-left: 9px;
+					background: transparent;
+				}
+			}
+			.active_dot {
+					span {
+						background: #f4ea48;
+					}
+				}
+		}
+	}
+	.container {
+		height: 100vh;
+		position: relative;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.slider_content {
+			width: 100%;
+			position: relative;
+
+		}
+		.slider2 {
+			padding-top: 20px;
+			.slide {
+				margin: 0 15px;
+				height: 500px;
+				background: #dddddd;
+				position: relative;
+				outline: none;
+				p {
+					color: #000;
+					font-size: 10em;
+					text-align: center;
+				}
+			}
+			.slide1 {
+				position: relative;
+				span {
+				position: absolute;
+				display: block;
+				width: 40px;
+				height: 100%;
+				cursor: pointer;
+				transition: .1s;
+			}
+			.arrow_left_slide1 {
+				 left: 0;
+				 background: url(../img/arrow_left.png) no-repeat center center;
+				 background-color: rgba(0, 0, 0, 0.3);
+				 &:hover {
+				 	background-color: rgba(0, 0, 0, 0.5);
+				 }
+			}
+			.arrow_right_slide1 {
+				right: 0;
+				background: url(../img/arrow_right.png) no-repeat center center;
+				 background-color: rgba(0, 0, 0, 0.3);
+				 &:hover {
+				 	background-color: rgba(0, 0, 0, 0.5);
+				 }
+			}
+			}
+		}
+	}
+}
