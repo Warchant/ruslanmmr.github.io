@@ -166,6 +166,10 @@
       #projects .container .home_page_projects .page_content .bottom_active {
         padding-top: 90em; }
 
+@media screen and (min-width: 1520px) {
+  #projects .container {
+    min-height: 876px; } }
+
 @media screen and (max-width: 1023px) {
   #projects .container {
     min-height: 1074px; }
