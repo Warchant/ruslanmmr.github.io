@@ -168,7 +168,9 @@
 
 @media screen and (min-width: 1520px) {
   #projects .container {
-    min-height: 876px; } }
+    min-height: 1020px; }
+  #projects .container .home_page_projects .page_content .bottom_projects .projects_content {
+    font-size: 6.3px; } }
 
 @media screen and (max-width: 1023px) {
   #projects .container {
