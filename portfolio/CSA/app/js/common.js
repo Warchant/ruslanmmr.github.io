@@ -1,5 +1,6 @@
 //Общее
-$("#home_page").hide();
+//$("#home_page").hide();
+$("#last_page").hide();
 
 $(document).ready(function() {
     $('.nav-btn a').click(function(event) {
@@ -29,7 +30,7 @@ $(document).ready(function() {
         $(".header_nav").addClass("header_nav_transformed");
         $(".header_top").addClass("header_top_transformed");
         $("#start_page").addClass("active");
-        $("#home_page").fadeIn(250);
+        $("#home_page").fadeIn(500);
         $(".slider1").slick('reinit');
         //new
         $("#start_page").css("width", "0%");
@@ -43,8 +44,8 @@ $(document).ready(function() {
         $(".header_top").addClass("header_top_transformed");
         $("#start_page").addClass("active");
         $("#start_page").css("width", "0%");
-        $("#home_page").hide();
-        $("#last_page").fadeIn(500);
+        $("#home_page").fadeOut(500);
+        $("#last_page").delay( 500 ).fadeIn(500);
         $("#header_nav").addClass("header_nav_last");
         $("#header_top").addClass("header_top_last");
          totalWheel = 901;
@@ -60,6 +61,7 @@ $(document).ready(function() {
         $("#header_nav .left_section .icons_block a, #header_nav .first_link .link a").removeClass("active_icon");
         $("#header_nav .link_trigger a").parent().removeClass("active_link");
         $(".slider1").slick('reinit');
+        $("#last_page").fadeOut(500);
         //new
         $("#start_page").css("width", "100%");
         totalWheel = 0;
