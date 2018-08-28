@@ -1,6 +1,5 @@
 //Общее
-//$("#home_page").hide();
-$("#last_page").hide();
+
 
 $(document).ready(function() {
     $('.nav-btn a').click(function(event) {
@@ -117,10 +116,14 @@ $(document).ready(function() {
                 $("#last_page").fadeIn(500);
                 $("#header_nav").addClass("header_nav_last");
                 $("#header_top").addClass("header_top_last");
-                $(".slider2").slick('reinit');
+                $(".slider2, .slider_news").slick('reinit');
                 $('.slider2').slick('slickGoTo', 0);
                 $("#header_nav .left_section .icons_block a, #header_nav .first_link .link a").removeClass("active_icon");
                 $("#header_nav .link_trigger a").parent().removeClass("active_link");
+                $("#header_nav .link_trigger a").parent().removeClass("active_link");
+        $("#header_nav .right_section .link1").addClass("active_link");
+        $("#last_page .custom_dots ul .dot").removeClass("active_dot");
+            $("#last_page .custom_dots ul .dot1").addClass("active_dot");
             } 
     } 
 
@@ -196,6 +199,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        draggable: false
     });
 
     $('#header_nav .right_section .link1, #last_page .custom_dots ul .dot1').click(function(e) {
@@ -204,6 +208,8 @@ $(document).ready(function() {
         $("#last_page .active_bg").css("left", "0%");
         $("#last_page .custom_dots ul .dot").removeClass("active_dot");
             $("#last_page .custom_dots ul .dot1").addClass("active_dot");
+            $("#header_nav .link_trigger a").parent().removeClass("active_link");
+        $("#header_nav .right_section .link1").addClass("active_link");
     });
     $('#last_page .custom_dots ul .dot2').click(function(e) {
         e.preventDefault();
@@ -211,6 +217,8 @@ $(document).ready(function() {
         $("#last_page .active_bg").css("left", "-100%");
         $("#last_page .custom_dots ul .dot").removeClass("active_dot");
             $("#last_page .custom_dots ul .dot2").addClass("active_dot");
+            $("#header_nav .link_trigger a").parent().removeClass("active_link");
+        $("#header_nav .right_section .link1").addClass("active_link");
     });
     $('#header_nav .right_section .link2, #last_page .custom_dots ul .dot3').click(function(e) {
         e.preventDefault();
@@ -218,6 +226,8 @@ $(document).ready(function() {
         $("#last_page .active_bg").css("left", "-200%");
         $("#last_page .custom_dots ul .dot").removeClass("active_dot");
             $("#last_page .custom_dots ul .dot3").addClass("active_dot");
+            $("#header_nav .link_trigger a").parent().removeClass("active_link");
+        $("#header_nav .right_section .link2").addClass("active_link");
     });
     $('#header_nav .right_section .link3, #last_page .custom_dots ul .dot4').click(function(e) {
         e.preventDefault();
@@ -225,6 +235,8 @@ $(document).ready(function() {
         $("#last_page .active_bg").css("left", "-300%");
         $("#last_page .custom_dots ul .dot").removeClass("active_dot");
             $("#last_page .custom_dots ul .dot4").addClass("active_dot");
+            $("#header_nav .link_trigger a").parent().removeClass("active_link");
+        $("#header_nav .right_section .link3").addClass("active_link");
     });
     $('#header_nav .right_section .link4, #last_page .custom_dots ul .dot5').click(function(e) {
         e.preventDefault();
@@ -232,6 +244,8 @@ $(document).ready(function() {
         $("#last_page .active_bg").css("left", "-400%");
         $("#last_page .custom_dots ul .dot").removeClass("active_dot");
             $("#last_page .custom_dots ul .dot5").addClass("active_dot");
+            $("#header_nav .link_trigger a").parent().removeClass("active_link");
+        $("#header_nav .right_section .link4").addClass("active_link");
     });
     $('#header_nav .right_section .link5, #last_page .custom_dots ul .dot6').click(function(e) {
         e.preventDefault();
@@ -239,48 +253,43 @@ $(document).ready(function() {
         $("#last_page .active_bg").css("left", "-500%");
         $("#last_page .custom_dots ul .dot").removeClass("active_dot");
             $("#last_page .custom_dots ul .dot6").addClass("active_dot");
+            $("#header_nav .link_trigger a").parent().removeClass("active_link");
+        $("#header_nav .right_section .link5").addClass("active_link");
     });
 
-    $('.slider2').on('afterChange', function(event, slick, currentSlide) {
-        if (currentSlide == 0) {
-            $("#last_page .active_bg").css("left", "0%");
-            $("#header_nav .link_trigger a").parent().removeClass("active_link");
-            $("#header_nav .right_section .link1").addClass("active_link");
-            $("#last_page .custom_dots ul .dot").removeClass("active_dot");
-            $("#last_page .custom_dots ul .dot1").addClass("active_dot");
-        } else if (currentSlide == 1) {
-            $("#last_page .active_bg").css("left", "-100%");
-            $("#header_nav .link_trigger a").parent().removeClass("active_link");
-            $("#header_nav .right_section .link1").addClass("active_link");
-            $("#last_page .custom_dots ul .dot").removeClass("active_dot");
-            $("#last_page .custom_dots ul .dot2").addClass("active_dot");
-        }  else if (currentSlide == 2) {
-            $("#last_page .active_bg").css("left", "-200%");
-            $("#header_nav .link_trigger a").parent().removeClass("active_link");
-            $("#header_nav .right_section .link2").addClass("active_link");
-            $("#last_page .custom_dots ul .dot").removeClass("active_dot");
-            $("#last_page .custom_dots ul .dot3").addClass("active_dot");
-        } else if (currentSlide == 3) {
-            $("#last_page .active_bg").css("left", "-300%");
-            $("#header_nav .link_trigger a").parent().removeClass("active_link");
-            $("#header_nav .right_section .link3").addClass("active_link");
-            $("#last_page .custom_dots ul .dot").removeClass("active_dot");
-            $("#last_page .custom_dots ul .dot4").addClass("active_dot");
-        } else if (currentSlide == 4) {
-            $("#last_page .active_bg").css("left", "-400%");
-            $("#header_nav .link_trigger a").parent().removeClass("active_link");
-            $("#header_nav .right_section .link4").addClass("active_link");
-            $("#last_page .custom_dots ul .dot").removeClass("active_dot");
-            $("#last_page .custom_dots ul .dot5").addClass("active_dot");
-        } else if (currentSlide == 5) {
-            $("#last_page .active_bg").css("left", "-500%");
-            $("#header_nav .link_trigger a").parent().removeClass("active_link");
-            $("#header_nav .right_section .link5").addClass("active_link");
-            $("#last_page .custom_dots ul .dot").removeClass("active_dot");
-            $("#last_page .custom_dots ul .dot6").addClass("active_dot");
-        }
+    
+       //слайдер новостей первого блока
+    $('.slider_news').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('.arrow_left_slide1'),
+        nextArrow: $('.arrow_right_slide1')
     });
-
+    $('.slider3').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        arrows: false
+        //prevArrow: $('.arrow_left_slide1'),
+        //nextArrow: $('.arrow_right_slide1')
+    });
+    $('.slider_statistic').slick({
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 9,
+        slidesToScroll: 5,
+        arrows: true,
+        vertical: true,
+        verticalSwiping: true,
+        nextArrow: $('#last_page .container .slider2 .slide4 .content .center_block .arrow_bottom'),
+        prevArrow: $('')
+    });
 
 
 
