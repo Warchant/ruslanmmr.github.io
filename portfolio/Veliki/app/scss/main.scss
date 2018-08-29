@@ -2,7 +2,6 @@
 
 body, html {
 	font-size: 10px;
-	min-width: 1200px;
 }
 p, ul {
 	margin: 0;
@@ -22,7 +21,7 @@ h6 {
 }
 
 .container {
-	min-width: 1200px;
+	min-width: 320px;
 }
 
 #wrapper {
@@ -34,6 +33,7 @@ h6 {
 	width: 100%;
 	top: 0;
 	background: #fff;
+	z-index: 3;
 	header {
 		display: flex;
 		position: relative;
@@ -74,7 +74,18 @@ h6 {
 	background: url(../img/bg.png) no-repeat center top;
 	background-size: cover;
 	background-position: 20% 50%;
+	position: relative;
+	.overlay {
+		background: rgba(0, 0, 0, 0.3);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		display: none;
+	}
 	.container {
+		position: relative;
+		z-index: 2;
 		height: 100vh;
 		padding-top: 60px;
 		min-height: 676px;
@@ -130,6 +141,7 @@ h6 {
 		justify-content: space-between;
 		.block {
 			display: flex;
+			width: 30%;
 			.icon {
 				font-size: 3em;
 				color: #fff;
@@ -166,6 +178,10 @@ h6 {
 			.carousel {
 				margin: 0 -15px;
 				background-color: transparent;
+				p {
+					padding-left: 30px !important;
+					padding-right: 30px !important;
+				}
 			}
 			.block_content_carousel {
 				overflow: hidden;
@@ -198,6 +214,8 @@ h6 {
 				text-align: center;
 				padding-top: 15px;
 				padding-bottom: 10px;
+				padding-left: 15px;
+				padding-right: 15px;
 				width: 100%;
 			}
 			.availability {
@@ -235,8 +253,7 @@ h6 {
 	z-index: 9999;
 	top: 50%;
 	left: 50%;
-	margin-left: -350px;
-	margin-top: -200px;
+	transform: translate(-50%, -50%);
 	.content {
 		width: 700px;
 		height: 400px;
@@ -314,6 +331,9 @@ h6 {
 	}
 	.map {
 		margin-bottom: 20px;
+		.map_content {
+			height: 300px;
+		}
 	}
 }
 

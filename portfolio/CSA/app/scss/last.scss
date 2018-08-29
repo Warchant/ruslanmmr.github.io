@@ -305,7 +305,6 @@
             		justify-content: space-between;
             		.left_block, .right_block {
                      width: 28%;
-                     background: #fff;
                      height: 100%;
             		}
             		.center_block	{
@@ -427,6 +426,82 @@
                               }
                         }
                     }
+            		}
+            		.left_block, .right_block {
+            			display: flex;
+            			flex-direction: column;
+            			justify-content: space-between;
+            			.block_team {
+            				height: 48%;
+            				.img {
+            					overflow: hidden;
+            					height: 60%;
+            					img {
+            						width: 100%;
+            					}
+            				}
+            				.logo {
+            					height: 5%;
+            					background: #f4ea48;
+            					position: relative;
+            					img {
+            						position: absolute;
+            						height: 60px;
+            						left: 50%;
+            						top: 50%;
+            						transform: translate(-50%, -50%);
+            					}
+            				}
+            				.bottom_container {
+            					height: 35%;
+            					background: rgba(0, 0, 0, 0.8);
+            					display: flex;
+            					justify-content: space-between;
+            					.left_sect, .right_sect {
+            						padding: 0 10px;
+                          .title {
+                          	font: 1em "HelveticaNeueCyrMedium";
+                          	margin: 0;
+                          	color: #f4ea48;
+                          	text-align: center;
+                          	padding-top: 0.5em;
+                          	padding-bottom: 0.5em;
+                          }
+                          .desc {
+                          	font: 1.2em "HelveticaNeueCyrMedium";
+                          	text-align: center;
+                          	color: #fff;
+                          	margin: 0;
+                          	padding-bottom: 0.5em;
+                          }
+                          img {
+                          	display: block;
+                          	width: 35px;
+                          	height: 35px;
+                          	margin: 0 auto;
+                          }
+            					}
+            					.center_sect {
+            						display: flex;
+            						flex-direction: column;
+            						justify-content: flex-end;
+            						h5 {
+            							font: 1.6em "HelveticaNeueCyrBold";
+            							color: #f4ea48;
+            							margin: 0;
+            							text-align: center;
+            							padding-bottom: 0.3em;
+            						}
+            						p {
+            							font: 1.2em "HelveticaNeueCyrMedium";
+            							color: #fff;
+            							text-align: center;
+            							margin: 0;
+            							padding-bottom: 1em;
+            						}
+            					}
+            				}
+            			}
             		}
             	}
             }
