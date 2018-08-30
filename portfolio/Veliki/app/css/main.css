@@ -96,9 +96,7 @@ h6 {
     position: relative;
     z-index: 2;
     height: 100vh;
-    padding-top: 60px;
-    min-height: 676px;
-    max-height: 800px; }
+    padding-top: 60px; }
   #home .content {
     height: 100%;
     display: -webkit-box;
@@ -385,8 +383,6 @@ h6 {
   #video iframe {
     width: 100%;
     height: 300px; }
-  #header .time {
-    display: none; }
   #home .place {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -407,8 +403,6 @@ h6 {
     padding-bottom: 50px; }
   #home {
     background-position: 60% 0; }
-  #home .container {
-    min-height: 760px; }
   #home .overlay {
     display: block; }
   #popup .content {
@@ -418,7 +412,28 @@ h6 {
   #popup .content .top, #popup .content .bottom {
     font-size: 1.8em;
     padding-left: 15px;
-    padding-right: 15px; } }
+    padding-right: 15px; }
+  #header header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto; }
+  #header .logo {
+    position: relative;
+    margin-bottom: 15px; }
+  #header .numbers, #header .time {
+    margin-bottom: 15px; }
+  #header {
+    position: relative; }
+  #home .container {
+    padding-top: 0;
+    height: auto; }
+  #home .socials {
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 15px; } }
 
 @media screen and (max-width: 576px) {
   #popup .content {
