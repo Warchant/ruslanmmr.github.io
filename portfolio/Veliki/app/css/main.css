@@ -96,7 +96,8 @@ h6 {
     position: relative;
     z-index: 2;
     height: 100vh;
-    padding-top: 60px; }
+    padding-top: 60px;
+    min-height: 665px; }
   #home .content {
     height: 100%;
     display: -webkit-box;
@@ -377,7 +378,11 @@ h6 {
     width: 146px;
     height: 88px; }
   #home .left_txt {
-    padding-bottom: 100px; } }
+    padding-bottom: 100px; }
+  #home .container {
+    height: auto; }
+  #home .socials {
+    padding-top: 40px; } }
 
 @media screen and (max-width: 768px) {
   #video iframe {
@@ -428,8 +433,7 @@ h6 {
   #header {
     position: relative; }
   #home .container {
-    padding-top: 0;
-    height: auto; }
+    padding-top: 0; }
   #home .socials {
     width: 100%;
     margin-top: 30px;
