@@ -1,0 +1,607 @@
+#home {
+  position: relative;
+  z-index: 2;
+  height: 100%; }
+  #home .container {
+    height: 100vh;
+    min-height: 624px; }
+
+.bg_page_home {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../img/bg_main_page.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.bg_page_other {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../img/bg_moscov.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .bg_page_other .txt_bg {
+    height: 100%; }
+    .bg_page_other .txt_bg .msk {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 100%; }
+      .bg_page_other .txt_bg .msk p {
+        font: 60em "BebasNeueBold";
+        color: #fff;
+        opacity: 0.1;
+        padding-bottom: 1.7em; }
+    .bg_page_other .txt_bg .spb {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 100%; }
+      .bg_page_other .txt_bg .spb p {
+        font: 46.3em "BebasNeueBold";
+        color: #fff;
+        opacity: 0.1;
+        padding-bottom: 2em; }
+    .bg_page_other .txt_bg .reg {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 100%; }
+      .bg_page_other .txt_bg .reg p {
+        font: 56em "BebasNeueBold";
+        color: #fff;
+        opacity: 0.1;
+        padding-top: 0.3em;
+        padding-bottom: 1.9em; }
+    .bg_page_other .txt_bg .invest {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 100%;
+      position: relative; }
+      .bg_page_other .txt_bg .invest p {
+        font: 103em "BebasNeueBold";
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        opacity: 0.1;
+        letter-spacing: -0.05em;
+        padding-bottom: 0.7em; }
+      .bg_page_other .txt_bg .invest .bg {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        overflow: hidden; }
+        .bg_page_other .txt_bg .invest .bg .bg_content {
+          background: url(../img/invest_bg.png) no-repeat center center;
+          -webkit-background-size: contain;
+                  background-size: contain;
+          height: 100%;
+          width: 100%;
+          margin: 0 auto;
+          position: absolute;
+          top: 60em; }
+
+#home .container {
+  position: relative; }
+  #home .container .tab_content {
+    height: 100%; }
+    #home .container .tab_content .home_page {
+      height: 100%;
+      position: relative; }
+      #home .container .tab_content .home_page .tab_content_block {
+        position: relative;
+        z-index: 2;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        letter-spacing: 4.7em;
+        text-align: center;
+        height: 100%; }
+        #home .container .tab_content .home_page .tab_content_block h2 {
+          font: 9.5em "BebasNeueRegular";
+          color: #fff;
+          padding-top: 5.6em; }
+          #home .container .tab_content .home_page .tab_content_block h2 span {
+            font-family: "BebasNeueBook"; }
+        #home .container .tab_content .home_page .tab_content_block .number {
+          font: 66.4em "BebasNeueBold";
+          color: #dadee2;
+          text-shadow: 0px -0.05em 0px rgba(0, 0, 0, 0.4);
+          line-height: 70%;
+          padding-top: 0.25em;
+          padding-left: 0.08em; }
+        #home .container .tab_content .home_page .tab_content_block .bottom {
+          font: 5em "BebasNeueBold";
+          color: #dadee2;
+          letter-spacing: 1.15em;
+          padding-left: 2.5em;
+          line-height: 170%; }
+          #home .container .tab_content .home_page .tab_content_block .bottom span {
+            font: 1em "BebasNeueBook";
+            letter-spacing: 1.2em;
+            padding-right: 1.25em; }
+    #home .container .tab_content .moscow_page,
+    #home .container .tab_content .spb_page,
+    #home .container .tab_content .reg_page {
+      height: 100%;
+      position: relative; }
+      #home .container .tab_content .moscow_page .tab_content_block,
+      #home .container .tab_content .spb_page .tab_content_block,
+      #home .container .tab_content .reg_page .tab_content_block {
+        position: relative;
+        z-index: 2;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        letter-spacing: 4.7em;
+        text-align: center;
+        height: 100%; }
+        #home .container .tab_content .moscow_page .tab_content_block h2,
+        #home .container .tab_content .spb_page .tab_content_block h2,
+        #home .container .tab_content .reg_page .tab_content_block h2 {
+          font: 8em "BebasNeueBold";
+          color: #fff;
+          letter-spacing: 1.5em;
+          padding-left: 1.5em;
+          padding-top: 7em; }
+          #home .container .tab_content .moscow_page .tab_content_block h2 span,
+          #home .container .tab_content .spb_page .tab_content_block h2 span,
+          #home .container .tab_content .reg_page .tab_content_block h2 span {
+            font-family: "BebasNeueBook"; }
+        #home .container .tab_content .moscow_page .tab_content_block .number,
+        #home .container .tab_content .spb_page .tab_content_block .number,
+        #home .container .tab_content .reg_page .tab_content_block .number {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          #home .container .tab_content .moscow_page .tab_content_block .number .top,
+          #home .container .tab_content .spb_page .tab_content_block .number .top,
+          #home .container .tab_content .reg_page .tab_content_block .number .top {
+            font: 18.3em "BebasNeueRegular";
+            color: #fff;
+            padding-left: 0.15em;
+            letter-spacing: 0.1em; }
+          #home .container .tab_content .moscow_page .tab_content_block .number .center,
+          #home .container .tab_content .spb_page .tab_content_block .number .center,
+          #home .container .tab_content .reg_page .tab_content_block .number .center {
+            padding-left: 12em; }
+          #home .container .tab_content .moscow_page .tab_content_block .number .num,
+          #home .container .tab_content .spb_page .tab_content_block .number .num,
+          #home .container .tab_content .reg_page .tab_content_block .number .num {
+            font: 94.5em "BebasNeueBold";
+            color: #fff;
+            position: relative;
+            letter-spacing: 0em;
+            line-height: 0.8em; }
+            #home .container .tab_content .moscow_page .tab_content_block .number .num span,
+            #home .container .tab_content .spb_page .tab_content_block .number .num span,
+            #home .container .tab_content .reg_page .tab_content_block .number .num span {
+              position: absolute;
+              font-size: 0.1em;
+              bottom: -0.5em;
+              font-family: "BebasNeueRegular";
+              letter-spacing: 0.1em;
+              margin-left: 4.8em; }
+          #home .container .tab_content .moscow_page .tab_content_block .number .left,
+          #home .container .tab_content .moscow_page .tab_content_block .number .right,
+          #home .container .tab_content .spb_page .tab_content_block .number .left,
+          #home .container .tab_content .spb_page .tab_content_block .number .right,
+          #home .container .tab_content .reg_page .tab_content_block .number .left,
+          #home .container .tab_content .reg_page .tab_content_block .number .right {
+            -webkit-align-self: center;
+                -ms-flex-item-align: center;
+                    align-self: center; }
+            #home .container .tab_content .moscow_page .tab_content_block .number .left p,
+            #home .container .tab_content .moscow_page .tab_content_block .number .right p,
+            #home .container .tab_content .spb_page .tab_content_block .number .left p,
+            #home .container .tab_content .spb_page .tab_content_block .number .right p,
+            #home .container .tab_content .reg_page .tab_content_block .number .left p,
+            #home .container .tab_content .reg_page .tab_content_block .number .right p {
+              color: #fff;
+              white-space: nowrap;
+              position: relative; }
+              #home .container .tab_content .moscow_page .tab_content_block .number .left p .left_item,
+              #home .container .tab_content .moscow_page .tab_content_block .number .right p .left_item,
+              #home .container .tab_content .spb_page .tab_content_block .number .left p .left_item,
+              #home .container .tab_content .spb_page .tab_content_block .number .right p .left_item,
+              #home .container .tab_content .reg_page .tab_content_block .number .left p .left_item,
+              #home .container .tab_content .reg_page .tab_content_block .number .right p .left_item {
+                font: 6em "BebasNeueBook";
+                letter-spacing: 0.1em;
+                padding-right: 0.15em; }
+              #home .container .tab_content .moscow_page .tab_content_block .number .left p .numb,
+              #home .container .tab_content .moscow_page .tab_content_block .number .right p .numb,
+              #home .container .tab_content .spb_page .tab_content_block .number .left p .numb,
+              #home .container .tab_content .spb_page .tab_content_block .number .right p .numb,
+              #home .container .tab_content .reg_page .tab_content_block .number .left p .numb,
+              #home .container .tab_content .reg_page .tab_content_block .number .right p .numb {
+                font: 22em "BebasNeueBold";
+                letter-spacing: 0em; }
+              #home .container .tab_content .moscow_page .tab_content_block .number .left p .right_item,
+              #home .container .tab_content .moscow_page .tab_content_block .number .right p .right_item,
+              #home .container .tab_content .spb_page .tab_content_block .number .left p .right_item,
+              #home .container .tab_content .spb_page .tab_content_block .number .right p .right_item,
+              #home .container .tab_content .reg_page .tab_content_block .number .left p .right_item,
+              #home .container .tab_content .reg_page .tab_content_block .number .right p .right_item {
+                font: 13em "BebasNeueRegular";
+                letter-spacing: 0.1em;
+                margin-left: 0.1em; }
+              #home .container .tab_content .moscow_page .tab_content_block .number .left p .rub,
+              #home .container .tab_content .moscow_page .tab_content_block .number .right p .rub,
+              #home .container .tab_content .spb_page .tab_content_block .number .left p .rub,
+              #home .container .tab_content .spb_page .tab_content_block .number .right p .rub,
+              #home .container .tab_content .reg_page .tab_content_block .number .left p .rub,
+              #home .container .tab_content .reg_page .tab_content_block .number .right p .rub {
+                display: inline-block;
+                width: 5.6em;
+                height: 6.3em;
+                background: url(../img/rub.png) no-repeat;
+                -webkit-background-size: contain;
+                        background-size: contain;
+                position: absolute;
+                top: 7em; }
+          #home .container .tab_content .moscow_page .tab_content_block .number .left,
+          #home .container .tab_content .spb_page .tab_content_block .number .left,
+          #home .container .tab_content .reg_page .tab_content_block .number .left {
+            padding-left: 1.5em; }
+          #home .container .tab_content .moscow_page .tab_content_block .number .right,
+          #home .container .tab_content .spb_page .tab_content_block .number .right,
+          #home .container .tab_content .reg_page .tab_content_block .number .right {
+            -webkit-align-self: flex-start;
+                -ms-flex-item-align: start;
+                    align-self: flex-start;
+            padding-top: 18em;
+            margin-right: 6em; }
+            #home .container .tab_content .moscow_page .tab_content_block .number .right .do,
+            #home .container .tab_content .spb_page .tab_content_block .number .right .do,
+            #home .container .tab_content .reg_page .tab_content_block .number .right .do {
+              font: 8em "BebasNeueRegular";
+              letter-spacing: 0em;
+              padding-left: 0.3em;
+              padding-right: 0.2em; }
+            #home .container .tab_content .moscow_page .tab_content_block .number .right .more,
+            #home .container .tab_content .spb_page .tab_content_block .number .right .more,
+            #home .container .tab_content .reg_page .tab_content_block .number .right .more {
+              font: 4.5em "BebasNeueBook";
+              letter-spacing: 0.1em;
+              text-align: right;
+              padding-top: 7em;
+              padding-bottom: 0.2em; }
+            #home .container .tab_content .moscow_page .tab_content_block .number .right .number,
+            #home .container .tab_content .spb_page .tab_content_block .number .right .number,
+            #home .container .tab_content .reg_page .tab_content_block .number .right .number {
+              font: 8em "BebasNeueRegular";
+              letter-spacing: 0.11em;
+              color: #464646;
+              text-align: right;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: end;
+              -webkit-justify-content: flex-end;
+                  -ms-flex-pack: end;
+                      justify-content: flex-end; }
+    #home .container .tab_content .reg_page .tab_content_block .number {
+      -webkit-box-pack: justify !important;
+      -webkit-justify-content: space-between !important;
+          -ms-flex-pack: justify !important;
+              justify-content: space-between !important; }
+    #home .container .tab_content .reg_page .left {
+      -webkit-align-self: flex-start !important;
+          -ms-flex-item-align: start !important;
+              align-self: flex-start !important;
+      margin-left: 45em; }
+    #home .container .tab_content .reg_page .right {
+      -webkit-align-self: flex-end !important;
+          -ms-flex-item-align: end !important;
+              align-self: flex-end !important; }
+      #home .container .tab_content .reg_page .right .right_top {
+        padding-right: 50em; }
+      #home .container .tab_content .reg_page .right .left_item {
+        margin-left: 0; }
+      #home .container .tab_content .reg_page .right .more {
+        padding-top: 3.9em !important; }
+      #home .container .tab_content .reg_page .right .number {
+        -webkit-box-pack: end !important;
+        -webkit-justify-content: flex-end !important;
+            -ms-flex-pack: end !important;
+                justify-content: flex-end !important; }
+    #home .container .tab_content .reg_page .tab_content_block h2 {
+      font: 19.5em "BebasNeueBold";
+      color: #fff;
+      letter-spacing: 0em;
+      padding-left: 0.5em;
+      padding-top: 2.3em;
+      padding-bottom: 0.3em; }
+      #home .container .tab_content .reg_page .tab_content_block h2 span {
+        font-family: "BebasNeueBook";
+        padding-right: 0.4em;
+        letter-spacing: .1em; }
+  #home .container .tab_name {
+    position: absolute;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    bottom: 10em;
+    margin: 0 -15px; }
+    #home .container .tab_name .top {
+      text-align: center;
+      font: 3.5em "BebasNeueRegular";
+      color: #595c5f;
+      letter-spacing: 4.5em;
+      padding-left: 4.5em; }
+    #home .container .tab_name .tab_names {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-top: 3em; }
+      #home .container .tab_name .tab_names p {
+        font: 5.3em "BebasNeueRegular";
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        #home .container .tab_name .tab_names p span {
+          display: block;
+          position: absolute;
+          background: url(../img/active_flag.svg) no-repeat;
+          -webkit-background-size: contain;
+                  background-size: contain;
+          height: 0.7em;
+          width: 0.7em;
+          bottom: -1em;
+          left: 50%;
+          margin-left: -0.35em;
+          display: none; }
+      #home .container .tab_name .tab_names .active span {
+        display: block; }
+      #home .container .tab_name .tab_names .line {
+        height: 2px;
+        background-color: #fff;
+        width: 25em;
+        margin: 0 3em; }
+
+@media screen and (max-width: 1200px) {
+  #home .container {
+    min-height: 624px; }
+  #home .container .tab_content .home_page .bg_tab {
+    width: 95%;
+    left: 2.5%; }
+  #home .container .tab_content .home_page .tab_content_block h2 {
+    letter-spacing: 0.4em; } }
+
+@media screen and (max-width: 1023px) {
+  #home .container .tab_name .tab_names p {
+    font-size: 7em; }
+  #home .container {
+    min-height: 576px; } }
+
+@media screen and (max-width: 767px) {
+  #home .container {
+    min-height: 400px; } }
+
+@media screen and (max-width: 567px) {
+  #home .container {
+    min-height: 568px; }
+  .bg_page_other .txt_bg .spb p {
+    font-size: 27em;
+    padding-bottom: 3em; }
+  #home .container .tab_content .moscow_page .tab_content_block .number,
+  #home .container .tab_content .spb_page .tab_content_block .number,
+  #home .container .tab_content .reg_page .tab_content_block .number {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #home .container .tab_content .moscow_page .tab_content_block .number .top,
+  #home .container .tab_content .spb_page .tab_content_block .number .top,
+  #home .container .tab_content .reg_page .tab_content_block .number .top {
+    padding-bottom: 0.25em; }
+  #home .container .tab_content .moscow_page .tab_content_block .number .left p .left_item,
+  #home .container .tab_content .moscow_page .tab_content_block .number .right p .left_item,
+  #home .container .tab_content .spb_page .tab_content_block .number .left p .left_item,
+  #home .container .tab_content .spb_page .tab_content_block .number .right p .left_item,
+  #home .container .tab_content .reg_page .tab_content_block .number .left p .left_item,
+  #home .container .tab_content .reg_page .tab_content_block .number .right p .left_item {
+    font-size: 8em; }
+  #home .container .tab_content .home_page .tab_content_block .number {
+    font-size: 100em; }
+  #home .container .tab_content .home_page .tab_content_block .bottom {
+    font-size: 7.15em;
+    letter-spacing: 1.2em;
+    padding-left: 3em;
+    padding-top: 0.8em; }
+  #home .container .tab_content .home_page .tab_content_block .bottom span {
+    letter-spacing: 1.25em; }
+  #home .container .tab_content .moscow_page .tab_content_block .number .right,
+  #home .container .tab_content .spb_page .tab_content_block .number .right {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    padding-top: 0;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-right: 0; }
+  #home .container .tab_content .moscow_page .tab_content_block .number .left,
+  #home .container .tab_content .spb_page .tab_content_block .number .left {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  #home .container .tab_content .home_page .tab_content_block h2 {
+    line-height: 170%;
+    font-size: 13em;
+    padding-top: 0; }
+  #home .container .tab_content .moscow_page .tab_content_block h2,
+  #home .container .tab_content .spb_page .tab_content_block h2,
+  #home .container .tab_content .reg_page .tab_content_block h2 {
+    letter-spacing: 0.7em;
+    margin-bottom: 2em;
+    padding-top: 0em; }
+  #home .container .tab_content .moscow_page .tab_content_block .number .right .more,
+  #home .container .tab_content .spb_page .tab_content_block .number .right .more,
+  #home .container .tab_content .reg_page .tab_content_block .number .right .more {
+    text-align: center;
+    padding-top: 2em;
+    font-size: 7em; }
+  #home .container .tab_content .moscow_page .tab_content_block .number .center,
+  #home .container .tab_content .spb_page .tab_content_block .number .center,
+  #home .container .tab_content .reg_page .tab_content_block .number .center {
+    padding-left: 0; }
+  #home .container .tab_content .moscow_page .tab_content_block .number .num {
+    padding-right: 0.08em; }
+  #home .container .tab_content .moscow_page .bg_city p {
+    font-size: 50em; }
+  #home .container .tab_content .spb_page .bg_city p {
+    font-size: 25em;
+    padding-top: 0em; }
+  #home .container .tab_content .reg_page .tab_content_block h2 {
+    font-size: 14em;
+    margin-bottom: 1em; }
+  #home .container .tab_content .reg_page .tab_content_block .number {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  #home .container .tab_content .reg_page .tab_content_block .number .left {
+    margin: 0;
+    -webkit-align-self: center !important;
+        -ms-flex-item-align: center !important;
+            align-self: center !important; }
+  #home .container .tab_content .moscow_page .tab_content_block .number .right .number,
+  #home .container .tab_content .spb_page .tab_content_block .number .right .number,
+  #home .container .tab_content .reg_page .tab_content_block .number .right .number {
+    font-size: 10em;
+    letter-spacing: 0.13em; }
+  #home .container .tab_content .reg_page .tab_content_block .number .right p {
+    padding: 0; }
+  #home .container .tab_content .reg_page .tab_content_block .number .right .more {
+    padding-top: 10.2em !important; }
+  #home .container .tab_content .reg_page .tab_content_block .number .right {
+    margin: 0;
+    -webkit-align-self: center !important;
+        -ms-flex-item-align: center !important;
+            align-self: center !important; }
+  #home .container .tab_name .top {
+    letter-spacing: 2em;
+    padding-left: 2em;
+    font-size: 8em; }
+  #home .container .tab_name .tab_names p {
+    font-size: 12em; }
+  #home .container .tab_name .tab_names .line {
+    width: 10em; }
+  #wrapper {
+    width: 100%; }
+  #home .container .tab_name {
+    bottom: 25em; }
+  #home .container .tab_name .tab_names p span {
+    bottom: -0.8em; }
+  #home .container .tab_content .moscow_page .tab_content_block h2,
+  #home .container .tab_content .spb_page .tab_content_block h2 {
+    margin-bottom: 0.8em; }
+  #home .container .tab_content .moscow_page .tab_content_block .number .right .more,
+  #home .container .tab_content .spb_page .tab_content_block .number .right .more {
+    padding-top: 1em; } }
+
+@media screen and (max-width: 567px) and (max-height: 568px) {
+  #wrapper {
+    position: relative; }
+  body {
+    overflow: visible; } }

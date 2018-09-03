@@ -120,13 +120,31 @@
                                 cursor: pointer;
                             }
                             p {
-                                font: 3em "BebasNeueBook";
+                                font: 3.8em "BebasNeueBook";
                                 color: #afafaf;
                                 padding-top: 0.7em;
                                 text-align: center;
                                 word-spacing: 0.2em;
                                 cursor: pointer;
                             }
+                             &:hover {
+                            img {
+                                opacity: 1;
+                            }
+                        }
+                        }
+                        .colored {
+                            .after {
+                                display: none;
+                            }
+                        }
+                        .colored_hover {
+                                .before {
+                                    display: none;
+                                }
+                                .after {
+                                    display: block;
+                                }
                         }
                         .active {
                             img {

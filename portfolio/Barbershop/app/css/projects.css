@@ -153,12 +153,20 @@
               max-width: 100%;
               cursor: pointer; }
             #projects .container .home_page_projects .page_content .bottom_projects .projects_content .block p {
-              font: 3em "BebasNeueBook";
+              font: 3.8em "BebasNeueBook";
               color: #afafaf;
               padding-top: 0.7em;
               text-align: center;
               word-spacing: 0.2em;
               cursor: pointer; }
+            #projects .container .home_page_projects .page_content .bottom_projects .projects_content .block:hover img {
+              opacity: 1; }
+          #projects .container .home_page_projects .page_content .bottom_projects .projects_content .colored .after {
+            display: none; }
+          #projects .container .home_page_projects .page_content .bottom_projects .projects_content .colored_hover .before {
+            display: none; }
+          #projects .container .home_page_projects .page_content .bottom_projects .projects_content .colored_hover .after {
+            display: block; }
           #projects .container .home_page_projects .page_content .bottom_projects .projects_content .active img {
             opacity: 1; }
           #projects .container .home_page_projects .page_content .bottom_projects .projects_content .active p {

@@ -96,3 +96,19 @@ $("#navigation .link").click(function(event) {
     $(this).removeClass("link");
     $(".tab_page").hide().eq($(this).index()).fadeIn(1000).addClass("animated")
 }).eq(0).addClass("active ");
+
+
+$("#projects .colored").hover(function() {
+    if ( $(this).hasClass("active") ) {
+
+    } else {
+        $(this).toggleClass("colored_hover");
+    }
+});
+
+$("#projects .block").click(function() {
+    $("#projects .colored").removeClass("colored_hover");
+    $("#projects .colored").removeClass("active");
+    $(this).addClass("colored_hover");
+    $(this).addClass("active");
+});

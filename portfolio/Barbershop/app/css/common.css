@@ -52,6 +52,8 @@ body {
 .container {
   min-width: 320px;
   max-width: 1480px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0 auto;
   padding: 0 15px; }
 
@@ -363,7 +365,9 @@ p {
 
 @media screen and (max-width: 1519px) {
   .container {
-    max-width: 1200px; } }
+    max-width: 1200px; }
+  #projects .container .home_page_projects .page_content .bottom_projects .projects_content .block p {
+    font-size: 4.2em !important; } }
 
 @media screen and (min-width: 1400px) {
   .bg_topgun .bg {
@@ -454,7 +458,9 @@ p {
             justify-content: space-between;
     margin-top: 0;
     height: 100%;
-    padding: 100px 0; }
+    padding: 100px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   #navigation a {
     font-size: 15em; }
   #header .container .header_top .left p {

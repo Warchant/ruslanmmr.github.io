@@ -1,0 +1,132 @@
+@media screen and (min-width: 1400px) {
+	.bg_topgun .bg {
+		width: 1370px;
+		margin: 0 auto;
+	}
+	.bg_page_other .txt_bg .invest .bg .bg_content {
+		width: 1370px !important;
+	}
+}
+// ≥1200px
+@media screen and (max-width: 1200px) {
+	 .container {
+	  	max-width: 1024px;
+	  }
+	  #lang_block {
+   	top: auto;
+   	bottom: 3em !important;
+   }
+   #lang_block a {
+   	  font-size: 8em;
+   }
+    #contacts_tab .container .footer {
+         flex-direction: column;
+         width: 95%;
+        left: 2.5%;
+	  }
+	  #contacts_tab .bg_tab .container .bg {
+         width: 95%;
+        left: 2.5%;
+	  }
+
+}
+
+// ≥992px
+@media screen and (max-width: 1023px) {
+   .container {
+	  	max-width: 768px;
+	  }
+	  body {
+	  	font-size: 2.4px;
+	  }
+	  #navigation a {
+	  	font-size: 7em;
+	  }
+	  #navigation {
+	  	margin-top: 42em;
+	  }
+}
+
+// ≥768px
+@media screen and (max-width: 767px) {
+   .container {
+	  	max-width: 568px;
+	  }
+	  body {
+	  	font-size: 1.8px;
+	  }
+	  #header .container .navigation {
+        margin: 0 -10px;
+	  }
+	  #header .container .navigation nav {
+        width: 100%;
+	  }
+	  #header .container .navigation ul {
+	  	width: 100%;
+	  	justify-content: space-between;
+	  	flex-flow: row wrap;
+	  }
+	  #header .container .navigation li {
+	  	margin: 0 10px;
+	  }
+}
+
+// ≥576px
+@media screen and (max-width: 567px) {
+    #header .container .header_top .right {
+    	display: none;
+    }
+    #contacts_tab .container {
+    	font-size: 2.4px;
+    }
+    .nav-btn {
+    	display: block;
+    }  
+    #navigation {
+       min-height: 100%;
+       background: #101011;
+       left: -100%;
+       margin-top: 0;
+       position: fixed;
+    }
+    #navigation ul {
+    	flex-direction: column;
+    	align-items: center;
+    	justify-content: space-between;
+    	margin-top: 0;
+    	height: 100%;
+    	padding: 100px 0;
+    }
+    #navigation a {
+    font-size: 15em;
+    }
+    #header .container .header_top .left p {
+    	font-size: 9em;
+    }
+    #header .container .header_top .left {
+		display: none;
+	}
+	#lang_block {
+		right: auto;
+		bottom: auto !important;
+		left: 15px;
+		top: 25px;
+	}
+	#wrapper {
+		min-height: 300px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#contacts_tab .bg_portret {
+		width: 130em;
+		height: 130em;
+	}
+	#contacts_tab .container .bottom_block .second {
+		padding-bottom: 5em;
+	}
+}
+
+@media screen and (max-height: 480px) {
+}
+
