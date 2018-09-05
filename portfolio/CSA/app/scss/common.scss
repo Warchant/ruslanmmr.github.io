@@ -275,10 +275,10 @@ body {
                         position: relative;
                         a {
                             display: block;
-                            width: 63px;
-                            height: 16px;
-                            background: url(../img/icon_first.png);
-                            background-position: -10px -10px !important;
+                        text-decoration: none;
+                        font: 1.8em "HelveticaNeueCyrBold";
+                        color: #000;
+                        line-height: 0.9em;
                         }
                     }
                 }
@@ -365,11 +365,8 @@ body {
 }
 
 #header_nav .container .header_nav_transformed {
-            .right_section ul li a, .left_section .fr_link a {
+            .right_section ul li a, .left_section .fr_link a, .left_section .first_link .link a {
                 color: #f4ea48;
-            }
-            .left_section .first_link .link a {
-                background: url(../img/icon_second.png);
             }
             .left_section .icons_block .link1 a {
                 background: url(../img/icon_second.png);
@@ -391,7 +388,7 @@ body {
     }
 }
 
-#header_nav .container .header_nav .left_section .icons_block .icon .active_icon, #header_nav .container .header_nav .left_section .first_link .icon .active_icon  {
+#header_nav .container .header_nav .left_section .icons_block .icon .active_icon  {
      background: url(../img/icon_active.png);
 }
 

@@ -353,10 +353,10 @@ body {
             position: relative; }
             #header_nav .container .header_nav .left_section .first_link .link a {
               display: block;
-              width: 63px;
-              height: 16px;
-              background: url(../img/icon_first.png);
-              background-position: -10px -10px !important; }
+              text-decoration: none;
+              font: 1.8em "HelveticaNeueCyrBold";
+              color: #000;
+              line-height: 0.9em; }
         #header_nav .container .header_nav .left_section .icons_block {
           display: -webkit-box;
           display: -webkit-flex;
@@ -432,11 +432,8 @@ body {
 #header_top .container .header_top_transformed .lang a, #header_top .container .header_top_transformed .lang p {
   color: #f4ea48; }
 
-#header_nav .container .header_nav_transformed .right_section ul li a, #header_nav .container .header_nav_transformed .left_section .fr_link a {
+#header_nav .container .header_nav_transformed .right_section ul li a, #header_nav .container .header_nav_transformed .left_section .fr_link a, #header_nav .container .header_nav_transformed .left_section .first_link .link a {
   color: #f4ea48; }
-
-#header_nav .container .header_nav_transformed .left_section .first_link .link a {
-  background: url(../img/icon_second.png); }
 
 #header_nav .container .header_nav_transformed .left_section .icons_block .link1 a {
   background: url(../img/icon_second.png); }
@@ -453,7 +450,7 @@ body {
 .active_link .bg {
   opacity: 1; }
 
-#header_nav .container .header_nav .left_section .icons_block .icon .active_icon, #header_nav .container .header_nav .left_section .first_link .icon .active_icon {
+#header_nav .container .header_nav .left_section .icons_block .icon .active_icon {
   background: url(../img/icon_active.png); }
 
 @media screen and (max-width: 1240px) {
