@@ -431,7 +431,11 @@ p {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap; }
   #header .container .navigation li {
-    margin: 0 10px; } }
+    margin: 0 10px; }
+  #header .container .header_top #lang_block {
+    font-size: 2.5px;
+    top: 5em;
+    right: auto; } }
 
 @media screen and (max-width: 567px) {
   #header .container .header_top .right {
