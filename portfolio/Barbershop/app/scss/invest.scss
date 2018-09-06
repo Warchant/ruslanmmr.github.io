@@ -101,13 +101,85 @@
                 margin-left: 8em;
                 .bg_monet {
                     position: absolute;
-                    background: url(../img/monet.png) no-repeat;
                     width: 68em;
                     height: 68em;
-                    background-size: contain;
                     left: -45%;
                     bottom: -5%;
-                    animation: 30s linear 0s normal none infinite running rot;
+                    transform-style: preserve-3d;
+                    animation: main-rotate 10s infinite linear;
+                    border-radius: 50%;
+                    perspective: 100%;
+                    .front1, .front2, .front3, .front4, .front5, .front6, .front7, .front8, .front9, .front10,
+                    .front11, .front12, .front13, .front14, .front15, .front16, .front17, .front18, .front19, .front20 {
+                        width: 100%;
+                        height: 100%;
+                        background: url(../img/monet.png) no-repeat;
+                        background-size: contain;
+                        position: absolute;
+                        border-radius: 100%;
+                    }
+                    .front2 {
+                        transform: translateZ(-0.1em);
+                    }
+                    .front3 {
+                        transform: translateZ(-0.2em);
+                    }
+                    .front4 {
+                        transform: translateZ(-0.3em);
+                    }
+                    .front5 {
+                        transform: translateZ(-0.4em);
+                    }
+                    .front6 {
+                        transform: translateZ(-0.5em);
+                    }
+                    .front7 {
+                        transform: translateZ(-0.6em);
+                    }
+                    .front8 {
+                        transform: translateZ(-0.7em);
+                    }
+                    .front9 {
+                        transform: translateZ(-0.8em);
+                    }
+                    .front10 {
+                        transform: translateZ(-0.9em);
+                    }
+                    .front11 {
+                        transform: translateZ(-1em);
+                    }
+                    .front12 {
+                        transform: translateZ(-1.2em);
+                    }
+                    .front13 {
+                        transform: translateZ(-1.3em);
+                    }
+                    .front14 {
+                        transform: translateZ(-1.4em);
+                    }
+                    .front15 {
+                        transform: translateZ(-1.5em);
+                    }
+                    .front16 {
+                        transform: translateZ(-1.6em);
+                    }
+                    .front17 {
+                        transform: translateZ(-1.7em);
+                    }
+                    .front18 {
+                        transform: translateZ(-1.8em);
+                    }
+                    .front19 {
+                        transform: translateZ(-1.9em);
+                    }
+                    .front20 {
+                        transform: translateZ(-2em);
+                    }
+                    @keyframes main-rotate {
+                        100% {
+                            transform: rotateY(360deg);
+                        }
+                    }
                 }
                 .top_item {
                     p {
@@ -194,17 +266,16 @@
 }
 
 @keyframes rot {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 @media screen and (max-width: 1200px) {
-    #invest .container
-     {
+    #invest .container {
         min-height: 624px;
     }
     #invest .container .content .center_section .bg_monet {
@@ -241,7 +312,7 @@
         text-align: center;
     }
     #invest .container .content .left_section .top_item {
-       margin-left: -5em;
+        margin-left: -5em;
     }
     #invest .container .content .left_section {
         order: 2;
@@ -283,29 +354,31 @@
         padding-top: 0.05em;
     }
     #invest .container .content .center_section .bg_monet {
-         width: 30em;
-         height: 30em;
-         left: -8em;
-         bottom: 10em;
+        width: 30em;
+        height: 30em;
+        left: -8em;
+        bottom: 10em;
     }
     @media screen and (max-height: 660px) {
-          #invest .container .content .center_section {
+        #invest .container .content .center_section {
             font-size: 0.7em;
             padding-top: 50em;
-          }
-          #invest .container .content {
+        }
+        #invest .container .content {
             padding-top: 0em;
             height: 100%;
-          }
+        }
     }
     @media screen and (max-height: 560px) {
-          #invest .container .content .center_section {
+        #invest .container .content .center_section {
             font-size: 0.5em;
             padding-top: 70em;
-          }
-          #home .container .tab_content .moscow_page .tab_content_block .number .center, #home .container .tab_content .spb_page .tab_content_block .number .center, #home .container .tab_content .reg_page .tab_content_block .number .center {
+        }
+        #home .container .tab_content .moscow_page .tab_content_block .number .center,
+        #home .container .tab_content .spb_page .tab_content_block .number .center,
+        #home .container .tab_content .reg_page .tab_content_block .number .center {
             font-size: 0.7em;
-          }
+        }
     }
 }
 

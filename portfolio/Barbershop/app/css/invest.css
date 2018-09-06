@@ -106,15 +106,95 @@
         margin-left: 8em; }
         #invest .container .content .center_section .bg_monet {
           position: absolute;
-          background: url(../img/monet.png) no-repeat;
           width: 68em;
           height: 68em;
-          -webkit-background-size: contain;
-                  background-size: contain;
           left: -45%;
           bottom: -5%;
-          -webkit-animation: 30s linear 0s normal none infinite running rot;
-                  animation: 30s linear 0s normal none infinite running rot; }
+          -webkit-transform-style: preserve-3d;
+                  transform-style: preserve-3d;
+          -webkit-animation: main-rotate 10s infinite linear;
+                  animation: main-rotate 10s infinite linear;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          -webkit-perspective: 100%;
+                  perspective: 100%; }
+          #invest .container .content .center_section .bg_monet .front1, #invest .container .content .center_section .bg_monet .front2, #invest .container .content .center_section .bg_monet .front3, #invest .container .content .center_section .bg_monet .front4, #invest .container .content .center_section .bg_monet .front5, #invest .container .content .center_section .bg_monet .front6, #invest .container .content .center_section .bg_monet .front7, #invest .container .content .center_section .bg_monet .front8, #invest .container .content .center_section .bg_monet .front9, #invest .container .content .center_section .bg_monet .front10,
+          #invest .container .content .center_section .bg_monet .front11, #invest .container .content .center_section .bg_monet .front12, #invest .container .content .center_section .bg_monet .front13, #invest .container .content .center_section .bg_monet .front14, #invest .container .content .center_section .bg_monet .front15, #invest .container .content .center_section .bg_monet .front16, #invest .container .content .center_section .bg_monet .front17, #invest .container .content .center_section .bg_monet .front18, #invest .container .content .center_section .bg_monet .front19, #invest .container .content .center_section .bg_monet .front20 {
+            width: 100%;
+            height: 100%;
+            background: url(../img/monet.png) no-repeat;
+            -webkit-background-size: contain;
+                    background-size: contain;
+            position: absolute;
+            -webkit-border-radius: 100%;
+                    border-radius: 100%; }
+          #invest .container .content .center_section .bg_monet .front2 {
+            -webkit-transform: translateZ(-0.1em);
+                    transform: translateZ(-0.1em); }
+          #invest .container .content .center_section .bg_monet .front3 {
+            -webkit-transform: translateZ(-0.2em);
+                    transform: translateZ(-0.2em); }
+          #invest .container .content .center_section .bg_monet .front4 {
+            -webkit-transform: translateZ(-0.3em);
+                    transform: translateZ(-0.3em); }
+          #invest .container .content .center_section .bg_monet .front5 {
+            -webkit-transform: translateZ(-0.4em);
+                    transform: translateZ(-0.4em); }
+          #invest .container .content .center_section .bg_monet .front6 {
+            -webkit-transform: translateZ(-0.5em);
+                    transform: translateZ(-0.5em); }
+          #invest .container .content .center_section .bg_monet .front7 {
+            -webkit-transform: translateZ(-0.6em);
+                    transform: translateZ(-0.6em); }
+          #invest .container .content .center_section .bg_monet .front8 {
+            -webkit-transform: translateZ(-0.7em);
+                    transform: translateZ(-0.7em); }
+          #invest .container .content .center_section .bg_monet .front9 {
+            -webkit-transform: translateZ(-0.8em);
+                    transform: translateZ(-0.8em); }
+          #invest .container .content .center_section .bg_monet .front10 {
+            -webkit-transform: translateZ(-0.9em);
+                    transform: translateZ(-0.9em); }
+          #invest .container .content .center_section .bg_monet .front11 {
+            -webkit-transform: translateZ(-1em);
+                    transform: translateZ(-1em); }
+          #invest .container .content .center_section .bg_monet .front12 {
+            -webkit-transform: translateZ(-1.2em);
+                    transform: translateZ(-1.2em); }
+          #invest .container .content .center_section .bg_monet .front13 {
+            -webkit-transform: translateZ(-1.3em);
+                    transform: translateZ(-1.3em); }
+          #invest .container .content .center_section .bg_monet .front14 {
+            -webkit-transform: translateZ(-1.4em);
+                    transform: translateZ(-1.4em); }
+          #invest .container .content .center_section .bg_monet .front15 {
+            -webkit-transform: translateZ(-1.5em);
+                    transform: translateZ(-1.5em); }
+          #invest .container .content .center_section .bg_monet .front16 {
+            -webkit-transform: translateZ(-1.6em);
+                    transform: translateZ(-1.6em); }
+          #invest .container .content .center_section .bg_monet .front17 {
+            -webkit-transform: translateZ(-1.7em);
+                    transform: translateZ(-1.7em); }
+          #invest .container .content .center_section .bg_monet .front18 {
+            -webkit-transform: translateZ(-1.8em);
+                    transform: translateZ(-1.8em); }
+          #invest .container .content .center_section .bg_monet .front19 {
+            -webkit-transform: translateZ(-1.9em);
+                    transform: translateZ(-1.9em); }
+          #invest .container .content .center_section .bg_monet .front20 {
+            -webkit-transform: translateZ(-2em);
+                    transform: translateZ(-2em); }
+
+@-webkit-keyframes main-rotate {
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg); } }
+
+@keyframes main-rotate {
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg); } }
         #invest .container .content .center_section .top_item p {
           font: 16.3em "BebasNeueRegular";
           color: #fff;
@@ -300,7 +380,9 @@
   #invest .container .content .center_section {
     font-size: 0.5em;
     padding-top: 70em; }
-  #home .container .tab_content .moscow_page .tab_content_block .number .center, #home .container .tab_content .spb_page .tab_content_block .number .center, #home .container .tab_content .reg_page .tab_content_block .number .center {
+  #home .container .tab_content .moscow_page .tab_content_block .number .center,
+  #home .container .tab_content .spb_page .tab_content_block .number .center,
+  #home .container .tab_content .reg_page .tab_content_block .number .center {
     font-size: 0.7em; } }
 
 @media screen and (max-width: 400px) {
