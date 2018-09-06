@@ -129,13 +129,15 @@ $("#navigation .link").click(function(event) {
 }).eq(0).addClass("active ");
 
 
-$("#projects .colored").hover(function() {
+if (document.documentElement.clientWidth > 568) {
+        $("#projects .colored").hover(function() {
     if ($(this).hasClass("active")) {
 
     } else {
         $(this).toggleClass("colored_hover");
     }
 });
+    }
 
 $("#projects .block").click(function() {
     $("#projects .colored").removeClass("colored_hover");
