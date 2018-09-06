@@ -79,6 +79,14 @@ $('#navigation .hidden_txt').click(function() {
     $(".bg_page_other .msk, .bg_page_other .spb, .bg_page_other .reg, .bg_page_other .invest").hide();
 });
 
+$('body, html, #wrapper, .container').addClass("mobile_display")
+$('#navigation .link1, #navigation .link2, #navigation .link5, #header .logo a').click(function() {
+    $('body, html, #wrapper, .container').addClass("mobile_display")
+});
+$('#navigation .link3, #navigation .link4').click(function() {
+    $('body, html, #wrapper, .container').removeClass("mobile_display")
+});
+
 
 //табы проектов
 $("#projects .img .img_box").hide();

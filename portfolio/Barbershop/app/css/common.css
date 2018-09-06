@@ -57,6 +57,9 @@ body {
   margin: 0 auto;
   padding: 0 15px; }
 
+.mobile_display {
+  height: 100% !important; }
+
 body {
   font-size: 3px;
   min-width: 320px; }
@@ -69,7 +72,7 @@ p {
   margin: 0; }
 
 .bg_topgun {
-  position: absolute;
+  position: fixed;
   width: -webkit-calc(100% - 30px);
   width: calc(100% - 30px);
   z-index: 2;

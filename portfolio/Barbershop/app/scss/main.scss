@@ -402,9 +402,20 @@
 }
 
 @media screen and (max-width: 567px) {
-
     #home .container {
-        min-height: 568px;
+        min-height: 520px;
+    }
+    #home .container .tab_content .moscow_page .tab_content_block .number .right .more, #home .container .tab_content .spb_page .tab_content_block .number .right .more {
+        padding-top: 0 !important;
+    }
+    #home .container .tab_name {
+        bottom: 15em !important;
+    }
+    #home .container .tab_content .moscow_page .tab_content_block h2, #home .container .tab_content .spb_page .tab_content_block h2 {
+        margin-top: 0 !important;
+    }
+    #home .container .tab_content .home_page .tab_content_block .number {
+        padding-top: 0.07em;
     }
     .bg_page_other .txt_bg .spb p {
         font-size: 27em;
@@ -508,7 +519,7 @@
         padding: 0;
     }
     #home .container .tab_content .reg_page .tab_content_block .number .right .more {
-        padding-top: 10.2em !important;
+        padding-top: 9em !important;
     }
     #home .container .tab_content .reg_page .tab_content_block .number .right {
         margin: 0;
