@@ -474,9 +474,7 @@
 
 @media screen and (max-width: 567px) and (max-height: 550px) {
   #home .container .tab_content .moscow_page .tab_content_block h2, #home .container .tab_content .spb_page .tab_content_block h2 {
-    margin: 0 !important; }
-  #home .container .tab_content .moscow_page .tab_content_block .number .left, #home .container .tab_content .spb_page .tab_content_block .number .left {
-    margin-top: -15px; } }
+    margin: 0 !important; } }
 
 @media screen and (max-width: 567px) {
   #home .container {
