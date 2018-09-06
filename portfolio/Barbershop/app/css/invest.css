@@ -259,16 +259,10 @@
               justify-content: center; } }
 
 @media screen and (max-width: 567px) {
-  body {
-    height: 100%; }
   .bg_page_other .txt_bg .invest .bg {
     display: none; }
   #invest .container .content .center_section .center_item p .last {
     padding-top: 0.05em; } }
-
-@media screen and (max-width: 567px) and (max-height: 700px) {
-  body {
-    height: auto; } }
 
 @media screen and (max-width: 400px) {
   #invest .container .content .left_section .top_item {

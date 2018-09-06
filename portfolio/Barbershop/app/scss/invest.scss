@@ -267,10 +267,6 @@
 }
 
 @media screen and (max-width: 567px) {
-   
-    body {
-        height: 100%;
-    }
     .bg_page_other .txt_bg .invest .bg {
         display: none;
     }
@@ -278,9 +274,7 @@
         padding-top: 0.05em;
     }
     @media screen and (max-height: 700px) {
-           body {
-        height: auto;
-    }
+          
     }
 }
 
