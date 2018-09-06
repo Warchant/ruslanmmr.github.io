@@ -88,9 +88,7 @@ if (document.documentElement.clientWidth < 568) {
     });
     $('#navigation .link3, #navigation .link4').click(function() {
         $('body, html, #wrapper, .container').removeClass("mobile_display");
-        setTimeout(function() {
             $('.bg_page_dop, .bg_topgun').addClass("bg_topgun_active");
-        }, 1000);
     });
 }
 
