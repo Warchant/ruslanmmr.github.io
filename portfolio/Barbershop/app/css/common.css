@@ -434,10 +434,11 @@ p {
     margin: 0 10px; }
   #header .container .header_top #lang_block {
     font-size: 2.5px;
-    top: 5em;
-    right: auto; } }
+    top: 5em; } }
 
 @media screen and (max-width: 567px) {
+  #header .container .header_top #lang_block {
+    right: auto; }
   #header .container .header_top .right {
     display: none; }
   #contacts_tab .container {
