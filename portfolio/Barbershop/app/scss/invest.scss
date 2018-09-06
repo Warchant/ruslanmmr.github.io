@@ -1,11 +1,6 @@
 #invest {
     position: relative;
     z-index: 2;
-    .container {
-        min-height: 100vh;
-        height: 100vh;
-        min-height: 624px;
-    }
 }
 
 .logo {
@@ -28,15 +23,16 @@
 }
 
 #invest {
+    height: 100%;
     .container {
         position: relative;
         .invest_page {
-            height: 100%;
             position: relative;
             display: flex;
             flex-flow: row wrap;
             align-items: center;
             justify-content: center;
+            height: 100%;
             .bg {
                 position: absolute;
                 z-index: 1;
@@ -60,7 +56,7 @@
             display: flex;
             width: 100%;
             justify-content: space-between;
-            padding-top: 73em;
+            padding-top: 45em;
             .left_section {
                 padding-top: 3.6em;
                 padding-left: 25em;
@@ -111,6 +107,7 @@
                     background-size: contain;
                     left: -45%;
                     bottom: -5%;
+                    animation: 30s linear 0s normal none infinite running rot;
                 }
                 .top_item {
                     p {
@@ -185,7 +182,7 @@
                     .number {
                         font: 8em "BebasNeueRegular";
                         letter-spacing: 0.11em;
-                        color: #464646;
+                        color: #fff;
                         text-align: right;
                         display: flex;
                         justify-content: flex-end;
@@ -196,13 +193,25 @@
     }
 }
 
+@keyframes rot {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
 @media screen and (max-width: 1200px) {
     #invest .container
      {
         min-height: 624px;
     }
     #invest .container .content .center_section .bg_monet {
-        display: none;
+        width: 50em;
+        height: 50em;
+        left: -28%;
+        bottom: 0;
     }
 }
 
@@ -273,8 +282,30 @@
     #invest .container .content .center_section .center_item p .last {
         padding-top: 0.05em;
     }
-    @media screen and (max-height: 700px) {
-          
+    #invest .container .content .center_section .bg_monet {
+         width: 30em;
+         height: 30em;
+         left: -8em;
+         bottom: 10em;
+    }
+    @media screen and (max-height: 660px) {
+          #invest .container .content .center_section {
+            font-size: 0.7em;
+            padding-top: 50em;
+          }
+          #invest .container .content {
+            padding-top: 0em;
+            height: 100%;
+          }
+    }
+    @media screen and (max-height: 560px) {
+          #invest .container .content .center_section {
+            font-size: 0.5em;
+            padding-top: 70em;
+          }
+          #home .container .tab_content .moscow_page .tab_content_block .number .center, #home .container .tab_content .spb_page .tab_content_block .number .center, #home .container .tab_content .reg_page .tab_content_block .number .center {
+            font-size: 0.7em;
+          }
     }
 }
 

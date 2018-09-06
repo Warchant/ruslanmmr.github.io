@@ -2,10 +2,6 @@
     position: relative;
     z-index: 2;
     height: 100%;
-    .container {
-        height: 100vh;
-        min-height: 624px;
-    }
 }
 
 #projects {
@@ -32,7 +28,7 @@
                 }
             .page_content {
                 position: relative;
-                margin-top: 55em;
+                margin-top: 53em;
                 z-index: 2;
                 display: flex;
                 flex-direction: column;
@@ -74,6 +70,9 @@
                                 z-index: 2;
                                  width: 100%;
                                  height: auto;
+                               }
+                               .last_img {
+                                   height: 100%;
                                }
                                .shadow {
                                 position: absolute;
@@ -165,21 +164,25 @@
 }
 
 @media screen and (min-width: 1520px) {
-      #projects .container {
-        min-height: 1020px;
-      }
       #projects .container .home_page_projects .page_content .bottom_projects .projects_content {
-        font-size: 6.3px;
+        font-size: 6px;
       }
 }
 
 
 @media screen and (max-width: 1200px) {
+    #projects .container .home_page_projects .page_content .bottom_projects .projects_content {
+        font-size: 2.5px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
     #projects .container {
         min-height: 1074px;
+    }
+    #projects .container .home_page_projects .page_content .center_block .img .img_box .img_content .last_img {
+        width: 100%;
+        height: auto;
     }
     #projects .container .home_page_projects .page_content .bottom_projects .projects_content {
         font-size: 2em;
@@ -211,7 +214,7 @@
         padding-top: 35em;
     }
     #projects .container .home_page_projects .page_content {
-        margin-top: 100em;
+        margin-top: 135em;
     }
 }
 

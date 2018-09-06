@@ -2,9 +2,15 @@
 	body {
 	  	font-size: 4px;
 	  }
+	  .content_site .container, html, body, #wrapprer {
+        min-height: 1020px;
+      }
 }
 
 @media screen and (max-width: 1519px) {
+	.content_site .container, html, body, #wrapprer {
+        min-height: 627px;
+      }
    	.container {
 		max-width: 1200px;
 	}

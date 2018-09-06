@@ -3,10 +3,6 @@
     position: relative;
     z-index: 2;
     height: 100%;
-    .container {
-        height: 100vh;
-        min-height: 624px;
-    }
 }
 
 .bg_page_home {
@@ -121,7 +117,7 @@
                     h2 {
                         font: 9.5em "BebasNeueRegular";
                         color: #fff;
-                        padding-top: 5.6em;
+                        padding-top: 3em;
                         span {
                             font-family: "BebasNeueBook";
                         }
@@ -167,7 +163,7 @@
                         color: #fff;
                         letter-spacing: 1.5em;
                         padding-left: 1.5em;
-                        padding-top: 7em;
+                        padding-top: 3em;
                         span {
                             font-family: "BebasNeueBook";
                         }
@@ -212,7 +208,7 @@
                                     padding-right: 0.15em;
                                 }
                                 .numb {
-                                    font: 22em "BebasNeueBold";
+                                    font: 30em "BebasNeueBold";
                                     letter-spacing: 0em;
                                 }
                                 .right_item {
@@ -227,7 +223,7 @@
                                     background: url(../img/rub.png) no-repeat;
                                     background-size: contain;
                                     position: absolute;
-                                    top: 7em;
+                                    top: 13em;
                                 }
                             }
                         }
@@ -295,8 +291,9 @@
                         color: #fff;
                         letter-spacing: 0em;
                         padding-left: 0.5em;
-                        padding-top: 2.3em;
-                        padding-bottom: 0.3em;
+                        padding-top: 1.15em;
+                        padding-bottom: 0em;
+                        margin-bottom: 0;
                         span {
                             font-family: "BebasNeueBook";
                             padding-right: 0.4em;
@@ -315,10 +312,10 @@
             margin: 0 -15px;
             .top {
                 text-align: center;
-                font: 3.5em "BebasNeueRegular";
+                font: 5em "BebasNeueRegular";
                 color: #595c5f;
-                letter-spacing: 4.5em;
-                padding-left: 4.5em;
+                letter-spacing: 3em;
+                padding-left: 3em;
             }
             .tab_names {
                 display: flex;
@@ -361,7 +358,6 @@
 
 @media screen and (min-width: 1520px) {
       #home .container {
-        min-height: 876px;
         overflow: hidden;
       }
 }
@@ -369,7 +365,7 @@
 @media screen and (max-width: 1519px) {
      #home .container .tab_content .moscow_page .tab_content_block h2,
        #home .container .tab_content .spb_page .tab_content_block h2 {
-        padding-top: 6em;
+        padding-top: 3em;
       }
 }
 

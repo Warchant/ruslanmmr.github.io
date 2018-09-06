@@ -2,9 +2,6 @@
   position: relative;
   z-index: 2;
   height: 100%; }
-  #projects .container {
-    height: 100vh;
-    min-height: 624px; }
 
 #projects .container {
   position: relative; }
@@ -39,7 +36,7 @@
         text-align: center; }
     #projects .container .home_page_projects .page_content {
       position: relative;
-      margin-top: 55em;
+      margin-top: 53em;
       z-index: 2;
       display: -webkit-box;
       display: -webkit-flex;
@@ -99,6 +96,8 @@
                 z-index: 2;
                 width: 100%;
                 height: auto; }
+              #projects .container .home_page_projects .page_content .center_block .img .img_box .img_content .last_img {
+                height: 100%; }
               #projects .container .home_page_projects .page_content .center_block .img .img_box .img_content .shadow {
                 position: absolute;
                 height: 0em;
@@ -175,14 +174,19 @@
         padding-top: 90em; }
 
 @media screen and (min-width: 1520px) {
-  #projects .container {
-    min-height: 1020px; }
   #projects .container .home_page_projects .page_content .bottom_projects .projects_content {
-    font-size: 6.3px; } }
+    font-size: 6px; } }
+
+@media screen and (max-width: 1200px) {
+  #projects .container .home_page_projects .page_content .bottom_projects .projects_content {
+    font-size: 2.5px; } }
 
 @media screen and (max-width: 1023px) {
   #projects .container {
     min-height: 1074px; }
+  #projects .container .home_page_projects .page_content .center_block .img .img_box .img_content .last_img {
+    width: 100%;
+    height: auto; }
   #projects .container .home_page_projects .page_content .bottom_projects .projects_content {
     font-size: 2em;
     -webkit-box-pack: center;
@@ -221,7 +225,7 @@
     top: 0;
     padding-top: 35em; }
   #projects .container .home_page_projects .page_content {
-    margin-top: 100em; } }
+    margin-top: 135em; } }
 
 @media screen and (max-width: 767px) {
   #projects .container {
