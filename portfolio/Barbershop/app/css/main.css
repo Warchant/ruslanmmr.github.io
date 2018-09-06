@@ -464,13 +464,7 @@
 
 @media screen and (max-width: 1023px) {
   #home .container .tab_name .tab_names p {
-    font-size: 7em; }
-  #home .container {
-    min-height: 576px; } }
-
-@media screen and (max-width: 767px) {
-  #home .container {
-    min-height: 400px; } }
+    font-size: 7em; } }
 
 @media screen and (max-width: 567px) and (max-height: 550px) {
   #home .container .tab_content .moscow_page .tab_content_block h2, #home .container .tab_content .spb_page .tab_content_block h2 {

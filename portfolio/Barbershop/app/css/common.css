@@ -91,8 +91,8 @@ p {
             background-size: contain; }
 
 .bg_topgun_active {
-  position: fixed !important;
-  height: 100vh !important; }
+  height: 100vh !important;
+  position: fixed !important; }
 
 .nav-btn {
   display: none;
@@ -480,9 +480,7 @@ p {
     right: auto;
     bottom: auto !important;
     left: 15px;
-    top: 25px; }
-  #wrapper {
-    min-height: 300px; } }
+    top: 25px; } }
 
 @media screen and (max-width: 480px) {
   #contacts_tab .bg_portret {

@@ -80,35 +80,30 @@ $('#navigation .hidden_txt').click(function() {
 });
 
 
-    if (document.documentElement.clientWidth < 568) {
+if (document.documentElement.clientWidth < 568) {
+    $('body, html, #wrapper, .content_site .container').addClass("mobile_display");
+    $('#navigation .link1, #navigation .link2, #navigation .link5, #header .logo a').click(function() {
         $('body, html, #wrapper, .content_site .container').addClass("mobile_display");
-        $('#navigation .link1, #navigation .link2, #navigation .link5, #header .logo a').click(function() {
-            $('body, html, #wrapper, .content_site .container').addClass("mobile_display")
-            $('.bg_topgun').removeClass("bg_topgun_active")
-        });
-        $('#navigation .link3, #navigation .link4').click(function() {
-            $('body, html, #wrapper, .container').removeClass("mobile_display")
-            $('.bg_topgun').addClass("bg_topgun_active")
-        });
-    }
+            $('.bg_page_dop, .bg_topgun').removeClass("bg_topgun_active");
+    });
+    $('#navigation .link3, #navigation .link4').click(function() {
+        $('body, html, #wrapper, .container').removeClass("mobile_display");
+        setTimeout(function() {
+            $('.bg_page_dop, .bg_topgun').addClass("bg_topgun_active");
+        }, 1000);
+    });
+}
 
-    if (document.documentElement.clientWidth < 1023) {
-        $('#navigation .link1, #navigation .link2, #navigation .link5, #header .logo a').click(function() {
-            $('.bg_topgun, .bg_page_dop').removeClass("bg_topgun_active")
-        });
-        $('#navigation .link3, #navigation .link4').click(function() {
-            $('.bg_topgun, .bg_page_dop').addClass("bg_topgun_active")
-        });
-    }
+
 
 if (document.documentElement.clientWidth > 568) {
-        $('#navigation .link2, #navigation .link3, #navigation .link5').click(function() {
-            $('#header .container .header_top .left').fadeOut();
-        });
-        $('#navigation .link1, #navigation .link4, #header .logo a').click(function() {
-           $('#header .container .header_top .left').fadeIn();
-        });
-    }
+    $('#navigation .link2, #navigation .link3, #navigation .link5').click(function() {
+        $('#header .container .header_top .left').fadeOut();
+    });
+    $('#navigation .link1, #navigation .link4, #header .logo a').click(function() {
+        $('#header .container .header_top .left').fadeIn();
+    });
+}
 
 
 //табы проектов
@@ -130,14 +125,14 @@ $("#navigation .link").click(function(event) {
 
 
 if (document.documentElement.clientWidth > 568) {
-        $("#projects .colored").hover(function() {
-    if ($(this).hasClass("active")) {
+    $("#projects .colored").hover(function() {
+        if ($(this).hasClass("active")) {
 
-    } else {
-        $(this).toggleClass("colored_hover");
-    }
-});
-    }
+        } else {
+            $(this).toggleClass("colored_hover");
+        }
+    });
+}
 
 $("#projects .block").click(function() {
     $("#projects .colored").removeClass("colored_hover");

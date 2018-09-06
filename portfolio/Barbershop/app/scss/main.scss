@@ -386,15 +386,9 @@
     #home .container .tab_name .tab_names p {
         font-size: 7em;
     }
-    #home .container {
-        min-height: 576px;
-    }
 }
 
 @media screen and (max-width: 767px) {
-    #home .container {
-        min-height: 400px;
-    }
 }
 
 @media screen and (max-width: 567px) {
