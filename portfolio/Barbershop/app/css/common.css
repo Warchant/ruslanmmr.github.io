@@ -499,7 +499,9 @@ p {
     right: auto;
     bottom: auto !important;
     left: 15px;
-    top: 25px; } }
+    top: 25px; }
+  .bg_page_other #scene {
+    display: none; } }
 
 @media screen and (max-width: 480px) {
   #contacts_tab .bg_portret {

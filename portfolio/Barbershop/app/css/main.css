@@ -23,6 +23,12 @@
     top: 0;
     left: 0;
     overflow: hidden; }
+    .bg_page_other #scene .bg_other {
+      width: 100%;
+      height: 100%;
+      background: url(../img/bg_moscov.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+              background-size: cover; }
     .bg_page_other #scene .bg_img {
       opacity: 0.05; }
       .bg_page_other #scene .bg_img img {
