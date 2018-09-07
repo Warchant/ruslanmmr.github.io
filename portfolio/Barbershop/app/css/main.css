@@ -14,12 +14,64 @@
 .bg_page_other {
   width: 100%;
   height: 100%;
-  position: absolute;
-  background: url(../img/bg_moscov.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-          background-size: cover; }
+  position: absolute; }
+  .bg_page_other #scene {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden; }
+    .bg_page_other #scene .bg_img {
+      opacity: 0.05; }
+      .bg_page_other #scene .bg_img img {
+        width: 100%;
+        height: auto; }
+    .bg_page_other #scene .img1 {
+      left: 5% !important;
+      top: 90% !important;
+      height: 70em;
+      width: 70em; }
+    .bg_page_other #scene .img2 {
+      right: 10% !important;
+      top: 10% !important;
+      height: 40em;
+      width: 40em; }
+    .bg_page_other #scene .img3 {
+      left: 20% !important;
+      top: 25% !important;
+      height: 70em;
+      width: 70em; }
+    .bg_page_other #scene .img4 {
+      left: 50% !important;
+      top: 30% !important;
+      height: 70em;
+      width: 70em; }
+    .bg_page_other #scene .img5 {
+      left: 10% !important;
+      top: 50% !important;
+      height: 70em;
+      width: 70em; }
+    .bg_page_other #scene .img6 {
+      left: 80% !important;
+      top: 90% !important;
+      height: 30em;
+      width: 30em; }
+    .bg_page_other #scene .img7 {
+      left: 50% !important;
+      top: 80% !important;
+      height: 45em;
+      width: 45em; }
+    .bg_page_other #scene .img8 {
+      left: 90% !important;
+      top: 10% !important;
+      height: 90em;
+      width: 90em; }
   .bg_page_other .txt_bg {
-    height: 100%; }
+    height: 100%;
+    position: relative;
+    z-index: 2; }
     .bg_page_other .txt_bg .msk {
       display: -webkit-box;
       display: -webkit-flex;

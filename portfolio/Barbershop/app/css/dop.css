@@ -131,7 +131,8 @@
             #dop .container .dop_page .top_section .left_item .item_content .block .bottom, #dop .container .dop_page .top_section .right_item .item_content .block .bottom {
               font: 2.8em "RobotoRegular";
               color: #999999;
-              text-decoration: underline; }
+              text-decoration: underline;
+              outline: none !important; }
       #dop .container .dop_page .top_section .right_item .item_content .block p {
         padding-top: 1.8em; }
     #dop .container .dop_page .center_section {

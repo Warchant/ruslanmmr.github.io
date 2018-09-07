@@ -17,10 +17,74 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background: url(../img/bg_moscov.jpg) no-repeat center center;
-    background-size: cover;
+    #scene {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        .bg_img {
+            opacity: 0.05;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .img1 {
+            left: 5% !important;
+            top: 90% !important;
+            height: 70em;
+            width: 70em;
+        }
+        .img2 {
+            right: 10% !important;
+            top: 10% !important;
+            height: 40em;
+            width: 40em;
+        }
+        .img3 {
+            left: 20% !important;
+            top: 25% !important;
+            height: 70em;
+            width: 70em;
+        }
+        .img4 {
+            left: 50% !important;
+            top: 30% !important;
+            height: 70em;
+            width: 70em;
+        }
+        .img5 {
+            left: 10% !important;
+            top: 50% !important;
+            height: 70em;
+            width: 70em;
+        }
+        .img6 {
+            left: 80% !important;
+            top: 90% !important;
+            height: 30em;
+            width: 30em;
+        }
+        .img7 {
+            left: 50% !important;
+            top: 80% !important;
+            height: 45em;
+            width: 45em;
+        }
+        .img8 {
+            left: 90% !important;
+            top: 10% !important;
+            height: 90em;
+            width: 90em;
+        }
+    }
     .txt_bg {
         height: 100%;
+        position: relative;
+        z-index: 2;
         .msk {
             display: flex;
             align-items: center;

@@ -138,3 +138,38 @@ $("#projects .block").click(function() {
     $(this).addClass("colored_hover");
     $(this).addClass("active");
 });
+
+
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);
+
+//подсветка фона
+var $img = $('.bg_topgun .bg');
+var offset = $.extend($img.offset(), {
+    width : $img.outerWidth(),
+  height : $img.outerHeight()
+});
+
+$('body').mousemove(function(e){
+    var x = e.pageX;
+  var y = e.pageY;
+  
+  if((x >= offset.left && x <= offset.left + offset.width) && (y >= offset.top && y <= offset.top + offset.height)) {
+       $(".bg_topgun .active_shadow").addClass("active");
+  } else {
+    $(".bg_topgun .active_shadow").removeClass("active");
+  }
+});
+
+//всплывайки
+$(document).ready(function() {
+    $('.popup-youtube').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: true,
+
+        fixedContentPos: false
+    });
+});
