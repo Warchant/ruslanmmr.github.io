@@ -530,7 +530,7 @@
   #home .container .tab_name .tab_names p {
     font-size: 7em; } }
 
-@media screen and (max-width: 567px) and (max-height: 580px) {
+@media screen and (max-width: 567px) and (max-height: 560px) {
   #home .container .tab_content .moscow_page .tab_content_block h2, #home .container .tab_content .spb_page .tab_content_block h2 {
     margin: 0 !important; } }
 
@@ -559,7 +559,22 @@
   #home .container .tab_content .moscow_page .tab_content_block .number .top,
   #home .container .tab_content .spb_page .tab_content_block .number .top,
   #home .container .tab_content .reg_page .tab_content_block .number .top {
-    padding-bottom: 0.25em; }
+    padding-bottom: 0.6em; }
+  #home .container .tab_content .reg_page .tab_content_block .number .center {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+  #home .container .tab_content .reg_page .tab_content_block .number .left {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  #home .container .tab_content .reg_page .tab_content_block .number .right {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
   #home .container .tab_content .moscow_page .tab_content_block .number .left p .left_item,
   #home .container .tab_content .moscow_page .tab_content_block .number .right p .left_item,
   #home .container .tab_content .spb_page .tab_content_block .number .left p .left_item,
