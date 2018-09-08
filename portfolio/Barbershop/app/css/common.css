@@ -382,7 +382,7 @@ p {
   body {
     font-size: 4px; }
   .content_site .container, html, body, #wrapprer {
-    min-height: 1020px; } }
+    min-height: 860px; } }
 
 @media screen and (max-width: 1519px) {
   .content_site .container, html, body, #wrapprer {
@@ -393,9 +393,6 @@ p {
     font-size: 4.2em !important; } }
 
 @media screen and (min-width: 1400px) {
-  .bg_topgun .bg {
-    width: 1370px;
-    margin: 0 auto; }
   .bg_page_other .txt_bg .invest .bg .bg_content {
     width: 1370px !important; } }
 
@@ -499,9 +496,7 @@ p {
     right: auto;
     bottom: auto !important;
     left: 15px;
-    top: 25px; }
-  .bg_page_other #scene {
-    display: none; } }
+    top: 25px; } }
 
 @media screen and (max-width: 480px) {
   #contacts_tab .bg_portret {

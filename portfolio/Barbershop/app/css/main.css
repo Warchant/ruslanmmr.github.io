@@ -370,7 +370,7 @@
                 -webkit-background-size: contain;
                         background-size: contain;
                 position: absolute;
-                top: 13em; }
+                bottom: 15em; }
           #home .container .tab_content .moscow_page .tab_content_block .number .left,
           #home .container .tab_content .spb_page .tab_content_block .number .left,
           #home .container .tab_content .reg_page .tab_content_block .number .left {
@@ -413,43 +413,49 @@
               -webkit-justify-content: flex-end;
                   -ms-flex-pack: end;
                       justify-content: flex-end; }
-    #home .container .tab_content .reg_page .tab_content_block .number {
-      -webkit-box-pack: justify !important;
-      -webkit-justify-content: space-between !important;
-          -ms-flex-pack: justify !important;
-              justify-content: space-between !important; }
-    #home .container .tab_content .reg_page .left {
-      -webkit-align-self: flex-start !important;
-          -ms-flex-item-align: start !important;
-              align-self: flex-start !important;
-      margin-left: 45em; }
-    #home .container .tab_content .reg_page .right {
-      -webkit-align-self: flex-end !important;
-          -ms-flex-item-align: end !important;
-              align-self: flex-end !important; }
-      #home .container .tab_content .reg_page .right .right_top {
-        padding-right: 50em; }
-      #home .container .tab_content .reg_page .right .left_item {
-        margin-left: 0; }
-      #home .container .tab_content .reg_page .right .more {
-        padding-top: 3.9em !important; }
-      #home .container .tab_content .reg_page .right .number {
-        -webkit-box-pack: end !important;
-        -webkit-justify-content: flex-end !important;
-            -ms-flex-pack: end !important;
-                justify-content: flex-end !important; }
-    #home .container .tab_content .reg_page .tab_content_block h2 {
-      font: 19.5em "BebasNeueBold";
+    #home .container .tab_content .reg_page .center {
+      padding-left: 0 !important;
+      padding-right: 23em !important; }
+    #home .container .tab_content .reg_page .top {
+      font-size: 10em !important;
+      padding-left: 0.15em;
+      letter-spacing: 0.1em;
+      padding-bottom: 0.4em;
+      padding-top: 0.7em; }
+    #home .container .tab_content .reg_page .tab_content_block .number .right .more {
+      padding-top: 15em; }
+    #home .container .tab_content .reg_page .left_item {
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
       color: #fff;
-      letter-spacing: 0em;
-      padding-left: 0.5em;
-      padding-top: 1.15em;
-      padding-bottom: 0em;
-      margin-bottom: 0; }
-      #home .container .tab_content .reg_page .tab_content_block h2 span {
-        font-family: "BebasNeueBook";
-        padding-right: 0.4em;
-        letter-spacing: .1em; }
+      white-space: nowrap;
+      position: relative; }
+      #home .container .tab_content .reg_page .left_item .left_item {
+        font: 6em "BebasNeueBook";
+        letter-spacing: 0.1em;
+        padding-right: 0.15em; }
+      #home .container .tab_content .reg_page .left_item .numb {
+        font: 30em "BebasNeueBold";
+        letter-spacing: 0em; }
+      #home .container .tab_content .reg_page .left_item .right_item {
+        font: 13em "BebasNeueRegular";
+        letter-spacing: 0.1em;
+        margin-left: 0.1em; }
+      #home .container .tab_content .reg_page .left_item .rub {
+        display: inline-block;
+        width: 5.6em;
+        height: 6.3em;
+        background: url(../img/rub.png) no-repeat;
+        -webkit-background-size: contain;
+                background-size: contain;
+        position: absolute;
+        bottom: 15em; }
+      #home .container .tab_content .reg_page .left_item .do {
+        font: 8em "BebasNeueRegular";
+        letter-spacing: 0em;
+        padding-left: 0.3em;
+        padding-right: 0.2em; }
   #home .container .tab_name {
     position: absolute;
     z-index: 10;
@@ -524,7 +530,7 @@
   #home .container .tab_name .tab_names p {
     font-size: 7em; } }
 
-@media screen and (max-width: 567px) and (max-height: 550px) {
+@media screen and (max-width: 567px) and (max-height: 580px) {
   #home .container .tab_content .moscow_page .tab_content_block h2, #home .container .tab_content .spb_page .tab_content_block h2 {
     margin: 0 !important; } }
 
@@ -606,7 +612,8 @@
   #home .container .tab_content .moscow_page .tab_content_block .number .center,
   #home .container .tab_content .spb_page .tab_content_block .number .center,
   #home .container .tab_content .reg_page .tab_content_block .number .center {
-    padding-left: 0; }
+    padding-left: 0;
+    padding-right: 0 !important; }
   #home .container .tab_content .moscow_page .tab_content_block .number .num {
     padding-right: 0.08em; }
   #home .container .tab_content .moscow_page .bg_city p {
@@ -617,6 +624,10 @@
   #home .container .tab_content .reg_page .tab_content_block h2 {
     font-size: 14em;
     margin-bottom: 1em; }
+  #home .container .tab_content .moscow_page .tab_content_block h2, #home .container .tab_content .spb_page .tab_content_block h2 {
+    padding-left: 0; }
+  #home .container .tab_content .reg_page .tab_content_block h2 {
+    padding-left: 0.5em; }
   #home .container .tab_content .reg_page .tab_content_block .number {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

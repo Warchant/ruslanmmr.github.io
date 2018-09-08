@@ -118,7 +118,10 @@ $(".tab_page").not(":first").hide();
 $("#navigation .link").click(function(event) {
     event.preventDefault();
     $(this).removeClass("link");
-    $(".tab_page").hide().eq($(this).index()).fadeIn(1000).addClass("animated")
+    $(".tab_page").hide().eq($(this).index()).fadeIn(1000);
+    if (document.documentElement.clientWidth > 568) {
+         $(".tab_page").eq($(this).index()).addClass("animated");
+    }
 }).eq(0).addClass("active ");
 
 
