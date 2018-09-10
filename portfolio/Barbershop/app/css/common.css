@@ -34,6 +34,18 @@
   font-style: normal;
   src: url("../fonts/Roboto/RobotoCondensed/RobotoCondensedRegular.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "RobotoCondensedBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Roboto/RobotoCondensed/RobotoCondensedBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RobotoCondensedItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Roboto/RobotoCondensed/RobotoCondensedItalic.ttf") format("truetype"); }
+
 #wrapper {
   position: relative;
   background: #101011;

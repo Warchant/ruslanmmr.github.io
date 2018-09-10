@@ -71,14 +71,25 @@
             height: 65em; }
             #projects .container .home_page_projects .page_content .center_block .img .img_box .txt {
               position: absolute;
-              right: -120em;
-              top: 40%; }
+              left: 120%;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+                  -ms-transform: translateY(-50%);
+                      transform: translateY(-50%);
+              white-space: nowrap; }
               #projects .container .home_page_projects .page_content .center_block .img .img_box .txt p {
-                font: 3.7em "RobotoCondensed";
+                font: 3.7em "RobotoCondensedBold";
                 color: #fff;
-                line-height: 180%; }
+                line-height: 180%;
+                padding-bottom: 0.3em; }
               #projects .container .home_page_projects .page_content .center_block .img .img_box .txt .second {
-                letter-spacing: 0.078em; }
+                letter-spacing: 0.078em;
+                font: 3.7em "RobotoCondensedItalic";
+                padding-bottom: 0.3em; }
+              #projects .container .home_page_projects .page_content .center_block .img .img_box .txt .third {
+                letter-spacing: 0.078em;
+                font: 3.7em "RobotoCondensed";
+                padding-bottom: 0.3em; }
             #projects .container .home_page_projects .page_content .center_block .img .img_box .img_content {
               width: 65em;
               height: 65em;
@@ -95,7 +106,13 @@
                 position: relative;
                 z-index: 2;
                 width: 100%;
-                height: auto; }
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%); }
               #projects .container .home_page_projects .page_content .center_block .img .img_box .img_content .last_img {
                 height: 100%; }
               #projects .container .home_page_projects .page_content .center_block .img .img_box .img_content .shadow {
@@ -177,16 +194,22 @@
   #projects .container .home_page_projects .page_content .bottom_projects .projects_content {
     font-size: 3.85px; } }
 
+@media screen and (max-width: 1328px) {
+  #projects .container .home_page_projects .page_content .center_block .img .img_box .txt {
+    width: 120em;
+    white-space: normal; } }
+
 @media screen and (max-width: 1200px) {
   #projects .container .home_page_projects .page_content .bottom_projects .projects_content {
     font-size: 2.5px; } }
 
 @media screen and (max-width: 1023px) {
+  #projects .container .home_page_projects .page_content .center_block .img .img_box .img_content img {
+    height: 100%;
+    width: auto;
+    max-width: 150em; }
   #projects .container {
     min-height: 1074px; }
-  #projects .container .home_page_projects .page_content .center_block .img .img_box .img_content .last_img {
-    width: 100%;
-    height: auto; }
   #projects .container .home_page_projects .page_content .bottom_projects .projects_content {
     font-size: 2em;
     -webkit-box-pack: center;
@@ -194,7 +217,7 @@
         -ms-flex-pack: center;
             justify-content: center; }
   #projects .container .home_page_projects .page_content .bottom_active {
-    padding-top: 85em; }
+    padding-top: 130em; }
   #projects .container .home_page_projects .page_content .bottom_projects {
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
@@ -202,30 +225,23 @@
   #projects .container .home_page_projects {
     height: 100%; }
   #projects .container .home_page_projects .page_content {
-    margin-top: 65em;
+    margin-top: 130em;
     padding-bottom: 24em; }
-  #projects .container .home_page_projects .page_content .center_block .img .img_box {
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
   #projects .container .home_page_projects .page_content .center_block .img .img_box .txt {
     position: relative;
-    right: 0;
-    top: 0;
-    padding-top: 35em; }
-  #projects .container .home_page_projects .page_content {
-    margin-top: 135em; } }
+    top: auto;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding-top: 4em;
+    text-align: center; }
+  #projects .container .home_page_projects .page_content .center_block .img .img_box .txt .third {
+    line-height: 150%; } }
 
 @media screen and (max-width: 767px) {
   #projects .container {
@@ -258,14 +274,25 @@
   #projects .container .home_page_projects .footer p {
     font-size: 4em; }
   #projects .container .home_page_projects .page_content {
-    margin-top: 100em; }
+    margin-top: 60em; }
   #projects .container .home_page_projects .page_content .center_block {
     margin-top: 0; }
   #projects .container .home_page_projects .page_content .bottom_active {
-    padding-top: 100em; } }
+    padding-top: 170em; }
+  #projects .container .home_page_projects .page_content .center_block .img .img_box .txt {
+    white-space: normal;
+    width: 100%; }
+  #projects .container .home_page_projects .page_content .center_block .img .img_box {
+    width: 100%; }
+  #projects .container .home_page_projects .page_content .center_block .img .img_box .img_content {
+    margin: 0 auto; } }
 
 @media screen and (max-width: 480px) {
   #contacts_tab .container .bottom_block .second {
     padding-bottom: 5em; }
   #projects .container .home_page_projects .page_content .bottom_projects .projects_content .block {
     width: 35%; } }
+
+@media screen and (max-width: 380px) {
+  #projects .container .home_page_projects .page_content .bottom_active {
+    padding-top: 195em; } }

@@ -251,13 +251,16 @@
                         padding-bottom: 0.2em;
                         color: #fff;
                     }
-                    .number {
+                    .number, .number_bottom {
                         font: 8em "BebasNeueRegular";
                         letter-spacing: 0.11em;
                         color: #fff;
                         text-align: right;
                         display: flex;
                         justify-content: flex-end;
+                    }
+                    .number_bottom {
+                        letter-spacing: 0.085em;
                     }
                 }
             }

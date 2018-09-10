@@ -94,16 +94,6 @@ if (document.documentElement.clientWidth < 568) {
 
 
 
-if (document.documentElement.clientWidth > 568) {
-    $('#navigation .link2, #navigation .link3, #navigation .link5').click(function() {
-        $('#header .container .header_top .left').fadeOut();
-    });
-    $('#navigation .link1, #navigation .link4, #header .logo a').click(function() {
-        $('#header .container .header_top .left').fadeIn();
-    });
-}
-
-
 //табы проектов
 $("#projects .img .img_box").hide();
 $("#projects .projects_content .block").click(function() {

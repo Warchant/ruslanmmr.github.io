@@ -249,7 +249,7 @@
             padding-top: 7em;
             padding-bottom: 0.2em;
             color: #fff; }
-          #invest .container .content .right_section .bottom_item .number {
+          #invest .container .content .right_section .bottom_item .number, #invest .container .content .right_section .bottom_item .number_bottom {
             font: 8em "BebasNeueRegular";
             letter-spacing: 0.11em;
             color: #fff;
@@ -262,6 +262,8 @@
             -webkit-justify-content: flex-end;
                 -ms-flex-pack: end;
                     justify-content: flex-end; }
+          #invest .container .content .right_section .bottom_item .number_bottom {
+            letter-spacing: 0.085em; }
 
 @-webkit-keyframes rot {
   0% {
