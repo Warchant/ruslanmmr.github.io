@@ -297,6 +297,14 @@
 @media screen and (max-width: 767px) {
   #invest .container {
     min-height: 701px; }
+  #invest .container .content .right_section .bottom_item .number_bottom {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 0.35em; }
+  #invest .container .content .right_section .bottom_item .number {
+    padding-left: 0.2em; }
   #invest .container .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

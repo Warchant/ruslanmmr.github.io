@@ -302,6 +302,8 @@
     padding-top: 2em; } }
 
 @media screen and (max-width: 567px) {
+  #dop .container .dop_page .center_section .content_center .block p br {
+    display: none; }
   #dop .container {
     min-height: 568px; }
   #dop .container .dop_page .top_section {

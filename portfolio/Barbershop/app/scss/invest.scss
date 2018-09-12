@@ -299,6 +299,13 @@
     #invest .container {
         min-height: 701px;
     }
+    #invest .container .content .right_section .bottom_item .number_bottom {
+        justify-content: center;
+        padding-right: 0.35em;
+    }
+    #invest .container .content .right_section .bottom_item .number {
+        padding-left: 0.2em;
+    }
     #invest .container .content {
         flex-direction: column;
         align-items: center;
