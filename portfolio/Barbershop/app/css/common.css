@@ -230,7 +230,8 @@ p {
       position: absolute;
       right: 0em;
       top: 7.1em;
-      z-index: 10; }
+      z-index: 10;
+      display: none; }
       #header .container .header_top #lang_block a {
         display: block;
         text-decoration: none;

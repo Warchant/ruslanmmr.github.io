@@ -79,7 +79,7 @@ ul {
 .catalog .current-categories .watch-more-block .block-content {
   height: 100%;
   padding: 20px; }
-  .catalog .current-categories .watch-more-block .block-content h6 {
+  .catalog .current-categories .watch-more-block .block-content p.watch-more-title {
     font-weight: bold;
     font-size: 1.2em;
     color: #000;

@@ -102,6 +102,16 @@ $("#projects .projects_content .block").click(function() {
     $("#projects .img .img_box").hide().eq($(this).index()).delay(300).fadeIn(100);
 });
 
+(function($) {
+$(function() {
+
+  $('.projects_content .block').click(function() {
+    $('html, body').animate({scrollTop: 0},500);
+    return false;
+  })
+
+})
+})(jQuery)
 
 
 $(".tab_page").not(":first").hide();
@@ -114,23 +124,6 @@ $("#navigation .link").click(function(event) {
     }
 }).eq(0).addClass("active ");
 
-
-if (document.documentElement.clientWidth > 568) {
-    $("#projects .colored").hover(function() {
-        if ($(this).hasClass("active")) {
-
-        } else {
-            $(this).toggleClass("colored_hover");
-        }
-    });
-}
-
-$("#projects .block").click(function() {
-    $("#projects .colored").removeClass("colored_hover");
-    $("#projects .colored").removeClass("active");
-    $(this).addClass("colored_hover");
-    $(this).addClass("active");
-});
 
 
 var scene = document.getElementById('scene');
