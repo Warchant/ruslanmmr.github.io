@@ -161,10 +161,9 @@ ul {
             }
             .card_content {
                 transition: box-shadow .3s;
-                &:hover {
-                    box-shadow: 8px 13px 30px rgba(0, 0, 0, 0.2);
-                }
-                .top_section, .description_section, .bottom_section {
+                .top_section,
+                .description_section,
+                .bottom_section {
                     position: relative;
                     border: 1px solid #e5e5e5;
                     padding: 15px;
@@ -189,7 +188,8 @@ ul {
                         position: absolute;
                         top: 10px;
                         right: 10px;
-                        .discount-item, .novelty-item {
+                        .discount-item,
+                        .novelty-item {
                             display: block;
                             height: 30px;
                             width: 60px;
@@ -267,6 +267,7 @@ ul {
                             text-align: center;
                             padding-top: 5px;
                             color: #818181;
+                            transition: .3s ease;
                             i {
                                 color: #cccccc;
                             }
@@ -295,6 +296,7 @@ ul {
                         .old_price {
                             font-size: 1.2em;
                             text-decoration: line-through;
+                            margin-bottom: -2px;
                             .price {
                                 padding-right: 0.3em;
                             }
@@ -309,10 +311,91 @@ ul {
                             border: none;
                             background: #ffcc33;
                             border-radius: 4px;
+                            transition: .3s;
                         }
                     }
                 }
             }
         }
+        .more_cards_btn {
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            background-color: #78a1b3;
+            border-radius: 1px solid #95b5c3;
+            height: 40px;
+            margin: 10px 0;
+            border-radius: 3px;
+            color: #fff;
+            transition: .3s;
+        }
+        .paginator {
+            display: flex;
+            width: 100%;
+            margin-top: 20px;
+            .paginator_link_page {
+                height: 48px;
+                width: 9%;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    border: 1px solid #e5e5e5;
+                    transition: .3s;
+                    margin-right: -1px;
+                    position: relative;
+                    z-index: 1;
+                    background-color: #ffffff;
+                }
+            }
+            .prev,
+            .next {
+                width: 18.5%;
+            }
+            .active_pag_page {
+                a {
+                    background: #f7f7f7;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}
+
+.with_box {
+    margin-top: 45px;
+    .box_title {
+        margin-bottom: 25px;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 1025px) {
+    .catalog .catalog-page .catalog-cards .card_content .bottom_section .right_item button:hover {
+        background-color: #ffdd7d;
+    }
+    .catalog .catalog-page .catalog-cards .card_content .description_section .links_block a:hover,
+    .catalog .catalog-page .paginator .paginator_link_page a:hover {
+        color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
+        z-index: 2;
+    }
+    .catalog .catalog-page .catalog-cards .card_content .description_section .title_link:hover {
+        color: #197ac4;
+        text-decoration: underline;
+    }
+    .catalog .catalog-page .catalog-cards .card_content:hover {
+        box-shadow: 8px 13px 30px rgba(0, 0, 0, 0.2);
+    }
+    .catalog .catalog-page .more_cards_btn:hover {
+        background-color: #7eb8d2;
+        border-color: #7eb8d2;
     }
 }

@@ -538,9 +538,11 @@ function sliderWidth(){
 		dots: false,
 		infinite: true,
 		speed: 300,
-		arrows: false,
+		arrows: true,
+		prevArrow: $('.arr_left_with'),
+    nextArrow: $('.arr_right_with'),
 		slidesToShow: 4,
-		slidesToScroll: 1,
+		slidesToScroll: 4,
 		responsive: [
 			// {
 			// 	breakpoint: 568,
@@ -549,21 +551,21 @@ function sliderWidth(){
 			{
 				breakpoint: 480,
 				settings: {
-					dots: true,
+					dots: false,
 					slidesToShow: 1
 				}
 			},
 			{
 				breakpoint: 641,
 				settings: {
-					dots: true,
+					dots: false,
 					slidesToShow: 2
 				}
 			},
 			{
 				breakpoint: 992,
 				settings: {
-					dots: true,
+					dots: false,
 					slidesToShow: 3
 				}
 			}
@@ -1310,6 +1312,14 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
         openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
     }
 };
-
 // execute above function
 initPhotoSwipeFromDOM('.slider_gallery');
+
+ $('a[href*="#modal-popup"]').click(function(event) {
+ 	    setTimeout(function() { 
+           $(".slider_gallery").slick('reinit');
+ 	     }, 100);
+ 	     setTimeout(function() { 
+           $(".slider_gallery_nav").slick('reinit');
+ 	     }, 100);
+ });

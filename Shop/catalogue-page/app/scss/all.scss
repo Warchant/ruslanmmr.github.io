@@ -642,6 +642,10 @@ input.placeholder, textarea.placeholder {
 	transition: transform .4s ease-in-out;
 }
 
+i {
+	transition: .3s ease;
+}
+
 .container {
 	max-width: 1210px;
 	padding: 0 15px;
@@ -1553,6 +1557,29 @@ input.placeholder, textarea.placeholder {
 	display: inline-block;
 	vertical-align: top;
 	padding-right: 12px;
+}
+
+.with_box {
+	.slider_content {
+        position: relative;
+    }
+    .arr {
+        display: block;
+        width: 24px;
+        height: 46px;
+        top: 50% !important;
+        margin-top: -23px;
+        position: absolute;
+        cursor: pointer;
+    }
+    .arr_left_with {
+        background: url(../images/content/slick-arrows.png) no-repeat;
+        left: -40px;
+    }
+    .arr_right_with {
+        background: url(../images/content/slick-arrows.png) no-repeat 0 100%;
+        right: -40px;
+    }
 }
 
 .header_navigation .selected:after {
@@ -4891,8 +4918,11 @@ input.placeholder, textarea.placeholder {
 
 @media screen and (min-width: 1025px) {
 	.table_button_field .button:hover {
-		border-color: rgba(88, 88, 88, 0.5);
-		color: #585858;
+		color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
 	}
 }
 
@@ -5353,7 +5383,11 @@ input.placeholder, textarea.placeholder {
 
 @media screen and (min-width: 1025px) {
 	.information_button .button:hover {
-		border: 1px solid rgba(88, 88, 88, 0.5);
+		color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
 		background-color: #fff;
 	}
 }
@@ -6503,8 +6537,11 @@ input.placeholder, textarea.placeholder {
 
 @media screen and (min-width: 1025px) {
 	.thumb_item .btn:hover {
-		color: #585858;
-		border-color: #ababab;
+		color: #1d1d1d;
+		border-color: #999999;
+		i {
+			color: #626262;
+		}
 	}
 }
 
@@ -6540,7 +6577,7 @@ input.placeholder, textarea.placeholder {
 	-ms-flex-positive: 1;
 	    flex-grow: 1;
 	padding: 10px;
-	margin: 0 5px;
+	margin-left: 5px;
 	-ms-flex-pack: center;
 	    justify-content: center;
 	color: #585858;
@@ -6568,8 +6605,8 @@ input.placeholder, textarea.placeholder {
 
 @media screen and (min-width: 1025px) {
 	.thumb_item .read_more:hover {
-		color: #585858;
-		border-color: #ababab;
+		color: #1d1d1d;
+		border-color: #999999;
 	}
 }
 
@@ -8942,8 +8979,11 @@ input.placeholder, textarea.placeholder {
 
 @media screen and (min-width: 1025px) {
 	.modal_heading .button:hover {
-		border-color: rgba(88, 88, 88, 0.5);
-		color: #585858;
+		color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
 	}
 }
 
@@ -9242,6 +9282,13 @@ input.placeholder, textarea.placeholder {
 		-ms-flex-direction: column;
 		    flex-direction: column;
 	}
+}
+
+.slider_gallery_nav .slick-cloned {
+	display: none;
+}
+.slick-slider .slick-list .slick-cloned {
+	display: block;
 }
 
 .modal_nav {
