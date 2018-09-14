@@ -159,3 +159,20 @@ $(document).ready(function() {
         fixedContentPos: false
     });
 });
+
+if (document.documentElement.clientWidth > 568) {
+    $("#projects .colored").hover(function() {
+        if ($(this).hasClass("active")) {
+
+        } else {
+            $(this).toggleClass("colored_hover");
+        }
+    });
+}
+
+$("#projects .block").click(function() {
+    $("#projects .colored").removeClass("colored_hover");
+    $("#projects .colored").removeClass("active");
+    $(this).addClass("colored_hover");
+    $(this).addClass("active");
+});

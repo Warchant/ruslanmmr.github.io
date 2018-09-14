@@ -403,7 +403,7 @@
             #home .container .tab_content .reg_page .tab_content_block .number .right .number {
               font: 8em "BebasNeueRegular";
               letter-spacing: 0.11em;
-              color: #464646;
+              color: #fff;
               text-align: right;
               display: -webkit-box;
               display: -webkit-flex;
@@ -413,6 +413,10 @@
               -webkit-justify-content: flex-end;
                   -ms-flex-pack: end;
                       justify-content: flex-end; }
+    #home .container .tab_content .moscow_page .tab_content_block .number .left {
+      -webkit-transform: translateX(20em);
+          -ms-transform: translateX(20em);
+              transform: translateX(20em); }
     #home .container .tab_content .reg_page .center {
       padding-left: 0 !important;
       padding-right: 23em !important; }
@@ -535,6 +539,10 @@
     margin: 0 !important; } }
 
 @media screen and (max-width: 567px) {
+  #home .container .tab_content .moscow_page .tab_content_block .number .left {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
   #home .container {
     min-height: 520px; }
   #home .container .tab_name {
@@ -574,7 +582,8 @@
     -webkit-box-ordinal-group: 4;
     -webkit-order: 3;
         -ms-flex-order: 3;
-            order: 3; }
+            order: 3;
+    padding-top: 0em; }
   #home .container .tab_content .moscow_page .tab_content_block .number .left p .left_item,
   #home .container .tab_content .moscow_page .tab_content_block .number .right p .left_item,
   #home .container .tab_content .spb_page .tab_content_block .number .left p .left_item,
@@ -696,3 +705,7 @@
     position: relative; }
   body {
     overflow: visible; } }
+
+@media screen and (max-width: 320px) and (max-height: 590px) {
+  #home .container .tab_content .moscow_page .tab_content_block h2, #home .container .tab_content .spb_page .tab_content_block h2 {
+    margin: 0 !important; } }

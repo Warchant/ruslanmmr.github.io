@@ -146,7 +146,19 @@
                             }
                         }
                         }
-                        
+                        .colored {
+                            .after {
+                                display: none;
+                            }
+                        }
+                        .colored_hover {
+                                .before {
+                                    display: none;
+                                }
+                                .after {
+                                    display: block;
+                                }
+                        }
                         .active {
                             img {
                                 opacity: 1;

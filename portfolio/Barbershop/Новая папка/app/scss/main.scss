@@ -1,12 +1,7 @@
-
 #home {
     position: relative;
     z-index: 2;
     height: 100%;
-    .container {
-        height: 100vh;
-        min-height: 624px;
-    }
 }
 
 .bg_page_home {
@@ -21,10 +16,80 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background: url(../img/bg_moscov.jpg) no-repeat center center;
-    background-size: cover;
+    #scene {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        .bg_other {
+            width: 100%;
+            height: 100%;
+            background: url(../img/bg_moscov.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .bg_img {
+            opacity: 0.05;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .img1 {
+            left: 5% !important;
+            top: 90% !important;
+            height: 70em;
+            width: 70em;
+        }
+        .img2 {
+            right: 10% !important;
+            top: 10% !important;
+            height: 40em;
+            width: 40em;
+        }
+        .img3 {
+            left: 20% !important;
+            top: 25% !important;
+            height: 70em;
+            width: 70em;
+        }
+        .img4 {
+            left: 50% !important;
+            top: 30% !important;
+            height: 70em;
+            width: 70em;
+        }
+        .img5 {
+            left: 10% !important;
+            top: 50% !important;
+            height: 70em;
+            width: 70em;
+        }
+        .img6 {
+            left: 80% !important;
+            top: 90% !important;
+            height: 30em;
+            width: 30em;
+        }
+        .img7 {
+            left: 50% !important;
+            top: 80% !important;
+            height: 45em;
+            width: 45em;
+        }
+        .img8 {
+            left: 90% !important;
+            top: 10% !important;
+            height: 90em;
+            width: 90em;
+        }
+    }
     .txt_bg {
         height: 100%;
+        position: relative;
+        z-index: 2;
         .msk {
             display: flex;
             align-items: center;
@@ -32,9 +97,9 @@
             height: 100%;
             p {
                 font: 60em "BebasNeueBold";
-                        color: #fff;
-                        opacity: 0.1;
-                        padding-bottom: 1.7em;
+                color: #fff;
+                opacity: 0.1;
+                padding-bottom: 1.7em;
             }
         }
         .spb {
@@ -44,9 +109,9 @@
             height: 100%;
             p {
                 font: 46.3em "BebasNeueBold";
-                        color: #fff;
-                        opacity: 0.1;
-                        padding-bottom: 2em;
+                color: #fff;
+                opacity: 0.1;
+                padding-bottom: 2em;
             }
         }
         .reg {
@@ -56,10 +121,10 @@
             height: 100%;
             p {
                 font: 56em "BebasNeueBold";
-                        color: #fff;
-                        opacity: 0.1;
-                        padding-top: 0.3em;
-                        padding-bottom: 1.9em;
+                color: #fff;
+                opacity: 0.1;
+                padding-top: 0.3em;
+                padding-bottom: 1.9em;
             }
         }
         .invest {
@@ -72,10 +137,10 @@
                 font: 103em "BebasNeueBold";
                 position: relative;
                 z-index: 2;
-                        color: #fff;
-                        opacity: 0.1;
-                        letter-spacing: -0.05em;
-                        padding-bottom: 0.7em;
+                color: #fff;
+                opacity: 0.1;
+                letter-spacing: -0.05em;
+                padding-bottom: 0.7em;
             }
             .bg {
                 position: absolute;
@@ -87,13 +152,13 @@
                 justify-content: center;
                 overflow: hidden;
                 .bg_content {
-                     background: url(../img/invest_bg.png) no-repeat center center;
-                     background-size: contain;
-                     height: 100%;
-                     width: 100%;
-                     margin: 0 auto;
-                     position: absolute;
-                     top: 60em;
+                    background: url(../img/invest_bg.png) no-repeat center center;
+                    background-size: contain;
+                    height: 100%;
+                    width: 100%;
+                    margin: 0 auto;
+                    position: absolute;
+                    top: 60em;
                 }
             }
         }
@@ -121,7 +186,7 @@
                     h2 {
                         font: 9.5em "BebasNeueRegular";
                         color: #fff;
-                        padding-top: 5.6em;
+                        padding-top: 3em;
                         span {
                             font-family: "BebasNeueBook";
                         }
@@ -167,7 +232,7 @@
                         color: #fff;
                         letter-spacing: 1.5em;
                         padding-left: 1.5em;
-                        padding-top: 7em;
+                        padding-top: 3em;
                         span {
                             font-family: "BebasNeueBook";
                         }
@@ -212,7 +277,7 @@
                                     padding-right: 0.15em;
                                 }
                                 .numb {
-                                    font: 22em "BebasNeueBold";
+                                    font: 30em "BebasNeueBold";
                                     letter-spacing: 0em;
                                 }
                                 .right_item {
@@ -227,7 +292,7 @@
                                     background: url(../img/rub.png) no-repeat;
                                     background-size: contain;
                                     position: absolute;
-                                    top: 7em;
+                                    bottom: 15em;
                                 }
                             }
                         }
@@ -263,46 +328,55 @@
                     }
                 }
             }
-            .spb_page {
-            }
             .reg_page {
-
-                .tab_content_block .number {
-                    justify-content: space-between !important;
+                .center {
+                    padding-left: 0 !important;
+                    padding-right: 23em !important;
                 }
-                .left {
-                    align-self: flex-start !important;
-                    margin-left: 45em;
-                }
-                .right {
-                    align-self: flex-end !important;
-                    .right_top {
-                        padding-right: 50em;
-                    }
-                    .left_item {
-                        margin-left: 0;
-                    }
-                    .more {
-                        padding-top: 3.9em !important;
-                    }
-                    .number {
-                        justify-content: flex-end !important;
-                    }
-                }
-                .tab_content_block {
-                    h2 {
-                        font: 19.5em "BebasNeueBold";
-                        color: #fff;
-                        letter-spacing: 0em;
-                        padding-left: 0.5em;
-                        padding-top: 2.3em;
-                        padding-bottom: 0.3em;
-                        span {
-                            font-family: "BebasNeueBook";
-                            padding-right: 0.4em;
-                            letter-spacing: .1em;
+                .top {
+                            font-size: 10em !important;
+                            padding-left: 0.15em;
+                            letter-spacing: 0.1em;
+                            padding-bottom: 0.4em;
+                            padding-top: 0.7em;
                         }
+                .tab_content_block .number .right .more {
+                    padding-top: 15em;
+                }
+                .left_item {
+                    align-self: center;
+                    color: #fff;
+                    white-space: nowrap;
+                    position: relative;
+                    .left_item {
+                        font: 6em "BebasNeueBook";
+                        letter-spacing: 0.1em;
+                        padding-right: 0.15em;
                     }
+                    .numb {
+                        font: 30em "BebasNeueBold";
+                        letter-spacing: 0em;
+                    }
+                    .right_item {
+                        font: 13em "BebasNeueRegular";
+                        letter-spacing: 0.1em;
+                        margin-left: 0.1em;
+                    }
+                    .rub {
+                        display: inline-block;
+                        width: 5.6em;
+                        height: 6.3em;
+                        background: url(../img/rub.png) no-repeat;
+                        background-size: contain;
+                        position: absolute;
+                        bottom: 15em;
+                    }
+                    .do {
+                                font: 8em "BebasNeueRegular";
+                                letter-spacing: 0em;
+                                padding-left: 0.3em;
+                                padding-right: 0.2em;
+                            }
                 }
             }
         }
@@ -315,10 +389,10 @@
             margin: 0 -15px;
             .top {
                 text-align: center;
-                font: 3.5em "BebasNeueRegular";
+                font: 5em "BebasNeueRegular";
                 color: #595c5f;
-                letter-spacing: 4.5em;
-                padding-left: 4.5em;
+                letter-spacing: 3em;
+                padding-left: 3em;
             }
             .tab_names {
                 display: flex;
@@ -359,6 +433,19 @@
     }
 }
 
+@media screen and (min-width: 1520px) {
+    #home .container {
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1519px) {
+    #home .container .tab_content .moscow_page .tab_content_block h2,
+    #home .container .tab_content .spb_page .tab_content_block h2 {
+        padding-top: 3em;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     #home .container {
         min-height: 624px;
@@ -376,21 +463,24 @@
     #home .container .tab_name .tab_names p {
         font-size: 7em;
     }
-    #home .container {
-        min-height: 576px;
-    }
 }
 
-@media screen and (max-width: 767px) {
-    #home .container {
-        min-height: 400px;
-    }
-}
+@media screen and (max-width: 767px) {}
 
 @media screen and (max-width: 567px) {
-
+    @media screen and (max-height: 560px) {
+        #home .container .tab_content .moscow_page .tab_content_block h2, #home .container .tab_content .spb_page .tab_content_block h2 {
+            margin: 0 !important;
+        }
+    }
     #home .container {
-        min-height: 568px;
+        min-height: 520px;
+    }
+    #home .container .tab_name {
+        bottom: 15em !important;
+    }
+    #home .container .tab_content .home_page .tab_content_block .number {
+        padding-top: 0.07em;
     }
     .bg_page_other .txt_bg .spb p {
         font-size: 27em;
@@ -405,7 +495,16 @@
     #home .container .tab_content .moscow_page .tab_content_block .number .top,
     #home .container .tab_content .spb_page .tab_content_block .number .top,
     #home .container .tab_content .reg_page .tab_content_block .number .top {
-        padding-bottom: 0.25em;
+        padding-bottom: 0.6em;
+    }
+    #home .container .tab_content .reg_page .tab_content_block .number .center {
+        order: 1;
+    }
+    #home .container .tab_content .reg_page .tab_content_block .number .left {
+        order: 2;
+    }
+    #home .container .tab_content .reg_page .tab_content_block .number .right {
+        order: 3;
     }
     #home .container .tab_content .moscow_page .tab_content_block .number .left p .left_item,
     #home .container .tab_content .moscow_page .tab_content_block .number .right p .left_item,
@@ -461,6 +560,7 @@
     #home .container .tab_content .spb_page .tab_content_block .number .center,
     #home .container .tab_content .reg_page .tab_content_block .number .center {
         padding-left: 0;
+        padding-right: 0 !important;
     }
     #home .container .tab_content .moscow_page .tab_content_block .number .num {
         padding-right: 0.08em;
@@ -475,6 +575,12 @@
     #home .container .tab_content .reg_page .tab_content_block h2 {
         font-size: 14em;
         margin-bottom: 1em;
+    }
+    #home .container .tab_content .moscow_page .tab_content_block h2, #home .container .tab_content .spb_page .tab_content_block h2 {
+        padding-left: 0;
+    }
+    #home .container .tab_content .reg_page .tab_content_block h2 {
+        padding-left: 0.5em;
     }
     #home .container .tab_content .reg_page .tab_content_block .number {
         flex-direction: column;
@@ -492,9 +598,6 @@
     }
     #home .container .tab_content .reg_page .tab_content_block .number .right p {
         padding: 0;
-    }
-    #home .container .tab_content .reg_page .tab_content_block .number .right .more {
-        padding-top: 10.2em !important;
     }
     #home .container .tab_content .reg_page .tab_content_block .number .right {
         margin: 0;

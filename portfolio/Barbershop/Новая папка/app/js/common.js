@@ -80,12 +80,26 @@ $('#navigation .hidden_txt').click(function() {
 });
 
 
+if (document.documentElement.clientWidth < 568) {
+    $('body, html, #wrapper, .content_site .container').addClass("mobile_display");
+    $('#navigation .link1, #navigation .link2, #navigation .link5, #header .logo a').click(function() {
+        $('body, html, #wrapper, .content_site .container').addClass("mobile_display");
+            $('.bg_page_dop, .bg_topgun').removeClass("bg_topgun_active");
+    });
+    $('#navigation .link3, #navigation .link4').click(function() {
+        $('body, html, #wrapper, .container').removeClass("mobile_display");
+            $('.bg_page_dop, .bg_topgun').addClass("bg_topgun_active");
+    });
+}
+
+
+
 //табы проектов
 $("#projects .img .img_box").hide();
 $("#projects .projects_content .block").click(function() {
     $("#projects .bottom_projects").addClass("bottom_active")
     $("#projects .projects_content .block").removeClass("active").eq($(this).index()).addClass("active");
-            $("#projects .img .img_box").hide().eq($(this).index()).delay(300).fadeIn(100);
+    $("#projects .img .img_box").hide().eq($(this).index()).delay(300).fadeIn(100);
 });
 
 
@@ -94,5 +108,61 @@ $(".tab_page").not(":first").hide();
 $("#navigation .link").click(function(event) {
     event.preventDefault();
     $(this).removeClass("link");
-    $(".tab_page").hide().eq($(this).index()).fadeIn(1000).addClass("animated")
+    $(".tab_page").hide().eq($(this).index()).fadeIn(1000);
+    if (document.documentElement.clientWidth > 568) {
+         $(".tab_page").eq($(this).index()).addClass("animated");
+    }
 }).eq(0).addClass("active ");
+
+
+if (document.documentElement.clientWidth > 568) {
+    $("#projects .colored").hover(function() {
+        if ($(this).hasClass("active")) {
+
+        } else {
+            $(this).toggleClass("colored_hover");
+        }
+    });
+}
+
+$("#projects .block").click(function() {
+    $("#projects .colored").removeClass("colored_hover");
+    $("#projects .colored").removeClass("active");
+    $(this).addClass("colored_hover");
+    $(this).addClass("active");
+});
+
+
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);
+
+//подсветка фона
+var $img = $('.bg_topgun .bg');
+var offset = $.extend($img.offset(), {
+    width : $img.outerWidth(),
+  height : $img.outerHeight()
+});
+
+$('body').mousemove(function(e){
+    var x = e.pageX;
+  var y = e.pageY;
+  
+  if((x >= offset.left && x <= offset.left + offset.width) && (y >= offset.top && y <= offset.top + offset.height)) {
+       $(".bg_topgun .active_shadow").addClass("active");
+  } else {
+    $(".bg_topgun .active_shadow").removeClass("active");
+  }
+});
+
+//всплывайки
+$(document).ready(function() {
+    $('.popup-youtube').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: true,
+
+        fixedContentPos: false
+    });
+});

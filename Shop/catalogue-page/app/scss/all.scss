@@ -1571,6 +1571,7 @@ i {
         margin-top: -23px;
         position: absolute;
         cursor: pointer;
+        z-index: 2;
     }
     .arr_left_with {
         background: url(../images/content/slick-arrows.png) no-repeat;
@@ -3550,8 +3551,11 @@ i {
 
 @media screen and (min-width: 1025px) {
 	.button_more:hover {
-		color: #585858;
-		border-color: #ababab;
+		color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
 	}
 }
 
@@ -3858,7 +3862,11 @@ i {
 
 @media screen and (min-width: 1025px) {
 	.information_product_box .button:hover {
-		border: 1px solid rgba(88, 88, 88, 0.5);
+		color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
 	}
 }
 
@@ -4598,7 +4606,11 @@ i {
 
 @media screen and (min-width: 1025px) {
 	.form_cash .button:hover {
-		border-color: #ababab;
+		color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
 	}
 }
 
@@ -5173,7 +5185,11 @@ i {
 @media screen and (min-width: 1025px) {
 	.gallery_information_tabs .button_item:hover,
 	.modal_information_tabs .button_item:hover {
-		border-color: #ababab;
+		color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
 	}
 }
 
@@ -5843,8 +5859,11 @@ i {
 
 @media screen and (min-width: 1025px) {
 	.box_title .btn:hover {
-		color: #585858;
-		border-color: #ababab;
+		color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
 	}
 }
 
@@ -6342,8 +6361,13 @@ i {
 }
 
 .slider_with {
-	margin: 0 -10px;
+	margin: 0 -20px;
 	display: none;
+	position: relative;
+	z-index: 1;		
+	.slick-list {
+      padding: 20px 10px;
+	}
 }
 
 .slider_with.slick-initialized {
@@ -6390,6 +6414,10 @@ i {
 .thumb_item {
 	background-color: #fff;
 	border: 1px solid #ebebeb;
+	transition: .3s;
+	&:hover {
+		box-shadow: 8px 13px 25px rgba(0, 0, 0, 0.2);
+	}
 }
 
 .thumb_item .wrap_image {
@@ -6715,6 +6743,25 @@ i {
 	border: 1px solid rgba(0, 0, 0, 0.08);
 	background-color: #fff;
 	padding: 36px 40px;
+	position: relative;
+	.clear {
+		position: absolute;
+		bottom: 15px;
+		right: 15px;
+		.clear_btn {
+			border: none;
+			cursor: pointer;
+			color: #585858;
+			transition: .3s;
+			font-size: 0.9em;
+		}
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	  .product_slider .holder .clear .clear_btn:hover {
+        color: #1d1d1d;
+	  }
 }
 
 .product_slider .headline {
@@ -6743,8 +6790,11 @@ i {
 
 @media screen and (min-width: 1025px) {
 	.product_slider .button:hover {
-		color: #585858;
-		border-color: #ababab;
+		color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
 	}
 }
 
@@ -6818,7 +6868,7 @@ i {
 	right: 0;
 	left: 0;
 	bottom: 0;
-	transform: translateY(calc(100% - 35px));
+	transform: translateY(100%);
 	transition: transform .3s;
 	text-align: right;
 }
@@ -6845,25 +6895,6 @@ i {
 @media screen and (min-width: 1025px) {
 	.slider_watched .item_title:hover {
 		color: #197ac4;
-	}
-}
-
-.slider_watched .item_sub {
-	background-color: #fff;
-	text-align: left;
-	padding: 5px 10px;
-	border-top: 1px solid #e6e6e6;
-	display: block;
-}
-
-.slider_watched .item_sub a {
-	color: #1e0602;
-}
-
-@media screen and (min-width: 1025px) {
-	.slider_watched .item_sub a:hover {
-		color: #197ac4;
-		text-decoration: underline;
 	}
 }
 
@@ -7354,7 +7385,11 @@ i {
 @media screen and (min-width: 1025px) {
 	.fixed_item .button:hover,
 	.static_item .button:hover {
-		border-color: #ababab;
+		color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
 	}
 }
 
@@ -7699,7 +7734,11 @@ i {
 
 @media screen and (min-width: 1025px) {
 	.item_set .button:hover {
-		border-color: #ababab;
+		color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
 	}
 }
 
@@ -7903,7 +7942,11 @@ i {
 
 @media screen and (min-width: 1025px) {
 	.option_box .button:hover {
-		border: 1px solid #ababab;
+		color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
 	}
 }
 
@@ -8192,7 +8235,11 @@ i {
 
 @media screen and (min-width: 1025px) {
 	.added_box .button:hover {
-		border: 1px solid #ababab;
+		color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
 	}
 }
 
@@ -8396,7 +8443,11 @@ i {
 
 @media screen and (min-width: 1025px) {
 	.button_similar:hover {
-		border-color: #ababab;
+		color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
 	}
 }
 
@@ -9702,7 +9753,11 @@ i {
 
 @media screen and (min-width: 1025px) {
 	.comparison_tools .button:hover {
-		border-color: #ababab;
+		color: #1d1d1d;
+        border-color: #999999;
+        i {
+            color: #626262;
+        }
 	}
 }
 

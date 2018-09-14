@@ -34,6 +34,18 @@
   font-style: normal;
   src: url("../fonts/Roboto/RobotoCondensed/RobotoCondensedRegular.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "RobotoCondensedBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Roboto/RobotoCondensed/RobotoCondensedBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RobotoCondensedItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Roboto/RobotoCondensed/RobotoCondensedItalic.ttf") format("truetype"); }
+
 #wrapper {
   position: relative;
   background: #101011;
@@ -41,7 +53,8 @@
 
 html {
   background: #101011;
-  min-width: 320px; }
+  min-width: 320px;
+  min-height: 520px; }
 
 body {
   overflow-x: hidden; }
@@ -51,9 +64,18 @@ body {
 
 .container {
   min-width: 320px;
-  max-width: 1200px;
+  max-width: 1480px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0 auto;
   padding: 0 15px; }
+
+.content_site .container {
+  height: 100vh; }
+
+.mobile_display {
+  height: 100% !important;
+  min-height: 520px !important; }
 
 body {
   font-size: 3px;
@@ -68,17 +90,40 @@ p {
 
 .bg_topgun {
   position: absolute;
-  width: -webkit-calc(100% - 30px);
-  width: calc(100% - 30px);
+  width: 90%;
   z-index: 2;
   height: 100%;
-  left: 15px; }
+  left: 5%; }
   .bg_topgun .bg {
     width: 100%;
-    height: 100%;
-    background: url(../img/bg_logo.png) no-repeat center center;
-    -webkit-background-size: contain;
-            background-size: contain; }
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    .bg_topgun .bg img {
+      width: 100%; }
+  .bg_topgun .active_shadow {
+    display: block;
+    width: 70%;
+    left: 15%;
+    position: absolute;
+    z-index: 1;
+    height: 0;
+    top: 50%;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease;
+    -webkit-box-shadow: 0px 0px 40em 60em rgba(235, 230, 235, 0.08);
+            box-shadow: 0px 0px 40em 60em rgba(235, 230, 235, 0.08);
+    opacity: 0; }
+  .bg_topgun .active {
+    opacity: 1; }
+
+.bg_topgun_active {
+  height: 100vh !important;
+  position: fixed !important; }
 
 .nav-btn {
   display: none;
@@ -144,27 +189,6 @@ p {
   .nav-btn .a_active span {
     background-color: transparent !important; }
 
-#lang_block {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  right: 3em;
-  top: 3em;
-  z-index: 10; }
-  #lang_block a {
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    font: 6em "BebasNeueLight";
-    margin-left: 0.33em;
-    letter-spacing: 0.2em; }
-    #lang_block a:first-child {
-      margin-left: 0; }
-  #lang_block .active_lang {
-    font-family: "BebasNeueRegular"; }
-
 #header {
   position: absolute;
   width: 100%;
@@ -198,14 +222,26 @@ p {
         font: 9.8em "BebasNeueBook";
         color: #7a7f88;
         letter-spacing: 0.2em; }
-    #header .container .header_top .right {
+    #header .container .header_top #lang_block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
       position: absolute;
-      right: 0;
-      background: url(../img/stopping-sales.png) no-repeat;
-      -webkit-background-size: contain;
-              background-size: contain;
-      width: 60.5em;
-      height: 25.3em; }
+      right: 0em;
+      top: 7.1em;
+      z-index: 10; }
+      #header .container .header_top #lang_block a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font: 6em "BebasNeueLight";
+        margin-left: 0.33em;
+        letter-spacing: 0.2em; }
+        #header .container .header_top #lang_block a:first-child {
+          margin-left: 0; }
+      #header .container .header_top #lang_block .active_lang {
+        font-family: "BebasNeueRegular"; }
 
 #navigation {
   display: -webkit-box;
@@ -248,7 +284,6 @@ p {
 
 #contacts_tab {
   height: 100%;
-  min-height: 100vh;
   position: relative;
   z-index: 3; }
   #contacts_tab .bg_all {
@@ -278,7 +313,6 @@ p {
     height: 176em; }
   #contacts_tab .container {
     position: relative;
-    height: 100%;
     z-index: 3;
     display: -webkit-box;
     display: -webkit-flex;
@@ -292,8 +326,7 @@ p {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    min-height: 100vh; }
+            justify-content: center; }
     #contacts_tab .container .top {
       display: block;
       width: 100%;
@@ -357,10 +390,21 @@ p {
         padding: 0 1em;
         text-align: center; }
 
+@media screen and (min-width: 1520px) {
+  body {
+    font-size: 4px; }
+  .content_site .container, html, body, #wrapprer {
+    min-height: 860px; } }
+
+@media screen and (max-width: 1519px) {
+  .content_site .container, html, body, #wrapprer {
+    min-height: 627px; }
+  .container {
+    max-width: 1200px; }
+  #projects .container .home_page_projects .page_content .bottom_projects .projects_content .block p {
+    font-size: 4.2em !important; } }
+
 @media screen and (min-width: 1400px) {
-  .bg_topgun .bg {
-    width: 1370px;
-    margin: 0 auto; }
   .bg_page_other .txt_bg .invest .bg .bg_content {
     width: 1370px !important; } }
 
@@ -415,9 +459,14 @@ p {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap; }
   #header .container .navigation li {
-    margin: 0 10px; } }
+    margin: 0 10px; }
+  #header .container .header_top #lang_block {
+    font-size: 2.5px;
+    top: 5em; } }
 
 @media screen and (max-width: 567px) {
+  #header .container .header_top #lang_block {
+    right: auto; }
   #header .container .header_top .right {
     display: none; }
   #contacts_tab .container {
@@ -446,7 +495,9 @@ p {
             justify-content: space-between;
     margin-top: 0;
     height: 100%;
-    padding: 100px 0; }
+    padding: 100px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   #navigation a {
     font-size: 15em; }
   #header .container .header_top .left p {
@@ -457,9 +508,7 @@ p {
     right: auto;
     bottom: auto !important;
     left: 15px;
-    top: 25px; }
-  #wrapper {
-    min-height: 300px; } }
+    top: 25px; } }
 
 @media screen and (max-width: 480px) {
   #contacts_tab .bg_portret {

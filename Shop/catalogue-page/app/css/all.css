@@ -1476,7 +1476,8 @@ i {
   top: 50% !important;
   margin-top: -23px;
   position: absolute;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 2; }
 
 .with_box .arr_left_with {
   background: url(../images/content/slick-arrows.png) no-repeat;
@@ -3299,8 +3300,10 @@ i {
 
 @media screen and (min-width: 1025px) {
   .button_more:hover {
-    color: #585858;
-    border-color: #ababab; } }
+    color: #1d1d1d;
+    border-color: #999999; }
+    .button_more:hover i {
+      color: #626262; } }
 
 .button_more span {
   font-size: 13px;
@@ -3602,7 +3605,10 @@ i {
 
 @media screen and (min-width: 1025px) {
   .information_product_box .button:hover {
-    border: 1px solid rgba(88, 88, 88, 0.5); } }
+    color: #1d1d1d;
+    border-color: #999999; }
+    .information_product_box .button:hover i {
+      color: #626262; } }
 
 .information_product_box .hidden_block {
   display: none; }
@@ -4305,7 +4311,10 @@ i {
 
 @media screen and (min-width: 1025px) {
   .form_cash .button:hover {
-    border-color: #ababab; } }
+    color: #1d1d1d;
+    border-color: #999999; }
+    .form_cash .button:hover i {
+      color: #626262; } }
 
 .form_cash .button i {
   font-size: 14px;
@@ -4877,7 +4886,11 @@ i {
 @media screen and (min-width: 1025px) {
   .gallery_information_tabs .button_item:hover,
   .modal_information_tabs .button_item:hover {
-    border-color: #ababab; } }
+    color: #1d1d1d;
+    border-color: #999999; }
+    .gallery_information_tabs .button_item:hover i,
+    .modal_information_tabs .button_item:hover i {
+      color: #626262; } }
 
 .gallery_information_tabs .button_item i,
 .modal_information_tabs .button_item i {
@@ -5526,8 +5539,10 @@ i {
 
 @media screen and (min-width: 1025px) {
   .box_title .btn:hover {
-    color: #585858;
-    border-color: #ababab; } }
+    color: #1d1d1d;
+    border-color: #999999; }
+    .box_title .btn:hover i {
+      color: #626262; } }
 
 @media screen and (max-width: 567px) {
   .box_title .btn {
@@ -5996,8 +6011,12 @@ i {
     margin-top: 40px; } }
 
 .slider_with {
-  margin: 0 -10px;
-  display: none; }
+  margin: 0 -20px;
+  display: none;
+  position: relative;
+  z-index: 1; }
+  .slider_with .slick-list {
+    padding: 20px 10px; }
 
 .slider_with.slick-initialized {
   display: block; }
@@ -6037,7 +6056,13 @@ i {
 
 .thumb_item {
   background-color: #fff;
-  border: 1px solid #ebebeb; }
+  border: 1px solid #ebebeb;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .thumb_item:hover {
+    -webkit-box-shadow: 8px 13px 25px rgba(0, 0, 0, 0.2);
+            box-shadow: 8px 13px 25px rgba(0, 0, 0, 0.2); }
 
 .thumb_item .wrap_image {
   position: relative;
@@ -6352,7 +6377,24 @@ i {
 .product_slider .holder {
   border: 1px solid rgba(0, 0, 0, 0.08);
   background-color: #fff;
-  padding: 36px 40px; }
+  padding: 36px 40px;
+  position: relative; }
+  .product_slider .holder .clear {
+    position: absolute;
+    bottom: 15px;
+    right: 15px; }
+    .product_slider .holder .clear .clear_btn {
+      border: none;
+      cursor: pointer;
+      color: #585858;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      font-size: 0.9em; }
+
+@media screen and (min-width: 1025px) {
+  .product_slider .holder .clear .clear_btn:hover {
+    color: #1d1d1d; } }
 
 .product_slider .headline {
   margin-bottom: 34px;
@@ -6390,8 +6432,10 @@ i {
 
 @media screen and (min-width: 1025px) {
   .product_slider .button:hover {
-    color: #585858;
-    border-color: #ababab; } }
+    color: #1d1d1d;
+    border-color: #999999; }
+    .product_slider .button:hover i {
+      color: #626262; } }
 
 .product_slider .button i {
   padding-left: 5px;
@@ -6454,9 +6498,9 @@ i {
   right: 0;
   left: 0;
   bottom: 0;
-  -webkit-transform: translateY(-webkit-calc(100% - 35px));
-      -ms-transform: translateY(calc(100% - 35px));
-          transform: translateY(calc(100% - 35px));
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   -o-transition: transform .3s;
@@ -6484,21 +6528,6 @@ i {
 @media screen and (min-width: 1025px) {
   .slider_watched .item_title:hover {
     color: #197ac4; } }
-
-.slider_watched .item_sub {
-  background-color: #fff;
-  text-align: left;
-  padding: 5px 10px;
-  border-top: 1px solid #e6e6e6;
-  display: block; }
-
-.slider_watched .item_sub a {
-  color: #1e0602; }
-
-@media screen and (min-width: 1025px) {
-  .slider_watched .item_sub a:hover {
-    color: #197ac4;
-    text-decoration: underline; } }
 
 .slider_watched .slick-dots {
   padding: 0;
@@ -6917,7 +6946,11 @@ i {
 @media screen and (min-width: 1025px) {
   .fixed_item .button:hover,
   .static_item .button:hover {
-    border-color: #ababab; } }
+    color: #1d1d1d;
+    border-color: #999999; }
+    .fixed_item .button:hover i,
+    .static_item .button:hover i {
+      color: #626262; } }
 
 .fixed_item .button.selected,
 .static_item .button.selected {
@@ -7210,7 +7243,10 @@ i {
 
 @media screen and (min-width: 1025px) {
   .item_set .button:hover {
-    border-color: #ababab; } }
+    color: #1d1d1d;
+    border-color: #999999; }
+    .item_set .button:hover i {
+      color: #626262; } }
 
 .item_set .button.selected {
   color: #fff;
@@ -7372,7 +7408,10 @@ i {
 
 @media screen and (min-width: 1025px) {
   .option_box .button:hover {
-    border: 1px solid #ababab; } }
+    color: #1d1d1d;
+    border-color: #999999; }
+    .option_box .button:hover i {
+      color: #626262; } }
 
 .option_box.selected .hold {
   border: 1px solid #8ec824; }
@@ -7640,7 +7679,10 @@ i {
 
 @media screen and (min-width: 1025px) {
   .added_box .button:hover {
-    border: 1px solid #ababab; } }
+    color: #1d1d1d;
+    border-color: #999999; }
+    .added_box .button:hover i {
+      color: #626262; } }
 
 @media screen and (max-width: 479px) {
   .added_box .button {
@@ -7820,7 +7862,10 @@ i {
 
 @media screen and (min-width: 1025px) {
   .button_similar:hover {
-    border-color: #ababab; } }
+    color: #1d1d1d;
+    border-color: #999999; }
+    .button_similar:hover i {
+      color: #626262; } }
 
 .button_similar i {
   color: #ccc;
@@ -9081,7 +9126,10 @@ i {
 
 @media screen and (min-width: 1025px) {
   .comparison_tools .button:hover {
-    border-color: #ababab; } }
+    color: #1d1d1d;
+    border-color: #999999; }
+    .comparison_tools .button:hover i {
+      color: #626262; } }
 
 .comparison_tools .button.added_c {
   color: #ccc; }
