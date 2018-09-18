@@ -1477,7 +1477,11 @@ i {
   margin-top: -23px;
   position: absolute;
   cursor: pointer;
-  z-index: 2; }
+  z-index: 2;
+  opacity: 0.5;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
 
 .with_box .arr_left_with {
   background: url(../images/content/slick-arrows.png) no-repeat;
@@ -6060,9 +6064,6 @@ i {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s; }
-  .thumb_item:hover {
-    -webkit-box-shadow: 8px 13px 25px rgba(0, 0, 0, 0.2);
-            box-shadow: 8px 13px 25px rgba(0, 0, 0, 0.2); }
 
 .thumb_item .wrap_image {
   position: relative;
@@ -6580,7 +6581,7 @@ i {
   transition: opacity .3s; }
 
 @media screen and (min-width: 1025px) {
-  .slider_watched .slick-arrow:hover {
+  .slider_watched .slick-arrow:hover, .with_box .arr:hover {
     opacity: 1; } }
 
 .slider_watched .slick-arrow.slick-next {

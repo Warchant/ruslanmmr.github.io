@@ -219,6 +219,8 @@
           padding-top: 3em; }
           #home .container .tab_content .home_page .tab_content_block h2 span {
             font-family: "BebasNeueBook"; }
+          #home .container .tab_content .home_page .tab_content_block h2 br {
+            display: none; }
         #home .container .tab_content .home_page .tab_content_block .number {
           font: 66.4em "BebasNeueBold";
           color: #dadee2;
@@ -709,3 +711,7 @@
 @media screen and (max-width: 320px) and (max-height: 590px) {
   #home .container .tab_content .moscow_page .tab_content_block h2, #home .container .tab_content .spb_page .tab_content_block h2 {
     margin: 0 !important; } }
+
+@media screen and (max-width: 450px) {
+  #home .container .tab_content .home_page .tab_content_block h2 br {
+    display: block; } }

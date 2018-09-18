@@ -16,9 +16,10 @@
     <link rel="stylesheet" type="text/css" href="css/nanoscroller.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/all.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/catalog.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/filter.css" media="all">
 </head>
 
-<body>
+<body class="inner_page">
     <div class="navigation_side">
         <div class="holder">
             <div class="box hidden_block">
@@ -385,6 +386,814 @@
                     <div class="catalog-page-content row">
                         <div class="left-sidebar col-lg-3">
                             <div class="filter">
+                                <div class="section range">
+                                    <div class="tab_title">
+                                        <div class="select_indicator">
+                                            <span></span>
+                                        </div>
+                                        <div class="button_container">
+                                            <span class="arrow"><i class="icon-angle-right"></i></span>
+                                            <span class="section_title">Цена</span>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <div class="extra-controls">
+                                            <input type="text" class="input_start" />
+                                            <span class="hyp">-</span>
+                                            <input type="text" class="input_end" />
+                                            <span class="currency">₽</span>
+                                        </div>
+                                        <div class="range-slider">
+                                            <input type="text" class="js-range-slider" value="" />
+                                        </div>
+                                        <ul class="param_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_1">
+                                                <label for="checkbox_1">Товары со скидкой</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                        <div class="select_indicator">
+                                            <span></span>
+                                        </div>
+                                        <div class="button_container">
+                                            <span class="arrow"><i class="icon-angle-right"></i></span>
+                                            <span class="section_title">Тип</span>
+                                            <span class="description" data-balloon="Здесь какое-то описание..." data-balloon-pos="up"><i class="icon-question-circle-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="param_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_2">
+                                                <label for="checkbox_2">Смеситель<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_3">
+                                                <label for="checkbox_3">Комплект<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_4">
+                                                <label for="checkbox_4">Излив<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_5">
+                                                <label for="checkbox_5">Вентиль<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_6">
+                                                <label for="checkbox_6">Переключатель потоков<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <!--drop-down list-->
+                                        <ul class="drop_down_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_7">
+                                                <label for="checkbox_7">Смеситель<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_8">
+                                                <label for="checkbox_8">Комплект<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_9">
+                                                <label for="checkbox_9">Излив<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_10">
+                                                <label for="checkbox_10">Вентиль<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_11">
+                                                <label for="checkbox_11">Переключатель потоков<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <button class="param_more">Показать все</button>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                        <div class="select_indicator">
+                                            <span></span>
+                                        </div>
+                                        <div class="button_container">
+                                            <span class="arrow"><i class="icon-angle-right"></i></span>
+                                            <span class="section_title">Бренды</span>
+                                            <span class="description" data-balloon="Здесь какое-то описание..." data-balloon-pos="up"><i class="icon-question-circle-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="param_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_12">
+                                                <label for="checkbox_12">Grohe<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_13">
+                                                <label for="checkbox_13">Hansgrohe<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_14">
+                                                <label for="checkbox_14">Lemark<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_15">
+                                                <label for="checkbox_15">Zorg<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_16">
+                                                <label for="checkbox_16">Bravat<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_17">
+                                                <label for="checkbox_17">Elghansa<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <!--drop-down list-->
+                                        <ul class="drop_down_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_18">
+                                                <label for="checkbox_18">Grohe<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_19">
+                                                <label for="checkbox_19">Hansgrohe<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_20">
+                                                <label for="checkbox_20">Lemark<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_21">
+                                                <label for="checkbox_21">Zorg<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_22">
+                                                <label for="checkbox_22">Bravat<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_23">
+                                                <label for="checkbox_23">Elghansa<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <button class="param_more">Показать все</button>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                        <div class="select_indicator">
+                                            <span></span>
+                                        </div>
+                                        <div class="button_container">
+                                            <span class="arrow"><i class="icon-angle-right"></i></span>
+                                            <span class="section_title">Серия</span>
+                                            <span class="description" data-balloon="Здесь какое-то описание..." data-balloon-pos="up"><i class="icon-question-circle-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="param_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_50">
+                                                <label for="checkbox_50">Grohe<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_51">
+                                                <label for="checkbox_51">Hansgrohe<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_53">
+                                                <label for="checkbox_53">Lemark<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_53">
+                                                <label for="checkbox_53">Zorg<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_54">
+                                                <label for="checkbox_54">Bravat<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_55">
+                                                <label for="checkbox_55">Elghansa<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                        <div class="select_indicator">
+                                            <span></span>
+                                        </div>
+                                        <div class="button_container">
+                                            <span class="arrow"><i class="icon-angle-right"></i></span>
+                                            <span class="section_title">Назначение</span>
+                                            <span class="description" data-balloon="Здесь какое-то описание..." data-balloon-pos="up"><i class="icon-question-circle-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="param_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_24">
+                                                <label for="checkbox_24">Для раковины<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_25">
+                                                <label for="checkbox_25">Для кухонной мойки<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_26">
+                                                <label for="checkbox_26">Для ванны с душем<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_27">
+                                                <label for="checkbox_27">Набор: смеситель и душевой гарнитур<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_28">
+                                                <label for="checkbox_28">Для душа<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_29">
+                                                <label for="checkbox_29">Для ванны<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                        <div class="select_indicator">
+                                            <span></span>
+                                        </div>
+                                        <div class="button_container">
+                                            <span class="arrow"><i class="icon-angle-right"></i></span>
+                                            <span class="section_title">Встроенные системы</span>
+                                            <span class="description" data-balloon="Здесь какое-то описание..." data-balloon-pos="up"><i class="icon-question-circle-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="param_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_30">
+                                                <label for="checkbox_30">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_32">
+                                                <label for="checkbox_31">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_33">
+                                                <label for="checkbox_33">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                        <div class="select_indicator">
+                                            <span></span>
+                                        </div>
+                                        <div class="button_container">
+                                            <span class="arrow"><i class="icon-angle-right"></i></span>
+                                            <span class="section_title">Управление</span>
+                                            <span class="description" data-balloon="Здесь какое-то описание..." data-balloon-pos="up"><i class="icon-question-circle-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="param_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_34">
+                                                <label for="checkbox_34">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_35">
+                                                <label for="checkbox_35">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_36">
+                                                <label for="checkbox_36">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                        <div class="select_indicator">
+                                            <span></span>
+                                        </div>
+                                        <div class="button_container">
+                                            <span class="arrow"><i class="icon-angle-right"></i></span>
+                                            <span class="section_title">Цвет</span>
+                                            <span class="description" data-balloon="Здесь какое-то описание..." data-balloon-pos="up"><i class="icon-question-circle-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="color_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_c1">
+                                                <label class="color1" for="checkbox_c1"><span class="color_block"></span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_c2">
+                                                <label class="color2" for="checkbox_c2"><span class="color_block"></span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_c3">
+                                                <label class="color3" for="checkbox_c3"><span class="color_block"></span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_c4">
+                                                <label class="color4" for="checkbox_c4"><span class="color_block"></span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_c5">
+                                                <label class="color5" for="checkbox_c5"><span class="color_block"></span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_c6">
+                                                <label class="color6" for="checkbox_c6"><span class="color_block"></span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_c7">
+                                                <label class="color7" for="checkbox_c7"><span class="color_block"></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                        <div class="select_indicator">
+                                            <span></span>
+                                        </div>
+                                        <div class="button_container">
+                                            <span class="arrow"><i class="icon-angle-right"></i></span>
+                                            <span class="section_title">Отверстия для монтажа</span>
+                                            <span class="description" data-balloon="Здесь какое-то описание..." data-balloon-pos="up"><i class="icon-question-circle-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="param_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_37">
+                                                <label for="checkbox_37">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_38">
+                                                <label for="checkbox_38">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_39">
+                                                <label for="checkbox_39">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                        <div class="select_indicator">
+                                            <span></span>
+                                        </div>
+                                        <div class="button_container">
+                                            <span class="arrow"><i class="icon-angle-right"></i></span>
+                                            <span class="section_title">Стилистика дизайна</span>
+                                            <span class="description" data-balloon="Здесь какое-то описание..." data-balloon-pos="up"><i class="icon-question-circle-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="param_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_40">
+                                                <label for="checkbox_40">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_41">
+                                                <label for="checkbox_41">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_42">
+                                                <label for="checkbox_42">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                        <div class="select_indicator">
+                                            <span></span>
+                                        </div>
+                                        <div class="button_container">
+                                            <span class="arrow"><i class="icon-angle-right"></i></span>
+                                            <span class="section_title">Форма</span>
+                                            <span class="description" data-balloon="Здесь какое-то описание..." data-balloon-pos="up"><i class="icon-question-circle-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="param_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_43">
+                                                <label for="checkbox_43">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_44">
+                                                <label for="checkbox_44">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_45">
+                                                <label for="checkbox_45">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                        <div class="select_indicator">
+                                            <span></span>
+                                        </div>
+                                        <div class="button_container">
+                                            <span class="arrow"><i class="icon-angle-right"></i></span>
+                                            <span class="section_title">Механизм</span>
+                                            <span class="description" data-balloon="Здесь какое-то описание..." data-balloon-pos="up"><i class="icon-question-circle-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="param_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_46">
+                                                <label for="checkbox_46">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_47">
+                                                <label for="checkbox_47">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_48">
+                                                <label for="checkbox_48">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                        <div class="select_indicator">
+                                            <span></span>
+                                        </div>
+                                        <div class="button_container">
+                                            <span class="arrow"><i class="icon-angle-right"></i></span>
+                                            <span class="section_title">Монтаж</span>
+                                            <span class="description" data-balloon="Здесь какое-то описание..." data-balloon-pos="up"><i class="icon-question-circle-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="param_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_34">
+                                                <label for="checkbox_34">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_35">
+                                                <label for="checkbox_35">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_36">
+                                                <label for="checkbox_36">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                        <div class="select_indicator">
+                                            <span></span>
+                                        </div>
+                                        <div class="button_container">
+                                            <span class="arrow"><i class="icon-angle-right"></i></span>
+                                            <span class="section_title">Высота излива</span>
+                                            <span class="description" data-balloon="Здесь какое-то описание..." data-balloon-pos="up"><i class="icon-question-circle-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="param_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_34">
+                                                <label for="checkbox_34">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_35">
+                                                <label for="checkbox_35">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_36">
+                                                <label for="checkbox_36">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                        <div class="select_indicator">
+                                            <span></span>
+                                        </div>
+                                        <div class="button_container">
+                                            <span class="arrow"><i class="icon-angle-right"></i></span>
+                                            <span class="section_title">Типоразмер<br> шлангового подключения</span>
+                                            <span class="description" data-balloon="Здесь какое-то описание..." data-balloon-pos="up"><i class="icon-question-circle-o"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="param_list">
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_34">
+                                                <label for="checkbox_34">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_35">
+                                                <label for="checkbox_35">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <input type="checkbox" id="checkbox_36">
+                                                <label for="checkbox_36">Значение<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section_buttons">
+                                    <button class="show_results">Показать<span class="count">182</span>товара</button>
+                                    <a class="all_filters" href="#">Перейти ко всем фильтрам</a>
+                                    <button class="reset">Сбросить фильтры</button>
+                                </div>
+                            </div>
+                            <div class="sidebar_banner">
+                                <a href="#"><img src="images/sidebar_banner.png" alt="banner"></a>
+                            </div>
+                            <div class="slider_sidebar">
+                                <div class="item">
+                                    <div class="thumb_item">
+                                        <a href="#" class="wrap_image">
+                                            <div class="stick">
+                                                <div class="label">РАСПРОДАЖА</div>
+                                            </div>
+                                            <img src="images/content/with1.jpg" alt="">
+                                        </a>
+                                        <div class="inner">
+                                            <div class="name">
+                                                <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                            </div>
+                                        </div>
+                                        <div class="sub">
+                                            <div class="price">
+                                                <strong>9 999 99 ₽</strong>
+                                                <s>6 700 ₽</s>
+                                            </div>
+                                            <a href="#" class="btn"><i class="icon-heart"></i></a>
+                                            <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
+                                            <a href="#" class="read_more"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb_item">
+                                        <a href="#" class="wrap_image">
+                                            <div class="stick">
+                                                <div class="label">РАСПРОДАЖА</div>
+                                            </div>
+                                            <img src="images/content/with1.jpg" alt="">
+                                        </a>
+                                        <div class="inner">
+                                            <div class="name">
+                                                <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                            </div>
+                                        </div>
+                                        <div class="sub">
+                                            <div class="price">
+                                                <strong>9 999 99 ₽</strong>
+                                                <s>6 700 ₽</s>
+                                            </div>
+                                            <a href="#" class="btn"><i class="icon-heart"></i></a>
+                                            <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
+                                            <a href="#" class="read_more"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb_item">
+                                        <a href="#" class="wrap_image">
+                                            <div class="stick">
+                                                <div class="label">РАСПРОДАЖА</div>
+                                            </div>
+                                            <img src="images/content/with1.jpg" alt="">
+                                        </a>
+                                        <div class="inner">
+                                            <div class="name">
+                                                <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                            </div>
+                                        </div>
+                                        <div class="sub">
+                                            <div class="price">
+                                                <strong>9 999 99 ₽</strong>
+                                                <s>6 700 ₽</s>
+                                            </div>
+                                            <a href="#" class="btn"><i class="icon-heart"></i></a>
+                                            <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
+                                            <a href="#" class="read_more"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular_categories_block">
+                                <div class="section">
+                                    <div class="tab_title">
+                                            <span class="section_title">Популярные категории</span>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="list">
+                                           <li><span>–</span><a href="#">В ванную комнату</a></li>
+                                           <li><span>–</span><a href="#">На кухню</a></li>
+                                        </ul>
+                                        <ul class="list">
+                                           <li><span>–</span><a href="#">Для мойки</a></li>
+                                           <li><span>–</span><a href="#">Для раковины</a></li>
+                                           <li><span>–</span><a href="#">Для умывальника</a></li>
+                                           <li><span>–</span><a href="#">Для ванны с душем</a></li>
+                                           <li><span>–</span><a href="#">Для душа</a></li>
+                                           <li><span>–</span><a href="#">Универсальные</a></li>
+                                           <li><span>–</span><a href="#">Для биде</a></li>
+                                           <li><span>–</span><a href="#">На борт ванны</a></li>
+                                           <li><span>–</span><a href="#">С гигиеническим душем</a></li>
+                                           <li><span>–</span><a href="#">Для фильтра</a></li>
+                                        </ul>
+                                         <ul class="list">
+                                           <li><span>–</span><a href="#">С термостатом</a></li>
+                                           <li><span>–</span><a href="#">Сенсорные</a></li>
+                                           <li><span>–</span><a href="#">Скрытого монтажа</a></li>
+                                           <li><span>–</span><a href="#">Настенного монтажа</a></li>
+                                           <li><span>–</span><a href="#">Напольного монтажа</a></li>
+                                        </ul>
+                                        <ul class="list">
+                                           <li><span>–</span><a href="#">С длинным изливом</a></li>
+                                           <li><span>–</span><a href="#">С выдвижным изливом</a></li>
+                                           <li><span>–</span><a href="#">С гибким изливом</a></li>
+                                           <li><span>–</span><a href="#">Каскадные</a></li>
+                                           <li><span>–</span><a href="#">Однорычажные</a></li>
+                                           <li><span>–</span><a href="#">Двухвентильные</a></li>
+                                           <li><span>–</span><a href="#">В стиле ретро</a></li>
+                                        </ul>
+                                        <ul class="list">
+                                           <li><span>–</span><a href="#">Цветные</a></li>
+                                           <li><span>–</span><a href="#">Цвет бронза</a></li>
+                                           <li><span>–</span><a href="#">Черные</a></li>
+                                           <li><span>–</span><a href="#">Белые</a></li>
+                                           <li><span>–</span><a href="#">Золотые</a></li>
+                                        </ul>
+                                        <ul class="list">
+                                           <li><span>–</span><a href="#">Элитные</a></li>
+                                           <li><span>–</span><a href="#">Эконом-класса</a></li>
+                                        </ul>
+                                        <ul class="list">
+                                           <li><span>–</span><a href="#">Керамические</a></li>
+                                           <li><span>–</span><a href="#">Медные</a></li>
+                                           <li><span>–</span><a href="#">Под камень</a></li>
+                                           <li><span>–</span><a href="#">Гранитные</a></li>
+                                           <li><span>–</span><a href="#">Латунные</a></li>
+                                           <li><span>–</span><a href="#">Из нержавеющей стали</a></li>
+                                           <li><span>–</span><a href="#">Стеклянные</a></li>
+                                        </ul>
+                                        <ul class="list">
+                                           <li><span>–</span><a href="#">Смесители Россия</a></li>
+                                           <li><span>–</span><a href="#">Смесители Германия</a></li>
+                                           <li><span>–</span><a href="#">Смесители Китай</a></li>
+                                           <li><span>–</span><a href="#">Смесители Болгария</a></li>
+                                           <li><span>–</span><a href="#">Смесители Испания</a></li>
+                                           <li><span>–</span><a href="#">Смесители Чехия</a></li>
+                                           <li><span>–</span><a href="#">Смесители Швейцария</a></li>
+                                           <li><span>–</span><a href="#">Смесители Финляндия</a></li>
+                                           <li><span>–</span><a href="#">Распродажа смесителей</a></li>
+                                           <li><span>–</span><a href="#">Смесители уцененные</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                            <span class="section_title">Популярные бренды</span>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="list dropdown">
+                                           <li><span>–</span><a href="#">Grohe</a></li>
+                                           <li><span>–</span><a href="#">AquaSant</a></li>
+                                           <li><span>–</span><a href="#">Grohe</a></li>
+                                           <li><span>–</span><a href="#">AquaSant</a></li>
+                                        </ul>
+                                        <ul class="dropdown_list">
+                                            <li><span>–</span><a href="#">Grohe</a></li>
+                                           <li><span>–</span><a href="#">AquaSant</a></li>
+                                           <li><span>–</span><a href="#">Grohe</a></li>
+                                           <li><span>–</span><a href="#">AquaSant</a></li>
+                                        </ul>
+                                        <button class="param_more">Все бренды</button>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                            <span class="section_title">Популярные бренды на кухню</span>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="list">
+                                           <li><span>–</span><a href="#">Grohe</a></li>
+                                           <li><span>–</span><a href="#">Franke</a></li>
+                                           <li><span>–</span><a href="#">Zorg</a></li>
+                                           <li><span>–</span><a href="#">Blanco</a></li>
+                                           <li><span>–</span><a href="#">Damixa</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="tab_title">
+                                            <span class="section_title">Смотрите также</span>
+                                    </div>
+                                    <div class="tab_content">
+                                        <ul class="list">
+                                           <li><span>–</span><a href="#">Мебель для ванной</a></li>
+                                           <li><span>–</span><a href="#">Унитазы</a></li>
+                                           <li><span>–</span><a href="#">Раковины</a></li>
+                                           <li><span>–</span><a href="#">Душевая программа</a></li>
+                                           <li><span>–</span><a href="#">Водонагреватели</a></li>
+                                           <li><span>–</span><a href="#">Мойки для кухни</a></li>
+                                           <li><span>–</span><a href="#">Обогреватели</a></li>
+                                           <li><span>–</span><a href="#">Теплые полы</a></li>
+                                           <li><span>–</span><a href="#">Аксесуары для ванной комнаты</a></li>
+                                           <li><span>–</span><a href="#">Аксесуары для общественных мест</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="catalog-cards col-lg-9">
@@ -1544,229 +2353,229 @@
             <div class="container">
                 <div class="box_title">Вам также может быть интересно</div>
                 <div class="slider_content">
-                   <span class="arr arr_left_with"></span>
-                   <span class="arr arr_right_with"></span>
-                   <div class="slider_with">
-                    <div class="item">
-                        <div class="thumb_item">
-                            <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
-                                <div class="stick">
-                                    <div class="label">-10%</div>
-                                    <div class="label new">new</div>
+                    <span class="arr arr_left_with"></span>
+                    <span class="arr arr_right_with"></span>
+                    <div class="slider_with">
+                        <div class="item">
+                            <div class="thumb_item">
+                                <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
+                                    <div class="stick">
+                                        <div class="label">-10%</div>
+                                        <div class="label new">new</div>
+                                    </div>
+                                    <img src="images/content/with1.jpg" alt="">
+                                </a>
+                                <div class="inner">
+                                    <div class="name">
+                                        <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                    </div>
+                                    <div class="tools">
+                                        <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
+                                        <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
+                                    </div>
                                 </div>
-                                <img src="images/content/with1.jpg" alt="">
-                            </a>
-                            <div class="inner">
-                                <div class="name">
-                                    <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                <div class="sub">
+                                    <div class="price">
+                                        <strong>9 999 99 ₽</strong>
+                                        <s>6 700 ₽</s>
+                                    </div>
+                                    <a href="#" class="btn"><i class="icon-heart"></i></a>
+                                    <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
+                                    <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                                 </div>
-                                <div class="tools">
-                                    <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
-                                    <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
-                                </div>
-                            </div>
-                            <div class="sub">
-                                <div class="price">
-                                    <strong>9 999 99 ₽</strong>
-                                    <s>6 700 ₽</s>
-                                </div>
-                                <a href="#" class="btn"><i class="icon-heart"></i></a>
-                                <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
-                                <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb_item">
-                            <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
-                                <div class="stick">
-                                    <div class="label">-10%</div>
+                        <div class="item">
+                            <div class="thumb_item">
+                                <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
+                                    <div class="stick">
+                                        <div class="label">-10%</div>
+                                    </div>
+                                    <img src="images/content/with2.jpg" alt="">
+                                </a>
+                                <div class="inner">
+                                    <div class="name">
+                                        <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                    </div>
+                                    <div class="tools">
+                                        <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
+                                        <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
+                                    </div>
                                 </div>
-                                <img src="images/content/with2.jpg" alt="">
-                            </a>
-                            <div class="inner">
-                                <div class="name">
-                                    <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                <div class="sub">
+                                    <div class="price">
+                                        <strong>29 99 ₽</strong>
+                                        <s>6 700 ₽</s>
+                                    </div>
+                                    <a href="#" class="btn"><i class="icon-heart"></i></a>
+                                    <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
+                                    <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                                 </div>
-                                <div class="tools">
-                                    <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
-                                    <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
-                                </div>
-                            </div>
-                            <div class="sub">
-                                <div class="price">
-                                    <strong>29 99 ₽</strong>
-                                    <s>6 700 ₽</s>
-                                </div>
-                                <a href="#" class="btn"><i class="icon-heart"></i></a>
-                                <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
-                                <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb_item">
-                            <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
-                                <div class="stick">
-                                    <div class="label new">new</div>
+                        <div class="item">
+                            <div class="thumb_item">
+                                <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
+                                    <div class="stick">
+                                        <div class="label new">new</div>
+                                    </div>
+                                    <img src="images/content/with3.jpg" alt="">
+                                </a>
+                                <div class="inner">
+                                    <div class="name">
+                                        <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                    </div>
+                                    <div class="tools">
+                                        <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
+                                        <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
+                                    </div>
                                 </div>
-                                <img src="images/content/with3.jpg" alt="">
-                            </a>
-                            <div class="inner">
-                                <div class="name">
-                                    <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                <div class="sub">
+                                    <div class="price">
+                                        <strong>2 840 ₽</strong>
+                                        <s>6 700 ₽</s>
+                                    </div>
+                                    <a href="#" class="btn"><i class="icon-heart"></i></a>
+                                    <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
+                                    <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                                 </div>
-                                <div class="tools">
-                                    <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
-                                    <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
-                                </div>
-                            </div>
-                            <div class="sub">
-                                <div class="price">
-                                    <strong>2 840 ₽</strong>
-                                    <s>6 700 ₽</s>
-                                </div>
-                                <a href="#" class="btn"><i class="icon-heart"></i></a>
-                                <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
-                                <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb_item">
-                            <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
+                        <div class="item">
+                            <div class="thumb_item">
+                                <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
                             <img src="images/content/with4.jpg" alt="">
                         </a>
-                            <div class="inner">
-                                <div class="name">
-                                    <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                <div class="inner">
+                                    <div class="name">
+                                        <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                    </div>
+                                    <div class="tools">
+                                        <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
+                                        <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
+                                    </div>
                                 </div>
-                                <div class="tools">
-                                    <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
-                                    <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
+                                <div class="sub">
+                                    <div class="price">
+                                        <strong>9 928 ₽</strong>
+                                        <s>6 700 ₽</s>
+                                    </div>
+                                    <a href="#" class="btn"><i class="icon-heart"></i></a>
+                                    <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
+                                    <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                                 </div>
-                            </div>
-                            <div class="sub">
-                                <div class="price">
-                                    <strong>9 928 ₽</strong>
-                                    <s>6 700 ₽</s>
-                                </div>
-                                <a href="#" class="btn"><i class="icon-heart"></i></a>
-                                <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
-                                <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb_item">
-                            <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
-                                <div class="stick">
-                                    <div class="label">-10%</div>
-                                    <div class="label new">new</div>
+                        <div class="item">
+                            <div class="thumb_item">
+                                <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
+                                    <div class="stick">
+                                        <div class="label">-10%</div>
+                                        <div class="label new">new</div>
+                                    </div>
+                                    <img src="images/content/with1.jpg" alt="">
+                                </a>
+                                <div class="inner">
+                                    <div class="name">
+                                        <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                    </div>
+                                    <div class="tools">
+                                        <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
+                                        <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
+                                    </div>
                                 </div>
-                                <img src="images/content/with1.jpg" alt="">
-                            </a>
-                            <div class="inner">
-                                <div class="name">
-                                    <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                <div class="sub">
+                                    <div class="price">
+                                        <strong>9 999 99 ₽</strong>
+                                        <s>6 700 ₽</s>
+                                    </div>
+                                    <a href="#" class="btn"><i class="icon-heart"></i></a>
+                                    <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
+                                    <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                                 </div>
-                                <div class="tools">
-                                    <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
-                                    <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
-                                </div>
-                            </div>
-                            <div class="sub">
-                                <div class="price">
-                                    <strong>9 999 99 ₽</strong>
-                                    <s>6 700 ₽</s>
-                                </div>
-                                <a href="#" class="btn"><i class="icon-heart"></i></a>
-                                <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
-                                <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb_item">
-                            <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
-                                <div class="stick">
-                                    <div class="label">-10%</div>
+                        <div class="item">
+                            <div class="thumb_item">
+                                <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
+                                    <div class="stick">
+                                        <div class="label">-10%</div>
+                                    </div>
+                                    <img src="images/content/with2.jpg" alt="">
+                                </a>
+                                <div class="inner">
+                                    <div class="name">
+                                        <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                    </div>
+                                    <div class="tools">
+                                        <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
+                                        <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
+                                    </div>
                                 </div>
-                                <img src="images/content/with2.jpg" alt="">
-                            </a>
-                            <div class="inner">
-                                <div class="name">
-                                    <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                <div class="sub">
+                                    <div class="price">
+                                        <strong>29 99 ₽</strong>
+                                        <s>6 700 ₽</s>
+                                    </div>
+                                    <a href="#" class="btn"><i class="icon-heart"></i></a>
+                                    <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
+                                    <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                                 </div>
-                                <div class="tools">
-                                    <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
-                                    <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
-                                </div>
-                            </div>
-                            <div class="sub">
-                                <div class="price">
-                                    <strong>29 99 ₽</strong>
-                                    <s>6 700 ₽</s>
-                                </div>
-                                <a href="#" class="btn"><i class="icon-heart"></i></a>
-                                <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
-                                <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb_item">
-                            <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
-                                <div class="stick">
-                                    <div class="label new">new</div>
+                        <div class="item">
+                            <div class="thumb_item">
+                                <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
+                                    <div class="stick">
+                                        <div class="label new">new</div>
+                                    </div>
+                                    <img src="images/content/with3.jpg" alt="">
+                                </a>
+                                <div class="inner">
+                                    <div class="name">
+                                        <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                    </div>
+                                    <div class="tools">
+                                        <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
+                                        <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
+                                    </div>
                                 </div>
-                                <img src="images/content/with3.jpg" alt="">
-                            </a>
-                            <div class="inner">
-                                <div class="name">
-                                    <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                <div class="sub">
+                                    <div class="price">
+                                        <strong>2 840 ₽</strong>
+                                        <s>6 700 ₽</s>
+                                    </div>
+                                    <a href="#" class="btn"><i class="icon-heart"></i></a>
+                                    <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
+                                    <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                                 </div>
-                                <div class="tools">
-                                    <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
-                                    <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
-                                </div>
-                            </div>
-                            <div class="sub">
-                                <div class="price">
-                                    <strong>2 840 ₽</strong>
-                                    <s>6 700 ₽</s>
-                                </div>
-                                <a href="#" class="btn"><i class="icon-heart"></i></a>
-                                <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
-                                <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="thumb_item">
-                            <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
+                        <div class="item">
+                            <div class="thumb_item">
+                                <a href="#modal-popup" class="hinge wrap_image" data-effect="mfp-move-horizontal">
                             <img src="images/content/with4.jpg" alt="">
                         </a>
-                            <div class="inner">
-                                <div class="name">
-                                    <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                <div class="inner">
+                                    <div class="name">
+                                        <a href="#">Смеситель Bandini Seta 770.120 Cr для раковины</a>
+                                    </div>
+                                    <div class="tools">
+                                        <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
+                                        <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
+                                    </div>
                                 </div>
-                                <div class="tools">
-                                    <a href="#" class="btn"><i class="icon-heart"></i> <span>В избранное</span></a>
-                                    <a href="#" class="btn"><i class="icon-bar-graph"></i> <span>В сравнение</span></a>
+                                <div class="sub">
+                                    <div class="price">
+                                        <strong>9 928 ₽</strong>
+                                        <s>6 700 ₽</s>
+                                    </div>
+                                    <a href="#" class="btn"><i class="icon-heart"></i></a>
+                                    <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
+                                    <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                                 </div>
-                            </div>
-                            <div class="sub">
-                                <div class="price">
-                                    <strong>9 928 ₽</strong>
-                                    <s>6 700 ₽</s>
-                                </div>
-                                <a href="#" class="btn"><i class="icon-heart"></i></a>
-                                <a href="#" class="btn"><i class="icon-bar-graph"></i></a>
-                                <a href="#modal-popup" data-effect="mfp-move-horizontal" class="read_more hinge"><span>Подробнее</span><i class="icon-arrow-right"></i></a>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
@@ -1776,52 +2585,52 @@
             <div class="container">
                 <ul>
                     <li>
-                       <div class="content_block">
+                        <div class="content_block">
                             <a href="#">
                                 <img src="images/content/brands/roca.svg" alt="roca">
                                 <p class="description">Водонагреватели AEG</p>
                             </a>
-                       </div>
+                        </div>
                     </li>
                     <li>
-                       <div class="content_block">
+                        <div class="content_block">
                             <a href="#">
                                 <img src="images/content/brands/roca.svg" alt="roca">
                                 <p class="description">Зеленые унитазы Roca</p>
                             </a>
-                       </div>
+                        </div>
                     </li>
                     <li>
-                       <div class="content_block">
+                        <div class="content_block">
                             <a href="#">
                                 <img src="images/content/brands/roca.svg" alt="roca">
                                 <p class="description">Водонагреватели AEG</p>
                             </a>
-                       </div>
+                        </div>
                     </li>
                     <li>
-                       <div class="content_block">
+                        <div class="content_block">
                             <a href="#">
                                 <img src="images/content/brands/roca.svg" alt="roca">
                                 <p class="description">Зеленые унитазы Roca</p>
                             </a>
-                       </div>
+                        </div>
                     </li>
                     <li>
-                       <div class="content_block">
+                        <div class="content_block">
                             <a href="#">
                                 <img src="images/content/brands/roca.svg" alt="roca">
                                 <p class="description">Водонагреватели AEG</p>
                             </a>
-                       </div>
+                        </div>
                     </li>
                     <li>
-                       <div class="content_block">
+                        <div class="content_block">
                             <a href="#">
                                 <img src="images/content/brands/roca.svg" alt="roca">
                                 <p class="description">Зеленые унитазы Roca</p>
                             </a>
-                       </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -1837,145 +2646,145 @@
         </div>
         <div class="main_row block_popular">
             <div class="container">
-            <div class="category_list row">
-                <span class="title_list col-lg-3">
+                <div class="category_list row">
+                    <span class="title_list col-lg-3">
                     <p>Популярные разделы Ideal Standart</p>
                 </span>
-                <ul class="block_list col-lg-3">
-                    <li class="item"><a href="#">Встраиваемые раковины (умывальники)</a></li>
-                    <li class="item"><a href="#">Двойные раковины (умывальники)</a></li>
-                    <li class="item"><a href="#">Мини раковины для ванной / маленькие раковины для ванной</a></li>
-                    <li class="item"><a href="#">Встраиваемые раковины (умывальники)</a></li>
-                    <li class="item"><a href="#">Двойные раковины (умывальники)</a></li>
-                    <li class="item"><a href="#">Мини раковины для ванной / маленькие раковины для ванной</a></li>
-                </ul>
-                <ul class="block_list col-lg-3">
-                    <li class="item"><a href="#">Встраиваемые раковины (умывальники)</a></li>
-                    <li class="item"><a href="#">Двойные раковины (умывальники)</a></li>
-                    <li class="item"><a href="#">Мини раковины для ванной / маленькие раковины для ванной</a></li>
-                    <li class="item"><a href="#">Встраиваемые раковины (умывальники)</a></li>
-                    <li class="item"><a href="#">Двойные раковины (умывальники)</a></li>
-                    <li class="item"><a href="#">Мини раковины для ванной / маленькие раковины для ванной</a></li>
-                </ul>
-                <ul class="block_list col-lg-3">
-                    <li class="item"><a href="#">Встраиваемые раковины (умывальники)</a></li>
-                    <li class="item"><a href="#">Двойные раковины (умывальники)</a></li>
-                    <li class="item"><a href="#">Мини раковины для ванной / маленькие раковины для ванной</a></li>
-                    <li class="item"><a href="#">Встраиваемые раковины (умывальники)</a></li>
-                    <li class="item"><a href="#">Двойные раковины (умывальники)</a></li>
-                    <li class="item"><a href="#">Мини раковины для ванной / маленькие раковины для ванной</a></li>
-                </ul>
-            </div>
-            <button type="button" class="button_more">
-                <span>Развернуть</span>
-                <i class="icon-angle-down"></i>
-            </button>
+                    <ul class="block_list col-lg-3">
+                        <li class="item"><a href="#">Встраиваемые раковины (умывальники)</a></li>
+                        <li class="item"><a href="#">Двойные раковины (умывальники)</a></li>
+                        <li class="item"><a href="#">Мини раковины для ванной / маленькие раковины для ванной</a></li>
+                        <li class="item"><a href="#">Встраиваемые раковины (умывальники)</a></li>
+                        <li class="item"><a href="#">Двойные раковины (умывальники)</a></li>
+                        <li class="item"><a href="#">Мини раковины для ванной / маленькие раковины для ванной</a></li>
+                    </ul>
+                    <ul class="block_list col-lg-3">
+                        <li class="item"><a href="#">Встраиваемые раковины (умывальники)</a></li>
+                        <li class="item"><a href="#">Двойные раковины (умывальники)</a></li>
+                        <li class="item"><a href="#">Мини раковины для ванной / маленькие раковины для ванной</a></li>
+                        <li class="item"><a href="#">Встраиваемые раковины (умывальники)</a></li>
+                        <li class="item"><a href="#">Двойные раковины (умывальники)</a></li>
+                        <li class="item"><a href="#">Мини раковины для ванной / маленькие раковины для ванной</a></li>
+                    </ul>
+                    <ul class="block_list col-lg-3">
+                        <li class="item"><a href="#">Встраиваемые раковины (умывальники)</a></li>
+                        <li class="item"><a href="#">Двойные раковины (умывальники)</a></li>
+                        <li class="item"><a href="#">Мини раковины для ванной / маленькие раковины для ванной</a></li>
+                        <li class="item"><a href="#">Встраиваемые раковины (умывальники)</a></li>
+                        <li class="item"><a href="#">Двойные раковины (умывальники)</a></li>
+                        <li class="item"><a href="#">Мини раковины для ванной / маленькие раковины для ванной</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="button_more">
+                    <span>Развернуть</span>
+                    <i class="icon-angle-down"></i>
+                </button>
             </div>
         </div>
-         <div class="product_slider">
-                <div class="container">
-                    <div class="holder">
-                        <div class="clear">
-                            <button class="clear_btn">Очистить</button>
+        <div class="product_slider">
+            <div class="container">
+                <div class="holder">
+                    <div class="clear">
+                        <button class="clear_btn">Очистить</button>
+                    </div>
+                    <div class="headline">
+                        <div class="title">Вы смотрели<span>(35)</span></div>
+                    </div>
+                    <div class="slider_watched">
+                        <div class="item">
+                            <div class="item_watched">
+                                <img src="images/content/you-watched1.jpg" alt="">
+                                <span class="bottom">
+                                <span class="price">7 910 ₽</span>
+                                <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
+                                </span>
+                            </div>
                         </div>
-                        <div class="headline">
-                            <div class="title">Вы смотрели<span>(35)</span></div>
+                        <div class="item">
+                            <div class="item_watched">
+                                <img src="images/content/you-watched1.jpg" alt="">
+                                <span class="bottom">
+                                <span class="price">7 910 ₽</span>
+                                <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
+                                </span>
+                            </div>
                         </div>
-                        <div class="slider_watched">
-                            <div class="item">
-                                <div class="item_watched">
-                                    <img src="images/content/you-watched1.jpg" alt="">
-                                    <span class="bottom">
+                        <div class="item">
+                            <div class="item_watched">
+                                <img src="images/content/you-watched1.jpg" alt="">
+                                <span class="bottom">
                                 <span class="price">7 910 ₽</span>
-                                    <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
-                                    </span>
-                                </div>
+                                <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
+                                </span>
                             </div>
-                            <div class="item">
-                                <div class="item_watched">
-                                    <img src="images/content/you-watched1.jpg" alt="">
-                                    <span class="bottom">
+                        </div>
+                        <div class="item">
+                            <div class="item_watched">
+                                <img src="images/content/you-watched1.jpg" alt="">
+                                <span class="bottom">
                                 <span class="price">7 910 ₽</span>
-                                    <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
-                                    </span>
-                                </div>
+                                <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
+                                </span>
                             </div>
-                            <div class="item">
-                                <div class="item_watched">
-                                    <img src="images/content/you-watched1.jpg" alt="">
-                                    <span class="bottom">
+                        </div>
+                        <div class="item">
+                            <div class="item_watched">
+                                <img src="images/content/you-watched1.jpg" alt="">
+                                <span class="bottom">
                                 <span class="price">7 910 ₽</span>
-                                    <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
-                                    </span>
-                                </div>
+                                <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
+                                </span>
                             </div>
-                            <div class="item">
-                                <div class="item_watched">
-                                    <img src="images/content/you-watched1.jpg" alt="">
-                                    <span class="bottom">
+                        </div>
+                        <div class="item">
+                            <div class="item_watched">
+                                <img src="images/content/you-watched1.jpg" alt="">
+                                <span class="bottom">
                                 <span class="price">7 910 ₽</span>
-                                    <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
-                                    </span>
-                                </div>
+                                <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
+                                </span>
                             </div>
-                            <div class="item">
-                                <div class="item_watched">
-                                    <img src="images/content/you-watched1.jpg" alt="">
-                                    <span class="bottom">
+                        </div>
+                        <div class="item">
+                            <div class="item_watched">
+                                <img src="images/content/you-watched1.jpg" alt="">
+                                <span class="bottom">
                                 <span class="price">7 910 ₽</span>
-                                    <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
-                                    </span>
-                                </div>
+                                <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
+                                </span>
                             </div>
-                            <div class="item">
-                                <div class="item_watched">
-                                    <img src="images/content/you-watched1.jpg" alt="">
-                                    <span class="bottom">
+                        </div>
+                        <div class="item">
+                            <div class="item_watched">
+                                <img src="images/content/you-watched1.jpg" alt="">
+                                <span class="bottom">
                                 <span class="price">7 910 ₽</span>
-                                    <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
-                                    </span>
-                                </div>
+                                <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
+                                </span>
                             </div>
-                            <div class="item">
-                                <div class="item_watched">
-                                    <img src="images/content/you-watched1.jpg" alt="">
-                                    <span class="bottom">
+                        </div>
+                        <div class="item">
+                            <div class="item_watched">
+                                <img src="images/content/you-watched1.jpg" alt="">
+                                <span class="bottom">
                                 <span class="price">7 910 ₽</span>
-                                    <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
-                                    </span>
-                                </div>
+                                <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
+                                </span>
                             </div>
-                            <div class="item">
-                                <div class="item_watched">
-                                    <img src="images/content/you-watched1.jpg" alt="">
-                                    <span class="bottom">
+                        </div>
+                        <div class="item">
+                            <div class="item_watched">
+                                <img src="images/content/you-watched1.jpg" alt="">
+                                <span class="bottom">
                                 <span class="price">7 910 ₽</span>
-                                    <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_watched">
-                                    <img src="images/content/you-watched1.jpg" alt="">
-                                    <span class="bottom">
-                                <span class="price">7 910 ₽</span>
-                                    <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item_watched">
-                                    <img src="images/content/you-watched1.jpg" alt="">
-                                    <span class="bottom">
-                                <span class="price">7 910 ₽</span>
-                                    <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
-                                    </span>
-                                </div>
+                                <a href="#" class="item_title">Чугунная ванна Aqualux Delafon Cleo / Revival</a>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         <div class="footer">
             <div class="footer_holder">
                 <div class="panel_fixed">
@@ -2685,6 +3494,12 @@
             </div>
         </div>
         <script src="libs/jquery/dist/jquery.min.js"></script>
+        <!--Все, что касается фильтра, для конкретной страницы-->
+        <link rel="stylesheet" type="text/css" href="libs/ion.rangeSlider-2.2.0/css/ion.rangeSlider.css" media="all">
+        <link rel="stylesheet" type="text/css" href="libs/ion.rangeSlider-2.2.0/css/ion.rangeSlider.skinModern.css" media="all">
+        <script src="libs/ion.rangeSlider-2.2.0/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+        <script src="js/filter.js"></script>
+        <!---->
         <script src="js/assets.js"></script>
         <script src="js/main.js"></script>
         <script src="js/catalog.js"></script>

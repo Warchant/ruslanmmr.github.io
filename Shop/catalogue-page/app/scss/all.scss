@@ -1572,6 +1572,8 @@ i {
         position: absolute;
         cursor: pointer;
         z-index: 2;
+        opacity: 0.5;
+        transition: .3s;
     }
     .arr_left_with {
         background: url(../images/content/slick-arrows.png) no-repeat;
@@ -6415,9 +6417,6 @@ i {
 	background-color: #fff;
 	border: 1px solid #ebebeb;
 	transition: .3s;
-	&:hover {
-		box-shadow: 8px 13px 25px rgba(0, 0, 0, 0.2);
-	}
 }
 
 .thumb_item .wrap_image {
@@ -6949,7 +6948,7 @@ i {
 }
 
 @media screen and (min-width: 1025px) {
-	.slider_watched .slick-arrow:hover {
+	.slider_watched .slick-arrow:hover, .with_box .arr:hover {
 		opacity: 1;
 	}
 }

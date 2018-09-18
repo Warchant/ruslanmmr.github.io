@@ -190,6 +190,9 @@
                         span {
                             font-family: "BebasNeueBook";
                         }
+                        br {
+                display: none;
+            }
                     }
                     .number {
                         font: 66.4em "BebasNeueBold";
@@ -655,4 +658,10 @@
             margin: 0 !important;
         }
     }
+}
+
+@media screen and (max-width: 450px) {
+     #home .container .tab_content .home_page .tab_content_block h2 br {
+    display: block;
+}
 }
