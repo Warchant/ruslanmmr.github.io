@@ -9,38 +9,9 @@
             background-color: #fafafa;
         }
         .tab_title {
-            height: 47px;
             cursor: pointer;
             position: relative;
-            padding: 0 22px;
-            .item {
-            	position: absolute;
-                right: 10px;
-                top: 10px;
-            }
-            .reset {
-                border: none;
-                width: 15px;
-                height: 15px;
-                opacity: 0;
-                cursor: pointer;
-                transition: .3s ease;
-                .close:before,
-                .close:after {
-                    position: absolute;
-                    content: ' ';
-                    height: 17px;
-                    top: 0;
-                    width: 2px;
-                    background-color: #333;
-                }
-                .close:before {
-                    transform: rotate(45deg);
-                }
-                .close:after {
-                    transform: rotate(-45deg);
-                }
-            }
+            padding: 15px 22px;
             .select_indicator {
                 position: absolute;
                 left: 0;
@@ -57,17 +28,15 @@
             .button_container {
                 height: 100%;
                 display: flex;
-                align-items: center;
                 position: relative;
                 .arrow {
                     display: block;
                     transform: rotate(90deg);
                     position: absolute;
                     left: 3px;
-                    top: 50%;
-                    margin-top: -7px;
                     height: 14px;
                     transition: .3s;
+                    top: 5px;
                     i {
                         font-size: 1.2em;
                         line-height: 70%;
@@ -78,16 +47,18 @@
                     padding-left: 20px;
                     font-weight: bold;
                     color: #040000;
-                    padding-bottom: 2px;
+                    line-height: 160%;
                 }
                 .description {
                     opacity: 0;
                     margin-left: 7px;
                     transition: .3s;
+                    position: relative;
                     i {
                         font-size: 1.5em;
                         color: #bab8b6;
                         transition: .3s;
+                        position: absolute;
                         &:hover {
                             color: #626262;
                         }

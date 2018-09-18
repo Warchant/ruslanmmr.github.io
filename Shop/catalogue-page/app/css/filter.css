@@ -10,39 +10,9 @@
     .filter .section:hover {
       background-color: #fafafa; }
     .filter .section .tab_title {
-      height: 47px;
       cursor: pointer;
       position: relative;
-      padding: 0 22px; }
-      .filter .section .tab_title .item {
-        position: absolute;
-        right: 10px;
-        top: 10px; }
-      .filter .section .tab_title .reset {
-        border: none;
-        width: 15px;
-        height: 15px;
-        opacity: 0;
-        cursor: pointer;
-        -webkit-transition: .3s ease;
-        -o-transition: .3s ease;
-        transition: .3s ease; }
-        .filter .section .tab_title .reset .close:before,
-        .filter .section .tab_title .reset .close:after {
-          position: absolute;
-          content: ' ';
-          height: 17px;
-          top: 0;
-          width: 2px;
-          background-color: #333; }
-        .filter .section .tab_title .reset .close:before {
-          -webkit-transform: rotate(45deg);
-              -ms-transform: rotate(45deg);
-                  transform: rotate(45deg); }
-        .filter .section .tab_title .reset .close:after {
-          -webkit-transform: rotate(-45deg);
-              -ms-transform: rotate(-45deg);
-                  transform: rotate(-45deg); }
+      padding: 15px 22px; }
       .filter .section .tab_title .select_indicator {
         position: absolute;
         left: 0;
@@ -64,10 +34,6 @@
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
         position: relative; }
         .filter .section .tab_title .button_container .arrow {
           display: block;
@@ -76,12 +42,11 @@
                   transform: rotate(90deg);
           position: absolute;
           left: 3px;
-          top: 50%;
-          margin-top: -7px;
           height: 14px;
           -webkit-transition: .3s;
           -o-transition: .3s;
-          transition: .3s; }
+          transition: .3s;
+          top: 5px; }
           .filter .section .tab_title .button_container .arrow i {
             font-size: 1.2em;
             line-height: 70%;
@@ -90,19 +55,21 @@
           padding-left: 20px;
           font-weight: bold;
           color: #040000;
-          padding-bottom: 2px; }
+          line-height: 160%; }
         .filter .section .tab_title .button_container .description {
           opacity: 0;
           margin-left: 7px;
           -webkit-transition: .3s;
           -o-transition: .3s;
-          transition: .3s; }
+          transition: .3s;
+          position: relative; }
           .filter .section .tab_title .button_container .description i {
             font-size: 1.5em;
             color: #bab8b6;
             -webkit-transition: .3s;
             -o-transition: .3s;
-            transition: .3s; }
+            transition: .3s;
+            position: absolute; }
             .filter .section .tab_title .button_container .description i:hover {
               color: #626262; }
       .filter .section .tab_title:hover .button_container .arrow i {
