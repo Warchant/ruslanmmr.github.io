@@ -55,21 +55,23 @@
           padding-left: 20px;
           font-weight: bold;
           color: #040000;
-          line-height: 160%; }
+          line-height: 160%;
+          position: relative; }
         .filter .section .tab_title .button_container .description {
           opacity: 0;
           margin-left: 7px;
           -webkit-transition: .3s;
           -o-transition: .3s;
           transition: .3s;
-          position: relative; }
+          position: absolute;
+          right: -24px;
+          bottom: -3px; }
           .filter .section .tab_title .button_container .description i {
             font-size: 1.5em;
             color: #bab8b6;
             -webkit-transition: .3s;
             -o-transition: .3s;
-            transition: .3s;
-            position: absolute; }
+            transition: .3s; }
             .filter .section .tab_title .button_container .description i:hover {
               color: #626262; }
       .filter .section .tab_title:hover .button_container .arrow i {
