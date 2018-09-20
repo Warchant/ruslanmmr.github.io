@@ -12,7 +12,7 @@ $(document).ready(function() {
     $(".filter .param_more").on('click', function() {
         $(this).siblings(".drop_down_list").slideToggle(300);
         $(this).toggleClass("param_more_active");
-         if ( $(this).hasClass("param_more_active") ) {
+        if ($(this).hasClass("param_more_active")) {
             $(this).text("Свернуть");
         } else {
             $(this).text("Показать все");
@@ -75,4 +75,28 @@ $(document).ready(function() {
             to: val
         });
     });
+
+
+
+$('.checkbox_item').on('change', function() {
+        if ( $(this).prop('checked') ) {
+             $(this).addClass('active');
+        } else {
+        	   $(this).removeClass('active');
+        }
+    });
+$('.checkbox_item').on('change', function() {
+        if ( $(this).parents(".tab_content").find(".active").length ) {
+             $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeIn();	
+        } else {
+        	   $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeOut();	
+        }
+    });
+$('.filter .reset').on('click', function() {
+        $(this).parents(".tab_title").siblings(".tab_content").find(".checkbox_item").prop('checked',false);
+        $(this).parents(".tab_title").siblings(".tab_content").find(".checkbox_item").removeClass('active');
+        $(this).parents(".item").fadeOut();
+    });
+
 });
+

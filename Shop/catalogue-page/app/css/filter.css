@@ -28,6 +28,44 @@
           display: block;
           border: 9px solid transparent;
           border-left: 9px solid #197ac4; }
+      .filter .section .tab_title .item {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+        display: none;
+        z-index: 2; }
+        .filter .section .tab_title .item:hover .reset {
+          opacity: 0.8; }
+      .filter .section .tab_title .reset {
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        left: 0px;
+        padding: 0;
+        opacity: 0.3;
+        border: none;
+        cursor: pointer; }
+      .filter .section .tab_title .reset:before,
+      .filter .section .tab_title .reset:after {
+        position: absolute;
+        z-index: 1;
+        content: ' ';
+        height: 20px;
+        top: 0;
+        width: 2px;
+        background-color: #333;
+        cursor: pointer; }
+      .filter .section .tab_title .reset:before {
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg); }
+      .filter .section .tab_title .reset:after {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
       .filter .section .tab_title .button_container {
         height: 100%;
         display: -webkit-box;
@@ -56,7 +94,8 @@
           font-weight: bold;
           color: #040000;
           line-height: 160%;
-          position: relative; }
+          position: relative;
+          z-index: 1; }
         .filter .section .tab_title .button_container .description {
           opacity: 0;
           margin-left: 7px;
@@ -78,10 +117,6 @@
         color: #197ac4; }
       .filter .section .tab_title:hover .description {
         opacity: 1; }
-      .filter .section .tab_title:hover .reset {
-        opacity: 0.3; }
-        .filter .section .tab_title:hover .reset:hover {
-          opacity: 0.8; }
     .filter .section .title_active .button_container .arrow {
       -webkit-transform: rotate(-90deg);
           -ms-transform: rotate(-90deg);
@@ -97,8 +132,9 @@
       .filter .section .tab_content .param_list li,
       .filter .section .tab_content .drop_down_list li {
         margin-bottom: 6px; }
-      .filter .section .tab_content .param_list .checkbox input[type="checkbox"],
-      .filter .section .tab_content .drop_down_list .checkbox input[type="checkbox"] {
+      .filter .section .tab_content .param_list .checkbox input[type="checkbox"], .filter .section .tab_content .param_list .checkbox input[type="radio"],
+      .filter .section .tab_content .drop_down_list .checkbox input[type="checkbox"],
+      .filter .section .tab_content .drop_down_list .checkbox input[type="radio"] {
         display: none; }
       .filter .section .tab_content .param_list .checkbox label,
       .filter .section .tab_content .drop_down_list .checkbox label {
@@ -140,14 +176,17 @@
                 transform: rotate(-45deg);
         left: 4px;
         top: 2px; }
-      .filter .section .tab_content .param_list .checkbox input[type="checkbox"] + label::after,
-      .filter .section .tab_content .drop_down_list .checkbox input[type="checkbox"] + label::after {
+      .filter .section .tab_content .param_list .checkbox input[type="checkbox"] + label::after, .filter .section .tab_content .param_list .checkbox input[type="radio"] + label::after,
+      .filter .section .tab_content .drop_down_list .checkbox input[type="checkbox"] + label::after,
+      .filter .section .tab_content .drop_down_list .checkbox input[type="radio"] + label::after {
         content: none; }
-      .filter .section .tab_content .param_list .checkbox input[type="checkbox"]:checked + label::after,
-      .filter .section .tab_content .drop_down_list .checkbox input[type="checkbox"]:checked + label::after {
+      .filter .section .tab_content .param_list .checkbox input[type="checkbox"]:checked + label::after, .filter .section .tab_content .param_list .checkbox input[type="radio"]:checked + label::after,
+      .filter .section .tab_content .drop_down_list .checkbox input[type="checkbox"]:checked + label::after,
+      .filter .section .tab_content .drop_down_list .checkbox input[type="radio"]:checked + label::after {
         content: ""; }
-      .filter .section .tab_content .param_list .checkbox input[type="checkbox"]:checked + label::before,
-      .filter .section .tab_content .drop_down_list .checkbox input[type="checkbox"]:checked + label::before {
+      .filter .section .tab_content .param_list .checkbox input[type="checkbox"]:checked + label::before, .filter .section .tab_content .param_list .checkbox input[type="radio"]:checked + label::before,
+      .filter .section .tab_content .drop_down_list .checkbox input[type="checkbox"]:checked + label::before,
+      .filter .section .tab_content .drop_down_list .checkbox input[type="radio"]:checked + label::before {
         background-color: #cfeaff; }
       .filter .section .tab_content .color_list {
         display: -webkit-box;
@@ -236,7 +275,9 @@
       padding-left: 8px; }
   .filter .section_buttons {
     padding: 20px; }
-    .filter .section_buttons .show_results, .filter .section_buttons .all_filters, .filter .section_buttons .reset {
+    .filter .section_buttons .show_results,
+    .filter .section_buttons .all_filters,
+    .filter .section_buttons .reset {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -261,7 +302,9 @@
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s; }
-      .filter .section_buttons .show_results .count, .filter .section_buttons .all_filters .count, .filter .section_buttons .reset .count {
+      .filter .section_buttons .show_results .count,
+      .filter .section_buttons .all_filters .count,
+      .filter .section_buttons .reset .count {
         padding: 0 0.2em; }
     .filter .section_buttons .show_results {
       margin-bottom: 10px;
@@ -277,6 +320,7 @@
     border-color: #999999; }
   .filter .section_buttons .show_results:hover {
     background-color: #ffdd7d; }
-  .filter .section_buttons .all_filters:hover, .filter .section_buttons .reset:hover {
+  .filter .section_buttons .all_filters:hover,
+  .filter .section_buttons .reset:hover {
     color: #1d1d1d;
     border-color: #999999; } }
