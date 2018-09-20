@@ -44,6 +44,9 @@ $(document).ready(function() {
         onChange: function(data) {
             $input_from.prop("value", data.from);
             $input_to.prop("value", data.to);
+        },
+        onFinish: function (data) {
+              $(".range .item").fadeIn();
         }
     });
 
@@ -78,25 +81,36 @@ $(document).ready(function() {
 
 
 
-$('.checkbox_item').on('change', function() {
-        if ( $(this).prop('checked') ) {
-             $(this).addClass('active');
+    $('.checkbox_item').on('change', function() {
+        if ($(this).prop('checked')) {
+            $(this).addClass('active');
         } else {
-        	   $(this).removeClass('active');
+            $(this).removeClass('active');
         }
     });
-$('.checkbox_item').on('change', function() {
-        if ( $(this).parents(".tab_content").find(".active").length ) {
-             $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeIn();	
+
+
+    $('.input_end, .input_start').on('input keyup', function(e) {
+       $(this).addClass('active');
+});
+
+
+    $('.checkbox_item, .input_end, .input_start').on('change', function() {
+        if ($(this).parents(".tab_content").find(".active").length) {
+            $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeIn();
         } else {
-        	   $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeOut();	
+            $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeOut();
         }
     });
-$('.filter .reset').on('click', function() {
-        $(this).parents(".tab_title").siblings(".tab_content").find(".checkbox_item").prop('checked',false);
-        $(this).parents(".tab_title").siblings(".tab_content").find(".checkbox_item").removeClass('active');
+    $('.filter .reset').on('click', function() {
+        $(this).parents(".tab_title").siblings(".tab_content").find(".checkbox_item").prop('checked', false).removeClass('active');
+        $(this).parents(".tab_title").siblings(".tab_content").find(".input_end").val(max).removeClass('active');
+        $(this).parents(".tab_title").siblings(".tab_content").find(".input_start").val(min).removeClass('active');
+        $(".js-range-slider").data("ionRangeSlider").update({
+            from: min,
+            to: max
+        });
         $(this).parents(".item").fadeOut();
     });
 
 });
-
