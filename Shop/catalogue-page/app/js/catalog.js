@@ -2,12 +2,20 @@ $(document).ready(function() {
     HeightCards();
     sliderSidebar();
     moreSidebar();
+    selectedSort();
+    selectedCount();
+});
+$(window).resize(function() {
+	  $(".description_section").css("height", "auto");
+	  mh = 0;
+	  setTimeout(function(){
+        HeightCards();
+    }, 200);
 });
 
-
+var mh = 0;
 //авто-высота карточек товаров
 function HeightCards() {
-    var mh = 0;
     $(".description_section").each(function() {
         var h_block = parseInt($(this).height());
         if (h_block > mh) {
@@ -39,4 +47,17 @@ function moreSidebar() {
             $(this).text("Все бренды");
         }
     });
+};
+
+function selectedSort() {
+	  $(".sort-block, .sort-block .selected").on('click', function() {
+         $('.sort-block').toggleClass("open");
+         $('.delivery-count').removeClass("open");
+	  });
+};
+function selectedCount() {
+	  $(".delivery-count, .delivery-count .selected").on('click', function() {
+         $('.delivery-count').toggleClass("open");
+         $('.sort-block').removeClass("open");
+	  });
 };

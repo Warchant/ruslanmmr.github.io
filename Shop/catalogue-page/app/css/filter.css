@@ -1,3 +1,21 @@
+.filter_show_btn {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: #78a1b3;
+  -webkit-border-radius: 1px solid #95b5c3;
+          border-radius: 1px solid #95b5c3;
+  height: 40px;
+  margin: 0px 10px;
+  margin-bottom: 30px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  color: #fff;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  display: none; }
+
 .filter {
   border: 1px solid #e5e5e5;
   width: 100%;
@@ -12,7 +30,7 @@
     .filter .section .tab_title {
       cursor: pointer;
       position: relative;
-      padding: 15px 22px; }
+      padding: 13px 22px; }
       .filter .section .tab_title .select_indicator {
         position: absolute;
         left: 0;
@@ -200,6 +218,7 @@
         margin-bottom: 6px; }
         .filter .section .tab_content .color_list li {
           width: 14%;
+          max-width: 40px;
           padding: 0 4px; }
         .filter .section .tab_content .color_list .checkbox input[type="checkbox"] {
           display: none; }
@@ -219,7 +238,7 @@
             left: 0;
             bottom: 0;
             right: 0;
-            border: 1px solid transparent; }
+            border: 1px solid #ededed; }
         .filter .section .tab_content .color_list .checkbox input[type="checkbox"]:checked + label .color_block {
           border-color: #000; }
         .filter .section .tab_content .color_list .checkbox .color1 .color_block {
@@ -314,7 +333,7 @@
     .filter .section_buttons .reset {
       margin-top: 10px; }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
   .filter .section .tab_content .param_more:hover {
     color: #1d1d1d;
     border-color: #999999; }
@@ -324,3 +343,15 @@
   .filter .section_buttons .reset:hover {
     color: #1d1d1d;
     border-color: #999999; } }
+
+@media screen and (max-width: 992px) {
+  .filter .section .tab_content .color_list {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .left-sidebar {
+    margin-bottom: 40px;
+    display: none; }
+  .filter_show_btn {
+    display: block; } }

@@ -1,3 +1,19 @@
+.filter_show_btn {
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            background-color: #78a1b3;
+            border-radius: 1px solid #95b5c3;
+            height: 40px;
+            margin: 0px 10px;
+            margin-bottom: 30px;
+            border-radius: 3px;
+            color: #fff;
+            transition: .3s;
+            display: none;
+        }
+
+
 .filter {
     border: 1px solid #e5e5e5;
     width: 100%;
@@ -11,7 +27,7 @@
         .tab_title {
             cursor: pointer;
             position: relative;
-            padding: 15px 22px;
+            padding: 13px 22px;
             .select_indicator {
                 position: absolute;
                 left: 0;
@@ -195,6 +211,7 @@
                 margin-bottom: 6px;
                 li {
                     width: 14%;
+                    max-width: 40px;
                     padding: 0 4px;
                 }
                 .checkbox input[type="checkbox"] {
@@ -217,7 +234,7 @@
                         left: 0;
                         bottom: 0;
                         right: 0;
-                        border: 1px solid transparent;
+                        border: 1px solid #ededed;
                     }
                 }
                 .checkbox input[type="checkbox"]:checked+label .color_block {
@@ -331,7 +348,7 @@
 
 
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
     .filter .section .tab_content .param_more:hover {
         color: #1d1d1d;
         border-color: #999999;
@@ -343,5 +360,18 @@
     .filter .section_buttons .reset:hover {
         color: #1d1d1d;
         border-color: #999999;
+    }
+}
+
+@media screen and (max-width: 992px) {
+      .filter .section .tab_content .color_list {
+    	justify-content: flex-start;
+    }
+    .left-sidebar {
+    	margin-bottom: 40px;
+    	display: none;
+    }
+    .filter_show_btn {
+    	display: block;
     }
 }

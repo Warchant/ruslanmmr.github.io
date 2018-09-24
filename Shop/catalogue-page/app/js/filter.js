@@ -19,6 +19,15 @@ $(document).ready(function() {
         }
     });
 
+    $(".filter_show_btn").on('click', function() {
+        $(".left-sidebar").slideToggle(300).toggleClass("f_active");
+        if ( $(".left-sidebar").hasClass("f_active") ) {
+            $(this).text("Скрыть фильтр");
+        } else {
+            $(this).text("Фильтр");
+        }
+    });
+
     // Диапазоны
     var $range = $(".js-range-slider"),
         $input_from = $(".input_start"),

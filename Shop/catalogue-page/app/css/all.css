@@ -1570,7 +1570,7 @@ i {
   .header_city_select {
     display: none; } }
 
-.header_city_select.open .header_dropdown {
+.header_city_select.open .header_dropdown, .sort_dropdown {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
@@ -1640,7 +1640,7 @@ i {
   -o-transition: color .3s, border .3s;
   transition: color .3s, border .3s; }
 
-.header_dropdown {
+.header_dropdown, .sort_dropdown {
   position: absolute;
   top: 100%;
   left: 0;
