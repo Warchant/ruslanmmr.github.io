@@ -1658,7 +1658,7 @@ i {
 	}
 }
 
-.header_city_select.open .header_dropdown, .sort_dropdown {
+.header_city_select.open .header_dropdown {
 	transform: translateY(0);
 	opacity: 1;
 	visibility: visible;
@@ -1728,7 +1728,7 @@ i {
 	transition: color .3s, border .3s;
 }
 
-.header_dropdown, .sort_dropdown {
+.header_dropdown {
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -10903,6 +10903,7 @@ i {
 
 .content_inform .title {
 	margin-bottom: 4px;
+	text-align: center;
 }
 
 .content_inform .row {

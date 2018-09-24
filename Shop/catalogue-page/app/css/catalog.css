@@ -241,7 +241,7 @@ ul {
       position: relative;
       display: block;
       color: #585858;
-      padding: 8px 0;
+      padding: 13px 0;
       padding-left: 20px; }
     .catalog .current-categories .mobile_cat_list .button:after {
       right: 20px;
@@ -380,8 +380,25 @@ ul {
         .catalog .sort-line .sort-line-content .sort-block .selected,
         .catalog .sort-line .sort-line-content .delivery-count .selected,
         .catalog .sort-line .sort-line-content .filter_block .selected {
+          position: relative;
           display: none;
           color: #000; }
+          .catalog .sort-line .sort-line-content .count .selected::after,
+          .catalog .sort-line .sort-line-content .sort-block .selected::after,
+          .catalog .sort-line .sort-line-content .delivery-count .selected::after,
+          .catalog .sort-line .sort-line-content .filter_block .selected::after {
+            content: '';
+            position: absolute;
+            right: -14px;
+            top: 7px;
+            width: 9px;
+            height: 8px;
+            background: url(../images/filter_arr.png) no-repeat center center;
+            -webkit-background-size: contain;
+                    background-size: contain;
+            -webkit-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                    transform: rotate(180deg); }
         .catalog .sort-line .sort-line-content .count .sort_dropdown,
         .catalog .sort-line .sort-line-content .sort-block .sort_dropdown,
         .catalog .sort-line .sort-line-content .delivery-count .sort_dropdown,
@@ -420,7 +437,7 @@ ul {
           .catalog .sort-line .sort-line-content .delivery-count .sort_dropdown a,
           .catalog .sort-line .sort-line-content .filter_block .sort_dropdown a {
             display: block;
-            margin: 5px 12px; }
+            margin: 10px 12px; }
         .catalog .sort-line .sort-line-content .count .first,
         .catalog .sort-line .sort-line-content .sort-block .first,
         .catalog .sort-line .sort-line-content .delivery-count .first,
