@@ -897,7 +897,7 @@ ul {
   .block_more_info .category_list {
     padding: 0 10px; }
   .block_more_info p {
-    font-size: 12px;
+    font: 14px/1.3 "PT Sans", sans-serif;
     line-height: 150%;
     color: #1e0602; }
   .block_more_info .content {
