@@ -893,7 +893,13 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ffffff', endColorstr='#fcffffff', GradientType=0); }
 
 .block_more_info {
-  display: none; }
+  display: none;
+  font: 14px/1.3 "PT Sans", sans-serif; }
+  .block_more_info .button_more span {
+    font: 14px/1.3 "PT Sans", sans-serif;
+    font-size: 14px !important; }
+  .block_more_info .button_more {
+    padding: 12px; }
   .block_more_info .category_list {
     padding: 0 10px; }
   .block_more_info p {
