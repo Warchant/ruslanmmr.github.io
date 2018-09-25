@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    $(".filter .tab_title").on('click', function() {
-        $(this).toggleClass("title_active");
-        if ($(this).hasClass("title_active")) {
-            $(this).siblings().slideDown(300);
+    $(".filter .tab_title .open_button, .filter .tab_title .section_title").on('click', function() {
+        $(this).parents(".tab_title").toggleClass("title_active");
+        if ($(this).parents(".tab_title").hasClass("title_active")) {
+            $(this).parents(".tab_title").siblings().slideDown(300);
         } else {
-            $(this).siblings().slideUp(300);
+            $(this).parents(".tab_title").siblings().slideUp(300);
         }
     });
 

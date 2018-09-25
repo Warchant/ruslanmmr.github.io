@@ -19,7 +19,9 @@
 .filter {
   border: 1px solid #e5e5e5;
   width: 100%;
-  background: #fff; }
+  background: #fff;
+  position: relative;
+  z-index: 3; }
   .filter .section {
     border-bottom: 1px solid #e5e5e5;
     -webkit-transition: .3s;
@@ -30,7 +32,18 @@
     .filter .section .tab_title {
       cursor: pointer;
       position: relative;
-      padding: 13px 22px; }
+      padding: 13px 22px;
+      padding-left: 40px; }
+      .filter .section .tab_title .open_button {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: none;
+        left: 0;
+        top: 0;
+        padding: 0;
+        cursor: pointer;
+        z-index: 2; }
       .filter .section .tab_title .select_indicator {
         position: absolute;
         left: 0;
@@ -46,6 +59,22 @@
           display: block;
           border: 9px solid transparent;
           border-left: 9px solid #197ac4; }
+      .filter .section .tab_title .arrow {
+        display: block;
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+        position: absolute;
+        left: 20px;
+        height: 14px;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        top: 17px; }
+        .filter .section .tab_title .arrow i {
+          font-size: 1.2em;
+          line-height: 70%;
+          color: #afafaf; }
       .filter .section .tab_title .item {
         position: absolute;
         right: 10px;
@@ -86,34 +115,15 @@
                 transform: rotate(-45deg); }
       .filter .section .tab_title .button_container {
         height: 100%;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        position: relative; }
-        .filter .section .tab_title .button_container .arrow {
-          display: block;
-          -webkit-transform: rotate(90deg);
-              -ms-transform: rotate(90deg);
-                  transform: rotate(90deg);
-          position: absolute;
-          left: 3px;
-          height: 14px;
-          -webkit-transition: .3s;
-          -o-transition: .3s;
-          transition: .3s;
-          top: 5px; }
-          .filter .section .tab_title .button_container .arrow i {
-            font-size: 1.2em;
-            line-height: 70%;
-            color: #afafaf; }
+        position: relative;
+        display: inline; }
         .filter .section .tab_title .button_container .section_title {
-          padding-left: 20px;
           font-weight: bold;
           color: #040000;
           line-height: 160%;
           position: relative;
-          z-index: 1; }
+          z-index: 1;
+          display: inline; }
         .filter .section .tab_title .button_container .description {
           opacity: 0;
           margin-left: 7px;
@@ -121,21 +131,22 @@
           -o-transition: .3s;
           transition: .3s;
           position: absolute;
+          z-index: 3;
           right: -24px;
           bottom: -3px; }
           .filter .section .tab_title .button_container .description i {
-            font-size: 1.5em;
+            font-size: 1.35em;
             color: #bab8b6;
             -webkit-transition: .3s;
             -o-transition: .3s;
             transition: .3s; }
             .filter .section .tab_title .button_container .description i:hover {
               color: #626262; }
-      .filter .section .tab_title:hover .button_container .arrow i {
+      .filter .section .tab_title:hover .arrow i {
         color: #197ac4; }
       .filter .section .tab_title:hover .description {
         opacity: 1; }
-    .filter .section .title_active .button_container .arrow {
+    .filter .section .title_active .arrow {
       -webkit-transform: rotate(-90deg);
           -ms-transform: rotate(-90deg);
               transform: rotate(-90deg); }

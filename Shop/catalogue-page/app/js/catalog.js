@@ -3,18 +3,20 @@ $(document).ready(function() {
     sliderSidebar();
     moreSidebar();
     selectedSort();
-    selectedCount();
 });
 $(window).resize(function() {
-	  $(".description_section").css("height", "auto");
-	  mh = 0;
-	  setTimeout(function(){
+    $(".description_section").css("height", "auto");
+    mh = 0;
+    setTimeout(function() {
         HeightCards();
     }, 200);
 });
 
-var mh = 0;
+
+
 //авто-высота карточек товаров
+var mh = 0;
+
 function HeightCards() {
     $(".description_section").each(function() {
         var h_block = parseInt($(this).height());
@@ -25,7 +27,7 @@ function HeightCards() {
     $(".description_section").height(mh);
 };
 
-
+//слайдер сайдбара
 function sliderSidebar() {
     $('.slider_sidebar').slick({
         dots: true,
@@ -37,6 +39,7 @@ function sliderSidebar() {
     });
 };
 
+//кнопки
 function moreSidebar() {
     $(".popular_categories_block .param_more").on('click', function() {
         $(this).siblings(".dropdown_list").slideToggle(300);
@@ -50,14 +53,13 @@ function moreSidebar() {
 };
 
 function selectedSort() {
-	  $(".sort-block, .sort-block .selected").on('click', function() {
-         $('.sort-block').toggleClass("open");
-         $('.delivery-count').removeClass("open");
-	  });
-};
-function selectedCount() {
-	  $(".delivery-count, .delivery-count .selected").on('click', function() {
-         $('.delivery-count').toggleClass("open");
-         $('.sort-block').removeClass("open");
-	  });
+    $(".sort-line .selected_btn").on('click', function() {
+        var drop = $(this).siblings(".sort_dropdown");
+        if (drop.hasClass("open")) {
+            drop.removeClass("open")
+        } else {
+            $('.sort_dropdown').removeClass("open");
+            drop.addClass("open");
+        }
+    });
 };
