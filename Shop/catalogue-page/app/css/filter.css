@@ -160,7 +160,6 @@
           display: inline; }
         .filter .section .tab_title .button_container .description {
           opacity: 0;
-          margin-left: 7px;
           -webkit-transition: .3s;
           -o-transition: .3s;
           transition: .3s;
@@ -168,6 +167,8 @@
           z-index: 3;
           right: -24px;
           bottom: -3px; }
+          .filter .section .tab_title .button_container .description a {
+            display: block; }
           .filter .section .tab_title .button_container .description i {
             font-size: 1.35em;
             color: #bab8b6;

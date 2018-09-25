@@ -155,12 +155,14 @@
                 }
                 .description {
                     opacity: 0;
-                    margin-left: 7px;
                     transition: .3s;
                     position: absolute;
                     z-index: 3;
                     right: -24px;
                     bottom: -3px;
+                    a {
+                    	display: block;
+                    }
                     i {
                         font-size: 1.35em;
                         color: #bab8b6;
