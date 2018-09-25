@@ -22,6 +22,40 @@
   background: #fff;
   position: relative;
   z-index: 3; }
+  .filter .found_amount {
+    position: absolute;
+    right: 0;
+    display: none;
+    -webkit-transform: translate(100%, -25%);
+        -ms-transform: translate(100%, -25%);
+            transform: translate(100%, -25%);
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-border-radius: 4px;
+            border-radius: 4px; }
+    .filter .found_amount .b-found__quantity-phrase {
+      border: none;
+      background-color: #ffcc33;
+      -webkit-transition: .3s ease;
+      -o-transition: .3s ease;
+      transition: .3s ease;
+      padding: 6px 12px;
+      -webkit-border-radius: 4px;
+              border-radius: 4px;
+      cursor: pointer;
+      white-space: nowrap; }
+      .filter .found_amount .b-found__quantity-phrase:hover {
+        background-color: #ffdd7d; }
+    .filter .found_amount::after {
+      content: '';
+      position: absolute;
+      border: 4px solid transparent;
+      border-right: 4px solid rgba(0, 0, 0, 0.8);
+      left: -8px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
   .filter .section {
     border-bottom: 1px solid #e5e5e5;
     -webkit-transition: .3s;
@@ -33,7 +67,7 @@
       cursor: pointer;
       position: relative;
       padding: 13px 22px;
-      padding-left: 40px; }
+      padding-left: 43px; }
       .filter .section .tab_title .open_button {
         position: absolute;
         width: 100%;
@@ -65,7 +99,7 @@
             -ms-transform: rotate(90deg);
                 transform: rotate(90deg);
         position: absolute;
-        left: 20px;
+        left: 25px;
         height: 14px;
         -webkit-transition: .3s;
         -o-transition: .3s;
@@ -158,6 +192,10 @@
       padding: 20px;
       padding-top: 0;
       padding-bottom: 14px; }
+      .filter .section .tab_content .stub {
+        display: block; }
+      .filter .section .tab_content .ser {
+        display: none; }
       .filter .section .tab_content .param_list li,
       .filter .section .tab_content .drop_down_list li {
         margin-bottom: 6px; }
@@ -279,7 +317,16 @@
         white-space: nowrap;
         margin-bottom: 6px;
         margin-top: 3px;
-        color: #818181; }
+        color: #818181;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
+  .filter .series .tab_content .param_list {
+    display: none; }
+  .filter .section_stab .tab_content .stub {
+    display: none; }
+  .filter .section_stab .tab_content .param_list {
+    display: block; }
   .filter .range .extra-controls {
     display: -webkit-box;
     display: -webkit-flex;
@@ -365,4 +412,33 @@
     margin-bottom: 40px;
     display: none; }
   .filter_show_btn {
-    display: block; } }
+    display: block; }
+  .filter .section .tab_title .button_container .description {
+    opacity: 0.7 !important; }
+  .filter .found_amount {
+    display: none !important; }
+  .filter .section .tab_content .param_list .checkbox label::before, .filter .section .tab_content .drop_down_list .checkbox label::before {
+    width: 30px;
+    height: 30px; }
+  .filter .section .tab_content .param_list .checkbox label, .filter .section .tab_content .drop_down_list .checkbox label {
+    min-height: 30px;
+    padding-left: 38px;
+    padding-top: 7px; }
+  .filter .section .tab_content .param_list .checkbox label::after, .filter .section .tab_content .drop_down_list .checkbox label::after {
+    height: 10px;
+    width: 25px;
+    top: 5px;
+    left: 7px; }
+  .filter .section .tab_content .param_more {
+    padding: 10px 0; }
+  .filter .section .tab_title .arrow {
+    left: 32px; }
+  .filter .section .tab_title {
+    padding-left: 50px; }
+  .filter .section .tab_title .button_container .description i {
+    font-size: 1.7em; }
+  .filter .section .tab_title .button_container .description {
+    right: -28px;
+    bottom: -5px; }
+  .filter .section .tab_content .param_list li, .filter .section .tab_content .drop_down_list li {
+    margin-bottom: 10px; } }

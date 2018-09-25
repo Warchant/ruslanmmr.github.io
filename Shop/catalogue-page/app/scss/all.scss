@@ -10903,7 +10903,6 @@ i {
 
 .content_inform .title {
 	margin-bottom: 4px;
-	text-align: center;
 }
 
 .content_inform .row {
@@ -10936,4 +10935,16 @@ i {
 	.content_inform a:hover span {
 		text-decoration: underline;
 	}
+}
+
+
+@media screen and (max-width: 568px) {
+    .content_inform .title {
+    	text-align: center;
+    }
+ }
+@media screen and (max-width: 1025px) {
+     .slider_watched .bottom {
+              transform: translateY(0);
+     }
 }

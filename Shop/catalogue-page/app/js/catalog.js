@@ -3,6 +3,7 @@ $(document).ready(function() {
     sliderSidebar();
     moreSidebar();
     selectedSort();
+    showMoreInfo();
 });
 $(window).resize(function() {
     $(".description_section").css("height", "auto");
@@ -62,4 +63,18 @@ function selectedSort() {
             drop.addClass("open");
         }
     });
+};
+
+function showMoreInfo(){
+	var nav = $('.block_more_info .category_list'),
+	animateTime = 500,
+	navLink = $('.block_more_info .button_more');
+
+	navLink.on('click', function(){
+		if(nav.height() === 72){
+			autoHeightAnimate(nav, animateTime);
+		} else {
+			nav.stop().animate({ height: '72' }, animateTime);
+		}
+	});
 };
