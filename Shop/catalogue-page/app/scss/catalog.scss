@@ -5,13 +5,12 @@ ul {
     margin: 0;
 }
 
-
 #modal-popup-desc {
     .modal_heading  {
         background-color: #fafafa;
     }
-    .modal_main {
-        display: block;
+    .nano-content {
+        padding: 0 20px;
         p {
             line-height: 180%;
         }

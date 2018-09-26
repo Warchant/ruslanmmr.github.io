@@ -6,9 +6,9 @@ ul {
 #modal-popup-desc .modal_heading {
   background-color: #fafafa; }
 
-#modal-popup-desc .modal_main {
-  display: block; }
-  #modal-popup-desc .modal_main p {
+#modal-popup-desc .nano-content {
+  padding: 0 20px; }
+  #modal-popup-desc .nano-content p {
     line-height: 180%; }
 
 .description[data-balloon]:after {
