@@ -7,7 +7,7 @@ $(document).ready(function(){
 	sliderMobileSlick();
 	navMobileCollapse();
 	carouselProduct();
-	sliderGalleryProduct();
+	//sliderGalleryProduct();
 	sliderWatched();
 	btnLangMobile();
 	sliderWidth();
@@ -31,6 +31,11 @@ $(document).ready(function(){
 	hoverList();
 	colorChoice();
 	tabsModal();
+    $.when( sliderGalleryProduct() ).then(function(){ 
+    	   setTimeout(function(){ 
+              $(".modal_container").addClass("mfp-hide"); 
+    	    }, 1000);
+    });
 });
 
 $(window).on('load', function () {
@@ -551,22 +556,31 @@ function sliderWidth(){
 			{
 				breakpoint: 480,
 				settings: {
-					dots: false,
+					dots: true,
 					slidesToShow: 1
 				}
 			},
 			{
 				breakpoint: 641,
 				settings: {
-					dots: false,
-					slidesToShow: 2
+					dots: true,
+					slidesToShow: 2,
+					slidesToScroll: 2
 				}
 			},
 			{
 				breakpoint: 992,
 				settings: {
-					dots: false,
-					slidesToShow: 3
+					dots: true,
+					slidesToShow: 3,
+					slidesToScroll: 3
+				}
+			},
+			{
+				breakpoint: 1275,
+				settings: {
+					dots: true,
+					slidesToShow: 4
 				}
 			}
 		]
@@ -1314,12 +1328,3 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 };
 // execute above function
 initPhotoSwipeFromDOM('.slider_gallery');
-
- $('a[href*="#modal-popup"]').click(function(event) {
- 	    setTimeout(function() { 
-           $(".slider_gallery").slick('reinit');
- 	     }, 100);
- 	     setTimeout(function() { 
-           $(".slider_gallery_nav").slick('reinit');
- 	     }, 100);
- });

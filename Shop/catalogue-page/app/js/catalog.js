@@ -36,7 +36,8 @@ function sliderSidebar() {
         speed: 300,
         arrows: false,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true
     });
 };
 
