@@ -153,7 +153,7 @@
                 justify-content: center; }
         #dop .container .dop_page .center_section .content_center .block {
           max-width: 42.3em;
-          margin: 0 1.4em;
+          padding: 0 1.4em;
           display: -webkit-box;
           display: -webkit-flex;
           display: -ms-flexbox;
@@ -255,7 +255,12 @@
     font-size: 6em;
     padding-bottom: 0em; }
   #dop .container .dop_page .center_section .content_center .block {
-    width: 30%; }
+    max-width: 100em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 12.5%; }
+  #dop .container .dop_page .center_section .content_center .block .top {
+    width: 100%; }
   #dop .container .dop_page .center_section .content_center {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -264,8 +269,13 @@
             flex-flow: row wrap; } }
 
 @media screen and (max-width: 1023px) {
+  #dop .container .dop_page .center_section .content_center .block {
+    width: 30%; }
+  #dop .container .dop_page .center_section .content_center .block .top {
+    width: 100%;
+    height: 30em; }
   #dop .container {
-    min-height: 1100px; }
+    min-height: 1150px; }
   #dop .container .dop_page .top_section .left_item .item_content .block, #dop .container .dop_page .top_section .right_item .item_content .block {
     text-align: center; }
   #dop .container .dop_page .top_section .left_item, #dop .container .dop_page .top_section .right_item {
@@ -293,7 +303,7 @@
 
 @media screen and (max-width: 767px) {
   #dop .container {
-    min-height: 760px; }
+    min-height: 930px; }
   #dop .container .dop_page .top_section .left_item .item_content .block, #dop .container .dop_page .top_section .right_item .item_content .block {
     margin: 0 3em; }
   body {

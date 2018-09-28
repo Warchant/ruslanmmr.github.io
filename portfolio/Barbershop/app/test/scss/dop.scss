@@ -1,0 +1,357 @@
+#dop {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+.bg_page_dop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../img/bg_dop_page.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#dop {
+    .container {
+        position: relative;
+        .dop_page {
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            .top_section {
+                width: 100%;
+                position: relative;
+                padding-top: 55em;
+                z-index: 2;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                 .left_item, .right_item {
+                    margin: 0 20em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                       h5 {
+                        font: 8em "BebasNeueBold";
+                        color: #fff;
+                        letter-spacing: 0.5em;
+                        text-align: center;
+                        padding-bottom: 0.4em;
+                        padding-left: 0.5em;
+                       }
+                       .item_content {
+                        display: flex;
+                            .block {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin: 0 6em;
+                                .top {
+                                    display: block;
+                                }
+                                .top1 {
+                                    background: url(../img/left_item_1.jpg) no-repeat center center;
+                                    background-size: contain;
+                                    width: 29.6em;
+                                    height: 29.6em;
+                                }
+                                .top2 {
+                                    background: url(../img/left_item_2.jpg) no-repeat center center;
+                                    background-size: contain;
+                                    width: 22.5em;
+                                    height: 30.1em;
+                                }
+                                .top3 {
+                                     background: url(../img/right_item_1.jpg) no-repeat center center;
+                                     background-size: contain;
+                                     width: 33.8em;
+                                     height: 22.9em;
+                                }
+                                .top4 {
+                                     background: url(../img/right_item_2.jpg) no-repeat center center;
+                                     background-size: contain;
+                                     width: 41.3em;
+                                     height: 24.3em;
+                                }
+                                p {
+                                    font: 4.25em "BebasNeueBook";
+                                    color: #fff;
+                                    padding-top: 1em;
+                                    padding-bottom: 0.1em;
+                                }
+                                .bottom {
+                                    font: 2.8em "RobotoRegular";
+                                    color: #999999;
+                                    text-decoration: underline;
+                                    outline: none !important;
+                                }
+                            }
+                       }
+                 }
+                 .right_item .item_content .block p {
+                       padding-top: 1.8em;
+                 }
+            }
+            .center_section {
+                position: relative;
+                z-index: 2;
+                width: 100%;
+                h5 {
+                    font: 8em "BebasNeueBold";
+                    color: #fff;
+                    letter-spacing: 0.5em;
+                    padding-top: 0.4em;
+                    padding-bottom: 0.1em;
+                    text-align: center;
+                }
+                .content_center {
+                    display: flex;
+                    justify-content: center;
+                    .block {
+                        max-width: 42.3em;
+                        margin: 0 1.4em;
+                        display: flex;
+                        flex-direction: column;
+                            .top {
+                                display: block;
+                                width: 42.3em;
+                                height: 23.8em;
+                            }
+                            .top1 {
+                                background: url(../img/center1.jpg) no-repeat;
+                                background-size: cover;
+                            }
+                            .top2 {
+                                background: url(../img/center2.jpg) no-repeat;
+                                background-size: cover;
+                            }
+                            .top3 {
+                                background: url(../img/center3.jpg) no-repeat;
+                                background-size: cover;
+                            }
+                            .top4 {
+                                background: url(../img/center4.jpg) no-repeat;
+                                background-size: cover;
+                            }
+                            .top5 {
+                                background: url(../img/center5.jpg) no-repeat;
+                                background-size: cover;
+                            }
+                            .top6 {
+                                background: url(../img/center6.jpg) no-repeat;
+                                background-size: cover;
+                            }
+                            p {
+                                font: 4.25em "BebasNeueBook";
+                                color: #fff;
+                                padding-top: 1em;
+                                span {
+                                    font-family: "BebasNeueRegular";
+                                }
+                            }
+                            .bottom {
+                                    font: 2.8em "RobotoRegular";
+                                    color: #999999;
+                                    text-decoration: underline;
+                                }
+                    }
+                }
+            }
+            .bottom_section {
+                position: relative;
+                z-index: 2;
+                align-self: flex-end;
+                padding-bottom: 5em;
+                .top {
+                    font: 4.95em "BebasNeueLight";
+                    color: #fff;
+                    letter-spacing: 0.125em;
+                    .span2 {
+                      font-family: "BebasNeueBook";
+                    }
+                    .span3 {
+                      font-family: "BebasNeueRegular";
+                    }
+                }
+                .bottom {
+                    font: 9.5em "BebasNeueBook";
+                    color: #fff;
+                    letter-spacing: 0.15em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1520px) {
+      #dop .container .dop_page .top_section .left_item h5, #dop .container .dop_page .top_section .right_item h5 {
+        margin-bottom: 0.2em;
+        margin-top: 0.3em;
+      }
+      #dop .container .dop_page .center_section h5 {
+        margin-bottom: 0.2em;
+        margin-top: 0.3em;
+      }
+}
+
+@media screen and (max-width: 1519px) {
+    #dop .container {
+        min-height: 624px;
+    }
+    #dop .container .dop_page .top_section .left_item h5, #dop .container .dop_page .top_section .right_item h5 {
+        margin-bottom: 0em;
+        margin-top: 0.3em;
+      }
+      #dop .container .dop_page .center_section h5 {
+        margin-bottom: 0em;
+        margin-top: 0.3em;
+      }
+}
+
+@media screen and (max-width: 1200px) {
+    #dop .container .dop_page .top_section .left_item h5, #dop .container .dop_page .top_section .right_item h5 {
+        margin-bottom: 0.4em;
+        margin-top: 0.3em;
+      }
+      #dop .container .dop_page .center_section h5 {
+        margin-bottom: 0.4em;
+        margin-top: 0.3em;
+      }
+  #dop .container {
+        min-height: 624px;
+    }
+    #dop .container .dop_page .top_section .left_item h5, #dop .container .dop_page .top_section .right_item h5 {
+        font-size: 6em;
+        padding-bottom: 0em;
+    }
+    #dop .container .dop_page .center_section h5 {
+        font-size: 6em;
+        padding-bottom: 0em;
+    }
+    #dop .container .dop_page .center_section .content_center .block {
+        width: 30%;
+    }
+    #dop .container .dop_page .center_section .content_center {
+        flex-flow: row wrap;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #dop .container {
+        min-height: 1100px;
+    }
+    #dop .container .dop_page .top_section .left_item .item_content .block, #dop .container .dop_page .top_section .right_item .item_content .block {
+        text-align: center;
+    }
+    
+    #dop .container .dop_page .top_section .left_item, #dop .container .dop_page .top_section .right_item {
+        margin: 0;
+    }
+    #dop .container .dop_page .top_section {
+        font-size: 1.5em;
+        padding-top: 40em;
+    }
+    #dop .container .dop_page .center_section {
+        font-size: 1.5em;
+    }
+    #dop .container .dop_page .center_section .content_center .block {
+        max-width: 1000px !important;
+        margin-bottom: 5em;
+    }
+    #dop .container .dop_page .center_section .content_center .block .top {
+        margin: 0 auto;
+    }
+    #dop .container .dop_page .center_section .content_center .block p {
+        text-align: center;
+    }
+    #dop .container .dop_page .center_section .content_center .block .bottom {
+        margin: 0 auto;
+    }
+    #dop .container .dop_page .top_section .left_item h5, #dop .container .dop_page .top_section .right_item h5 {
+        margin-bottom: 1em;
+        margin-top: 0.3em;
+      }
+      #dop .container .dop_page .center_section h5 {
+        margin-bottom: 1em;
+        margin-top: 0.3em;
+      }
+}
+
+@media screen and (max-width: 767px) {
+    #dop .container {
+        min-height: 760px;
+    }
+    #dop .container .dop_page .top_section .left_item .item_content .block, #dop .container .dop_page .top_section .right_item .item_content .block {
+        margin: 0 3em;
+    }
+    body {
+        height: auto;
+    }
+    #dop .container .dop_page .center_section h5 {
+        padding-top: 2em;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    #dop .container .dop_page .center_section .content_center .block p br {
+        display: none;
+    }
+    #dop .container {
+        min-height: 568px;
+    }
+    #dop .container .dop_page .top_section {
+        flex-direction: column;
+    }
+    #dop .container .dop_page .top_section .left_item .item_content .block, #dop .container .dop_page .top_section .right_item .item_content .block {
+        width: 40%;
+        max-width: 1000px;
+    }
+    #dop .container .dop_page .top_section .left_item .item_content, #dop .container .dop_page .top_section .right_item .item_content {
+        justify-content: center;
+        padding-bottom: 5em;
+    }
+    #dop .container .dop_page .top_section .left_item h5, #dop .container .dop_page .top_section .right_item h5 {
+        padding-bottom: 1em;
+    }
+    #dop .container .dop_page .center_section .content_center .block {
+        width: 40%;
+    }
+    #dop .container .dop_page .bottom_section {
+        padding-top: 10em;
+    }
+    #dop .container .dop_page .center_section h5 {
+        padding-bottom: 1em;
+    }
+    #dop .container .dop_page .bottom_section {
+        font-size: 1em;
+    }
+    #dop .container .dop_page .bg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #dop .container .dop_page .center_section .content_center .block {
+        width: 80%;
+    }
+    #dop .container .dop_page .center_section .content_center .block .top {
+        width: 84.6em;
+        height: 47.6em;
+    }
+    #dop .container {
+        font-size: 2.2px;
+    }
+    #dop .container .dop_page .top_section {
+        padding-top: 30em;
+    }
+    #dop .container .dop_page .center_section .content_center .block {
+        width: 100%;
+    }
+    }
+
+

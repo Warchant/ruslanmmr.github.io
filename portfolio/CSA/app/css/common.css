@@ -28,6 +28,12 @@
   font-style: normal;
   src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "MyriadProRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype"); }
+
 .link_trigger {
   position: relative; }
   .link_trigger .bg {

@@ -114,7 +114,7 @@
                     justify-content: center;
                     .block {
                         max-width: 42.3em;
-                        margin: 0 1.4em;
+                        padding: 0 1.4em;
                         display: flex;
                         flex-direction: column;
                             .top {
@@ -234,7 +234,12 @@
         padding-bottom: 0em;
     }
     #dop .container .dop_page .center_section .content_center .block {
-        width: 30%;
+        max-width: 100em;
+        box-sizing: border-box;
+        width: 12.5%;
+    }
+    #dop .container .dop_page .center_section .content_center .block .top {
+        width: 100%;
     }
     #dop .container .dop_page .center_section .content_center {
         flex-flow: row wrap;
@@ -242,8 +247,15 @@
 }
 
 @media screen and (max-width: 1023px) {
+    #dop .container .dop_page .center_section .content_center .block {
+        width: 30%;
+    }
+    #dop .container .dop_page .center_section .content_center .block .top {
+        width: 100%;
+        height: 30em;
+    }
     #dop .container {
-        min-height: 1100px;
+        min-height: 1150px;
     }
     #dop .container .dop_page .top_section .left_item .item_content .block, #dop .container .dop_page .top_section .right_item .item_content .block {
         text-align: center;
@@ -284,7 +296,7 @@
 
 @media screen and (max-width: 767px) {
     #dop .container {
-        min-height: 760px;
+        min-height: 930px;
     }
     #dop .container .dop_page .top_section .left_item .item_content .block, #dop .container .dop_page .top_section .right_item .item_content .block {
         margin: 0 3em;
