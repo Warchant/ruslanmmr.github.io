@@ -1,6 +1,5 @@
 //Общее
 
-
 $(document).ready(function() {
     $('.nav-btn a').click(function(event) {
         event.preventDefault();
@@ -309,22 +308,62 @@ $(document).ready(function() {
 
 //блоки колезеев
 
-$('.slider2 .place_block').click(function() {
-    $(".slider2 .place_block").removeClass("active_place");
-    $(this).addClass("active_place");
-});
+function placeTabs() {
+    $('.slider2 .place_block').click(function() {
+        $(".slider2 .place_block").removeClass("active_place");
+        $(this).addClass("active_place");
+    });
+
+    $('.slide3 .place_block .img_block').width($(".slide3 .place_block .img_block").height());
+
+    $("#last_page .container .slide3 .top_title span").not(":first").hide();
+    $("#last_page .slide3 .slide_content").not(":first").hide();
+    $("#last_page .place_block").click(function() {
+        $("#last_page .place_block").removeClass("active_place").eq($(this).index()).addClass("active_place");
+        $("#last_page .slide3 .slide_content").hide().eq($(this).index()).fadeIn(1000);
+        $("#last_page .container .slide3 .top_title span").hide().eq($(this).index()).fadeIn(1000)
+    });
+};
+
+function sliderPlace() {
+    $('.place_slider_1').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        nextArrow: $('#last_page .slide3 .tab_container .btn_right1'),
+        prevArrow: $('#last_page .slide3 .tab_container .btn_left1')
+    });
+
+    $('.place_slider_2').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        nextArrow: $('#last_page .slide3 .tab_container .btn_right2'),
+        prevArrow: $('#last_page .slide3 .tab_container .btn_left2')
+    });
+    $('.place_slider_3').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        nextArrow: $('#last_page .slide3 .tab_container .btn_right3'),
+        prevArrow: $('#last_page .slide3 .tab_container .btn_left3')
+    });
+};
 
 
-
-$('.slide3 .place_block .img_block').width($(".slide3 .place_block .img_block").height());
-
-$('.place_slider_1').slick({
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    nextArrow: $(''),
-    prevArrow: $('')
+$(document).ready(function() {
+    $.when(sliderPlace()).then(function() {
+        setTimeout(function() {
+            placeTabs();
+        }, 1000);
+    });
 });

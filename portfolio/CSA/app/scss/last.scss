@@ -271,7 +271,7 @@
                         flex-direction: column;
                         justify-content: space-between;
                         .title {
-                            font: 1.8em "MyriadProRegular";
+                            font: 1.7em "MyriadProRegular";
                             color: #fff;
                             text-transform: uppercase;
                             span {
@@ -294,7 +294,7 @@
                         a {
                             height: 20px;
                             width: 20px;
-                            margin-right: 15px;
+                            margin-right: 10px;
                             img {
                                 width: 100%;
                                 height: 100%;
@@ -335,7 +335,7 @@
                             top: 0;
                             height: 40px;
                             width: 100%;
-                            background-color: rgba(0, 0, 0, 0.8);
+                            background-color: rgba(0, 0, 0, 0.6);
                             z-index: 2;
                             span {
                                 font: 4em "MyriadProRegular";
@@ -354,6 +354,7 @@
                             background-size: contain;
                             cursor: pointer;
                             z-index: 2;
+                            margin-top: -15px;
                         }
                         .btn_left {
                             top: 50%;
@@ -370,16 +371,25 @@
                         position: relative;
                         z-index: 1;
                     }
+
                     .tab_block {
                         height: 100%;
                     }
                     .place_slider_1,
+                    .place_slider_2,
+                    .place_slider_3,
                     .slick-list,
                     .slick-track {
                         height: 100%;
                     }
-                    .place_slider_1 {
+                    .place_slider_1,
+                    .place_slider_2,
+                    .place_slider_3 {
                         margin: 0 -10px;
+                    }
+                    .slide_content {
+                        height: 100%;
+                        position: relative;
                     }
                     .gallery {
                         height: 100%;

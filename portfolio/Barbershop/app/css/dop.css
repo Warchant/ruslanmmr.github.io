@@ -168,27 +168,35 @@
             width: 42.3em;
             height: 23.8em; }
           #dop .container .dop_page .center_section .content_center .block .top1 {
-            background: url(../img/center1.jpg) no-repeat;
+            background: url(../img/center1.jpg) no-repeat center center;
             -webkit-background-size: cover;
                     background-size: cover; }
           #dop .container .dop_page .center_section .content_center .block .top2 {
-            background: url(../img/center2.jpg) no-repeat;
+            background: url(../img/center2.jpg) no-repeat center center;
             -webkit-background-size: cover;
                     background-size: cover; }
           #dop .container .dop_page .center_section .content_center .block .top3 {
-            background: url(../img/center3.jpg) no-repeat;
+            background: url(../img/center3.jpg) no-repeat center center;
             -webkit-background-size: cover;
                     background-size: cover; }
           #dop .container .dop_page .center_section .content_center .block .top4 {
-            background: url(../img/center4.jpg) no-repeat;
+            background: url(../img/center4.jpg) no-repeat center center;
             -webkit-background-size: cover;
                     background-size: cover; }
           #dop .container .dop_page .center_section .content_center .block .top5 {
-            background: url(../img/center5.jpg) no-repeat;
+            background: url(../img/center5.jpg) no-repeat center center;
             -webkit-background-size: cover;
                     background-size: cover; }
           #dop .container .dop_page .center_section .content_center .block .top6 {
-            background: url(../img/center6.jpg) no-repeat;
+            background: url(../img/center6.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+                    background-size: cover; }
+          #dop .container .dop_page .center_section .content_center .block .top7 {
+            background: url(../img/prev7.jpg) no-repeat center center;
+            -webkit-background-size: cover;
+                    background-size: cover; }
+          #dop .container .dop_page .center_section .content_center .block .top8 {
+            background: url(../img/prev8.jpg) no-repeat center center;
             -webkit-background-size: cover;
                     background-size: cover; }
           #dop .container .dop_page .center_section .content_center .block p {

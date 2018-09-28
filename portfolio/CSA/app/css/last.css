@@ -317,7 +317,7 @@
               -ms-flex-pack: justify;
                   justify-content: space-between; }
           #last_page .container .slider2 .slide3 .place_block .description_block .title {
-            font: 1.8em "MyriadProRegular";
+            font: 1.7em "MyriadProRegular";
             color: #fff;
             text-transform: uppercase; }
             #last_page .container .slider2 .slide3 .place_block .description_block .title span {
@@ -338,7 +338,7 @@
           #last_page .container .slider2 .slide3 .place_block .links a {
             height: 20px;
             width: 20px;
-            margin-right: 15px; }
+            margin-right: 10px; }
             #last_page .container .slider2 .slide3 .place_block .links a img {
               width: 100%;
               height: 100%; }
@@ -372,7 +372,7 @@
           top: 0;
           height: 40px;
           width: 100%;
-          background-color: rgba(0, 0, 0, 0.8);
+          background-color: rgba(0, 0, 0, 0.6);
           z-index: 2; }
           #last_page .container .slider2 .slide3 .tab_container .top_title span {
             font: 4em "MyriadProRegular";
@@ -389,7 +389,8 @@
           -webkit-background-size: contain;
                   background-size: contain;
           cursor: pointer;
-          z-index: 2; }
+          z-index: 2;
+          margin-top: -15px; }
         #last_page .container .slider2 .slide3 .tab_container .btn_left {
           top: 50%;
           left: 10px;
@@ -409,11 +410,18 @@
         #last_page .container .slider2 .slide3 .tab_container .tab_block {
           height: 100%; }
         #last_page .container .slider2 .slide3 .tab_container .place_slider_1,
+        #last_page .container .slider2 .slide3 .tab_container .place_slider_2,
+        #last_page .container .slider2 .slide3 .tab_container .place_slider_3,
         #last_page .container .slider2 .slide3 .tab_container .slick-list,
         #last_page .container .slider2 .slide3 .tab_container .slick-track {
           height: 100%; }
-        #last_page .container .slider2 .slide3 .tab_container .place_slider_1 {
+        #last_page .container .slider2 .slide3 .tab_container .place_slider_1,
+        #last_page .container .slider2 .slide3 .tab_container .place_slider_2,
+        #last_page .container .slider2 .slide3 .tab_container .place_slider_3 {
           margin: 0 -10px; }
+        #last_page .container .slider2 .slide3 .tab_container .slide_content {
+          height: 100%;
+          position: relative; }
         #last_page .container .slider2 .slide3 .tab_container .gallery {
           height: 100%;
           overflow: hidden; }
