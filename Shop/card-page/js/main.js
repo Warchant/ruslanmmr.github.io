@@ -7,6 +7,7 @@ $(document).ready(function(){
 	sliderMobileSlick();
 	navMobileCollapse();
 	carouselProduct();
+	categoriesToggle()
 	//sliderGalleryProduct();
 	sliderWatched();
 	btnLangMobile();
@@ -1328,3 +1329,11 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 };
 // execute above function
 initPhotoSwipeFromDOM('.slider_gallery');
+
+
+function categoriesToggle() {
+	$('.btn_ctg_other').on('click', function(e) {
+		 e.preventDefault();
+		$('.main_ctg_other').fadeToggle(0);
+	});
+};

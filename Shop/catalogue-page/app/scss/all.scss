@@ -2635,6 +2635,7 @@ i {
 	display: flex;
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
+	    align-items: stretch;
 }
 
 @media screen and (max-width: 992px) {
@@ -2799,8 +2800,26 @@ i {
 	top: 100%;
 	left: 0;
 	right: 0;
-	padding-top: 7px;
 	display: none;
+	box-shadow: inset 0px 4px 5px -1px rgba(0,0,0,0.12);
+	padding-top: 7px;
+	background-color: #fff;
+}
+
+.main_ctg_other {
+	 position: absolute;
+	 background-color: #fff;
+	 width: 100%;
+	 display: none;
+	 .categories {
+      box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+	 }
+}
+
+@media screen and (max-width: 568px) {
+     .main_ctg_other {
+     	display: none !important;
+     }
 }
 
 @media screen and (max-width: 992px) {

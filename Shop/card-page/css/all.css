@@ -2487,7 +2487,11 @@ i {
   -ms-flex-pack: justify;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
 
 @media screen and (max-width: 992px) {
   .main_categories .group {
@@ -2629,8 +2633,24 @@ i {
   top: 100%;
   left: 0;
   right: 0;
+  display: none;
+  -webkit-box-shadow: inset 0px 4px 5px -1px rgba(0, 0, 0, 0.12);
+          box-shadow: inset 0px 4px 5px -1px rgba(0, 0, 0, 0.12);
   padding-top: 7px;
+  background-color: #fff; }
+
+.main_ctg_other {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
   display: none; }
+  .main_ctg_other .categories {
+    -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1); }
+
+@media screen and (max-width: 568px) {
+  .main_ctg_other {
+    display: none !important; } }
 
 @media screen and (max-width: 992px) {
   .categories_dropable .container {
