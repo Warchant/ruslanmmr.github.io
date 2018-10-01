@@ -1,0 +1,472 @@
+.filter_show_btn {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: #78a1b3;
+  -webkit-border-radius: 1px solid #95b5c3;
+          border-radius: 1px solid #95b5c3;
+  height: 40px;
+  margin: 0px 10px;
+  margin-bottom: 30px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  color: #fff;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  display: none; }
+
+.filter {
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  background: #fff;
+  position: relative;
+  z-index: 3; }
+  .filter .found_amount {
+    position: absolute;
+    right: 0;
+    display: none;
+    -webkit-transform: translate(100%, -25%);
+        -ms-transform: translate(100%, -25%);
+            transform: translate(100%, -25%);
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-border-radius: 4px;
+            border-radius: 4px; }
+    .filter .found_amount .b-found__quantity-phrase {
+      border: none;
+      background-color: #ffcc33;
+      -webkit-transition: .3s ease;
+      -o-transition: .3s ease;
+      transition: .3s ease;
+      padding: 6px 12px;
+      -webkit-border-radius: 4px;
+              border-radius: 4px;
+      cursor: pointer;
+      white-space: nowrap; }
+      .filter .found_amount .b-found__quantity-phrase:hover {
+        background-color: #ffdd7d; }
+    .filter .found_amount::after {
+      content: '';
+      position: absolute;
+      border: 4px solid transparent;
+      border-right: 4px solid rgba(0, 0, 0, 0.8);
+      left: -8px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+  .filter .section {
+    border-bottom: 1px solid #e5e5e5;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    .filter .section:hover {
+      background-color: #fafafa; }
+    .filter .section .tab_title {
+      cursor: pointer;
+      position: relative;
+      padding: 13px 22px;
+      padding-left: 43px; }
+      .filter .section .tab_title .open_button {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: none;
+        left: 0;
+        top: 0;
+        padding: 0;
+        cursor: pointer;
+        z-index: 2; }
+      .filter .section .tab_title .select_indicator {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        opacity: 0; }
+        .filter .section .tab_title .select_indicator span {
+          display: block;
+          border: 9px solid transparent;
+          border-left: 9px solid #197ac4; }
+      .filter .section .tab_title .arrow {
+        display: block;
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+        position: absolute;
+        left: 25px;
+        height: 14px;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        top: 17px; }
+        .filter .section .tab_title .arrow i {
+          font-size: 1.2em;
+          line-height: 70%;
+          color: #afafaf; }
+      .filter .section .tab_title .item {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+        display: none;
+        z-index: 2; }
+        .filter .section .tab_title .item:hover .reset {
+          opacity: 0.8; }
+      .filter .section .tab_title .reset {
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        left: 0px;
+        padding: 0;
+        opacity: 0.3;
+        border: none;
+        cursor: pointer; }
+      .filter .section .tab_title .reset:before,
+      .filter .section .tab_title .reset:after {
+        position: absolute;
+        z-index: 1;
+        content: ' ';
+        height: 20px;
+        top: 0;
+        width: 2px;
+        background-color: #333;
+        cursor: pointer; }
+      .filter .section .tab_title .reset:before {
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg); }
+      .filter .section .tab_title .reset:after {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+      .filter .section .tab_title .button_container {
+        height: 100%;
+        position: relative;
+        display: inline; }
+        .filter .section .tab_title .button_container .section_title {
+          font-weight: bold;
+          color: #040000;
+          line-height: 160%;
+          position: relative;
+          z-index: 1;
+          display: inline; }
+        .filter .section .tab_title .button_container .description {
+          opacity: 0;
+          -webkit-transition: .3s;
+          -o-transition: .3s;
+          transition: .3s;
+          position: absolute;
+          z-index: 3;
+          right: -24px;
+          bottom: -3px; }
+          .filter .section .tab_title .button_container .description a {
+            display: block; }
+          .filter .section .tab_title .button_container .description i {
+            font-size: 1.35em;
+            color: #bab8b6;
+            -webkit-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s; }
+            .filter .section .tab_title .button_container .description i:hover {
+              color: #626262; }
+      .filter .section .tab_title:hover .arrow i {
+        color: #197ac4; }
+      .filter .section .tab_title:hover .description {
+        opacity: 1; }
+    .filter .section .title_active .arrow {
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
+    .filter .section .title_active .select_indicator {
+      opacity: 1; }
+    .filter .section .tab_content {
+      display: none;
+      height: auto;
+      padding: 20px;
+      padding-top: 0;
+      padding-bottom: 14px; }
+      .filter .section .tab_content .stub {
+        display: block; }
+      .filter .section .tab_content .ser {
+        display: none; }
+      .filter .section .tab_content .param_list li,
+      .filter .section .tab_content .drop_down_list li {
+        margin-bottom: 6px; }
+      .filter .section .tab_content .param_list .checkbox input[type="checkbox"], .filter .section .tab_content .param_list .checkbox input[type="radio"],
+      .filter .section .tab_content .drop_down_list .checkbox input[type="checkbox"],
+      .filter .section .tab_content .drop_down_list .checkbox input[type="radio"] {
+        display: none; }
+      .filter .section .tab_content .param_list .checkbox label,
+      .filter .section .tab_content .drop_down_list .checkbox label {
+        position: relative;
+        display: inline-block;
+        padding-left: 25px;
+        cursor: pointer;
+        color: #525252; }
+        .filter .section .tab_content .param_list .checkbox label .quantity_container,
+        .filter .section .tab_content .drop_down_list .checkbox label .quantity_container {
+          padding-left: 3px;
+          color: #cacaca;
+          letter-spacing: 0.05em; }
+      .filter .section .tab_content .param_list .checkbox label::before,
+      .filter .section .tab_content .param_list .checkbox label::after,
+      .filter .section .tab_content .drop_down_list .checkbox label::before,
+      .filter .section .tab_content .drop_down_list .checkbox label::after {
+        position: absolute;
+        content: "";
+        outline: none;
+        display: inline-block; }
+      .filter .section .tab_content .param_list .checkbox label::before,
+      .filter .section .tab_content .drop_down_list .checkbox label::before {
+        height: 16px;
+        width: 16px;
+        border: 1px solid #cdcdcd;
+        -webkit-border-radius: 2px;
+                border-radius: 2px;
+        left: 0px;
+        top: 1px; }
+      .filter .section .tab_content .param_list .checkbox label::after,
+      .filter .section .tab_content .drop_down_list .checkbox label::after {
+        height: 7px;
+        width: 14px;
+        border-left: 2px solid #1f0602;
+        border-bottom: 2px solid #1f0602;
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        left: 4px;
+        top: 2px; }
+      .filter .section .tab_content .param_list .checkbox input[type="checkbox"] + label::after, .filter .section .tab_content .param_list .checkbox input[type="radio"] + label::after,
+      .filter .section .tab_content .drop_down_list .checkbox input[type="checkbox"] + label::after,
+      .filter .section .tab_content .drop_down_list .checkbox input[type="radio"] + label::after {
+        content: none; }
+      .filter .section .tab_content .param_list .checkbox input[type="checkbox"]:checked + label::after, .filter .section .tab_content .param_list .checkbox input[type="radio"]:checked + label::after,
+      .filter .section .tab_content .drop_down_list .checkbox input[type="checkbox"]:checked + label::after,
+      .filter .section .tab_content .drop_down_list .checkbox input[type="radio"]:checked + label::after {
+        content: ""; }
+      .filter .section .tab_content .param_list .checkbox input[type="checkbox"]:checked + label::before, .filter .section .tab_content .param_list .checkbox input[type="radio"]:checked + label::before,
+      .filter .section .tab_content .drop_down_list .checkbox input[type="checkbox"]:checked + label::before,
+      .filter .section .tab_content .drop_down_list .checkbox input[type="radio"]:checked + label::before {
+        background-color: #cfeaff; }
+      .filter .section .tab_content .color_list {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-bottom: 6px; }
+        .filter .section .tab_content .color_list li {
+          width: 14%;
+          max-width: 40px;
+          padding: 0 4px; }
+        .filter .section .tab_content .color_list .checkbox input[type="checkbox"] {
+          display: none; }
+        .filter .section .tab_content .color_list .checkbox label {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          width: 100%; }
+          .filter .section .tab_content .color_list .checkbox label::before {
+            content: "";
+            display: block;
+            padding-top: 100%; }
+          .filter .section .tab_content .color_list .checkbox label .color_block {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border: 1px solid #ededed; }
+        .filter .section .tab_content .color_list .checkbox input[type="checkbox"]:checked + label .color_block {
+          border-color: #000; }
+        .filter .section .tab_content .color_list .checkbox .color1 .color_block {
+          background-color: #c9c9c9; }
+        .filter .section .tab_content .color_list .checkbox .color2 .color_block {
+          background-color: #ffffff; }
+        .filter .section .tab_content .color_list .checkbox .color3 .color_block {
+          background-color: #f0f0f0; }
+        .filter .section .tab_content .color_list .checkbox .color4 .color_block {
+          background-color: #9ecc4d; }
+        .filter .section .tab_content .color_list .checkbox .color5 .color_block {
+          background-color: #de3d1d; }
+        .filter .section .tab_content .color_list .checkbox .color6 .color_block {
+          background-color: #fbdef7; }
+        .filter .section .tab_content .color_list .checkbox .color7 .color_block {
+          background-color: #c9c9c9; }
+      .filter .section .tab_content .drop_down_list {
+        display: none; }
+      .filter .section .tab_content .param_more {
+        padding: 5px 0px;
+        cursor: pointer;
+        width: 110px;
+        text-align: center;
+        white-space: nowrap;
+        margin-bottom: 6px;
+        margin-top: 3px;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
+  .filter .series .tab_content .param_list {
+    display: none; }
+  .filter .section_stab .tab_content .stub {
+    display: none; }
+  .filter .section_stab .tab_content .param_list {
+    display: block; }
+  .filter .range .extra-controls {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .filter .range .extra-controls .hyp {
+      font-weight: bold;
+      font-size: 1.2em; }
+    .filter .range .extra-controls input {
+      border: 1px solid #dadada;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      height: 28px;
+      width: 43%;
+      padding-left: 8px; }
+
+.section_buttons {
+  padding: 20px; }
+  .section_buttons .show_results,
+  .section_buttons .all_filters,
+  .section_buttons .reset {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 38px;
+    font: 14px/1.3 "PT Sans", sans-serif;
+    font-size: 1.1em;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    .section_buttons .show_results .count,
+    .section_buttons .all_filters .count,
+    .section_buttons .reset .count {
+      padding: 0 0.2em; }
+  .section_buttons .show_results {
+    margin-bottom: 10px;
+    border: none;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    background-color: #ffcc33;
+    color: #000; }
+  .section_buttons .reset {
+    margin-top: 10px; }
+
+.filter-page .filter-page-content {
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  padding: 20px 10px 10px 10px;
+  padding-bottom: 10px;
+  margin: 0; }
+
+.filter-page .filter {
+  border: none;
+  padding: 0 10px;
+  width: 50%;
+  position: relative;
+  z-index: 0; }
+
+.filter-page .fil1 {
+  z-index: 2; }
+
+.filter-page .fil2 {
+  z-index: 1; }
+
+.filter-page .section_buttons {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 580px; }
+
+.filter-page .filter_section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 0; }
+
+@media screen and (min-width: 1025px) {
+  .section_buttons .show_results:hover {
+    background-color: #ffdd7d; } }
+
+@media screen and (max-width: 992px) {
+  .filter-page .filter_section {
+    display: block; }
+  .filter-page .filter {
+    width: 100%; }
+  .filter .section .tab_content .color_list {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .left-sidebar {
+    margin-bottom: 40px;
+    display: none; }
+  .filter_show_btn {
+    display: block; }
+  .filter .section .tab_title .button_container .description {
+    opacity: 0.7 !important; }
+  .filter .found_amount {
+    display: none !important; }
+  .filter .section .tab_content .param_list .checkbox label::before, .filter .section .tab_content .drop_down_list .checkbox label::before {
+    width: 30px;
+    height: 30px; }
+  .filter .section .tab_content .param_list .checkbox label, .filter .section .tab_content .drop_down_list .checkbox label {
+    min-height: 30px;
+    padding-left: 38px;
+    padding-top: 7px; }
+  .filter .section .tab_content .param_list .checkbox label::after, .filter .section .tab_content .drop_down_list .checkbox label::after {
+    height: 10px;
+    width: 25px;
+    top: 5px;
+    left: 7px; }
+  .filter .section .tab_content .param_more {
+    padding: 10px 0; }
+  .filter .section .tab_title .arrow {
+    left: 32px; }
+  .filter .section .tab_title {
+    padding-left: 50px; }
+  .filter .section .tab_title .button_container .description i {
+    font-size: 1.7em; }
+  .filter .section .tab_title .button_container .description {
+    right: -28px;
+    bottom: -5px; }
+  .filter .section .tab_content .param_list li, .filter .section .tab_content .drop_down_list li {
+    margin-bottom: 10px; } }
