@@ -44,7 +44,7 @@ function diap() {
             $(".r-slider1").parents(".range").find(".item").fadeIn();
             var width = $(".r-slider1").parents(".range-slider").width();
             var posTop = $(".r-slider1").parents(".range-slider").offset().top + 13;
-            var posLeft = $(".r-slider1").parents(".range-slider").offset().left + width + 10;
+            var posLeft = $(".r-slider1").parents(".range-slider").offset().left + width + 20;
             $('.found_amount').css("top", posTop).css("left", posLeft).show();
             clearTimeout(timer);
             timer = setTimeout(function() {
@@ -101,7 +101,7 @@ function diap() {
             $(".r-slider2").parents(".range").find(".item").fadeIn();
             var width = $(".r-slider2").parents(".range-slider").width();
             var posTop = $(".r-slider2").parents(".range-slider").offset().top + 13;
-            var posLeft = $(".r-slider2").parents(".range-slider").offset().left + width + 10;
+            var posLeft = $(".r-slider2").parents(".range-slider").offset().left + width + 20;
             $('.found_amount').css("top", posTop).css("left", posLeft).show();
             clearTimeout(timer);
             timer = setTimeout(function() {
@@ -158,7 +158,7 @@ function diap() {
             $(".r-slider3").parents(".range").find(".item").fadeIn();
             var width = $(".r-slider3").parents(".range-slider").width();
             var posTop = $(".r-slider3").parents(".range-slider").offset().top + 13;
-            var posLeft = $(".r-slider3").parents(".range-slider").offset().left + width + 10;
+            var posLeft = $(".r-slider3").parents(".range-slider").offset().left + width + 20;
             $('.found_amount').css("top", posTop).css("left", posLeft).show();
             clearTimeout(timer);
             timer = setTimeout(function() {
@@ -255,10 +255,10 @@ function filter() {
 function count() {
     $('.checkbox_item, .input_end, .input_start').on('change', function() {
         var pos = $(this).parent().offset();
-        var withContent = $(".filter .section .tab_content").width();
+        var withContent = $(".section").width();
         var countTop = pos.top;
         console.log( pos );
-        var posLeft = pos.left + withContent + 10;
+        var posLeft = pos.left + withContent - 20;
         clearTimeout(timer);
         timer = setTimeout(function() {
         $('.found_amount').fadeOut();
