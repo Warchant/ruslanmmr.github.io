@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	//calls functions
+	selectedNavCat();
 	headerNavigationDrop();
 	headerCityDrop();
 	navCollapse();
@@ -1336,4 +1337,14 @@ function categoriesToggle() {
 		 e.preventDefault();
 		$('.main_ctg_other').fadeToggle(0);
 	});
+};
+
+function selectedNavCat() {
+	 $('.main_categories .item').hover(function() {
+         $(this).toggleClass('selected');
+	 });
+	 $('.main_categories .item').click(function() {
+         $(".main_categories .item").removeClass('selected');
+         $(this).addClass('selected');
+	 });
 };

@@ -2,13 +2,51 @@ $(document).ready(function() {
     count();
     brands();
     filter();
+    diap();
 });
 
-// Диапазоны
-function brands() {
-    instance = $range.data("ionRangeSlider");
+var timer = setTimeout(function() {
+    $('.found_amount').fadeOut();
+}, 3000);
+var $range1 = $(".r-slider1"),
+    $input_from1 = $(".input_s1"),
+    $input_to1 = $(".input_e1"),
+    min = 0,
+    max = 100000;
 
-    $input_from.on("change keyup", function() {
+// Диапазоны
+function diap() {
+    $(".r-slider1").ionRangeSlider({
+        type: "double",
+        min: min,
+        max: max,
+        from: min,
+        to: max,
+        hide_min_max: true,
+        hide_from_to: true,
+        grid: false,
+        onStart: function(data) {
+            $input_from1.prop("value", data.from);
+            $input_to1.prop("value", data.to);
+
+        },
+        onChange: function(data) {
+            $input_from1.prop("value", data.from);
+            $input_to1.prop("value", data.to);
+        },
+        onFinish: function(data) {
+            $(".range .item").fadeIn();
+            var width = $(".r-slider1").parents(".range-slider").width();
+            var posTop = $(".r-slider1").parents(".range-slider").offset().top + 13;
+            var posLeft = $(".r-slider1").parents(".range-slider").offset().left + width + 20;
+            $('.found_amount').css("top", posTop).css("left", posLeft).show();
+            clearTimeout(timer);
+            timer = setTimeout(function() {
+                $('.found_amount').fadeOut();
+            }, 3000);
+        }
+    });
+    $input_from1.on("change keyup", function() {
         var val = $(this).prop("value");
 
         if (val < min) {
@@ -17,11 +55,11 @@ function brands() {
             val = max;
         }
 
-        instance.update({
+        instance1.update({
             from: val
         });
     });
-    $input_to.on("change keyup", function() {
+    $input_to1.on("change keyup", function() {
         var val = $(this).prop("value");
 
         if (val < min) {
@@ -30,10 +68,12 @@ function brands() {
             val = max;
         }
 
-        instance.update({
+        instance1.update({
             to: val
         });
     });
+
+    instance1 = $range1.data("ionRangeSlider");
 }
 
 //бренды и серии
@@ -90,25 +130,17 @@ function filter() {
 
 //сброс, вывод товаров
 function count() {
-    var timer = setTimeout(function() {
-        $('.found_amount').fadeOut();
-    }, 3000);
-    var $range = $(".js-range-slider"),
-        $input_from = $(".input_start"),
-        $input_to = $(".input_end"),
-        instance,
-        min = 0,
-        max = 100000;
-
     $('.checkbox_item, .input_end, .input_start').on('change', function() {
         var pos = $(this).parent().offset();
-        var posFilter = $(this).parents(".filter").offset();
-        var countPos = pos.top - posFilter.top;
+        var withContent = $(".filter .section .tab_content").width();
+        var countTop = pos.top;
+        console.log( pos );
+        var posLeft = pos.left + withContent + 20;
         clearTimeout(timer);
         timer = setTimeout(function() {
-            $('.found_amount').fadeOut();
+        $('.found_amount').fadeOut();
         }, 3000);
-        $('.found_amount').css("top", countPos).show();
+        $('.found_amount').css("top", countTop).css("left", posLeft).show();
         if ($(this).prop('checked')) {
             $(this).addClass('active');
         } else {
@@ -116,35 +148,11 @@ function count() {
         }
     });
 
-    $(".js-range-slider").ionRangeSlider({
-        type: "double",
-        min: min,
-        max: max,
-        from: min,
-        to: max,
-        hide_min_max: true,
-        hide_from_to: true,
-        grid: false,
-        onStart: function(data) {
-            $input_from.prop("value", data.from);
-            $input_to.prop("value", data.to);
-
-        },
-        onChange: function(data) {
-            $input_from.prop("value", data.from);
-            $input_to.prop("value", data.to);
-        },
-        onFinish: function(data) {
-            $(".range .item").fadeIn();
-            $('.found_amount').css("top", "90px").show();
-            clearTimeout(timer);
-            timer = setTimeout(function() {
-                $('.found_amount').fadeOut();
-            }, 3000);
-        }
+    $('.input_end, .input_start').on('change', function() {
+            $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeIn();
     });
 
-    $('.checkbox_item, .input_end, .input_start').on('change', function() {
+    $('.checkbox_item').on('change', function() {
         if ($(this).parents(".tab_content").find(".active").length) {
             $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeIn();
         } else {
@@ -153,11 +161,11 @@ function count() {
     });
 
     $('.filter .reset').on('click', function() {
-        $('.found_amount').fadeOut();
+        $('.found_amount, .found_amount_all').fadeOut();
         $(this).parents(".tab_title").siblings(".tab_content").find(".checkbox_item").prop('checked', false).removeClass('active');
         $(this).parents(".tab_title").siblings(".tab_content").find(".input_end").val(max).removeClass('active');
         $(this).parents(".tab_title").siblings(".tab_content").find(".input_start").val(min).removeClass('active');
-        $(".js-range-slider").data("ionRangeSlider").update({
+        $(".r-slider1").data("ionRangeSlider").update({
             from: min,
             to: max
         });

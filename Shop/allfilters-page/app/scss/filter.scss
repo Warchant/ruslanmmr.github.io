@@ -13,6 +13,40 @@
             display: none;
         }
 
+.range-slider {
+    display: block;
+}
+
+.found_amount {
+        position: absolute;
+        z-index: 5;
+        display: none;
+        padding: 6px 12px;
+        transform: translateY(-25%);
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 4px;
+        .b-found__quantity-phrase {
+            border: none;
+            background-color: #ffcc33;
+            transition: .3s ease;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            white-space: nowrap;
+            &:hover {
+                background-color: #ffdd7d;
+            }
+        } 
+        &::after {
+            content: '';
+            position: absolute;
+            border: 4px solid transparent;  
+            border-right: 4px solid rgba(0, 0, 0, 0.8);
+            left: -8px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
 
 .filter {
     border: 1px solid #e5e5e5;
@@ -20,39 +54,10 @@
     background: #fff;
     position: relative;
     z-index: 3;
-    .found_amount {
-    	position: absolute;
-    	right: 0;
-    	display: none;
-    	transform: translate(100%, -25%);
-    	padding: 6px 12px;
-    	background: rgba(0, 0, 0, 0.8);
-    	border-radius: 4px;
-    	.b-found__quantity-phrase {
-    		border: none;
-    		background-color: #ffcc33;
-    		transition: .3s ease;
-    		padding: 6px 12px;
-    		border-radius: 4px;
-    		cursor: pointer;
-    		white-space: nowrap;
-    		&:hover {
-    			background-color: #ffdd7d;
-    		}
-    	} 
-    	&::after {
-    		content: '';
-    		position: absolute;
-    		border: 4px solid transparent;	
-    		border-right: 4px solid rgba(0, 0, 0, 0.8);
-    		left: -8px;
-    		top: 50%;
-    		transform: translateY(-50%);
-    	}
-    }
     .section {
         border-bottom: 1px solid #e5e5e5;
         transition: .3s;
+        min-height: 48px;
         &:hover {
             background-color: #fafafa;
         }
@@ -101,10 +106,10 @@
                 }
             .item {
                 	position: absolute;
-                	right: 10px;
-                	top: 10px;
-                	width: 17px;
-                	height: 17px;
+                    width: 48px;
+                      height: 48px;
+                    right: 0;
+                    top: 0;
                 	cursor: pointer;
                 	display: none;
                 	z-index: 2;
@@ -116,8 +121,8 @@
                 }
                 .reset {
                     position: absolute;
-                    width: 17px;
-                	  height: 17px;
+                    height: 100%;
+                    width: 100%;
                     left: 0px;
                     padding: 0;
                     opacity: 0.3;
@@ -130,7 +135,7 @@
                     z-index: 1;
                     content: ' ';
                     height: 20px;
-                    top: 0;
+                    top: 14px;
                     width: 2px;
                     background-color: #333;
                     cursor: pointer;
@@ -214,7 +219,7 @@
                 }
                 .checkbox label {
                     position: relative;
-                    display: inline-block;
+                    display: block;
                     padding-left: 25px;
                     cursor: pointer;
                     color: #525252;
@@ -412,11 +417,13 @@
 
 
 .filter-page {
+    margin-bottom: 25px;
+    position: relative;
     .filter-page-content {
         border: 1px solid #e5e5e5;
         background-color: #fff;
         padding: 20px 10px 10px 10px;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
         margin: 0;
     }
     .filter {
@@ -434,6 +441,7 @@
     }
     .section_buttons {
         margin: 0 auto;
+        padding: 20px 10px;
         width: 100%;
         max-width: 580px;
     }
@@ -473,7 +481,7 @@
     .filter .section .tab_title .button_container .description {
     	 opacity: 0.7 !important;
     }
-    .filter .found_amount {
+    .found_amount {
     	display: none !important;
     }
     .filter .section .tab_content .param_list .checkbox label::before, .filter .section .tab_content .drop_down_list .checkbox label::before {
@@ -509,5 +517,11 @@
     }
     .filter .section .tab_content .param_list li, .filter .section .tab_content .drop_down_list li {
     	  margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .filter-page .filter-page-content, .filter-page .filter {
+         padding: 0;
     }
 }
