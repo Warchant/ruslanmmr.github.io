@@ -288,15 +288,7 @@ function count() {
         $(this).parents(".tab_title").siblings(".tab_content").find(".checkbox_item").prop('checked', false).removeClass('active');
         $(this).parents(".tab_title").siblings(".tab_content").find(".input_end").val(max).removeClass('active');
         $(this).parents(".tab_title").siblings(".tab_content").find(".input_start").val(min).removeClass('active');
-        $(".r-slider1").data("ionRangeSlider").update({
-            from: min,
-            to: max
-        });
-        $(".r-slider2").data("ionRangeSlider").update({
-            from: min,
-            to: max
-        });
-        $(".r-slider3").data("ionRangeSlider").update({
+        $(this).parents(".tab_title").siblings(".tab_content").find(".js-range-slider").data("ionRangeSlider").update({
             from: min,
             to: max
         });
