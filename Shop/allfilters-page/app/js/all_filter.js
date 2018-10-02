@@ -284,27 +284,20 @@ function count() {
     });
 
     $('.filter .reset').on('click', function() {
-        $('.found_amount, .found_amount_all').fadeOut();
-        $(this).parents(".tab_title").siblings(".tab_content").find(".checkbox_item").prop('checked', false).removeClass('active');
-        $(this).parents(".tab_title").siblings(".tab_content").find(".input_end").val(max).removeClass('active');
-        $(this).parents(".tab_title").siblings(".tab_content").find(".input_start").val(min).removeClass('active');
+        $('.found_amount').fadeOut();
+        $(this).parents(".section").find(".checkbox_item").prop('checked', false).removeClass('active');
+        $(this).parents(".section").find(".input_end").val(max).removeClass('active');
+        $(this).parents(".section").find(".input_start").val(min).removeClass('active');
         $(this).parents(".item").fadeOut();
         $(this).parents(".tab_title").siblings().slideUp(300);
         $(this).parents(".tab_title").removeClass("title_active");
     });
 
-    $('.range .filter .reset').on('click', function() {
-        $('.found_amount, .found_amount_all').fadeOut();
-        $(this).parents(".tab_title").siblings(".tab_content").find(".checkbox_item").prop('checked', false).removeClass('active');
-        $(this).parents(".tab_title").siblings(".tab_content").find(".input_end").val(max).removeClass('active');
-        $(this).parents(".tab_title").siblings(".tab_content").find(".input_start").val(min).removeClass('active');
-        $(this).parents(".tab_title").siblings(".tab_content").find(".js-range-slider").data("ionRangeSlider").update({
+    $('.range .reset').on('click', function() {
+        $(this).parents(".range").find(".js-range-slider").data("ionRangeSlider").update({
             from: min,
             to: max
         });
-        $(this).parents(".item").fadeOut();
-        $(this).parents(".tab_title").siblings().slideUp(300);
-        $(this).parents(".tab_title").removeClass("title_active");
     });
 
 }
