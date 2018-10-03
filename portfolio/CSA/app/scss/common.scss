@@ -228,6 +228,61 @@ body {
     top: -100% !important;
 }
 
+#footer {
+    background-color: #272727;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    bottom: -100px;
+    transition: .3s ease;
+    .content {
+        height: 88px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .left_block {
+        display: flex;
+        padding-top: 2px;
+    }
+    .logo {
+        a {
+          display: block;
+          width: 61px;
+          height: 61px;
+          background: url(../img/logo_header_second.svg);
+         background-size: cover;
+       }
+    }
+    .txt {
+        font: 1.2em "HelveticaNeueCyrBold";
+        color: #f4ea48;
+        text-transform: uppercase;
+        line-height: 112%;
+        margin-top: -1px;
+        padding-left: 14px;
+    }
+    .right_block {
+        padding-top: 2px;
+        .txt {
+            text-transform: none;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }   
+    }
+    .line_bottom {
+        height: 12px;
+        display: block;
+        background-color: #000;
+    }
+}
+
+.active_footer {
+    transform: translateY(-100px);
+}
+
 #header_nav {
     position: absolute;
     width: 100%;
