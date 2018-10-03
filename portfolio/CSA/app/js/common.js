@@ -50,7 +50,8 @@ $(document).ready(function() {
         event.preventDefault();
         $(".header_nav").removeClass("header_nav_transformed");
         $(".header_top").removeClass("header_top_transformed");
-        //$("#home_page").fadeOut(500);
+        $("#last_page").hide();
+        $("#home_page").fadeIn(500);
         $("#start_page").fadeIn(250);
         $("#header_top").removeClass("header_top_last");
         $("#start_page").removeClass("active");
