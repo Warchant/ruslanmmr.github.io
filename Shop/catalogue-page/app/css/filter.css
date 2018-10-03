@@ -90,10 +90,7 @@
         -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
-        -webkit-transition: .3s;
-        -o-transition: .3s;
-        transition: .3s;
-        opacity: 0; }
+        display: none; }
         .filter .section .tab_title .select_indicator span {
           display: block;
           border: 9px solid transparent;
@@ -190,8 +187,6 @@
       -webkit-transform: rotate(-90deg);
           -ms-transform: rotate(-90deg);
               transform: rotate(-90deg); }
-    .filter .section .title_active .select_indicator {
-      opacity: 1; }
     .filter .section .tab_content {
       display: none;
       height: auto;

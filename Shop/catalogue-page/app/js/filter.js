@@ -36,6 +36,7 @@ function diap() {
         },
         onFinish: function(data) {
             $(".range .item").fadeIn();
+            $(".r-slider1").parents(".range").find(".select_indicator").fadeIn();
             var width = $(".r-slider1").parents(".range-slider").width();
             var posTop = $(".r-slider1").parents(".range-slider").offset().top + 13;
             var posLeft = $(".r-slider1").parents(".range-slider").offset().left + width + 20;
@@ -90,6 +91,7 @@ function brands() {
         $('.filter .series').removeClass("section_stab");
         $('.filter .series .checkbox_item').prop('checked', false).removeClass('active');
         $('.filter .series .item').fadeOut();
+        $(".filter .series .select_indicator").fadeOut();
         $(".filter .series .tab_title").siblings().slideUp(300);
         $(".filter .series .tab_title").removeClass("title_active");
     });
@@ -150,13 +152,16 @@ function count() {
 
     $('.input_end, .input_start').on('change', function() {
             $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeIn();
+            $(this).parents(".section").find(".select_indicator").fadeIn();
     });
 
     $('.checkbox_item').on('change', function() {
         if ($(this).parents(".tab_content").find(".active").length) {
             $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeIn();
+             $(this).parents(".section").find(".select_indicator").fadeIn();
         } else {
             $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeOut();
+            $(this).parents(".section").find(".select_indicator").fadeOut();
         }
     });
 
@@ -170,6 +175,7 @@ function count() {
             to: max
         });
         $(this).parents(".item").fadeOut();
+        $(this).parents(".section").find(".select_indicator").fadeOut();
         $(this).parents(".tab_title").siblings().slideUp(300);
         $(this).parents(".tab_title").removeClass("title_active");
     });

@@ -47,6 +47,17 @@
             transform: translateY(-50%);
         }
     }
+.a_eddited {
+    transform: translate(-100%, -25%);
+    &::after {
+        left: auto;
+        right: -4px;
+        border-right: none;
+        border-left: 4px solid rgba(0, 0, 0, 0.8);
+    }
+}
+
+
 
 .filter {
     border: 1px solid #e5e5e5;
@@ -82,8 +93,7 @@
                 left: 0;
                 top: 50%;
                 transform: translateY(-50%);
-                transition: .3s;
-                opacity: 0;
+                display: none;
                 span {
                     display: block;
                     border: 9px solid transparent;
@@ -192,9 +202,6 @@
         .title_active {
             .arrow {
                 transform: rotate(-90deg);
-            }
-            .select_indicator {
-                opacity: 1;
             }
         }
         .tab_content {

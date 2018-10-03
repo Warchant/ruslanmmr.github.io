@@ -42,6 +42,7 @@ function diap() {
         },
         onFinish: function(data) {
             $(".r-slider1").parents(".range").find(".item").fadeIn();
+            $(".r-slider1").parents(".range").find(".select_indicator").fadeIn();
             var width = $(".r-slider1").parents(".range-slider").width();
             var posTop = $(".r-slider1").parents(".range-slider").offset().top + 13;
             var posLeft = $(".r-slider1").parents(".range-slider").offset().left + width + 20;
@@ -99,6 +100,7 @@ function diap() {
         },
         onFinish: function(data) {
             $(".r-slider2").parents(".range").find(".item").fadeIn();
+            $(".r-slider2").parents(".range").find(".select_indicator").fadeIn();
             var width = $(".r-slider2").parents(".range-slider").width();
             var posTop = $(".r-slider2").parents(".range-slider").offset().top + 13;
             var posLeft = $(".r-slider2").parents(".range-slider").offset().left + width + 20;
@@ -156,6 +158,7 @@ function diap() {
         },
         onFinish: function(data) {
             $(".r-slider3").parents(".range").find(".item").fadeIn();
+            $(".r-slider3").parents(".range").find(".select_indicator").fadeIn();
             var width = $(".r-slider3").parents(".range-slider").width();
             var posTop = $(".r-slider3").parents(".range-slider").offset().top + 13;
             var posLeft = $(".r-slider3").parents(".range-slider").offset().left + width + 20;
@@ -213,6 +216,7 @@ function brands() {
         $('.filter .series').removeClass("section_stab");
         $('.filter .series .checkbox_item').prop('checked', false).removeClass('active');
         $('.filter .series .item').fadeOut();
+        $('.filter .series .select_indicator').fadeOut();
         $(".filter .series .tab_title").siblings().slideUp(300);
         $(".filter .series .tab_title").removeClass("title_active");
     });
@@ -257,6 +261,7 @@ function count() {
         var pos = $(this).parent().offset();
         var withContent = $(".section").width();
         var countTop = pos.top;
+        $(".found_amount").removeClass('a_eddited');
         console.log( pos );
         var posLeft = pos.left + withContent - 20;
         clearTimeout(timer);
@@ -270,16 +275,39 @@ function count() {
             $(this).removeClass('active');
         }
     });
+      if(document.documentElement.clientWidth < 1500) {
+        $('.last_filter .checkbox_item').on('change', function() {
+            $(".found_amount").addClass('a_eddited');
+            var pos = $(this).parent().offset();
+            var withContent = $(".section").width();
+            var countTop = pos.top;
+            console.log( pos );
+            var posLeft = pos.left - 20;
+            clearTimeout(timer);
+            timer = setTimeout(function() {
+            $('.found_amount').fadeOut();
+            }, 3000);
+            $('.found_amount').css("top", countTop).css("left", posLeft).show();
+            if ($(this).prop('checked')) {
+                $(this).addClass('active');
+            } else {
+               $(this).removeClass('active');
+           }
+        });
+      }
 
     $('.input_end, .input_start').on('change', function() {
             $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeIn();
+            $(this).parents(".section").find(".select_indicator").fadeIn();
     });
 
     $('.checkbox_item').on('change', function() {
         if ($(this).parents(".tab_content").find(".active").length) {
             $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeIn();
+            $(this).parents(".section").find(".select_indicator").fadeIn();
         } else {
             $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeOut();
+            $(this).parents(".section").find(".select_indicator").fadeOut();
         }
     });
 
@@ -289,6 +317,7 @@ function count() {
         $(this).parents(".section").find(".input_end").val(max).removeClass('active');
         $(this).parents(".section").find(".input_start").val(min).removeClass('active');
         $(this).parents(".item").fadeOut();
+        $(this).parents(".section").find(".select_indicator").fadeOut();
         $(this).parents(".tab_title").siblings().slideUp(300);
         $(this).parents(".tab_title").removeClass("title_active");
     });
