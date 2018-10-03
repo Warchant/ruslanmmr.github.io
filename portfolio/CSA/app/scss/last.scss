@@ -1,5 +1,6 @@
 #last_page {
     position: relative;
+    z-index: 1;
     .active_bg {
         position: absolute;
         height: 100%;
@@ -8,7 +9,7 @@
         left: 0;
         background: url(../img/animate_bg_last.jpg) no-repeat center center;
         background-size: cover;
-        transition: .3s;
+        transition: .4s;
     }
     .custom_dots {
         position: absolute;
@@ -637,6 +638,86 @@
                                 margin-left: 15px;
                             }
                         }
+                    }
+                }
+            }
+            .slide5 {
+                .title {
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font: 3em "HelveticaNeueCyrBold";
+                    text-transform: uppercase;
+                    padding-bottom: 15px;
+                    .first {
+                        letter-spacing: 0.1em;
+                    }
+                    .img {
+                        margin: 0 0.6em;
+                    }
+                    .time {
+                       letter-spacing: 0.39em;
+                    }
+                }
+                .table_title {
+                    color: #f4ea48;
+                    text-transform: uppercase;
+                    font: 2em "HelveticaNeueCyrBold";
+                    position: relative;
+                    display: block;
+                    padding-left: 20px;
+                    margin-bottom: 10px;
+                    margin-top: 25px;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 15px;
+                        height: 10px;
+                        left: 0;
+                        top: 5px;
+                        background: url(../img/fr_indicator.png) no-repeat center center;
+                        background-size: contain;
+                        transform: rotate(90deg);
+                    }
+                }
+                td {
+                    width: 16.66%;
+                    height: 50px;
+                }
+                .table_top {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+                .table_bottom {
+                    width: 66.66%;
+                    border-collapse: collapse;
+                }
+                .top {
+                    color: #fff;
+                    font: 2em "HelveticaNeueCyrLight";
+                    text-align: center;
+                    span {
+                        font-size: 0.8em;
+                    }
+                }
+                tr.center {
+                   border-top: 1px solid #7a7a7a;
+                   border-bottom: 1px solid #7a7a7a;
+                }
+                tr.center, tr.last {
+                    td {
+                        text-align: center;
+                        color: #f4ea48;
+                        font: 2em "SansRegular";
+                        span {
+                            font: 1.4em "SansBold";
+                        }
+                    }
+                    td:first-child {
+                        color: #fff;
+                        font: 2.5em "HelveticaNeueCyrBold";
+                        text-align: left;
                     }
                 }
             }

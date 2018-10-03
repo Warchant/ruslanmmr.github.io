@@ -1,5 +1,6 @@
 #last_page {
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   #last_page .active_bg {
     position: absolute;
     height: 100%;
@@ -9,9 +10,9 @@
     background: url(../img/animate_bg_last.jpg) no-repeat center center;
     -webkit-background-size: cover;
             background-size: cover;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s; }
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; }
   #last_page .custom_dots {
     position: absolute;
     top: 20px;
@@ -655,3 +656,76 @@
             #last_page .container .slider2 .slide4 .slider_gallery .cards .block_right .desc {
               margin-right: 0;
               margin-left: 15px; }
+      #last_page .container .slider2 .slide5 .title {
+        color: #fff;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        font: 3em "HelveticaNeueCyrBold";
+        text-transform: uppercase;
+        padding-bottom: 15px; }
+        #last_page .container .slider2 .slide5 .title .first {
+          letter-spacing: 0.1em; }
+        #last_page .container .slider2 .slide5 .title .img {
+          margin: 0 0.6em; }
+        #last_page .container .slider2 .slide5 .title .time {
+          letter-spacing: 0.39em; }
+      #last_page .container .slider2 .slide5 .table_title {
+        color: #f4ea48;
+        text-transform: uppercase;
+        font: 2em "HelveticaNeueCyrBold";
+        position: relative;
+        display: block;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        margin-top: 25px; }
+        #last_page .container .slider2 .slide5 .table_title:before {
+          content: "";
+          position: absolute;
+          width: 15px;
+          height: 10px;
+          left: 0;
+          top: 5px;
+          background: url(../img/fr_indicator.png) no-repeat center center;
+          -webkit-background-size: contain;
+                  background-size: contain;
+          -webkit-transform: rotate(90deg);
+              -ms-transform: rotate(90deg);
+                  transform: rotate(90deg); }
+      #last_page .container .slider2 .slide5 td {
+        width: 16.66%;
+        height: 50px; }
+      #last_page .container .slider2 .slide5 .table_top {
+        width: 100%;
+        border-collapse: collapse; }
+      #last_page .container .slider2 .slide5 .table_bottom {
+        width: 66.66%;
+        border-collapse: collapse; }
+      #last_page .container .slider2 .slide5 .top {
+        color: #fff;
+        font: 2em "HelveticaNeueCyrLight";
+        text-align: center; }
+        #last_page .container .slider2 .slide5 .top span {
+          font-size: 0.8em; }
+      #last_page .container .slider2 .slide5 tr.center {
+        border-top: 1px solid #7a7a7a;
+        border-bottom: 1px solid #7a7a7a; }
+      #last_page .container .slider2 .slide5 tr.center td, #last_page .container .slider2 .slide5 tr.last td {
+        text-align: center;
+        color: #f4ea48;
+        font: 2em "SansRegular"; }
+        #last_page .container .slider2 .slide5 tr.center td span, #last_page .container .slider2 .slide5 tr.last td span {
+          font: 1.4em "SansBold"; }
+      #last_page .container .slider2 .slide5 tr.center td:first-child, #last_page .container .slider2 .slide5 tr.last td:first-child {
+        color: #fff;
+        font: 2.5em "HelveticaNeueCyrBold";
+        text-align: left; }

@@ -34,6 +34,18 @@
   font-style: normal;
   src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "SansBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PTSans/PTSansBold/PTSansBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "SansRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PTSans/PTSansRegular/PTSansRegular.ttf") format("truetype"); }
+
 .link_trigger {
   position: relative; }
   .link_trigger .bg {
@@ -330,14 +342,11 @@ body {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
         width: 400px; }
         #header_nav .container .header_nav .left_section .first_link {
           width: 62px;
-          height: 100%; }
+          height: 100%;
+          margin-right: 18px; }
           #header_nav .container .header_nav .left_section .first_link .load {
             display: -webkit-box;
             display: -webkit-flex;
@@ -412,19 +421,21 @@ body {
           display: -ms-flexbox;
           display: flex;
           list-style: none;
-          -webkit-box-pack: justify;
-          -webkit-justify-content: space-between;
-              -ms-flex-pack: justify;
-                  justify-content: space-between;
+          -webkit-box-pack: end;
+          -webkit-justify-content: flex-end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end;
           width: 100%;
           margin: 0;
           padding: 0; }
-          #header_nav .container .header_nav .right_section ul li a {
-            text-decoration: none;
-            display: block;
-            font: 1.8em "HelveticaNeueCyrLight";
-            color: #000;
-            line-height: 0.9em; }
+          #header_nav .container .header_nav .right_section ul li {
+            margin-left: 23px; }
+            #header_nav .container .header_nav .right_section ul li a {
+              text-decoration: none;
+              display: block;
+              font: 1.8em "HelveticaNeueCyrLight";
+              color: #000;
+              line-height: 0.9em; }
 
 .header_nav_last {
   bottom: -webkit-calc(100% - 55px) !important;
@@ -458,6 +469,9 @@ body {
 
 #header_nav .container .header_nav .left_section .icons_block .icon .active_icon {
   background: url(../img/icon_active.png); }
+
+.icons_block, .lang {
+  display: none !important; }
 
 @media screen and (max-width: 1240px) {
   .container {

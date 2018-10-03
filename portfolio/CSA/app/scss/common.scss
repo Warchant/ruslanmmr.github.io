@@ -253,11 +253,12 @@ body {
             .left_section {
                 height: 100%;
                 display: flex;
-                justify-content: space-between;
+                //justify-content: space-between;
                 width: 400px;
                 .first_link {
                     width: 62px;
                     height: 100%;
+                    margin-right: 18px;
                     .load {
                         display: flex;
                         display: none;
@@ -330,11 +331,13 @@ body {
                     height: 100%;
                     display: flex;
                     list-style: none;
-                    justify-content: space-between;
+                    //justify-content: space-between;
+                    justify-content: flex-end;
                     width: 100%;
                     margin: 0;
                     padding: 0;
                     li {
+                        margin-left: 23px;
                         a {
                             text-decoration: none;
                             display: block;
@@ -390,6 +393,13 @@ body {
 
 #header_nav .container .header_nav .left_section .icons_block .icon .active_icon  {
      background: url(../img/icon_active.png);
+}
+
+
+
+//пока не нужные блоки
+.icons_block, .lang {
+    display: none !important;
 }
 
 @import "media";

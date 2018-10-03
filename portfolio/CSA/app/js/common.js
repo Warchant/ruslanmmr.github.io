@@ -72,11 +72,12 @@ $(document).ready(function() {
         totalWheel += delta;
         if (totalWheel < 0) {
             totalWheel = 0;
+            $("#start_page").removeClass("active");
+                $("#start_page").css("width", "100%");
         } else if ((document.documentElement.clientWidth > 1025) && totalWheel > 0 && totalWheel < 700) {
             once = 1;
             $("#last_page").hide();
             $("#home_page").fadeIn(500);
-            //$(".slider1").slick('reinit');
             if (totalWheel >= 100 && totalWheel < 200) {
                 $("#start_page").removeClass("active");
             } else if (totalWheel >= 200 && totalWheel < 300) {
@@ -196,7 +197,7 @@ $(document).ready(function() {
     $('.slider2').slick({
         dots: false,
         infinite: false,
-        speed: 500,
+        speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
@@ -307,14 +308,11 @@ $(document).ready(function() {
 
 
 //блоки колезеев
-
 function placeTabs() {
     $('.slider2 .place_block').click(function() {
         $(".slider2 .place_block").removeClass("active_place");
         $(this).addClass("active_place");
     });
-
-    $('.slide3 .place_block .img_block').width($(".slide3 .place_block .img_block").height());
 
     $("#last_page .container .slide3 .top_title span").not(":first").hide();
     $("#last_page .slide3 .slide_content").not(":first").hide();
@@ -359,8 +357,12 @@ function sliderPlace() {
     });
 };
 
+function autoWith() {
+    $('.slide3 .place_block .img_block').width($(".slide3 .place_block .img_block").height());
+}
 
 $(document).ready(function() {
+    autoWith();
     $.when(sliderPlace()).then(function() {
         setTimeout(function() {
             placeTabs();
