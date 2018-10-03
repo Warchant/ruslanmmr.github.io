@@ -29,8 +29,6 @@ $(document).ready(function() {
         $(".header_top").addClass("header_top_transformed");
         $("#start_page").addClass("active");
         $("#home_page").fadeIn(500);
-        //$(".slider1").slick('reinit');
-        //new
         $("#start_page").css("width", "0%");
         $("#header_top").removeClass("header_top_last");
         totalWheel = 700;
@@ -40,27 +38,24 @@ $(document).ready(function() {
         $(".header_nav").addClass("header_nav_transformed");
         $(".header_top").addClass("header_top_transformed");
         $("#start_page").addClass("active");
-        $("#start_page").css("width", "0%");
         $("#home_page").fadeOut(500);
         $("#last_page").fadeIn(500);
         $("#header_top").addClass("header_top_last");
         totalWheel = 901;
         once = 2;
+        $("#start_page").css("width", "0%");
     });
 
     $('#header_top .header_top .logo a, #footer .logo a').click(function(event) {
         event.preventDefault();
         $(".header_nav").removeClass("header_nav_transformed");
         $(".header_top").removeClass("header_top_transformed");
-        $("#home_page").fadeOut(500);
+        //$("#home_page").fadeOut(500);
         $("#start_page").fadeIn(250);
         $("#header_top").removeClass("header_top_last");
         $("#start_page").removeClass("active");
         $("#header_nav .left_section .icons_block a, #header_nav .first_link .link a").removeClass("active_icon");
         $("#header_nav .link_trigger a").parent().removeClass("active_link");
-        //$(".slider1").slick('reinit');
-        $("#last_page").fadeOut(500);
-        //new
         $("#start_page").css("width", "100%");
         totalWheel = 0;
     });
