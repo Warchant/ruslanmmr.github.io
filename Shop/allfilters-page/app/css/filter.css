@@ -261,6 +261,18 @@
       .filter .section .tab_content .drop_down_list .checkbox input[type="checkbox"]:checked + label::before,
       .filter .section .tab_content .drop_down_list .checkbox input[type="radio"]:checked + label::before {
         background-color: #cfeaff; }
+      .filter .section .tab_content .radio_list .checkbox label::before {
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+      .filter .section .tab_content .radio_list .checkbox label::after {
+        border: none;
+        background-color: #1f0602;
+        height: 8px;
+        width: 8px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        top: 5px;
+        left: 4px; }
       .filter .section .tab_content .color_list {
         display: -webkit-box;
         display: -webkit-flex;
@@ -460,6 +472,11 @@
     height: 10px;
     width: 25px;
     top: 5px;
+    left: 7px; }
+  .filter .section .tab_content .radio_list .checkbox label::after {
+    height: 16px;
+    width: 16px;
+    top: 8px;
     left: 7px; }
   .filter .section .tab_content .param_more {
     padding: 10px 0; }

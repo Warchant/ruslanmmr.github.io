@@ -263,6 +263,20 @@
                     background-color: #cfeaff;
                 }
             }
+            .radio_list {
+                .checkbox label::before {
+                    border-radius: 50%;
+                }
+                .checkbox label::after {
+                    border: none;
+                    background-color: #1f0602;
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 50%;
+                    top: 5px;
+                    left: 4px;
+                }
+            }
             .color_list {
                 display: flex;
                 justify-content: space-between;
@@ -498,6 +512,12 @@
     	  width: 25px;
     	  top: 5px;
     	  left: 7px;
+    }
+    .filter .section .tab_content .radio_list .checkbox label::after {
+        height: 16px;
+        width: 16px;
+        top: 8px;
+        left: 7px;
     }
     .filter .section .tab_content .param_more {
     	  padding: 10px 0;
