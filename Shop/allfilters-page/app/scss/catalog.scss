@@ -813,10 +813,6 @@ ul {
 }
 
 @media screen and (max-width: 992px) {
-    [data-balloon][data-balloon-pos='right']:after,
-    [data-balloon][data-balloon-pos='right']:before {
-        display: none;
-    }
     .banner_block {
         display: block;
     }
