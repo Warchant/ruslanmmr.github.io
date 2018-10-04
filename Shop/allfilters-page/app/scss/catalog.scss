@@ -5,18 +5,6 @@ ul {
     margin: 0;
 }
 
-#modal-popup-desc {
-    .modal_heading  {
-        background-color: #fafafa;
-    }
-    .nano-content {
-        padding: 0 20px;
-        p {
-            line-height: 180%;
-        }
-    }
-}
-
 .description[data-balloon]:after {
     min-width: 180px;
     white-space: normal;
@@ -183,64 +171,6 @@ ul {
 
 .catalog {
     padding-top: 20px;
-    .category-name {
-        .title {
-            color: #1e0602;
-            font-size: 30px;
-            margin-bottom: 20px;
-            display: flex;
-            flex: 1;
-            align-items: center;
-        }
-
-        .title .button_back {
-            -ms-flex-positive: 0;
-            flex-grow: 0;
-            -ms-flex-negative: 0;
-            flex-shrink: 0;
-            width: 30px;
-            height: 30px;
-            border-radius: 3px;
-            border: 1px solid rgba(0, 0, 0, 0.2);
-            background-color: #fff;
-            text-align: center;
-            line-height: 28px;
-            display: none;
-            -ms-flex-align: center;
-            align-items: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            margin-right: 18px;
-        }
-
-        @media screen and (max-width: 567px) {
-            .title .button_back {
-                display: -ms-flexbox;
-                display: flex;
-            }
-        }
-        .title .button_back i {
-            color: rgba(0, 0, 0, 0.4);
-            display: inline-block;
-            vertical-align: middle;
-            font-size: 16px;
-        }
-        .title_general {
-            -ms-flex-positive: 1;
-            flex-grow: 1;
-            color: #1e0602;
-            font-size: 30px;
-            font-weight: normal;
-            margin: 0;
-        }
-
-        @media screen and (max-width: 567px) {
-            .title_general {
-                font-size: 14px;
-                line-height: 1.4;
-            }
-        }
-    }
     .current-categories {
         .category-block,
         .watch-more-block {

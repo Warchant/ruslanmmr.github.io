@@ -13,6 +13,18 @@
             display: none;
         }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.filter_page {
+    padding-top: 30px;
+}
+.filter_page .card_banner_box {
+    margin: 0;
+}
+
 .range-slider {
     display: block;
 }
@@ -65,6 +77,18 @@
     background: #fff;
     position: relative;
     z-index: 3;
+    [data-balloon][data-balloon-pos='right']:after {
+        margin-left: 6px;
+    }
+    [data-balloon][data-balloon-pos='right']:before {
+        margin-left: 0;
+    }
+    [data-balloon][data-balloon-pos='up']:after {
+        margin-bottom: 6px;
+    }
+    [data-balloon][data-balloon-pos='up']:before {
+        margin-bottom: 0;
+    }
     .section {
         border-bottom: 1px solid #e5e5e5;
         transition: .3s;
@@ -72,11 +96,12 @@
         &:hover {
             background-color: #fafafa;
         }
-        .tab_title {
+        .tab_title, .tab_content {
             cursor: pointer;
             position: relative;
-            padding: 13px 22px;
+            padding: 13px 0;
             padding-left: 43px;
+            padding-right: 48px;
             .open_button {
             	position: absolute;
             	width: 100%;
@@ -91,8 +116,7 @@
             .select_indicator {
                 position: absolute;
                 left: 0;
-                top: 50%;
-                transform: translateY(-50%);
+                top: 15px;
                 display: none;
                 span {
                     display: block;
@@ -473,6 +497,21 @@
     }
 }
 
+.check_section {
+    .tab_content {
+        display: block !important;
+        padding: 0 !important;
+        padding: 15px 20px !important;
+        cursor: default !important;
+        label {
+            padding-right: 28px;
+        }
+        li {
+            margin: 0 !important;
+        }
+    }
+}
+
 
 
 
@@ -483,6 +522,12 @@
 }
 
 @media screen and (max-width: 992px) {
+    [data-balloon][data-balloon-pos='right']:after,
+    [data-balloon][data-balloon-pos='right']:before,
+     [data-balloon][data-balloon-pos='up']:after,
+    [data-balloon][data-balloon-pos='up']:before {
+        display: none;
+    }
     .filter-page .filter_section {
         display: block;
     }
@@ -545,10 +590,19 @@
     .filter .section .tab_content .param_list li, .filter .section .tab_content .drop_down_list li {
     	  margin-bottom: 10px;
     }
+    .check_section .tab_content .select_indicator {
+        top: 21px !important;
+    }
 }
 
 @media screen and (max-width: 568px) {
     .filter-page .filter-page-content, .filter-page .filter {
          padding: 0;
+    }
+    .filter_page {
+        padding-top: 20px;
+    }
+    .filter_page .card_banner_box {
+        display: none;
     }
 }

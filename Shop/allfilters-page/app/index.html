@@ -8,14 +8,12 @@
     <title>Satra. Сантехника от А до Я</title>
     <meta content="telephone=no" name="format-detection">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/slick.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/jscrollpane.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/balloon.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/select2.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/nanoscroller.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/all.css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/catalog.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/filter.css" media="all">
 </head>
 
@@ -1174,7 +1172,7 @@
                 </div>
             </div>
         </div>
-        <div class="catalog">
+        <div class="filter_page">
             <div class="card_banner_box">
                 <div class="container">
                     <div class="long_banner">
@@ -1466,7 +1464,7 @@
                                             <button class="reset"></button>
                                         </div>
                                         <div class="button_container">
-                                            <span class="section_title">Назначение</span>
+                                            <span class="section_title">Назначение, очень длинное название</span>
                                             <span class="description"><a href="#modal-popup-desc" class="hinge wrap_image" data-effect="mfp-move-horizontal"><i class="icon-question-circle-o"></i></a></span>
                                         </div>
                                     </div>
@@ -1505,35 +1503,21 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="section">
-                                    <div class="tab_title">
-                                        <button class="open_button"></button>
+                                <div class="section check_section">
+                                    <div class="tab_content">
                                         <div class="select_indicator">
                                             <span></span>
                                         </div>
-                                        <span class="arrow"><i class="icon-angle-right"></i></span>
-                                        <div class="item" data-balloon="Сбросить фильтр" data-balloon-pos="right">
+                                            <div class="item" data-balloon="Сбросить фильтр" data-balloon-pos="up">
                                             <button class="reset"></button>
                                         </div>
-                                        <div class="button_container">
-                                            <span class="section_title">Встроенные системы</span>
-                                            <span class="description"><a href="#modal-popup-desc" class="hinge wrap_image" data-effect="mfp-move-horizontal"><i class="icon-question-circle-o"></i></a></span>
-                                        </div>
-                                    </div>
-                                    <div class="tab_content">
-                                        <ul class="param_list radio_list">
+                                        <ul class="param_list">
                                             <li class="checkbox">
-                                                <input type="radio" name="radio" class="checkbox_item" id="checkbox_30">
-                                                <label for="checkbox_30">Да<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
-                                                </label>
-                                            </li>
-                                            <li class="checkbox">
-                                                <input type="radio" name="radio" class="checkbox_item" id="checkbox_31">
-                                                <label for="checkbox_31">Нет<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                <input type="checkbox" class="checkbox_item" id="checkbox_30">
+                                                <label for="checkbox_30">Встраиваемые системы, длинное название<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
                                                 </label>
                                             </li>
                                         </ul>
-
                                     </div>
                                 </div>
                                 <div class="section">
@@ -2247,31 +2231,18 @@
                                 </div>
                             </div>
                             <div class="filter fil2 last_filter">
-                                <div class="section">
-                                    <div class="tab_title">
-                                        <button class="open_button"></button>
+                                <div class="section check_section">
+                                    <div class="tab_content">
                                         <div class="select_indicator">
                                             <span></span>
                                         </div>
-                                        <span class="arrow"><i class="icon-angle-right"></i></span>
-                                        <div class="item" data-balloon="Сбросить фильтр" data-balloon-pos="right">
+                                            <div class="item" data-balloon="Сбросить фильтр" data-balloon-pos="up">
                                             <button class="reset"></button>
                                         </div>
-                                        <div class="button_container">
-                                            <span class="section_title">Донный клапан</span>
-                                            <span class="description"><a href="#modal-popup-desc" class="hinge wrap_image" data-effect="mfp-move-horizontal"><i class="icon-question-circle-o"></i></a></span>
-                                        </div>
-                                    </div>
-                                    <div class="tab_content">
-                                        <ul class="param_list radio_list">
+                                        <ul class="param_list">
                                             <li class="checkbox">
-                                                <input type="radio" name="radio" class="checkbox_item" id="checkbox_401">
-                                                <label for="checkbox_401">Да<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
-                                                </label>
-                                            </li>
-                                            <li class="checkbox">
-                                                <input type="radio" name="radio" class="checkbox_item" id="checkbox_402">
-                                                <label for="checkbox_402">Нет<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
+                                                <input type="checkbox" class="checkbox_item" id="checkbox_401">
+                                                <label for="checkbox_401">Донный клапан<span class="quantity_container">(<span class="quantity_value">40</span>)</span>
                                                 </label>
                                             </li>
                                         </ul>
@@ -3226,7 +3197,7 @@
             </div>
         </div>
         <!--modal-подсказки-описание-->
-        <div id="modal-popup-desc" class="modal_container mfp-with-anim mfp-hide">
+        <div id="modal-popup-desc" class="description_modal modal_container mfp-with-anim mfp-hide">
             <div class="modal_heading">
                 <div class="modal_wrap">
                     <div class="modal_title">Тип</div>

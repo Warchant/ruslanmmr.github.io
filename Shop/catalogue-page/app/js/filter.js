@@ -35,11 +35,12 @@ function diap() {
             $input_to1.prop("value", data.to);
         },
         onFinish: function(data) {
+            $(".found_amount").removeClass('a_eddited');
             $(".range .item").fadeIn();
             $(".r-slider1").parents(".range").find(".select_indicator").fadeIn();
             var width = $(".r-slider1").parents(".range-slider").width();
             var posTop = $(".r-slider1").parents(".range-slider").offset().top + 13;
-            var posLeft = $(".r-slider1").parents(".range-slider").offset().left + width + 20;
+            var posLeft = $(".r-slider1").parents(".range-slider").offset().left + width + 24;
             $('.found_amount').css("top", posTop).css("left", posLeft).show();
             clearTimeout(timer);
             timer = setTimeout(function() {
@@ -134,10 +135,11 @@ function filter() {
 function count() {
     $('.checkbox_item, .input_end, .input_start').on('change', function() {
         var pos = $(this).parent().offset();
-        var withContent = $(".filter .section .tab_content").width();
+        var withContent = $(".section").width();
         var countTop = pos.top;
+         var posL = $(this).parents(".section").offset();
         console.log( pos );
-        var posLeft = pos.left + withContent + 20;
+        var posLeft = posL.left + withContent + 4;
         clearTimeout(timer);
         timer = setTimeout(function() {
         $('.found_amount').fadeOut();
@@ -151,16 +153,16 @@ function count() {
     });
 
     $('.input_end, .input_start').on('change', function() {
-            $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeIn();
+             $(this).parents(".section").find(".item").fadeIn();
             $(this).parents(".section").find(".select_indicator").fadeIn();
     });
 
     $('.checkbox_item').on('change', function() {
         if ($(this).parents(".tab_content").find(".active").length) {
-            $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeIn();
+            $(this).parents(".section").find(".item").fadeIn();
              $(this).parents(".section").find(".select_indicator").fadeIn();
         } else {
-            $(this).parents(".tab_content").siblings(".tab_title").find(".item").fadeOut();
+            $(this).parents(".section").find(".item").fadeOut();
             $(this).parents(".section").find(".select_indicator").fadeOut();
         }
     });
@@ -174,7 +176,7 @@ function count() {
             from: min,
             to: max
         });
-        $(this).parents(".item").fadeOut();
+        $(this).parents(".section").find(".item").fadeOut();
         $(this).parents(".section").find(".select_indicator").fadeOut();
         $(this).parents(".tab_title").siblings().slideUp(300);
         $(this).parents(".tab_title").removeClass("title_active");

@@ -144,7 +144,10 @@ $(document).ready(function() {
             },
             {
                 breakpoint: 320,
-                settings: {}
+                settings: {
+                    dots: true,
+                    adaptiveHeight: true
+                }
             }
         ]
     });
