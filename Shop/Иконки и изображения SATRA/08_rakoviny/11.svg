@@ -1,0 +1,92 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--Generator: Xara Designer (www.xara.com), SVG filter version: 4.0.0.1-->
+<svg stroke-width="0.501" stroke-linejoin="bevel" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" overflow="visible" width="26.984pt" height="27pt" viewBox="0 0 26.984 27">
+ <defs>
+  <marker id="DefaultArrow2" markerUnits="strokeWidth" viewBox="0 0 1 1" markerWidth="1" markerHeight="1" overflow="visible" orient="auto">
+   <!-- REF_ARROW_STRAIGHT (-2) -->
+   <g transform="scale(0.0092592592)">
+    <!-- 1/108 -->
+    <path d="M -9 54 L -9 -54 L 117 0 z"/>
+   </g>
+  </marker>
+  <marker id="DefaultArrow3" markerUnits="strokeWidth" viewBox="0 0 1 1" markerWidth="1" markerHeight="1" overflow="visible" orient="auto">
+   <!-- REF_ARROW_ANGLED -->
+   <g transform="scale(0.0092592592)">
+    <path d="M -27 54 L -9 0 L -27 -54 L 135 0 z"/>
+   </g>
+  </marker>
+  <marker id="DefaultArrow4" markerUnits="strokeWidth" viewBox="0 0 1 1" markerWidth="1" markerHeight="1" overflow="visible" orient="auto">
+   <!-- REF_ARROW_ROUNDED -->
+   <g transform="scale(0.0092592592)">
+    <path d="M -9,0 L -9,-45 C -9,-51.708 2.808,-56.580 9,-54 L 117,-9 C 120.916,-7.369 126.000,-4.242 126,0 C 126,4.242 120.916,7.369 117,9 L 9,54 C 2.808,56.580 -9,51.708 -9,45 z"/>
+   </g>
+  </marker>
+  <marker id="DefaultArrow5" markerUnits="strokeWidth" viewBox="0 0 1 1" markerWidth="1" markerHeight="1" overflow="visible" orient="auto">
+   <!-- REF_ARROW_SPOT -->
+   <g transform="scale(0.0092592592)">
+    <path d="M -54, 0 C -54,29.807 -29.807,54 0,54 C 29.807,54 54,29.807 54,0 C 54,-29.807 29.807,-54 0,-54 C -29.807,-54 -54,-29.807 -54,0 z"/>
+   </g>
+  </marker>
+  <marker id="DefaultArrow6" markerUnits="strokeWidth" viewBox="0 0 1 1" markerWidth="1" markerHeight="1" overflow="visible" orient="auto">
+   <!-- REF_ARROW_DIAMOND -->
+   <g transform="scale(0.0092592592)">
+    <path d="M -63,0 L 0,63 L 63,0 L 0,-63 z"/>
+   </g>
+  </marker>
+  <marker id="DefaultArrow7" markerUnits="strokeWidth" viewBox="0 0 1 1" markerWidth="1" markerHeight="1" overflow="visible" orient="auto">
+   <!-- REF_ARROW_FEATHER -->
+   <g transform="scale(0.0092592592)">
+    <path d="M 18,-54 L 108,-54 L 63,0 L 108,54 L 18, 54 L -36,0 z"/>
+   </g>
+  </marker>
+  <marker id="DefaultArrow8" markerUnits="strokeWidth" viewBox="0 0 1 1" markerWidth="1" markerHeight="1" overflow="visible" orient="auto">
+   <!-- REF_ARROW_FEATHER2 -->
+   <g transform="scale(0.0092592592)">
+    <path d="M -36,0 L 18,-54 L 54,-54 L 18,-18 L 27,-18 L 63,-54 L 99,-54 L 63,-18 L 72,-18 L 108,-54 L 144,-54 L 90,0 L 144,54 L 108,54 L 72,18 L 63,18 L 99,54 L 63,54 L 27,18 L 18,18 L 54,54 L 18,54 z"/>
+   </g>
+  </marker>
+  <marker id="DefaultArrow9" markerUnits="strokeWidth" viewBox="0 0 1 1" markerWidth="1" markerHeight="1" overflow="visible" orient="auto">
+   <!-- REF_ARROW_HOLLOWDIAMOND -->
+   <g transform="scale(0.0092592592)">
+    <path d="M 0,45 L -45,0 L 0, -45 L 45, 0 z M 0, 63 L-63, 0 L 0, -63 L 63, 0 z"/>
+   </g>
+  </marker>
+  <filter id="StainedFilter">
+   <feBlend mode="multiply" in2="BackgroundImage" in="SourceGraphic" result="blend"/>
+   <feComposite in="blend" in2="SourceAlpha" operator="in" result="comp"/>
+  </filter>
+  <filter id="BleachFilter">
+   <feBlend mode="screen" in2="BackgroundImage" in="SourceGraphic" result="blend"/>
+   <feComposite in="blend" in2="SourceAlpha" operator="in" result="comp"/>
+  </filter>
+  <filter id="InvertTransparencyBitmapFilter">
+   <feComponentTransfer>
+    <feFuncR type="gamma" amplitude="1.055" exponent=".416666666" offset="-0.055"/>
+    <feFuncG type="gamma" amplitude="1.055" exponent=".416666666" offset="-0.055"/>
+    <feFuncB type="gamma" amplitude="1.055" exponent=".416666666" offset="-0.055"/>
+   </feComponentTransfer>
+   <feComponentTransfer>
+    <feFuncR type="linear" slope="-1" intercept="1"/>
+    <feFuncG type="linear" slope="-1" intercept="1"/>
+    <feFuncB type="linear" slope="-1" intercept="1"/>
+    <feFuncA type="linear" slope="1" intercept="0"/>
+   </feComponentTransfer>
+   <feComponentTransfer>
+    <feFuncR type="gamma" amplitude="1" exponent="2.4" offset="0"/>
+    <feFuncG type="gamma" amplitude="1" exponent="2.4" offset="0"/>
+    <feFuncB type="gamma" amplitude="1" exponent="2.4" offset="0"/>
+   </feComponentTransfer>
+  </filter>
+ </defs>
+ <g id="Document" fill="none" stroke="black" font-family="Times New Roman" font-size="16" transform="scale(1 -1)">
+  <g id="Spread" transform="translate(0 -27)">
+   <g id="Layer 1">
+    <g id="Group" stroke-linejoin="round" stroke="none">
+     <path d="M -0.001,26.998 L -0.001,-0.001 L 26.999,-0.001 L 26.999,26.998 L -0.001,26.998 Z" marker-start="none" marker-end="none"/>
+     <path d="M 0.416,10.385 L 0.405,10.396 L 0.346,10.46 C -0.125,11.002 -0.117,11.752 0.396,12.276 L 12.541,24.347 C 13.056,24.864 13.879,24.904 14.437,24.348 L 26.573,12.284 C 26.635,12.224 26.694,12.156 26.748,12.082 C 27.068,11.639 27.113,11.044 26.709,10.542 L 26.68,10.508 L 26.617,10.439 L 26.58,10.4 C 18.561,2.737 8.852,2.338 0.416,10.385 Z M 24.129,10.228 L 25.388,11.347 L 13.489,23.174 L 1.589,11.346 L 1.462,11.46 C 8.798,4.462 16.991,4.345 24.129,10.228 Z M 4.558,11.07 C 4.245,11.359 4.235,11.851 4.537,12.152 L 9.435,17.031 C 9.576,17.171 9.766,17.25 9.965,17.25 L 16.978,17.25 C 17.175,17.25 17.364,17.172 17.505,17.033 L 22.469,12.126 C 22.773,11.825 22.764,11.331 22.45,11.041 C 16.928,5.944 9.286,6.7 4.558,11.07 Z M 20.495,11.357 L 20.836,11.629 L 16.669,15.75 L 10.274,15.75 L 6.174,11.665 L 5.575,12.171 C 9.527,8.52 15.71,7.724 20.495,11.357 Z M 12.438,10.939 C 11.853,11.525 11.853,12.475 12.438,13.061 C 13.024,13.646 13.974,13.646 14.56,13.061 C 15.145,12.475 15.145,11.525 14.56,10.939 C 13.974,10.354 13.024,10.354 12.438,10.939 Z" stroke-width="1.5" fill="#bababa" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

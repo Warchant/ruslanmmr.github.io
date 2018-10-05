@@ -1,5 +1,11 @@
+var flag = 1;
+
 $(document).ready(function() {
     itemPrev();
+    slider();
+});
+$(window).resize(function() {
+    slider();
 });
 
 function itemPrev() {
@@ -15,7 +21,8 @@ function itemPrev() {
     });
 };
 
-function slider() {
+
+function sliderInit() {
     $('.popular_collections_content').slick({
         dots: true,
         infinite: false,
@@ -28,25 +35,16 @@ function slider() {
     });
 };
 
-var flag = 1;
-
-if (document.documentElement.clientWidth < 558) {
-    slider();
-}
-
-$(window).resize(function() {
-    if (document.documentElement.clientWidth < 558) {
+function slider() {
+    if (document.documentElement.clientWidth < 578) {
         if (flag == 1) {
-            slider();
-            flag = 0;
-            return false;
+            sliderInit();
+            flag = 2;
         }
     } else {
-        flag = 0;
-        if (flag == 0) {
+        if (flag == 2) {
             $(".popular_collections_content").slick('unslick');
             flag = 1;
-            return false;
         }
     }
-});
+};
