@@ -40,7 +40,7 @@ function brandSlider() {
     $('.brand_slider').slick({
         dots: true,
         infinite: true,
-        speed: 300,
+        speed: 1000,
         autoplay: true,
         autoplaySpeed: 3500,
         arrows: false,
