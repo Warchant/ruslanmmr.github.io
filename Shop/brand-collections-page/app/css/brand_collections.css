@@ -1,0 +1,173 @@
+.title {
+  position: relative; }
+  .title img {
+    position: absolute;
+    height: 100%;
+    right: 0; }
+
+.brand_heading .brand_heading-content {
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.brand_heading .logo_block {
+  width: 24.5%;
+  border-right: 1px solid #e5e5e5;
+  padding: 40px 80px; }
+  .brand_heading .logo_block img {
+    width: 100%; }
+
+.brand_heading .links_section {
+  padding-top: 7px; }
+
+.brand_heading .description_block {
+  width: 75.5%;
+  padding: 25px 35px; }
+  .brand_heading .description_block p {
+    color: #1e0602;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 14px; }
+  .brand_heading .description_block a {
+    font-size: 13px;
+    color: #585858;
+    position: relative;
+    border-bottom: 1px dashed #585858; }
+
+.slick-dots {
+  padding: 0;
+  margin: 30px 0 0;
+  list-style: none;
+  font-size: 0;
+  text-align: center; }
+
+.slick-dots {
+  margin-top: 0px; }
+
+.slick-dots li {
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2px; }
+
+.slick-dots li.slick-active button {
+  background-color: #b3b3b3; }
+
+.slick-dots button {
+  border: 1px solid #b3b3b3;
+  width: 10px;
+  height: 10px;
+  vertical-align: top;
+  display: block;
+  background: none;
+  font-size: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+.brand_slider_block {
+  margin-bottom: 40px; }
+  .brand_slider_block .slick-dots {
+    position: absolute;
+    bottom: 30px;
+    width: 100%; }
+  .brand_slider_block .slick-dots button {
+    border: none;
+    background-color: #919191;
+    height: 6px;
+    width: 6px; }
+  .brand_slider_block .slick-dots li {
+    margin: 0 5px; }
+  .brand_slider_block .slick-dots li.slick-active button {
+    background-color: #fff; }
+  .brand_slider_block .slider_content {
+    position: relative; }
+  .brand_slider_block .description {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    max-width: 50%; }
+    .brand_slider_block .description .title {
+      display: block;
+      color: #fff;
+      text-align: center;
+      font-size: 96px;
+      text-transform: uppercase;
+      padding-bottom: 60px;
+      margin-bottom: 66px; }
+      .brand_slider_block .description .title:before {
+        content: '';
+        width: 100px;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%); }
+    .brand_slider_block .description .txt {
+      display: block;
+      text-align: center;
+      color: #fff;
+      line-height: 160%; }
+  .brand_slider_block .overlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .brand_slider_block .slide {
+    height: 600px;
+    position: relative; }
+    .brand_slider_block .slide img {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      display: block;
+      width: 100%;
+      z-index: 1; }
+
+@media screen and (min-width: 1025px) {
+  .brand_heading .description_block a:hover {
+    color: #197ac4; } }
+
+@media screen and (max-width: 1025px) {
+  .brand_heading .logo_block {
+    padding: 35px; } }
+
+@media screen and (max-width: 768px) {
+  .brand_heading .logo_block {
+    width: 30%; }
+  .brand_heading .description_block {
+    width: 70%; } }
+
+@media screen and (max-width: 578px) {
+  .brand_heading .description_block {
+    padding: 20px; }
+  .brand_heading .brand_heading-content {
+    display: block; }
+  .brand_heading .logo_block {
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 40px; }
+  .brand_heading .logo_block,
+  .brand_heading .description_block {
+    width: 100%; }
+  .brand_heading .logo_block img {
+    width: 100px;
+    display: block;
+    margin: 0 auto; } }
