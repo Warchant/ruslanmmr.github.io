@@ -159,6 +159,7 @@
 .brand_categories_block {
     margin-top: 50px;
     .slider-item {
+        background-color: #fff;
         &:before {
             content: "";
             display: block;
@@ -190,7 +191,6 @@
     .categories_nav {
         height: 40px;
         margin-bottom: 10px;
-        background-color: #fff;
         position: relative;
         transition: top .3s;
     }
@@ -201,7 +201,7 @@
         padding: 0 15px;
         left: 0;
         background-color: rgba(255, 255, 255, 0.9);
-        z-index: 2;
+        z-index: 101;
         box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
         .slick-prev, .slick-next {
             height: 40px !important;
@@ -276,6 +276,7 @@
             transition: .3s;
             &:before {
                 content: "";
+                transition: .3s;
                 position: absolute;
                 bottom: -5px;
                 left: 50%;
@@ -292,7 +293,7 @@
              a {
                 color: #fff;
                 span {
-                border-bottom: none;
+                border-color: transparent;
             }
              }
              &:before {
@@ -305,14 +306,135 @@
     }
     .content_categories {
     }
+    .button_more {
+        font-size: 100%;
+        margin-top: 20px;
+    }
+    .dropdown_list {
+        .slider-item-container {
+            display: none;
+        }
+    }
 }
 .brand_categories_fixed {
     margin-top: 95px;
 }
 
+.popular_brand_collections {
+    .container {
+        position: relative;
+    }
+    .arrow_left,
+    .arrow_right {
+        position: absolute;
+        top: 50%;
+        display: none;
+        width: 13px;
+        height: 22px;
+        background: url(../images/arrow_brands.png);
+    }
+    .arrow_left {
+        left: 30px;
+        z-index: 2;
+        transform: rotate(180deg);
+    }
+    .arrow_right {
+        right: 30px;
+        z-index: 2;
+    }
+    .content_title {
+        font-size: 18px;
+        color: #1e0602;
+        font-weight: bold;
+        padding-top: 45px;
+        padding-bottom: 20px;
+        display: block;
+    }
+    .brand_block_container {
+        border: 1px solid #e5e5e5;
+        padding: 20px;
+        display: block;
+        cursor: pointer;
+        background-color: #fff;
+        transition: .3s;
+        margin-bottom: 20px;
+    }
+    .brand_name {
+        display: block;
+        margin-top: 18px;
+        transition: .3s;
+    }
+}
+
+.img_block {
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+    }
+    .img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: hidden;
+        img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.all_collections, .collection_categories_list {
+    .content_title {
+        font-size: 18px;
+        color: #1e0602;
+        font-weight: bold;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        display: block;
+    }
+    .all_collections_content {
+        border: 1px solid #e5e5e5;
+        padding: 25px 40px;
+        background-color: #fff;
+        ul {
+            margin: 0;
+            padding: 0;
+            margin: 0px -40px -25px -40px;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li {
+            width: 16.66%;
+            text-align: center;
+            margin-bottom: 20px;
+            a {
+                color: #585858;
+                position: relative;
+                &:hover .droppable_preview {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translate3d(0, 0, 0) scale(1) rotateX(0);
+                }
+            }
+        }
+    }
+}
 
 
 @media screen and (min-width: 1025px) {
+    .all_collections .all_collections_content li a:hover,
+    .collection_categories_list .all_collections_content li a:hover{
+        color: #197ac4;
+    }
     .brand_heading .description_block a:hover,
     .brand_categories_block ul.categories_list a:hover {
         color: #197ac4;
@@ -324,11 +446,64 @@
     .brand_categories_block ul.categories_list .slick-next:hover {
         opacity: 1;
     }
+    .popular_brand_collections .brand_block_container:hover,
+    .popular_brand_categories .category_block_container:hover,
+        {
+        box-shadow: 8px 13px 30px rgba(0, 0, 0, 0.2);
+        .brand_name {
+            color: #3590ca;
+        }
+        a {
+            opacity: 1;
+        }
+    }
+}
+
+.category_list:after {
+    background: linear-gradient(to bottom, rgba(250, 250, 250, 0.01) 0%, rgba(250, 250, 250, 0.17) 21%, rgba(250, 250, 250, 0.83) 79%, rgba(250, 250, 250, 0.99) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ffffff', endColorstr='#fcffffff', GradientType=0);
+}
+
+.with_box {
+    margin-top: 20px;
+    .box_title {
+        margin-bottom: 5px;
+    }
+}
+
+.block_popular {
+    margin-top: 20px;
+    .title_list {
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+            margin-top: -0.2em;
+            color: #010000;
+        }
+    }
+    .item {
+        display: block;
+        width: 100%;
+        a {
+            white-space: normal;
+        }
+    }
 }
 
 @media screen and (max-width: 1025px) {
+    .all_collections .all_collections_content li,
+    .collection_categories_list .all_collections_content li{
+        width: 20%;
+    }
     .brand_heading .logo_block {
         padding: 35px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .top_cards .slider-item-container:last-child {
+         display: none;
     }
 }
 
@@ -340,11 +515,35 @@
     .brand_heading .description_block {
         width: 70%;
     }
+    .all_collections .all_collections_content li,
+    .collection_categories_list .all_collections_content li{
+        width: 25%;
+    }
 }
 
-@media screen and (max-width: 650px) {}
+@media screen and (max-width: 650px) {
+    .all_collections .all_collections_content li,
+    .collection_categories_list .all_collections_content li {
+        width: 33%;
+    }
+}
 
 @media screen and (max-width: 578px) {
+    .popular_brand_collections .arrow_left,
+    .popular_brand_collections .arrow_right,
+    .all_collections_link {
+        display: block;
+    }
+    .popular_brand_collections .popular_collections_content {
+        margin: 0;
+        border: 1px solid #e5e5e5;
+        padding: 20px 30px;
+        background-color: #fff;
+    }
+    .popular_brand_collections .brand_block_container {
+        padding: 0;
+        border: none;
+    }
     .brand_heading .description_block {
         padding: 20px;
     }
@@ -364,5 +563,9 @@
         width: 100px;
         display: block;
         margin: 0 auto;
+    }
+    .all_collections,
+    .collection_categories_list {
+        display: none;
     }
 }
