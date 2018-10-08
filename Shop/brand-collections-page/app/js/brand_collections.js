@@ -3,6 +3,7 @@ var flag = 1;
 $(document).ready(function() {
     slider();
     brandSlider();
+    brandNav();
 });
 $(window).resize(function() {
     slider();
@@ -47,4 +48,39 @@ function brandSlider() {
         slidesToShow: 1,
         slidesToScroll: 1
     });
+};
+
+
+
+function brandNav() {
+    var pane = $('.scroll-pane');
+    pane.jScrollPane(
+        {
+            showArrows: true,
+            animateScroll: true
+        }
+    );
+    var api = pane.data('jsp');
+
+    $('#but-scroll-to').bind(
+        'click',
+        function()
+        {
+            // Note, there is also scrollToX and scrollToY methods if you only
+            // want to scroll in one dimension
+            api.scrollTo(parseInt($('#toX').val()), parseInt($('#toY').val()));
+            return false;
+        }
+    );
+
+    $('#but-scroll-by').bind(
+        'click',
+        function()
+        {
+            // Note, there is also scrollByX and scrollByY methods if you only
+            // want to scroll in one dimension
+            api.scrollBy(parseInt($('#byX').val()), parseInt($('#byY').val()));
+            return false;
+        }
+    );
 };

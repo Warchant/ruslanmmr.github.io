@@ -141,6 +141,28 @@
       width: 100%;
       z-index: 1; }
 
+.brand_categories_block {
+  margin-top: 40px; }
+  .brand_categories_block .categories_nav {
+    position: relative;
+    height: 40px; }
+  .brand_categories_block ul.categories_list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: red; }
+    .brand_categories_block ul.categories_list a {
+      white-space: nowrap; }
+    .brand_categories_block ul.categories_list li {
+      padding: 0 50px;
+      background-color: white;
+      opacity: 0.7; }
+
 @media screen and (min-width: 1025px) {
   .brand_heading .description_block a:hover {
     color: #197ac4; } }
