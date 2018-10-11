@@ -1,0 +1,7 @@
+@import "_mixins/font-face";
+
+@include font-face("AssistantBold", "../fonts/Assistant/AssistantBold");
+@include font-face("SupermolotLight", "../fonts/SuperMolot/Supermolot-Light");
+@include font-face("SupermolotThin", "../fonts/SuperMolot/Supermolot-Thin");
+@include font-face("SupermolotRegular", "../fonts/SuperMolot/Supermolot-Regular");
+@include font-face("CranberryCyr", "../fonts/CranberryCyr");
