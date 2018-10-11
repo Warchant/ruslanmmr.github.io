@@ -433,18 +433,12 @@
                             height: 100%;
                             margin: 0 10px;
                             outline: none;
-                            &:before {
-                                content: '';
-                                display: block;
-                                width: 100%;
-                                height: 100%;
-                            }
                             img {
                                 position: absolute;
                                 width: 100%;
                                 top: 50%;
-                                left: 0;
-                                transform: translateY(-50%);
+                                left: 50%;
+                                transform: translate(-50%, -50%);
                             }
                         }
                     }
@@ -944,7 +938,6 @@
     }
     #last_page .container .slider2 .slide3 .tab_container .gallery .photo img {
         height: 100%;
-        width: auto;
     }
     #last_page .container .slider2 .slide3 .place_block .indicator {
         display: none;
@@ -974,6 +967,9 @@
 }
 
 @media screen and (max-width: 450px) {
+    #last_page .container .slider2 .slide3 .tab_container {
+        height: 320px;
+    }
     #last_page .container .slider2 .slide1 .slider_news .slide {
         height: 400px;
     }
