@@ -1,3 +1,5 @@
+var jqBar = $('#last_page').position().top;
+
 $(document).ready(function() {
     navigationClick();
     homepageSlider();
@@ -16,7 +18,6 @@ $(document).ready(function() {
     }
 });
 
-var jqBar = $('#last_page').position().top;
 var totalWheel = 0,
     once = 1;
 
@@ -315,6 +316,7 @@ function bgFixed() {
     $(function() {
         var bg = $('#last_page .active_bg');
         var jqBarStatus = true;
+        jqBar = $('#last_page').position().top;
         $(window).scroll(function() {
             if (($(window).scrollTop() > jqBar)) {
                 bg.addClass("active_bg_fixed");
@@ -340,6 +342,9 @@ function placeTabs() {
     $("#last_page .place_block").click(function() {
         $("#last_page .place_block").removeClass("active_place").eq($(this).index()).addClass("active_place");
         $("#last_page .slide3 .slide_content").hide().eq($(this).index()).fadeIn(1000);
+        $('.place_slider_1').slick("setPosition");
+        $('.place_slider_2').slick("setPosition");
+        $('.place_slider_3').slick("setPosition");
         $("#last_page .container .slide3 .top_title span").hide().eq($(this).index()).fadeIn(1000)
     });
 };

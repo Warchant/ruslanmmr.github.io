@@ -437,8 +437,7 @@
                                 position: absolute;
                                 width: 100%;
                                 top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
+                                transform: translateY(-50%);
                             }
                         }
                     }
@@ -938,6 +937,7 @@
     }
     #last_page .container .slider2 .slide3 .tab_container .gallery .photo img {
         height: 100%;
+        width: auto;
     }
     #last_page .container .slider2 .slide3 .place_block .indicator {
         display: none;
