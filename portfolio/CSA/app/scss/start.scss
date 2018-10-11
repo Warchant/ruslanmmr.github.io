@@ -82,8 +82,9 @@ body {
 }
 
 @media screen and (max-width: 1025px) {
-    #start_page .container {
-        min-height: 568px;
+    #start_page {
+        height: 100vh;
+        min-height: 600px;
     }
     #start_page {
         position: relative;
@@ -100,5 +101,7 @@ body {
     #start_page .block_logo {
         width: 28em;
         height: 28em;
+        margin-left: -14em;
+        margin-top: -14em;
     }
 }

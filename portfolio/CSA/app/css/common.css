@@ -81,7 +81,8 @@
 
 body {
   font-size: 10px;
-  background: #0f0f0f; }
+  background: #0f0f0f;
+  overflow-x: hidden; }
 
 .body_active {
   position: fixed;
@@ -306,6 +307,19 @@ body {
 
 .header_top_last {
   top: -100% !important; }
+
+.slider_content .title {
+  text-transform: uppercase;
+  display: none !important;
+  color: #F4EA49;
+  font: 2.3em "HelveticaNeueCyrBold";
+  text-align: center;
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  letter-spacing: 0.1em; }
 
 #footer {
   background-color: #272727;
@@ -554,6 +568,13 @@ body {
     width: 550px; } }
 
 @media screen and (max-width: 1025px) {
+  #footer {
+    position: relative;
+    bottom: auto; }
+  .slider_content .title {
+    display: block !important; }
+  #wrapper {
+    height: auto; }
   .container {
     max-width: 768px; }
   #header_top {

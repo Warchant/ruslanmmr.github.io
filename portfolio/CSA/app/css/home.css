@@ -387,6 +387,10 @@
     min-height: 500px; } }
 
 @media screen and (max-width: 1025px) {
+  #home_page .container .content {
+    min-height: 600px; }
+  #start_page::before {
+    display: none; }
   #home_page,
   #start_page {
     display: block !important; }

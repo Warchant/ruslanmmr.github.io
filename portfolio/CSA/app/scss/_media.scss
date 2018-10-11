@@ -13,6 +13,16 @@
 
 // ≥992px
 @media screen and (max-width: 1025px) {
+    #footer {
+        position: relative;
+        bottom: auto;    
+    }
+    .slider_content .title {
+        display: block !important;
+    }
+    #wrapper {
+        height: auto;
+    }
     .container {
         max-width: 768px;
     }
