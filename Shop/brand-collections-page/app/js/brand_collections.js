@@ -3,13 +3,16 @@ var init_ind = 1;
 var c_with_static = $(".brand_categories_block .categories_list").width();
 
 $(document).ready(function() {
+    if (document.documentElement.clientWidth > 578) {
+        navFixed();
+    }
     slider();
     brandSlider();
     brandSliderInit();
-    navFixed();
+    showMoreCategory();
     moreCards();
     tabs();
-    showMoreTxt()
+    showMoreTxt();
 });
 $(window).resize(function() {
     slider();
@@ -17,19 +20,60 @@ $(window).resize(function() {
     var c_with_static = $(".brand_categories_block .categories_list").width();
 });
 
+
+
+
+
 function tabs() {
-    $(".content_categories .tab_content").not(":first").hide();
+    var i = true;
     $(".categories_list li a").click(function(e) {
         e.preventDefault()
-        $(".categories_list li").removeClass("active_nav_link").eq($(this).parent().index()).addClass("active_nav_link");
-        $(".content_categories .tab_content").removeClass("active_tab").hide().eq($(this).parent().index()).fadeIn(500).addClass("active_tab");
+        if (i == true) {
+            $(".categories_list li").removeClass("active_nav_link").eq($(this).parent().index()).addClass("active_nav_link");
+            var slideno = $(this).data('slide');
+            $('.content_categories').slick('slickGoTo', slideno - 1);
+            i = false;
+            setTimeout(function() { i = true; }, 450);
+        }
     });
+
+    $('.content_categories').slick({
+        dots: false,
+        infinite: false,
+        speed: 450,
+        arrows: false,
+        draggable: false,
+        swipe: false,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
     $(".categories_list li a").click(function() {
         var scroll = $('.content_categories').offset().top;
-        $('html,body').animate({ scrollTop: scroll - 40 }, 500);
+        if ($(window).scrollTop() > scroll) {
+            $("html, body").animate({ scrollTop: scroll + 17 }, 500);
+        }
     });
 }
 
+function showMoreCategory() {
+    var nav = $('.block_popular .category_list'),
+        animateTime = 500,
+        navLink = $('.block_popular .button_more');
+
+    navLink.on('click', function() {
+        if (nav.height() > 71 && nav.height() < 73) {
+            autoHeightAnimate(nav, animateTime);
+            navLink.find("span").text('Свернуть');
+            nav.addClass("open");
+        } else {
+            nav.stop().animate({ height: '72' }, animateTime);
+            navLink.find("span").text('Развернуть');
+            nav.removeClass("open");
+        }
+    });
+}
 
 function moreCards() {
     var i = 0;
@@ -39,16 +83,17 @@ function moreCards() {
         var length = $(this).siblings(".dropdown_list").find('.slider-item-container').length;
         console.log(length);
         if (i < length) {
-            $(this).siblings(".dropdown_list").find(".slider-item-container").slice(start, end).slideDown(300);
+            $(this).siblings(".dropdown_list").find(".slider-item-container").slice(start, end).slideDown(0);
             i = i + 6;
             if (i > length) {
                 $(this).text("Свернуть");
             }
         } else if (i > length) {
-            $(this).siblings(".dropdown_list").find(".slider-item-container").slideUp(300);
+            $(this).siblings(".dropdown_list").find(".slider-item-container").slideUp(0);
             $(this).text("Показать еще");
             i = 0;
         }
+        setTimeout(function() { $('.content_categories').slick("setPosition"); });
     });
 };
 
@@ -56,7 +101,7 @@ function moreCards() {
 function sliderInit() {
     $('.popular_collections_content').slick({
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 300,
         arrows: true,
         slidesToShow: 1,
@@ -66,15 +111,28 @@ function sliderInit() {
     });
 };
 
+function brandsInit() {
+    $('.brand_categories_block .additional_cards').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+};
+
 function slider() {
     if (document.documentElement.clientWidth < 578) {
         if (flag == 1) {
             sliderInit();
+            brandsInit();
             flag = 2;
         }
     } else {
         if (flag == 2) {
             $(".popular_collections_content").slick('unslick');
+            $(".brand_categories_block .additional_cards").slick('unslick');
             flag = 1;
         }
     }
@@ -121,7 +179,26 @@ function brandNavSlider() {
         slidesToShow: 1,
         centerMode: false,
         variableWidth: true,
-        slidesToScroll: 5
+        slidesToScroll: 5,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToScroll: 2
+                }
+            }
+        ]
     });
 }
 
@@ -136,15 +213,15 @@ function navFixed() {
         $(window).scroll(function() {
             var jqBarHeight = $('.content_categories').height();
             if (($(window).scrollTop() > jqBar + 60) && ($(window).scrollTop() < (jqBar + jqBarHeight)) && jqBarStatus) {
+                jqBarStatus = false;
                 brand.addClass("brand_categories_fixed");
                 nav.addClass("fixed");
                 nav.removeClass("hidden");
-                jqBarStatus = false;
             } else if (($(window).scrollTop() < jqBar + 60) && jqBarStatus == false) {
+                jqBarStatus = true;
                 brand.removeClass("brand_categories_fixed");
                 nav.removeClass("hidden");
                 nav.removeClass("fixed");
-                jqBarStatus = true;
             } else if (($(window).scrollTop() > (jqBar + jqBarHeight)) && jqBarStatus == false) {
                 nav.addClass("hidden");
                 jqBarStatus = true;

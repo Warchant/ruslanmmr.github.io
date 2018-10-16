@@ -2191,8 +2191,10 @@ i {
 
 @media screen and (min-width: 1025px) {
   .slider-item:hover {
-    -webkit-box-shadow: 8px 13px 30px rgba(0, 0, 0, 0.2);
-            box-shadow: 8px 13px 30px rgba(0, 0, 0, 0.2); }
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-box-shadow: 7px 12px 17px -8px rgba(0, 0, 0, 0.2);
+            box-shadow: 7px 12px 17px -8px rgba(0, 0, 0, 0.2); }
   .slider-item:hover .item-price {
     background: #1e0602;
     color: #fff; }
