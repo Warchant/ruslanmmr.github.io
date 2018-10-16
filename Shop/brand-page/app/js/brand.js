@@ -28,7 +28,7 @@ function itemPrev() {
 function sliderInit() {
     $('.popular_collections_content').slick({
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 300,
         arrows: true,
         slidesToShow: 1,
