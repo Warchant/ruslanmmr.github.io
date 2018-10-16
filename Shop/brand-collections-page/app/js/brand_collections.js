@@ -8,7 +8,8 @@ $(document).ready(function() {
     brandSliderInit();
     navFixed();
     moreCards();
-    tabs()
+    tabs();
+    showMoreTxt()
 });
 $(window).resize(function() {
     slider();
@@ -16,16 +17,17 @@ $(window).resize(function() {
     var c_with_static = $(".brand_categories_block .categories_list").width();
 });
 
-
 function tabs() {
     $(".content_categories .tab_content").not(":first").hide();
     $(".categories_list li a").click(function(e) {
-        var scrollTop = $('.content_categories').offset().top;
         e.preventDefault()
         $(".categories_list li").removeClass("active_nav_link").eq($(this).parent().index()).addClass("active_nav_link");
         $(".content_categories .tab_content").removeClass("active_tab").hide().eq($(this).parent().index()).fadeIn(500).addClass("active_tab");
-            $("html, body").animate({scrollTop: scrollTop - 40}, 300);
-    })
+    });
+    $(".categories_list li a").click(function() {
+        var scroll = $('.content_categories').offset().top;
+        $('html,body').animate({ scrollTop: scroll - 40 }, 500);
+    });
 }
 
 
@@ -133,19 +135,57 @@ function navFixed() {
         var jqBarStatus = true;
         $(window).scroll(function() {
             var jqBarHeight = $('.content_categories').height();
-            if (($(window).scrollTop() > jqBar) && ($(window).scrollTop() < (jqBar + jqBarHeight)) && jqBarStatus) {
+            if (($(window).scrollTop() > jqBar + 60) && ($(window).scrollTop() < (jqBar + jqBarHeight)) && jqBarStatus) {
                 brand.addClass("brand_categories_fixed");
                 nav.addClass("fixed");
+                nav.removeClass("hidden");
                 jqBarStatus = false;
-            } else if (($(window).scrollTop() < jqBar) && jqBarStatus == false) {
-                nav.removeClass("fixed");
+            } else if (($(window).scrollTop() < jqBar + 60) && jqBarStatus == false) {
                 brand.removeClass("brand_categories_fixed");
+                nav.removeClass("hidden");
+                nav.removeClass("fixed");
                 jqBarStatus = true;
             } else if (($(window).scrollTop() > (jqBar + jqBarHeight)) && jqBarStatus == false) {
-                nav.removeClass("fixed");
-                brand.removeClass("brand_categories_fixed");
+                nav.addClass("hidden");
                 jqBarStatus = true;
             }
         });
     });
 }
+
+function showMoreTxt() {
+    var nav = $('.description_block .text_content'),
+        animateTime = 500,
+        navLink = $('.brand_heading .more'),
+        lngs = 0;
+    $(".description_block .text_content p").each(function(i) {
+        lngs += $(this).text().length;
+        if (lngs > 700) {
+            $('.brand_heading').addClass("somuch_text");
+        }
+    });
+    navLink.on('click', function(e) {
+        e.preventDefault();
+        if (nav.height() === 140 && lngs > 28) {
+            autoHeightAnimate(nav, animateTime);
+            navLink.find("span").text('Свернуть');
+            nav.addClass("open");
+        } else {
+            nav.stop().animate({ height: '140' }, animateTime);
+            navLink.find("span").text('Подробнее');
+            nav.removeClass("open");
+        }
+    });
+
+    $(".show_info").on('click', function() {
+        $(".brand_heading .container").slideToggle(300);
+        $(this).toggleClass("more_active");
+        if ($(this).hasClass("more_active")) {
+            $(".show_info span").text("Свернуть");
+            $(".show_info").addClass("open");
+        } else {
+            $(".show_info span").text("Подробнее о бренде");
+            $(".show_info").removeClass("open");
+        }
+    });
+};

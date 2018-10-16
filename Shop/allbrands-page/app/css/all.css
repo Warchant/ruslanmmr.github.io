@@ -2506,6 +2506,86 @@ i {
   line-height: 1.2;
   width: 11.111%; }
 
+.description_modal .modal_heading {
+  background-color: #fafafa; }
+
+.description_modal .nano-content p {
+  line-height: 180%;
+  margin: 0;
+  padding: 20px; }
+
+.category-name .title {
+  color: #1e0602;
+  font-size: 30px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.category-name .title .button_back {
+  -ms-flex-positive: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  text-align: center;
+  line-height: 28px;
+  display: none;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin-right: 18px; }
+
+@media screen and (max-width: 567px) {
+  .category-name .title .button_back {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex; } }
+
+.category-name .title .button_back i {
+  color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px; }
+
+.category-name .title_general {
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+  color: #1e0602;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0; }
+
+@media screen and (max-width: 567px) {
+  .category-name .title_general {
+    font-size: 14px;
+    line-height: 1.4; } }
+
 .main_categories .item.category_brand img {
   opacity: 0.3;
   -webkit-filter: grayscale(100%);
@@ -6132,14 +6212,14 @@ i {
 
 .thumb_item .btn,
 .thumb_item .read_more,
-.paginator_link_page a,
+.catalog .catalog-page .paginator .paginator_link_page a,
 .catalog .catalog-page .catalog-cards .card_content .description_section .links_block a,
 .popular_categories_block .section .tab_content .param_more,
 .button_more,
 .thumb_item .read_more,
-.filter .section .tab_content .param_more,
-.filter .section_buttons .all_filters,
-.filter .section_buttons .reset,
+.section .tab_content .param_more,
+.section_buttons .all_filters,
+.section_buttons .reset,
 .fixed_item .button,
 .static_item .button,
 .item_set .button,
@@ -6165,14 +6245,14 @@ i {
   transition: .3s; }
   .thumb_item .btn i,
   .thumb_item .read_more i,
-  .paginator_link_page a i,
+  .catalog .catalog-page .paginator .paginator_link_page a i,
   .catalog .catalog-page .catalog-cards .card_content .description_section .links_block a i,
   .popular_categories_block .section .tab_content .param_more i,
   .button_more i,
   .thumb_item .read_more i,
-  .filter .section .tab_content .param_more i,
-  .filter .section_buttons .all_filters i,
-  .filter .section_buttons .reset i,
+  .section .tab_content .param_more i,
+  .section_buttons .all_filters i,
+  .section_buttons .reset i,
   .fixed_item .button i,
   .static_item .button i,
   .item_set .button i,
@@ -6192,16 +6272,17 @@ i {
     color: #ccc; }
 
 @media screen and (min-width: 1025px) {
+  .main_btn:hover,
   .thumb_item .btn:hover,
   .thumb_item .read_more:hover,
-  .paginator_link_page a:hover,
+  .catalog .catalog-page .paginator .paginator_link_page a:hover,
   .catalog .catalog-page .catalog-cards .card_content .description_section .links_block a:hover,
   .popular_categories_block .section .tab_content .param_more:hover,
   .button_more:hover,
   .thumb_item .read_more:hover,
-  .filter .section .tab_content .param_more:hover,
-  .filter .section_buttons .all_filters:hover,
-  .filter .section_buttons .reset:hover,
+  .section .tab_content .param_more:hover,
+  .section_buttons .all_filters:hover,
+  .section_buttons .reset:hover,
   .fixed_item .button:hover,
   .static_item .button:hover,
   .item_set .button:hover,
@@ -6220,16 +6301,17 @@ i {
   .box_title .btn:hover {
     color: #1d1d1d;
     border-color: #999999; }
+    .main_btn:hover i,
     .thumb_item .btn:hover i,
     .thumb_item .read_more:hover i,
-    .paginator_link_page a:hover i,
+    .catalog .catalog-page .paginator .paginator_link_page a:hover i,
     .catalog .catalog-page .catalog-cards .card_content .description_section .links_block a:hover i,
     .popular_categories_block .section .tab_content .param_more:hover i,
     .button_more:hover i,
     .thumb_item .read_more:hover i,
-    .filter .section .tab_content .param_more:hover i,
-    .filter .section_buttons .all_filters:hover i,
-    .filter .section_buttons .reset:hover i,
+    .section .tab_content .param_more:hover i,
+    .section_buttons .all_filters:hover i,
+    .section_buttons .reset:hover i,
     .fixed_item .button:hover i,
     .static_item .button:hover i,
     .item_set .button:hover i,

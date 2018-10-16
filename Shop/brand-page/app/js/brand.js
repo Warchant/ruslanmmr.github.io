@@ -1,8 +1,11 @@
 var flag = 1;
 
+
+
 $(document).ready(function() {
     itemPrev();
     slider();
+    showMoreTxt();
 });
 $(window).resize(function() {
     slider();
@@ -47,4 +50,29 @@ function slider() {
             flag = 1;
         }
     }
+};
+
+function showMoreTxt() {
+    var nav = $('.description_block .text_content'),
+        animateTime = 500,
+        navLink = $('.brand_heading .more'),
+        lngs = 0;
+    $(".description_block .text_content p").each(function(i) {
+        lngs += $(this).text().length;
+         if (lngs > 700) {
+            $('.brand_heading').addClass("somuch_text");
+        }
+    });
+    navLink.on('click', function(e) {
+        e.preventDefault();
+        if (nav.height() === 140 && lngs > 28) {
+            autoHeightAnimate(nav, animateTime);
+            navLink.find("span").text('Свернуть');
+            nav.addClass("open");
+        } else {
+            nav.stop().animate({ height: '140' }, animateTime);
+            navLink.find("span").text('Подробнее');
+            nav.removeClass("open");
+        }
+    });
 };
