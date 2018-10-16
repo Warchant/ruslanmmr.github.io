@@ -1,7 +1,11 @@
 .nano-content {
+    padding: 20px;
     ul {
         margin: 0;
+        list-style: none;
         padding: 0;
+        border: 1px solid #e5e5e5;
+        border-bottom: none;
     }
     li {
         border-bottom: 1px solid #e5e5e5;

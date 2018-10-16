@@ -479,7 +479,8 @@ ul {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    background-color: #fff; }
   .brand_list_container li {
     margin-bottom: 5px; }
     .brand_list_container li:last-child {
