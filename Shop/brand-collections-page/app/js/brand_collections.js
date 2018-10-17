@@ -6,6 +6,9 @@ $(document).ready(function() {
     if (document.documentElement.clientWidth > 578) {
         navFixed();
     }
+    if (document.documentElement.clientWidth < 578) {
+        mobileTabs();
+    }
     slider();
     brandSlider();
     brandSliderInit();
@@ -22,14 +25,28 @@ $(window).resize(function() {
 
 
 
-
+function mobileTabs() {
+    $(".mobile_current_slide").click(function() {
+           $(".brand_categories_block ul.categories_list").fadeToggle(300);
+    });
+    $(".brand_categories_block ul.categories_list a").click(function() {
+           var txt = $(this).find("span").text();
+           $(".brand_categories_block ul.categories_list").fadeOut(300);
+           $(".mobile_current_slide").text(txt);
+    });
+}
 
 function tabs() {
     var i = true;
+    if (document.documentElement.clientWidth > 578) {
+        $(".categories_list li:first-child").addClass("active_nav_link");
+    }
     $(".categories_list li a").click(function(e) {
         e.preventDefault()
         if (i == true) {
-            $(".categories_list li").removeClass("active_nav_link").eq($(this).parent().index()).addClass("active_nav_link");
+            if (document.documentElement.clientWidth > 578) {
+                $(".categories_list li").removeClass("active_nav_link").eq($(this).parent().index()).addClass("active_nav_link");
+            }
             var slideno = $(this).data('slide');
             $('.content_categories').slick('slickGoTo', slideno - 1);
             i = false;
@@ -156,13 +173,13 @@ function brandSliderInit() {
     var p_with = $(".brand_categories_block .categories_nav").width();
     var c_with = $(".brand_categories_block .categories_list").width();
     var list = $(".brand_categories_block .categories_list");
-    if (c_with > p_with) {
+    if (c_with > p_with && document.documentElement.clientWidth > 578) {
         if (init_ind == 1) {
             brandNavSlider();
             list.addClass("init");
             init_ind = 2;
         }
-    } else if (c_with_static < p_with) {
+    } else if (c_with_static < p_with && document.documentElement.clientWidth > 578) {
         if (init_ind == 2) {
             $(".categories_list").slick('unslick');
             list.removeClass("init");
@@ -249,7 +266,7 @@ function showMoreTxt() {
             nav.addClass("open");
         } else {
             nav.stop().animate({ height: '140' }, animateTime);
-            navLink.find("span").text('Подробнее');
+            navLink.find("span").text('Развернуть');
             nav.removeClass("open");
         }
     });
