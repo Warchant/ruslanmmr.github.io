@@ -71,7 +71,7 @@ function showMoreTxt() {
             nav.addClass("open");
         } else {
             nav.stop().animate({ height: '140' }, animateTime);
-            navLink.find("span").text('Подробнее');
+            navLink.find("span").text('Развернуть');
             nav.removeClass("open");
         }
     });

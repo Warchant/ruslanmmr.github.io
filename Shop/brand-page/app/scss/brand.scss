@@ -46,7 +46,9 @@
         }
     }
 }
-
+.brand_page {
+    padding-bottom: 20px;
+}
 .brand_heading {
     .brand_heading-content {
         border: 1px solid #e5e5e5;
@@ -66,19 +68,13 @@
         padding: 25px 35px;
         position: relative;
         .more {
-            border: 1px solid #e5e5e5;
             color: #818181;
-            border-radius: 4px;
-            transition: .3s;
-            width: 100px;
             display: none;
+            max-width: 100px;
+            transition: .3s;
             margin-top: 0;
             text-align: center;
-            padding: 6px 0;
-            position: absolute;
-            z-index: 2;
-            right: 0;
-            top: 0;
+            border-bottom: 1px dashed #585858;
             span {
                 transition: .3s;
                 color: #818181;
@@ -87,6 +83,11 @@
         .links_section {
             position: relative;
             padding: 7px 0;
+        }
+        .links {
+            position: absolute;
+            right: 0;
+            top: 0;
         }
         a {
             display: inline-block;
@@ -101,20 +102,23 @@
         .rev {
             font-size: 13px;
             color: #bfbfbf;
-            padding-left: 25px;
             position: relative;
             margin-right: 15px;
+            border: 1px solid #e5e5e5;
+            padding: 7px 12px;
+            padding-left: 35px;
+            border-radius: 4px;
+            transition: .3s;
             .video_ico,
             .rev_ico {
-                border-bottom: 1px dashed #585858;
                 margin-right: 0.2em;
                 color: #585858;
             }
             &:before {
                 content: "";
                 position: absolute;
-                left: 0;
-                bottom: 0;
+                left: 12px;
+                bottom: 6px;
                 display: inline-block;
                 width: 20px;
                 height: 19px;
@@ -122,11 +126,12 @@
             }
         }
         .rev {
-            padding-left: 19px;
             margin-right: 0;
+            padding-left: 30px;
             &:before {
                 width: 14px;
-                top: 1px;
+                left: 12px;
+                bottom: 6px;
                 height: 16px;
                 background: url(../images/re.png);
             }
@@ -478,7 +483,7 @@
         }
     }
     .more {
-        display: block !important;
+        display: inline-block !important;
     }
 }
 .open {
@@ -488,18 +493,18 @@
 }
 
 @media screen and (min-width: 1025px) {
+
     .brand_heading .description_block .video:hover,
     .brand_heading .description_block .rev:hover {
-        span {
-            color: #197ac4;
-        }
-    }
-
-    .brand_heading .description_block .more:hover {
         span {
             color: #1d1d1d;
         }
         border-color: #999999;
+    }
+    .brand_heading .description_block .more:hover {
+        span {
+            color: #1d1d1d;
+        }
     }
     .brand_categories .brand_categories_content li a:hover,
     .all_collections .all_collections_content li a:hover {
@@ -537,15 +542,21 @@
         display: none;
     }
 }
-
-@media screen and (max-width: 640px) {
-    .brand_heading .description_block .more {
+@media screen and (max-width: 675px) {
+     .brand_heading .description_block .links {
+        position: relative;
+        margin-bottom: 10px;
+     }
+     .brand_heading .description_block .more {
         position: relative;
         display: block;
         margin-bottom: 15px;
     }
     .brand_heading .description_block .links_section {
         padding: 0;
+    }
+    .brand_heading .description_block a {
+        margin-bottom: 10px;
     }
 }
 @media screen and (max-width: 768px) {
