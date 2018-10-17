@@ -216,6 +216,9 @@
 }
 
 .brand_categories_block {
+    .slick-dots li {
+        margin-bottom: 4px;
+    }
     margin-top: 50px;
     .slider-item {
         background-color: #fff;

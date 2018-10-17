@@ -210,6 +210,8 @@
 
 .brand_categories_block {
   margin-top: 50px; }
+  .brand_categories_block .slick-dots li {
+    margin-bottom: 4px; }
   .brand_categories_block .slider-item {
     background-color: #fff; }
   .brand_categories_block .slider-item a.img {
