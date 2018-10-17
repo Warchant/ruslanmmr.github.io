@@ -517,7 +517,7 @@
 @media screen and (max-width: 675px) {
   .brand_heading .description_block .links {
     position: relative;
-    margin-bottom: 10px; }
+    margin-bottom: -10px; }
   .brand_heading .description_block .more {
     position: relative;
     display: block;
@@ -610,7 +610,8 @@
   .popular_brand_categories {
     display: none; }
   .brand_page {
-    padding-top: 20px; }
+    padding-top: 20px;
+    padding-bottom: 0; }
   .brand_heading .brand_heading-content {
     display: block; }
   .brand_heading .logo_block {
