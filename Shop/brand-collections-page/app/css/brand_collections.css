@@ -667,10 +667,12 @@
   height: 0px !important; }
 
 @media screen and (min-width: 1025px) {
-  .brand_heading .description_block .more:hover {
+  .brand_heading .description_block .link_outer:hover {
     border-color: #999999; }
-    .brand_heading .description_block .more:hover span {
-      color: #1d1d1d; } }
+    .brand_heading .description_block .link_outer:hover span {
+      color: #1d1d1d; }
+  .brand_heading .description_block .more:hover span {
+    color: #1d1d1d; } }
 
 @media screen and (max-width: 1025px) {
   .all_collections .all_collections_content li,
