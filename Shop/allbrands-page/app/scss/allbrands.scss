@@ -6,17 +6,35 @@ ul {
 
 .mobile_sort {
     display: none;
+    position: relative;
+    &:before {
+            content: "";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            margin-top: -4px;
+            transform: rotate(180deg);
+            z-index: 2;
+            display: block;
+            width: 10px;
+            height: 8px;
+            opacity: 0.9;
+            background: url(../images/filter_arr.png);
+            background-size: contain;
+        }
     .mobile_list {
+        position: relative;
         display: block;
-        box-shadow: inset 0px 1px 1px -1px rgba(213,213,213,1);
+        box-shadow: inset 0px 1px 1px -1px rgba(213, 213, 213, 1);
         width: 100%;
         border: 1px solid #d5d5d5;
         padding: 10px 7px;
         border-radius: 4px;
+        appearance: none !important;
         span {
             display: block;
 
-            }
+        }
         option {
             display: block !important;
             background-color: #fff;
