@@ -6,7 +6,10 @@ ul {
 
 .mobile_sort {
   display: none;
-  position: relative; }
+  position: relative;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+          border-radius: 4px; }
   .mobile_sort:before {
     content: "";
     position: absolute;
