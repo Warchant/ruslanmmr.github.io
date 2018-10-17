@@ -3,6 +3,8 @@ $(document).ready(function() {
     moreSidebar();
     showMoreCategory();
     accordeon();
+    preview();
+    showFilter();
 });
 $(window).resize(function() {});
 
@@ -74,3 +76,48 @@ function containerListHeight() {
      $(".brand_list_container").height(height / 3)
     console.log(height);
 };
+
+//временно
+function preview() {
+    $(".linage a").on('click', function(e) {
+        e.preventDefault();
+        $(".linage a").removeClass("active_sort");
+        $(this).addClass("active_sort");
+    });
+    $(".sort-line a.static, .list, .block ").on('click', function(e) {
+        e.preventDefault();
+        $(".sort-line a.static").removeClass("active_sort");
+        $(this).addClass("active_sort");
+    });
+    $(".sort-line .link2, .sort-line .link3").on('click', function() { 
+        $(".brand_list_container").hide();
+        $(".single_v").show();
+    });
+    $(".sort-line .link1").on('click', function() { 
+        $(".brand_list_container").hide();
+        $(".main_list").show();
+    });
+    $(".sort-line .link1, .sort-line .link4").on('click', function() { 
+        $(".brand_list_container").hide();
+        $(".main_list").show();
+    });
+    $(".sort-line .link6").on('click', function() { 
+        $(".brand_list_container").hide();
+        $(".cards_v").show();
+    });
+    $(".sort-line .link5").on('click', function() { 
+        $(".brand_list_container").hide();
+        $(".main_list").show();
+    });
+};
+
+function showFilter() {
+    $(".filter_show_btn").on('click', function() {
+        $(".left-sidebar").slideToggle(300).toggleClass("f_active");
+        if ($(".left-sidebar").hasClass("f_active")) {
+            $(this).text("Скрыть фильтр");
+        } else {
+            $(this).text("Фильтр");
+        }
+    });
+}

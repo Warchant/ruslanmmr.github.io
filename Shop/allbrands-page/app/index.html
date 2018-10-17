@@ -1294,13 +1294,14 @@
                             </div>
                         </div>
                         <div class="catalog-cards col-lg-9 col-md-12">
+                            <!--формы-->
                             <div class="sort-line">
                                 <div class="sort-line-content">
                                 	   <div class="section">
-                                	   	   <a class="static" href="#">Все</a>
+                                	   	   <a class="static link1 active_sort" href="#">Все</a>
                                 	   </div>
                                 	   <div class="section alphabet active_section">
-                                	   	  <a class="static" href="#"></a>
+                                	   	  <a class="static link2" href="#"></a>
                                 	   	  <ul class="link_list">
                                 	   	       <li><a href="#">A</a></li>
                                 	   	   	   <li><a href="#">B</a></li>
@@ -1331,7 +1332,7 @@
                                 	   	  </ul>
                                 	   </div>
                                 	   <div class="section alphabet">
-                                	   	<a class="static" href="#"></a>
+                                	   	<a class="static link3" href="#"></a>
                                 	   	  <ul class="link_list">
                                 	   	       <li><a href="#">А</a></li>
                                 	   	   	   <li><a href="#">Б</a></li>
@@ -1363,25 +1364,66 @@
                                 	   	  </ul>
                                 	   </div>
                                 	   <div class="section">
-                                	   	   <a class="static" href="#">0−9</a>
+                                	   	   <a class="static link4" href="#">0−9</a>
                                 	   </div>
                                 	   <div class="section linage">
-                                	   	   <a class="list" href="#">
+                                	   	   <a class="list link5" href="#">
                                 	   	   	  <span></span>
                                 	   	   	  <span></span>
                                 	   	   	  <span></span>
                                 	   	   	  <span></span>
                                 	   	   	  <span></span>
                                 	   	   </a>
-                                	   	   <a class="block" href="#">
+                                	   	   <a class="block link6" href="#">
                                 	   	   	  <span></span>
                                 	   	   	  <span></span>
                                 	   	   </a>
                                 	   </div>
                                 </div>
+                                <div class="mobile_sort">
+                                    <select class="mobile_list" ">
+                                    <option><span>Вce</span></option>
+                                    <option><span>A-Z</span></option>
+                                    <option><span>А-Я</span></option>
+                                    <option><span>0-9</span></option>
+                                    </select>
+                                </div>
                             </div>
                             <span class="current_category">Все</span>
-                            <div class="brand_list_container">
+                            <!--вариант Вывода ВСЕ-СПИСОК-->
+                            <div class="brand_list_container main_list">
+                                <div class="list_block_content">
+                                      <div class="list_block">
+                                          <span class="item_sign">1</span>
+                                          <ul>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                          </ul>
+                                    </div>
+                                 </div>
+                                 <div class="list_block_content">
+                                      <div class="list_block">
+                                          <span class="item_sign">B</span>
+                                          <ul>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                          </ul>
+                                    </div>
+                                 </div>
                             	 <div class="list_block_content">
                             	 	  <div class="list_block">
                             	 	      <span class="item_sign">1</span>
@@ -1429,16 +1471,6 @@
                             	 <div class="list_block_content">
                             	 	  <div class="list_block">
                             	 	      <span class="item_sign">4</span>
-                            	 	      <ul>
-                            	 	      	  <li><a href="#">Abion</a></li>
-                            	 	      	  <li><a href="#">ACV</a></li>
-                            	 	      	  <li><a href="#">Almera Ceramica</a></li>
-                            	 	      </ul>
-                            	    </div>
-                            	 </div>
-                            	 <div class="list_block_content">
-                            	 	  <div class="list_block">
-                            	 	      <span class="item_sign">5</span>
                             	 	      <ul>
                             	 	      	  <li><a href="#">Abion</a></li>
                             	 	      	  <li><a href="#">ACV</a></li>
@@ -1548,6 +1580,143 @@
                             	 	      </ul>
                             	    </div>
                             	 </div>
+                            </div>
+                            <!--вариант Вывода ОГРАНИЧЕНО-СПИСОК-->
+                            <div class="brand_list_container single_v">
+                                 <div class="list_block_content">
+                                      <div class="list_block">
+                                          <span class="item_sign">B</span>
+                                          <ul>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                              <li><a href="#">Almera Ceramica</a></li>
+                                              <li><a href="#">Abion</a></li>
+                                              <li><a href="#">ACV</a></li>
+                                          </ul>
+                                    </div>
+                                 </div>
+                            </div>
+                            <!--вариант Вывода ВСЕ-КАРТОЧКИ-->
+                            <div class="brand_list_container cards_v">
+                                 <div class="list_block_content">
+                                      <div class="list_block">
+                                          <ul class="row">
+                                              <li class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                                  <span class="link_container">
+                                                      <a href="#">
+                                                      <span class="img_block"><img src="images/content/brands/grohe.svg" alt=""></span>
+                                                      <span class="bottom">
+                                                          <span class="title">Almera Ceramica</span>
+                                                          <ul class="country_list">
+                                                              <li><span class="flag"><img src="images/flag1.png" alt=""></span> Германия</li> 
+                                                              <li><span class="flag"><img src="images/flag2.png" alt=""></span> Франция</li>                                                         </ul>
+                                                      </span>
+                                                  </a>
+                                                  </span>
+                                              </li>
+                                              <li class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                                  <span class="link_container">
+                                                      <a href="#">
+                                                      <span class="img_block"><img src="images/content/brands/jacob_delafon.svg" alt=""></span>
+                                                      <span class="bottom">
+                                                          <span class="title">Almera Ceramica</span>
+                                                          <ul class="country_list">
+                                                              <li><span class="flag"><img src="images/flag1.png" alt=""></span> Германия</li> 
+                                                              <li><span class="flag"><img src="images/flag2.png" alt=""></span> Франция</li>                                                         </ul>
+                                                      </span>
+                                                  </a>
+                                                  </span>
+                                              </li>
+                                              <li class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                                  <span class="link_container">
+                                                      <a href="#">
+                                                      <span class="img_block"><img src="images/content/brands/grohe.svg" alt=""></span>
+                                                      <span class="bottom">
+                                                          <span class="title">Almera Ceramica</span>
+                                                          <ul class="country_list">
+                                                              <li><span class="flag"><img src="images/flag1.png" alt=""></span> Германия</li> 
+                                                              <li><span class="flag"><img src="images/flag2.png" alt=""></span> Франция</li>                                                         </ul>
+                                                      </span>
+                                                  </a>
+                                                  </span>
+                                              </li>
+                                              <li class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                                  <span class="link_container">
+                                                      <a href="#">
+                                                      <span class="img_block"><img src="images/content/brands/villeroy.svg" alt=""></span>
+                                                      <span class="bottom">
+                                                          <span class="title">Almera Ceramica</span>
+                                                          <ul class="country_list">
+                                                              <li><span class="flag"><img src="images/flag1.png" alt=""></span> Германия</li> 
+                                                              <li><span class="flag"><img src="images/flag2.png" alt=""></span> Франция</li>                                                         </ul>
+                                                      </span>
+                                                  </a>
+                                                  </span>
+                                              </li>
+                                              <li class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                                  <span class="link_container">
+                                                      <a href="#">
+                                                      <span class="img_block"><img src="images/content/brands/hansgrohe.svg" alt=""></span>
+                                                      <span class="bottom">
+                                                          <span class="title">Almera Ceramica</span>
+                                                          <ul class="country_list">
+                                                              <li><span class="flag"><img src="images/flag1.png" alt=""></span> Германия</li> 
+                                                              <li><span class="flag"><img src="images/flag2.png" alt=""></span> Франция</li>                                                         </ul>
+                                                      </span>
+                                                  </a>
+                                                  </span>
+                                              </li>
+                                              <li class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                                  <span class="link_container">
+                                                      <a href="#">
+                                                      <span class="img_block"><img src="images/content/brands/grohe.svg" alt=""></span>
+                                                      <span class="bottom">
+                                                          <span class="title">Almera Ceramica</span>
+                                                          <ul class="country_list">
+                                                              <li><span class="flag"><img src="images/flag1.png" alt=""></span> Германия</li> 
+                                                              <li><span class="flag"><img src="images/flag2.png" alt=""></span> Франция</li>                                                         </ul>
+                                                      </span>
+                                                  </a>
+                                                  </span>
+                                              </li>
+                                          </ul>
+                                    </div>
+                                 </div>
                             </div>
                             <button type="submit" class="more_cards_btn">Еще бренды</button>
                             <ul class="paginator">

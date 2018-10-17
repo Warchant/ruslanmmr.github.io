@@ -388,39 +388,6 @@ ul {
       width: 43%;
       padding-left: 8px; }
 
-.all-brand-page .filter {
-  border-bottom: none; }
-  .all-brand-page .filter .brand_section {
-    padding: 0 20px;
-    border-bottom: 1px solid #e6e6e6; }
-    .all-brand-page .filter .brand_section .tab_title {
-      padding: 20px 0; }
-      .all-brand-page .filter .brand_section .tab_title span {
-        font-weight: bold;
-        color: #000;
-        font-size: 1.1em; }
-    .all-brand-page .filter .brand_section .tab_content .list {
-      margin-bottom: 18px; }
-    .all-brand-page .filter .brand_section .tab_content .dropdown {
-      margin-bottom: 0; }
-    .all-brand-page .filter .brand_section .tab_content .dropdown_list {
-      display: none; }
-    .all-brand-page .filter .brand_section .tab_content .param_more {
-      padding: 5px 0px;
-      cursor: pointer;
-      width: 110px;
-      text-align: center;
-      white-space: nowrap;
-      margin-bottom: 20px;
-      margin-top: 15px; }
-    .all-brand-page .filter .brand_section .tab_content li {
-      margin-bottom: 4px; }
-    .all-brand-page .filter .brand_section .tab_content span {
-      text-decoration: none !important;
-      margin-right: 0.2em; }
-    .all-brand-page .filter .brand_section .tab_content a {
-      color: #838383; }
-
 .section_buttons {
   padding: 20px; }
   .section_buttons .show_results,
