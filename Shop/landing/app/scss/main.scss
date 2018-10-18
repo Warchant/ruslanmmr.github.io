@@ -63,19 +63,42 @@ table {
 
 #land_wrapper {
 	 width: 100%;
-	 max-width: 1400px;
 	 margin: 0 auto;
+	 overflow: hidden;
 }
 .land_container {
 	 width: 1022px;
 	 margin: 0 auto;
 }
 .top_section_heading {
-	background: #ddebf9 url(../img_compressed/top_section_heading.jpg) no-repeat bottom center;
 	background-size: cover;
 	position: relative;
+	background: #ddebf9;
+	&:before {
+		 content: '';
+	 	 display: block;
+	 	 position: absolute;
+	 	 height: 100px;
+	 	 width: 100%;
+	 	 bottom: 0;
+	 	 transform: rotate(180deg);
+	 	 background: url(../img_compressed/layer.png) no-repeat;
+	 	 z-index: 2;
+	 	 background-size: 100% 100%;
+	}
 	 .land_container {
 	 	   height: 690px;
+	 	   position: relative;
+	 	   &:before {
+	 	   	content: '';
+	 	   	display: block;
+	 	   	position: absolute;
+	 	   	height: 100%;
+	 	   	width: 620px;
+	 	   	right: -150px;
+	 	   	background: url(../img_compressed/img-top.jpg) no-repeat;
+	 	    background-position: 150% 0;
+	 	   }
 	 }
 }
 .discount_label {
@@ -83,12 +106,15 @@ table {
 	 position: absolute;
 	 width: 234px;
 	 height: 99px;
-	 right: 245px;
+	 right: 86px;
 	 bottom: 60px;
 	 background: url(../img_compressed/disount.png);
 }
 .scroll_icon {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 3;
 	left: 50%;
 	bottom: -75px;
 	transform: translateX(-50%);
@@ -97,6 +123,14 @@ table {
 	position: absolute;
 	 background: url(../img_compressed/scroll_icon.png) no-repeat center center;
 	 background-size: contain;
+	 .scroll {
+	 	height: 155px;
+	 	width: 112px;
+	 	background-color: transparent;
+	 	border: none;
+	 	cursor: pointer;
+	 	outline: none;
+	 }
 }
 .heading_text_area {
 	padding-top: 85px;
@@ -133,9 +167,10 @@ table {
 }
 
 
-.how_it_works {
+#how_it_works {
   .land_container {
-  	padding-top: 90px;
+  	margin-top: 60px;
+  	padding-top: 30px;
   	padding-bottom: 80px;
       display: flex;
       flex-direction: column;
@@ -173,13 +208,37 @@ table {
 
 
 .last_screen_block {
-	background: #284363 url(../img_compressed/last_screen_bg.jpg) no-repeat top center;
+	background: #0d325f url(../img_compressed/last_screen_bg.jpg) no-repeat top center;
 	background-size: cover;
+	position: relative;
+	&:after {
+		content: '';
+		display: block;
+	 	 position: absolute;
+	 	 height: 100%;
+	 	 width: 100%;
+	 	 top: 0;
+	 	 background: url(../img_compressed/BG.jpg) no-repeat top center;
+	 	 z-index: 1;
+	}
+	&:before {
+		 content: '';
+	 	 display: block;
+	 	 position: absolute;
+	 	 height: 100px;
+	 	 width: 100%;
+	 	 top: 0;
+	 	 background: url(../img_compressed/layer.png) no-repeat;
+	 	 z-index: 2;
+	 	 background-size: 100% 100%;
+	}
 	.block_container {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		padding-top: 50px;
+		position: relative;
+		z-index: 10;
 		img {
 			display: block;
 			width: 100%;
@@ -252,11 +311,13 @@ table {
 	 	  text-transform: uppercase;
 	 	  display: inline-block;
 	 	  position: relative;
+	 	  z-index: 3;
 	 	  padding-top: 60px;
 	 	  &:after {
 	 	  	content: '';
 	 	  	display: block;
 	 	  	position: absolute;
+	 	  	z-index: 3;
 	 	  	left: -40px;
 	 	  	bottom: 24px;
 	 	  	transform: translateX(-100%);
