@@ -174,7 +174,20 @@ table {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    outline: none; }
+    outline: none;
+    position: relative;
+    z-index: 3; }
+  .scroll_icon:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 22px;
+    z-index: 1;
+    height: 12px;
+    background: url(../img_compressed/item_arr.png);
+    bottom: 55px;
+    -webkit-animation: slide-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s infinite both;
+            animation: slide-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s infinite both; }
 
 .heading_text_area {
   padding-top: 85px;
@@ -248,7 +261,7 @@ table {
     padding-right: 10px; }
 
 .last_screen_block {
-  background: #0d325f url(../img_compressed/last_screen_bg.jpg) no-repeat top center;
+  background: #0d325f;
   -webkit-background-size: cover;
           background-size: cover;
   position: relative; }
@@ -293,7 +306,8 @@ table {
   .last_screen_block a.bottom_link {
     display: block;
     width: 420px;
-    height: 42px;
+    height: 50px;
+    margin-bottom: 40px;
     background-color: #f76400;
     display: -webkit-box;
     display: -webkit-flex;
@@ -333,6 +347,8 @@ table {
       left: -133px;
       top: 30px;
       background: url(../img_compressed/disount.png); }
+    .last_screen_block a.item:hover .item_description {
+      background: #1876c3; }
   .last_screen_block .item_title {
     color: #fff;
     font: 16px "GothamRegular";
@@ -358,9 +374,10 @@ table {
             justify-content: space-between;
     height: 70px;
     padding: 12px 20px;
-    background: #20579b; }
-  .last_screen_block .land_container {
-    height: 2375px; }
+    background: #20579b;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease; }
   .last_screen_block .title_container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -403,3 +420,25 @@ table {
       height: 1px;
       width: 160px;
       background-color: #fff; }
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  60% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 0; } }
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  60% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 0; } }
