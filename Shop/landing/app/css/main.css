@@ -186,8 +186,8 @@ table {
     height: 12px;
     background: url(../img_compressed/item_arr.png);
     bottom: 55px;
-    -webkit-animation: slide-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s infinite both;
-            animation: slide-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s infinite both; }
+    -webkit-animation: slide-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+            animation: slide-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both; }
 
 .heading_text_area {
   padding-top: 85px;
