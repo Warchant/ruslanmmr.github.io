@@ -1,6 +1,7 @@
 $(document).ready(function() {
      bannerSlider();
      labsSlider();
+     brandsSlider();
 });
 
 function bannerSlider() {
@@ -14,6 +15,22 @@ function bannerSlider() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000
+    });
+};
+
+function brandsSlider() {
+    $('.slider_brands').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        draggable: true,
+        speed: 600,
+        slidesToShow: 6,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $('.arrow_left_brands'),
+        nextArrow: $('.arrow_right_brands'),
     });
 };
 
