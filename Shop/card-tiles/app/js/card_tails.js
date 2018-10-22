@@ -6,6 +6,8 @@ $(document).ready(function() {
     categoryScroll();
     modalOpen();
     addButton();
+    txtBtn();
+    galleryModal();
 });
 $(window).resize(function() {
     resizeNotification();
@@ -24,6 +26,44 @@ $(window).resize(function() {
 $.fn.hasAttr = function(name) {
     return this.attr(name) !== undefined;
 };
+
+function galleryModal() {
+    $(".modal_container .button_open_gallery").click(function() {
+        $("#modal-popup").addClass("gallery_popup");
+        $(".nano").nanoScroller({ destroy: true });
+    });
+    $(".modal_container .button_close_gallery, .modal_container .button_close").click(function() {
+        $("#modal-popup").removeClass("gallery_popup");
+        $(".nano").nanoScroller();
+    });
+    $(".title_link").click(function() {
+        if ( $("#modal-popup").hasClass("gallery_popup")) {
+        } else {
+            if (document.documentElement.clientWidth > 576) {
+                $("#modal-popup").addClass("gallery_popup");
+                $(".nano").nanoScroller({ destroy: true });
+            }
+        }
+    });
+    $(".thumbs_small .image_wrap, .card_content .link_section .more_btn").click(function() {
+        if ($("#modal-popup").hasClass("gallery_popup")) {
+            $("#modal-popup").removeClass("gallery_popup");
+            $(".nano").nanoScroller();
+        } 
+    });
+}
+
+function txtBtn() {
+    $(".modal_container .show_characteristics").click(function() {
+        $(this).toggleClass("active");
+        $(this).hasClass("active");
+        if ( $(this).hasClass("active") ) {
+            $(this).text('Показать основные');
+        } else {
+            $(this).text('Показать все');
+        }
+    });
+}
 
 function modalOpen() {
     $(".modal_nav .btn_open").click(function() {
