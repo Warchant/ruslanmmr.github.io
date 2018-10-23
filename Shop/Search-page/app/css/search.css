@@ -67,6 +67,7 @@
 .container_search .search {
   border: 1px solid #e5e5e5;
   padding: 55px 25px;
+  margin-right: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
