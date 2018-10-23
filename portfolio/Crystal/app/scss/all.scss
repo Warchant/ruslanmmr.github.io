@@ -8,16 +8,44 @@ ul {
     list-style: none;
 }
 
+.socials_block {
+        position: absolute;
+        right: 15px;
+        top: 0;
+        display: flex;
+        a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .insta_icon {
+            background: url(../img/icons/instagram.png) no-repeat center center;
+            background-size: contain;
+        }
+        .facebook_icon {
+            background: url(../img/icons/facebook.png) no-repeat center center;
+            background-size: contain;
+        }
+        .vk_icon {
+            background: url(../img/icons/vk.png) no-repeat center center;
+            background-size: contain;
+        }
+    }
+
 .fixed_btn {
-	 position: fixed;
-	 height: 100px;
-	 width: 100px;
-	 display: block;
-	 z-index: 1000;
-	 bottom: 0;
-	 right: 0;
-	 background: url(../img/fixed_icon.png) no-repeat;
-	 background-size: contain;
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    display: block;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    background: url(../img/fixed_icon.png) no-repeat;
+    background-size: contain;
 }
 
 header {
@@ -28,33 +56,6 @@ header {
         position: relative;
         height: 51px;
         //background-color: rgba(0, 0, 0, 0.1);
-    }
-    .socials_block {
-        position: absolute;
-        right: 15px;
-        top: 0;
-        display: flex;
-        a {
-        	  display: block;
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-            &:last-child {
-            	margin-right: 0;
-            }
-        }
-        .insta_icon {
-        	 background: url(../img/icons/instagram.png) no-repeat center center;
-        	 background-size: contain;
-        }
-        .facebook_icon {
-        	 background: url(../img/icons/facebook.png) no-repeat center center;
-        	 background-size: contain;
-        }
-        .vk_icon {
-        	 background: url(../img/icons/vk.png) no-repeat center center;
-        	 background-size: contain;
-        }
     }
     .main_number {
         position: absolute;
@@ -120,9 +121,127 @@ header {
     }
 }
 
+footer {
+    margin-top: 100px;
+    .right_section {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        .tel_number {
+                font: 2.2em "SupermolotThin";
+                text-decoration: none;
+                color: #212529;
+                line-height: 70%;
+            }
+        .socials_block {
+            position: relative;
+            right: 0;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .mobile {
+            display: flex;
+            height: 40px;
+            a {
+                height: 100%;
+                &:first-child {
+                    margin-right: 10px;
+                }
+            }
+            img {
+                height: 100%;
+                width: auto;
+                display: block;
+            }
+        }
+    }
+    .footer_content {
+        display: flex;
+        border-top: 2px solid #949494;
+        padding: 25px 0;
+    }
+    .footer_logo {
+        display: block;
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .left_section {
+        padding-right: 40px;
+        width: 37%;
+        position: relative;
+        &:after {
+            content: 'ЛАБОРАТОРИЯ УЛЫБОК';
+            position: absolute;
+            white-space: nowrap;
+            transform: translateX(100%);
+            right: 35%;
+            top: 3px;
+            letter-spacing: 2.5em;
+            margin-right: -1.5em;
+            color: rgb(255, 2, 138);
+            font: 1em "SupermolotRegular";
+        }
+    }
+    .copy {
+        color: #959595;
+        display: inline-block;
+        text-transform: uppercase;
+        font: 1.8em "SupermolotLight";
+        margin-top: 20px;
+        span {
+            font-size: 12px;
+            text-transform: lowercase;
+        }
+    }
+    .center_section {
+        width: 23%;
+        padding-right: 40px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+
+    .nav_left,
+    .nav_right {
+        padding-top: 10px;
+        position: relative;
+        &:before {
+           content: '';
+           position: absolute;
+           top: 0;
+           display: block;
+           width: 70%;
+           height: 2px;
+           background-color: #949494;
+        }
+    }
+
+    .nav_left li,
+    .nav_right li {
+        padding: 4px 0;
+        a {
+            color: #8e8e8e;
+            line-height: 100%;
+            white-space: nowrap;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font: 1.2em "SupermolotLight";
+            text-decoration: none !important;
+            transition: .3s;
+        }
+    }
+}
+
 @media screen and (min-width: 1025px) {
     header ul a:hover {
         color: #ff028a;
         border-color: #ff028a;
+    }
+    footer .nav_left li a:hover, footer .nav_right li a:hover {
+        color: #ff028a;
     }
 }

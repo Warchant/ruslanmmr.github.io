@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-size: 10px;
   overflow-x: hidden; }
@@ -6,6 +7,34 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+.socials_block {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .socials_block a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; }
+    .socials_block a:last-child {
+      margin-right: 0; }
+  .socials_block .insta_icon {
+    background: url(../img/icons/instagram.png) no-repeat center center;
+    -webkit-background-size: contain;
+            background-size: contain; }
+  .socials_block .facebook_icon {
+    background: url(../img/icons/facebook.png) no-repeat center center;
+    -webkit-background-size: contain;
+            background-size: contain; }
+  .socials_block .vk_icon {
+    background: url(../img/icons/vk.png) no-repeat center center;
+    -webkit-background-size: contain;
+            background-size: contain; }
 
 .fixed_btn {
   position: fixed;
@@ -26,33 +55,6 @@ header {
   header .container {
     position: relative;
     height: 51px; }
-  header .socials_block {
-    position: absolute;
-    right: 15px;
-    top: 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-    header .socials_block a {
-      display: block;
-      width: 30px;
-      height: 30px;
-      margin-right: 10px; }
-      header .socials_block a:last-child {
-        margin-right: 0; }
-    header .socials_block .insta_icon {
-      background: url(../img/icons/instagram.png) no-repeat center center;
-      -webkit-background-size: contain;
-              background-size: contain; }
-    header .socials_block .facebook_icon {
-      background: url(../img/icons/facebook.png) no-repeat center center;
-      -webkit-background-size: contain;
-              background-size: contain; }
-    header .socials_block .vk_icon {
-      background: url(../img/icons/vk.png) no-repeat center center;
-      -webkit-background-size: contain;
-              background-size: contain; }
   header .main_number {
     position: absolute;
     left: 15px;
@@ -115,7 +117,129 @@ header {
       width: 185px;
       height: 100px; }
 
+footer {
+  margin-top: 100px; }
+  footer .right_section {
+    width: 40%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 40px; }
+    footer .right_section .tel_number {
+      font: 2.2em "SupermolotThin";
+      text-decoration: none;
+      color: #212529;
+      line-height: 70%; }
+    footer .right_section .socials_block {
+      position: relative;
+      right: 0;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-top: 20px; }
+    footer .right_section .mobile {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      height: 40px; }
+      footer .right_section .mobile a {
+        height: 100%; }
+        footer .right_section .mobile a:first-child {
+          margin-right: 10px; }
+      footer .right_section .mobile img {
+        height: 100%;
+        width: auto;
+        display: block; }
+  footer .footer_content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: 2px solid #949494;
+    padding: 25px 0; }
+  footer .footer_logo {
+    display: block;
+    width: 100%; }
+    footer .footer_logo img {
+      width: 100%;
+      height: auto; }
+  footer .left_section {
+    padding-right: 40px;
+    width: 37%;
+    position: relative; }
+    footer .left_section:after {
+      content: 'ЛАБОРАТОРИЯ УЛЫБОК';
+      position: absolute;
+      white-space: nowrap;
+      -webkit-transform: translateX(100%);
+          -ms-transform: translateX(100%);
+              transform: translateX(100%);
+      right: 35%;
+      top: 3px;
+      letter-spacing: 2.5em;
+      margin-right: -1.5em;
+      color: #ff028a;
+      font: 1em "SupermolotRegular"; }
+  footer .copy {
+    color: #959595;
+    display: inline-block;
+    text-transform: uppercase;
+    font: 1.8em "SupermolotLight";
+    margin-top: 20px; }
+    footer .copy span {
+      font-size: 12px;
+      text-transform: lowercase; }
+  footer .center_section {
+    width: 23%;
+    padding-right: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 40px; }
+  footer .nav_left,
+  footer .nav_right {
+    padding-top: 10px;
+    position: relative; }
+    footer .nav_left:before,
+    footer .nav_right:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 70%;
+      height: 2px;
+      background-color: #949494; }
+  footer .nav_left li,
+  footer .nav_right li {
+    padding: 4px 0; }
+    footer .nav_left li a,
+    footer .nav_right li a {
+      color: #8e8e8e;
+      line-height: 100%;
+      white-space: nowrap;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font: 1.2em "SupermolotLight";
+      text-decoration: none !important;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+
 @media screen and (min-width: 1025px) {
   header ul a:hover {
     color: #ff028a;
-    border-color: #ff028a; } }
+    border-color: #ff028a; }
+  footer .nav_left li a:hover, footer .nav_right li a:hover {
+    color: #ff028a; } }
