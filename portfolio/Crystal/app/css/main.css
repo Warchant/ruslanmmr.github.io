@@ -322,7 +322,7 @@
     -webkit-background-size: contain;
             background-size: contain; }
 
-.map .more_crystal {
+.more_crystal {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -331,8 +331,9 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 35px 0; }
-  .map .more_crystal a {
+  margin: 35px 0;
+  margin-right: 20px; }
+  .more_crystal a {
     font: 1.8em "SupermolotLight";
     letter-spacing: 0.2em;
     text-decoration: none;
@@ -340,7 +341,7 @@
     position: relative;
     text-transform: uppercase;
     border-bottom: 1px solid #959595; }
-    .map .more_crystal a:after {
+    .more_crystal a:after {
       content: '';
       height: 24px;
       position: absolute;
@@ -769,61 +770,145 @@
       margin: 10% 0;
       text-decoration: underline; }
 
-.stock {
-  padding-top: 20px; }
-  .stock .sub_title {
-    width: 25%;
-    position: relative;
-    margin-top: 23px; }
-    .stock .sub_title:after {
-      content: 'улыбнись удаче!';
+.sub_title {
+  width: 25%;
+  position: relative;
+  margin-top: 23px; }
+  .sub_title:after {
+    content: 'улыбнись удаче!';
+    position: absolute;
+    right: -80px;
+    top: 0;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    font: 1.4em "SupermolotRegular";
+    line-height: 85%;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    color: #939598;
+    white-space: nowrap; }
+  .sub_title .txt_block {
+    padding: 2px 30px;
+    position: relative; }
+    .sub_title .txt_block span {
+      display: block;
+      color: #939598; }
+    .sub_title .txt_block .top {
+      font: 2em "SupermolotLight";
+      letter-spacing: 0.7em;
+      text-transform: uppercase;
+      text-align: right;
+      margin-right: -0.7em; }
+    .sub_title .txt_block .bottom {
+      font: 3em "SupermolotLight";
+      letter-spacing: 0.7em;
+      text-transform: uppercase;
+      text-align: left;
+      line-height: 110%; }
+    .sub_title .txt_block:before, .sub_title .txt_block:after {
+      content: '';
+      display: block;
       position: absolute;
+      height: 30px;
+      width: 20px;
+      white-space: nowrap;
+      border: 1px solid #939598; }
+    .sub_title .txt_block:before {
+      bottom: 0;
+      left: 0;
+      border-top: none;
+      border-right: none; }
+    .sub_title .txt_block:after {
       right: 0;
       top: 0;
-      -webkit-transform: translateX(150%);
-          -ms-transform: translateX(150%);
-              transform: translateX(150%);
-      font: 1.2em "SupermolotRegular";
-      line-height: 85%;
-      text-transform: uppercase;
-      letter-spacing: 1em;
-      color: #939598; }
-    .stock .sub_title .txt_block {
-      padding: 2px 30px;
-      position: relative; }
-      .stock .sub_title .txt_block span {
-        display: block;
-        color: #939598; }
-      .stock .sub_title .txt_block .top {
-        font: 2em "SupermolotLight";
-        letter-spacing: 0.7em;
-        text-transform: uppercase;
-        text-align: right;
-        margin-right: -0.7em; }
-      .stock .sub_title .txt_block .bottom {
-        font: 3em "SupermolotLight";
-        letter-spacing: 0.7em;
-        text-transform: uppercase;
-        text-align: left;
-        line-height: 110%; }
-      .stock .sub_title .txt_block:before, .stock .sub_title .txt_block:after {
-        content: '';
-        display: block;
-        position: absolute;
-        height: 30px;
-        width: 20px;
-        white-space: nowrap;
-        border: 1px solid #939598; }
-      .stock .sub_title .txt_block:before {
-        bottom: 0;
-        left: 0;
-        border-top: none;
-        border-right: none; }
-      .stock .sub_title .txt_block:after {
-        right: 0;
-        top: 0;
-        border-left: none;
-        border-bottom: none; }
+      border-left: none;
+      border-bottom: none; }
+
+.stock {
+  padding-top: 20px; }
+
+.stock_container {
+  margin: 0 -10px;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .stock_container a.img_link {
+    display: block;
+    margin-bottom: 20px; }
+    .stock_container a.img_link img {
+      width: 100%; }
+  .stock_container a.btn {
+    font: 1.8em "SupermolotLight";
+    color: #6d6e71;
+    text-decoration: underline;
+    position: relative; }
+    .stock_container a.btn:after {
+      content: '';
+      height: 24px;
+      position: absolute;
+      right: -3px;
+      top: 0;
+      -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      transform: translateX(100%);
+      width: 24px;
+      display: block;
+      background: url(../img/icons/title_copy.png) no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain; }
+  .stock_container .block {
+    width: 33.33%;
+    padding: 0 10px; }
+
+.competition_crystal {
+  margin-top: 80px; }
+  .competition_crystal p {
+    font: 2.6em "SupermolotThin";
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.8em;
+    margin-right: -0.8em; }
+  .competition_crystal .content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .competition_crystal .img_block {
+    width: 60%;
+    position: relative; }
+    .competition_crystal .img_block:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      width: 1440px;
+      height: 486px;
+      background: url(../img/competition_bg.png) no-repeat;
+      -webkit-background-size: contain;
+              background-size: contain;
+      left: 50%;
+      -webkit-transform: translateX(-46%);
+          -ms-transform: translateX(-46%);
+              transform: translateX(-46%); }
+  .competition_crystal img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2; }
+
+.crystal_life {
+  margin-top: 100px; }
+  .crystal_life .sub_title {
+    width: 33%; }
+    .crystal_life .sub_title:after {
+      content: 'ищем персонал'; }
 
 @media screen and (min-width: 1025px) {
   .links_block a:hover,

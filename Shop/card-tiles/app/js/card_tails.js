@@ -131,6 +131,11 @@ function resizeNotification() {
     } else {
         $('#notification_container').insertAfter('#gallery');
     }
+    if ($(window).width() < 992) {
+        $('.gallery_information_block').insertAfter('.twocolumns_card');
+    } else {
+        $('.gallery_information_block').insertAfter('.gallery_information_columns');
+    }
 }
 
 function choseText() {

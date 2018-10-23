@@ -319,33 +319,35 @@
     }
 }
 
-.map {
-    .more_crystal {
-        display: flex;
-        justify-content: center;
-        margin: 35px 0;
-        a {
-            font: 1.8em "SupermolotLight";
-            letter-spacing: 0.2em;
-            text-decoration: none;
-            color: #959595;
-            position: relative;
-            text-transform: uppercase;
-            border-bottom: 1px solid #959595;
-            &:after {
-                content: '';
-                height: 24px;
-                position: absolute;
-                right: -3px;
-                top: 0;
-                transform: translateX(100%);
-                width: 24px;
-                display: block;
-                background: url(../img/icons/title_copy.png) no-repeat;
-                background-size: contain;
-            }
+.more_crystal {
+    display: flex;
+    justify-content: center;
+    margin: 35px 0;
+    margin-right: 20px;
+    a {
+        font: 1.8em "SupermolotLight";
+        letter-spacing: 0.2em;
+        text-decoration: none;
+        color: #959595;
+        position: relative;
+        text-transform: uppercase;
+        border-bottom: 1px solid #959595;
+        &:after {
+            content: '';
+            height: 24px;
+            position: absolute;
+            right: -3px;
+            top: 0;
+            transform: translateX(100%);
+            width: 24px;
+            display: block;
+            background: url(../img/icons/title_copy.png) no-repeat;
+            background-size: contain;
         }
     }
+}
+
+.map {
     .map_container {
         margin: 10px 0;
         padding: 0 130px;
@@ -676,16 +678,16 @@
         display: flex;
         justify-content: center;
         padding-top: 10px;
-         &:after {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 950px;
-        height: 1200px;
-        background: url(../img/bg__price.png); 
-        background-size: contain;
-        transform: translate(-32%, -42%); 
-    }
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 950px;
+            height: 1200px;
+            background: url(../img/bg__price.png);
+            background-size: contain;
+            transform: translate(-32%, -42%);
+        }
     }
     .center_price_block {
         width: 60%;
@@ -720,7 +722,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            &:before{
+            &:before {
                 content: '';
                 position: absolute;
                 right: 0;
@@ -752,23 +754,22 @@
     }
 }
 
-.stock {
-    padding-top: 20px;
-    .sub_title {
+.sub_title {
         width: 25%;
         position: relative;
         margin-top: 23px;
         &:after {
             content: 'улыбнись удаче!';
             position: absolute;
-            right: 0;
+            right: -80px;
             top: 0;
-            transform: translateX(150%);
-            font: 1.2em "SupermolotRegular";
+            transform: translateX(100%);
+            font: 1.4em "SupermolotRegular";
             line-height: 85%;
             text-transform: uppercase;
             letter-spacing: 1em;
             color: #939598;
+            white-space: nowrap;
         }
         .txt_block {
             padding: 2px 30px;
@@ -791,7 +792,8 @@
                 text-align: left;
                 line-height: 110%;
             }
-            &:before, &:after {
+            &:before,
+            &:after {
                 content: '';
                 display: block;
                 position: absolute;
@@ -812,6 +814,93 @@
                 border-left: none;
                 border-bottom: none;
             }
+        }
+    }
+
+.stock {
+    padding-top: 20px;
+}
+.stock_container {
+    margin: 0 -10px;
+    margin-top: 15px;
+    display: flex;
+    a.img_link {
+        display: block;
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+        }
+    }
+    a.btn {
+        font: 1.8em "SupermolotLight";
+        color: #6d6e71;
+        text-decoration: underline;
+        position: relative;
+        &:after {
+            content: '';
+            height: 24px;
+            position: absolute;
+            right: -3px;
+            top: 0;
+            -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            transform: translateX(100%);
+            width: 24px;
+            display: block;
+            background: url(../img/icons/title_copy.png) no-repeat;
+            -webkit-background-size: contain;
+            background-size: contain;
+        }
+    }
+    .block {
+        width: 33.33%;
+        padding: 0 10px;
+    }
+}
+
+.competition_crystal {
+    margin-top: 80px;
+    p {
+            font: 2.6em "SupermolotThin";
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 0.8em;
+            margin-right: -0.8em;
+        }
+    .content {
+        display: flex;
+        justify-content: center;
+    }
+    .img_block {
+        width: 60%;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 0;
+            width: 1440px;
+            height: 486px;
+            background: url(../img/competition_bg.png) no-repeat;
+            background-size: contain;
+            left: 50%;
+            transform: translateX(-46%);
+        }
+    }
+    img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.crystal_life {
+    margin-top: 100px;
+    .sub_title {
+        width: 33%;
+       &:after {
+            content: 'ищем персонал';
         }
     }
 }

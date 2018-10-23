@@ -4,6 +4,10 @@
 .slider_gallery img {
   padding: 0 20px; }
 
+.price_main_text {
+  margin-top: 0;
+  padding-top: 20px; }
+
 .price_item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -104,6 +108,11 @@
   .gallery_stick .price_item .old_price {
     text-align: left; }
 
+.product_slider .title {
+  display: inline; }
+  .product_slider .title span {
+    display: inline !important; }
+
 #modal-popup .container_gallery img {
   width: 80%;
   height: auto;
@@ -138,6 +147,7 @@
     display: block;
     margin: 0 auto;
     padding: 10px;
+    margin-top: 10px;
     width: 100%;
     font-size: 14px; }
   .modal_container .mfp-close {
@@ -302,6 +312,19 @@
 #modal-popup {
   position: relative;
   overflow: hidden; }
+  #modal-popup .modal_information .columns {
+    padding: 20px;
+    padding-bottom: 10px; }
+  #modal-popup .information_product_box td {
+    vertical-align: top; }
+  #modal-popup .information_product_box .column_title {
+    margin: 10px 0 10px; }
+  #modal-popup .information_product_box td {
+    border: none;
+    padding: 4px 0; }
+  #modal-popup .gray_container {
+    background-color: #fafafa;
+    margin-top: 8px; }
   #modal-popup .tile_categories {
     display: -webkit-box;
     display: -webkit-flex;
@@ -830,6 +853,15 @@
             flex: 1 1 30px; } }
 
 @media screen and (max-width: 768px) {
+  #modal-popup .container_gallery {
+    width: 100%;
+    padding: 0px; }
+  .modal_main {
+    display: block; }
+  .container_gallery img {
+    width: 100%; } }
+
+@media screen and (max-width: 667px) {
   .card_content .link_section span:first-child {
     -webkit-box-flex: 4;
     -webkit-flex: 4 4 100px;
@@ -846,14 +878,7 @@
   .link_section .add_btn i {
     display: block;
     font-size: 20px;
-    color: #8ec824; }
-  #modal-popup .container_gallery {
-    width: 100%;
-    padding: 0px; }
-  .modal_main {
-    display: block; }
-  .container_gallery img {
-    width: 100%; } }
+    color: #8ec824; } }
 
 @media screen and (max-width: 576px) {
   .modal_container .button_left,
