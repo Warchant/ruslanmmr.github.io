@@ -120,13 +120,11 @@
   margin: 0 auto; }
 
 .modal_main {
-  padding: 30px; }
+  padding: 0px; }
 
 .modal_information {
-  opacity: 1;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s; }
+  border: none;
+  border-left: 1px solid #e5e5e5; }
 
 .modal_container {
   max-width: 100%;
@@ -161,7 +159,8 @@
     color: #fff;
     opacity: 1; }
   .modal_container .gallery {
-    position: relative; }
+    position: relative;
+    border: none; }
   .modal_container .button_open_gallery, .modal_container .button_close_gallery {
     position: absolute;
     z-index: 2;
@@ -312,6 +311,8 @@
 #modal-popup {
   position: relative;
   overflow: hidden; }
+  #modal-popup .slick-slider .slick-list {
+    padding: 0 15px; }
   #modal-popup .modal_information .columns {
     padding: 20px;
     padding-bottom: 10px; }
@@ -346,7 +347,8 @@
   #modal-popup .container_gallery {
     width: 70%;
     padding-right: 20px;
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
   #modal-popup .slider_gallery {
     margin: 0; }
   #modal-popup .modal_nav {
@@ -373,7 +375,8 @@
       width: 60px;
       height: 60px;
       padding: 5px;
-      border: 1px solid #ebebeb;
+      border: 1px solid #d6d6d6;
+      background-color: #fff;
       cursor: pointer;
       position: relative;
       margin-right: 5px; }
@@ -382,15 +385,17 @@
       #modal-popup .modal_nav .img_block img {
         width: 100%;
         height: 100%; }
-    #modal-popup .modal_nav .img_active:after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      border: 5px solid #ffcc33; }
+    #modal-popup .modal_nav .img_active {
+      border: none; }
+      #modal-popup .modal_nav .img_active:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border: 5px solid #ffcc33; }
     #modal-popup .modal_nav .btn_open {
       display: block;
       width: 94px;
@@ -428,7 +433,7 @@
         margin-top: -14px; }
     #modal-popup .modal_nav .content {
       padding: 15px 0;
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.65);
       position: relative; }
       #modal-popup .modal_nav .content:before {
         content: '';
@@ -755,6 +760,64 @@
 #set {
   display: block !important; }
 
+.slick-prev,
+.slick-next {
+  content: '/';
+  height: 60px;
+  padding: 0 20px;
+  width: 20px;
+  border: none;
+  font-size: 0;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+  position: relative;
+  cursor: pointer;
+  background: #fff;
+  -webkit-box-shadow: 2px 0px 20px 15px white;
+          box-shadow: 2px 0px 20px 15px white;
+  z-index: 10; }
+  .slick-prev:after,
+  .slick-next:after {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 18px;
+    background: url(../images/arrow_brands.png) no-repeat center center;
+    -webkit-background-size: contain;
+            background-size: contain;
+    left: 5px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0.3; }
+
+.slick-prev {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.slider_container {
+  position: relative;
+  height: 60px;
+  overflow: hidden; }
+  .slider_container .images_nav {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .slider_container .nav_active {
+    position: relative;
+    left: auto;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
+
+.modal_information {
+  min-height: 100vh; }
+
 .gallery_popup .modal_information {
   display: none; }
 
@@ -788,6 +851,8 @@
   display: none; }
 
 @media screen and (min-width: 1025px) {
+  .slick-prev:hover:after, .slick-next:hover:after {
+    opacity: 0.5; }
   .card_content .link_section .more_btn:hover {
     color: #1d1d1d;
     border-color: #999999; }
@@ -853,6 +918,8 @@
             flex: 1 1 30px; } }
 
 @media screen and (max-width: 768px) {
+  #modal-popup .container_gallery img {
+    width: 100%; }
   #modal-popup .container_gallery {
     width: 100%;
     padding: 0px; }

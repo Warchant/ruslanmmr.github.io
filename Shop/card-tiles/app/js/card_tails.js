@@ -8,8 +8,10 @@ $(document).ready(function() {
     addButton();
     txtBtn();
     galleryModal();
+    SliderInit();
 });
 $(window).resize(function() {
+    SliderInit();
     resizeNotification();
     $(".description_section").css("height", "auto");
     mh = 0;
@@ -22,6 +24,8 @@ $(window).resize(function() {
         $(".sort_line .nav_tab").css("display", "none");
     }
 });
+
+var c_with_static = $(".slider_container").width();
 
 $.fn.hasAttr = function(name) {
     return this.attr(name) !== undefined;
@@ -162,4 +166,56 @@ function categoryScroll() {
             top = $(id).offset().top;
         $('body,html').animate({ scrollTop: top }, 600);
     });
+}
+
+function NavSlider() {
+    $('#modal-popup .images_nav').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: false,
+        variableWidth: true,
+        slidesToScroll: 13,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToScroll: 6
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToScroll: 6
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToScroll: 2
+                }
+            }
+        ]
+    });
+}
+
+var init_ind = 1;
+
+function SliderInit() {
+    var p_with = $(".slider_container").width();
+    var c_with = $("#modal-popup .modal_nav .images_nav").width();
+    var list = $(".brand_categories_block .categories_list");
+    if (c_with > p_with && document.documentElement.clientWidth > 578) {
+        if (init_ind == 1) {
+            NavSlider();
+            $("#modal-popup .modal_nav .images_nav").addClass("nav_active");
+            init_ind = 2;
+        }
+    } else if (c_with_static < p_with && document.documentElement.clientWidth > 578) {
+        if (init_ind == 2) {
+            $(".images_nav").slick('unslick');
+            $("#modal-popup .modal_nav .images_nav").removeClass("nav_active");
+            init_ind = 1;
+        }
+    }
 }
