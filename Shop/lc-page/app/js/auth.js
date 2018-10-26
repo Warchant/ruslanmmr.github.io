@@ -104,7 +104,7 @@ function sliderInit() {
 
 var flag = 1;
 function transform() {
-    if (document.documentElement.clientWidth < 578) {
+    if ($(window).width() < 576) {
         if (flag == 1) {
             sliderInit();
             $('.lc_container_loged .more_orders').insertAfter('.orders_container');
