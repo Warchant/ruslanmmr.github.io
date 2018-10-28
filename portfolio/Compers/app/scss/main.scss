@@ -82,6 +82,10 @@ ul {
     }
 }
 
+.nav_active {
+        transform: translateX(0) !important;
+    }
+
 header {
     position: relative;
     z-index: 2;
@@ -134,10 +138,6 @@ header {
         }
     }
 }
-
-.nav_active {
-        transform: translateX(0) !important;
-    }
 
 .main_page_container {
     position: relative;

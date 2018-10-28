@@ -1,7 +1,13 @@
 $(document).ready(function() {
-     bannerSlider();
-     labsSlider();
-     brandsSlider();
+    bannerSlider();
+    labsSlider();
+    brandsSlider();
+    mobileNav();
+    stockInit();
+});
+
+$(window).resize(function() {
+    stockInit();
 });
 
 function bannerSlider() {
@@ -31,6 +37,33 @@ function brandsSlider() {
         autoplaySpeed: 2000,
         prevArrow: $('.arrow_left_brands'),
         nextArrow: $('.arrow_right_brands'),
+        responsive: [{
+                breakpoint: 1230,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+        ]
     });
 };
 
@@ -44,5 +77,101 @@ function labsSlider() {
         slidesToScroll: 3,
         prevArrow: $('.arrow_left'),
         nextArrow: $('.arrow_right'),
+        responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
+};
+
+function mobileNav() {
+    $('.nav-btn a, .sub').click(function(event) {
+        event.preventDefault();
+        $(".nav-btn a").toggleClass("a_active");
+        $(".mobile_nav_block").toggleClass("nav_active");
+        $("body").toggleClass("body_active");
+        $(".sub").fadeToggle(300);
+    });
+}
+
+function stockSlider() {
+    $('.stock_container').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: $('.arrow_left-stock'),
+        nextArrow: $('.arrow_right-stock'),
+         responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+};
+function jobSlider() {
+    $('.job_container').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: $('.arrow_left-job'),
+        nextArrow: $('.arrow_right-job'),
+         responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+};
+
+var flag = 1;
+
+function stockInit() {
+    if (document.documentElement.clientWidth < 769) {
+        if (flag == 1) {
+            stockSlider();
+            jobSlider();
+            flag = 2;
+        }
+    } else if (flag == 2) {
+            $(".stock_container").slick('unslick');
+            $(".job_container").slick('unslick');
+            flag = 1;
+    }
 };

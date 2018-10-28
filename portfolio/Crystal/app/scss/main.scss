@@ -3,10 +3,23 @@
     z-index: 1;
 }
 
+.content_slider, .job_slider_container {
+    .arrow_left-stock,
+    .arrow_right-stock,
+    .arrow_left-job,
+    .arrow_right-job {
+         display: none;
+    }
+}
+
 .arrow_right,
 .arrow_left,
 .arrow_right_brands,
-.arrow_left_brands {
+.arrow_left_brands,
+.arrow_right-stock,
+.arrow_left-stock,
+.arrow_left-job,
+.arrow_right-job {
     display: block;
     position: absolute;
     height: 52px;
@@ -18,11 +31,15 @@
     cursor: pointer;
 }
 .arrow_left,
-.arrow_left_brands {
+.arrow_left_brands,
+.arrow_left-stock,
+.arrow_left-job {
     left: 0;
 }
 .arrow_right,
-.arrow_right_brands {
+.arrow_right_brands,
+.arrow_right-stock,
+.arrow_right-job {
     right: 0;
     transform: rotate(180deg);
 }
@@ -227,8 +244,8 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        width: 700px;
-        height: 385px;
+        width: 51%;
+        height: 70%;
         margin-left: 10px;
         background: url(../img/banner/logo_banner.png) no-repeat;
         background-size: contain;
@@ -244,7 +261,11 @@
             display: block;
             overflow: hidden;
             position: relative;
-            height: 525px;
+            &:before {
+                content: '';
+                display: block;
+                padding-top: 41%;
+            }
         }
         img {
             position: absolute;
@@ -323,6 +344,8 @@
     justify-content: center;
     margin: 35px 0;
     margin-right: 20px;
+    position: relative;
+    z-index: 2;
     a {
         font: 1.8em "SupermolotLight";
         letter-spacing: 0.2em;
@@ -512,6 +535,8 @@
         position: absolute;
         top: -53px;
         right: 0;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 5px;
         .stars {
             display: block;
             width: 120px;
@@ -754,9 +779,9 @@
 }
 
 .sub_title {
-        width: 25%;
         position: relative;
         margin-top: 23px;
+        display: inline-block;
         &:after {
             content: 'улыбнись удаче!';
             position: absolute;
@@ -783,6 +808,7 @@
                 text-transform: uppercase;
                 text-align: right;
                 margin-right: -0.7em;
+                margin-left: 40px;
             }
             .bottom {
                 font: 3em "SupermolotLight";
@@ -898,7 +924,6 @@ a.btn {
 .crystal_life {
     margin-top: 100px;
     .sub_title {
-        width: 33%;
        &:after {
             content: 'ищем персонал';
         }
@@ -958,4 +983,317 @@ a.btn {
     .btn:hover {
         color: #000 !important;
     }
+}
+
+@media screen and (max-width: 1230px) {
+    .top_banner .txt {
+        font-size: 4em;
+        bottom: -0.5em;
+    }
+    .sub_title:after {
+        display: none;
+    }
+    .top_banner .logo_banner {
+        width: 50%;
+        height: 65%;
+        margin-left: 22px;
+    }
+    .top_banner .decoration_item4 {
+        width: 80%;
+        height: 80%;
+        left: 8%;
+        top: 0;
+    }
+    .crystal_labs .decoration_item:before,
+    .crystal_labs .decoration_item {
+        display: none;
+    }
+    .crystal_labs .title_block .title_block_bottom {
+        font-size: 1.6em;
+    }
+    .arrow_right, .arrow_left {
+        top: 21%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .map .map_container {
+        padding: 0;
+    }
+    .top_banner .slide img {
+    }
+    .top_banner .txt {
+        font-size: 3em;
+    }
+    .top_banner .decoration_item2 {
+        display: none;
+    }
+    .slick-dots li {
+        width: 15px;
+        height: 15px;
+        margin: 0 10px;
+    }
+    .slick-dots {
+        bottom: 20px;
+        margin-left: 70px;
+    }
+    .top_banner .logo_banner {
+        margin-left: 18px;
+    }
+    .links_block {
+        padding-top: 50px;
+        a {
+            font-size: 1.6em;
+        }
+    }
+    .title_section .title {
+        font-size: 3.5em;
+    }
+    .title_desription p {
+        font-size: 1.4em;
+    }
+    .more_crystal a {
+        font-size: 1.8em;
+    }
+    .competition_crystal .img_block {
+        width: 100%;
+    }
+    .competition_crystal p {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .crystal_life,
+    .competition_crystal {
+        margin-top: 60px;
+    }
+    .job_container {
+        margin-bottom: 20px;
+    }
+    .job_container .role {
+        font-size: 1.6em;
+    }
+    .competition_crystal p {
+        font-size: 1.5em;
+    }
+    .competition_crystal .img_block:after {
+        width: 180%;
+    }
+    .price .price_container:after {
+        display: none;
+    }
+    .sub_title {
+        margin-top: 10px;
+    }
+    .content_slider, .job_slider_container {
+    padding: 0 37px;
+    position: relative;
+    .arrow_left-stock,
+    .arrow_right-stock,
+    .arrow_left-job,
+    .arrow_right-job {
+         top: 50%;
+         margin-top: -26px;
+         display: block;
+    }
+}
+.sub_title .txt_block .top {
+    font-size: 1.6em;
+}
+.sub_title .txt_block .bottom {
+    font-size: 2em;
+}
+    .sub_title {
+        margin-left: 37px;
+    }
+    .crystal_labs .title_block .title_block_bottom {
+        font-size: 1.2em;
+    }
+    .crystal_labs .title_block:before {
+        left: -12px;
+    }
+    .crystal_labs .title_block .title_block_top {
+        font-size: 1.2em;
+    }
+    .crystal_labs .slide_link {
+        font-size: 1.2em;
+    }
+    .crystal_labs .slide_link:after {
+        height: 20px;
+        width: 20px;
+    }
+    .arrow_right, .arrow_left {
+        top: 18%;
+    }
+    .more_crystal a {
+        font-size: 1.4em;
+    }
+    .more_crystal a:after {
+        height: 20px;
+        width: 20px;
+    }
+   .top_banner .txt {
+    font-size: 2.2em;
+   }
+   .top_banner .logo_banner {
+    margin-left: 15px;
+   }
+   .top_banner {
+    margin-top: 30px;
+   }
+   .links_block a:before {
+    width: 25px;
+    height: 25px;
+   }
+   .links_block li {
+    width: 70px;
+   }
+   .links_block a {
+    font-size: 1.4em;
+   }
+   .title_section .title {
+    font-size: 2.5em;
+   }
+   .title_desription p, .title_desription .post_txt {
+    font-size: 1.2em;
+   }
+   .title_section .title span:after {
+    width: 15px;
+    height: 15px;
+   }
+   .brands .post_txt span {
+    display: none;
+   }
+   .brands {
+    padding-bottom: 20px;
+   }
+   .price .center_price_block {
+     width: 100%;
+   }
+}
+
+@media screen and (max-width: 576px) {
+    .sub_title .txt_block .bottom {
+        font-size: 1.6em;
+    }
+    .sub_title .txt_block .top {
+        font-size: 1.4em;
+    }
+    .competition_crystal p {
+        font-size: 1.2em;
+    }
+    .price .center_price_block .price_block_container:before,
+    .price .center_price_block:before {
+        display: none;
+    }
+    .crystal_labs .labs_container {
+        margin-top: 10px;
+    }
+    .price .center_price_block .price_block_container {
+        padding: 0%;
+    }
+    .brands {
+    padding-bottom: 0;
+   }
+    .crystal_labs {
+        padding-bottom: 0;
+    }
+    .brands .slider_container:after,
+    .brands .slider_container:before {
+        display: none;
+    }
+    .arrow_right, .arrow_left {
+        top: 27%;
+    }
+    .more_crystal {
+        margin: 20px 0;
+    }
+    .letter_item:before {
+        height: 50px;
+        width: 35px;
+    }
+    .letter_item {
+        margin: 20px 0;
+    }
+    .title_section .title span:after {
+    width: 10px;
+    height: 10px;
+   }
+   .top_banner .slide .img_block:before {
+     padding-top: 100%;
+   }
+   .top_banner .slide img {
+    height: 100%;
+    width: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+   .top_banner .decoration_item3, .top_banner .decoration_item4 {
+    //display: none;
+   }
+   .top_banner .banner_slider {
+    clip-path: none;
+   }
+   .top_banner .txt {
+     bottom: 0.2em;
+     transform: translateY(100%);
+     left: auto;
+     right: 15px;
+   }
+   .slick-dots {
+    margin: 0;
+    width: 100%;
+    bottom: 15px;
+   }
+   .top_banner {
+    margin-top: 15px;
+   }
+   .top_banner .decoration_item3, .top_banner .decoration_item1, .map .map_container .decoration {
+    display: none;
+   }
+   .top_banner .logo_banner {
+    margin-left: 0;
+    height: 40%;
+    width: 65%;
+   }
+   .top_banner .decoration_item4 {
+    height: 35%;
+    width: 90%;
+    top: auto;
+    bottom: 20%;
+   }
+   .links_block {
+    padding-top: 65px;
+   }
+   .links_block li {
+    width: 50px;
+    margin: 0 2px;
+   }
+   .links_block a {
+    font-size: 1em;
+   }
+   .links_block ul {
+    justify-content: space-between;
+    padding: 0 15px;
+   }
+   .title_section .title {
+    font-size: 2em;
+    letter-spacing: 0.3em;
+    &:before, &:after {
+        display: none;
+    }
+   }
+   .title_desription p {
+    display: none;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .sub_title {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0 37px;
+   }
 }
