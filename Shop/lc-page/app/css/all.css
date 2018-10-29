@@ -407,12 +407,6 @@ template {
   display: none; }
 
 @font-face {
-  font-family: "AssistantBold";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/Assistant/AssistantBold.ttf") format("truetype"); }
-
-@font-face {
   font-family: "Ico Moon";
   src: url("../fonts/icomoon.eot");
   src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#Ico Moon") format("svg");

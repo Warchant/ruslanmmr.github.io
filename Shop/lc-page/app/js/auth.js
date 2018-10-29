@@ -55,6 +55,8 @@
 $(document).ready(function() {
     passShow();
     transform();
+    linksUnav();
+    mobileTabs();
 });
 
 $(window).resize(function() {
@@ -107,16 +109,57 @@ function transform() {
     if ($(window).width() < 576) {
         if (flag == 1) {
             sliderInit();
-            $('.lc_container_loged .more_orders').insertAfter('.orders_container');
-            $('.personal').insertBefore('.dashboard .trigger');
+            $('.start_auth .lc_container_loged .more_orders').insertAfter('.start_auth .orders_container');
+            $('.start_auth .personal').insertBefore('.start_auth .dashboard .trigger');
             flag = 2;
         }
     } else {
         if (flag == 2) {
-            $(".orders_container").slick('unslick');
-            $('.personal').prependTo('.breadcrumbs .container');
-            $('.lc_container_loged .more_orders').insertAfter('.block_heading .left_title');
+            $(".start_auth .orders_container").slick('unslick');
+            $('.start_auth .personal_start').prependTo('.start_auth .breadcrumbs .container');
+            $('.start_auth .lc_container_loged .more_orders').insertAfter('.start_auth .block_heading .left_title');
             flag = 1;
         }
     }
 };
+
+//Страница "Мои заказы"
+
+function linksUnav() {
+    $(".completed").text('Оплачено');
+    $(".link_block .not_available").attr("data-balloon", "Скоро-скоро");
+    $('.not_available, .completed, .active_selection').click(function(e) {
+          event.preventDefault();
+    });
+}
+
+function mobileTabs() {
+    $(document).mouseup(function(e) {
+        var block = $(".current_choise");
+        var block2 = $("ul.filter_nav a");
+        if (!block.is(e.target) && block.has(e.target).length === 0 && !block2.is(e.target) && block2.has(e.target).length === 0 && (document.documentElement.clientWidth < 992)) {
+            $(".current_choise").removeClass("active_arr").removeClass("opened");
+            $(".orders-page_container ul.filter_nav").fadeOut(0);
+        }
+    });
+    $(".current_choise").click(function() {
+        if (document.documentElement.clientWidth < 992 ) {
+            $(".orders-page_container ul.filter_nav").fadeToggle(0);
+            $(this).toggleClass("active_arr").toggleClass("opened");
+        }
+    });
+    $("ul.filter_nav a").click(function() {
+        if (document.documentElement.clientWidth < 992 && !$(this).hasClass("not_available")) {
+            $(".orders-page_container ul.filter_nav").fadeToggle(0);
+            $(".current_choise").toggleClass("active_arr").toggleClass("opened");
+            var txt = $(this).text();
+            $(".current_choise").find(".txt").text(txt);
+        }
+    });
+    $("ul.filter_nav a").click(function() {
+        if ( !$(this).hasClass("not_available")) {
+            $("ul.filter_nav a").removeClass("active_selection");
+            $(this).toggleClass("active_selection");
+        }
+    });
+}
