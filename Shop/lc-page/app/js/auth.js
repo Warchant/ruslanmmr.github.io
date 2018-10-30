@@ -116,7 +116,7 @@ function transform() {
     } else {
         if (flag == 2) {
             $(".start_auth .orders_container").slick('unslick');
-            $('.start_auth .personal_start').prependTo('.start_auth .breadcrumbs .container');
+            $('.start_auth .personal').insertAfter('.start_auth .breadcrumbs .holder');
             $('.start_auth .lc_container_loged .more_orders').insertAfter('.start_auth .block_heading .left_title');
             flag = 1;
         }

@@ -614,18 +614,17 @@
             color: #818181;
             border-radius: 4px;
             transition: .3s;
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 40px;
             width: 40px;
             background-color: #fff;
-            text-align: center;
             cursor: pointer;
             margin-right: 10px;
             i {
                 margin: 0;
                 color: #ccc;
-                display: inline-block;
-                vertical-align: middle;
                 font-size: 18px;
             }
         }
