@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- <meta name=“viewport” content=“width=device-width, initial-scale=1, viewport-fit=cover”> -->
+    <title>Satra. Сантехника от А до Я</title>
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+</head>
+
+<body class="inner_page">
+    <button class="var1" type="button">Оплатить</button>
+    <button class="var2" type="button">Показать еще</button>
+    <button class="var3" type="button">Больше</button>
+</body>
+<!-- ДЛЯ НАГЛЯДНОСТИ -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+$("button").click(function() {
+    $(this).toggleClass("in-progress");
+});
+</script>
+
+</html>
