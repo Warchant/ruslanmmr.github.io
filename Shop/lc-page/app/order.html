@@ -1172,14 +1172,14 @@
                 </div>
             </div>
         </div>
-        <!--Заказы(Содержимое)-->
-        <div class="main_lc orders">
+        <!--Заказ-->
+        <div class="main_lc order">
             <div class="breadcrumbs">
                 <div class="container">
                     <ul class="holder">
                         <li class="item"><a href="#"><img src="images/logo-b.svg" alt=""></a></li>
-                        <li class="item"><a href="#">Личный кабинет</a></li>
-                        <li class="item">Мои заказы</li>
+                        <li class="item"><a href="#">Мои заказы</a></li>
+                        <li class="item">Заказ №12345678</li>
                     </ul>
                     <div class="personal">
                         <span class="name">Половинкина Александра Сергеевна</span>
@@ -1194,93 +1194,209 @@
                         <a href="#" class="button_back">
                             <i class="icon-angle-left"></i>
                         </a>
-                        <h1 class="title_general">Мои заказы</h1>
+                        <h1 class="title_general">Заказ №12345678</h1>
                     </div>
                 </div>
             </div>
-            <div class="orders-page_container">
+            <div class="order-page_container">
                 <div class="container">
-                    <div class="orders_content row">
-                        <div class="sidebar_left_filter col-lg-3">
-                            <div class="drop_list">
-                                <span class="current_choise"><span class="txt">Все</span> <span class="arr_item"></span></span>
-                                <ul class="filter_nav">
-                                    <li><a class="active_selection" href="#">Все</a></li>
-                                    <li><a href="#">Завершенные</a></li>
-                                    <li><a class="not_available" href="#">Отмененные</a></li>
-                                    <li><a href="#">Избранные</a></li>
+                    <div class="order_content">
+                        <div class="order_nav_heading">
+                            <button class="pay" type=""><i class="icon-heart"></i>Оплатить<span>онлайн</span></button>
+                            <button type=""><i class="icon-heart"></i>Распечатать</button>
+                            <button type=""><i class="icon-heart"></i>В избранное</button>
+                            <button type=""><i class="icon-heart"></i>Ссылка на заказ</button>
+                            <button type=""><i class="icon-basket-strong"></i>Повторить</button>
+                            <button type=""><i class="icon-basket-strong"></i>Отменить</button>
+                        </div>
+                        <div class="contact_info_block">
+                            <table class="contact_info">
+                                <tr>
+                                    <td class="col_title">Статус:</td>
+                                    <td class="col_content status">Ожидает оплаты</td>
+                                </tr>
+                                <tr>
+                                    <td class="col_title">Имя:</td>
+                                    <td class="col_content">Руслан Белозерцев</td>
+                                </tr>
+                                <tr>
+                                    <td class="col_title">Телефон:</td>
+                                    <td class="col_content">+3700000000</td>
+                                </tr>
+                                <tr>
+                                    <td class="col_title">Электронная почта:</td>
+                                    <td class="col_content">belozerzevruslan@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="col_title">Представитель юр.лица:</td>
+                                    <td class="col_content">ООО "Что-то"</td>
+                                </tr>
+                                <tr>
+                                    <td class="col_title">Адрес доставки:</td>
+                                    <td class="col_content">Какой-то адрес</td>
+                                </tr>
+                                <tr>
+                                    <td class="col_title">Подьем на этаж:</td>
+                                    <td class="col_content">Без лифта на 17 этаж</td>
+                                </tr>
+                                <tr>
+                                    <td class="col_title">Дополнительно:</td>
+                                    <td class="col_content">Установка не требуется</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="order_container">
+                            <div class="title">Ваш заказ</div>
+                            <div class="orders-list_container">
+                                <ul class="orders_heading">
+                                    <li class="photo_col"><span>Фото</span></li>
+                                    <li class="name_col"><span>Наименование</span></li>
+                                    <li class="price_col"><span>Цена</span></li>
+                                    <li class="quantity_col"><span>Количество</span></li>
+                                    <li class="total-price_col"><span>Сумма</span></li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="orders_list_container col-lg-9">
-                            <div class="orders_list_content">
-                                <div class="order_box">
-                                    <div class="box_container">
-                                        <div class="order_heading">
-                                            <span class="left_item"><span class="num">Заказ №12345678</span> от <span class="date">25.10.07</span></span>
-                                            <span class="status">В обработке</span>
-                                        </div>
-                                        <div class="order_count">
-                                            <span>2 товара на <span class="price">9 999 999 <span class="rub">руб.</span></span></span>
-                                            <div class="link_block">
-                                                <button class="button_favourites added" data-balloon="Favourites" data-balloon-pos="down" type="button">
-                                                    <i class="icon-heart"></i>
-                                                </button>
-                                                <a class="button_more_info" href="#">Подробнее<i class="icon-arrow-right"></i></a>
-                                                <a href="#" data-balloon-pos="down" class="pay">Оплатить</a>
+                            <div class="order-items_container">
+                                <div class="order_item disable">
+                                    <div class="item_container">
+                                        <div class="photo_col">
+                                            <div class="section_content">
+                                                <img src="images/content/image01.jpg" alt="">
                                             </div>
+                                        </div>
+                                        <div class="name_col">
+                                            <div class="section_content">
+                                                <div class="top_title">
+                                                    <span class="item_title">Мебель для ванной Roca Nord 80 белая</span>
+                                                    <span class="sub_title">Набор</span>
+                                                </div>
+                                                <div class="set_container">
+                                                    <ul class="set_list">
+                                                        <li>Мебель для ванной Roca Nord 80 белая</li>
+                                                        <li>Мебель для ванной Roca Nord 80 белая</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price_col">
+                                            <span>—</span>
+                                        </div>
+                                        <div class="quantity_col">
+                                            <span>—</span>
+                                        </div>
+                                        <div class="total-price_col">
+                                            <span>—</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="order_box">
-                                    <div class="box_container">
-                                        <div class="order_heading">
-                                            <span class="left_item"><span class="num">Заказ №12345678</span> от <span class="date">25.10.07</span></span>
-                                            <span class="status">Готов к оплате</span>
-                                        </div>
-                                        <div class="order_count">
-                                            <span>2 товара на <span class="price">9 999 999 <span class="rub">руб.</span></span></span>
-                                            <div class="link_block">
-                                                <button class="button_favourites" data-balloon="Favourites" data-balloon-pos="down" type="button">
-                                                    <i class="icon-heart"></i>
-                                                </button>
-                                                <a class="button_more_info" href="#">Подробнее<i class="icon-arrow-right"></i></a>
-                                                <a href="#" data-balloon-pos="down" class="pay not_available">Оплатить</a>
+                                <div class="order_item">
+                                    <div class="item_container">
+                                        <div class="photo_col">
+                                            <div class="section_content">
+                                                <img src="images/content/image01.jpg" alt="">
                                             </div>
                                         </div>
+                                        <div class="name_col">
+                                            <div class="section_content">
+                                                <div class="top_title">
+                                                    <span class="item_title">Мебель для ванной Roca Nord 80 белая</span>
+                                                    <span class="sub_title">Набор</span>
+                                                </div>
+                                                <div class="set_container">
+                                                    <ul class="set_list">
+                                                        <li>Мебель для ванной Roca Nord 80 белая</li>
+                                                        <li>Мебель для ванной Roca Nord 80 белая, Roca Nord 80 белая, Roca Nord 80 белая, Roca Nord 80 белая</li>
+                                                        <li>Мебель для ванной Roca Nord 80 белая</li>
+                                                        <li>Мебель для ванной Roca Nord 80 белая</li>
+                                                        <li>Мебель для ванной Roca Nord 80 белая</li>
+                                                        <li>Мебель для ванной Roca Nord 80 белая</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price_col">
+                                            <span>999 999 <span class="rub">руб.</span></span>
+                                        </div>
+                                        <div class="quantity_col">
+                                            <span>1 упак.</span>
+                                        </div>
+                                        <div class="total-price_col">
+                                            <div class="old_price">1000 <span class="rub">руб.</span></div>
+                                            <span>9 999 999 <span class="rub">руб.</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox_item" id="checkbox_2">
+                                        <label for="checkbox_2">Интерисует установка этого товара (от 500<span class="rub">руб.</span>)</label>
+                                        <a class="more_btn" href="#">Подробнее</a>
                                     </div>
                                 </div>
-                                <div class="order_box">
-                                    <div class="box_container">
-                                        <div class="order_heading">
-                                            <span class="left_item"><span class="num">Заказ №12345678</span> от <span class="date">25.10.07</span></span>
-                                            <span class="status">Завершён</span>
+                                <div class="order_item">
+                                    <div class="item_container">
+                                        <div class="photo_col">
+                                            <div class="section_content">
+                                                <img src="images/content/image01.jpg" alt="">
+                                            </div>
                                         </div>
-                                        <div class="order_count">
-                                            <span>2 товара на <span class="price">9 999 999 <span class="rub">руб.</span></span></span>
-                                            <div class="link_block">
-                                                <button class="button_favourites" data-balloon="Favourites" data-balloon-pos="down" type="button">
-                                                    <i class="icon-heart"></i>
-                                                </button>
-                                                <a class="button_more_info" href="#">Подробнее<i class="icon-arrow-right"></i></a>
-                                                <a href="#" data-balloon-pos="down" class="pay completed">Оплатить</a>
+                                        <div class="tile_col">
+                                            <div class="section_content">
+                                                <div class="top_title">
+                                                    <span class="item_title">Мебель для ванной Roca Nord 80 белая</span>
+                                                    <span class="sub_title">Набор</span>
+                                                </div>
+                                                <div class="set_container">
+                                                    <div class="tile_item">
+                                                        <div class="description_block">
+                                                            <div class="small_img">
+                                                                <img src="images/content/item5.jpg" alt="">
+                                                            </div>
+                                                            <span class="tile_name">Набор плитки Kerama Marazzi, плитки Kerama Marazzi</span>
+                                                        </div>
+                                                        <div class="price_col">
+                                                            <span>99 999<span class="rub">руб.</span></span>
+                                                        </div>
+                                                        <div class="quantity_col">
+                                                            <span>2 упак.</span>
+                                                        </div>
+                                                        <div class="total-price_col">
+                                                            <span>9 999<span class="rub">руб.</span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile_item">
+                                                        <div class="description_block">
+                                                            <div class="small_img">
+                                                                <img src="images/content/banner-small-1.jpg" alt="">
+                                                            </div>
+                                                            <span class="tile_name">Набор плитки Kerama Marazzi</span>
+                                                        </div>
+                                                        <div class="price_col">
+                                                            <span>999 999 <span class="rub">руб.</span></span>
+                                                        </div>
+                                                        <div class="quantity_col">
+                                                            <span>2 упак.</span>
+                                                        </div>
+                                                        <div class="total-price_col">
+                                                            <span>9 999 999 <span class="rub">руб.</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <ul class="paginator">
-                                <li class="paginator_link_page prev"><a href="#"><span class="desc">В начало</span></a></li>
-                                <li class="paginator_link_page"><a href="#">5</a></li>
-                                <li class="paginator_link_page"><a href="#">6</a></li>
-                                <li class="paginator_link_page"><a href="#">7</a></li>
-                                <li class="paginator_link_page active_pag_page"><a href="#">8</a></li>
-                                <li class="paginator_link_page"><a href="#">9</a></li>
-                                <li class="paginator_link_page"><a href="#">10</a></li>
-                                <li class="paginator_link_page"><a href="#">11</a></li>
-                                <li class="paginator_link_page next"><a href="#"><span class="desc">Дальше →</span></a></li>
-                            </ul>
+                            <div class="final_price_bottom">
+                                <span class="discount"><span class="left">Скидка с заказа:</span> <span class="right">800<span class="rub">руб.</span><span class="percent">(-1%)</span></span></span>
+                                <span class="final_price"><span class="left">Итого:</span> <span class="right">100 000<span class="rub">руб.</span></span></span>
+                            </div>
+                            <div class="bottom_pay_section">
+                                <button class="pay">Оплатить</button>
+                            </div>
                         </div>
+                    </div>
+                    <div class="orders_nav_buttons">
+                        <a class="prev" href="#">Предыдущий заказ</a>
+                        <a class="next" href="#">Следующий заказ</a>
                     </div>
                 </div>
             </div>
