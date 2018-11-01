@@ -126,6 +126,7 @@ $(document).ready(function() {
     linksUnav();
     mobileTabs();
     filter();
+    orgButton();
 });
 
 $(window).resize(function() {
@@ -269,4 +270,14 @@ function filter() {
         ctx.putImageData(imgPixels, 0, 0, 0, 0, imgPixels.width, imgPixels.height);
         return canvas.toDataURL();
     }
+}
+
+function orgButton() {
+    $('.profile_form .checkbox_item').on('change', function() {
+        if ($(this).prop('checked')) {
+            $(".organization_group").fadeIn(0);
+        } else {
+            $(".organization_group").fadeOut(0);
+        }
+    });
 }
