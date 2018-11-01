@@ -1700,6 +1700,13 @@
 }
 
 @media screen and (max-width: 576px) {
+    .profile_form .form-group:last-child #save {
+        width: 100%;
+    }
+    .profile_form .organization_group a {
+        display: block;
+        text-align: center;
+    }
     .profile-page_content {
         padding: 20px;
     }
