@@ -1103,24 +1103,23 @@
   background: #fff;
   padding: 10px 20px; }
 
-#modal-form .modal_heading {
-  background-color: #fafafa;
-  padding: 18px 30px;
-  border-bottom: none; }
-
-#modal-form .modal_note {
-  background-color: #fff;
-  padding: 10px 30px;
-  border-bottom: 1px solid #e5e5e5; }
-
-#modal-form .modal_title {
-  font-weight: bold;
-  color: #1e0602;
-  font-size: 20px; }
-
-#modal-form .nano {
-  max-height: -webkit-calc(100vh - 250px);
-  max-height: calc(100vh - 250px); }
+#modal-form {
+  overflow: hidden; }
+  #modal-form .modal_heading {
+    background-color: #fafafa;
+    padding: 18px 30px;
+    border-bottom: none; }
+  #modal-form .modal_note {
+    background-color: #fff;
+    padding: 10px 30px;
+    border-bottom: 1px solid #e5e5e5; }
+  #modal-form .modal_title {
+    font-weight: bold;
+    color: #1e0602;
+    font-size: 20px; }
+  #modal-form .nano {
+    max-height: -webkit-calc(100vh - 250px);
+    max-height: calc(100vh - 250px); }
 
 .profile_form {
   width: 100%;
