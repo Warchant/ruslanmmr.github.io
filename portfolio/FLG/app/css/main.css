@@ -1,0 +1,226 @@
+.shadow a {
+  -webkit-box-shadow: 0px 0px 16px -1px #7a7a7a;
+          box-shadow: 0px 0px 16px -1px #7a7a7a; }
+
+.main-page-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0 30px 0; }
+
+.tile1 {
+  background-color: #ff7d7d; }
+
+.tile2 {
+  background-color: #e78d23; }
+
+.tile3 {
+  background-color: #a8a3a3; }
+
+.tile4 {
+  background-color: #027cb5; }
+
+.tile5 {
+  background-color: #a81818; }
+
+.tile6 {
+  background-color: #0d7483; }
+
+.tile7 {
+  background-color: #913737; }
+
+.tile8 {
+  background-color: #1c488a; }
+
+.tile9 {
+  background-color: #9b1b8d; }
+
+.tile10 {
+  background-color: #2c9242; }
+
+.tile11 {
+  background-color: #2e3653; }
+
+.page-container {
+  margin: -7px 0;
+  width: 100%; }
+
+.tile_type_1,
+.tile_type_3 {
+  width: 25%;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .tile_type_1 .block_content,
+  .tile_type_3 .block_content {
+    position: relative; }
+    .tile_type_1 .block_content:before,
+    .tile_type_3 .block_content:before {
+      content: '';
+      display: block;
+      padding-top: 100%; }
+    .tile_type_1 .block_content a,
+    .tile_type_3 .block_content a {
+      position: absolute;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 100%;
+      height: 100%;
+      top: 0; }
+      .tile_type_1 .block_content a img,
+      .tile_type_3 .block_content a img {
+        height: 30%;
+        width: auto; }
+      .tile_type_1 .block_content a .title,
+      .tile_type_3 .block_content a .title {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1.8em;
+        position: absolute;
+        bottom: 7px;
+        left: 10px; }
+
+.tile_type_2 {
+  width: 50%;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .tile_type_2 .block_content {
+    position: relative; }
+    .tile_type_2 .block_content:before {
+      content: '';
+      display: block;
+      padding-top: 100%; }
+    .tile_type_2 .block_content a {
+      position: absolute;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 100%;
+      height: 100%;
+      top: 0; }
+      .tile_type_2 .block_content a .title {
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        display: block;
+        font-size: 1.8em;
+        position: absolute;
+        bottom: 7px;
+        left: 0;
+        width: 100%; }
+
+.tile_type_3 {
+  width: 100%;
+  height: 50%; }
+  .tile_type_3 .block_content {
+    height: 100%; }
+  .tile_type_3 .block_content:before {
+    display: none; }
+
+.parent_container {
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.block_slider {
+  width: 75%;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .block_slider .slider_container {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+  .block_slider a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .block_slider a img {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+
+@media screen and (max-width: 1280px) {
+  .tile_type_1 {
+    width: 33.333%; }
+    .tile_type_1:nth-child(1), .tile_type_1:nth-child(2), .tile_type_1:nth-child(3), .tile_type_1:nth-child(4) {
+      width: 25%; }
+  .parent_container {
+    width: 50%; }
+  .block_slider {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .block_slider .slider_container {
+      position: relative;
+      height: 100%;
+      width: 100%; }
+      .block_slider .slider_container:before {
+        content: '';
+        display: block;
+        padding-top: 25%; }
+      .block_slider .slider_container a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0; } }
+
+@media screen and (max-width: 992px) {
+  .tile_type_1:nth-child(1), .tile_type_1:nth-child(2), .tile_type_1:nth-child(3), .tile_type_1:nth-child(4) {
+    width: 50%; }
+  .tile_type_1:nth-child(6) .block_content a .title, .tile_type_1:nth-child(7) .block_content a .title, .tile_type_1:nth-child(8) .block_content a .title, .tile_type_1:nth-child(9) .block_content a .title, .tile_type_1:nth-child(10) .block_content a .title {
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 768px) {
+  .main-page-content {
+    display: block; }
+  .block_slider {
+    width: 66.666%; }
+  .tile_type_1:nth-child(1), .tile_type_1:nth-child(2), .tile_type_1:nth-child(3), .tile_type_1:nth-child(4) {
+    width: 33.333%; } }
+
+@media screen and (max-width: 576px) {
+  .block_slider {
+    width: 100%; }
+    .block_slider .slider_container:before {
+      padding-top: 50%; }
+  .tile_type_1:nth-child(1), .tile_type_1:nth-child(2), .tile_type_1:nth-child(3), .tile_type_1:nth-child(4) {
+    width: 50%; }
+    .tile_type_1:nth-child(1) .block_content a .title, .tile_type_1:nth-child(2) .block_content a .title, .tile_type_1:nth-child(3) .block_content a .title, .tile_type_1:nth-child(4) .block_content a .title {
+      font-size: 1.6rem; }
+  .tile_type_1:nth-child(6), .tile_type_1:nth-child(7), .tile_type_1:nth-child(8) {
+    width: 50%; }
+  .tile_type_1:nth-child(10) {
+    width: 100%; }
+    .tile_type_1:nth-child(10) .tile_type_2 {
+      width: 25%; }
+  .tile_type_1:nth-child(9) .block_content a .title, .tile_type_1:nth-child(10) .block_content a .title {
+    font-size: 1.1rem; } }
