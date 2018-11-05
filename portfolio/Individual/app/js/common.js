@@ -18,7 +18,7 @@ function resizeNav() {
 }
 
 function Nav() {
-  if ($(document).height() < 550) {
+  if ($("body").height() < 550) {
     $(".nav_mobile").css('overflow-y', 'scroll');
   } else {
     $(".nav_mobile").css('overflow-y', 'visible');
@@ -30,6 +30,6 @@ function openNav() {
     event.preventDefault();
     $(".nav-btn a").toggleClass("a_active");
     $(".nav_mobile").toggleClass("nav_active");
-    $("body").toggleClass("wrapper_active");
+    $("body").toggleClass("body_fixed");
   });
 }
