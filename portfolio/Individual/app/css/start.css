@@ -60,7 +60,8 @@
     color: #fff;
     font: 2.7em "BebasNeueBook";
     letter-spacing: 2px;
-    text-align: center; }
+    text-align: center;
+    white-space: nowrap; }
     .place_block span.adress span {
       font-family: "BebasNeueRegular"; }
       .place_block span.adress span .num {
