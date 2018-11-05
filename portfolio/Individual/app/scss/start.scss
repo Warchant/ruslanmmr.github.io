@@ -1,0 +1,138 @@
+.start-page_container {
+    height: 100%;
+}
+.start-page_content {
+	height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.main_slogan {
+	color: #be9863;
+	font: 5em "BebasNeueRegular";
+	bottom: 15px;
+	letter-spacing: 0.5em;
+	margin-left: 0.5em;
+	text-align: center;
+	white-space: nowrap;
+	padding-bottom: 10px;
+}
+.left-info_block {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.place_block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 25px;
+	&:last-child {
+     margin: 0;
+	}
+	span.top_city {
+    color: #dbb981;
+    font: 2.7em "BebasNeueBold";
+    letter-spacing: 1px;
+    background: linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	}
+	span.adress {
+		color: #fff;
+		font: 2.7em "BebasNeueBook";
+		letter-spacing: 2px;
+		text-align: center;
+		span {
+			font-family: "BebasNeueRegular";
+			.num {
+				font-size: 1.3em;
+				line-height: 1em;
+			}
+		}
+	}
+	a.number {
+		color: #dbb981;
+    font: 2.7em "BebasNeueBold";
+    letter-spacing: 3px;
+    text-decoration: none;
+    background: linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	}
+	span.insta {
+		color: #dbb981;
+    font: 2.1em "RobotoRegular";
+    display: flex;
+    line-height: 100%;
+    background: linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:before {
+    	content: '';
+    	margin-top: 0.1em;
+    	margin-right: 10px;
+    	height: 20px;
+    	width: 20px;
+    	background: url(../img/inst_item.png) no-repeat;
+    	background-size: contain;
+    }
+	}
+}
+.slogan {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	height: 45%;
+	transform: translateY(-50%);
+	img {
+		height: 100%;
+		width: auto;
+	}
+}
+
+
+@media screen and (max-width: 1479px) {
+	.place_block {
+		font-size: 7px;
+	}
+	.main_slogan {
+		font-size: 4rem;
+	}
+	.place_block span.insta:before {
+	  	height: 15px;
+	  	width: 15px;
+	  	margin-right: 7px;
+	  	margin-top: 0px;
+	  }
+}
+
+@media screen and (max-width: 1200px) {
+	.main_slogan {
+	  	font-size: 3rem;
+	  }
+}
+
+@media screen and (max-width: 992px) {
+	.main_slogan {
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 576px) {
+	.main_slogan {
+		font-size: 2rem;
+		letter-spacing: 0.4em;
+	}
+	.slogan {
+		display: none;
+	}
+	.left-info_block {
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
