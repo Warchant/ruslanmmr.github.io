@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 $(window).resize(function() {
   resizeNav();
-  //Nav();
+  Nav();
 });
 
 function resizeNav() {
@@ -18,7 +18,9 @@ function resizeNav() {
 }
 
 function Nav() {
-  if ($("body").height() < 550) {
+	var height = $(window).height();
+	console.log(height);
+  if (height < 550) {
     $(".nav_mobile").css('overflow-y', 'scroll');
   } else {
     $(".nav_mobile").css('overflow-y', 'visible');
