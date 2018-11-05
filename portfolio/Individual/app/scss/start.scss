@@ -35,9 +35,6 @@
     color: #dbb981;
     font: 2.7em "BebasNeueBold";
     letter-spacing: 1px;
-    background: linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 	}
 	span.adress {
 		color: #fff;
@@ -57,18 +54,12 @@
     font: 2.7em "BebasNeueBold";
     letter-spacing: 3px;
     text-decoration: none;
-    background: linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 	}
 	span.insta {
 		color: #dbb981;
     font: 2.1em "RobotoRegular";
     display: flex;
     line-height: 100%;
-    background: linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     &:before {
     	content: '';
     	margin-top: 0.1em;
@@ -92,7 +83,13 @@
 	}
 }
 
-
+@media screen and (min-width: 1025px) {
+	.place_block span.top_city, .place_block a.number, .place_block span.insta {
+      background: linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	}
+}
 @media screen and (max-width: 1479px) {
 	.place_block {
 		font-size: 7px;

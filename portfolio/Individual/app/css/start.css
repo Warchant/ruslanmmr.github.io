@@ -55,13 +55,7 @@
   .place_block span.top_city {
     color: #dbb981;
     font: 2.7em "BebasNeueBold";
-    letter-spacing: 1px;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #a78449), color-stop(66%, #f1d492), to(#f1d492));
-    background: -webkit-linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
-    background: -o-linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
-    background: linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    letter-spacing: 1px; }
   .place_block span.adress {
     color: #fff;
     font: 2.7em "BebasNeueBook";
@@ -76,13 +70,7 @@
     color: #dbb981;
     font: 2.7em "BebasNeueBold";
     letter-spacing: 3px;
-    text-decoration: none;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #a78449), color-stop(66%, #f1d492), to(#f1d492));
-    background: -webkit-linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
-    background: -o-linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
-    background: linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    text-decoration: none; }
   .place_block span.insta {
     color: #dbb981;
     font: 2.1em "RobotoRegular";
@@ -90,13 +78,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    line-height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #a78449), color-stop(66%, #f1d492), to(#f1d492));
-    background: -webkit-linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
-    background: -o-linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
-    background: linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    line-height: 100%; }
     .place_block span.insta:before {
       content: '';
       margin-top: 0.1em;
@@ -118,6 +100,15 @@
   .slogan img {
     height: 100%;
     width: auto; }
+
+@media screen and (min-width: 1025px) {
+  .place_block span.top_city, .place_block a.number, .place_block span.insta {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #a78449), color-stop(66%, #f1d492), to(#f1d492));
+    background: -webkit-linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
+    background: -o-linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
+    background: linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; } }
 
 @media screen and (max-width: 1479px) {
   .place_block {
