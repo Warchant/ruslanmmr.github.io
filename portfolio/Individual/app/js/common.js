@@ -22,17 +22,15 @@ function Nav() {
 	console.log(height);
   if (height < 550) {
     $(".nav_mobile").css('overflow-y', 'scroll');
-    $("header").css('position', 'fixed');
   } else {
     $(".nav_mobile").css('overflow-y', 'visible');
-    $("header").css('position', 'absolute');
   }
 }
 
 function openNav() {
   $('.nav-btn').click(function(event) {
     event.preventDefault();
-    $(".nav-btn a").toggleClass("a_active");
+    $(".nav-btn").toggleClass("nav_btn_active");
     $(".nav_mobile").toggleClass("nav_active");
     $("body").toggleClass("body_fixed");
   });
