@@ -22,12 +22,17 @@ body {
 .nav-btn {
     display: none;
     position: fixed;
-    right: 15px;
-    top: 22px;
+    right: 0;
+    top: 5px;
+    width: 60px;
+    height: 60px;
     z-index: 5;
     a {
         display: block;
-        position: relative;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         height: 25px;
         width: 30px;
         box-sizing: border-box;
@@ -100,7 +105,7 @@ body {
 }
 
 header {
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	z-index: 3;
 	background-color: #000;
