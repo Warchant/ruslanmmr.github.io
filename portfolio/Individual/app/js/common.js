@@ -22,8 +22,12 @@ function Nav() {
 	console.log(height);
   if (height < 550) {
     $(".nav_mobile").css('overflow-y', 'scroll');
+    $("header").css('position', 'fixed');
+    $(".nav-btn").css('position', 'fixed');
   } else {
     $(".nav_mobile").css('overflow-y', 'visible');
+    $("header").css('position', 'absolute');
+    $(".nav-btn").css('position', 'absolute');
   }
 }
 
