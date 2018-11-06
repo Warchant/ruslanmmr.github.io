@@ -58,11 +58,15 @@ body {
   min-width: 320px;
   min-height: 550px; }
 
-.body_fixed {
-  width: 100%;
-  position: fixed; }
+.pages {
+  height: 100%; }
 
-*, *:before, *:after {
+.body_fixed {
+  width: 100%; }
+
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
@@ -200,7 +204,8 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-    header .main_nav .left_section, header .main_nav .right_section {
+    header .main_nav .left_section,
+    header .main_nav .right_section {
       width: 50%; }
     header .main_nav .right_section {
       padding-left: 180px; }
@@ -336,7 +341,8 @@ header {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-    .nav_mobile .main_nav .right_section, .nav_mobile .main_nav .left_section {
+    .nav_mobile .main_nav .right_section,
+    .nav_mobile .main_nav .left_section {
       width: 100%; }
     .nav_mobile .main_nav ul {
       list-style: none;
@@ -391,6 +397,10 @@ header {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0); }
+
+.active_link {
+  color: #a78449 !important;
+  cursor: default !important; }
 
 @media screen and (min-width: 1025px) {
   header .social_block a {
@@ -451,6 +461,8 @@ header {
     max-width: 576px; }
   .desc {
     padding-top: 70px; }
+  header .lang_block a {
+    font-size: 3.2rem; }
   header .container {
     max-width: 100%; }
   .nav-btn {

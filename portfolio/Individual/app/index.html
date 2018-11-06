@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/libs.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/start.css">
+  <link rel="stylesheet" href="css/gallery.css">
 </head>
 
 <body>
@@ -18,29 +19,29 @@
     <div class="nav_mobile">
     </div>
     <div class="nav-btn">
-        <a href="#"><span></span></a>
+      <a href="#"><span></span></a>
     </div>
     <header>
       <div class="container">
-      	<div class="header-content">
-      		<div class="center_logo">
-      			<a href="#"><img src="img/main-logo.png" alt=""></a>
-      		</div>
-      		<div class="nav_content">
+        <div class="header-content">
+          <div class="center_logo">
+            <a class="active_link link4 trigger" href="#"><img src="img/main-logo.png" alt=""></a>
+          </div>
+          <div class="nav_content">
             <!--Главное меню-->
             <nav class="main_nav">
               <div class="left_section">
                 <ul class="nav_section">
-                  <li><a href="#">барбершопы</a></li>
-                  <li><a href="#">услуги</a></li>
-                  <li><a href="#">галерея</a></li>
+                  <li class="link"><a class="link1 trigger" href="#">барбершопы</a></li>
+                  <li class="link"><a class="link2 trigger" href="#">услуги</a></li>
+                  <li class="link"><a class="link3 trigger" href="#">галерея</a></li>
                 </ul>
               </div>
               <div class="right_section">
                 <ul class="nav_section">
-                  <li><a href="#">косметика</a></li>
-                  <li><a href="#">звезды</a></li>
-                  <li><a href="#">контакты</a></li>
+                  <li class="link"><a class="link5 trigger" href="#">косметика</a></li>
+                  <li class="link"><a class="link6 trigger" href="#">звезды</a></li>
+                  <li class="link"><a class="link7 trigger" href="#">контакты</a></li>
                 </ul>
               </div>
             </nav>
@@ -54,48 +55,130 @@
               </ul>
             </div>
           </div>
-      		<!--Язык-->
-      		<div class="lang_block">
-      			<a class="ru active_lang" href="#">ru</a>
-      		  <a class="eng" href="#">eng</a>
+          <!--Язык-->
+          <div class="lang_block">
+            <a class="ru active_lang" href="#">ru</a>
+            <a class="eng" href="#">eng</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="pages">
+      <div class="start-page desc">
+        <div class="container">
+          <div class="start-page_content">
+            <div class="info_block">
+              <div class="place_block">
+                <span class="top_city">Москва</span>
+                <span class="adress">ул. Новый Арбат, 36, стр. 3</span>
+                <a class="number" href="tel:79265451444">+7 (926) 5451 444</a>
+                <span class="insta">topgun_individual</span>
+              </div>
+              <div class="place_block">
+                <span class="top_city">барвиха</span>
+                <span class="adress">Рублево-Успенское ш., 85/1 <br> ТЦ <span>Dream House <span class="num">3</span></span> этаж</span>
+                <a class="number" href="tel:79259045444">+7 (925) 9045 444</a>
+                <span class="insta">topgun_individual_barvikha</span>
+              </div>
+              <div class="place_block">
+                <span class="top_city">Санкт-Петербург</span>
+                <span class="adress">ул. Спортивная, д.2</span>
+                <a class="number" href="tel:+79112219444">+7 (911) 221 94 44</a>
+                <span class="insta">topgun_spb_individual</span>
+              </div>
+            </div>
+            <span class="slogan"><img src="img/slogan.png" alt=""></span>
+            <span class="main_slogan">исключительно моё</span>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-page desc">
+      	<div class="gallery-page_content">
+      		<div class="gallery-slider_container">
+      			 <div class="slider_content">
+      			 	<div class="gallery-slider">
+      			 		<div class="slide">
+                  <span class="bg"></span>
+      			 			<img src="img/slide1.jpg" alt="">
+      			 		</div>
+      			 		<div class="slide">
+                  <span class="bg"></span>
+      			 			<img src="img/slide2.jpg" alt="">
+      			 		</div>
+      			 		<div class="slide">
+                  <span class="bg"></span>
+      			 			<img src="img/slide3.jpg" alt="">
+      			 		</div>
+      			 		<div class="slide">
+                  <span class="bg"></span>
+      			 			<img src="img/slide4.jpg" alt="">
+      			 		</div>
+      			 		<div class="slide">
+                  <span class="bg"></span>
+      			 			<img src="img/slide5.jpg" alt="">
+      			 		</div>
+      			 		<div class="slide">
+                  <span class="bg"></span>
+      			 			<img src="img/slide6.png" alt="">
+      			 		</div>
+      			 		<div class="slide">
+                  <span class="bg"></span>
+      			 			<img src="img/slide7.jpg" alt="">
+      			 		</div>
+      			 		<div class="slide">
+                  <span class="bg"></span>
+      			 			<img src="img/slide8.jpg" alt="">
+      			 		</div>
+      			 		<div class="slide">
+                  <span class="bg"></span>
+      			 			<img src="img/slide9.jpg" alt="">
+      			 		</div>
+      			 	</div>
+      			 </div>
+      		</div>
+      		<div class="gallery_navigation">
+      			<div class="slider_container">
+      				<div class="nav-slider">
+      				<div class="slide_item">
+      					<img src="img/as_nav_img1.jpg" alt="img1">
+      				</div>
+      				<div class="slide_item">
+      					<img src="img/as_nav_img2.jpg" alt="img1">
+      				</div>
+      				<div class="slide_item">
+      					<img src="img/as_nav_img3.jpg" alt="img1">
+      				</div>
+      				<div class="slide_item">
+      					<img src="img/as_nav_img4.jpg" alt="img1">
+      				</div>
+      				<div class="slide_item">
+      					<img src="img/as_nav_img5.jpg" alt="img1">
+      				</div>
+      				<div class="slide_item">
+      					<img src="img/as_nav_img6.jpg" alt="img1">
+      				</div>
+      				<div class="slide_item">
+      					<img src="img/as_nav_img7.jpg" alt="img1">
+      				</div>
+      				<div class="slide_item">
+      					<img src="img/as_nav_img8.jpg" alt="img1">
+      				</div>
+      				<div class="slide_item">
+      					<img src="img/as_nav_img9.jpg" alt="img1">
+      				</div>
+      			</div>
+      			</div>
       		</div>
       	</div>
       </div>
-    </header>
-    <div class="start-page desc">
-    			<div class="container">
-    				<div class="start-page_content">
-    					<div class="left-info_block">
-    						<div class="place_block">
-    							<span class="top_city">Москва</span>
-    							<span class="adress">ул. Новый Арбат, 36, стр. 3</span>
-    							<a class="number" href="tel:79265451444">+7 (926) 5451 444</a>
-    							<span class="insta">topgun_individual</span>
-    						</div>
-    						<div class="place_block">
-    							<span class="top_city">барвиха</span>
-    							<span class="adress">Рублево-Успенское ш., 85/1 <br> ТЦ <span>Dream House <span class="num">3</span></span> этаж</span>
-    							<a class="number" href="tel:79259045444">+7 (925) 9045 444</a>
-    							<span class="insta">topgun_individual_barvikha</span>
-    						</div>
-    						<div class="place_block">
-    							<span class="top_city">Санкт-Петербург</span>
-    							<span class="adress">ул. Спортивная, д.2</span>
-    							<a class="number" href="tel:+79112219444">+7 (911) 221 94 44</a>
-    							<span class="insta">topgun_spb_individual</span>
-    						</div>
-    					</div>
-    					<span class="slogan"><img src="img/slogan.png" alt=""></span>
-    					<span class="main_slogan">исключительно моё</span>
-    				</div>
-    			</div>
     </div>
     <div class="backgrounds">
-    	<span class="start_bg"></span>
+      <span class="bg_page start_bg"></span>
     </div>
   </div>
   <!--Sripts-->
   <script src="libs/jquery/dist/jquery.min.js"></script>
+  <script src="libs/slick-1.8.1/slick/slick.min.js"></script>
   <script src="js/common.js"></script>
 </body>
 

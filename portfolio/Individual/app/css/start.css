@@ -28,12 +28,21 @@
   white-space: nowrap;
   padding-bottom: 10px; }
 
-.left-info_block {
+.info_block {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%); }
+  .info_block:before {
+    content: '';
+    display: block;
+    height: 70px;
+    width: 50px;
+    background: url(../img/main-info-item.png) no-repeat;
+    -webkit-background-size: contain;
+            background-size: contain;
+    margin: 0 auto; }
 
 .place_block {
   display: -webkit-box;
@@ -136,7 +145,7 @@
     letter-spacing: 0.4em; }
   .slogan {
     display: none; }
-  .left-info_block {
+  .info_block {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
