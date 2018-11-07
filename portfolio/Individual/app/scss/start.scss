@@ -29,8 +29,8 @@
 	&:before {
 		content: '';
 		display: block;
-		height: 70px;
-		width: 50px;
+		height: 60px;
+		width: 40px;
 		background: url(../img/main-info-item.png) no-repeat;
 		background-size: contain;
 		margin: 0 auto;
@@ -74,10 +74,14 @@
     font: 2.1em "RobotoRegular";
     display: flex;
     line-height: 100%;
+    position: relative;
+    padding-left: 30px;
     &:before {
     	content: '';
-    	margin-top: 0.1em;
-    	margin-right: 10px;
+    	position: absolute;
+    	left: 0;
+    	top: 50%;
+    	transform: translateY(-50%);
     	height: 20px;
     	width: 20px;
     	background: url(../img/inst_item.png) no-repeat;
@@ -109,20 +113,24 @@
 		font-size: 7px;
 	}
 	.main_slogan {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 	.place_block span.insta:before {
-	  	height: 15px;
-	  	width: 15px;
-	  	margin-right: 7px;
-	  	margin-top: 0px;
-	  }
+		height: 15px;
+		width: 15px;
+	}
+	.place_block span.insta {
+		padding-left: 20px;
+	}
 }
 
 @media screen and (max-width: 1200px) {
 	.main_slogan {
 	  	font-size: 3rem;
 	  }
+	  .start-page_content .info_block {
+		padding-bottom: 50px;
+	}
 }
 
 @media screen and (max-width: 992px) {
@@ -142,7 +150,7 @@
 	.slogan {
 		display: none;
 	}
-	.info_block {
+	.start-page .info_block {
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}

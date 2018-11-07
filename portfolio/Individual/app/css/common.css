@@ -51,18 +51,20 @@ html {
           box-sizing: border-box;
   font-size: 10px;
   height: 100%;
-  background-color: #000; }
+  background-color: #000;
+  min-height: 850px; }
 
 body {
   height: 100%;
   min-width: 320px;
-  min-height: 550px; }
+  min-height: 850px; }
 
 .pages {
   height: 100%; }
 
 .body_fixed {
-  width: 100%; }
+  width: 100%;
+  overflow: hidden !important; }
 
 *,
 *:before,
@@ -151,8 +153,7 @@ body {
 
 #wrapper {
   height: 100%;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
 
 .container {
   max-width: 1480px;
@@ -302,8 +303,18 @@ header {
   z-index: 1; }
   .backgrounds .start_bg {
     display: block;
+    position: absolute;
+    width: 100%;
     height: 100%;
     background: url(../img/start.bg) no-repeat center top;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .backgrounds .barber_bg {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/barber_page.jpg) no-repeat center top;
     -webkit-background-size: cover;
             background-size: cover; }
 
@@ -415,6 +426,8 @@ header {
     padding: 50px 0; } }
 
 @media screen and (max-width: 1479px) {
+  html, body {
+    min-height: 550px; }
   .container {
     max-width: 1140px; }
   .desc {

@@ -1,11 +1,22 @@
 $(document).ready(function() {
   resizeNav();
   Nav();
-  openNav();
   navigation();
+  if ($(window).width() < 768) {
+    openNav();
+  }
 });
 
 $(window).resize(function() {
+  if ($(window).height() > 550) {
+    $("html, body").css('min-height', "100%");
+  }
+  if ($(window).width() > 576) {
+    HeightInfo();
+  }
+  if ($(window).width() < 768) {
+    openNav();
+  }
   resizeNav();
   Nav();
   imgResize();
@@ -21,16 +32,21 @@ function resizeNav() {
 }
 
 function Nav() {
+  var content_height = $(document).height();
   var height = $(window).height();
-  console.log(height);
-  if (height < 550) {
+  var width = $(window).width();
+  if (content_height > height) {
     $(".nav_mobile").css('overflow-y', 'scroll');
-    $("header").css('position', 'fixed');
-    $(".nav-btn").css('position', 'fixed');
+    $("header, .nav-btn, .backgrounds").css('position', 'fixed');
+    $("html, body").css({ 'overflow-y': "visible", 'min-height': content_height });
   } else {
+    if (width > 1479) {
+      $("html, body").css({ 'min-height': "800px", 'overflow': "hidden" });
+    } else {
+      $("html, body").css({ 'min-height': "550px", 'overflow': "hidden" });
+    }
     $(".nav_mobile").css('overflow-y', 'visible');
-    $("header").css('position', 'absolute');
-    $(".nav-btn").css('position', 'absolute');
+    $("header, .nav-btn, .backgrounds").css('position', 'absolute');
   }
 }
 
@@ -106,17 +122,18 @@ function navigation() {
   $('.trigger').click(function(event) {
     event.preventDefault();
     if ($(this).parent().hasClass("link")) {
+      $("html, body").css('min-height', "550px");
       $('.trigger').removeClass("active_link");
       $('.trigger').parent().addClass("link");
       $('.desc').hide();
+      $('.bg_page').fadeOut(300);
       $(this).addClass("active_link");
       $(this).parent().removeClass("link");
+      setTimeout(function() { Nav(); }, 500);
       if ($(this).hasClass("link4")) {
-        $('.bg_page').hide();
         $('.start-page').fadeIn(1000);
-        $('.start_bg').fadeIn(200);
+        $('.start_bg').fadeIn(300);
       } else if ($(this).hasClass("link3")) {
-        $('.bg_page').hide();
         $('.gallery-page').fadeIn(1000);
         imgResize();
         if (init == false) {
@@ -125,7 +142,26 @@ function navigation() {
         }
         $('.nav-slider').slick("setPosition");
         $('.gallery-slider').slick("setPosition");
+      } else if ($(this).hasClass("link1")) {
+        $('.barber_bg').fadeIn(300);
+        $('.barbershops-page').fadeIn(1000);
+        $(".barbershops_container .place_block").css('height', 'auto');
+        if ($(window).width() > 576) {
+          HeightInfo();
+        }
       }
     }
   });
 }
+var mh = 0;
+
+function HeightInfo() {
+  $(".barbershops_container .place_block").css('height', 'auto');
+  $(".barbershops_container .place_block").each(function() {
+    var h_block = parseInt($(this).height());
+    if (h_block > mh) {
+      mh = h_block;
+    };
+  });
+  $(".barbershops_container .place_block").height(mh);
+};
