@@ -37,7 +37,8 @@ function Nav() {
   var width = $(window).width();
   if (content_height > height) {
     $(".nav_mobile").css('overflow-y', 'scroll');
-    $("header, .nav-btn").css('position', 'fixed');
+    $("header, .nav-btn, .backgrounds").css('position', 'fixed');
+    $(".backgrounds").css('height', '100vh');
     $("html, body").css({ 'min-height': content_height });
   } else {
     if (width > 1479) {
@@ -45,6 +46,7 @@ function Nav() {
     } else {
       $("html, body").css({ 'min-height': "550px" });
     }
+    $(".backgrounds").css('height', '100%');
     $(".nav_mobile").css('overflow-y', 'visible');
     $("header, .nav-btn, .backgrounds").css('position', 'absolute');
   }
