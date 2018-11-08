@@ -41,9 +41,9 @@ function Nav() {
     $("html, body").css({ 'overflow-y': "visible", 'min-height': content_height });
   } else {
     if (width > 1479) {
-      $("html, body").css({ 'min-height': "800px", 'overflow': "hidden" });
+      $("html, body").css({ 'min-height': "800px", 'overflow-y': "hidden" });
     } else {
-      $("html, body").css({ 'min-height': "550px", 'overflow': "hidden" });
+      $("html, body").css({ 'min-height': "550px", 'overflow-y': "hidden" });
     }
     $(".nav_mobile").css('overflow-y', 'visible');
     $("header, .nav-btn, .backgrounds").css('position', 'absolute');
