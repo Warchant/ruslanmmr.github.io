@@ -3,6 +3,7 @@
 
 .start-page_content {
   height: 100%;
+  min-height: 500px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;

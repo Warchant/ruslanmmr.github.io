@@ -51,13 +51,11 @@ html {
           box-sizing: border-box;
   font-size: 10px;
   height: 100%;
-  background-color: #000;
-  min-height: 850px; }
+  background-color: #000; }
 
 body {
   height: 100%;
-  min-width: 320px;
-  min-height: 850px; }
+  min-width: 320px; }
 
 .pages {
   height: 100%; }
@@ -295,6 +293,9 @@ header {
     margin: 0;
     padding: 0; }
 
+.scroll_block {
+  height: 100%; }
+
 .backgrounds {
   position: absolute;
   width: 100%;
@@ -450,8 +451,6 @@ header {
     padding: 50px 0; } }
 
 @media screen and (max-width: 1479px) {
-  html, body {
-    min-height: 550px; }
   .container {
     max-width: 1140px; }
   .desc {
