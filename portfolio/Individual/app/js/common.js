@@ -183,6 +183,7 @@ function navigation() {
       } else if ($(this).hasClass("link6")) {
         $('.stars_bg').fadeIn(300);
         $('.stars-page').fadeIn(1000);
+        $("html, body").css({ 'min-height': "100%" });
         scroll();
         //setTimeout(function() { Nav(); }, 100);
       }
