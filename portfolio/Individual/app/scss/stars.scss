@@ -1,0 +1,60 @@
+.stars-page {
+	display: none;
+	.scroll_container {
+		height: 100%;
+	}
+	.stars-page_content {
+		height: 100%;
+	}
+	.stars_container {
+		padding: 20px 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.star_block {
+		padding: 5px;
+		width: 14.285%;
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.name, .about {
+			color: #d6ad6f;
+			display: block;
+			text-align: center;
+			font: 1.6rem "BebasNeueRegular";
+			letter-spacing: .1em;	
+		}
+    .about {
+    	font-size: 1.4rem;
+    	letter-spacing: 0;
+    }
+	}
+}
+
+@media screen and (max-width: 1479px) {
+	.stars-page .star_block {
+		width: 16.66%;
+	}
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {
+	.stars-page .star_block {
+		width: 20%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.stars-page .star_block {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.stars-page .star_block {
+		width: 50%;
+	}
+}

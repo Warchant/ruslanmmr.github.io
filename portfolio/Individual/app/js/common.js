@@ -2,7 +2,7 @@ $(document).ready(function() {
   resizeNav();
   navigation();
   openNav();
-  Nav();
+  //Nav();
 });
 
 $(window).resize(function() {
@@ -15,6 +15,7 @@ $(window).resize(function() {
   resizeNav();
   Nav();
   imgResize();
+  heightContainer();
 });
 var init = false;
 
@@ -24,6 +25,13 @@ function resizeNav() {
   } else {
     $('.nav_content').insertAfter('.center_logo');
   }
+}
+
+function scroll() {
+   $(".scroll_container").niceScroll({
+      cursorcolor: " #d6ad6f ",
+      cursorborder: "1px solid #d6ad6f"
+    });
 }
 
 function heightContainer() {
@@ -155,6 +163,14 @@ function navigation() {
         if ($(window).width() > 576) {
           HeightInfo();
         }
+      } else if ($(this).hasClass("link7")) {
+        $('.barber_bg').fadeIn(300);
+        $('.barbershops-page').fadeIn(1000);
+        setTimeout(function() { Nav(); }, 100);
+        $(".barbershops_container .place_block").css('height', 'auto');
+        if ($(window).width() > 576) {
+          HeightInfo();
+        }
       } else if ($(this).hasClass("link2")) {
         $('.services_bg').fadeIn(300);
         $('.services-page').fadeIn(1000);
@@ -164,6 +180,11 @@ function navigation() {
         $('.cosmetics-page').fadeIn(1000);
         heightContainer();
         setTimeout(function() { Nav(); }, 100);
+      } else if ($(this).hasClass("link6")) {
+        $('.stars_bg').fadeIn(300);
+        $('.stars-page').fadeIn(1000);
+        scroll();
+        //setTimeout(function() { Nav(); }, 100);
       }
     }
   });
