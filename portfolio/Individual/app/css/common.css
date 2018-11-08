@@ -57,7 +57,9 @@ html {
 body {
   height: 100%;
   min-width: 320px;
-  min-height: 850px; }
+  min-height: 850px;
+  overflow: hidden;
+  overflow-y: scroll; }
 
 .pages {
   height: 100%; }
