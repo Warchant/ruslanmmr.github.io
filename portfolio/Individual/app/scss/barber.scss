@@ -114,6 +114,14 @@
 	}
 }
 @media screen and (max-width: 576px) {
+  .barber_bg::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+  }
 	.barbershops_container {
 		padding-bottom: 50px;
 	}

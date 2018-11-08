@@ -26,6 +26,11 @@ function resizeNav() {
   }
 }
 
+function heightContainer() {
+  var child = $(".child_container").height();
+  $(".parent_container").css({ 'min-height': child });
+}
+
 function Nav() {
   var content_height = $(document).height();
   var height = $(window).height();
@@ -92,8 +97,8 @@ function gallery() {
         breakpoint: 576,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
+          slidesToScroll: 1,
+          infinite: false,
           centerMode: false
         }
       }
@@ -157,6 +162,7 @@ function navigation() {
       } else if ($(this).hasClass("link5")) {
         $('.cosmetics_bg').fadeIn(300);
         $('.cosmetics-page').fadeIn(1000);
+        heightContainer();
         setTimeout(function() { Nav(); }, 100);
       }
     }
