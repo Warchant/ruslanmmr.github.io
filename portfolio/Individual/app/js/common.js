@@ -131,12 +131,13 @@ function navigation() {
       $('.bg_page').fadeOut(300);
       $(this).addClass("active_link");
       $(this).parent().removeClass("link");
-      setTimeout(function() { Nav(); }, 500);
       if ($(this).hasClass("link4")) {
         $('.start-page').fadeIn(1000);
         $('.start_bg').fadeIn(300);
+        setTimeout(function() { Nav(); }, 100);
       } else if ($(this).hasClass("link3")) {
         $('.gallery-page').fadeIn(1000);
+        setTimeout(function() { Nav(); }, 100);
         imgResize();
         if (init == false) {
           gallery();
@@ -147,6 +148,7 @@ function navigation() {
       } else if ($(this).hasClass("link1")) {
         $('.barber_bg').fadeIn(300);
         $('.barbershops-page').fadeIn(1000);
+        setTimeout(function() { Nav(); }, 100);
         $(".barbershops_container .place_block").css('height', 'auto');
         if ($(window).width() > 576) {
           HeightInfo();
