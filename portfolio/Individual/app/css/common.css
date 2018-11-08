@@ -325,6 +325,14 @@ header {
     background: url(../img/barber_page.jpg) no-repeat center top;
     -webkit-background-size: cover;
             background-size: cover; }
+  .backgrounds .cosmetics_bg {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/cosmetics_page.jpg) no-repeat center bottom;
+    -webkit-background-size: cover;
+            background-size: cover; }
 
 .nav_mobile {
   -webkit-transform: translateX(-100%);

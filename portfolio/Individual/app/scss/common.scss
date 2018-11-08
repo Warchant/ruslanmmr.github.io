@@ -250,6 +250,7 @@ header {
   z-index: 1;
   .start_bg {
     display: block;
+    //display: none;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -270,6 +271,14 @@ header {
     width: 100%;
     height: 100%;
     background: url(../img/barber_page.jpg) no-repeat center top;
+    background-size: cover;
+  }
+  .cosmetics_bg {
+  	display: none;
+  	position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/cosmetics_page.jpg) no-repeat center bottom;
     background-size: cover;
   }
 }

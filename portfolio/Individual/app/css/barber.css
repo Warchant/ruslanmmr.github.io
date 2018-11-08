@@ -1,5 +1,17 @@
 .barbershops-page {
   display: none; }
+  .barbershops-page .title {
+    color: #fff;
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    display: block;
+    text-align: center;
+    font: 4rem "BebasNeueBook";
+    letter-spacing: 0.4em;
+    padding-left: 0.4em;
+    padding-top: 20px;
+    padding-bottom: 20px; }
 
 .barbershops-page_content {
   height: 100%;
@@ -15,19 +27,6 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
-
-.title {
-  color: #fff;
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
-          align-self: flex-start;
-  display: block;
-  text-align: center;
-  font: 4rem "BebasNeueBook";
-  letter-spacing: 0.4em;
-  padding-left: 0.4em;
-  padding-top: 20px;
-  padding-bottom: 20px; }
 
 .barbershops_container {
   display: -webkit-box;

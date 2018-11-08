@@ -1,8 +1,8 @@
 $(document).ready(function() {
   resizeNav();
-  Nav();
   navigation();
   openNav();
+  Nav();
 });
 
 $(window).resize(function() {
@@ -121,11 +121,11 @@ function navigation() {
   $('.trigger').click(function(event) {
     event.preventDefault();
     if ($(this).parent().hasClass("link")) {
+      $('.desc').hide();
+      $('.bg_page').hide();
       $("html, body").css('min-height', "550px");
       $('.trigger').removeClass("active_link");
       $('.trigger').parent().addClass("link");
-      $('.desc').hide();
-      $('.bg_page').fadeOut(300);
       $(this).addClass("active_link");
       $(this).parent().removeClass("link");
       if ($(this).hasClass("link4")) {
@@ -153,6 +153,10 @@ function navigation() {
       } else if ($(this).hasClass("link2")) {
         $('.services_bg').fadeIn(300);
         $('.services-page').fadeIn(1000);
+        setTimeout(function() { Nav(); }, 100);
+      } else if ($(this).hasClass("link5")) {
+        $('.cosmetics_bg').fadeIn(300);
+        $('.cosmetics-page').fadeIn(1000);
         setTimeout(function() { Nav(); }, 100);
       }
     }
