@@ -1,0 +1,119 @@
+.services-page {
+	display: none;
+	.page_title {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		position: relative;
+		z-index: 2;
+		img {
+			width: 300px;
+			height: auto;
+			padding-top: 30px;
+		}
+	}
+	.services-page_content {
+		height: 100%;
+		padding-top: 20px;
+		position: relative;
+	}
+	.page_content {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		padding-top:30px;
+		padding-bottom: 30px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.section_left, .section_right {
+    width: 400px;
+	}
+	.section_left {
+		.txt {
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-start;
+			img {
+				width: 80%;
+				height: auto;
+				margin-top: 10%;
+			}
+		}
+	}
+	.section_right {
+		.txt {
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			img {
+				width: 80%;
+				height: auto;
+				margin-top: 10%;
+			}
+		}
+	}
+	.top_img {
+		border: 5px solid #edc873;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+@media screen and (max-width: 1479px) {
+  .services-page .page_title img {
+  	width: 250px;
+  	padding-top: 10px;
+  }
+
+  .services-page .section_left, .services-page .section_right {
+  	width: 280px;
+  }
+}
+@media screen and (max-width: 992px) {
+	.main_slogan {
+		font-size: 2.5rem;
+	}
+	.services-page .page_content {
+		position: relative;
+	}
+	.services-page .services-page_content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.services-page .section_left, .services-page .section_right {
+		width: 100%;
+	}
+	.services-page .page_title img {
+		padding-bottom: 30px;
+	}
+	.services-page .section_left .txt img, .services-page .section_right .txt img {
+		width: 50%;
+		margin-top: 25px;
+	}
+	.services-page .section_left {
+		margin-bottom: 40px;
+	}
+	.services-page {
+		background: rgba(0, 0, 0, 0.5);
+	}
+}
+
+@media screen and (max-width: 480px) {
+   .services-page .page_title img {
+   	width: 200px;
+   }
+   .services-page .section_left .txt img, .services-page .section_right .txt img {
+   	width: 70%;
+   }
+   .services-page .page_title img {
+   	padding-bottom: 20px;
+   }
+}
