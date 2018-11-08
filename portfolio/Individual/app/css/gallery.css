@@ -1,5 +1,6 @@
 .gallery-page {
-  display: none; }
+  display: none;
+  overflow: hidden; }
 
 .gallery-page_content {
   height: 100%;

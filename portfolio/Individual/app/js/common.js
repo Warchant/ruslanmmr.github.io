@@ -38,7 +38,7 @@ function Nav() {
   if (content_height > height) {
     $(".nav_mobile").css('overflow-y', 'scroll');
     $("header, .nav-btn, .backgrounds").css('position', 'fixed');
-    $("html, body").css({ 'overflow-y': "visible", 'min-height': content_height });
+    $("html, body").css({ 'min-height': content_height });
   } else {
     if (width > 1479) {
       $("html, body").css({ 'min-height': "800px" });
