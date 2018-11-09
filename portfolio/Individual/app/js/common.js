@@ -2,7 +2,9 @@ $(document).ready(function() {
   resizeNav();
   navigation();
   openNav();
-  scroll4();
+  if ($(window).height() < 550) {
+    scroll4();
+  }
 });
 
 $(window).resize(function() {
@@ -12,6 +14,9 @@ $(window).resize(function() {
   resizeNav();
   imgResize();
   heightContainer();
+  if ($(window).height() < 550) {
+    scroll4();
+  }
 });
 var init = false;
 
@@ -24,34 +29,43 @@ function resizeNav() {
 }
 
 function scroll6() {
-   $(".stars-page .scroll_block").niceScroll({
-      cursorcolor: " #d6ad6f ",
-      cursorborder: "1px solid #d6ad6f"
-    });
+  $(".stars-page .scroll_block").niceScroll({
+    cursorcolor: " #d6ad6f ",
+    cursorwidth: "3px",
+    cursorborder: "1px solid #d6ad6f"
+  });
 }
+
 function scroll1() {
-   $(".barbershops-page .scroll_block").niceScroll({
-      cursorcolor: " #d6ad6f ",
-      cursorborder: "1px solid #d6ad6f"
-    });
+  $(".barbershops-page .scroll_block").niceScroll({
+    cursorcolor: " #d6ad6f ",
+    cursorwidth: "3px",
+    cursorborder: "1px solid #d6ad6f"
+  });
 }
+
 function scroll2() {
-   $(".services-page .scroll_block").niceScroll({
-      cursorcolor: " #d6ad6f ",
-      cursorborder: "1px solid #d6ad6f"
-    });
+  $(".services-page .scroll_block").niceScroll({
+    cursorcolor: " #d6ad6f ",
+    cursorwidth: "3px",
+    cursorborder: "1px solid #d6ad6f"
+  });
 }
+
 function scroll4() {
-   $(".start-page .scroll_block").niceScroll({
-      cursorcolor: " #d6ad6f ",
-      cursorborder: "1px solid #d6ad6f"
-    });
+  $(".start-page .scroll_block").niceScroll({
+    cursorcolor: " #d6ad6f ",
+    cursorwidth: "3px",
+    cursorborder: "1px solid #d6ad6f"
+  });
 }
+
 function scroll5() {
-   $(".cosmetics-page .scroll_block").niceScroll({
-      cursorcolor: " #d6ad6f ",
-      cursorborder: "1px solid #d6ad6f"
-    });
+  $(".cosmetics-page .scroll_block").niceScroll({
+    cursorcolor: " #d6ad6f ",
+    cursorwidth: "3px",
+    cursorborder: "1px solid #d6ad6f"
+  });
 }
 
 
@@ -144,6 +158,9 @@ function navigation() {
       if ($(this).hasClass("link4")) {
         $('.start-page').fadeIn(1000);
         $('.start_bg').fadeIn(300);
+        if ($(window).height() < 550) {
+          scroll4();
+        }
       } else if ($(this).hasClass("link3")) {
         $('.gallery-page').fadeIn(1000);
         imgResize();

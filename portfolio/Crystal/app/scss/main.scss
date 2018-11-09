@@ -1,8 +1,3 @@
-.main-page {
-    position: relative;
-    z-index: 1;
-}
-
 .content_slider, .job_slider_container {
     .arrow_left-stock,
     .arrow_right-stock,
@@ -172,7 +167,6 @@
 }
 
 .top_banner {
-    margin-top: 75px;
     .container {
         position: relative;
     }
@@ -335,96 +329,6 @@
         &:before {
             background: url(../img/icons/link5.png);
             background-size: contain;
-        }
-    }
-}
-
-.more_crystal {
-    display: flex;
-    justify-content: center;
-    margin: 35px 0;
-    margin-right: 20px;
-    position: relative;
-    z-index: 2;
-    a {
-        font: 1.8em "SupermolotLight";
-        letter-spacing: 0.2em;
-        text-decoration: none;
-        color: #959595;
-        position: relative;
-        text-transform: uppercase;
-        border-bottom: 1px solid #959595;
-        &:after {
-            content: '';
-            height: 24px;
-            position: absolute;
-            right: -3px;
-            top: 0;
-            transform: translateX(100%);
-            width: 24px;
-            display: block;
-            background: url(../img/icons/title_copy.png) no-repeat;
-            background-size: contain;
-        }
-    }
-}
-
-.map {
-    .map_container {
-        margin: 10px 0;
-        padding: 0 130px;
-        position: relative;
-        &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            height: 430px;
-            width: 300px;
-            right: 0;
-            top: 50%;
-            transform: translate(100%, -50%);
-            background: url(../img/bg_item1.png) no-repeat;
-            background-size: contain;
-        }
-        .map {
-            height: 380px;
-            position: relative;
-            &:before,
-            &:after {
-                content: '';
-                display: block;
-                height: 75px;
-                width: 75px;
-                position: absolute;
-                background-color: #ff0089;
-            }
-            &:before {
-                left: -2px;
-                bottom: -2px;
-            }
-            &:after {
-                right: -3px;
-                top: -3px;
-            }
-        }
-        .decoration {
-            display: block;
-            width: 392px;
-            height: 285px;
-            position: absolute;
-            transform: translateX(-100%);
-            left: 77px;
-            top: 15%;
-            z-index: 3;
-            background: url(../img/map_decoration.png) no-repeat;
-            background-size: contain;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            z-index: 2;
-            border: 1px solid #959595;
         }
     }
 }
@@ -1139,9 +1043,6 @@ a.btn {
    .top_banner .logo_banner {
     margin-left: 15px;
    }
-   .top_banner {
-    margin-top: 30px;
-   }
    .links_block a:before {
     width: 25px;
     height: 25px;
@@ -1245,9 +1146,6 @@ a.btn {
     margin: 0;
     width: 100%;
     bottom: 15px;
-   }
-   .top_banner {
-    margin-top: 15px;
    }
    .top_banner .decoration_item3, .top_banner .decoration_item1, .map .map_container .decoration {
     display: none;

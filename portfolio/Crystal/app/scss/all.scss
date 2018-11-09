@@ -21,6 +21,100 @@ ul {
     overflow: hidden;
 }
 
+.map {
+    .map_container {
+        margin: 10px 0;
+        padding: 0 130px;
+        position: relative;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 430px;
+            width: 300px;
+            right: 0;
+            top: 50%;
+            transform: translate(100%, -50%);
+            background: url(../img/bg_item1.png) no-repeat;
+            background-size: contain;
+        }
+        .map {
+            height: 380px;
+            position: relative;
+            &:before,
+            &:after {
+                content: '';
+                display: block;
+                height: 75px;
+                width: 75px;
+                position: absolute;
+                background-color: #ff0089;
+            }
+            &:before {
+                left: -2px;
+                bottom: -2px;
+            }
+            &:after {
+                right: -3px;
+                top: -3px;
+            }
+        }
+        .decoration {
+            display: block;
+            width: 392px;
+            height: 285px;
+            position: absolute;
+            transform: translateX(-100%);
+            left: 77px;
+            top: 15%;
+            z-index: 3;
+            background: url(../img/map_decoration.png) no-repeat;
+            background-size: contain;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 2;
+            border: 1px solid #959595;
+        }
+    }
+}
+.more_crystal {
+    display: flex;
+    justify-content: center;
+    margin: 35px 0;
+    margin-right: 20px;
+    position: relative;
+    z-index: 2;
+    a {
+        font: 1.8em "SupermolotLight";
+        letter-spacing: 0.2em;
+        text-decoration: none;
+        color: #959595;
+        position: relative;
+        text-transform: uppercase;
+        border-bottom: 1px solid #959595;
+        &:after {
+            content: '';
+            height: 24px;
+            position: absolute;
+            right: -3px;
+            top: 0;
+            transform: translateX(100%);
+            width: 24px;
+            display: block;
+            background: url(../img/icons/title_copy.png) no-repeat;
+            background-size: contain;
+        }
+    }
+}
+.main-page {
+    position: relative;
+    z-index: 1;
+    padding: 75px 0;
+}
+
 .socials_block {
         position: absolute;
         right: 15px;
@@ -139,7 +233,6 @@ header {
 }
 
 footer {
-    margin-top: 100px;
     .right_section {
         width: 40%;
         display: flex;
@@ -371,6 +464,21 @@ footer {
     }
 }
 
+
+@media screen and (min-width: 1025px) {
+    .links_block a:hover,
+    .crystal_labs .arrow_right:hover,
+    .crystal_labs .arrow_left:hover,
+    .arrow_right_brands:hover,
+    .arrow_left_brands:hover {
+        opacity: 1;
+    }
+    .more_crystal a:hover,
+    .btn:hover {
+        color: #000 !important;
+    }
+}
+
 @media screen and (max-width: 1230px) {
    header .header_title {
     display: none;
@@ -438,6 +546,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .main-page {
+        padding: 30px 0;
+    }
    header a.main_logo img {
     width: 120px;
     height: auto;
@@ -456,9 +567,6 @@ footer {
    }
    footer .left_section:after {
         letter-spacing: 1em;
-    }
-    footer {
-        margin-top: 60px;
     }
     footer .left_section {
         width: 50%;
@@ -486,6 +594,9 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+    .main-page {
+        padding-top: 20px;
+    }
     footer .left_section {
         width: 100%;
     }

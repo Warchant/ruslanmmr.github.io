@@ -15,12 +15,11 @@
 .main_slogan {
 	color: #be9863;
 	font: 5em "BebasNeueRegular";
-	bottom: 15px;
 	letter-spacing: 0.5em;
 	margin-left: 0.5em;
 	text-align: center;
 	white-space: nowrap;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 .info_block {
 	position: absolute;
@@ -140,6 +139,9 @@
 }
 
 @media screen and (max-width: 767px) {
+	.main_slogan {
+
+	}
 }
 
 @media screen and (max-width: 576px) {

@@ -1,0 +1,32 @@
+
+.map {
+	.sub_txt {
+		position: absolute;
+    display: block;
+    bottom: 0;
+    transform: translateY(100%);
+    color: #ef3e80;
+    font: 5em "SupermolotThin";
+    z-index: 1;
+    line-height: 0.6em;
+    padding-left: 71px;
+	}
+	.more_crystal {
+		margin: 0;
+		justify-content: flex-end;
+		padding-right: 27px;
+		margin-top: 4px;
+	}
+}
+
+
+@media screen and (max-width: 992px) {
+    .map .map_container {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 576px) {
+	.map .map_container .decoration {
+		display: none;
+	}
+}

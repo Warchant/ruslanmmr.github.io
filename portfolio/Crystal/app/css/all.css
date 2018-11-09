@@ -18,6 +18,102 @@ ul {
 #wrapper {
   overflow: hidden; }
 
+.map .map_container {
+  margin: 10px 0;
+  padding: 0 130px;
+  position: relative; }
+  .map .map_container:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 430px;
+    width: 300px;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(100%, -50%);
+        -ms-transform: translate(100%, -50%);
+            transform: translate(100%, -50%);
+    background: url(../img/bg_item1.png) no-repeat;
+    -webkit-background-size: contain;
+            background-size: contain; }
+  .map .map_container .map {
+    height: 380px;
+    position: relative; }
+    .map .map_container .map:before, .map .map_container .map:after {
+      content: '';
+      display: block;
+      height: 75px;
+      width: 75px;
+      position: absolute;
+      background-color: #ff0089; }
+    .map .map_container .map:before {
+      left: -2px;
+      bottom: -2px; }
+    .map .map_container .map:after {
+      right: -3px;
+      top: -3px; }
+  .map .map_container .decoration {
+    display: block;
+    width: 392px;
+    height: 285px;
+    position: absolute;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+    left: 77px;
+    top: 15%;
+    z-index: 3;
+    background: url(../img/map_decoration.png) no-repeat;
+    -webkit-background-size: contain;
+            background-size: contain; }
+  .map .map_container iframe {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    border: 1px solid #959595; }
+
+.more_crystal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 35px 0;
+  margin-right: 20px;
+  position: relative;
+  z-index: 2; }
+  .more_crystal a {
+    font: 1.8em "SupermolotLight";
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    color: #959595;
+    position: relative;
+    text-transform: uppercase;
+    border-bottom: 1px solid #959595; }
+    .more_crystal a:after {
+      content: '';
+      height: 24px;
+      position: absolute;
+      right: -3px;
+      top: 0;
+      -webkit-transform: translateX(100%);
+          -ms-transform: translateX(100%);
+              transform: translateX(100%);
+      width: 24px;
+      display: block;
+      background: url(../img/icons/title_copy.png) no-repeat;
+      -webkit-background-size: contain;
+              background-size: contain; }
+
+.main-page {
+  position: relative;
+  z-index: 1;
+  padding: 75px 0; }
+
 .socials_block {
   position: absolute;
   right: 15px;
@@ -130,125 +226,130 @@ header {
       width: 185px;
       height: 100px; }
 
-footer {
-  margin-top: 100px; }
-  footer .right_section {
-    width: 40%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-top: 40px; }
-    footer .right_section .tel_number {
-      font: 2.2em "SupermolotThin";
-      text-decoration: none;
-      color: #212529;
-      line-height: 70%; }
-    footer .right_section .socials_block {
-      position: relative;
-      right: 0;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      margin-top: 20px; }
-    footer .right_section .mobile {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      height: 40px; }
-      footer .right_section .mobile a {
-        height: 100%; }
-        footer .right_section .mobile a:first-child {
-          margin-right: 10px; }
-      footer .right_section .mobile img {
-        height: 100%;
-        width: auto;
-        display: block; }
-  footer .footer_content {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    border-top: 2px solid #949494;
-    padding: 25px 0; }
-  footer .footer_logo {
-    display: block;
-    width: 100%; }
-    footer .footer_logo img {
-      width: 100%;
-      height: auto; }
-  footer .left_section {
-    padding-right: 40px;
-    width: 37%;
-    position: relative; }
-    footer .left_section:after {
-      content: 'ЛАБОРАТОРИЯ УЛЫБОК';
-      position: absolute;
-      white-space: nowrap;
-      -webkit-transform: translateX(100%);
-          -ms-transform: translateX(100%);
-              transform: translateX(100%);
-      right: 35%;
-      top: 3px;
-      letter-spacing: 2.5em;
-      margin-right: -1.5em;
-      color: #ff028a;
-      font: 1em "SupermolotRegular"; }
-  footer .copy {
-    color: #959595;
-    display: inline-block;
-    text-transform: uppercase;
-    font: 1.8em "SupermolotLight";
+footer .right_section {
+  width: 40%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 40px; }
+  footer .right_section .tel_number {
+    font: 2.2em "SupermolotThin";
+    text-decoration: none;
+    color: #212529;
+    line-height: 70%; }
+  footer .right_section .socials_block {
+    position: relative;
+    right: 0;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 20px; }
-    footer .copy span {
-      font-size: 12px;
-      text-transform: lowercase; }
-  footer .center_section {
-    width: 23%;
-    padding-right: 40px;
+  footer .right_section .mobile {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-top: 40px; }
-  footer .nav_left,
-  footer .nav_right {
-    padding-top: 10px;
-    position: relative; }
-    footer .nav_left:before,
-    footer .nav_right:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      display: block;
-      width: 70%;
-      height: 2px;
-      background-color: #949494; }
-  footer .nav_left li,
-  footer .nav_right li {
-    padding: 4px 0; }
-    footer .nav_left li a,
-    footer .nav_right li a {
-      color: #8e8e8e;
-      line-height: 100%;
-      white-space: nowrap;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      font: 1.2em "SupermolotLight";
-      text-decoration: none !important;
-      -webkit-transition: .3s;
-      -o-transition: .3s;
-      transition: .3s; }
+    height: 40px; }
+    footer .right_section .mobile a {
+      height: 100%; }
+      footer .right_section .mobile a:first-child {
+        margin-right: 10px; }
+    footer .right_section .mobile img {
+      height: 100%;
+      width: auto;
+      display: block; }
+
+footer .footer_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 2px solid #949494;
+  padding: 25px 0; }
+
+footer .footer_logo {
+  display: block;
+  width: 100%; }
+  footer .footer_logo img {
+    width: 100%;
+    height: auto; }
+
+footer .left_section {
+  padding-right: 40px;
+  width: 37%;
+  position: relative; }
+  footer .left_section:after {
+    content: 'ЛАБОРАТОРИЯ УЛЫБОК';
+    position: absolute;
+    white-space: nowrap;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    right: 35%;
+    top: 3px;
+    letter-spacing: 2.5em;
+    margin-right: -1.5em;
+    color: #ff028a;
+    font: 1em "SupermolotRegular"; }
+
+footer .copy {
+  color: #959595;
+  display: inline-block;
+  text-transform: uppercase;
+  font: 1.8em "SupermolotLight";
+  margin-top: 20px; }
+  footer .copy span {
+    font-size: 12px;
+    text-transform: lowercase; }
+
+footer .center_section {
+  width: 23%;
+  padding-right: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 40px; }
+
+footer .nav_left,
+footer .nav_right {
+  padding-top: 10px;
+  position: relative; }
+  footer .nav_left:before,
+  footer .nav_right:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 70%;
+    height: 2px;
+    background-color: #949494; }
+
+footer .nav_left li,
+footer .nav_right li {
+  padding: 4px 0; }
+  footer .nav_left li a,
+  footer .nav_right li a {
+    color: #8e8e8e;
+    line-height: 100%;
+    white-space: nowrap;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font: 1.2em "SupermolotLight";
+    text-decoration: none !important;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
 
 .sub {
   position: fixed;
@@ -368,6 +469,17 @@ footer {
   .nav-btn a:hover span, .nav-btn a:hover:after, .nav-btn a:hover:before {
     background-color: #000; } }
 
+@media screen and (min-width: 1025px) {
+  .links_block a:hover,
+  .crystal_labs .arrow_right:hover,
+  .crystal_labs .arrow_left:hover,
+  .arrow_right_brands:hover,
+  .arrow_left_brands:hover {
+    opacity: 1; }
+  .more_crystal a:hover,
+  .btn:hover {
+    color: #000 !important; } }
+
 @media screen and (max-width: 1230px) {
   header .header_title {
     display: none; }
@@ -420,6 +532,8 @@ footer {
     display: block; } }
 
 @media screen and (max-width: 768px) {
+  .main-page {
+    padding: 30px 0; }
   header a.main_logo img {
     width: 120px;
     height: auto; }
@@ -436,8 +550,6 @@ footer {
     height: 16px; }
   footer .left_section:after {
     letter-spacing: 1em; }
-  footer {
-    margin-top: 60px; }
   footer .left_section {
     width: 50%;
     padding: 0; }
@@ -462,6 +574,8 @@ footer {
             flex-wrap: wrap; } }
 
 @media screen and (max-width: 576px) {
+  .main-page {
+    padding-top: 20px; }
   footer .left_section {
     width: 100%; }
   footer .center_section {
