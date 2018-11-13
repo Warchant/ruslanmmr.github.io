@@ -82,6 +82,10 @@
       width: 100%;
       height: auto; }
 
+@media screen and (min-width: 1800px) {
+  .services-page .container {
+    max-width: 1800px; } }
+
 @media screen and (max-width: 1479px) {
   .services-page .page_title img {
     width: 250px;

@@ -1,0 +1,108 @@
+.contacts-page {
+	display: none;
+	.contacts-page_content {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		position: relative;
+	}
+	.footer_txt {
+		width: 100%;
+		padding-bottom: 15px;
+		text-align: center;
+		span {
+			font: 1.8rem "RobotoCondensed";
+			color: #54534e;
+			line-height: 150%;
+			br {
+				display: none;
+			}
+			span {
+				padding-left: 1em;
+			}
+		}
+	}
+	.center_block {
+		font-size: 10px;
+		.mail {
+			padding-top: 2em;
+			color: #fff;
+			font: 2.5em "RobotoCondensed";
+		}
+		.time {
+			font: 3.8em "BebasNeueBook";
+			color: #dbb981;
+			letter-spacing: 0.055em;
+			margin-right: -0.055em;
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+			font: 5em "BebasNeueRegular";
+			letter-spacing: 0.115em;
+			margin-right: -0.115em;
+			margin-top: 0.4em;
+			display: inline-block;
+		}
+		span {
+			display: block;
+			text-align: center;
+			&:first-child {
+				color: #fff;
+				font: 3em "BebasNeueBook";
+				letter-spacing: 0.5em;
+				margin-right: -0.5em;
+			}
+			&:nth-child(2) {
+				color: #fff;
+				font: 3em "BebasNeueBook";
+				letter-spacing: 0.317em;
+				margin-right: -0.317em;
+			}
+			&:nth-child(3) {
+				color: #dbb981;
+				font: 4.5em "BebasNeueRegular";
+				letter-spacing: 0.123em;
+				margin-right: -0.123em;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.contacts-page .center_block span:nth-child(3),
+	.contacts-page .center_block .time {
+      background: linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+	}
+}
+
+@media screen and (max-width: 1479px) {
+	.contacts-page .center_block {
+		font-size: 8px;
+	}
+	.contacts-page .footer_txt span {
+		font-size: 1.4rem;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.contacts-page .footer_txt span br {
+		display: inline-block;
+	}
+	.contacts-page .center_block {
+		font-size: 7px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.contacts-page .center_block {
+		font-size: 7px;
+	}
+	.contacts-page .footer_txt span {
+		font-size: 1.2rem;
+	}
+}

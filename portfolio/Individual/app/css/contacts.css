@@ -1,0 +1,97 @@
+.contacts-page {
+  display: none; }
+  .contacts-page .contacts-page_content {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative; }
+  .contacts-page .footer_txt {
+    width: 100%;
+    padding-bottom: 15px;
+    text-align: center; }
+    .contacts-page .footer_txt span {
+      font: 1.8rem "RobotoCondensed";
+      color: #54534e;
+      line-height: 150%; }
+      .contacts-page .footer_txt span br {
+        display: none; }
+      .contacts-page .footer_txt span span {
+        padding-left: 1em; }
+  .contacts-page .center_block {
+    font-size: 10px; }
+    .contacts-page .center_block .mail {
+      padding-top: 2em;
+      color: #fff;
+      font: 2.5em "RobotoCondensed"; }
+    .contacts-page .center_block .time {
+      font: 3.8em "BebasNeueBook";
+      color: #dbb981;
+      letter-spacing: 0.055em;
+      margin-right: -0.055em; }
+    .contacts-page .center_block a {
+      color: #fff;
+      text-decoration: none;
+      font: 5em "BebasNeueRegular";
+      letter-spacing: 0.115em;
+      margin-right: -0.115em;
+      margin-top: 0.4em;
+      display: inline-block; }
+    .contacts-page .center_block span {
+      display: block;
+      text-align: center; }
+      .contacts-page .center_block span:first-child {
+        color: #fff;
+        font: 3em "BebasNeueBook";
+        letter-spacing: 0.5em;
+        margin-right: -0.5em; }
+      .contacts-page .center_block span:nth-child(2) {
+        color: #fff;
+        font: 3em "BebasNeueBook";
+        letter-spacing: 0.317em;
+        margin-right: -0.317em; }
+      .contacts-page .center_block span:nth-child(3) {
+        color: #dbb981;
+        font: 4.5em "BebasNeueRegular";
+        letter-spacing: 0.123em;
+        margin-right: -0.123em; }
+
+@media screen and (min-width: 1025px) {
+  .contacts-page .center_block span:nth-child(3),
+  .contacts-page .center_block .time {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #a78449), color-stop(66%, #f1d492), to(#f1d492));
+    background: -webkit-linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
+    background: -o-linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
+    background: linear-gradient(#a78449 33%, #f1d492 66%, #f1d492);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; } }
+
+@media screen and (max-width: 1479px) {
+  .contacts-page .center_block {
+    font-size: 8px; }
+  .contacts-page .footer_txt span {
+    font-size: 1.4rem; } }
+
+@media screen and (max-width: 1200px) {
+  .contacts-page .footer_txt span br {
+    display: inline-block; }
+  .contacts-page .center_block {
+    font-size: 7px; } }
+
+@media screen and (max-width: 576px) {
+  .contacts-page .center_block {
+    font-size: 7px; }
+  .contacts-page .footer_txt span {
+    font-size: 1.2rem; } }

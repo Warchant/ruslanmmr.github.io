@@ -4,6 +4,7 @@ $(document).ready(function() {
     brandsSlider();
     mobileNav();
     stockInit();
+    capitalSlider();
 });
 
 $(window).resize(function() {
@@ -72,7 +73,7 @@ function labsSlider() {
         dots: false,
         arrows: true,
         infinite: true,
-        speed: 300,
+        speed: 600,
         slidesToShow: 3,
         slidesToScroll: 3,
         prevArrow: $('.arrow_left'),
@@ -131,7 +132,34 @@ function stockSlider() {
             }
         ]
     });
-};
+}
+function capitalSlider() {
+    $('.slider_capital').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        prevArrow: $('.crystal-capital .arrow_left'),
+        nextArrow: $('.crystal-capital .arrow_right'),
+         responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+}
 function jobSlider() {
     $('.job_container').slick({
         dots: false,

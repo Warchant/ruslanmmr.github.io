@@ -304,46 +304,35 @@ header {
   height: 100%;
   top: 0;
   z-index: 1; }
+  .backgrounds .bg_page {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover !important;
+            background-size: cover !important; }
   .backgrounds .start_bg {
     display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(../img/start.bg) no-repeat center top;
-    -webkit-background-size: cover;
-            background-size: cover; }
+    background: url(../img/start.bg) no-repeat center top; }
+  .backgrounds .contacts_bg {
+    display: none;
+    background: url(../img/contacts_page.jpg) no-repeat center top;
+    position: relative; }
+    .backgrounds .contacts_bg:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); }
   .backgrounds .stars_bg {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(../img/stars_page.jpg) no-repeat center top;
-    -webkit-background-size: cover;
-            background-size: cover; }
+    background: url(../img/stars_page.jpg) no-repeat center top; }
   .backgrounds .services_bg {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(../img/services_bg.jpg) no-repeat center top;
-    -webkit-background-size: cover;
-            background-size: cover; }
+    background: url(../img/services_bg.jpg) no-repeat center top; }
   .backgrounds .barber_bg {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(../img/barber_page.jpg) no-repeat center top;
-    -webkit-background-size: cover;
-            background-size: cover; }
+    background: url(../img/barber_page.jpg) no-repeat center top; }
   .backgrounds .cosmetics_bg {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(../img/cosmetics_page.jpg) no-repeat center bottom;
-    -webkit-background-size: cover;
-            background-size: cover; }
+    background: url(../img/cosmetics_page.jpg) no-repeat center bottom; }
 
 .nav_mobile {
   -webkit-transform: translateX(-100%);

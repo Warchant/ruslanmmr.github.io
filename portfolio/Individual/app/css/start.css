@@ -137,6 +137,10 @@
   .place_block span.insta {
     padding-left: 20px; } }
 
+@media screen and (min-width: 1800px) {
+  .start-page .container {
+    max-width: 1800px; } }
+
 @media screen and (max-width: 1200px) {
   .main_slogan {
     font-size: 3rem; }
@@ -148,6 +152,8 @@
     font-size: 2.5rem; } }
 
 @media screen and (max-width: 576px) {
+  .start-page_content {
+    min-height: 450px; }
   .start_bg::before {
     content: '';
     position: absolute;

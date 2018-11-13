@@ -39,103 +39,6 @@
     transform: rotate(180deg);
 }
 
-.title_section {
-    display: flex;
-    position: relative;
-    z-index: 3;
-    justify-content: center;
-    .title {
-        font: 4.5em "SupermolotThin";
-        text-transform: uppercase;
-        letter-spacing: 0.6em;
-        padding-left: 0.6em;
-        position: relative;
-        color: #e60075;
-        margin-bottom: 0.65em;
-        span {
-            color: #949494;
-            position: relative;
-            &:after {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 20px;
-                height: 20px;
-                background: url(../img/icons/title_copy.png) no-repeat;
-                background-size: contain;
-            }
-        }
-        &:before,
-        &:after {
-            content: '';
-            display: block;
-            height: 3px;
-            width: 110px;
-            position: absolute;
-            top: 50%;
-            margin-top: -1px;
-        }
-        &:before {
-            background-color: #a2a2a2;
-            left: 0;
-            transform: translateX(-100%);
-        }
-        &:after {
-            background-color: #e60075;
-            right: 0;
-            transform: translateX(100%);
-        }
-    }
-}
-.title_desription {
-    position: relative;
-    z-index: 3;
-    p {
-        text-align: center;
-        color: #939598;
-        font: 1.5em "SupermolotLight";
-        line-height: 130%;
-        margin-bottom: 0.15em;
-        span {
-            position: relative;
-            font-family: "SupermolotRegular";
-            padding-right: 1em;
-            &:after {
-                content: '';
-                display: block;
-                position: absolute;
-                right: 0;
-                top: 0;
-                width: 11px;
-                height: 11px;
-                background: url(../img/icons/title_copy.png) no-repeat;
-                background-size: contain;
-            }
-        }
-    }
-    .post_txt {
-        color: #f11f83;
-        display: block;
-        font-size: 1.5em;
-        text-align: center;
-        letter-spacing: 0.05em;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        &:after {
-            content: '';
-            height: 25px;
-            width: 25px;
-            display: block;
-            background: url(../img/icons/map_item.png) no-repeat;
-            background-size: contain;
-            margin-top: 6px;
-        }
-    }
-}
-
 .slick-dots {
     bottom: 33px;
     z-index: 10;
@@ -267,241 +170,6 @@
             height: auto;
             top: 50%;
             transform: translateY(-50%);
-        }
-    }
-}
-
-.links_block {
-    padding-top: 60px;
-    padding-bottom: 50px;
-    ul {
-        display: flex;
-        justify-content: center;
-    }
-    li {
-        width: 100px;
-        margin: 0 10px;
-    }
-    a {
-        font: 2em "CranberryCyr";
-        text-transform: uppercase;
-        color: #000;
-        white-space: nowrap;
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        opacity: 0.9;
-        &:before {
-            content: '';
-            display: block;
-            margin: 0 auto;
-            width: 40px;
-            height: 40px;
-            margin-bottom: 4px;
-            display: block;
-        }
-    }
-    .link1 {
-        &:before {
-            background: url(../img/icons/link1.png);
-            background-size: contain;
-        }
-    }
-    .link2 {
-        &:before {
-            background: url(../img/icons/link2.png);
-            background-size: contain;
-        }
-    }
-    .link3 {
-        &:before {
-            background: url(../img/icons/link3.png);
-            background-size: contain;
-        }
-    }
-    .link4 {
-        &:before {
-            background: url(../img/icons/link4.png);
-            background-size: contain;
-        }
-    }
-    .link5 {
-        &:before {
-            background: url(../img/icons/link5.png);
-            background-size: contain;
-        }
-    }
-}
-
-.letter_item {
-    margin: 35px 0;
-    display: flex;
-    justify-content: center;
-    &:before {
-        content: '';
-        background: url(../img/bg_item1.png) no-repeat;
-        background-size: contain;
-        height: 70px;
-        width: 50px;
-    }
-}
-
-.crystal_labs {
-    position: relative;
-    padding-bottom: 25px;
-    .decoration_item {
-        display: block;
-        position: absolute;
-        z-index: 1;
-        top: 270px;
-        width: 100%;
-        height: 2px;
-        background-color: #e5e5e5;
-        &:before {
-            content: '';
-            display: block;
-            height: 700px;
-            width: 377px;
-            position: absolute;
-            left: 0;
-            bottom: -165px;
-            background: url(../img/lab_decoration.png) no-repeat;
-            background-size: contain;
-        }
-    }
-    .container {
-        position: relative;
-        z-index: 2;
-    }
-    .labs_container {
-        margin-top: 20px;
-        position: relative;
-        padding: 0 37px;
-    }
-    .slide {
-        width: 33%;
-        padding: 0 10px;
-        outline: none;
-    }
-    .img_block {
-        position: relative;
-        width: 100%;
-        &:before {
-            content: "";
-            display: block;
-            padding-top: 100%;
-        }
-    }
-    .img_container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-    .bottom_section {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-
-    }
-    .slide_link {
-        text-transform: uppercase;
-        font: 1.6em "SupermolotLight";
-        border-bottom: 1px solid #ff028a;
-        color: #ff028a;
-        text-decoration: none;
-        position: relative;
-        margin-bottom: 5px;
-        opacity: 1;
-        &:after {
-            content: '';
-            height: 24px;
-            position: absolute;
-            right: -6px;
-            top: 0;
-            -webkit-transform: translateX(100%);
-            -ms-transform: translateX(100%);
-            transform: translateX(100%);
-            width: 24px;
-            display: block;
-            background: url(../img/icons/link_icon_lab.png) no-repeat;
-            -webkit-background-size: contain;
-            background-size: contain;
-        }
-    }
-    .rating {
-        position: absolute;
-        top: -53px;
-        right: 0;
-        background: rgba(255, 255, 255, 0.8);
-        padding: 5px;
-        .stars {
-            display: block;
-            width: 120px;
-            height: 14px;
-            background: url(../img/labs/rating.png) no-repeat;
-            background-size: contain;
-            margin-bottom: 4px;
-        }
-        .city {
-            text-transform: uppercase;
-            font: 1.2em "SupermolotRegular";
-            text-align: center;
-            display: block;
-            letter-spacing: 0.4em;
-        }
-    }
-    .title_block {
-        display: inline-block;
-        position: relative;
-        margin-bottom: 30px;
-        &:before,
-        &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            height: 30px;
-            width: 20px;
-        }
-        &:before {
-            left: -27px;
-            bottom: -15px;
-            border-bottom: 2px solid #afafaf;
-            border-left: 2px solid #afafaf;
-        }
-        &:after {
-            top: -15px;
-            right: -17px;
-            border-top: 2px solid #afafaf;
-            border-right: 2px solid #afafaf;
-        }
-        .title_block_top {
-            position: relative;
-            z-index: 2;
-            color: #949494;
-            display: block;
-            text-transform: uppercase;
-            letter-spacing: 0.6em;
-            margin-right: -0.6em;
-            font: 1.6em "SupermolotLight";
-            text-align: center;
-        }
-        .title_block_bottom {
-            position: relative;
-            z-index: 2;
-            color: #949494;
-            display: block;
-            text-transform: uppercase;
-            letter-spacing: 0.8em;
-            margin-right: -0.8em;
-            font: 1.8em "SupermolotRegular";
-            text-align: center;
         }
     }
 }
@@ -788,42 +456,6 @@ a.btn {
         }
     }
 
-.competition_crystal {
-    margin-top: 80px;
-    p {
-            font: 2.6em "SupermolotThin";
-            text-transform: uppercase;
-            text-align: center;
-            letter-spacing: 0.8em;
-            margin-right: -0.8em;
-        }
-    .content {
-        display: flex;
-        justify-content: center;
-    }
-    .img_block {
-        width: 60%;
-        position: relative;
-        &:after {
-            content: '';
-            position: absolute;
-            display: block;
-            top: 0;
-            width: 1440px;
-            height: 486px;
-            background: url(../img/competition_bg.png) no-repeat;
-            background-size: contain;
-            left: 50%;
-            transform: translateX(-46%);
-        }
-    }
-    img {
-        width: 100%;
-        height: auto;
-        position: relative;
-        z-index: 2;
-    }
-}
 
 .crystal_life {
     margin-top: 100px;
@@ -875,20 +507,6 @@ a.btn {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    .links_block a:hover,
-    .crystal_labs .arrow_right:hover,
-    .crystal_labs .arrow_left:hover,
-    .arrow_right_brands:hover,
-    .arrow_left_brands:hover {
-        opacity: 1;
-    }
-    .more_crystal a:hover,
-    .btn:hover {
-        color: #000 !important;
-    }
-}
-
 @media screen and (max-width: 1230px) {
     .top_banner .txt {
         font-size: 4em;
@@ -907,13 +525,6 @@ a.btn {
         height: 80%;
         left: 8%;
         top: 0;
-    }
-    .crystal_labs .decoration_item:before,
-    .crystal_labs .decoration_item {
-        display: none;
-    }
-    .crystal_labs .title_block .title_block_bottom {
-        font-size: 1.6em;
     }
     .arrow_right, .arrow_left {
         top: 21%;
@@ -944,32 +555,19 @@ a.btn {
     .top_banner .logo_banner {
         margin-left: 18px;
     }
-    .links_block {
-        padding-top: 50px;
-        a {
-            font-size: 1.6em;
-        }
-    }
-    .title_section .title {
-        font-size: 3.5em;
-    }
-    .title_desription p {
-        font-size: 1.4em;
-    }
     .more_crystal a {
         font-size: 1.8em;
     }
-    .competition_crystal .img_block {
-        width: 100%;
-    }
-    .competition_crystal p {
-        font-size: 2em;
+    .map-section .map_container {
+        padding: 0;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .crystal_life,
-    .competition_crystal {
+    .map-section .map_container .decoration {
+        display: none;
+    }
+    .crystal_life {
         margin-top: 60px;
     }
     .job_container {
@@ -977,12 +575,6 @@ a.btn {
     }
     .job_container .role {
         font-size: 1.6em;
-    }
-    .competition_crystal p {
-        font-size: 1.5em;
-    }
-    .competition_crystal .img_block:after {
-        width: 180%;
     }
     .price .price_container:after {
         display: none;
@@ -1011,22 +603,6 @@ a.btn {
     .sub_title {
         margin-left: 37px;
     }
-    .crystal_labs .title_block .title_block_bottom {
-        font-size: 1.2em;
-    }
-    .crystal_labs .title_block:before {
-        left: -12px;
-    }
-    .crystal_labs .title_block .title_block_top {
-        font-size: 1.2em;
-    }
-    .crystal_labs .slide_link {
-        font-size: 1.2em;
-    }
-    .crystal_labs .slide_link:after {
-        height: 20px;
-        width: 20px;
-    }
     .arrow_right, .arrow_left {
         top: 18%;
     }
@@ -1043,26 +619,6 @@ a.btn {
    .top_banner .logo_banner {
     margin-left: 15px;
    }
-   .links_block a:before {
-    width: 25px;
-    height: 25px;
-   }
-   .links_block li {
-    width: 70px;
-   }
-   .links_block a {
-    font-size: 1.4em;
-   }
-   .title_section .title {
-    font-size: 2.5em;
-   }
-   .title_desription p, .title_desription .post_txt {
-    font-size: 1.2em;
-   }
-   .title_section .title span:after {
-    width: 15px;
-    height: 15px;
-   }
    .brands .post_txt span {
     display: none;
    }
@@ -1075,21 +631,18 @@ a.btn {
 }
 
 @media screen and (max-width: 576px) {
+    .brands .container:after {
+        display: none;
+    }
     .sub_title .txt_block .bottom {
         font-size: 1.6em;
     }
     .sub_title .txt_block .top {
         font-size: 1.4em;
     }
-    .competition_crystal p {
-        font-size: 1.2em;
-    }
     .price .center_price_block .price_block_container:before,
     .price .center_price_block:before {
         display: none;
-    }
-    .crystal_labs .labs_container {
-        margin-top: 10px;
     }
     .price .center_price_block .price_block_container {
         padding: 0%;
@@ -1097,9 +650,6 @@ a.btn {
     .brands {
     padding-bottom: 0;
    }
-    .crystal_labs {
-        padding-bottom: 0;
-    }
     .brands .slider_container:after,
     .brands .slider_container:before {
         display: none;
@@ -1110,17 +660,6 @@ a.btn {
     .more_crystal {
         margin: 20px 0;
     }
-    .letter_item:before {
-        height: 50px;
-        width: 35px;
-    }
-    .letter_item {
-        margin: 20px 0;
-    }
-    .title_section .title span:after {
-    width: 10px;
-    height: 10px;
-   }
    .top_banner .slide .img_block:before {
      padding-top: 100%;
    }
@@ -1160,30 +699,6 @@ a.btn {
     width: 90%;
     top: auto;
     bottom: 20%;
-   }
-   .links_block {
-    padding-top: 65px;
-   }
-   .links_block li {
-    width: 50px;
-    margin: 0 2px;
-   }
-   .links_block a {
-    font-size: 1em;
-   }
-   .links_block ul {
-    justify-content: space-between;
-    padding: 0 15px;
-   }
-   .title_section .title {
-    font-size: 2em;
-    letter-spacing: 0.3em;
-    &:before, &:after {
-        display: none;
-    }
-   }
-   .title_desription p {
-    display: none;
    }
 }
 

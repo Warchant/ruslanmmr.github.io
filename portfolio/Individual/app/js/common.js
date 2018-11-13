@@ -60,6 +60,14 @@ function scroll4() {
   });
 }
 
+function scroll7() {
+  $(".contacts-page .scroll_block").niceScroll({
+    cursorcolor: " #d6ad6f ",
+    cursorwidth: "3px",
+    cursorborder: "1px solid #d6ad6f"
+  });
+}
+
 function scroll5() {
   $(".cosmetics-page .scroll_block").niceScroll({
     cursorcolor: " #d6ad6f ",
@@ -170,7 +178,7 @@ function navigation() {
         }
         $('.nav-slider').slick("setPosition");
         $('.gallery-slider').slick("setPosition");
-      } else if ($(this).hasClass("link1") || $(this).hasClass("link7")) {
+      } else if ($(this).hasClass("link1")) {
         $('.barber_bg').fadeIn(300);
         $('.barbershops-page').fadeIn(1000);
         scroll1();
@@ -182,6 +190,10 @@ function navigation() {
         $('.services_bg').fadeIn(300);
         $('.services-page').fadeIn(1000);
         scroll2();
+      } else if ($(this).hasClass("link7")) {
+        $('.contacts_bg').fadeIn(300);
+        $('.contacts-page').fadeIn(1000);
+        scroll7();
       } else if ($(this).hasClass("link5")) {
         $('.cosmetics_bg').fadeIn(300);
         $('.cosmetics-page').fadeIn(1000);

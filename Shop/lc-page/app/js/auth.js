@@ -127,6 +127,8 @@ $(document).ready(function() {
     mobileTabs();
     filter();
     orgButton();
+    favourites();
+    viewCards();
 });
 
 $(window).resize(function() {
@@ -138,8 +140,60 @@ $(window).resize(function() {
         }, 200);
     }
     transform();
+    $(".description_section").css("height", "auto");
+    hc = 0;
+    setTimeout(function() {
+        HeightCards();
+    }, 200);
 });
 
+
+//кнопка избранное
+function favourites() {
+    $('.favourites').click(function() {
+        var parent = $(this).parents(".block");
+
+        parent.removeClass("active");
+        parent.children(".overlay").fadeIn(300);
+        if ($(window).width() > 576) {
+           parent.find(".more_block").fadeOut(300);
+        }
+    });
+    $('.overlay .remove').click(function() {
+        var parent = $(this).parents(".block");
+        
+        parent.addClass("active");
+        parent.children(".overlay").fadeOut(300);
+        if ($(window).width() > 576) {
+           parent.find(".more_block").fadeIn(300);
+        }
+    });
+}
+var hc = 0;
+function HeightCards() {
+    $(".description_section").each(function() {
+        var h_block = parseInt($(this).height());
+        if (h_block > hc) {
+            hc = h_block;
+        };
+    });
+    $(".description_section").height(hc);
+};
+//переключение вида карточки избранных
+function viewCards() {
+    $('.view-section a').click(function() {
+        $(".view-section a").removeClass("active");
+        $(this).addClass("active")
+        if ( $(this).hasClass("short-var") ) {
+            $(".block_content_short").show();
+            $(".block_content_more").hide();
+        } else {
+            $(".block_content_short").hide();
+            $(".block_content_more").show();
+            HeightCards();
+        }
+    });
+}
 
 function passShow() {
     $('.show_pass').click(function() {
