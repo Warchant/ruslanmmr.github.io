@@ -129,6 +129,7 @@ $(document).ready(function() {
     orgButton();
     favourites();
     viewCards();
+    panelScrollHorizontalModal();
 });
 
 $(window).resize(function() {
@@ -147,6 +148,10 @@ $(window).resize(function() {
     }, 200);
 });
 
+
+function panelScrollHorizontalModal() {
+    $('.modal-mod').jScrollPane();
+};
 
 //кнопка избранное
 function favourites() {

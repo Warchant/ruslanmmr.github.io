@@ -1129,6 +1129,43 @@
   }
 }
 
+.txt_box {
+        overflow: hidden;
+        height: 56px;
+        width: 100%;
+        .title {
+          color: #1e0602;
+          cursor: pointer;
+        }
+      }
+      .txt_box:before {
+        content: "";
+        float: left;
+        width: 5px;
+        height: 100%;
+      }
+      .txt_box>*:first-child {
+        float: right;
+        width: 100%;
+        margin-left: -5px;
+      }
+      .txt_box:after {
+        content: "\02026";
+        color: #1e0602;
+        box-sizing: content-box;
+        float: right;
+        position: relative;
+        top: -20px;
+        left: 100%;
+        width: 3em;
+        margin-left: -43px;
+        padding-right: 5px;
+        text-align: right;
+        background-size: 100% 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+      }
+
+
 .faves-page_container {
   .block_content_more {
     transition: box-shadow .3s;
@@ -1482,41 +1519,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      .txt_box {
-        overflow: hidden;
-        height: 56px;
-        width: 100%;
-        .title {
-          color: #1e0602;
-          cursor: pointer;
-        }
-      }
-      .txt_box:before {
-        content: "";
-        float: left;
-        width: 5px;
-        height: 100%;
-      }
-      .txt_box>*:first-child {
-        float: right;
-        width: 100%;
-        margin-left: -5px;
-      }
-      .txt_box:after {
-        content: "\02026";
-        color: #1e0602;
-        box-sizing: content-box;
-        float: right;
-        position: relative;
-        top: -20px;
-        left: 100%;
-        width: 3em;
-        margin-left: -43px;
-        padding-right: 5px;
-        text-align: right;
-        background-size: 100% 100%;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
-      }
     }
     .photo {
       position: relative;
@@ -1573,6 +1575,109 @@
   border-radius: 3px;
   color: #fff;
   transition: .3s;
+}
+
+.compare-page_container {
+  .tab_pane {
+    margin-right: -1px;
+  }
+  .image_post {
+    height: auto;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+  }
+  .jspVerticalBar {
+    display: none;
+  }
+  .modal-mod,
+  .jspContainer,
+  .jspPane {
+    width: 100% !important;
+  }
+  .heading {
+    padding: 7px 20px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fafafa;
+    margin-bottom: 0;
+    .select2-container {
+      max-width: 280px;
+    }
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      label {
+        white-space: nowrap;
+        margin-right: 7px;
+        color: #585858;
+      }
+    }
+  }
+  .txt_box .title {
+    font-size: 14px;
+    white-space: normal;
+  }
+  .txt_box:after {
+    top: -18px;
+  }
+  .txt_box {
+    max-height: 36px;
+  }
+  .comparison_tools .new_price {
+    overflow: visible;
+  }
+  .button_field {
+    .favourites, .compare {
+      &:first-child {
+        margin-right: 5px;
+      }
+      height: 40px;
+      width: 40px;
+      border-radius: 4px;
+    border: 1px solid #e5e5e5;
+    color: #818181;
+    cursor: pointer;
+    transition: .3s;
+    i {
+      color: #ccc;
+      font-size: 15px;
+    }
+    }
+  }
+  .modal_comparison .jspHorizontalBar {
+    position: absolute;
+    padding: 0;
+  }
+  .modal_comparison {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    .modal_nav .item, .comparison_list .item {
+      &:last-child {
+        border: none;
+      }
+    }
+    .modal_columns .modal_comparison {
+      border: none;
+    }
+    .holder {
+      display: flex;
+      font-size: 14px;
+    }
+    .scroll-pane {
+      overflow: hidden !important;
+    }
+    .comparison_item {
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+  }
+  .modal_comparison .jspCapRight {
+    display: none;
+  }
 }
 
 
@@ -1812,7 +1917,8 @@
   .faves-page_container .issue-container .more_block .compare:hover,
   .faves-page_container .heading .view-section a:hover,
   .faves-page_container .issue-container .more_block .favourites:hover,
-  .faves-page_container .block_content_more .description_section .links_block button:hover {
+  .faves-page_container .block_content_more .description_section .links_block button:hover,
+  .compare-page_container .button_field .favourites:hover, .compare-page_container .button_field .compare:hover {
     border-color: #999999;
     color: #1d1d1d;
 
@@ -1859,7 +1965,8 @@
     opacity: 1;
   }
   .description .txt_box .title:hover,
-  .faves-page_container .block_content_more .description_section .title_link:hover {
+  .faves-page_container .block_content_more .description_section .title_link:hover,
+  .compare-page_container .txt_box .title:hover {
     color: #197ac4;
     text-decoration: underline;
   }
@@ -2201,7 +2308,8 @@
   }
 
   .order .personal,
-  .profile .personal {
+  .profile .personal,
+  .compare .personal {
     display: none;
   }
 
@@ -2273,6 +2381,40 @@
 }
 
 @media screen and (max-width: 576px) {
+  .compare-page_container .heading {
+    margin-bottom: 20px;
+    border: none;
+    padding: 0;
+  }
+  .scroll-pane {
+    margin-left: -1px;
+  }
+  .comparison_item {
+    border-right: none;
+    border-left: 1px solid #e5e5e5;
+  }
+  .compare-page_container .modal_comparison {
+    background-color: transparent;
+    border: none;
+  }
+  .compare-page_container .tab_pane {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    margin-right: 0;
+  }
+  .compare-page_container .heading form label {
+    display: none;
+  }
+  .compare-page_container .heading .select2-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .compare .modal_nav {
+    display: none;
+  }
+  .compare-page_container .modal_comparison .comparison_item {
+    width: 50%;
+  }
   .faves-page_container .description_list li:nth-child(2),
   .faves-page_container .description_list li:nth-child(3),
   .faves-page_container .description_list li:nth-child(4),
