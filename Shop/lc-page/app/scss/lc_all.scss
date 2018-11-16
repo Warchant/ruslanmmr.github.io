@@ -1577,29 +1577,10 @@
 }
 
 .compare-page_container {
-  .tab_pane {
-    margin-right: -1px;
-  }
-  .image_post {
-    height: auto;
-    position: relative;
-    &:before {
-      content: '';
-      display: block;
-      padding-top: 100%;
-    }
-  }
-  .jspVerticalBar {
-    display: none;
-  }
-  .modal-mod,
-  .jspContainer,
-  .jspPane {
-    width: 100% !important;
-  }
   .heading {
     padding: 7px 20px;
-    border-bottom: 1px solid #e5e5e5;
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
     background-color: #fafafa;
     margin-bottom: 0;
     .select2-container {
@@ -1613,6 +1594,158 @@
         white-space: nowrap;
         margin-right: 7px;
         color: #585858;
+      }
+    }
+  }
+  .slick-track {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .compare-header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    transition: .3s;
+    .modal_nav .item:last-child {
+       border-bottom: 1px solid #e5e5e5;
+    }
+  }
+  .comparison_tools .price {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .stick_wrap {
+    transition: .3s;
+  }
+  .slick-dots {
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+  }
+  .tab_pane {
+    position: relative;
+    .arrows {
+      display: none;
+      background: linear-gradient(to right, rgba(255,255,255,1) 36%,rgba(255,255,255,0.92) 54%,rgba(255,255,255,0.84) 74%,rgba(255,255,255,0) 100%);
+      height: 100%;
+      width: 50px;
+      border: none;
+      position: absolute;
+      z-index: 2;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      &:hover:before {
+        opacity: 1;
+      }
+      &:before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 46px;
+        background: url(../images/content/slick-arrows.png) no-repeat;
+        opacity: 0.7;
+        position: absolute;
+        left: 50%;
+        transition-duration: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .left_slide {
+      left: 0;
+    }
+    .right_slide {
+      right: 0;
+      transform: rotate(180deg);
+    }
+  }
+  .compare-content {
+    position: relative;
+    z-index: 1;
+    transition: .3s;
+    .block_comparison {
+       border-top: none;
+    }
+  }
+  .modal_columns {
+    background-color: #fff;
+  }
+  .block_comparison {
+    border: 1px solid #e5e5e5;
+    .comparison_tools {
+      border-bottom: none;
+    }
+    .modal_nav .list_items {
+      border-top: none;
+    }
+  }
+  .fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+    .block_comparison {
+      border-top: none;
+      border-bottom: none;
+    }
+    .modal_columns {
+    }
+    .image_post {
+      &:before {
+        padding-top: 40%;
+      }
+      .stick_wrap {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .image_wrap {
+        padding: 10px;
+      }
+    }
+  }
+  .hidden {
+    transform: translateY(-100%);
+    box-shadow: none;
+  }
+  .modify_pos {
+      padding-top: 246px !important;
+  }
+  .holder-slider {
+    margin-left: -1px;
+  }
+  .modal_nav .item:last-child,
+  .comparison_list .item:last-child {
+      border-bottom: none;
+  }
+  .comparison_item {
+    border-left: 1px solid #e5e5e5;
+    margin-right: -1px;
+    position: relative;
+  }
+  .image_post {
+    height: auto;
+    position: relative;
+    transition: .3s;
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+      transition: .3s;
+    }
+    .image_wrap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      transition: .3s;
+      img {
+        height: 100%;
+        width: auto;
+        margin: 0 auto;
       }
     }
   }
@@ -1647,35 +1780,11 @@
     }
     }
   }
-  .modal_comparison .jspHorizontalBar {
-    position: absolute;
-    padding: 0;
-  }
-  .modal_comparison {
-    background-color: #fff;
-    border: 1px solid #e5e5e5;
-    .modal_nav .item, .comparison_list .item {
-      &:last-child {
-        border: none;
-      }
+  .active_btn {
+    border-color: #3590ca !important;
+    i {
+      color: #3590ca !important;
     }
-    .modal_columns .modal_comparison {
-      border: none;
-    }
-    .holder {
-      display: flex;
-      font-size: 14px;
-    }
-    .scroll-pane {
-      overflow: hidden !important;
-    }
-    .comparison_item {
-      flex-shrink: 0;
-      overflow: hidden;
-    }
-  }
-  .modal_comparison .jspCapRight {
-    display: none;
   }
 }
 
@@ -2346,6 +2455,16 @@
 }
 
 @media screen and (max-width: 676px) {
+  .comparison_tools {
+    flex-direction: column;
+    align-items: center;
+  }
+  .compare-page_container .comparison_tools .price {
+    margin-bottom: 10px;
+    text-align: center;
+    height: 40px;
+    justify-content: flex-start;
+  }
   .faves-page_container .issue-container .more_block .compare,
   .faves-page_container .issue-container .more_block .favourites {
     font-size: 0;
@@ -2389,7 +2508,6 @@
     margin-left: -1px;
   }
   .comparison_item {
-    border-right: none;
     border-left: 1px solid #e5e5e5;
   }
   .compare-page_container .modal_comparison {
@@ -2397,10 +2515,7 @@
     border: none;
   }
   .compare-page_container .tab_pane {
-    background-color: #fff;
-    border: 1px solid #e5e5e5;
     margin-right: 0;
-    overflow: hidden;
   }
   .compare-page_container .heading form label {
     display: none;
