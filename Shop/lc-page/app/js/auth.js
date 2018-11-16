@@ -293,7 +293,6 @@ function fixedCompare() {
   $window.on('scroll', function() {
     top = $window.scrollTop();
     heightContent = $("#compare-content .tab_pane").height();
-    console.log(top, blockTop, heightContent);
     if (top >= blockTop && CountUpFlag == 0) {
       CountUpFlag = 1;
       $('.compare-header').addClass("fixed");
