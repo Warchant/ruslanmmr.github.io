@@ -132,10 +132,11 @@ $(document).ready(function() {
   fixedCompare();
   compareSlider();
   autoPadding();
+  blockTop = $('.compare-header').offset().top;
 });
 
 $(window).resize(function() {
-  autoPadding();
+  $('body,html').scrollTop(0);
   if (document.documentElement.clientWidth > 576) {
     $(".link_container .txt").css("height", "auto");
     mh = 0;
@@ -147,8 +148,11 @@ $(window).resize(function() {
   $(".description_section").css("height", "auto");
   hc = 0;
   setTimeout(function() {
+    blockTop = $('.compare-header').offset().top;
     HeightCards();
-  }, 200);
+    autoPadding();
+    fixedCompare();
+  }, 300);
 });
 
 function autoPadding() {
@@ -275,19 +279,22 @@ function compareSlider() {
       $('.holder-slider').slick('slickGoTo', currentSlide);
       setTimeout(function() { trigger = 0 }, 300);
     }
-    event.stopPropagation();
-    event.preventDefault();
+    //event.stopPropagation();
+    //event.preventDefault();
   });
 };
 
+var blockTop = $('.compare-header').offset().top;
 //фиксированная шапка сравнения при прокрутке
 function fixedCompare() {
-  var blockTop = $('.compare-header').offset().top;
   var CountUpFlag = 0;
   var $window = $(window);
-  $window.on('load scroll', function() {
-    var top = $window.scrollTop();
-    var height = $(".compare-content").height();
+  var top = $window.scrollTop();
+  var heightContent = $("#compare-content .tab_pane").height();
+  $window.on('scroll', function() {
+    top = $window.scrollTop();
+    heightContent = $("#compare-content .tab_pane").height();
+    console.log(top, blockTop, heightContent);
     if (top >= blockTop && CountUpFlag == 0) {
       CountUpFlag = 1;
       $('.compare-header').addClass("fixed");
@@ -297,7 +304,7 @@ function fixedCompare() {
       $('.compare-header').removeClass("fixed");
       $('.compare-content').removeClass("modify_pos");
     }
-    if (top > (blockTop + height)) {
+    if (top > (blockTop + heightContent)) {
       $(".compare-header").addClass("hidden");
     } else {
       $(".compare-header").removeClass("hidden");
