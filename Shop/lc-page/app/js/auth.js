@@ -136,7 +136,6 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-  $('body,html').scrollTop(0);
   if (document.documentElement.clientWidth > 576) {
     $(".link_container .txt").css("height", "auto");
     mh = 0;
