@@ -228,7 +228,7 @@ function compareSlider() {
     if (event.type == "mouseenter") {
       $(".compare-header .holder-slider").addClass("showed");
       arrows();
-    } else {
+    } else if (event.type == "mouseleave") {
       $(".compare-header .holder-slider").removeClass("showed");
     }
   });
