@@ -162,13 +162,10 @@ ul#countdown li p.timeRefSeconds {
   z-index: 3;
   left: 50%;
   top: 10px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  margin-left: -476px;
   width: 953px;
   height: 604px;
-  background: url(../img/main_img.png) no-repeat;
-  background-position: 150% 0; }
+  background: url(../img/main_img.png) no-repeat; }
 
 .top_section_heading .land_container:after {
   content: '';
