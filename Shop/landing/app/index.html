@@ -602,7 +602,7 @@
       <!--/noindex-->
     </div>
     <!---->
-    
+
     <footer id="footer">
       <div class="foot-in">
         <div class="cont-in">
@@ -712,11 +712,7 @@
   <script type="text/javascript" src="https://ruslanmmr.github.io/Shop/landing/app/countdown.js"></script>
   <script>
     $(document).ready(function(){
-      timer();
-      autoHeight();
-    });
-    function timer() {
-        setTimeout(function() {
+      setTimeout(function() {
         $(".top_content").addClass("visible_timer");
         }, 500);
         $("#countdown").countdown({
@@ -730,7 +726,8 @@
           format: "on"
           });
         });
-    }
+      autoHeight();
+    });
     function autoHeight() {
       var mh = 0;
       $(".block_container .name").each(function () {
@@ -740,6 +737,7 @@
         };
       });
       $(".block_container .name").height(mh);
+      $(".brand_container .price").height(mh);
     }
   </script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
