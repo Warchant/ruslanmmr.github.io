@@ -37,10 +37,12 @@
     padding: 0; }
   .card_content .img_block {
     position: relative; }
-  .card_content .img_block img {
-    page-break-inside: always; }
+  .sort_line,
+  #set {
+    page-break-before: always; }
   .card {
-    width: 50%; }
+    width: 50%;
+    display: table !important; }
   .current_choise {
     display: none; }
   .sort_line .content_sort {
