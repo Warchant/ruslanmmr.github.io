@@ -79,6 +79,11 @@ $(window).scroll(function(){
 	onScrollTab();
 });
 
+function print_doc(){
+window.print() ;
+}
+
+
 //functions
 function tabWidth() {
 
@@ -591,13 +596,12 @@ function sliderWidth(){
 
 function scrollPanelBottom() {
 	$(window).scroll(function() {
-		// var scrollBottom = $(window).scrollTop() + $(window).height();
 		var winHeight = $(this).height();
 		var scrollTop = $(this).scrollTop();
 
 		$(".footer").each(function(index){
 			var elemHeight = $(this).height();
-			var elementTop = $(this).position().top + 90; 
+			var elementTop = $(this).position().top + 60; 
 
 			if (elementTop < scrollTop + winHeight && scrollTop < elementTop + elemHeight) {
 				$(this).addClass("unfixed");

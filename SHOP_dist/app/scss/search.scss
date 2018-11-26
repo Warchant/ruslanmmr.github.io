@@ -46,6 +46,10 @@
     }
 }
 
+.catalogue .catalog-page {
+    margin-top: 0;
+}
+
 .filter .section .tab_content {
     display: block;
 }
@@ -126,13 +130,13 @@
     color: #1e0602;
 }
 
-@media screen and (max-width: 992px) {
+@media all and (max-width: 992px) {
     .search_inform li {
         width: 20%;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
     .search_inform li {
         width: 25%;
     }
@@ -148,7 +152,7 @@
 
 }
 
-@media screen and (max-width: 576px) {
+@media all and (max-width: 576px) {
     .search_inform {
         display: none;
     }

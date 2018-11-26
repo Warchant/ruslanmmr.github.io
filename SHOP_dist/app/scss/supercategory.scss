@@ -44,7 +44,8 @@ ul {
   list-style: none;
 }
 .card_banner_box {
-  margin-top: 30px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 .top-categories_list,
 .hot-deals_list {
@@ -55,22 +56,20 @@ ul {
     position: relative;
     color: #1e0602;
     &:before {
-      content: "\e921";
       right: 20px;
-      color: #d5d5d5;
-      font-family: 'Ico Moon' !important;
-      font-size: 26px;
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+            color: #d5d5d5;
+            font-size: 18px;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            content: "\f054";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
     }
   }
   li {
@@ -164,6 +163,7 @@ ul {
       width: 100%;
       height: 100%;
       top: 0;
+      border: 1px solid #ebebeb;
     }
     .title {
       position: absolute;
@@ -282,21 +282,20 @@ ul {
       left: 0;
     }
     &:before {
-      content: "\e921";
       right: 20px;
       color: #d5d5d5;
-      font-family: 'Ico Moon' !important;
-      font-size: 26px;
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      display: none;
+            font-size: 18px;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            content: "\f054";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: none;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
     }
     .category_title {
       font-size: 14px;
@@ -330,15 +329,18 @@ ul {
     &:before {
       right: 20px;
       color: #1e0602;
-      content: "\e921";
-      font-family: 'Ico Moon' !important;
-      font-size: 35px;
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
+            font-size: 35px;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            content: "\f054";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
     }
   }
   .title {
@@ -398,7 +400,6 @@ ul {
 }
 .text_block {
   margin-top: 80px;
-  padding-bottom: 20px;
   .block_content {
     display: flex;
     overflow: hidden;
@@ -443,7 +444,7 @@ ul {
 }
 
 
-@media screen and (min-width: 1025px) {
+@media all and (min-width: 1025px) {
   .categories_cards .category_block_container a:hover {
     background-color: #ffdd7d;
   }
@@ -476,7 +477,7 @@ ul {
     opacity: 1;
   }
 }
-@media screen and (max-width: 1025px) {
+@media all and (max-width: 1025px) {
   .categories_cards .img_container a {
     opacity: 1;
     padding: 8px 14px;
@@ -486,7 +487,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media all and (max-width: 991px) {
   .top-categories_block {
     display: none;
   }
@@ -546,7 +547,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media all and (max-width: 767px) {
   .other-categories,
   .left_section {
     width: 50%;
@@ -558,7 +559,7 @@ ul {
     font-size: 18px;
   }
 }
-@media screen and (max-width: 575px) {
+@media all and (max-width: 575px) {
 	.category_block:last-child {
 		.category_title_block {
       border-bottom: 1px solid #e5e5e5;

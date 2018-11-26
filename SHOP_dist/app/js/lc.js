@@ -232,7 +232,7 @@ function transform() {
     if (flag == 1) {
       sliderInit();
       $('.start_auth .lc_container_loged .more_orders').insertAfter('.start_auth .orders_container');
-      $('.start_auth .personal').insertBefore('.start_auth .dashboard .trigger');
+      $('.start_auth .personal').insertBefore('.dashboard .trigger');
       flag = 2;
     }
   } else {

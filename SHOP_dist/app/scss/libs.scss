@@ -1,3 +1,4 @@
+@import "../libs/fontawesome-free-5.5.0-web/css/all.css";
 @import "../libs/css/bootstrap-grid.css";
 @import "../libs/css/balloon.css";
 @import "../libs/css/default-skin.css";
@@ -9,13 +10,14 @@
 @import "../libs/css/select2.css";
 @import "../libs/ion.rangeSlider-2.2.0/ion.rangeSlider.css";
 @import "../libs/ion.rangeSlider-2.2.0/ion.rangeSlider.skinModern.css";
+@import "print.scss";
 
 /*bs-carousel*/
 
 .carousel {
   position: relative;
 }
-@media screen and (max-width: 567px) {
+@media all and (max-width: 567px) {
   .carousel.inner{
     display: none;
   }
@@ -214,7 +216,7 @@
 .carousel-caption .btn {
   text-shadow: none;
 }
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,

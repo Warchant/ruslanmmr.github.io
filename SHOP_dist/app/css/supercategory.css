@@ -47,7 +47,8 @@ ul {
   list-style: none; }
 
 .card_banner_box {
-  margin-top: 30px; }
+  margin-top: 0px;
+  margin-bottom: 20px; }
 
 .top-categories_list,
 .hot-deals_list {
@@ -60,24 +61,22 @@ ul {
     color: #1e0602; }
     .top-categories_list a:before,
     .hot-deals_list a:before {
-      content: "\e921";
       right: 20px;
       color: #d5d5d5;
-      font-family: 'Ico Moon' !important;
-      font-size: 26px;
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+      font-size: 18px;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: "\f054";
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
-              transform: translateY(-50%); }
+              transform: translateY(-50%);
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1; }
   .top-categories_list li,
   .hot-deals_list li {
     border-bottom: 1px solid #e5e5e5; }
@@ -162,7 +161,8 @@ ul {
       position: absolute;
       width: 100%;
       height: 100%;
-      top: 0; }
+      top: 0;
+      border: 1px solid #ebebeb; }
     .thumbs_categories .category_link .title {
       position: absolute;
       color: #1e0602;
@@ -266,23 +266,22 @@ ul {
       top: 0;
       left: 0; }
     .categories_cards .category_title_block:before {
-      content: "\e921";
       right: 20px;
       color: #d5d5d5;
-      font-family: 'Ico Moon' !important;
-      font-size: 26px;
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
+      font-size: 18px;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: "\f054";
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
-      display: none; }
+      display: none;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1; }
     .categories_cards .category_title_block .category_title {
       font-size: 14px;
       font-weight: bold;
@@ -313,14 +312,19 @@ ul {
     .popular_brands_block .slick-next:before {
       right: 20px;
       color: #1e0602;
-      content: "\e921";
-      font-family: 'Ico Moon' !important;
       font-size: 35px;
-      speak: none;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: "\f054";
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      display: inline-block;
       font-style: normal;
-      font-weight: normal;
       font-variant: normal;
-      text-transform: none;
+      text-rendering: auto;
       line-height: 1; }
   .popular_brands_block .title {
     color: #1e0602;
@@ -384,8 +388,7 @@ ul {
     margin-top: -3px; }
 
 .text_block {
-  margin-top: 80px;
-  padding-bottom: 20px; }
+  margin-top: 80px; }
   .text_block .block_content {
     display: -webkit-box;
     display: -webkit-flex;
@@ -429,7 +432,7 @@ ul {
   .text_block .button_more {
     margin-top: 15px; }
 
-@media screen and (min-width: 1025px) {
+@media all and (min-width: 1025px) {
   .categories_cards .category_block_container a:hover {
     background-color: #ffdd7d; }
   .top-categories_list a:hover,
@@ -454,14 +457,14 @@ ul {
   .popular_brands_block .brands_list a:hover {
     opacity: 1; } }
 
-@media screen and (max-width: 1025px) {
+@media all and (max-width: 1025px) {
   .categories_cards .img_container a {
     opacity: 1;
     padding: 8px 14px; }
   .popular_brands_block .brands_list a {
     opacity: 1; } }
 
-@media screen and (max-width: 991px) {
+@media all and (max-width: 991px) {
   .top-categories_block {
     display: none; }
   .categories_sidebar {
@@ -520,7 +523,7 @@ ul {
     .popular_brands_block .brands_list li:nth-child(6) {
       display: none; } }
 
-@media screen and (max-width: 767px) {
+@media all and (max-width: 767px) {
   .other-categories,
   .left_section {
     width: 50%; }
@@ -529,7 +532,7 @@ ul {
   .thumbs_categories .category_link .title {
     font-size: 18px; } }
 
-@media screen and (max-width: 575px) {
+@media all and (max-width: 575px) {
   .category_block:last-child .category_title_block {
     border-bottom: 1px solid #e5e5e5; }
   .popular_brands_block .title {

@@ -21,9 +21,6 @@ ul {
   margin: 0;
   padding: 0; }
 
-.filter_page {
-  padding-top: 30px; }
-
 .filter_page .card_banner_box {
   margin: 0; }
 
@@ -124,9 +121,6 @@ ul {
           border-left: 9px solid #197ac4; }
       .filter .section .tab_title .arrow, .filter .section .tab_content .arrow {
         display: block;
-        -webkit-transform: rotate(90deg);
-            -ms-transform: rotate(90deg);
-                transform: rotate(90deg);
         position: absolute;
         left: 25px;
         height: 14px;
@@ -428,7 +422,6 @@ ul {
     margin-top: 10px; }
 
 .filter-page {
-  margin-bottom: 25px;
   position: relative; }
   .filter-page .filter-page-content {
     border: 1px solid #e5e5e5;
@@ -471,11 +464,11 @@ ul {
   .check_section .tab_content li {
     margin: 0 !important; }
 
-@media screen and (min-width: 1025px) {
+@media all and (min-width: 1025px) {
   .section_buttons .show_results:hover {
     background-color: #ffdd7d; } }
 
-@media screen and (max-width: 992px) {
+@media all and (max-width: 992px) {
   [data-balloon][data-balloon-pos='right']:after,
   [data-balloon][data-balloon-pos='right']:before,
   [data-balloon][data-balloon-pos='up']:after,
@@ -532,10 +525,8 @@ ul {
   .check_section .tab_content .select_indicator {
     top: 21px !important; } }
 
-@media screen and (max-width: 568px) {
+@media all and (max-width: 568px) {
   .filter-page .filter-page-content, .filter-page .filter {
     padding: 0; }
-  .filter_page {
-    padding-top: 20px; }
   .filter_page .card_banner_box {
     display: none; } }

@@ -33,6 +33,7 @@ ul {
         padding: 10px 7px;
         border-radius: 4px;
         appearance: none !important;
+        background-color: #fff;
         span {
             display: block;
 
@@ -66,6 +67,7 @@ ul {
 // banner top
 .card_banner_box {
     margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .brand_country {
@@ -105,68 +107,8 @@ ul {
         }
     }
 }
-
-.category-name {
-    .title {
-        color: #1e0602;
-        font-size: 30px;
-        margin-bottom: 20px;
-        display: flex;
-        flex: 1;
-        align-items: center;
-    }
-
-    .title .button_back {
-        -ms-flex-positive: 0;
-        flex-grow: 0;
-        -ms-flex-negative: 0;
-        flex-shrink: 0;
-        width: 30px;
-        height: 30px;
-        border-radius: 3px;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        background-color: #fff;
-        text-align: center;
-        line-height: 28px;
-        display: none;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        margin-right: 18px;
-    }
-
-    @media screen and (max-width: 567px) {
-        .title .button_back {
-            display: -ms-flexbox;
-            display: flex;
-        }
-    }
-    .title .button_back i {
-        color: rgba(0, 0, 0, 0.4);
-        display: inline-block;
-        vertical-align: middle;
-        font-size: 16px;
-    }
-    .title_general {
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        color: #1e0602;
-        font-size: 30px;
-        font-weight: normal;
-        margin: 0;
-    }
-
-    @media screen and (max-width: 567px) {
-        .title_general {
-            font-size: 14px;
-            line-height: 1.4;
-        }
-    }
-}
 .product_slider {
     margin-top: 40px;
-    margin-bottom: 20px;
 }
 .sort-line {
     margin-bottom: 30px;
@@ -314,74 +256,12 @@ ul {
     border-radius: 3px;
     color: #fff;
     transition: .3s;
-    margin-top: 30px;
+    margin: 30px 0;
 }
 
-.paginator {
-    display: flex;
-    width: 100%;
-    margin-top: 30px;
-    .paginator_link_page {
-        height: 48px;
-        width: 9%;
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            margin-right: -1px;
-            position: relative;
-            border-radius: 0px;
-            z-index: 1;
-            background-color: #ffffff;
-        }
-    }
-    .prev,
-    .next {
-        width: 18.5%;
-        a {
-            position: relative;
-        }
-        a::before {
-            display: none;
-            font-family: 'Ico Moon' !important;
-            font-size: 26px;
-            color: #cfcfcf;
-            speak: none;
-            font-style: normal;
-            font-weight: normal;
-            font-variant: normal;
-            text-transform: none;
-            line-height: 1;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            content: "\e921";
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
-    .prev {
-        a::before {
-            content: "\e921\e921";
-            letter-spacing: -2px;
-        }
-    }
-    .active_pag_page {
-        a {
-            background: #f7f7f7;
-            font-weight: bolder;
-        }
-    }
-}
 
-.all-brand-page {
-    margin-top: 30px;
-    margin-bottom: 40px;
-    .catalog-page {
-        margin-top: 30px;
-    }
+.brand_country {
+    margin-bottom: 30px;
 }
 
 .bottom_line {
@@ -693,13 +573,10 @@ ul {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media all and (min-width: 1025px) {
     .more_cards_btn:hover {
         background-color: #7eb8d2;
         border-color: #7eb8d2;
-    }
-    .paginator_link_page a:hover {
-        z-index: 2;
     }
     .brand_country a:hover,
     .filter .tab_content a:hover,
@@ -712,10 +589,7 @@ ul {
 
 
 
-@media screen and (min-width: 1025px) {
-    .paginator_link_page a:hover {
-        z-index: 2;
-    }
+@media all and (min-width: 1025px) {
     .cards_v .link_container a:hover {
         box-shadow: 8px 13px 30px rgba(0, 0, 0, 0.2);
     }
@@ -731,7 +605,7 @@ ul {
 
 
 
-@media screen and (max-width: 1180px) {
+@media all and (max-width: 1180px) {
     .catalog .catalog-page .catalog-cards .card_content .description_section .links_block {
         padding: 0 10px;
     }
@@ -756,7 +630,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 1124px) {
+@media all and (max-width: 1124px) {
     .catalog .catalog-page .catalog-cards .card_content .bottom_section .left_item .current_price {
         font-size: 1.5em;
     }
@@ -766,7 +640,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 992px) {
+@media all and (max-width: 992px) {
     .left-sidebar {
         margin-bottom: 30px;
         display: none;
@@ -832,7 +706,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
     .sort-line .sort-line-content {
         display: none;
     }
@@ -852,37 +726,26 @@ ul {
     .popular_cat_block {
         display: none;
     }
-    .paginator .desc {
-        display: none;
-    }
-    .paginator .prev a::before,
-    .paginator .next a::before {
-        display: inline;
-    }
-    .paginator .prev a {
-        transform: rotate(180deg);
-    }
 }
 
-@media screen and (max-width: 650px) {
+@media all and (max-width: 650px) {
     .single_v li,
     .brand_country .all_collections_content li {
         width: 33.33%;
     }
 }
 
-@media screen and (max-width: 567px) {
+@media all and (max-width: 567px) {
     .filter {
         display: block;
+    }
+    .text_block {
+        margin-top: 30px;
     }
     .filter .brand_section {
         width: 100%;
         border-right: none;
         border-bottom: 1px solid #e6e6e6;
-    }
-    .all-brand-page,
-    .all-brand-page .catalog-page {
-        margin-top: 20px;
     }
     .filter_show_btn {
         margin-bottom: 20px;
@@ -905,8 +768,6 @@ ul {
     }
     .current-categories .content-categories,
     .with_box,
-    .paginator .paginator_link_page:nth-child(2),
-    .paginator .paginator_link_page:nth-child(8),
     .popular_cat_block,
     .bottom_line,
     .banner_block {
@@ -915,9 +776,6 @@ ul {
     .block_more_info {
         padding-bottom: 0;
         margin-top: 0;
-    }
-    .paginator .paginator_link_page {
-        width: 16.66%;
     }
     .selected_par_block .selected_list {
         flex-direction: column;

@@ -1,3 +1,4 @@
+@import url(../libs/fontawesome-free-5.5.0-web/css/all.css);
 @import url(../libs/css/bootstrap-grid.css);
 @import url(../libs/css/balloon.css);
 @import url(../libs/css/default-skin.css);
@@ -9,11 +10,36 @@
 @import url(../libs/css/select2.css);
 @import url(../libs/ion.rangeSlider-2.2.0/ion.rangeSlider.css);
 @import url(../libs/ion.rangeSlider-2.2.0/ion.rangeSlider.skinModern.css);
+@media print {
+  .noprint {
+    display: none !important; }
+  .personal {
+    display: none !important; }
+  .header .group.sup {
+    border-bottom: none !important; }
+  #set,
+  .tiles_catalogue {
+    page-break-before: always; }
+  .tiles_catalogue .card {
+    display: table;
+    width: 50%; }
+  body {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.45;
+    color: #000;
+    background: none;
+    font-size: 14pt !important; }
+  @page {
+    size: A4;
+    margin: 10mm; } }
+
 /*bs-carousel*/
 .carousel {
   position: relative; }
 
-@media screen and (max-width: 567px) {
+@media all and (max-width: 567px) {
   .carousel.inner {
     display: none; } }
 
@@ -210,7 +236,7 @@
 .carousel-caption .btn {
   text-shadow: none; }
 
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,

@@ -17,32 +17,24 @@
     .nano-content a:after {
       right: 20px;
       color: #d5d5d5;
-      font-family: 'Ico Moon' !important;
-      font-size: 26px;
-      -webkit-transition: .3s;
-      -o-transition: .3s;
-      transition: .3s;
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      content: "\e921";
+      font-size: 18px;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: "\f054";
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1; }
     .nano-content a *:before,
     .nano-content a *:after {
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
-
-.brand_page {
-  padding-bottom: 20px; }
 
 .brand_heading .brand_heading-content {
   border: 1px solid #e5e5e5;
@@ -112,19 +104,16 @@
     .brand_heading .description_block .rev .rev_ico {
       margin-right: 0.2em;
       color: #585858; }
-    .brand_heading .description_block .video:before,
-    .brand_heading .description_block .rev:before {
-      content: "";
+    .brand_heading .description_block .video i,
+    .brand_heading .description_block .rev i {
       position: absolute;
       left: 12px;
       bottom: 6px;
-      display: inline-block;
-      width: 20px;
-      height: 19px;
-      background: url(../images/play.png); }
+      font-size: 18px;
+      color: #ccc; }
   .brand_heading .description_block .rev {
     margin-right: 0;
-    padding-left: 30px; }
+    padding-left: 35px; }
     .brand_heading .description_block .rev:before {
       width: 14px;
       left: 12px;
@@ -160,25 +149,20 @@
     .all_collections_link a:after {
       right: 20px;
       color: #d5d5d5;
-      font-family: 'Ico Moon' !important;
-      font-size: 26px;
-      -webkit-transition: .3s;
-      -o-transition: .3s;
-      transition: .3s;
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      content: "\e921";
+      font-size: 18px;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: "\f054";
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1; }
 
 .slick-dots {
   padding: 0;
@@ -477,13 +461,16 @@
 .open:after {
   height: 0px !important; }
 
-@media screen and (min-width: 1025px) {
+@media all and (min-width: 1025px) {
   .brand_heading .description_block .video:hover,
   .brand_heading .description_block .rev:hover {
     border-color: #999999; }
     .brand_heading .description_block .video:hover span,
     .brand_heading .description_block .rev:hover span {
       color: #1d1d1d; }
+    .brand_heading .description_block .video:hover i,
+    .brand_heading .description_block .rev:hover i {
+      color: #626262; }
   .brand_heading .description_block .more:hover span {
     color: #1d1d1d; }
   .brand_categories .brand_categories_content li a:hover,
@@ -502,7 +489,7 @@
   .popular_brand_categories .img_container a:hover {
     background-color: #ffdd7d; } }
 
-@media screen and (max-width: 1025px) {
+@media all and (max-width: 1025px) {
   .brand_heading .logo_block {
     padding: 35px; }
   .brand_categories .brand_categories_content li,
@@ -514,7 +501,7 @@
   .brand_categories .brand_categories_content .droppable_preview {
     display: none; } }
 
-@media screen and (max-width: 675px) {
+@media all and (max-width: 675px) {
   .brand_heading .description_block .links {
     position: relative;
     margin-bottom: -10px; }
@@ -527,7 +514,7 @@
   .brand_heading .description_block a {
     margin-bottom: 10px; } }
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   .brand_heading .logo_block {
     width: 30%; }
   .brand_heading .description_block {
@@ -536,12 +523,12 @@
   .all_collections .all_collections_content li {
     width: 25%; } }
 
-@media screen and (max-width: 650px) {
+@media all and (max-width: 650px) {
   .brand_categories .brand_categories_content li,
   .all_collections .all_collections_content li {
     width: 33%; } }
 
-@media screen and (max-width: 578px) {
+@media all and (max-width: 578px) {
   .brand_categories {
     display: none; }
   .popular_brand_collections .arrow_left,
@@ -578,25 +565,20 @@
   .all_collections .all_collections_content li a:after {
     right: 20px;
     color: #d5d5d5;
-    font-family: 'Ico Moon' !important;
-    font-size: 26px;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\e921";
+    font-size: 18px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f054";
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1; }
   .all_collections .all_collections_content ul {
     margin: 0; }
   .popular_brand_collections .popular_collections_content {
@@ -609,9 +591,6 @@
     border: none; }
   .popular_brand_categories {
     display: none; }
-  .brand_page {
-    padding-top: 20px;
-    padding-bottom: 0; }
   .brand_heading .brand_heading-content {
     display: block; }
   .brand_heading .logo_block {

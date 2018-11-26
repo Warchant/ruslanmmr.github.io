@@ -60,8 +60,6 @@
   top: 20px;
   -webkit-border-radius: 4px;
           border-radius: 4px; }
-  .gallery_stick .button_close_gallery {
-    background: url(../images/icon_close.png) !important; }
   .gallery_stick:before {
     content: '';
     position: absolute;
@@ -168,16 +166,21 @@
     right: 10px;
     top: 10px;
     border: none;
-    width: 24px;
-    height: 24px;
-    background: url(../images/icon_open.png) no-repeat;
     -webkit-background-size: contain;
             background-size: contain;
     cursor: pointer;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
-    opacity: 0.8; }
+    opacity: 0.7; }
+    .modal_container .button_open_gallery i,
+    .modal_container .button_close_gallery i {
+      font-size: 24px;
+      color: #8d8d8d; }
+  .modal_container .button_open_gallery i:before {
+    content: "\f065"; }
+  .modal_container .button_close_gallery i:before {
+    content: "\f066"; }
   .modal_container .button_left,
   .modal_container .button_right {
     display: block;
@@ -206,15 +209,19 @@
       display: block;
       right: 20px;
       color: #fff;
-      font-family: 'Ico Moon' !important;
-      font-size: 50px;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      font-size: 40px;
       line-height: 1;
-      content: "\e921";
-      opacity: 0.6; }
+      content: "\f105";
+      opacity: 0.6;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto; }
   .modal_container .button_left {
     left: 0; }
     .modal_container .button_left:before {
-      content: "\e922"; }
+      content: "\f104"; }
   .modal_container .button_right {
     right: 0; }
 
@@ -344,11 +351,10 @@
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
       opacity: 0.3; }
-    #modal-popup .slick-prev .slick-prev,
-    #modal-popup .slick-next .slick-prev {
-      -webkit-transform: rotate(180deg);
-          -ms-transform: rotate(180deg);
-              transform: rotate(180deg); }
+  #modal-popup .slick-prev {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
   #modal-popup .slick-slider .slick-list {
     padding: 0 15px; }
   #modal-popup .modal_information .columns {
@@ -453,17 +459,14 @@
         -webkit-transition: .3s;
         -o-transition: .3s;
         transition: .3s;
-        font-family: 'Ico Moon' !important;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
         font-size: 26px;
-        speak: none;
         font-style: normal;
-        font-weight: normal;
         font-variant: normal;
-        text-transform: none;
+        text-rendering: auto;
         line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        content: "\e920";
+        content: "\f106";
         position: absolute;
         top: 50%;
         left: 50%;
@@ -779,9 +782,6 @@
 .product_slider {
   margin-top: 40px; }
 
-.product_slider {
-  margin-bottom: 20px; }
-
 .set_product {
   display: inline;
   line-height: 30px; }
@@ -850,7 +850,7 @@
 .gallery_popup .notification_container {
   display: none; }
 
-@media screen and (min-width: 1025px) {
+@media all and (min-width: 1025px) {
   .slick-prev:hover:after,
   .slick-next:hover:after {
     opacity: 0.5; }
@@ -878,17 +878,17 @@
   .mfp-close:hover {
     background-color: rgba(0, 0, 0, 0.4); } }
 
-@media screen and (max-width: 1025px) {
+@media all and (max-width: 1025px) {
   .modal_container .button_open_gallery {
     opacity: 1; } }
 
-@media screen and (max-width: 992px) {
+@media all and (max-width: 992px) {
   .sort_line .count {
     display: none; }
   #modal-popup .container_gallery {
     width: 55%; } }
 
-@media screen and (max-width: 878px) {
+@media all and (max-width: 878px) {
   .card_content .price_section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -920,7 +920,7 @@
         -ms-flex: 1 1 30px;
             flex: 1 1 30px; } }
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   #modal-popup .container_gallery img {
     width: 100%; }
   #modal-popup .container_gallery {
@@ -931,7 +931,7 @@
   .container_gallery img {
     width: 100%; } }
 
-@media screen and (max-width: 667px) {
+@media all and (max-width: 667px) {
   .card_content .link_section span:first-child {
     -webkit-box-flex: 4;
     -webkit-flex: 4 4 100px;
@@ -950,7 +950,7 @@
     font-size: 20px;
     color: #8ec824; } }
 
-@media screen and (max-width: 576px) {
+@media all and (max-width: 576px) {
   .modal_container .button_left,
   .modal_container .button_right,
   .modal_container .button_open_gallery,
