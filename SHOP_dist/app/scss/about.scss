@@ -190,6 +190,7 @@
       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .15);
       background: #3590ca;
       padding: 10px 20px;
+      transition: .3s;
     }
     .title {
       font-size: 30px;
@@ -327,6 +328,9 @@
 @media screen and (min-width:1025px) {
   .buttons button:first-child:hover {
     background-color: #ffdd7d;
+  }
+  .corporate_section .corporate_offer .corporate_link:hover {
+    background: #6dafd9;
   }
   .buttons button:last-child:hover {
     color: #1d1d1d;
