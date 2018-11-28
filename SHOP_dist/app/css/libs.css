@@ -13,8 +13,6 @@
 @media print {
   .noprint {
     display: none !important; }
-  .personal {
-    display: none !important; }
   .header .group.sup {
     border-bottom: none !important; }
   #set,
