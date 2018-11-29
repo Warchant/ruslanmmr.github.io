@@ -1,6 +1,5 @@
 $(document).ready(function() {
   choiseTabs();
-  scrollToTabs();
 });
 $(window).resize(function() {
 
