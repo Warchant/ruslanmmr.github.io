@@ -12,26 +12,24 @@
     padding: 15px 0 20px 0;
   }
   .left_content {
-    width: 45%;
+    width: 70%;
     padding-right: 20px;
   }
   .left_content_text {
     font-size: 20px;
-    max-width: 480px;
     line-height: 28px;
     margin-top: 2px;
     letter-spacing: 0;
   }
   .left_content_title {
     font-size: 30px;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
   }
   .right_content-img {
-    width: 55%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: -70px;
     img {
       width: 100%;
       max-width: 450px;
@@ -42,9 +40,9 @@
 .about-pluses {
   margin-top: 40px;
   .about-pluses_content {
-    padding: 0 140px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -10px;
   }
   .block {
     display: flex;
@@ -61,9 +59,8 @@
   }
 }
 .about-information {
-  margin-top: 100px;
+  margin-top: 80px;
   .about-information_text {
-    padding: 0 8px 0 500px;
     font-size: 20px;
     line-height: 28px;
     p {
@@ -71,43 +68,6 @@
       line-height: 28px;
       margin-top: 0;
     }
-  }
-  .digits {
-    display: flex;
-    margin: 0 -10px;
-    padding-bottom: 40px;
-  }
-  .years,
-  .stars,
-  .catalog {
-    text-align: center;
-    width: 33.33%;
-    padding: 0 10px;
-    .title {
-      font-size: 68px;
-      letter-spacing: .1px;
-      margin-bottom: 0;
-      text-align: center;
-      margin-top: -3px;
-    }
-    .text {
-      font-size: 30px;
-      text-indent: -1px;
-      text-align: center;
-    }
-    .subtext {
-      text-align: center;
-      padding-top: 0;
-    }
-  }
-  .years .title {
-    color: #fd8224;
-  }
-  .stars .title {
-    color: #a0c126;
-  }
-  .catalog .title {
-    color: #1897cf;
   }
 }
 .corporate_section {
@@ -507,9 +467,6 @@ screen and (min-width:768px) {
   .corporate_section {
     margin-top: 80px;
   }
-  .about-information .about-information_text {
-    padding: 0 0 0 30%;
-  }
   .about-information .years .title, .about-information .stars .title, .about-information .catalog .title {
     font-size: 48px;
   }
@@ -558,7 +515,10 @@ screen and (min-width:768px) {
     line-height: 150%;
   }
   .top-about_section .left_content {
-    width: 55%;
+    width: 75%;
+  }
+  .top-about_section .right_content-img {
+    width: 25%;
   }
 }
 
@@ -571,9 +531,6 @@ screen and (min-width:768px) {
   }
   .corporate_section .corporate_offer .offer-item {
     width: 33.33%;
-  }
-  .about-pluses .about-pluses_content {
-    padding: 0 50px;
   }
 }
 @media all and (max-width: 767px) {
@@ -702,6 +659,12 @@ screen and (min-width:768px) {
     font-size: 20px;
     font-weight: bold;
   }
+  .top-about_section .right_content-img {
+    display: none;
+  }
+  .top-about_section .left_content {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 576px) {
@@ -736,12 +699,6 @@ screen and (min-width:768px) {
     margin-bottom: 20px;
   }
   .about-pluses .block {
-    width: 100%;
-  }
-  .top-about_section .right_content-img {
-    display: none;
-  }
-  .top-about_section .left_content {
     width: 100%;
   }
 }

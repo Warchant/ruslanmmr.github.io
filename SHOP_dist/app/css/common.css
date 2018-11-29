@@ -9964,3 +9964,82 @@ i {
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0); } }
+
+.with_sidebar-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.left_sidebar_nav {
+  min-width: 300px;
+  padding-right: 20px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
+
+.left_sidebar_nav-content li.nav_item {
+  position: relative;
+  padding: 16px 10px 16px 20px;
+  border-bottom: 1px solid #e5e5e5; }
+  .left_sidebar_nav-content li.nav_item:last-child {
+    border: none; }
+  .left_sidebar_nav-content li.nav_item:after {
+    right: 15px;
+    color: #d5d5d5;
+    font-size: 18px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f054";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1; }
+
+.left_sidebar_nav-content .active {
+  background-color: #fafafa; }
+  .left_sidebar_nav-content .active:after {
+    display: none !important; }
+  .left_sidebar_nav-content .active span {
+    color: #1e0602 !important;
+    font-weight: bold; }
+  .left_sidebar_nav-content .active a {
+    display: none; }
+
+.left_sidebar_nav-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .left_sidebar_nav-content ul span {
+    color: #585858; }
+  .left_sidebar_nav-content ul a {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+
+.left_sidebar_nav-content {
+  background-color: #fff;
+  border: 1px solid #e5e5e5; }
+
+.right_content-container {
+  width: 100%; }
+
+@media all and (min-width: 1025px) {
+  .left_sidebar_nav-content li.nav_item:hover {
+    background-color: #fafafa; }
+    .left_sidebar_nav-content li.nav_item:hover span {
+      color: #197ac4; } }
+
+@media all and (max-width: 992px) {
+  .left_sidebar_nav {
+    display: none; } }
