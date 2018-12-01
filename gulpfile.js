@@ -1,7 +1,6 @@
 var gulp = require('gulp'), // Подключаем Gulp
     sass = require('gulp-sass'),
     notify = require('gulp-notify'),
-    uglify = require('gulp-uglify'), //Подключаем Sass пакет,
     browserSync = require('browser-sync'), // Подключаем Browser Sync
     concat = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
     cssnano = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
@@ -34,27 +33,10 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
     });
 });
 
-gulp.task('scripts', function() {
-    return gulp.src([
-            'app/libs/jquery/jquery.min.js',
-            'app/libs/**/*.js',
-            'app/js/common.js'
-        ])
-     .pipe(concat('scripts.min.js'))
-        .pipe(uglify().on('error', notify.onError({
-            message: "<%= error.message %>",
-            title: "js error!"
-        }))) 
-        .pipe(gulp.dest('app/js')) // Выгружаем в папку app/js
-
-});
-
-gulp.task('watch', ['browser-sync', 'scripts'], function() {
+gulp.task('watch', ['browser-sync'], function() {
     gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch('app/*.html', browserSync.reload); 
     gulp.watch('app/libs/**/*.css', browserSync.reload);
-    gulp.watch('app/libs/**/*.js', ['scripts']);
-    gulp.watch('app/js/common.js', ['scripts']);
     gulp.watch('app/js/**/*.js', browserSync.reload); 
 });
 
@@ -71,7 +53,7 @@ gulp.task('img', function() {
         .pipe(gulp.dest('img')); 
 });
 
-gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', 'sass'], function() {
 
     var buildCss = gulp.src('app/css/*.css')
         .pipe(gulp.dest('css'))
