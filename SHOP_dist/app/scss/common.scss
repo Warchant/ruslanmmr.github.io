@@ -6187,7 +6187,7 @@ i {
 .button_similar,
 .modal_heading .button,
 .information_product_box .button,
-.catalog .catalog-page .paginator .paginator_link_page a,
+.catalogue .catalog-page .paginator .paginator_link_page a,
 .information_button .button,
 .comparison_tools .button,
 .form_cash .button,
@@ -6208,7 +6208,7 @@ i {
   .thumb_item .btn,
   .thumb_item .read_more,
   .paginator_link_page a,
-  .catalog .catalog-page .catalog-cards .card_content .description_section .links_block a,
+  .catalogue .catalog-page .catalog-cards .card_content .description_section .links_block a,
   .popular_categories_block .section .tab_content .param_more,
   .button_more,
   .thumb_item .read_more,
@@ -6223,7 +6223,7 @@ i {
   .button_similar,
   .modal_heading .button,
   .information_product_box .button,
-  .catalog .catalog-page .paginator .paginator_link_page a,
+  .catalogue .catalog-page .paginator .paginator_link_page a,
   .information_button .button,
   .comparison_tools .button,
   .form_cash .button,
@@ -10510,6 +10510,7 @@ i {
 
 .with_sidebar-container {
   display: flex;
+  margin-bottom: 40px;
 }
 .left_sidebar_nav {
   min-width: 300px;
@@ -10593,5 +10594,10 @@ i {
 @media all and (max-width: 992px) {
   .left_sidebar_nav {
     display: none;
+  }
+}
+@media all and (max-width: 576px) {
+  .with_sidebar-container {
+    margin-bottom: 15px;
   }
 }

@@ -5911,7 +5911,7 @@ i {
 .button_similar,
 .modal_heading .button,
 .information_product_box .button,
-.catalog .catalog-page .paginator .paginator_link_page a,
+.catalogue .catalog-page .paginator .paginator_link_page a,
 .information_button .button,
 .comparison_tools .button,
 .form_cash .button,
@@ -5945,7 +5945,7 @@ i {
   .button_similar i,
   .modal_heading .button i,
   .information_product_box .button i,
-  .catalog .catalog-page .paginator .paginator_link_page a i,
+  .catalogue .catalog-page .paginator .paginator_link_page a i,
   .information_button .button i,
   .comparison_tools .button i,
   .form_cash .button i,
@@ -5960,7 +5960,7 @@ i {
   .thumb_item .btn:hover,
   .thumb_item .read_more:hover,
   .paginator_link_page a:hover,
-  .catalog .catalog-page .catalog-cards .card_content .description_section .links_block a:hover,
+  .catalogue .catalog-page .catalog-cards .card_content .description_section .links_block a:hover,
   .popular_categories_block .section .tab_content .param_more:hover,
   .button_more:hover,
   .thumb_item .read_more:hover,
@@ -5975,7 +5975,7 @@ i {
   .button_similar:hover,
   .modal_heading .button:hover,
   .information_product_box .button:hover,
-  .catalog .catalog-page .paginator .paginator_link_page a:hover,
+  .catalogue .catalog-page .paginator .paginator_link_page a:hover,
   .information_button .button:hover,
   .comparison_tools .button:hover,
   .form_cash .button:hover,
@@ -5989,7 +5989,7 @@ i {
     .thumb_item .btn:hover i,
     .thumb_item .read_more:hover i,
     .paginator_link_page a:hover i,
-    .catalog .catalog-page .catalog-cards .card_content .description_section .links_block a:hover i,
+    .catalogue .catalog-page .catalog-cards .card_content .description_section .links_block a:hover i,
     .popular_categories_block .section .tab_content .param_more:hover i,
     .button_more:hover i,
     .thumb_item .read_more:hover i,
@@ -6004,7 +6004,7 @@ i {
     .button_similar:hover i,
     .modal_heading .button:hover i,
     .information_product_box .button:hover i,
-    .catalog .catalog-page .paginator .paginator_link_page a:hover i,
+    .catalogue .catalog-page .paginator .paginator_link_page a:hover i,
     .information_button .button:hover i,
     .comparison_tools .button:hover i,
     .form_cash .button:hover i,
@@ -9969,7 +9969,8 @@ i {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 40px; }
 
 .left_sidebar_nav {
   min-width: 300px;
@@ -10043,3 +10044,7 @@ i {
 @media all and (max-width: 992px) {
   .left_sidebar_nav {
     display: none; } }
+
+@media all and (max-width: 576px) {
+  .with_sidebar-container {
+    margin-bottom: 15px; } }
