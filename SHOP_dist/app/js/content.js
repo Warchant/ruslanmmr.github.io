@@ -4,6 +4,7 @@ $(document).ready(function() {
   choiseTabs();
   rulesTabs();
   deliveryTabs();
+  infoTabs();
 });
 $(window).resize(function() {
   slider();
@@ -83,6 +84,18 @@ function rulesTabs() {
 function deliveryTabs() {
   var link = $(".dropable-info li a");
   var tab = $(".delivery-variable_section");
+
+  tab.not(":first").hide();
+  link.click(function(e) {
+    e.preventDefault();
+    link.parents("li").removeClass("active_nav_link");
+    $(this).parents("li").addClass("active_nav_link");
+    tab.hide().eq($(this).parents("li").index()).fadeIn(300)
+  })
+}
+function infoTabs() {
+  var link = $(".warrantly ul.categories_list a");
+  var tab = $(".warrantly .tab-block");
 
   tab.not(":first").hide();
   link.click(function(e) {
