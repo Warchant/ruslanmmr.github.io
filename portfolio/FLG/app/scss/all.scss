@@ -334,6 +334,7 @@ aside {
             outline: none;
             -webkit-appearance: none;
             background-color: #fff;
+            border-radius: none;
         }
         .submit {
             background-color: #2e3653;
@@ -346,6 +347,9 @@ aside {
             cursor: pointer;
             outline: none;
             -webkit-appearance: none;
+            border-radius: none;
+            padding: 0;
+            padding-bottom: 3px;
         }
     }
     .aside_container {
