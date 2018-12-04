@@ -332,6 +332,8 @@ aside {
             font-size: 1.6em;
             color: #000;
             outline: none;
+            -webkit-appearance: none;
+            background-color: #fff;
         }
         .submit {
             background-color: #2e3653;
@@ -343,6 +345,7 @@ aside {
             flex-shrink: 0;
             cursor: pointer;
             outline: none;
+            -webkit-appearance: none;
         }
     }
     .aside_container {

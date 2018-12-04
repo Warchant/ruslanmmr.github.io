@@ -87,7 +87,8 @@
     max-width: 540px;
     padding-top: 10px; }
   .category-head .select-container {
-    position: relative; }
+    position: relative;
+    background-color: #fff; }
     .category-head .select-container:before {
       content: '';
       display: block;
@@ -111,6 +112,7 @@
     font: 1.8em "HeliosCondRegular";
     text-transform: uppercase;
     outline: none;
+    background-color: #fff;
     /*for WebKit*/
     -webkit-appearance: none;
     /* for FF */

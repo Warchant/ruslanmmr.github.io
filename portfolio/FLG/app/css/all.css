@@ -358,7 +358,9 @@ aside {
       width: 100%;
       font-size: 1.6em;
       color: #000;
-      outline: none; }
+      outline: none;
+      -webkit-appearance: none;
+      background-color: #fff; }
     aside .search .submit {
       background-color: #2e3653;
       padding-bottom: 6px;
@@ -370,7 +372,8 @@ aside {
           -ms-flex-negative: 0;
               flex-shrink: 0;
       cursor: pointer;
-      outline: none; }
+      outline: none;
+      -webkit-appearance: none; }
   aside .aside_container {
     display: -webkit-box;
     display: -webkit-flex;
