@@ -361,8 +361,8 @@ aside {
       outline: none;
       -webkit-appearance: none;
       background-color: #fff;
-      -webkit-border-radius: none;
-              border-radius: none; }
+      -webkit-border-radius: 0px;
+              border-radius: 0px; }
     aside .search .submit {
       background-color: #2e3653;
       padding-bottom: 6px;
@@ -376,8 +376,8 @@ aside {
       cursor: pointer;
       outline: none;
       -webkit-appearance: none;
-      -webkit-border-radius: none;
-              border-radius: none;
+      -webkit-border-radius: 0px;
+              border-radius: 0px;
       padding: 0;
       padding-bottom: 3px; }
   aside .aside_container {
