@@ -1,3 +1,6 @@
 @import "_mixins/font-face";
 
 @include font-face("CalibriRegular", "../fonts/calibri");
+@include font-face("OpenSansRegular", "../fonts/OpenSans/OpenSansRegular/OpenSansRegular");
+@include font-face("HeliosCondRegular", "../fonts/HeliosCond/HeliosCondRegular/HeliosCondRegular");
+@include font-face("HeliosCondBold", "../fonts/HeliosCond/HeliosCondBold/HeliosCondBold");

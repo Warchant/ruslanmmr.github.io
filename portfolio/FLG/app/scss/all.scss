@@ -1,5 +1,8 @@
 @import "fonts";
 
+* {
+    box-sizing: border-box;
+}
 html {
     font: 10px "CalibriRegular";
     min-width: 320px;
@@ -103,6 +106,7 @@ html {
 header {
 	position: relative;
 	z-index: 2;
+    padding-bottom: 20px;
     .header-content {
         padding-right: 290px;
         position: relative;
@@ -154,6 +158,7 @@ header {
 }
 
 footer {
+    padding-top: 30px;
     .top-footer_container {
         background-color: #eae8e8;
         .title {
@@ -249,7 +254,7 @@ aside {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 52px;
+            height: 50px;
             background-color: #2e3653;
             a {
                 color: #fff;
@@ -380,6 +385,87 @@ aside {
                 max-width: 300px;
             }
         }
+    }
+}
+
+.tile_type_1,
+.tile_type_3 {
+    width: 25%;
+    padding: 7px;
+    box-sizing: border-box;
+    .block_content {
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+        a {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            img {
+                height: 30%;
+                width: auto;
+            }
+            .title {
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 1.8em;
+                position: absolute;
+                bottom: 7px;
+                left: 10px;
+            }
+        }
+    }
+}
+
+.tile_type_2 {
+    width: 50%;
+    padding: 7px;
+    box-sizing: border-box;
+    .block_content {
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+        a {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            .title {
+                text-transform: uppercase;
+                color: #fff;
+                text-align: center;
+                display: block;
+                font-size: 1.8em;
+                position: absolute;
+                bottom: 7px;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.tile_type_3 {
+    width: 100%;
+    height: 50%;
+    .block_content {
+        height: 100%;
+    }
+    .block_content:before {
+        display: none;
     }
 }
 
