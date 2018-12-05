@@ -184,7 +184,7 @@
                 <img class="top-section__discount-image" src="https://ruslanmmr.github.io/Shop/landing/app/img/percent-item.png" alt="discount">
               </div>
               <div class="top-section__timer timer">
-                <div class="timer__title">До окончания акции:</div>
+                <div class="timer__title">До начала акции:</div>
                 <ul id="countdown">
                   <li> <span class="days">00</span>
                     <p class="timeRefDays">Дни</p>
@@ -493,22 +493,29 @@
   <script type="text/javascript" src="/templates/satra/js/eskju.jquery.scrollflow.min.js"></script>
   <script type="text/javascript" src="/templates/satra/js/main.js?2"></script>
   <!--new script-->
-  <script type="text/javascript" src="https://https://ruslanmmr.github.io/Shop/landing/app/countdown.js"></script>
+  <script type="text/javascript" src="https://ruslanmmr.github.io/Shop/landing/app/countdown.js"></script>
   <script>
     $(document).ready(function(){
       setTimeout(function() {
-        $(".top_content").addClass("visible_timer");
-        }, 500);
+        $(".top-section__timer").addClass("top-section__timer_visible");
+        }, 1000);
         $("#countdown").countdown({
-        date: "22 december 2018 00:00:01",
+        date: "8 december 2018 00:00:01",
         format: "on"
         },
         function() {
-          $(".time_txt").text("До окончания акции:")
+          $(".timer__title").text("До окончания акции:")
           $("#countdown").countdown({
-          date: "26 november 2018 23:59:59",
+          date: "10 december 2018 23:59:59",
+          format: "on"
+          },
+          function() {
+          $(".timer__title").text("Акция завершена!")
+          $("#countdown").countdown({
+          date: "10 december 2018 23:59:58",
           format: "on"
           });
+        });
         });
       autoHeight();
     });
