@@ -1,3 +1,9 @@
+@charset "UTF-8";
+/* ---------- Коррекция шапки под зимний логотип ---------- */
+a.logo {
+  margin-top: -12px; }
+
+/* -------------------- */
 /* ---------- TIMER ---------- */
 .timer-area {
   background: transparent url("../images/timer-area-pattern.png") left top;
@@ -113,7 +119,13 @@ ul#countdown li p.timeRefSeconds {
         -ms-flex-item-align: end;
             align-self: flex-end;
     padding-bottom: 35px;
-    padding-left: 90px; }
+    padding-left: 90px;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .top-section__timer_visible {
+    opacity: 1; }
 
 .timer__title {
   color: #fff;
